@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CPU_S
 {
-    public partial class Form1 : Form
+    public partial class FormCPUS : Form
     {
-        public Form1()
+        public FormCPUS()
         {
             InitializeComponent();
             GetCPUInfo();
@@ -27,36 +27,36 @@ namespace CPU_S
                                    .Cast<ManagementObject>()
                                    .First();
 
-            CPU.ID = (string)cpu["ProcessorId"];
-            CPU.Socket = (string)cpu["SocketDesignation"];
+            CPU.ProcessorId = (string)cpu["ProcessorId"];
+            CPU.SocketDesignation = (string)cpu["SocketDesignation"];
             CPU.Name = (string)cpu["Name"];
-            CPU.Description = (string)cpu["Caption"];
+            CPU.Description = (string)cpu["Description"];
             CPU.AddressWidth = (ushort)cpu["AddressWidth"];
             CPU.DataWidth = (ushort)cpu["DataWidth"];
             CPU.Architecture = (ushort)cpu["Architecture"];
-            CPU.SpeedMHz = (uint)cpu["MaxClockSpeed"];
-            CPU.BusSpeedMHz = (uint)cpu["ExtClock"];
-            CPU.L2Cache = (uint)cpu["L2CacheSize"] * (ulong)1024;
-            CPU.L3Cache = (uint)cpu["L3CacheSize"] * (ulong)1024;
-            CPU.Cores = (uint)cpu["NumberOfCores"];
-            CPU.Threads = (uint)cpu["NumberOfLogicalProcessors"];
+            CPU.MaxClockSpeed = (uint)cpu["MaxClockSpeed"];
+            CPU.ExtClock = (uint)cpu["ExtClock"];
+            CPU.L2CacheSize = (uint)cpu["L2CacheSize"] * (ulong)1024;
+            CPU.L3CacheSize = (uint)cpu["L3CacheSize"] * (ulong)1024;
+            CPU.NumberOfCores = (uint)cpu["NumberOfCores"];
+            CPU.NumberOfLogicalProcessors = (uint)cpu["NumberOfLogicalProcessors"];
         }
 
         private void PopulateCPUInfo()
         {
-            textBoxCPUId.Text = CPU.ID;
-            textBoxCPUSocket.Text = CPU.Socket;
+            textBoxCPUProcessorId.Text = CPU.ProcessorId;
+            textBoxCPUSocketDesignation.Text = CPU.SocketDesignation;
             textBoxCPUName.Text = CPU.Name;
             textBoxCPUDescription.Text = CPU.Description;
             textBoxCPUAddressWidth.Text = CPU.AddressWidth.ToString();
             textBoxCPUDataWidth.Text = CPU.DataWidth.ToString();
             textBoxCPUArchitecture.Text = CPU.Architecture.ToString();
-            textBoxCPUSpeedMHz.Text = CPU.SpeedMHz.ToString();
-            textBoxCPUBusSpeedMHz.Text = CPU.BusSpeedMHz.ToString();
-            textBoxCPUL2Cache.Text = CPU.L2Cache.ToString();
-            textBoxCPUL3Cache.Text = CPU.L3Cache.ToString();
-            textBoxCPUCores.Text = CPU.Cores.ToString();
-            textBoxCPUThreads.Text = CPU.Threads.ToString();
+            textBoxCPUMaxClockSpeed.Text = CPU.MaxClockSpeed.ToString();
+            textBoxCPUExtClock.Text = CPU.ExtClock.ToString();
+            textBoxCPUL2CacheSize.Text = CPU.L2CacheSize.ToString();
+            textBoxCPUL3CacheSize.Text = CPU.L3CacheSize.ToString();
+            textBoxCPUNumberOfCores.Text = CPU.NumberOfCores.ToString();
+            textBoxCPUNumberOfLogicalProcessors.Text = CPU.NumberOfLogicalProcessors.ToString();
         }
     }
 }

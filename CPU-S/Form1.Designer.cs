@@ -1,6 +1,6 @@
 ﻿namespace CPU_S
 {
-    partial class Form1
+    partial class FormCPUS
     {
         /// <summary>
         /// Required designer variable.
@@ -28,321 +28,351 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxCPUId = new System.Windows.Forms.TextBox();
-            this.textBoxCPUSocket = new System.Windows.Forms.TextBox();
-            this.textBoxCPUName = new System.Windows.Forms.TextBox();
-            this.textBoxCPUDescription = new System.Windows.Forms.TextBox();
-            this.textBoxCPUSpeedMHz = new System.Windows.Forms.TextBox();
+            this.groupBoxCPU = new System.Windows.Forms.GroupBox();
+            this.labelCPUNumberOfLogicalProcessors = new System.Windows.Forms.Label();
+            this.labelCPUNumberOfCores = new System.Windows.Forms.Label();
+            this.labelCPUL3CacheSize = new System.Windows.Forms.Label();
+            this.labelCPUL2CacheSize = new System.Windows.Forms.Label();
+            this.labelCPUExtClock = new System.Windows.Forms.Label();
+            this.labelCPUMaxClockSpeed = new System.Windows.Forms.Label();
+            this.labelCPUArchitecture = new System.Windows.Forms.Label();
+            this.labelCPUDataWidth = new System.Windows.Forms.Label();
+            this.labelCPUAddressWidth = new System.Windows.Forms.Label();
+            this.labelCPUDescription = new System.Windows.Forms.Label();
+            this.labelCPUName = new System.Windows.Forms.Label();
+            this.labelCPUSocketDesignation = new System.Windows.Forms.Label();
+            this.labelCPUProcessorId = new System.Windows.Forms.Label();
+            this.textBoxCPUNumberOfLogicalProcessors = new System.Windows.Forms.TextBox();
+            this.textBoxCPUNumberOfCores = new System.Windows.Forms.TextBox();
+            this.textBoxCPUL3CacheSize = new System.Windows.Forms.TextBox();
+            this.textBoxCPUL2CacheSize = new System.Windows.Forms.TextBox();
+            this.textBoxCPUExtClock = new System.Windows.Forms.TextBox();
+            this.textBoxCPUMaxClockSpeed = new System.Windows.Forms.TextBox();
             this.textBoxCPUArchitecture = new System.Windows.Forms.TextBox();
             this.textBoxCPUDataWidth = new System.Windows.Forms.TextBox();
             this.textBoxCPUAddressWidth = new System.Windows.Forms.TextBox();
-            this.textBoxCPUThreads = new System.Windows.Forms.TextBox();
-            this.textBoxCPUCores = new System.Windows.Forms.TextBox();
-            this.textBoxCPUL3Cache = new System.Windows.Forms.TextBox();
-            this.textBoxCPUL2Cache = new System.Windows.Forms.TextBox();
-            this.textBoxCPUBusSpeedMHz = new System.Windows.Forms.TextBox();
-            this.labelCPUId = new System.Windows.Forms.Label();
-            this.labelCPUSocket = new System.Windows.Forms.Label();
-            this.labelCPUName = new System.Windows.Forms.Label();
-            this.labelCPUDescription = new System.Windows.Forms.Label();
-            this.labelCPUAddressWidth = new System.Windows.Forms.Label();
-            this.labelCPUDataWidth = new System.Windows.Forms.Label();
-            this.labelCPUArchitecture = new System.Windows.Forms.Label();
-            this.labelCPUSpeedMHz = new System.Windows.Forms.Label();
-            this.labelCPUBusSpeedMHz = new System.Windows.Forms.Label();
-            this.labelCPUL2Cache = new System.Windows.Forms.Label();
-            this.labelCPUL3Cache = new System.Windows.Forms.Label();
-            this.labelCPUCores = new System.Windows.Forms.Label();
-            this.labelCPUThreads = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.textBoxCPUDescription = new System.Windows.Forms.TextBox();
+            this.textBoxCPUName = new System.Windows.Forms.TextBox();
+            this.textBoxCPUSocketDesignation = new System.Windows.Forms.TextBox();
+            this.textBoxCPUProcessorId = new System.Windows.Forms.TextBox();
+            this.groupBoxCPU.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxCPU
             // 
-            this.groupBox1.Controls.Add(this.labelCPUThreads);
-            this.groupBox1.Controls.Add(this.labelCPUCores);
-            this.groupBox1.Controls.Add(this.labelCPUL3Cache);
-            this.groupBox1.Controls.Add(this.labelCPUL2Cache);
-            this.groupBox1.Controls.Add(this.labelCPUBusSpeedMHz);
-            this.groupBox1.Controls.Add(this.labelCPUSpeedMHz);
-            this.groupBox1.Controls.Add(this.labelCPUArchitecture);
-            this.groupBox1.Controls.Add(this.labelCPUDataWidth);
-            this.groupBox1.Controls.Add(this.labelCPUAddressWidth);
-            this.groupBox1.Controls.Add(this.labelCPUDescription);
-            this.groupBox1.Controls.Add(this.labelCPUName);
-            this.groupBox1.Controls.Add(this.labelCPUSocket);
-            this.groupBox1.Controls.Add(this.labelCPUId);
-            this.groupBox1.Controls.Add(this.textBoxCPUThreads);
-            this.groupBox1.Controls.Add(this.textBoxCPUCores);
-            this.groupBox1.Controls.Add(this.textBoxCPUL3Cache);
-            this.groupBox1.Controls.Add(this.textBoxCPUL2Cache);
-            this.groupBox1.Controls.Add(this.textBoxCPUBusSpeedMHz);
-            this.groupBox1.Controls.Add(this.textBoxCPUSpeedMHz);
-            this.groupBox1.Controls.Add(this.textBoxCPUArchitecture);
-            this.groupBox1.Controls.Add(this.textBoxCPUDataWidth);
-            this.groupBox1.Controls.Add(this.textBoxCPUAddressWidth);
-            this.groupBox1.Controls.Add(this.textBoxCPUDescription);
-            this.groupBox1.Controls.Add(this.textBoxCPUName);
-            this.groupBox1.Controls.Add(this.textBoxCPUSocket);
-            this.groupBox1.Controls.Add(this.textBoxCPUId);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(760, 537);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            this.groupBoxCPU.Controls.Add(this.labelCPUNumberOfLogicalProcessors);
+            this.groupBoxCPU.Controls.Add(this.labelCPUNumberOfCores);
+            this.groupBoxCPU.Controls.Add(this.labelCPUL3CacheSize);
+            this.groupBoxCPU.Controls.Add(this.labelCPUL2CacheSize);
+            this.groupBoxCPU.Controls.Add(this.labelCPUExtClock);
+            this.groupBoxCPU.Controls.Add(this.labelCPUMaxClockSpeed);
+            this.groupBoxCPU.Controls.Add(this.labelCPUArchitecture);
+            this.groupBoxCPU.Controls.Add(this.labelCPUDataWidth);
+            this.groupBoxCPU.Controls.Add(this.labelCPUAddressWidth);
+            this.groupBoxCPU.Controls.Add(this.labelCPUDescription);
+            this.groupBoxCPU.Controls.Add(this.labelCPUName);
+            this.groupBoxCPU.Controls.Add(this.labelCPUSocketDesignation);
+            this.groupBoxCPU.Controls.Add(this.labelCPUProcessorId);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUNumberOfLogicalProcessors);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUNumberOfCores);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUL3CacheSize);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUL2CacheSize);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUExtClock);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUMaxClockSpeed);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUArchitecture);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUDataWidth);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUAddressWidth);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUDescription);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUName);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUSocketDesignation);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUProcessorId);
+            this.groupBoxCPU.Location = new System.Drawing.Point(8, 8);
+            this.groupBoxCPU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxCPU.Name = "groupBoxCPU";
+            this.groupBoxCPU.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxCPU.Size = new System.Drawing.Size(765, 542);
+            this.groupBoxCPU.TabIndex = 0;
+            this.groupBoxCPU.TabStop = false;
             // 
-            // textBoxCPUId
+            // labelCPUNumberOfLogicalProcessors
             // 
-            this.textBoxCPUId.Location = new System.Drawing.Point(200, 25);
-            this.textBoxCPUId.Name = "textBoxCPUId";
-            this.textBoxCPUId.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUId.TabIndex = 0;
+            this.labelCPUNumberOfLogicalProcessors.AutoSize = true;
+            this.labelCPUNumberOfLogicalProcessors.Location = new System.Drawing.Point(4, 268);
+            this.labelCPUNumberOfLogicalProcessors.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUNumberOfLogicalProcessors.Name = "labelCPUNumberOfLogicalProcessors";
+            this.labelCPUNumberOfLogicalProcessors.Size = new System.Drawing.Size(151, 13);
+            this.labelCPUNumberOfLogicalProcessors.TabIndex = 24;
+            this.labelCPUNumberOfLogicalProcessors.Text = "Number of Logical Processors:";
             // 
-            // textBoxCPUSocket
+            // labelCPUNumberOfCores
             // 
-            this.textBoxCPUSocket.Location = new System.Drawing.Point(200, 57);
-            this.textBoxCPUSocket.Name = "textBoxCPUSocket";
-            this.textBoxCPUSocket.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUSocket.TabIndex = 1;
+            this.labelCPUNumberOfCores.AutoSize = true;
+            this.labelCPUNumberOfCores.Location = new System.Drawing.Point(4, 247);
+            this.labelCPUNumberOfCores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUNumberOfCores.Name = "labelCPUNumberOfCores";
+            this.labelCPUNumberOfCores.Size = new System.Drawing.Size(89, 13);
+            this.labelCPUNumberOfCores.TabIndex = 23;
+            this.labelCPUNumberOfCores.Text = "Number of Cores:";
             // 
-            // textBoxCPUName
+            // labelCPUL3CacheSize
             // 
-            this.textBoxCPUName.Location = new System.Drawing.Point(200, 89);
-            this.textBoxCPUName.Name = "textBoxCPUName";
-            this.textBoxCPUName.Size = new System.Drawing.Size(350, 26);
-            this.textBoxCPUName.TabIndex = 2;
+            this.labelCPUL3CacheSize.AutoSize = true;
+            this.labelCPUL3CacheSize.Location = new System.Drawing.Point(4, 226);
+            this.labelCPUL3CacheSize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUL3CacheSize.Name = "labelCPUL3CacheSize";
+            this.labelCPUL3CacheSize.Size = new System.Drawing.Size(79, 13);
+            this.labelCPUL3CacheSize.TabIndex = 22;
+            this.labelCPUL3CacheSize.Text = "L3 Cache Size:";
             // 
-            // textBoxCPUDescription
+            // labelCPUL2CacheSize
             // 
-            this.textBoxCPUDescription.Location = new System.Drawing.Point(200, 121);
-            this.textBoxCPUDescription.Name = "textBoxCPUDescription";
-            this.textBoxCPUDescription.Size = new System.Drawing.Size(350, 26);
-            this.textBoxCPUDescription.TabIndex = 3;
+            this.labelCPUL2CacheSize.AutoSize = true;
+            this.labelCPUL2CacheSize.Location = new System.Drawing.Point(4, 205);
+            this.labelCPUL2CacheSize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUL2CacheSize.Name = "labelCPUL2CacheSize";
+            this.labelCPUL2CacheSize.Size = new System.Drawing.Size(79, 13);
+            this.labelCPUL2CacheSize.TabIndex = 21;
+            this.labelCPUL2CacheSize.Text = "L2 Cache Size:";
             // 
-            // textBoxCPUSpeedMHz
+            // labelCPUExtClock
             // 
-            this.textBoxCPUSpeedMHz.Location = new System.Drawing.Point(200, 249);
-            this.textBoxCPUSpeedMHz.Name = "textBoxCPUSpeedMHz";
-            this.textBoxCPUSpeedMHz.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUSpeedMHz.TabIndex = 7;
+            this.labelCPUExtClock.AutoSize = true;
+            this.labelCPUExtClock.Location = new System.Drawing.Point(4, 185);
+            this.labelCPUExtClock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUExtClock.Name = "labelCPUExtClock";
+            this.labelCPUExtClock.Size = new System.Drawing.Size(109, 13);
+            this.labelCPUExtClock.TabIndex = 20;
+            this.labelCPUExtClock.Text = "External Clock (MHz):";
             // 
-            // textBoxCPUArchitecture
+            // labelCPUMaxClockSpeed
             // 
-            this.textBoxCPUArchitecture.Location = new System.Drawing.Point(200, 217);
-            this.textBoxCPUArchitecture.Name = "textBoxCPUArchitecture";
-            this.textBoxCPUArchitecture.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUArchitecture.TabIndex = 6;
-            // 
-            // textBoxCPUDataWidth
-            // 
-            this.textBoxCPUDataWidth.Location = new System.Drawing.Point(200, 185);
-            this.textBoxCPUDataWidth.Name = "textBoxCPUDataWidth";
-            this.textBoxCPUDataWidth.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUDataWidth.TabIndex = 5;
-            // 
-            // textBoxCPUAddressWidth
-            // 
-            this.textBoxCPUAddressWidth.Location = new System.Drawing.Point(200, 153);
-            this.textBoxCPUAddressWidth.Name = "textBoxCPUAddressWidth";
-            this.textBoxCPUAddressWidth.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUAddressWidth.TabIndex = 4;
-            // 
-            // textBoxCPUThreads
-            // 
-            this.textBoxCPUThreads.Location = new System.Drawing.Point(200, 409);
-            this.textBoxCPUThreads.Name = "textBoxCPUThreads";
-            this.textBoxCPUThreads.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUThreads.TabIndex = 12;
-            // 
-            // textBoxCPUCores
-            // 
-            this.textBoxCPUCores.Location = new System.Drawing.Point(200, 377);
-            this.textBoxCPUCores.Name = "textBoxCPUCores";
-            this.textBoxCPUCores.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUCores.TabIndex = 11;
-            // 
-            // textBoxCPUL3Cache
-            // 
-            this.textBoxCPUL3Cache.Location = new System.Drawing.Point(200, 345);
-            this.textBoxCPUL3Cache.Name = "textBoxCPUL3Cache";
-            this.textBoxCPUL3Cache.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUL3Cache.TabIndex = 10;
-            // 
-            // textBoxCPUL2Cache
-            // 
-            this.textBoxCPUL2Cache.Location = new System.Drawing.Point(200, 313);
-            this.textBoxCPUL2Cache.Name = "textBoxCPUL2Cache";
-            this.textBoxCPUL2Cache.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUL2Cache.TabIndex = 9;
-            // 
-            // textBoxCPUBusSpeedMHz
-            // 
-            this.textBoxCPUBusSpeedMHz.Location = new System.Drawing.Point(200, 281);
-            this.textBoxCPUBusSpeedMHz.Name = "textBoxCPUBusSpeedMHz";
-            this.textBoxCPUBusSpeedMHz.Size = new System.Drawing.Size(200, 26);
-            this.textBoxCPUBusSpeedMHz.TabIndex = 8;
-            // 
-            // labelCPUId
-            // 
-            this.labelCPUId.AutoSize = true;
-            this.labelCPUId.Location = new System.Drawing.Point(6, 28);
-            this.labelCPUId.Name = "labelCPUId";
-            this.labelCPUId.Size = new System.Drawing.Size(30, 20);
-            this.labelCPUId.TabIndex = 1;
-            this.labelCPUId.Text = "ID:";
-            // 
-            // labelCPUSocket
-            // 
-            this.labelCPUSocket.AutoSize = true;
-            this.labelCPUSocket.Location = new System.Drawing.Point(6, 60);
-            this.labelCPUSocket.Name = "labelCPUSocket";
-            this.labelCPUSocket.Size = new System.Drawing.Size(63, 20);
-            this.labelCPUSocket.TabIndex = 13;
-            this.labelCPUSocket.Text = "Socket:";
-            // 
-            // labelCPUName
-            // 
-            this.labelCPUName.AutoSize = true;
-            this.labelCPUName.Location = new System.Drawing.Point(6, 92);
-            this.labelCPUName.Name = "labelCPUName";
-            this.labelCPUName.Size = new System.Drawing.Size(55, 20);
-            this.labelCPUName.TabIndex = 14;
-            this.labelCPUName.Text = "Name:";
-            // 
-            // labelCPUDescription
-            // 
-            this.labelCPUDescription.AutoSize = true;
-            this.labelCPUDescription.Location = new System.Drawing.Point(6, 124);
-            this.labelCPUDescription.Name = "labelCPUDescription";
-            this.labelCPUDescription.Size = new System.Drawing.Size(93, 20);
-            this.labelCPUDescription.TabIndex = 15;
-            this.labelCPUDescription.Text = "Description:";
-            // 
-            // labelCPUAddressWidth
-            // 
-            this.labelCPUAddressWidth.AutoSize = true;
-            this.labelCPUAddressWidth.Location = new System.Drawing.Point(6, 156);
-            this.labelCPUAddressWidth.Name = "labelCPUAddressWidth";
-            this.labelCPUAddressWidth.Size = new System.Drawing.Size(117, 20);
-            this.labelCPUAddressWidth.TabIndex = 16;
-            this.labelCPUAddressWidth.Text = "Address Width:";
-            // 
-            // labelCPUDataWidth
-            // 
-            this.labelCPUDataWidth.AutoSize = true;
-            this.labelCPUDataWidth.Location = new System.Drawing.Point(6, 188);
-            this.labelCPUDataWidth.Name = "labelCPUDataWidth";
-            this.labelCPUDataWidth.Size = new System.Drawing.Size(93, 20);
-            this.labelCPUDataWidth.TabIndex = 17;
-            this.labelCPUDataWidth.Text = "Data Width:";
+            this.labelCPUMaxClockSpeed.AutoSize = true;
+            this.labelCPUMaxClockSpeed.Location = new System.Drawing.Point(4, 164);
+            this.labelCPUMaxClockSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUMaxClockSpeed.Name = "labelCPUMaxClockSpeed";
+            this.labelCPUMaxClockSpeed.Size = new System.Drawing.Size(125, 13);
+            this.labelCPUMaxClockSpeed.TabIndex = 19;
+            this.labelCPUMaxClockSpeed.Text = "Max Clock Speed (MHz):";
             // 
             // labelCPUArchitecture
             // 
             this.labelCPUArchitecture.AutoSize = true;
-            this.labelCPUArchitecture.Location = new System.Drawing.Point(6, 220);
+            this.labelCPUArchitecture.Location = new System.Drawing.Point(4, 143);
+            this.labelCPUArchitecture.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCPUArchitecture.Name = "labelCPUArchitecture";
-            this.labelCPUArchitecture.Size = new System.Drawing.Size(99, 20);
+            this.labelCPUArchitecture.Size = new System.Drawing.Size(67, 13);
             this.labelCPUArchitecture.TabIndex = 18;
             this.labelCPUArchitecture.Text = "Architecture:";
             // 
-            // labelCPUSpeedMHz
+            // labelCPUDataWidth
             // 
-            this.labelCPUSpeedMHz.AutoSize = true;
-            this.labelCPUSpeedMHz.Location = new System.Drawing.Point(6, 252);
-            this.labelCPUSpeedMHz.Name = "labelCPUSpeedMHz";
-            this.labelCPUSpeedMHz.Size = new System.Drawing.Size(107, 20);
-            this.labelCPUSpeedMHz.TabIndex = 19;
-            this.labelCPUSpeedMHz.Text = "Speed (MHz):";
+            this.labelCPUDataWidth.AutoSize = true;
+            this.labelCPUDataWidth.Location = new System.Drawing.Point(4, 122);
+            this.labelCPUDataWidth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUDataWidth.Name = "labelCPUDataWidth";
+            this.labelCPUDataWidth.Size = new System.Drawing.Size(64, 13);
+            this.labelCPUDataWidth.TabIndex = 17;
+            this.labelCPUDataWidth.Text = "Data Width:";
             // 
-            // labelCPUBusSpeedMHz
+            // labelCPUAddressWidth
             // 
-            this.labelCPUBusSpeedMHz.AutoSize = true;
-            this.labelCPUBusSpeedMHz.Location = new System.Drawing.Point(6, 284);
-            this.labelCPUBusSpeedMHz.Name = "labelCPUBusSpeedMHz";
-            this.labelCPUBusSpeedMHz.Size = new System.Drawing.Size(139, 20);
-            this.labelCPUBusSpeedMHz.TabIndex = 20;
-            this.labelCPUBusSpeedMHz.Text = "Bus Speed (MHz):";
+            this.labelCPUAddressWidth.AutoSize = true;
+            this.labelCPUAddressWidth.Location = new System.Drawing.Point(4, 101);
+            this.labelCPUAddressWidth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUAddressWidth.Name = "labelCPUAddressWidth";
+            this.labelCPUAddressWidth.Size = new System.Drawing.Size(79, 13);
+            this.labelCPUAddressWidth.TabIndex = 16;
+            this.labelCPUAddressWidth.Text = "Address Width:";
             // 
-            // labelCPUL2Cache
+            // labelCPUDescription
             // 
-            this.labelCPUL2Cache.AutoSize = true;
-            this.labelCPUL2Cache.Location = new System.Drawing.Point(6, 316);
-            this.labelCPUL2Cache.Name = "labelCPUL2Cache";
-            this.labelCPUL2Cache.Size = new System.Drawing.Size(81, 20);
-            this.labelCPUL2Cache.TabIndex = 21;
-            this.labelCPUL2Cache.Text = "L2 Cache:";
+            this.labelCPUDescription.AutoSize = true;
+            this.labelCPUDescription.Location = new System.Drawing.Point(4, 81);
+            this.labelCPUDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUDescription.Name = "labelCPUDescription";
+            this.labelCPUDescription.Size = new System.Drawing.Size(63, 13);
+            this.labelCPUDescription.TabIndex = 15;
+            this.labelCPUDescription.Text = "Description:";
             // 
-            // labelCPUL3Cache
+            // labelCPUName
             // 
-            this.labelCPUL3Cache.AutoSize = true;
-            this.labelCPUL3Cache.Location = new System.Drawing.Point(6, 348);
-            this.labelCPUL3Cache.Name = "labelCPUL3Cache";
-            this.labelCPUL3Cache.Size = new System.Drawing.Size(81, 20);
-            this.labelCPUL3Cache.TabIndex = 22;
-            this.labelCPUL3Cache.Text = "L3 Cache:";
+            this.labelCPUName.AutoSize = true;
+            this.labelCPUName.Location = new System.Drawing.Point(4, 60);
+            this.labelCPUName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUName.Name = "labelCPUName";
+            this.labelCPUName.Size = new System.Drawing.Size(38, 13);
+            this.labelCPUName.TabIndex = 14;
+            this.labelCPUName.Text = "Name:";
             // 
-            // labelCPUCores
+            // labelCPUSocketDesignation
             // 
-            this.labelCPUCores.AutoSize = true;
-            this.labelCPUCores.Location = new System.Drawing.Point(6, 380);
-            this.labelCPUCores.Name = "labelCPUCores";
-            this.labelCPUCores.Size = new System.Drawing.Size(55, 20);
-            this.labelCPUCores.TabIndex = 23;
-            this.labelCPUCores.Text = "Cores:";
+            this.labelCPUSocketDesignation.AutoSize = true;
+            this.labelCPUSocketDesignation.Location = new System.Drawing.Point(4, 39);
+            this.labelCPUSocketDesignation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUSocketDesignation.Name = "labelCPUSocketDesignation";
+            this.labelCPUSocketDesignation.Size = new System.Drawing.Size(103, 13);
+            this.labelCPUSocketDesignation.TabIndex = 13;
+            this.labelCPUSocketDesignation.Text = "Socket Designation:";
             // 
-            // labelCPUThreads
+            // labelCPUProcessorId
             // 
-            this.labelCPUThreads.AutoSize = true;
-            this.labelCPUThreads.Location = new System.Drawing.Point(6, 412);
-            this.labelCPUThreads.Name = "labelCPUThreads";
-            this.labelCPUThreads.Size = new System.Drawing.Size(71, 20);
-            this.labelCPUThreads.TabIndex = 24;
-            this.labelCPUThreads.Text = "Threads:";
+            this.labelCPUProcessorId.AutoSize = true;
+            this.labelCPUProcessorId.Location = new System.Drawing.Point(4, 18);
+            this.labelCPUProcessorId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUProcessorId.Name = "labelCPUProcessorId";
+            this.labelCPUProcessorId.Size = new System.Drawing.Size(69, 13);
+            this.labelCPUProcessorId.TabIndex = 1;
+            this.labelCPUProcessorId.Text = "Processor Id:";
             // 
-            // Form1
+            // textBoxCPUNumberOfLogicalProcessors
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.textBoxCPUNumberOfLogicalProcessors.Location = new System.Drawing.Point(159, 265);
+            this.textBoxCPUNumberOfLogicalProcessors.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUNumberOfLogicalProcessors.Name = "textBoxCPUNumberOfLogicalProcessors";
+            this.textBoxCPUNumberOfLogicalProcessors.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUNumberOfLogicalProcessors.TabIndex = 12;
+            // 
+            // textBoxCPUNumberOfCores
+            // 
+            this.textBoxCPUNumberOfCores.Location = new System.Drawing.Point(159, 244);
+            this.textBoxCPUNumberOfCores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUNumberOfCores.Name = "textBoxCPUNumberOfCores";
+            this.textBoxCPUNumberOfCores.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUNumberOfCores.TabIndex = 11;
+            // 
+            // textBoxCPUL3CacheSize
+            // 
+            this.textBoxCPUL3CacheSize.Location = new System.Drawing.Point(159, 223);
+            this.textBoxCPUL3CacheSize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUL3CacheSize.Name = "textBoxCPUL3CacheSize";
+            this.textBoxCPUL3CacheSize.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUL3CacheSize.TabIndex = 10;
+            // 
+            // textBoxCPUL2CacheSize
+            // 
+            this.textBoxCPUL2CacheSize.Location = new System.Drawing.Point(159, 202);
+            this.textBoxCPUL2CacheSize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUL2CacheSize.Name = "textBoxCPUL2CacheSize";
+            this.textBoxCPUL2CacheSize.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUL2CacheSize.TabIndex = 9;
+            // 
+            // textBoxCPUExtClock
+            // 
+            this.textBoxCPUExtClock.Location = new System.Drawing.Point(159, 182);
+            this.textBoxCPUExtClock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUExtClock.Name = "textBoxCPUExtClock";
+            this.textBoxCPUExtClock.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUExtClock.TabIndex = 8;
+            // 
+            // textBoxCPUMaxClockSpeed
+            // 
+            this.textBoxCPUMaxClockSpeed.Location = new System.Drawing.Point(159, 161);
+            this.textBoxCPUMaxClockSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUMaxClockSpeed.Name = "textBoxCPUMaxClockSpeed";
+            this.textBoxCPUMaxClockSpeed.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUMaxClockSpeed.TabIndex = 7;
+            // 
+            // textBoxCPUArchitecture
+            // 
+            this.textBoxCPUArchitecture.Location = new System.Drawing.Point(159, 140);
+            this.textBoxCPUArchitecture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUArchitecture.Name = "textBoxCPUArchitecture";
+            this.textBoxCPUArchitecture.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUArchitecture.TabIndex = 6;
+            // 
+            // textBoxCPUDataWidth
+            // 
+            this.textBoxCPUDataWidth.Location = new System.Drawing.Point(159, 119);
+            this.textBoxCPUDataWidth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUDataWidth.Name = "textBoxCPUDataWidth";
+            this.textBoxCPUDataWidth.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUDataWidth.TabIndex = 5;
+            // 
+            // textBoxCPUAddressWidth
+            // 
+            this.textBoxCPUAddressWidth.Location = new System.Drawing.Point(159, 98);
+            this.textBoxCPUAddressWidth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUAddressWidth.Name = "textBoxCPUAddressWidth";
+            this.textBoxCPUAddressWidth.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUAddressWidth.TabIndex = 4;
+            // 
+            // textBoxCPUDescription
+            // 
+            this.textBoxCPUDescription.Location = new System.Drawing.Point(159, 78);
+            this.textBoxCPUDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUDescription.Name = "textBoxCPUDescription";
+            this.textBoxCPUDescription.Size = new System.Drawing.Size(235, 20);
+            this.textBoxCPUDescription.TabIndex = 3;
+            // 
+            // textBoxCPUName
+            // 
+            this.textBoxCPUName.Location = new System.Drawing.Point(159, 57);
+            this.textBoxCPUName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUName.Name = "textBoxCPUName";
+            this.textBoxCPUName.Size = new System.Drawing.Size(235, 20);
+            this.textBoxCPUName.TabIndex = 2;
+            // 
+            // textBoxCPUSocketDesignation
+            // 
+            this.textBoxCPUSocketDesignation.Location = new System.Drawing.Point(159, 36);
+            this.textBoxCPUSocketDesignation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUSocketDesignation.Name = "textBoxCPUSocketDesignation";
+            this.textBoxCPUSocketDesignation.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUSocketDesignation.TabIndex = 1;
+            // 
+            // textBoxCPUProcessorId
+            // 
+            this.textBoxCPUProcessorId.Location = new System.Drawing.Point(159, 15);
+            this.textBoxCPUProcessorId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCPUProcessorId.Name = "textBoxCPUProcessorId";
+            this.textBoxCPUProcessorId.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUProcessorId.TabIndex = 0;
+            // 
+            // FormCPUS
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Controls.Add(this.groupBoxCPU);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.Name = "FormCPUS";
             this.Text = "CPU-S";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxCPU.ResumeLayout(false);
+            this.groupBoxCPU.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBoxCPUId;
+        private System.Windows.Forms.GroupBox groupBoxCPU;
+        private System.Windows.Forms.TextBox textBoxCPUProcessorId;
         private System.Windows.Forms.TextBox textBoxCPUName;
-        private System.Windows.Forms.TextBox textBoxCPUSocket;
-        private System.Windows.Forms.TextBox textBoxCPUThreads;
-        private System.Windows.Forms.TextBox textBoxCPUCores;
-        private System.Windows.Forms.TextBox textBoxCPUL3Cache;
-        private System.Windows.Forms.TextBox textBoxCPUL2Cache;
-        private System.Windows.Forms.TextBox textBoxCPUBusSpeedMHz;
-        private System.Windows.Forms.TextBox textBoxCPUSpeedMHz;
+        private System.Windows.Forms.TextBox textBoxCPUSocketDesignation;
+        private System.Windows.Forms.TextBox textBoxCPUNumberOfLogicalProcessors;
+        private System.Windows.Forms.TextBox textBoxCPUNumberOfCores;
+        private System.Windows.Forms.TextBox textBoxCPUL3CacheSize;
+        private System.Windows.Forms.TextBox textBoxCPUL2CacheSize;
+        private System.Windows.Forms.TextBox textBoxCPUExtClock;
+        private System.Windows.Forms.TextBox textBoxCPUMaxClockSpeed;
         private System.Windows.Forms.TextBox textBoxCPUArchitecture;
         private System.Windows.Forms.TextBox textBoxCPUDataWidth;
         private System.Windows.Forms.TextBox textBoxCPUAddressWidth;
         private System.Windows.Forms.TextBox textBoxCPUDescription;
-        private System.Windows.Forms.Label labelCPUThreads;
-        private System.Windows.Forms.Label labelCPUCores;
-        private System.Windows.Forms.Label labelCPUL3Cache;
-        private System.Windows.Forms.Label labelCPUL2Cache;
-        private System.Windows.Forms.Label labelCPUBusSpeedMHz;
-        private System.Windows.Forms.Label labelCPUSpeedMHz;
+        private System.Windows.Forms.Label labelCPUNumberOfLogicalProcessors;
+        private System.Windows.Forms.Label labelCPUNumberOfCores;
+        private System.Windows.Forms.Label labelCPUL3CacheSize;
+        private System.Windows.Forms.Label labelCPUL2CacheSize;
+        private System.Windows.Forms.Label labelCPUExtClock;
+        private System.Windows.Forms.Label labelCPUMaxClockSpeed;
         private System.Windows.Forms.Label labelCPUArchitecture;
         private System.Windows.Forms.Label labelCPUDataWidth;
         private System.Windows.Forms.Label labelCPUAddressWidth;
         private System.Windows.Forms.Label labelCPUDescription;
         private System.Windows.Forms.Label labelCPUName;
-        private System.Windows.Forms.Label labelCPUSocket;
-        private System.Windows.Forms.Label labelCPUId;
+        private System.Windows.Forms.Label labelCPUSocketDesignation;
+        private System.Windows.Forms.Label labelCPUProcessorId;
     }
 }
 
