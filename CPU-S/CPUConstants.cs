@@ -14,6 +14,8 @@ namespace CPU_S
 
         public static string VOLTAGE = "V";
 
-        public static string NOT_FOUND = "Not found or unknown.";
+        public static string NOT_FOUND_OR_UNKNOWN = "Not found or unknown.";
+
+        public static string AVAILABLE_FOR_ASSIGNMENT = "Available for assignment";
     }
 }
