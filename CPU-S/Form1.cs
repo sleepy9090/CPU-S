@@ -45,7 +45,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.ConfigManagerErrorCode = 0;
+                CPU.ConfigManagerErrorCode = uint.MaxValue;
             }
 
             try
@@ -96,7 +96,7 @@ namespace CPU_S
             }
             
 
-            CPU.L2CacheSize = (uint)cpu["L2CacheSize"] * 1024;
+            CPU.L2CacheSize = (uint)cpu["L2CacheSize"];
 
             try
             {
@@ -107,7 +107,7 @@ namespace CPU_S
                 CPU.L2CacheSpeed = 0;
             }
             
-            CPU.L3CacheSize = (uint)cpu["L3CacheSize"] * 1024;
+            CPU.L3CacheSize = (uint)cpu["L3CacheSize"];
 
             try
             {
@@ -182,39 +182,64 @@ namespace CPU_S
 
         private void PopulateCPUInfo()
         {
-            textBoxCPUAddressWidth.Text = $"{CPU.AddressWidth.ToString()} {CPUConstants.BITS}";
-            textBoxCPUArchitecture.Text = $"{CPU.Architecture.ToString()} - {cpuHelper.GetArchitecture(CPU.Architecture)}";
-            textBoxCPUAssetTag.Text = CPU.AssetTag.ToString();
-            textBoxCPUAvailability.Text = $"{CPU.Availability.ToString()} - {cpuHelper.GetAvailability(CPU.Availability)}";
-            textBoxCPUCaption.Text = CPU.Caption.ToString();
-            textBoxCPUCharacteristics.Text = CPU.Characteristics.ToString();
-            textBoxCPUConfigManagerErrorCode.Text = CPU.ConfigManagerErrorCode.ToString();
+            textBoxCPUAddressWidth.Text = $"{CPU.AddressWidth} {CPUConstants.BITS}";
+            textBoxCPUArchitecture.Text = $"{CPU.Architecture} - {cpuHelper.GetArchitecture(CPU.Architecture)}";
+            textBoxCPUAssetTag.Text = CPU.AssetTag;
+            textBoxCPUAvailability.Text = $"{CPU.Availability} - {cpuHelper.GetAvailability(CPU.Availability)}";
+            textBoxCPUCaption.Text = CPU.Caption;
+            textBoxCPUCharacteristics.Text = $"{CPU.Characteristics} - {cpuHelper.GetCharacteristics(CPU.Characteristics)}";
+            if (CPU.ConfigManagerErrorCode == uint.MaxValue)
+            {
+                textBoxCPUConfigManagerErrorCode.Text = $"{CPUConstants.NOT_FOUND} - {cpuHelper.GetConfigManagerErrorCode(CPU.ConfigManagerErrorCode)}";
+            }
+            else
+            {
+                textBoxCPUConfigManagerErrorCode.Text = $"{CPU.ConfigManagerErrorCode} - {cpuHelper.GetConfigManagerErrorCode(CPU.ConfigManagerErrorCode)}";
+            }
+                
             textBoxCPUConfigManagerUserConfig.Text = CPU.ConfigManagerUserConfig.ToString();
-            textBoxCPUCpuStatus.Text = CPU.CpuStatus.ToString();
-            textBoxCPUCreationClassName.Text = CPU.CreationClassName.ToString();
+            textBoxCPUCpuStatus.Text = $"{CPU.CpuStatus.ToString()} - {cpuHelper.GetStatus(CPU.CpuStatus)}";
+            textBoxCPUCreationClassName.Text = CPU.CreationClassName;
             textBoxCPUCurrentClockSpeed.Text = CPU.CurrentClockSpeed.ToString();
             textBoxCPUCurrentVoltage.Text = CPU.CurrentVoltage.ToString();
             textBoxCPUDataWidth.Text = CPU.DataWidth.ToString();
             textBoxCPUDescription.Text = CPU.Description;
-            textBoxCPUDeviceID.Text = CPU.DeviceID.ToString();
+            textBoxCPUDeviceID.Text = CPU.DeviceID;
             textBoxCPUErrorCleared.Text = CPU.ErrorCleared.ToString();
 
             if(!String.IsNullOrEmpty(CPU.ErrorDescription))
             {
-                textBoxCPUErrorDescription.Text = CPU.ErrorDescription.ToString();
+                textBoxCPUErrorDescription.Text = CPU.ErrorDescription;
             }
 
             textBoxCPUExtClock.Text = CPU.ExtClock.ToString();
             textBoxCPUFamily.Text = CPU.Family.ToString();
             textBoxCPUInstallDate.Text = CPU.InstallDate.ToString();
-            textBoxCPUL2CacheSize.Text = CPU.L2CacheSize.ToString();
-            textBoxCPUL2CacheSpeed.Text = CPU.L2CacheSpeed.ToString();
-            textBoxCPUL3CacheSize.Text = CPU.L3CacheSize.ToString();
-            textBoxCPUL3CacheSpeed.Text = CPU.L3CacheSpeed.ToString();
+
+            textBoxCPUL2CacheSize.Text = CPU.L2CacheSize.ToString() + " / " + cpuHelper.GetCacheSizeFull(CPU.L2CacheSize);
+            if (CPU.L2CacheSpeed == 0)
+            {
+                textBoxCPUL2CacheSpeed.Text = CPU.L2CacheSpeed.ToString() + " - " + "Not found or unknown.";
+            }
+            else
+            {
+                textBoxCPUL2CacheSpeed.Text = CPU.L2CacheSpeed.ToString();
+            }
+
+            textBoxCPUL3CacheSize.Text = CPU.L3CacheSize.ToString() + " / " + cpuHelper.GetCacheSizeFull(CPU.L3CacheSize);
+
+            if (CPU.L3CacheSpeed == 0)
+            {
+                textBoxCPUL3CacheSpeed.Text = CPU.L3CacheSpeed.ToString() + " - " + "Not found or unknown.";
+            }
+            else
+            {
+                textBoxCPUL3CacheSpeed.Text = CPU.L3CacheSpeed.ToString();
+            }
             textBoxCPULastErrorCode.Text = CPU.LastErrorCode.ToString();
             textBoxCPULevel.Text = CPU.Level.ToString();
             textBoxCPULoadPercentage.Text = CPU.LoadPercentage.ToString();
-            textBoxCPUManufacturer.Text = CPU.Manufacturer.ToString();
+            textBoxCPUManufacturer.Text = CPU.Manufacturer;
             textBoxCPUMaxClockSpeed.Text = CPU.MaxClockSpeed.ToString();
             textBoxCPUName.Text = CPU.Name;
             textBoxCPUNumberOfCores.Text = CPU.NumberOfCores.ToString();
@@ -223,11 +248,11 @@ namespace CPU_S
 
             if (!String.IsNullOrEmpty(CPU.OtherFamilyDescription))
             {
-                textBoxCPUOtherFamilyDescription.Text = CPU.OtherFamilyDescription.ToString();
+                textBoxCPUOtherFamilyDescription.Text = CPU.OtherFamilyDescription;
             }
             
-            textBoxCPUPartNumber.Text = CPU.PartNumber.ToString();
-            textBoxCPUPNPDeviceID.Text = CPU.DeviceID.ToString();
+            textBoxCPUPartNumber.Text = CPU.PartNumber;
+            textBoxCPUPNPDeviceID.Text = CPU.DeviceID;
 
             if ((null != CPU.PowerManagementCapabilities))
             {
@@ -242,24 +267,24 @@ namespace CPU_S
             textBoxCPUProcessorId.Text = CPU.ProcessorId;
             textBoxCPUProcessorType.Text = CPU.ProcessorType.ToString();
             textBoxCPURevision.Text = CPU.Revision.ToString();
-            textBoxCPURole.Text = CPU.Role.ToString();
+            textBoxCPURole.Text = CPU.Role;
             textBoxCPUSecondLevelAddressTranslationExtensions.Text = CPU.SecondLevelAddressTranslationExtensions.ToString();
-            textBoxCPUSerialNumber.Text = CPU.SerialNumber.ToString();
+            textBoxCPUSerialNumber.Text = CPU.SerialNumber;
             textBoxCPUSocketDesignation.Text = CPU.SocketDesignation;
-            textBoxCPUStatus.Text = CPU.Status.ToString();
+            textBoxCPUStatus.Text = CPU.Status;
             textBoxCPUStatusInfo.Text = CPU.StatusInfo.ToString();
             textBoxCPUStepping.Text = CPU.StatusInfo.ToString();
-            textBoxCPUSystemCreationClassName.Text = CPU.SystemCreationClassName.ToString();
-            textBoxCPUSystemName.Text = CPU.SystemName.ToString();
+            textBoxCPUSystemCreationClassName.Text = CPU.SystemCreationClassName;
+            textBoxCPUSystemName.Text = CPU.SystemName;
             textBoxCPUThreadCount.Text = CPU.ThreadCount.ToString();
 
             if (!String.IsNullOrEmpty(CPU.UniqueId))
             {
-                textBoxCPUUniqueId.Text = CPU.UniqueId.ToString();
+                textBoxCPUUniqueId.Text = CPU.UniqueId;
             }
             
             textBoxCPUUpgradeMethod.Text = CPU.UpgradeMethod.ToString();
-            textBoxCPUVersion.Text = CPU.Version.ToString();
+            textBoxCPUVersion.Text = CPU.Version;
             textBoxCPUVirtualizationFirmwareEnabled.Text = CPU.VirtualizationFirmwareEnabled.ToString();
             textBoxCPUVMMonitorModeExtensions.Text = CPU.VMMonitorModeExtensions.ToString();
             textBoxCPUVoltageCaps.Text = CPU.VoltageCaps.ToString();

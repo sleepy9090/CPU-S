@@ -9,5 +9,7 @@ namespace CPU_S
     internal static class CPUConstants
     {
         public static string BITS = "bits";
+
+        public static string NOT_FOUND = "NOT FOUND";
     }
 }

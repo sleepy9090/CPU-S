@@ -29,6 +29,94 @@
         private void InitializeComponent()
         {
             this.groupBoxCPU = new System.Windows.Forms.GroupBox();
+            this.labelCPUVoltageCaps = new System.Windows.Forms.Label();
+            this.textBoxCPUVoltageCaps = new System.Windows.Forms.TextBox();
+            this.labelCPUVMMonitorModeExtensions = new System.Windows.Forms.Label();
+            this.textBoxCPUVMMonitorModeExtensions = new System.Windows.Forms.TextBox();
+            this.labelCPUVirtualizationFirmwareEnabled = new System.Windows.Forms.Label();
+            this.textBoxCPUVirtualizationFirmwareEnabled = new System.Windows.Forms.TextBox();
+            this.labelCPUVersion = new System.Windows.Forms.Label();
+            this.textBoxCPUVersion = new System.Windows.Forms.TextBox();
+            this.labelCPUUpgradeMethod = new System.Windows.Forms.Label();
+            this.textBoxCPUUpgradeMethod = new System.Windows.Forms.TextBox();
+            this.labelCPUUniqueId = new System.Windows.Forms.Label();
+            this.textBoxCPUUniqueId = new System.Windows.Forms.TextBox();
+            this.labelCPUThreadCount = new System.Windows.Forms.Label();
+            this.textBoxCPUThreadCount = new System.Windows.Forms.TextBox();
+            this.labelCPUSystemName = new System.Windows.Forms.Label();
+            this.textBoxCPUSystemName = new System.Windows.Forms.TextBox();
+            this.labelCPUSystemCreationClassName = new System.Windows.Forms.Label();
+            this.textBoxCPUSystemCreationClassName = new System.Windows.Forms.TextBox();
+            this.labelCPUStepping = new System.Windows.Forms.Label();
+            this.textBoxCPUStepping = new System.Windows.Forms.TextBox();
+            this.labelCPUStatusInfo = new System.Windows.Forms.Label();
+            this.textBoxCPUStatusInfo = new System.Windows.Forms.TextBox();
+            this.labelCPUStatus = new System.Windows.Forms.Label();
+            this.textBoxCPUStatus = new System.Windows.Forms.TextBox();
+            this.labelCPUSerialNumber = new System.Windows.Forms.Label();
+            this.textBoxCPUSerialNumber = new System.Windows.Forms.TextBox();
+            this.labelCPUSecondLevelAddressTranslationExtensions = new System.Windows.Forms.Label();
+            this.textBoxCPUSecondLevelAddressTranslationExtensions = new System.Windows.Forms.TextBox();
+            this.labelCPURole = new System.Windows.Forms.Label();
+            this.textBoxCPURole = new System.Windows.Forms.TextBox();
+            this.labelCPURevision = new System.Windows.Forms.Label();
+            this.textBoxCPURevision = new System.Windows.Forms.TextBox();
+            this.labelCPUProcessorType = new System.Windows.Forms.Label();
+            this.textBoxCPUProcessorType = new System.Windows.Forms.TextBox();
+            this.labelCPUPowerManagementSupported = new System.Windows.Forms.Label();
+            this.textBoxCPUPowerManagementSupported = new System.Windows.Forms.TextBox();
+            this.labelCPUPowerManagementCapabilities = new System.Windows.Forms.Label();
+            this.textBoxCPUPowerManagementCapabilities = new System.Windows.Forms.TextBox();
+            this.labelCPUPNPDeviceID = new System.Windows.Forms.Label();
+            this.textBoxCPUPNPDeviceID = new System.Windows.Forms.TextBox();
+            this.labelCPUPartNumber = new System.Windows.Forms.Label();
+            this.textBoxCPUPartNumber = new System.Windows.Forms.TextBox();
+            this.labelCPUOtherFamilyDescription = new System.Windows.Forms.Label();
+            this.textBoxCPUOtherFamilyDescription = new System.Windows.Forms.TextBox();
+            this.labelCPUNumberOfEnabledCore = new System.Windows.Forms.Label();
+            this.textBoxCPUNumberOfEnabledCore = new System.Windows.Forms.TextBox();
+            this.labelCPUManufacturer = new System.Windows.Forms.Label();
+            this.textBoxCPUManufacturer = new System.Windows.Forms.TextBox();
+            this.labelCPULoadPercentage = new System.Windows.Forms.Label();
+            this.textBoxCPULoadPercentage = new System.Windows.Forms.TextBox();
+            this.labelCPULevel = new System.Windows.Forms.Label();
+            this.textBoxCPULevel = new System.Windows.Forms.TextBox();
+            this.labelCPULastErrorCode = new System.Windows.Forms.Label();
+            this.textBoxCPULastErrorCode = new System.Windows.Forms.TextBox();
+            this.labelCPUL3CacheSpeed = new System.Windows.Forms.Label();
+            this.textBoxCPUL3CacheSpeed = new System.Windows.Forms.TextBox();
+            this.labelCPUL2CacheSpeed = new System.Windows.Forms.Label();
+            this.textBoxCPUL2CacheSpeed = new System.Windows.Forms.TextBox();
+            this.labelCPUInstallDate = new System.Windows.Forms.Label();
+            this.textBoxCPUInstallDate = new System.Windows.Forms.TextBox();
+            this.labelCPUFamily = new System.Windows.Forms.Label();
+            this.textBoxCPUFamily = new System.Windows.Forms.TextBox();
+            this.labelCPUErrorDescription = new System.Windows.Forms.Label();
+            this.textBoxCPUErrorDescription = new System.Windows.Forms.TextBox();
+            this.labelCPUErrorCleared = new System.Windows.Forms.Label();
+            this.textBoxCPUErrorCleared = new System.Windows.Forms.TextBox();
+            this.labelCPUDeviceID = new System.Windows.Forms.Label();
+            this.textBoxCPUDeviceID = new System.Windows.Forms.TextBox();
+            this.labelCPUCurrentVoltage = new System.Windows.Forms.Label();
+            this.textBoxCPUCurrentVoltage = new System.Windows.Forms.TextBox();
+            this.labelCPUCurrentClockSpeed = new System.Windows.Forms.Label();
+            this.textBoxCPUCurrentClockSpeed = new System.Windows.Forms.TextBox();
+            this.labelCPUCreationClassName = new System.Windows.Forms.Label();
+            this.textBoxCPUCreationClassName = new System.Windows.Forms.TextBox();
+            this.labelCPUCpuStatus = new System.Windows.Forms.Label();
+            this.textBoxCPUCpuStatus = new System.Windows.Forms.TextBox();
+            this.labelCPUConfigManagerUserConfig = new System.Windows.Forms.Label();
+            this.textBoxCPUConfigManagerUserConfig = new System.Windows.Forms.TextBox();
+            this.labelCPUConfigManagerErrorCode = new System.Windows.Forms.Label();
+            this.textBoxCPUConfigManagerErrorCode = new System.Windows.Forms.TextBox();
+            this.labelCPUCharacteristics = new System.Windows.Forms.Label();
+            this.textBoxCPUCharacteristics = new System.Windows.Forms.TextBox();
+            this.labelCPUCaption = new System.Windows.Forms.Label();
+            this.textBoxCPUCaption = new System.Windows.Forms.TextBox();
+            this.labelCPUAvailability = new System.Windows.Forms.Label();
+            this.textBoxCPUAvailability = new System.Windows.Forms.TextBox();
+            this.labelCPUAssetTag = new System.Windows.Forms.Label();
+            this.textBoxCPUAssetTag = new System.Windows.Forms.TextBox();
             this.labelCPUNumberOfLogicalProcessors = new System.Windows.Forms.Label();
             this.labelCPUNumberOfCores = new System.Windows.Forms.Label();
             this.labelCPUL3CacheSize = new System.Windows.Forms.Label();
@@ -55,94 +143,6 @@
             this.textBoxCPUName = new System.Windows.Forms.TextBox();
             this.textBoxCPUSocketDesignation = new System.Windows.Forms.TextBox();
             this.textBoxCPUProcessorId = new System.Windows.Forms.TextBox();
-            this.labelCPUAssetTag = new System.Windows.Forms.Label();
-            this.textBoxCPUAssetTag = new System.Windows.Forms.TextBox();
-            this.labelCPUAvailability = new System.Windows.Forms.Label();
-            this.textBoxCPUAvailability = new System.Windows.Forms.TextBox();
-            this.labelCPUCaption = new System.Windows.Forms.Label();
-            this.textBoxCPUCaption = new System.Windows.Forms.TextBox();
-            this.labelCPUCharacteristics = new System.Windows.Forms.Label();
-            this.textBoxCPUCharacteristics = new System.Windows.Forms.TextBox();
-            this.labelCPUConfigManagerErrorCode = new System.Windows.Forms.Label();
-            this.textBoxCPUConfigManagerErrorCode = new System.Windows.Forms.TextBox();
-            this.labelCPUConfigManagerUserConfig = new System.Windows.Forms.Label();
-            this.textBoxCPUConfigManagerUserConfig = new System.Windows.Forms.TextBox();
-            this.labelCPUCpuStatus = new System.Windows.Forms.Label();
-            this.textBoxCPUCpuStatus = new System.Windows.Forms.TextBox();
-            this.labelCPUCreationClassName = new System.Windows.Forms.Label();
-            this.textBoxCPUCreationClassName = new System.Windows.Forms.TextBox();
-            this.labelCPUCurrentClockSpeed = new System.Windows.Forms.Label();
-            this.textBoxCPUCurrentClockSpeed = new System.Windows.Forms.TextBox();
-            this.labelCPUCurrentVoltage = new System.Windows.Forms.Label();
-            this.textBoxCPUCurrentVoltage = new System.Windows.Forms.TextBox();
-            this.labelCPUDeviceID = new System.Windows.Forms.Label();
-            this.textBoxCPUDeviceID = new System.Windows.Forms.TextBox();
-            this.labelCPUErrorCleared = new System.Windows.Forms.Label();
-            this.textBoxCPUErrorCleared = new System.Windows.Forms.TextBox();
-            this.labelCPUErrorDescription = new System.Windows.Forms.Label();
-            this.textBoxCPUErrorDescription = new System.Windows.Forms.TextBox();
-            this.labelCPUFamily = new System.Windows.Forms.Label();
-            this.textBoxCPUFamily = new System.Windows.Forms.TextBox();
-            this.labelCPUInstallDate = new System.Windows.Forms.Label();
-            this.textBoxCPUInstallDate = new System.Windows.Forms.TextBox();
-            this.labelCPUL2CacheSpeed = new System.Windows.Forms.Label();
-            this.textBoxCPUL2CacheSpeed = new System.Windows.Forms.TextBox();
-            this.labelCPUL3CacheSpeed = new System.Windows.Forms.Label();
-            this.textBoxCPUL3CacheSpeed = new System.Windows.Forms.TextBox();
-            this.labelCPULastErrorCode = new System.Windows.Forms.Label();
-            this.textBoxCPULastErrorCode = new System.Windows.Forms.TextBox();
-            this.labelCPULevel = new System.Windows.Forms.Label();
-            this.textBoxCPULevel = new System.Windows.Forms.TextBox();
-            this.labelCPULoadPercentage = new System.Windows.Forms.Label();
-            this.textBoxCPULoadPercentage = new System.Windows.Forms.TextBox();
-            this.labelCPUManufacturer = new System.Windows.Forms.Label();
-            this.textBoxCPUManufacturer = new System.Windows.Forms.TextBox();
-            this.labelCPUNumberOfEnabledCore = new System.Windows.Forms.Label();
-            this.textBoxCPUNumberOfEnabledCore = new System.Windows.Forms.TextBox();
-            this.labelCPUOtherFamilyDescription = new System.Windows.Forms.Label();
-            this.textBoxCPUOtherFamilyDescription = new System.Windows.Forms.TextBox();
-            this.labelCPUPartNumber = new System.Windows.Forms.Label();
-            this.textBoxCPUPartNumber = new System.Windows.Forms.TextBox();
-            this.labelCPUPNPDeviceID = new System.Windows.Forms.Label();
-            this.textBoxCPUPNPDeviceID = new System.Windows.Forms.TextBox();
-            this.labelCPUPowerManagementCapabilities = new System.Windows.Forms.Label();
-            this.textBoxCPUPowerManagementCapabilities = new System.Windows.Forms.TextBox();
-            this.labelCPUPowerManagementSupported = new System.Windows.Forms.Label();
-            this.textBoxCPUPowerManagementSupported = new System.Windows.Forms.TextBox();
-            this.labelCPUProcessorType = new System.Windows.Forms.Label();
-            this.textBoxCPUProcessorType = new System.Windows.Forms.TextBox();
-            this.labelCPURevision = new System.Windows.Forms.Label();
-            this.textBoxCPURevision = new System.Windows.Forms.TextBox();
-            this.labelCPURole = new System.Windows.Forms.Label();
-            this.textBoxCPURole = new System.Windows.Forms.TextBox();
-            this.labelCPUSecondLevelAddressTranslationExtensions = new System.Windows.Forms.Label();
-            this.textBoxCPUSecondLevelAddressTranslationExtensions = new System.Windows.Forms.TextBox();
-            this.labelCPUSerialNumber = new System.Windows.Forms.Label();
-            this.textBoxCPUSerialNumber = new System.Windows.Forms.TextBox();
-            this.labelCPUStatus = new System.Windows.Forms.Label();
-            this.textBoxCPUStatus = new System.Windows.Forms.TextBox();
-            this.labelCPUStatusInfo = new System.Windows.Forms.Label();
-            this.textBoxCPUStatusInfo = new System.Windows.Forms.TextBox();
-            this.labelCPUStepping = new System.Windows.Forms.Label();
-            this.textBoxCPUStepping = new System.Windows.Forms.TextBox();
-            this.labelCPUSystemCreationClassName = new System.Windows.Forms.Label();
-            this.textBoxCPUSystemCreationClassName = new System.Windows.Forms.TextBox();
-            this.labelCPUSystemName = new System.Windows.Forms.Label();
-            this.textBoxCPUSystemName = new System.Windows.Forms.TextBox();
-            this.labelCPUThreadCount = new System.Windows.Forms.Label();
-            this.textBoxCPUThreadCount = new System.Windows.Forms.TextBox();
-            this.labelCPUUniqueId = new System.Windows.Forms.Label();
-            this.textBoxCPUUniqueId = new System.Windows.Forms.TextBox();
-            this.labelCPUUpgradeMethod = new System.Windows.Forms.Label();
-            this.textBoxCPUUpgradeMethod = new System.Windows.Forms.TextBox();
-            this.labelCPUVersion = new System.Windows.Forms.Label();
-            this.textBoxCPUVersion = new System.Windows.Forms.TextBox();
-            this.labelCPUVirtualizationFirmwareEnabled = new System.Windows.Forms.Label();
-            this.textBoxCPUVirtualizationFirmwareEnabled = new System.Windows.Forms.TextBox();
-            this.labelCPUVMMonitorModeExtensions = new System.Windows.Forms.Label();
-            this.textBoxCPUVMMonitorModeExtensions = new System.Windows.Forms.TextBox();
-            this.labelCPUVoltageCaps = new System.Windows.Forms.Label();
-            this.textBoxCPUVoltageCaps = new System.Windows.Forms.TextBox();
             this.groupBoxCPU.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -269,6 +269,798 @@
             this.groupBoxCPU.Size = new System.Drawing.Size(989, 710);
             this.groupBoxCPU.TabIndex = 0;
             this.groupBoxCPU.TabStop = false;
+            // 
+            // labelCPUVoltageCaps
+            // 
+            this.labelCPUVoltageCaps.AutoSize = true;
+            this.labelCPUVoltageCaps.Location = new System.Drawing.Point(406, 665);
+            this.labelCPUVoltageCaps.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUVoltageCaps.Name = "labelCPUVoltageCaps";
+            this.labelCPUVoltageCaps.Size = new System.Drawing.Size(73, 13);
+            this.labelCPUVoltageCaps.TabIndex = 112;
+            this.labelCPUVoltageCaps.Text = "Voltage Caps:";
+            // 
+            // textBoxCPUVoltageCaps
+            // 
+            this.textBoxCPUVoltageCaps.Location = new System.Drawing.Point(636, 662);
+            this.textBoxCPUVoltageCaps.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUVoltageCaps.Name = "textBoxCPUVoltageCaps";
+            this.textBoxCPUVoltageCaps.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUVoltageCaps.TabIndex = 111;
+            // 
+            // labelCPUVMMonitorModeExtensions
+            // 
+            this.labelCPUVMMonitorModeExtensions.AutoSize = true;
+            this.labelCPUVMMonitorModeExtensions.Location = new System.Drawing.Point(406, 641);
+            this.labelCPUVMMonitorModeExtensions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUVMMonitorModeExtensions.Name = "labelCPUVMMonitorModeExtensions";
+            this.labelCPUVMMonitorModeExtensions.Size = new System.Drawing.Size(148, 13);
+            this.labelCPUVMMonitorModeExtensions.TabIndex = 110;
+            this.labelCPUVMMonitorModeExtensions.Text = "VM Monitor Mode Extensions:";
+            // 
+            // textBoxCPUVMMonitorModeExtensions
+            // 
+            this.textBoxCPUVMMonitorModeExtensions.Location = new System.Drawing.Point(636, 638);
+            this.textBoxCPUVMMonitorModeExtensions.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUVMMonitorModeExtensions.Name = "textBoxCPUVMMonitorModeExtensions";
+            this.textBoxCPUVMMonitorModeExtensions.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUVMMonitorModeExtensions.TabIndex = 109;
+            // 
+            // labelCPUVirtualizationFirmwareEnabled
+            // 
+            this.labelCPUVirtualizationFirmwareEnabled.AutoSize = true;
+            this.labelCPUVirtualizationFirmwareEnabled.Location = new System.Drawing.Point(406, 617);
+            this.labelCPUVirtualizationFirmwareEnabled.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUVirtualizationFirmwareEnabled.Name = "labelCPUVirtualizationFirmwareEnabled";
+            this.labelCPUVirtualizationFirmwareEnabled.Size = new System.Drawing.Size(156, 13);
+            this.labelCPUVirtualizationFirmwareEnabled.TabIndex = 108;
+            this.labelCPUVirtualizationFirmwareEnabled.Text = "Virtualization Firmware Enabled:";
+            // 
+            // textBoxCPUVirtualizationFirmwareEnabled
+            // 
+            this.textBoxCPUVirtualizationFirmwareEnabled.Location = new System.Drawing.Point(636, 614);
+            this.textBoxCPUVirtualizationFirmwareEnabled.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUVirtualizationFirmwareEnabled.Name = "textBoxCPUVirtualizationFirmwareEnabled";
+            this.textBoxCPUVirtualizationFirmwareEnabled.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUVirtualizationFirmwareEnabled.TabIndex = 107;
+            // 
+            // labelCPUVersion
+            // 
+            this.labelCPUVersion.AutoSize = true;
+            this.labelCPUVersion.Location = new System.Drawing.Point(406, 593);
+            this.labelCPUVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUVersion.Name = "labelCPUVersion";
+            this.labelCPUVersion.Size = new System.Drawing.Size(45, 13);
+            this.labelCPUVersion.TabIndex = 106;
+            this.labelCPUVersion.Text = "Version:";
+            // 
+            // textBoxCPUVersion
+            // 
+            this.textBoxCPUVersion.Location = new System.Drawing.Point(636, 590);
+            this.textBoxCPUVersion.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUVersion.Name = "textBoxCPUVersion";
+            this.textBoxCPUVersion.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUVersion.TabIndex = 105;
+            // 
+            // labelCPUUpgradeMethod
+            // 
+            this.labelCPUUpgradeMethod.AutoSize = true;
+            this.labelCPUUpgradeMethod.Location = new System.Drawing.Point(406, 570);
+            this.labelCPUUpgradeMethod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUUpgradeMethod.Name = "labelCPUUpgradeMethod";
+            this.labelCPUUpgradeMethod.Size = new System.Drawing.Size(90, 13);
+            this.labelCPUUpgradeMethod.TabIndex = 104;
+            this.labelCPUUpgradeMethod.Text = "Upgrade Method:";
+            // 
+            // textBoxCPUUpgradeMethod
+            // 
+            this.textBoxCPUUpgradeMethod.Location = new System.Drawing.Point(636, 567);
+            this.textBoxCPUUpgradeMethod.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUUpgradeMethod.Name = "textBoxCPUUpgradeMethod";
+            this.textBoxCPUUpgradeMethod.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUUpgradeMethod.TabIndex = 103;
+            // 
+            // labelCPUUniqueId
+            // 
+            this.labelCPUUniqueId.AutoSize = true;
+            this.labelCPUUniqueId.Location = new System.Drawing.Point(406, 546);
+            this.labelCPUUniqueId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUUniqueId.Name = "labelCPUUniqueId";
+            this.labelCPUUniqueId.Size = new System.Drawing.Size(58, 13);
+            this.labelCPUUniqueId.TabIndex = 102;
+            this.labelCPUUniqueId.Text = "Unique ID:";
+            // 
+            // textBoxCPUUniqueId
+            // 
+            this.textBoxCPUUniqueId.Location = new System.Drawing.Point(636, 543);
+            this.textBoxCPUUniqueId.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUUniqueId.Name = "textBoxCPUUniqueId";
+            this.textBoxCPUUniqueId.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUUniqueId.TabIndex = 101;
+            // 
+            // labelCPUThreadCount
+            // 
+            this.labelCPUThreadCount.AutoSize = true;
+            this.labelCPUThreadCount.Location = new System.Drawing.Point(406, 522);
+            this.labelCPUThreadCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUThreadCount.Name = "labelCPUThreadCount";
+            this.labelCPUThreadCount.Size = new System.Drawing.Size(75, 13);
+            this.labelCPUThreadCount.TabIndex = 100;
+            this.labelCPUThreadCount.Text = "Thread Count:";
+            // 
+            // textBoxCPUThreadCount
+            // 
+            this.textBoxCPUThreadCount.Location = new System.Drawing.Point(636, 519);
+            this.textBoxCPUThreadCount.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUThreadCount.Name = "textBoxCPUThreadCount";
+            this.textBoxCPUThreadCount.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUThreadCount.TabIndex = 99;
+            // 
+            // labelCPUSystemName
+            // 
+            this.labelCPUSystemName.AutoSize = true;
+            this.labelCPUSystemName.Location = new System.Drawing.Point(406, 498);
+            this.labelCPUSystemName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUSystemName.Name = "labelCPUSystemName";
+            this.labelCPUSystemName.Size = new System.Drawing.Size(75, 13);
+            this.labelCPUSystemName.TabIndex = 98;
+            this.labelCPUSystemName.Text = "System Name:";
+            // 
+            // textBoxCPUSystemName
+            // 
+            this.textBoxCPUSystemName.Location = new System.Drawing.Point(636, 495);
+            this.textBoxCPUSystemName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUSystemName.Name = "textBoxCPUSystemName";
+            this.textBoxCPUSystemName.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUSystemName.TabIndex = 97;
+            // 
+            // labelCPUSystemCreationClassName
+            // 
+            this.labelCPUSystemCreationClassName.AutoSize = true;
+            this.labelCPUSystemCreationClassName.Location = new System.Drawing.Point(406, 474);
+            this.labelCPUSystemCreationClassName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUSystemCreationClassName.Name = "labelCPUSystemCreationClassName";
+            this.labelCPUSystemCreationClassName.Size = new System.Drawing.Size(145, 13);
+            this.labelCPUSystemCreationClassName.TabIndex = 96;
+            this.labelCPUSystemCreationClassName.Text = "System Creation Class Name:";
+            // 
+            // textBoxCPUSystemCreationClassName
+            // 
+            this.textBoxCPUSystemCreationClassName.Location = new System.Drawing.Point(636, 471);
+            this.textBoxCPUSystemCreationClassName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUSystemCreationClassName.Name = "textBoxCPUSystemCreationClassName";
+            this.textBoxCPUSystemCreationClassName.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUSystemCreationClassName.TabIndex = 95;
+            // 
+            // labelCPUStepping
+            // 
+            this.labelCPUStepping.AutoSize = true;
+            this.labelCPUStepping.Location = new System.Drawing.Point(406, 450);
+            this.labelCPUStepping.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUStepping.Name = "labelCPUStepping";
+            this.labelCPUStepping.Size = new System.Drawing.Size(52, 13);
+            this.labelCPUStepping.TabIndex = 94;
+            this.labelCPUStepping.Text = "Stepping:";
+            // 
+            // textBoxCPUStepping
+            // 
+            this.textBoxCPUStepping.Location = new System.Drawing.Point(636, 447);
+            this.textBoxCPUStepping.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUStepping.Name = "textBoxCPUStepping";
+            this.textBoxCPUStepping.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUStepping.TabIndex = 93;
+            // 
+            // labelCPUStatusInfo
+            // 
+            this.labelCPUStatusInfo.AutoSize = true;
+            this.labelCPUStatusInfo.Location = new System.Drawing.Point(406, 426);
+            this.labelCPUStatusInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUStatusInfo.Name = "labelCPUStatusInfo";
+            this.labelCPUStatusInfo.Size = new System.Drawing.Size(61, 13);
+            this.labelCPUStatusInfo.TabIndex = 92;
+            this.labelCPUStatusInfo.Text = "Status Info:";
+            // 
+            // textBoxCPUStatusInfo
+            // 
+            this.textBoxCPUStatusInfo.Location = new System.Drawing.Point(636, 423);
+            this.textBoxCPUStatusInfo.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUStatusInfo.Name = "textBoxCPUStatusInfo";
+            this.textBoxCPUStatusInfo.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUStatusInfo.TabIndex = 91;
+            // 
+            // labelCPUStatus
+            // 
+            this.labelCPUStatus.AutoSize = true;
+            this.labelCPUStatus.Location = new System.Drawing.Point(406, 402);
+            this.labelCPUStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUStatus.Name = "labelCPUStatus";
+            this.labelCPUStatus.Size = new System.Drawing.Size(40, 13);
+            this.labelCPUStatus.TabIndex = 90;
+            this.labelCPUStatus.Text = "Status:";
+            // 
+            // textBoxCPUStatus
+            // 
+            this.textBoxCPUStatus.Location = new System.Drawing.Point(636, 399);
+            this.textBoxCPUStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUStatus.Name = "textBoxCPUStatus";
+            this.textBoxCPUStatus.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUStatus.TabIndex = 89;
+            // 
+            // labelCPUSerialNumber
+            // 
+            this.labelCPUSerialNumber.AutoSize = true;
+            this.labelCPUSerialNumber.Location = new System.Drawing.Point(406, 354);
+            this.labelCPUSerialNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUSerialNumber.Name = "labelCPUSerialNumber";
+            this.labelCPUSerialNumber.Size = new System.Drawing.Size(76, 13);
+            this.labelCPUSerialNumber.TabIndex = 88;
+            this.labelCPUSerialNumber.Text = "Serial Number:";
+            // 
+            // textBoxCPUSerialNumber
+            // 
+            this.textBoxCPUSerialNumber.Location = new System.Drawing.Point(636, 351);
+            this.textBoxCPUSerialNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUSerialNumber.Name = "textBoxCPUSerialNumber";
+            this.textBoxCPUSerialNumber.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUSerialNumber.TabIndex = 87;
+            // 
+            // labelCPUSecondLevelAddressTranslationExtensions
+            // 
+            this.labelCPUSecondLevelAddressTranslationExtensions.AutoSize = true;
+            this.labelCPUSecondLevelAddressTranslationExtensions.Location = new System.Drawing.Point(406, 330);
+            this.labelCPUSecondLevelAddressTranslationExtensions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUSecondLevelAddressTranslationExtensions.Name = "labelCPUSecondLevelAddressTranslationExtensions";
+            this.labelCPUSecondLevelAddressTranslationExtensions.Size = new System.Drawing.Size(226, 13);
+            this.labelCPUSecondLevelAddressTranslationExtensions.TabIndex = 86;
+            this.labelCPUSecondLevelAddressTranslationExtensions.Text = "Second Level Address Translation Extensions:";
+            // 
+            // textBoxCPUSecondLevelAddressTranslationExtensions
+            // 
+            this.textBoxCPUSecondLevelAddressTranslationExtensions.Location = new System.Drawing.Point(636, 327);
+            this.textBoxCPUSecondLevelAddressTranslationExtensions.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUSecondLevelAddressTranslationExtensions.Name = "textBoxCPUSecondLevelAddressTranslationExtensions";
+            this.textBoxCPUSecondLevelAddressTranslationExtensions.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUSecondLevelAddressTranslationExtensions.TabIndex = 85;
+            // 
+            // labelCPURole
+            // 
+            this.labelCPURole.AutoSize = true;
+            this.labelCPURole.Location = new System.Drawing.Point(406, 306);
+            this.labelCPURole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPURole.Name = "labelCPURole";
+            this.labelCPURole.Size = new System.Drawing.Size(32, 13);
+            this.labelCPURole.TabIndex = 84;
+            this.labelCPURole.Text = "Role:";
+            // 
+            // textBoxCPURole
+            // 
+            this.textBoxCPURole.Location = new System.Drawing.Point(636, 303);
+            this.textBoxCPURole.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPURole.Name = "textBoxCPURole";
+            this.textBoxCPURole.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPURole.TabIndex = 83;
+            // 
+            // labelCPURevision
+            // 
+            this.labelCPURevision.AutoSize = true;
+            this.labelCPURevision.Location = new System.Drawing.Point(405, 282);
+            this.labelCPURevision.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPURevision.Name = "labelCPURevision";
+            this.labelCPURevision.Size = new System.Drawing.Size(51, 13);
+            this.labelCPURevision.TabIndex = 82;
+            this.labelCPURevision.Text = "Revision:";
+            // 
+            // textBoxCPURevision
+            // 
+            this.textBoxCPURevision.Location = new System.Drawing.Point(636, 279);
+            this.textBoxCPURevision.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPURevision.Name = "textBoxCPURevision";
+            this.textBoxCPURevision.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPURevision.TabIndex = 81;
+            // 
+            // labelCPUProcessorType
+            // 
+            this.labelCPUProcessorType.AutoSize = true;
+            this.labelCPUProcessorType.Location = new System.Drawing.Point(405, 257);
+            this.labelCPUProcessorType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUProcessorType.Name = "labelCPUProcessorType";
+            this.labelCPUProcessorType.Size = new System.Drawing.Size(84, 13);
+            this.labelCPUProcessorType.TabIndex = 80;
+            this.labelCPUProcessorType.Text = "Processor Type:";
+            // 
+            // textBoxCPUProcessorType
+            // 
+            this.textBoxCPUProcessorType.Location = new System.Drawing.Point(636, 254);
+            this.textBoxCPUProcessorType.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUProcessorType.Name = "textBoxCPUProcessorType";
+            this.textBoxCPUProcessorType.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUProcessorType.TabIndex = 79;
+            // 
+            // labelCPUPowerManagementSupported
+            // 
+            this.labelCPUPowerManagementSupported.AutoSize = true;
+            this.labelCPUPowerManagementSupported.Location = new System.Drawing.Point(405, 209);
+            this.labelCPUPowerManagementSupported.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUPowerManagementSupported.Name = "labelCPUPowerManagementSupported";
+            this.labelCPUPowerManagementSupported.Size = new System.Drawing.Size(157, 13);
+            this.labelCPUPowerManagementSupported.TabIndex = 78;
+            this.labelCPUPowerManagementSupported.Text = "Power Management Supported:";
+            // 
+            // textBoxCPUPowerManagementSupported
+            // 
+            this.textBoxCPUPowerManagementSupported.Location = new System.Drawing.Point(636, 206);
+            this.textBoxCPUPowerManagementSupported.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUPowerManagementSupported.Name = "textBoxCPUPowerManagementSupported";
+            this.textBoxCPUPowerManagementSupported.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUPowerManagementSupported.TabIndex = 77;
+            // 
+            // labelCPUPowerManagementCapabilities
+            // 
+            this.labelCPUPowerManagementCapabilities.AutoSize = true;
+            this.labelCPUPowerManagementCapabilities.Location = new System.Drawing.Point(405, 185);
+            this.labelCPUPowerManagementCapabilities.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUPowerManagementCapabilities.Name = "labelCPUPowerManagementCapabilities";
+            this.labelCPUPowerManagementCapabilities.Size = new System.Drawing.Size(161, 13);
+            this.labelCPUPowerManagementCapabilities.TabIndex = 76;
+            this.labelCPUPowerManagementCapabilities.Text = "Power Management Capabilities:";
+            // 
+            // textBoxCPUPowerManagementCapabilities
+            // 
+            this.textBoxCPUPowerManagementCapabilities.Location = new System.Drawing.Point(636, 182);
+            this.textBoxCPUPowerManagementCapabilities.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUPowerManagementCapabilities.Name = "textBoxCPUPowerManagementCapabilities";
+            this.textBoxCPUPowerManagementCapabilities.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUPowerManagementCapabilities.TabIndex = 75;
+            // 
+            // labelCPUPNPDeviceID
+            // 
+            this.labelCPUPNPDeviceID.AutoSize = true;
+            this.labelCPUPNPDeviceID.Location = new System.Drawing.Point(405, 161);
+            this.labelCPUPNPDeviceID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUPNPDeviceID.Name = "labelCPUPNPDeviceID";
+            this.labelCPUPNPDeviceID.Size = new System.Drawing.Size(83, 13);
+            this.labelCPUPNPDeviceID.TabIndex = 74;
+            this.labelCPUPNPDeviceID.Text = "PNP Device ID:";
+            // 
+            // textBoxCPUPNPDeviceID
+            // 
+            this.textBoxCPUPNPDeviceID.Location = new System.Drawing.Point(636, 158);
+            this.textBoxCPUPNPDeviceID.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUPNPDeviceID.Name = "textBoxCPUPNPDeviceID";
+            this.textBoxCPUPNPDeviceID.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUPNPDeviceID.TabIndex = 73;
+            // 
+            // labelCPUPartNumber
+            // 
+            this.labelCPUPartNumber.AutoSize = true;
+            this.labelCPUPartNumber.Location = new System.Drawing.Point(405, 137);
+            this.labelCPUPartNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUPartNumber.Name = "labelCPUPartNumber";
+            this.labelCPUPartNumber.Size = new System.Drawing.Size(69, 13);
+            this.labelCPUPartNumber.TabIndex = 72;
+            this.labelCPUPartNumber.Text = "Part Number:";
+            // 
+            // textBoxCPUPartNumber
+            // 
+            this.textBoxCPUPartNumber.Location = new System.Drawing.Point(636, 134);
+            this.textBoxCPUPartNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUPartNumber.Name = "textBoxCPUPartNumber";
+            this.textBoxCPUPartNumber.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUPartNumber.TabIndex = 71;
+            // 
+            // labelCPUOtherFamilyDescription
+            // 
+            this.labelCPUOtherFamilyDescription.AutoSize = true;
+            this.labelCPUOtherFamilyDescription.Location = new System.Drawing.Point(407, 113);
+            this.labelCPUOtherFamilyDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUOtherFamilyDescription.Name = "labelCPUOtherFamilyDescription";
+            this.labelCPUOtherFamilyDescription.Size = new System.Drawing.Size(124, 13);
+            this.labelCPUOtherFamilyDescription.TabIndex = 70;
+            this.labelCPUOtherFamilyDescription.Text = "Other Family Description:";
+            // 
+            // textBoxCPUOtherFamilyDescription
+            // 
+            this.textBoxCPUOtherFamilyDescription.Location = new System.Drawing.Point(636, 110);
+            this.textBoxCPUOtherFamilyDescription.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUOtherFamilyDescription.Name = "textBoxCPUOtherFamilyDescription";
+            this.textBoxCPUOtherFamilyDescription.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUOtherFamilyDescription.TabIndex = 69;
+            // 
+            // labelCPUNumberOfEnabledCore
+            // 
+            this.labelCPUNumberOfEnabledCore.AutoSize = true;
+            this.labelCPUNumberOfEnabledCore.Location = new System.Drawing.Point(406, 65);
+            this.labelCPUNumberOfEnabledCore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUNumberOfEnabledCore.Name = "labelCPUNumberOfEnabledCore";
+            this.labelCPUNumberOfEnabledCore.Size = new System.Drawing.Size(126, 13);
+            this.labelCPUNumberOfEnabledCore.TabIndex = 68;
+            this.labelCPUNumberOfEnabledCore.Text = "Number of Enabled Core:";
+            // 
+            // textBoxCPUNumberOfEnabledCore
+            // 
+            this.textBoxCPUNumberOfEnabledCore.Location = new System.Drawing.Point(636, 62);
+            this.textBoxCPUNumberOfEnabledCore.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUNumberOfEnabledCore.Name = "textBoxCPUNumberOfEnabledCore";
+            this.textBoxCPUNumberOfEnabledCore.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUNumberOfEnabledCore.TabIndex = 67;
+            // 
+            // labelCPUManufacturer
+            // 
+            this.labelCPUManufacturer.AutoSize = true;
+            this.labelCPUManufacturer.Location = new System.Drawing.Point(7, 662);
+            this.labelCPUManufacturer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUManufacturer.Name = "labelCPUManufacturer";
+            this.labelCPUManufacturer.Size = new System.Drawing.Size(73, 13);
+            this.labelCPUManufacturer.TabIndex = 66;
+            this.labelCPUManufacturer.Text = "Manufacturer:";
+            // 
+            // textBoxCPUManufacturer
+            // 
+            this.textBoxCPUManufacturer.Location = new System.Drawing.Point(151, 659);
+            this.textBoxCPUManufacturer.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUManufacturer.Name = "textBoxCPUManufacturer";
+            this.textBoxCPUManufacturer.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUManufacturer.TabIndex = 65;
+            // 
+            // labelCPULoadPercentage
+            // 
+            this.labelCPULoadPercentage.AutoSize = true;
+            this.labelCPULoadPercentage.Location = new System.Drawing.Point(7, 638);
+            this.labelCPULoadPercentage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPULoadPercentage.Name = "labelCPULoadPercentage";
+            this.labelCPULoadPercentage.Size = new System.Drawing.Size(92, 13);
+            this.labelCPULoadPercentage.TabIndex = 64;
+            this.labelCPULoadPercentage.Text = "Load Percentage:";
+            // 
+            // textBoxCPULoadPercentage
+            // 
+            this.textBoxCPULoadPercentage.Location = new System.Drawing.Point(151, 635);
+            this.textBoxCPULoadPercentage.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPULoadPercentage.Name = "textBoxCPULoadPercentage";
+            this.textBoxCPULoadPercentage.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPULoadPercentage.TabIndex = 63;
+            // 
+            // labelCPULevel
+            // 
+            this.labelCPULevel.AutoSize = true;
+            this.labelCPULevel.Location = new System.Drawing.Point(7, 614);
+            this.labelCPULevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPULevel.Name = "labelCPULevel";
+            this.labelCPULevel.Size = new System.Drawing.Size(36, 13);
+            this.labelCPULevel.TabIndex = 62;
+            this.labelCPULevel.Text = "Level:";
+            // 
+            // textBoxCPULevel
+            // 
+            this.textBoxCPULevel.Location = new System.Drawing.Point(151, 611);
+            this.textBoxCPULevel.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPULevel.Name = "textBoxCPULevel";
+            this.textBoxCPULevel.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPULevel.TabIndex = 61;
+            // 
+            // labelCPULastErrorCode
+            // 
+            this.labelCPULastErrorCode.AutoSize = true;
+            this.labelCPULastErrorCode.Location = new System.Drawing.Point(4, 590);
+            this.labelCPULastErrorCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPULastErrorCode.Name = "labelCPULastErrorCode";
+            this.labelCPULastErrorCode.Size = new System.Drawing.Size(83, 13);
+            this.labelCPULastErrorCode.TabIndex = 60;
+            this.labelCPULastErrorCode.Text = "Last Error Code:";
+            // 
+            // textBoxCPULastErrorCode
+            // 
+            this.textBoxCPULastErrorCode.Location = new System.Drawing.Point(151, 587);
+            this.textBoxCPULastErrorCode.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPULastErrorCode.Name = "textBoxCPULastErrorCode";
+            this.textBoxCPULastErrorCode.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPULastErrorCode.TabIndex = 59;
+            // 
+            // labelCPUL3CacheSpeed
+            // 
+            this.labelCPUL3CacheSpeed.AutoSize = true;
+            this.labelCPUL3CacheSpeed.Location = new System.Drawing.Point(4, 566);
+            this.labelCPUL3CacheSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUL3CacheSpeed.Name = "labelCPUL3CacheSpeed";
+            this.labelCPUL3CacheSpeed.Size = new System.Drawing.Size(90, 13);
+            this.labelCPUL3CacheSpeed.TabIndex = 58;
+            this.labelCPUL3CacheSpeed.Text = "L3 Cache Speed:";
+            // 
+            // textBoxCPUL3CacheSpeed
+            // 
+            this.textBoxCPUL3CacheSpeed.Location = new System.Drawing.Point(151, 563);
+            this.textBoxCPUL3CacheSpeed.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUL3CacheSpeed.Name = "textBoxCPUL3CacheSpeed";
+            this.textBoxCPUL3CacheSpeed.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUL3CacheSpeed.TabIndex = 57;
+            // 
+            // labelCPUL2CacheSpeed
+            // 
+            this.labelCPUL2CacheSpeed.AutoSize = true;
+            this.labelCPUL2CacheSpeed.Location = new System.Drawing.Point(4, 518);
+            this.labelCPUL2CacheSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUL2CacheSpeed.Name = "labelCPUL2CacheSpeed";
+            this.labelCPUL2CacheSpeed.Size = new System.Drawing.Size(90, 13);
+            this.labelCPUL2CacheSpeed.TabIndex = 56;
+            this.labelCPUL2CacheSpeed.Text = "L2 Cache Speed:";
+            // 
+            // textBoxCPUL2CacheSpeed
+            // 
+            this.textBoxCPUL2CacheSpeed.Location = new System.Drawing.Point(151, 515);
+            this.textBoxCPUL2CacheSpeed.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUL2CacheSpeed.Name = "textBoxCPUL2CacheSpeed";
+            this.textBoxCPUL2CacheSpeed.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUL2CacheSpeed.TabIndex = 55;
+            // 
+            // labelCPUInstallDate
+            // 
+            this.labelCPUInstallDate.AutoSize = true;
+            this.labelCPUInstallDate.Location = new System.Drawing.Point(4, 470);
+            this.labelCPUInstallDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUInstallDate.Name = "labelCPUInstallDate";
+            this.labelCPUInstallDate.Size = new System.Drawing.Size(63, 13);
+            this.labelCPUInstallDate.TabIndex = 54;
+            this.labelCPUInstallDate.Text = "Install Date:";
+            // 
+            // textBoxCPUInstallDate
+            // 
+            this.textBoxCPUInstallDate.Location = new System.Drawing.Point(151, 467);
+            this.textBoxCPUInstallDate.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUInstallDate.Name = "textBoxCPUInstallDate";
+            this.textBoxCPUInstallDate.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUInstallDate.TabIndex = 53;
+            // 
+            // labelCPUFamily
+            // 
+            this.labelCPUFamily.AutoSize = true;
+            this.labelCPUFamily.Location = new System.Drawing.Point(4, 446);
+            this.labelCPUFamily.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUFamily.Name = "labelCPUFamily";
+            this.labelCPUFamily.Size = new System.Drawing.Size(39, 13);
+            this.labelCPUFamily.TabIndex = 52;
+            this.labelCPUFamily.Text = "Family:";
+            // 
+            // textBoxCPUFamily
+            // 
+            this.textBoxCPUFamily.Location = new System.Drawing.Point(151, 443);
+            this.textBoxCPUFamily.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUFamily.Name = "textBoxCPUFamily";
+            this.textBoxCPUFamily.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUFamily.TabIndex = 51;
+            // 
+            // labelCPUErrorDescription
+            // 
+            this.labelCPUErrorDescription.AutoSize = true;
+            this.labelCPUErrorDescription.Location = new System.Drawing.Point(4, 398);
+            this.labelCPUErrorDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUErrorDescription.Name = "labelCPUErrorDescription";
+            this.labelCPUErrorDescription.Size = new System.Drawing.Size(88, 13);
+            this.labelCPUErrorDescription.TabIndex = 50;
+            this.labelCPUErrorDescription.Text = "Error Description:";
+            // 
+            // textBoxCPUErrorDescription
+            // 
+            this.textBoxCPUErrorDescription.Location = new System.Drawing.Point(151, 395);
+            this.textBoxCPUErrorDescription.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUErrorDescription.Name = "textBoxCPUErrorDescription";
+            this.textBoxCPUErrorDescription.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUErrorDescription.TabIndex = 49;
+            // 
+            // labelCPUErrorCleared
+            // 
+            this.labelCPUErrorCleared.AutoSize = true;
+            this.labelCPUErrorCleared.Location = new System.Drawing.Point(4, 374);
+            this.labelCPUErrorCleared.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUErrorCleared.Name = "labelCPUErrorCleared";
+            this.labelCPUErrorCleared.Size = new System.Drawing.Size(71, 13);
+            this.labelCPUErrorCleared.TabIndex = 48;
+            this.labelCPUErrorCleared.Text = "Error Cleared:";
+            // 
+            // textBoxCPUErrorCleared
+            // 
+            this.textBoxCPUErrorCleared.Location = new System.Drawing.Point(151, 371);
+            this.textBoxCPUErrorCleared.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUErrorCleared.Name = "textBoxCPUErrorCleared";
+            this.textBoxCPUErrorCleared.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUErrorCleared.TabIndex = 47;
+            // 
+            // labelCPUDeviceID
+            // 
+            this.labelCPUDeviceID.AutoSize = true;
+            this.labelCPUDeviceID.Location = new System.Drawing.Point(4, 350);
+            this.labelCPUDeviceID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUDeviceID.Name = "labelCPUDeviceID";
+            this.labelCPUDeviceID.Size = new System.Drawing.Size(58, 13);
+            this.labelCPUDeviceID.TabIndex = 46;
+            this.labelCPUDeviceID.Text = "Device ID:";
+            // 
+            // textBoxCPUDeviceID
+            // 
+            this.textBoxCPUDeviceID.Location = new System.Drawing.Point(151, 347);
+            this.textBoxCPUDeviceID.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUDeviceID.Name = "textBoxCPUDeviceID";
+            this.textBoxCPUDeviceID.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUDeviceID.TabIndex = 45;
+            // 
+            // labelCPUCurrentVoltage
+            // 
+            this.labelCPUCurrentVoltage.AutoSize = true;
+            this.labelCPUCurrentVoltage.Location = new System.Drawing.Point(4, 278);
+            this.labelCPUCurrentVoltage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCurrentVoltage.Name = "labelCPUCurrentVoltage";
+            this.labelCPUCurrentVoltage.Size = new System.Drawing.Size(83, 13);
+            this.labelCPUCurrentVoltage.TabIndex = 44;
+            this.labelCPUCurrentVoltage.Text = "Current Voltage:";
+            // 
+            // textBoxCPUCurrentVoltage
+            // 
+            this.textBoxCPUCurrentVoltage.Location = new System.Drawing.Point(151, 275);
+            this.textBoxCPUCurrentVoltage.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCurrentVoltage.Name = "textBoxCPUCurrentVoltage";
+            this.textBoxCPUCurrentVoltage.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUCurrentVoltage.TabIndex = 43;
+            // 
+            // labelCPUCurrentClockSpeed
+            // 
+            this.labelCPUCurrentClockSpeed.AutoSize = true;
+            this.labelCPUCurrentClockSpeed.Location = new System.Drawing.Point(4, 254);
+            this.labelCPUCurrentClockSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCurrentClockSpeed.Name = "labelCPUCurrentClockSpeed";
+            this.labelCPUCurrentClockSpeed.Size = new System.Drawing.Size(108, 13);
+            this.labelCPUCurrentClockSpeed.TabIndex = 42;
+            this.labelCPUCurrentClockSpeed.Text = "Current Clock Speed:";
+            // 
+            // textBoxCPUCurrentClockSpeed
+            // 
+            this.textBoxCPUCurrentClockSpeed.Location = new System.Drawing.Point(151, 251);
+            this.textBoxCPUCurrentClockSpeed.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCurrentClockSpeed.Name = "textBoxCPUCurrentClockSpeed";
+            this.textBoxCPUCurrentClockSpeed.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUCurrentClockSpeed.TabIndex = 41;
+            // 
+            // labelCPUCreationClassName
+            // 
+            this.labelCPUCreationClassName.AutoSize = true;
+            this.labelCPUCreationClassName.Location = new System.Drawing.Point(4, 230);
+            this.labelCPUCreationClassName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCreationClassName.Name = "labelCPUCreationClassName";
+            this.labelCPUCreationClassName.Size = new System.Drawing.Size(108, 13);
+            this.labelCPUCreationClassName.TabIndex = 40;
+            this.labelCPUCreationClassName.Text = "Creation Class Name:";
+            // 
+            // textBoxCPUCreationClassName
+            // 
+            this.textBoxCPUCreationClassName.Location = new System.Drawing.Point(151, 227);
+            this.textBoxCPUCreationClassName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCreationClassName.Name = "textBoxCPUCreationClassName";
+            this.textBoxCPUCreationClassName.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUCreationClassName.TabIndex = 39;
+            // 
+            // labelCPUCpuStatus
+            // 
+            this.labelCPUCpuStatus.AutoSize = true;
+            this.labelCPUCpuStatus.Location = new System.Drawing.Point(4, 206);
+            this.labelCPUCpuStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCpuStatus.Name = "labelCPUCpuStatus";
+            this.labelCPUCpuStatus.Size = new System.Drawing.Size(65, 13);
+            this.labelCPUCpuStatus.TabIndex = 38;
+            this.labelCPUCpuStatus.Text = "CPU Status:";
+            // 
+            // textBoxCPUCpuStatus
+            // 
+            this.textBoxCPUCpuStatus.Location = new System.Drawing.Point(151, 203);
+            this.textBoxCPUCpuStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCpuStatus.Name = "textBoxCPUCpuStatus";
+            this.textBoxCPUCpuStatus.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUCpuStatus.TabIndex = 37;
+            // 
+            // labelCPUConfigManagerUserConfig
+            // 
+            this.labelCPUConfigManagerUserConfig.AutoSize = true;
+            this.labelCPUConfigManagerUserConfig.Location = new System.Drawing.Point(4, 182);
+            this.labelCPUConfigManagerUserConfig.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUConfigManagerUserConfig.Name = "labelCPUConfigManagerUserConfig";
+            this.labelCPUConfigManagerUserConfig.Size = new System.Drawing.Size(143, 13);
+            this.labelCPUConfigManagerUserConfig.TabIndex = 36;
+            this.labelCPUConfigManagerUserConfig.Text = "Config Manager User Config:";
+            // 
+            // textBoxCPUConfigManagerUserConfig
+            // 
+            this.textBoxCPUConfigManagerUserConfig.Location = new System.Drawing.Point(151, 179);
+            this.textBoxCPUConfigManagerUserConfig.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUConfigManagerUserConfig.Name = "textBoxCPUConfigManagerUserConfig";
+            this.textBoxCPUConfigManagerUserConfig.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUConfigManagerUserConfig.TabIndex = 35;
+            // 
+            // labelCPUConfigManagerErrorCode
+            // 
+            this.labelCPUConfigManagerErrorCode.AutoSize = true;
+            this.labelCPUConfigManagerErrorCode.Location = new System.Drawing.Point(4, 158);
+            this.labelCPUConfigManagerErrorCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUConfigManagerErrorCode.Name = "labelCPUConfigManagerErrorCode";
+            this.labelCPUConfigManagerErrorCode.Size = new System.Drawing.Size(138, 13);
+            this.labelCPUConfigManagerErrorCode.TabIndex = 34;
+            this.labelCPUConfigManagerErrorCode.Text = "Config Manager Error Code:";
+            // 
+            // textBoxCPUConfigManagerErrorCode
+            // 
+            this.textBoxCPUConfigManagerErrorCode.Location = new System.Drawing.Point(151, 155);
+            this.textBoxCPUConfigManagerErrorCode.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUConfigManagerErrorCode.Name = "textBoxCPUConfigManagerErrorCode";
+            this.textBoxCPUConfigManagerErrorCode.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUConfigManagerErrorCode.TabIndex = 33;
+            // 
+            // labelCPUCharacteristics
+            // 
+            this.labelCPUCharacteristics.AutoSize = true;
+            this.labelCPUCharacteristics.Location = new System.Drawing.Point(4, 134);
+            this.labelCPUCharacteristics.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCharacteristics.Name = "labelCPUCharacteristics";
+            this.labelCPUCharacteristics.Size = new System.Drawing.Size(79, 13);
+            this.labelCPUCharacteristics.TabIndex = 32;
+            this.labelCPUCharacteristics.Text = "Characteristics:";
+            // 
+            // textBoxCPUCharacteristics
+            // 
+            this.textBoxCPUCharacteristics.Location = new System.Drawing.Point(151, 131);
+            this.textBoxCPUCharacteristics.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCharacteristics.Name = "textBoxCPUCharacteristics";
+            this.textBoxCPUCharacteristics.Size = new System.Drawing.Size(235, 20);
+            this.textBoxCPUCharacteristics.TabIndex = 31;
+            // 
+            // labelCPUCaption
+            // 
+            this.labelCPUCaption.AutoSize = true;
+            this.labelCPUCaption.Location = new System.Drawing.Point(4, 110);
+            this.labelCPUCaption.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCaption.Name = "labelCPUCaption";
+            this.labelCPUCaption.Size = new System.Drawing.Size(46, 13);
+            this.labelCPUCaption.TabIndex = 30;
+            this.labelCPUCaption.Text = "Caption:";
+            // 
+            // textBoxCPUCaption
+            // 
+            this.textBoxCPUCaption.Location = new System.Drawing.Point(151, 107);
+            this.textBoxCPUCaption.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCaption.Name = "textBoxCPUCaption";
+            this.textBoxCPUCaption.Size = new System.Drawing.Size(235, 20);
+            this.textBoxCPUCaption.TabIndex = 29;
+            // 
+            // labelCPUAvailability
+            // 
+            this.labelCPUAvailability.AutoSize = true;
+            this.labelCPUAvailability.Location = new System.Drawing.Point(4, 86);
+            this.labelCPUAvailability.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUAvailability.Name = "labelCPUAvailability";
+            this.labelCPUAvailability.Size = new System.Drawing.Size(59, 13);
+            this.labelCPUAvailability.TabIndex = 28;
+            this.labelCPUAvailability.Text = "Availability:";
+            // 
+            // textBoxCPUAvailability
+            // 
+            this.textBoxCPUAvailability.Location = new System.Drawing.Point(151, 83);
+            this.textBoxCPUAvailability.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUAvailability.Name = "textBoxCPUAvailability";
+            this.textBoxCPUAvailability.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUAvailability.TabIndex = 27;
+            // 
+            // labelCPUAssetTag
+            // 
+            this.labelCPUAssetTag.AutoSize = true;
+            this.labelCPUAssetTag.Location = new System.Drawing.Point(4, 62);
+            this.labelCPUAssetTag.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUAssetTag.Name = "labelCPUAssetTag";
+            this.labelCPUAssetTag.Size = new System.Drawing.Size(58, 13);
+            this.labelCPUAssetTag.TabIndex = 26;
+            this.labelCPUAssetTag.Text = "Asset Tag:";
+            // 
+            // textBoxCPUAssetTag
+            // 
+            this.textBoxCPUAssetTag.Location = new System.Drawing.Point(151, 59);
+            this.textBoxCPUAssetTag.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUAssetTag.Name = "textBoxCPUAssetTag";
+            this.textBoxCPUAssetTag.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUAssetTag.TabIndex = 25;
             // 
             // labelCPUNumberOfLogicalProcessors
             // 
@@ -503,798 +1295,6 @@
             this.textBoxCPUProcessorId.Name = "textBoxCPUProcessorId";
             this.textBoxCPUProcessorId.Size = new System.Drawing.Size(135, 20);
             this.textBoxCPUProcessorId.TabIndex = 0;
-            // 
-            // labelCPUAssetTag
-            // 
-            this.labelCPUAssetTag.AutoSize = true;
-            this.labelCPUAssetTag.Location = new System.Drawing.Point(4, 62);
-            this.labelCPUAssetTag.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUAssetTag.Name = "labelCPUAssetTag";
-            this.labelCPUAssetTag.Size = new System.Drawing.Size(58, 13);
-            this.labelCPUAssetTag.TabIndex = 26;
-            this.labelCPUAssetTag.Text = "Asset Tag:";
-            // 
-            // textBoxCPUAssetTag
-            // 
-            this.textBoxCPUAssetTag.Location = new System.Drawing.Point(151, 59);
-            this.textBoxCPUAssetTag.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUAssetTag.Name = "textBoxCPUAssetTag";
-            this.textBoxCPUAssetTag.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUAssetTag.TabIndex = 25;
-            // 
-            // labelCPUAvailability
-            // 
-            this.labelCPUAvailability.AutoSize = true;
-            this.labelCPUAvailability.Location = new System.Drawing.Point(4, 86);
-            this.labelCPUAvailability.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUAvailability.Name = "labelCPUAvailability";
-            this.labelCPUAvailability.Size = new System.Drawing.Size(59, 13);
-            this.labelCPUAvailability.TabIndex = 28;
-            this.labelCPUAvailability.Text = "Availability:";
-            // 
-            // textBoxCPUAvailability
-            // 
-            this.textBoxCPUAvailability.Location = new System.Drawing.Point(151, 83);
-            this.textBoxCPUAvailability.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUAvailability.Name = "textBoxCPUAvailability";
-            this.textBoxCPUAvailability.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUAvailability.TabIndex = 27;
-            // 
-            // labelCPUCaption
-            // 
-            this.labelCPUCaption.AutoSize = true;
-            this.labelCPUCaption.Location = new System.Drawing.Point(4, 110);
-            this.labelCPUCaption.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUCaption.Name = "labelCPUCaption";
-            this.labelCPUCaption.Size = new System.Drawing.Size(46, 13);
-            this.labelCPUCaption.TabIndex = 30;
-            this.labelCPUCaption.Text = "Caption:";
-            // 
-            // textBoxCPUCaption
-            // 
-            this.textBoxCPUCaption.Location = new System.Drawing.Point(151, 107);
-            this.textBoxCPUCaption.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUCaption.Name = "textBoxCPUCaption";
-            this.textBoxCPUCaption.Size = new System.Drawing.Size(235, 20);
-            this.textBoxCPUCaption.TabIndex = 29;
-            // 
-            // labelCPUCharacteristics
-            // 
-            this.labelCPUCharacteristics.AutoSize = true;
-            this.labelCPUCharacteristics.Location = new System.Drawing.Point(4, 134);
-            this.labelCPUCharacteristics.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUCharacteristics.Name = "labelCPUCharacteristics";
-            this.labelCPUCharacteristics.Size = new System.Drawing.Size(79, 13);
-            this.labelCPUCharacteristics.TabIndex = 32;
-            this.labelCPUCharacteristics.Text = "Characteristics:";
-            // 
-            // textBoxCPUCharacteristics
-            // 
-            this.textBoxCPUCharacteristics.Location = new System.Drawing.Point(151, 131);
-            this.textBoxCPUCharacteristics.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUCharacteristics.Name = "textBoxCPUCharacteristics";
-            this.textBoxCPUCharacteristics.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUCharacteristics.TabIndex = 31;
-            // 
-            // labelCPUConfigManagerErrorCode
-            // 
-            this.labelCPUConfigManagerErrorCode.AutoSize = true;
-            this.labelCPUConfigManagerErrorCode.Location = new System.Drawing.Point(4, 158);
-            this.labelCPUConfigManagerErrorCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUConfigManagerErrorCode.Name = "labelCPUConfigManagerErrorCode";
-            this.labelCPUConfigManagerErrorCode.Size = new System.Drawing.Size(138, 13);
-            this.labelCPUConfigManagerErrorCode.TabIndex = 34;
-            this.labelCPUConfigManagerErrorCode.Text = "Config Manager Error Code:";
-            // 
-            // textBoxCPUConfigManagerErrorCode
-            // 
-            this.textBoxCPUConfigManagerErrorCode.Location = new System.Drawing.Point(151, 155);
-            this.textBoxCPUConfigManagerErrorCode.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUConfigManagerErrorCode.Name = "textBoxCPUConfigManagerErrorCode";
-            this.textBoxCPUConfigManagerErrorCode.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUConfigManagerErrorCode.TabIndex = 33;
-            // 
-            // labelCPUConfigManagerUserConfig
-            // 
-            this.labelCPUConfigManagerUserConfig.AutoSize = true;
-            this.labelCPUConfigManagerUserConfig.Location = new System.Drawing.Point(4, 182);
-            this.labelCPUConfigManagerUserConfig.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUConfigManagerUserConfig.Name = "labelCPUConfigManagerUserConfig";
-            this.labelCPUConfigManagerUserConfig.Size = new System.Drawing.Size(143, 13);
-            this.labelCPUConfigManagerUserConfig.TabIndex = 36;
-            this.labelCPUConfigManagerUserConfig.Text = "Config Manager User Config:";
-            // 
-            // textBoxCPUConfigManagerUserConfig
-            // 
-            this.textBoxCPUConfigManagerUserConfig.Location = new System.Drawing.Point(151, 179);
-            this.textBoxCPUConfigManagerUserConfig.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUConfigManagerUserConfig.Name = "textBoxCPUConfigManagerUserConfig";
-            this.textBoxCPUConfigManagerUserConfig.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUConfigManagerUserConfig.TabIndex = 35;
-            // 
-            // labelCPUCpuStatus
-            // 
-            this.labelCPUCpuStatus.AutoSize = true;
-            this.labelCPUCpuStatus.Location = new System.Drawing.Point(4, 206);
-            this.labelCPUCpuStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUCpuStatus.Name = "labelCPUCpuStatus";
-            this.labelCPUCpuStatus.Size = new System.Drawing.Size(65, 13);
-            this.labelCPUCpuStatus.TabIndex = 38;
-            this.labelCPUCpuStatus.Text = "CPU Status:";
-            // 
-            // textBoxCPUCpuStatus
-            // 
-            this.textBoxCPUCpuStatus.Location = new System.Drawing.Point(151, 203);
-            this.textBoxCPUCpuStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUCpuStatus.Name = "textBoxCPUCpuStatus";
-            this.textBoxCPUCpuStatus.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUCpuStatus.TabIndex = 37;
-            // 
-            // labelCPUCreationClassName
-            // 
-            this.labelCPUCreationClassName.AutoSize = true;
-            this.labelCPUCreationClassName.Location = new System.Drawing.Point(4, 230);
-            this.labelCPUCreationClassName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUCreationClassName.Name = "labelCPUCreationClassName";
-            this.labelCPUCreationClassName.Size = new System.Drawing.Size(108, 13);
-            this.labelCPUCreationClassName.TabIndex = 40;
-            this.labelCPUCreationClassName.Text = "Creation Class Name:";
-            // 
-            // textBoxCPUCreationClassName
-            // 
-            this.textBoxCPUCreationClassName.Location = new System.Drawing.Point(151, 227);
-            this.textBoxCPUCreationClassName.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUCreationClassName.Name = "textBoxCPUCreationClassName";
-            this.textBoxCPUCreationClassName.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUCreationClassName.TabIndex = 39;
-            // 
-            // labelCPUCurrentClockSpeed
-            // 
-            this.labelCPUCurrentClockSpeed.AutoSize = true;
-            this.labelCPUCurrentClockSpeed.Location = new System.Drawing.Point(4, 254);
-            this.labelCPUCurrentClockSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUCurrentClockSpeed.Name = "labelCPUCurrentClockSpeed";
-            this.labelCPUCurrentClockSpeed.Size = new System.Drawing.Size(108, 13);
-            this.labelCPUCurrentClockSpeed.TabIndex = 42;
-            this.labelCPUCurrentClockSpeed.Text = "Current Clock Speed:";
-            // 
-            // textBoxCPUCurrentClockSpeed
-            // 
-            this.textBoxCPUCurrentClockSpeed.Location = new System.Drawing.Point(151, 251);
-            this.textBoxCPUCurrentClockSpeed.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUCurrentClockSpeed.Name = "textBoxCPUCurrentClockSpeed";
-            this.textBoxCPUCurrentClockSpeed.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUCurrentClockSpeed.TabIndex = 41;
-            // 
-            // labelCPUCurrentVoltage
-            // 
-            this.labelCPUCurrentVoltage.AutoSize = true;
-            this.labelCPUCurrentVoltage.Location = new System.Drawing.Point(4, 278);
-            this.labelCPUCurrentVoltage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUCurrentVoltage.Name = "labelCPUCurrentVoltage";
-            this.labelCPUCurrentVoltage.Size = new System.Drawing.Size(83, 13);
-            this.labelCPUCurrentVoltage.TabIndex = 44;
-            this.labelCPUCurrentVoltage.Text = "Current Voltage:";
-            // 
-            // textBoxCPUCurrentVoltage
-            // 
-            this.textBoxCPUCurrentVoltage.Location = new System.Drawing.Point(151, 275);
-            this.textBoxCPUCurrentVoltage.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUCurrentVoltage.Name = "textBoxCPUCurrentVoltage";
-            this.textBoxCPUCurrentVoltage.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUCurrentVoltage.TabIndex = 43;
-            // 
-            // labelCPUDeviceID
-            // 
-            this.labelCPUDeviceID.AutoSize = true;
-            this.labelCPUDeviceID.Location = new System.Drawing.Point(4, 350);
-            this.labelCPUDeviceID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUDeviceID.Name = "labelCPUDeviceID";
-            this.labelCPUDeviceID.Size = new System.Drawing.Size(58, 13);
-            this.labelCPUDeviceID.TabIndex = 46;
-            this.labelCPUDeviceID.Text = "Device ID:";
-            // 
-            // textBoxCPUDeviceID
-            // 
-            this.textBoxCPUDeviceID.Location = new System.Drawing.Point(151, 347);
-            this.textBoxCPUDeviceID.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUDeviceID.Name = "textBoxCPUDeviceID";
-            this.textBoxCPUDeviceID.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUDeviceID.TabIndex = 45;
-            // 
-            // labelCPUErrorCleared
-            // 
-            this.labelCPUErrorCleared.AutoSize = true;
-            this.labelCPUErrorCleared.Location = new System.Drawing.Point(4, 374);
-            this.labelCPUErrorCleared.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUErrorCleared.Name = "labelCPUErrorCleared";
-            this.labelCPUErrorCleared.Size = new System.Drawing.Size(71, 13);
-            this.labelCPUErrorCleared.TabIndex = 48;
-            this.labelCPUErrorCleared.Text = "Error Cleared:";
-            // 
-            // textBoxCPUErrorCleared
-            // 
-            this.textBoxCPUErrorCleared.Location = new System.Drawing.Point(151, 371);
-            this.textBoxCPUErrorCleared.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUErrorCleared.Name = "textBoxCPUErrorCleared";
-            this.textBoxCPUErrorCleared.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUErrorCleared.TabIndex = 47;
-            // 
-            // labelCPUErrorDescription
-            // 
-            this.labelCPUErrorDescription.AutoSize = true;
-            this.labelCPUErrorDescription.Location = new System.Drawing.Point(4, 398);
-            this.labelCPUErrorDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUErrorDescription.Name = "labelCPUErrorDescription";
-            this.labelCPUErrorDescription.Size = new System.Drawing.Size(88, 13);
-            this.labelCPUErrorDescription.TabIndex = 50;
-            this.labelCPUErrorDescription.Text = "Error Description:";
-            // 
-            // textBoxCPUErrorDescription
-            // 
-            this.textBoxCPUErrorDescription.Location = new System.Drawing.Point(151, 395);
-            this.textBoxCPUErrorDescription.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUErrorDescription.Name = "textBoxCPUErrorDescription";
-            this.textBoxCPUErrorDescription.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUErrorDescription.TabIndex = 49;
-            // 
-            // labelCPUFamily
-            // 
-            this.labelCPUFamily.AutoSize = true;
-            this.labelCPUFamily.Location = new System.Drawing.Point(4, 446);
-            this.labelCPUFamily.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUFamily.Name = "labelCPUFamily";
-            this.labelCPUFamily.Size = new System.Drawing.Size(39, 13);
-            this.labelCPUFamily.TabIndex = 52;
-            this.labelCPUFamily.Text = "Family:";
-            // 
-            // textBoxCPUFamily
-            // 
-            this.textBoxCPUFamily.Location = new System.Drawing.Point(151, 443);
-            this.textBoxCPUFamily.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUFamily.Name = "textBoxCPUFamily";
-            this.textBoxCPUFamily.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUFamily.TabIndex = 51;
-            // 
-            // labelCPUInstallDate
-            // 
-            this.labelCPUInstallDate.AutoSize = true;
-            this.labelCPUInstallDate.Location = new System.Drawing.Point(4, 470);
-            this.labelCPUInstallDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUInstallDate.Name = "labelCPUInstallDate";
-            this.labelCPUInstallDate.Size = new System.Drawing.Size(63, 13);
-            this.labelCPUInstallDate.TabIndex = 54;
-            this.labelCPUInstallDate.Text = "Install Date:";
-            // 
-            // textBoxCPUInstallDate
-            // 
-            this.textBoxCPUInstallDate.Location = new System.Drawing.Point(151, 467);
-            this.textBoxCPUInstallDate.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUInstallDate.Name = "textBoxCPUInstallDate";
-            this.textBoxCPUInstallDate.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUInstallDate.TabIndex = 53;
-            // 
-            // labelCPUL2CacheSpeed
-            // 
-            this.labelCPUL2CacheSpeed.AutoSize = true;
-            this.labelCPUL2CacheSpeed.Location = new System.Drawing.Point(4, 518);
-            this.labelCPUL2CacheSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUL2CacheSpeed.Name = "labelCPUL2CacheSpeed";
-            this.labelCPUL2CacheSpeed.Size = new System.Drawing.Size(90, 13);
-            this.labelCPUL2CacheSpeed.TabIndex = 56;
-            this.labelCPUL2CacheSpeed.Text = "L2 Cache Speed:";
-            // 
-            // textBoxCPUL2CacheSpeed
-            // 
-            this.textBoxCPUL2CacheSpeed.Location = new System.Drawing.Point(151, 515);
-            this.textBoxCPUL2CacheSpeed.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUL2CacheSpeed.Name = "textBoxCPUL2CacheSpeed";
-            this.textBoxCPUL2CacheSpeed.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUL2CacheSpeed.TabIndex = 55;
-            // 
-            // labelCPUL3CacheSpeed
-            // 
-            this.labelCPUL3CacheSpeed.AutoSize = true;
-            this.labelCPUL3CacheSpeed.Location = new System.Drawing.Point(4, 566);
-            this.labelCPUL3CacheSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUL3CacheSpeed.Name = "labelCPUL3CacheSpeed";
-            this.labelCPUL3CacheSpeed.Size = new System.Drawing.Size(90, 13);
-            this.labelCPUL3CacheSpeed.TabIndex = 58;
-            this.labelCPUL3CacheSpeed.Text = "L3 Cache Speed:";
-            // 
-            // textBoxCPUL3CacheSpeed
-            // 
-            this.textBoxCPUL3CacheSpeed.Location = new System.Drawing.Point(151, 563);
-            this.textBoxCPUL3CacheSpeed.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUL3CacheSpeed.Name = "textBoxCPUL3CacheSpeed";
-            this.textBoxCPUL3CacheSpeed.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUL3CacheSpeed.TabIndex = 57;
-            // 
-            // labelCPULastErrorCode
-            // 
-            this.labelCPULastErrorCode.AutoSize = true;
-            this.labelCPULastErrorCode.Location = new System.Drawing.Point(4, 590);
-            this.labelCPULastErrorCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPULastErrorCode.Name = "labelCPULastErrorCode";
-            this.labelCPULastErrorCode.Size = new System.Drawing.Size(83, 13);
-            this.labelCPULastErrorCode.TabIndex = 60;
-            this.labelCPULastErrorCode.Text = "Last Error Code:";
-            // 
-            // textBoxCPULastErrorCode
-            // 
-            this.textBoxCPULastErrorCode.Location = new System.Drawing.Point(151, 587);
-            this.textBoxCPULastErrorCode.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPULastErrorCode.Name = "textBoxCPULastErrorCode";
-            this.textBoxCPULastErrorCode.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPULastErrorCode.TabIndex = 59;
-            // 
-            // labelCPULevel
-            // 
-            this.labelCPULevel.AutoSize = true;
-            this.labelCPULevel.Location = new System.Drawing.Point(7, 614);
-            this.labelCPULevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPULevel.Name = "labelCPULevel";
-            this.labelCPULevel.Size = new System.Drawing.Size(36, 13);
-            this.labelCPULevel.TabIndex = 62;
-            this.labelCPULevel.Text = "Level:";
-            // 
-            // textBoxCPULevel
-            // 
-            this.textBoxCPULevel.Location = new System.Drawing.Point(151, 611);
-            this.textBoxCPULevel.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPULevel.Name = "textBoxCPULevel";
-            this.textBoxCPULevel.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPULevel.TabIndex = 61;
-            // 
-            // labelCPULoadPercentage
-            // 
-            this.labelCPULoadPercentage.AutoSize = true;
-            this.labelCPULoadPercentage.Location = new System.Drawing.Point(7, 638);
-            this.labelCPULoadPercentage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPULoadPercentage.Name = "labelCPULoadPercentage";
-            this.labelCPULoadPercentage.Size = new System.Drawing.Size(92, 13);
-            this.labelCPULoadPercentage.TabIndex = 64;
-            this.labelCPULoadPercentage.Text = "Load Percentage:";
-            // 
-            // textBoxCPULoadPercentage
-            // 
-            this.textBoxCPULoadPercentage.Location = new System.Drawing.Point(151, 635);
-            this.textBoxCPULoadPercentage.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPULoadPercentage.Name = "textBoxCPULoadPercentage";
-            this.textBoxCPULoadPercentage.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPULoadPercentage.TabIndex = 63;
-            // 
-            // labelCPUManufacturer
-            // 
-            this.labelCPUManufacturer.AutoSize = true;
-            this.labelCPUManufacturer.Location = new System.Drawing.Point(7, 662);
-            this.labelCPUManufacturer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUManufacturer.Name = "labelCPUManufacturer";
-            this.labelCPUManufacturer.Size = new System.Drawing.Size(73, 13);
-            this.labelCPUManufacturer.TabIndex = 66;
-            this.labelCPUManufacturer.Text = "Manufacturer:";
-            // 
-            // textBoxCPUManufacturer
-            // 
-            this.textBoxCPUManufacturer.Location = new System.Drawing.Point(151, 659);
-            this.textBoxCPUManufacturer.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUManufacturer.Name = "textBoxCPUManufacturer";
-            this.textBoxCPUManufacturer.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUManufacturer.TabIndex = 65;
-            // 
-            // labelCPUNumberOfEnabledCore
-            // 
-            this.labelCPUNumberOfEnabledCore.AutoSize = true;
-            this.labelCPUNumberOfEnabledCore.Location = new System.Drawing.Point(406, 65);
-            this.labelCPUNumberOfEnabledCore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUNumberOfEnabledCore.Name = "labelCPUNumberOfEnabledCore";
-            this.labelCPUNumberOfEnabledCore.Size = new System.Drawing.Size(126, 13);
-            this.labelCPUNumberOfEnabledCore.TabIndex = 68;
-            this.labelCPUNumberOfEnabledCore.Text = "Number of Enabled Core:";
-            // 
-            // textBoxCPUNumberOfEnabledCore
-            // 
-            this.textBoxCPUNumberOfEnabledCore.Location = new System.Drawing.Point(636, 62);
-            this.textBoxCPUNumberOfEnabledCore.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUNumberOfEnabledCore.Name = "textBoxCPUNumberOfEnabledCore";
-            this.textBoxCPUNumberOfEnabledCore.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUNumberOfEnabledCore.TabIndex = 67;
-            // 
-            // labelCPUOtherFamilyDescription
-            // 
-            this.labelCPUOtherFamilyDescription.AutoSize = true;
-            this.labelCPUOtherFamilyDescription.Location = new System.Drawing.Point(407, 113);
-            this.labelCPUOtherFamilyDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUOtherFamilyDescription.Name = "labelCPUOtherFamilyDescription";
-            this.labelCPUOtherFamilyDescription.Size = new System.Drawing.Size(124, 13);
-            this.labelCPUOtherFamilyDescription.TabIndex = 70;
-            this.labelCPUOtherFamilyDescription.Text = "Other Family Description:";
-            // 
-            // textBoxCPUOtherFamilyDescription
-            // 
-            this.textBoxCPUOtherFamilyDescription.Location = new System.Drawing.Point(636, 110);
-            this.textBoxCPUOtherFamilyDescription.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUOtherFamilyDescription.Name = "textBoxCPUOtherFamilyDescription";
-            this.textBoxCPUOtherFamilyDescription.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUOtherFamilyDescription.TabIndex = 69;
-            // 
-            // labelCPUPartNumber
-            // 
-            this.labelCPUPartNumber.AutoSize = true;
-            this.labelCPUPartNumber.Location = new System.Drawing.Point(405, 137);
-            this.labelCPUPartNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUPartNumber.Name = "labelCPUPartNumber";
-            this.labelCPUPartNumber.Size = new System.Drawing.Size(69, 13);
-            this.labelCPUPartNumber.TabIndex = 72;
-            this.labelCPUPartNumber.Text = "Part Number:";
-            // 
-            // textBoxCPUPartNumber
-            // 
-            this.textBoxCPUPartNumber.Location = new System.Drawing.Point(636, 134);
-            this.textBoxCPUPartNumber.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUPartNumber.Name = "textBoxCPUPartNumber";
-            this.textBoxCPUPartNumber.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUPartNumber.TabIndex = 71;
-            // 
-            // labelCPUPNPDeviceID
-            // 
-            this.labelCPUPNPDeviceID.AutoSize = true;
-            this.labelCPUPNPDeviceID.Location = new System.Drawing.Point(405, 161);
-            this.labelCPUPNPDeviceID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUPNPDeviceID.Name = "labelCPUPNPDeviceID";
-            this.labelCPUPNPDeviceID.Size = new System.Drawing.Size(83, 13);
-            this.labelCPUPNPDeviceID.TabIndex = 74;
-            this.labelCPUPNPDeviceID.Text = "PNP Device ID:";
-            // 
-            // textBoxCPUPNPDeviceID
-            // 
-            this.textBoxCPUPNPDeviceID.Location = new System.Drawing.Point(636, 158);
-            this.textBoxCPUPNPDeviceID.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUPNPDeviceID.Name = "textBoxCPUPNPDeviceID";
-            this.textBoxCPUPNPDeviceID.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUPNPDeviceID.TabIndex = 73;
-            // 
-            // labelCPUPowerManagementCapabilities
-            // 
-            this.labelCPUPowerManagementCapabilities.AutoSize = true;
-            this.labelCPUPowerManagementCapabilities.Location = new System.Drawing.Point(405, 185);
-            this.labelCPUPowerManagementCapabilities.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUPowerManagementCapabilities.Name = "labelCPUPowerManagementCapabilities";
-            this.labelCPUPowerManagementCapabilities.Size = new System.Drawing.Size(161, 13);
-            this.labelCPUPowerManagementCapabilities.TabIndex = 76;
-            this.labelCPUPowerManagementCapabilities.Text = "Power Management Capabilities:";
-            // 
-            // textBoxCPUPowerManagementCapabilities
-            // 
-            this.textBoxCPUPowerManagementCapabilities.Location = new System.Drawing.Point(636, 182);
-            this.textBoxCPUPowerManagementCapabilities.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUPowerManagementCapabilities.Name = "textBoxCPUPowerManagementCapabilities";
-            this.textBoxCPUPowerManagementCapabilities.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUPowerManagementCapabilities.TabIndex = 75;
-            // 
-            // labelCPUPowerManagementSupported
-            // 
-            this.labelCPUPowerManagementSupported.AutoSize = true;
-            this.labelCPUPowerManagementSupported.Location = new System.Drawing.Point(405, 209);
-            this.labelCPUPowerManagementSupported.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUPowerManagementSupported.Name = "labelCPUPowerManagementSupported";
-            this.labelCPUPowerManagementSupported.Size = new System.Drawing.Size(157, 13);
-            this.labelCPUPowerManagementSupported.TabIndex = 78;
-            this.labelCPUPowerManagementSupported.Text = "Power Management Supported:";
-            // 
-            // textBoxCPUPowerManagementSupported
-            // 
-            this.textBoxCPUPowerManagementSupported.Location = new System.Drawing.Point(636, 206);
-            this.textBoxCPUPowerManagementSupported.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUPowerManagementSupported.Name = "textBoxCPUPowerManagementSupported";
-            this.textBoxCPUPowerManagementSupported.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUPowerManagementSupported.TabIndex = 77;
-            // 
-            // labelCPUProcessorType
-            // 
-            this.labelCPUProcessorType.AutoSize = true;
-            this.labelCPUProcessorType.Location = new System.Drawing.Point(405, 257);
-            this.labelCPUProcessorType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUProcessorType.Name = "labelCPUProcessorType";
-            this.labelCPUProcessorType.Size = new System.Drawing.Size(84, 13);
-            this.labelCPUProcessorType.TabIndex = 80;
-            this.labelCPUProcessorType.Text = "Processor Type:";
-            // 
-            // textBoxCPUProcessorType
-            // 
-            this.textBoxCPUProcessorType.Location = new System.Drawing.Point(636, 254);
-            this.textBoxCPUProcessorType.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUProcessorType.Name = "textBoxCPUProcessorType";
-            this.textBoxCPUProcessorType.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUProcessorType.TabIndex = 79;
-            // 
-            // labelCPURevision
-            // 
-            this.labelCPURevision.AutoSize = true;
-            this.labelCPURevision.Location = new System.Drawing.Point(405, 282);
-            this.labelCPURevision.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPURevision.Name = "labelCPURevision";
-            this.labelCPURevision.Size = new System.Drawing.Size(51, 13);
-            this.labelCPURevision.TabIndex = 82;
-            this.labelCPURevision.Text = "Revision:";
-            // 
-            // textBoxCPURevision
-            // 
-            this.textBoxCPURevision.Location = new System.Drawing.Point(636, 279);
-            this.textBoxCPURevision.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPURevision.Name = "textBoxCPURevision";
-            this.textBoxCPURevision.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPURevision.TabIndex = 81;
-            // 
-            // labelCPURole
-            // 
-            this.labelCPURole.AutoSize = true;
-            this.labelCPURole.Location = new System.Drawing.Point(406, 306);
-            this.labelCPURole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPURole.Name = "labelCPURole";
-            this.labelCPURole.Size = new System.Drawing.Size(32, 13);
-            this.labelCPURole.TabIndex = 84;
-            this.labelCPURole.Text = "Role:";
-            // 
-            // textBoxCPURole
-            // 
-            this.textBoxCPURole.Location = new System.Drawing.Point(636, 303);
-            this.textBoxCPURole.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPURole.Name = "textBoxCPURole";
-            this.textBoxCPURole.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPURole.TabIndex = 83;
-            // 
-            // labelCPUSecondLevelAddressTranslationExtensions
-            // 
-            this.labelCPUSecondLevelAddressTranslationExtensions.AutoSize = true;
-            this.labelCPUSecondLevelAddressTranslationExtensions.Location = new System.Drawing.Point(406, 330);
-            this.labelCPUSecondLevelAddressTranslationExtensions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUSecondLevelAddressTranslationExtensions.Name = "labelCPUSecondLevelAddressTranslationExtensions";
-            this.labelCPUSecondLevelAddressTranslationExtensions.Size = new System.Drawing.Size(226, 13);
-            this.labelCPUSecondLevelAddressTranslationExtensions.TabIndex = 86;
-            this.labelCPUSecondLevelAddressTranslationExtensions.Text = "Second Level Address Translation Extensions:";
-            // 
-            // textBoxCPUSecondLevelAddressTranslationExtensions
-            // 
-            this.textBoxCPUSecondLevelAddressTranslationExtensions.Location = new System.Drawing.Point(636, 327);
-            this.textBoxCPUSecondLevelAddressTranslationExtensions.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUSecondLevelAddressTranslationExtensions.Name = "textBoxCPUSecondLevelAddressTranslationExtensions";
-            this.textBoxCPUSecondLevelAddressTranslationExtensions.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUSecondLevelAddressTranslationExtensions.TabIndex = 85;
-            // 
-            // labelCPUSerialNumber
-            // 
-            this.labelCPUSerialNumber.AutoSize = true;
-            this.labelCPUSerialNumber.Location = new System.Drawing.Point(406, 354);
-            this.labelCPUSerialNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUSerialNumber.Name = "labelCPUSerialNumber";
-            this.labelCPUSerialNumber.Size = new System.Drawing.Size(76, 13);
-            this.labelCPUSerialNumber.TabIndex = 88;
-            this.labelCPUSerialNumber.Text = "Serial Number:";
-            // 
-            // textBoxCPUSerialNumber
-            // 
-            this.textBoxCPUSerialNumber.Location = new System.Drawing.Point(636, 351);
-            this.textBoxCPUSerialNumber.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUSerialNumber.Name = "textBoxCPUSerialNumber";
-            this.textBoxCPUSerialNumber.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUSerialNumber.TabIndex = 87;
-            // 
-            // labelCPUStatus
-            // 
-            this.labelCPUStatus.AutoSize = true;
-            this.labelCPUStatus.Location = new System.Drawing.Point(406, 402);
-            this.labelCPUStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUStatus.Name = "labelCPUStatus";
-            this.labelCPUStatus.Size = new System.Drawing.Size(40, 13);
-            this.labelCPUStatus.TabIndex = 90;
-            this.labelCPUStatus.Text = "Status:";
-            // 
-            // textBoxCPUStatus
-            // 
-            this.textBoxCPUStatus.Location = new System.Drawing.Point(636, 399);
-            this.textBoxCPUStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUStatus.Name = "textBoxCPUStatus";
-            this.textBoxCPUStatus.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUStatus.TabIndex = 89;
-            // 
-            // labelCPUStatusInfo
-            // 
-            this.labelCPUStatusInfo.AutoSize = true;
-            this.labelCPUStatusInfo.Location = new System.Drawing.Point(406, 426);
-            this.labelCPUStatusInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUStatusInfo.Name = "labelCPUStatusInfo";
-            this.labelCPUStatusInfo.Size = new System.Drawing.Size(61, 13);
-            this.labelCPUStatusInfo.TabIndex = 92;
-            this.labelCPUStatusInfo.Text = "Status Info:";
-            // 
-            // textBoxCPUStatusInfo
-            // 
-            this.textBoxCPUStatusInfo.Location = new System.Drawing.Point(636, 423);
-            this.textBoxCPUStatusInfo.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUStatusInfo.Name = "textBoxCPUStatusInfo";
-            this.textBoxCPUStatusInfo.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUStatusInfo.TabIndex = 91;
-            // 
-            // labelCPUStepping
-            // 
-            this.labelCPUStepping.AutoSize = true;
-            this.labelCPUStepping.Location = new System.Drawing.Point(406, 450);
-            this.labelCPUStepping.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUStepping.Name = "labelCPUStepping";
-            this.labelCPUStepping.Size = new System.Drawing.Size(52, 13);
-            this.labelCPUStepping.TabIndex = 94;
-            this.labelCPUStepping.Text = "Stepping:";
-            // 
-            // textBoxCPUStepping
-            // 
-            this.textBoxCPUStepping.Location = new System.Drawing.Point(636, 447);
-            this.textBoxCPUStepping.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUStepping.Name = "textBoxCPUStepping";
-            this.textBoxCPUStepping.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUStepping.TabIndex = 93;
-            // 
-            // labelCPUSystemCreationClassName
-            // 
-            this.labelCPUSystemCreationClassName.AutoSize = true;
-            this.labelCPUSystemCreationClassName.Location = new System.Drawing.Point(406, 474);
-            this.labelCPUSystemCreationClassName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUSystemCreationClassName.Name = "labelCPUSystemCreationClassName";
-            this.labelCPUSystemCreationClassName.Size = new System.Drawing.Size(145, 13);
-            this.labelCPUSystemCreationClassName.TabIndex = 96;
-            this.labelCPUSystemCreationClassName.Text = "System Creation Class Name:";
-            // 
-            // textBoxCPUSystemCreationClassName
-            // 
-            this.textBoxCPUSystemCreationClassName.Location = new System.Drawing.Point(636, 471);
-            this.textBoxCPUSystemCreationClassName.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUSystemCreationClassName.Name = "textBoxCPUSystemCreationClassName";
-            this.textBoxCPUSystemCreationClassName.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUSystemCreationClassName.TabIndex = 95;
-            // 
-            // labelCPUSystemName
-            // 
-            this.labelCPUSystemName.AutoSize = true;
-            this.labelCPUSystemName.Location = new System.Drawing.Point(406, 498);
-            this.labelCPUSystemName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUSystemName.Name = "labelCPUSystemName";
-            this.labelCPUSystemName.Size = new System.Drawing.Size(75, 13);
-            this.labelCPUSystemName.TabIndex = 98;
-            this.labelCPUSystemName.Text = "System Name:";
-            // 
-            // textBoxCPUSystemName
-            // 
-            this.textBoxCPUSystemName.Location = new System.Drawing.Point(636, 495);
-            this.textBoxCPUSystemName.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUSystemName.Name = "textBoxCPUSystemName";
-            this.textBoxCPUSystemName.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUSystemName.TabIndex = 97;
-            // 
-            // labelCPUThreadCount
-            // 
-            this.labelCPUThreadCount.AutoSize = true;
-            this.labelCPUThreadCount.Location = new System.Drawing.Point(406, 522);
-            this.labelCPUThreadCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUThreadCount.Name = "labelCPUThreadCount";
-            this.labelCPUThreadCount.Size = new System.Drawing.Size(75, 13);
-            this.labelCPUThreadCount.TabIndex = 100;
-            this.labelCPUThreadCount.Text = "Thread Count:";
-            // 
-            // textBoxCPUThreadCount
-            // 
-            this.textBoxCPUThreadCount.Location = new System.Drawing.Point(636, 519);
-            this.textBoxCPUThreadCount.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUThreadCount.Name = "textBoxCPUThreadCount";
-            this.textBoxCPUThreadCount.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUThreadCount.TabIndex = 99;
-            // 
-            // labelCPUUniqueId
-            // 
-            this.labelCPUUniqueId.AutoSize = true;
-            this.labelCPUUniqueId.Location = new System.Drawing.Point(406, 546);
-            this.labelCPUUniqueId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUUniqueId.Name = "labelCPUUniqueId";
-            this.labelCPUUniqueId.Size = new System.Drawing.Size(58, 13);
-            this.labelCPUUniqueId.TabIndex = 102;
-            this.labelCPUUniqueId.Text = "Unique ID:";
-            // 
-            // textBoxCPUUniqueId
-            // 
-            this.textBoxCPUUniqueId.Location = new System.Drawing.Point(636, 543);
-            this.textBoxCPUUniqueId.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUUniqueId.Name = "textBoxCPUUniqueId";
-            this.textBoxCPUUniqueId.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUUniqueId.TabIndex = 101;
-            // 
-            // labelCPUUpgradeMethod
-            // 
-            this.labelCPUUpgradeMethod.AutoSize = true;
-            this.labelCPUUpgradeMethod.Location = new System.Drawing.Point(406, 570);
-            this.labelCPUUpgradeMethod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUUpgradeMethod.Name = "labelCPUUpgradeMethod";
-            this.labelCPUUpgradeMethod.Size = new System.Drawing.Size(90, 13);
-            this.labelCPUUpgradeMethod.TabIndex = 104;
-            this.labelCPUUpgradeMethod.Text = "Upgrade Method:";
-            // 
-            // textBoxCPUUpgradeMethod
-            // 
-            this.textBoxCPUUpgradeMethod.Location = new System.Drawing.Point(636, 567);
-            this.textBoxCPUUpgradeMethod.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUUpgradeMethod.Name = "textBoxCPUUpgradeMethod";
-            this.textBoxCPUUpgradeMethod.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUUpgradeMethod.TabIndex = 103;
-            // 
-            // labelCPUVersion
-            // 
-            this.labelCPUVersion.AutoSize = true;
-            this.labelCPUVersion.Location = new System.Drawing.Point(406, 593);
-            this.labelCPUVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUVersion.Name = "labelCPUVersion";
-            this.labelCPUVersion.Size = new System.Drawing.Size(45, 13);
-            this.labelCPUVersion.TabIndex = 106;
-            this.labelCPUVersion.Text = "Version:";
-            // 
-            // textBoxCPUVersion
-            // 
-            this.textBoxCPUVersion.Location = new System.Drawing.Point(636, 590);
-            this.textBoxCPUVersion.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUVersion.Name = "textBoxCPUVersion";
-            this.textBoxCPUVersion.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUVersion.TabIndex = 105;
-            // 
-            // labelCPUVirtualizationFirmwareEnabled
-            // 
-            this.labelCPUVirtualizationFirmwareEnabled.AutoSize = true;
-            this.labelCPUVirtualizationFirmwareEnabled.Location = new System.Drawing.Point(406, 617);
-            this.labelCPUVirtualizationFirmwareEnabled.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUVirtualizationFirmwareEnabled.Name = "labelCPUVirtualizationFirmwareEnabled";
-            this.labelCPUVirtualizationFirmwareEnabled.Size = new System.Drawing.Size(156, 13);
-            this.labelCPUVirtualizationFirmwareEnabled.TabIndex = 108;
-            this.labelCPUVirtualizationFirmwareEnabled.Text = "Virtualization Firmware Enabled:";
-            // 
-            // textBoxCPUVirtualizationFirmwareEnabled
-            // 
-            this.textBoxCPUVirtualizationFirmwareEnabled.Location = new System.Drawing.Point(636, 614);
-            this.textBoxCPUVirtualizationFirmwareEnabled.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUVirtualizationFirmwareEnabled.Name = "textBoxCPUVirtualizationFirmwareEnabled";
-            this.textBoxCPUVirtualizationFirmwareEnabled.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUVirtualizationFirmwareEnabled.TabIndex = 107;
-            // 
-            // labelCPUVMMonitorModeExtensions
-            // 
-            this.labelCPUVMMonitorModeExtensions.AutoSize = true;
-            this.labelCPUVMMonitorModeExtensions.Location = new System.Drawing.Point(406, 641);
-            this.labelCPUVMMonitorModeExtensions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUVMMonitorModeExtensions.Name = "labelCPUVMMonitorModeExtensions";
-            this.labelCPUVMMonitorModeExtensions.Size = new System.Drawing.Size(148, 13);
-            this.labelCPUVMMonitorModeExtensions.TabIndex = 110;
-            this.labelCPUVMMonitorModeExtensions.Text = "VM Monitor Mode Extensions:";
-            // 
-            // textBoxCPUVMMonitorModeExtensions
-            // 
-            this.textBoxCPUVMMonitorModeExtensions.Location = new System.Drawing.Point(636, 638);
-            this.textBoxCPUVMMonitorModeExtensions.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUVMMonitorModeExtensions.Name = "textBoxCPUVMMonitorModeExtensions";
-            this.textBoxCPUVMMonitorModeExtensions.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUVMMonitorModeExtensions.TabIndex = 109;
-            // 
-            // labelCPUVoltageCaps
-            // 
-            this.labelCPUVoltageCaps.AutoSize = true;
-            this.labelCPUVoltageCaps.Location = new System.Drawing.Point(406, 665);
-            this.labelCPUVoltageCaps.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUVoltageCaps.Name = "labelCPUVoltageCaps";
-            this.labelCPUVoltageCaps.Size = new System.Drawing.Size(73, 13);
-            this.labelCPUVoltageCaps.TabIndex = 112;
-            this.labelCPUVoltageCaps.Text = "Voltage Caps:";
-            // 
-            // textBoxCPUVoltageCaps
-            // 
-            this.textBoxCPUVoltageCaps.Location = new System.Drawing.Point(636, 662);
-            this.textBoxCPUVoltageCaps.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUVoltageCaps.Name = "textBoxCPUVoltageCaps";
-            this.textBoxCPUVoltageCaps.Size = new System.Drawing.Size(135, 20);
-            this.textBoxCPUVoltageCaps.TabIndex = 111;
             // 
             // FormCPUS
             // 
