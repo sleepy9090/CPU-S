@@ -13,9 +13,14 @@ namespace CPU_S
 {
     public partial class FormCPUS : Form
     {
+        CPUHelper cpuHelper;
+
         public FormCPUS()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
             GetCPUInfo();
             PopulateCPUInfo();
         }
@@ -177,10 +182,10 @@ namespace CPU_S
 
         private void PopulateCPUInfo()
         {
-            textBoxCPUAddressWidth.Text = CPU.AddressWidth.ToString();
-            textBoxCPUArchitecture.Text = CPU.Architecture.ToString();
+            textBoxCPUAddressWidth.Text = $"{CPU.AddressWidth.ToString()} {CPUConstants.BITS}";
+            textBoxCPUArchitecture.Text = $"{CPU.Architecture.ToString()} - {cpuHelper.GetArchitecture(CPU.Architecture)}";
             textBoxCPUAssetTag.Text = CPU.AssetTag.ToString();
-            textBoxCPUAvailability.Text = CPU.Availability.ToString();
+            textBoxCPUAvailability.Text = $"{CPU.Availability.ToString()} - {cpuHelper.GetAvailability(CPU.Availability)}";
             textBoxCPUCaption.Text = CPU.Caption.ToString();
             textBoxCPUCharacteristics.Text = CPU.Characteristics.ToString();
             textBoxCPUConfigManagerErrorCode.Text = CPU.ConfigManagerErrorCode.ToString();
