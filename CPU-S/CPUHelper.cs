@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -46,7 +47,7 @@ namespace CPU_S
                     architecture = "ARM64";
                     break;
                 default:
-                    architecture = "Architecture not found or unknown.";
+                    architecture = CPUConstants.NOT_FOUND;
                     break;
             }
 
@@ -123,7 +124,7 @@ namespace CPU_S
                     availability = "Quiesced. The device is quiet.";
                     break;
                 default:
-                    availability = "Availability not found or unknown.";
+                    availability = CPUConstants.NOT_FOUND;
                     break;
             }
 
@@ -333,7 +334,7 @@ namespace CPU_S
                     configManagerErrorMessage = "This device is not working properly because Windows cannot load the drivers required for this device.";
                     break;
                 default:
-                    configManagerErrorMessage = "Config Manager Error Message not found or unknown.";
+                    configManagerErrorMessage = CPUConstants.NOT_FOUND;
                     break;
             }
             return configManagerErrorMessage;
@@ -370,7 +371,7 @@ namespace CPU_S
                     status = "Other .";
                     break;
                 default:
-                    status = "Status not found or unknown.";
+                    status = CPUConstants.NOT_FOUND;
                     break;
             }
 
@@ -380,6 +381,30 @@ namespace CPU_S
         public uint GetCacheSizeFull(uint value)
         {
             return value * 1024;
+        }
+
+        public double GetCurrentVoltage(ushort value)
+        {
+            double currentVoltage = value / 10.0;
+
+
+            return currentVoltage;
+        }
+
+        public string GetFamily(uint value)
+        {
+            string family;
+            switch (value)
+            {
+                case 1:
+                    family = "Other";
+                    break;
+                default:
+                    family = CPUConstants.NOT_FOUND;
+                    break;
+
+            }
+            return family;
         }
     }
 }

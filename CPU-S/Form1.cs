@@ -92,7 +92,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.InstallDate = new DateTime();
+                //CPU.InstallDate = new DateTime();
             }
             
 
@@ -190,7 +190,7 @@ namespace CPU_S
             textBoxCPUCharacteristics.Text = $"{CPU.Characteristics} - {cpuHelper.GetCharacteristics(CPU.Characteristics)}";
             if (CPU.ConfigManagerErrorCode == uint.MaxValue)
             {
-                textBoxCPUConfigManagerErrorCode.Text = $"{CPUConstants.NOT_FOUND} - {cpuHelper.GetConfigManagerErrorCode(CPU.ConfigManagerErrorCode)}";
+                textBoxCPUConfigManagerErrorCode.Text = $"{cpuHelper.GetConfigManagerErrorCode(CPU.ConfigManagerErrorCode)}";
             }
             else
             {
@@ -200,8 +200,8 @@ namespace CPU_S
             textBoxCPUConfigManagerUserConfig.Text = CPU.ConfigManagerUserConfig.ToString();
             textBoxCPUCpuStatus.Text = $"{CPU.CpuStatus.ToString()} - {cpuHelper.GetStatus(CPU.CpuStatus)}";
             textBoxCPUCreationClassName.Text = CPU.CreationClassName;
-            textBoxCPUCurrentClockSpeed.Text = CPU.CurrentClockSpeed.ToString();
-            textBoxCPUCurrentVoltage.Text = CPU.CurrentVoltage.ToString();
+            textBoxCPUCurrentClockSpeed.Text = $"{CPU.CurrentClockSpeed} {CPUConstants.MHZ}";
+            textBoxCPUCurrentVoltage.Text = $"{CPU.CurrentVoltage.ToString()} - {cpuHelper.GetCurrentVoltage(CPU.CurrentVoltage)}{CPUConstants.VOLTAGE}";
             textBoxCPUDataWidth.Text = CPU.DataWidth.ToString();
             textBoxCPUDescription.Text = CPU.Description;
             textBoxCPUDeviceID.Text = CPU.DeviceID;
@@ -211,8 +211,12 @@ namespace CPU_S
             {
                 textBoxCPUErrorDescription.Text = CPU.ErrorDescription;
             }
+            else
+            {
+                textBoxCPUErrorDescription.Text = "Not found or unknown.";
+            }
 
-            textBoxCPUExtClock.Text = CPU.ExtClock.ToString();
+            textBoxCPUExtClock.Text = $"{CPU.ExtClock} {CPUConstants.MHZ}";
             textBoxCPUFamily.Text = CPU.Family.ToString();
             textBoxCPUInstallDate.Text = CPU.InstallDate.ToString();
 
@@ -240,7 +244,7 @@ namespace CPU_S
             textBoxCPULevel.Text = CPU.Level.ToString();
             textBoxCPULoadPercentage.Text = CPU.LoadPercentage.ToString();
             textBoxCPUManufacturer.Text = CPU.Manufacturer;
-            textBoxCPUMaxClockSpeed.Text = CPU.MaxClockSpeed.ToString();
+            textBoxCPUMaxClockSpeed.Text = $"{CPU.MaxClockSpeed} {CPUConstants.MHZ}";
             textBoxCPUName.Text = CPU.Name;
             textBoxCPUNumberOfCores.Text = CPU.NumberOfCores.ToString();
             textBoxCPUNumberOfEnabledCore.Text = CPU.NumberOfEnabledCore.ToString();

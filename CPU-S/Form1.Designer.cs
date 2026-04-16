@@ -1108,9 +1108,9 @@
             this.labelCPUExtClock.Location = new System.Drawing.Point(4, 422);
             this.labelCPUExtClock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCPUExtClock.Name = "labelCPUExtClock";
-            this.labelCPUExtClock.Size = new System.Drawing.Size(109, 13);
+            this.labelCPUExtClock.Size = new System.Drawing.Size(78, 13);
             this.labelCPUExtClock.TabIndex = 20;
-            this.labelCPUExtClock.Text = "External Clock (MHz):";
+            this.labelCPUExtClock.Text = "External Clock:";
             // 
             // labelCPUMaxClockSpeed
             // 

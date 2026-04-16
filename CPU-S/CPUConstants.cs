@@ -10,6 +10,10 @@ namespace CPU_S
     {
         public static string BITS = "bits";
 
-        public static string NOT_FOUND = "NOT FOUND";
+        public static string MHZ = "MHz";
+
+        public static string VOLTAGE = "V";
+
+        public static string NOT_FOUND = "Not found or unknown.";
     }
 }
