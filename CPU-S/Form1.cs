@@ -213,28 +213,37 @@ namespace CPU_S
             }
             else
             {
-                textBoxCPUErrorDescription.Text = "Not found or unknown.";
+                textBoxCPUErrorDescription.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
             textBoxCPUExtClock.Text = $"{CPU.ExtClock} {CPUConstants.MHZ}";
-            textBoxCPUFamily.Text = CPU.Family.ToString();
-            textBoxCPUInstallDate.Text = CPU.InstallDate.ToString();
+            textBoxCPUFamily.Text = $"{CPU.Family} - {cpuHelper.GetFamily(CPU.Family)}";
 
-            textBoxCPUL2CacheSize.Text = CPU.L2CacheSize.ToString() + " / " + cpuHelper.GetCacheSizeFull(CPU.L2CacheSize);
+            if (CPU.InstallDate == DateTime.MinValue)
+            {
+                textBoxCPUInstallDate.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            else
+            {
+                textBoxCPUInstallDate.Text = CPU.InstallDate.ToString();
+            }
+            
+
+            textBoxCPUL2CacheSize.Text = $"{CPU.L2CacheSize.ToString()} / {cpuHelper.GetCacheSizeFull(CPU.L2CacheSize)}";
             if (CPU.L2CacheSpeed == 0)
             {
-                textBoxCPUL2CacheSpeed.Text = CPU.L2CacheSpeed.ToString() + " - " + "Not found or unknown.";
+                textBoxCPUL2CacheSpeed.Text = $"{CPU.L2CacheSpeed.ToString()} - {CPUConstants.NOT_FOUND_OR_UNKNOWN}";
             }
             else
             {
                 textBoxCPUL2CacheSpeed.Text = CPU.L2CacheSpeed.ToString();
             }
 
-            textBoxCPUL3CacheSize.Text = CPU.L3CacheSize.ToString() + " / " + cpuHelper.GetCacheSizeFull(CPU.L3CacheSize);
+            textBoxCPUL3CacheSize.Text = $"{CPU.L3CacheSize.ToString()} / {cpuHelper.GetCacheSizeFull(CPU.L3CacheSize)}";
 
             if (CPU.L3CacheSpeed == 0)
             {
-                textBoxCPUL3CacheSpeed.Text = CPU.L3CacheSpeed.ToString() + " - " + "Not found or unknown.";
+                textBoxCPUL3CacheSpeed.Text = $"{CPU.L3CacheSpeed.ToString()} - {CPUConstants.NOT_FOUND_OR_UNKNOWN}";
             }
             else
             {
@@ -242,7 +251,7 @@ namespace CPU_S
             }
             textBoxCPULastErrorCode.Text = CPU.LastErrorCode.ToString();
             textBoxCPULevel.Text = CPU.Level.ToString();
-            textBoxCPULoadPercentage.Text = CPU.LoadPercentage.ToString();
+            textBoxCPULoadPercentage.Text = $"{CPU.LoadPercentage.ToString()}{CPUConstants.PERCENTAGE}";
             textBoxCPUManufacturer.Text = CPU.Manufacturer;
             textBoxCPUMaxClockSpeed.Text = $"{CPU.MaxClockSpeed} {CPUConstants.MHZ}";
             textBoxCPUName.Text = CPU.Name;
@@ -254,7 +263,11 @@ namespace CPU_S
             {
                 textBoxCPUOtherFamilyDescription.Text = CPU.OtherFamilyDescription;
             }
-            
+            else
+            {
+                textBoxCPUOtherFamilyDescription.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
             textBoxCPUPartNumber.Text = CPU.PartNumber;
             textBoxCPUPNPDeviceID.Text = CPU.DeviceID;
 
@@ -262,12 +275,16 @@ namespace CPU_S
             {
                 foreach (ushort capability in CPU.PowerManagementCapabilities)
                 {
-                    textBoxCPUPowerManagementCapabilities.Text += capability.ToString() + ", ";
+                    textBoxCPUPowerManagementCapabilities.Text += capability.ToString() + " - " + cpuHelper.GetPowerManagementCapabilities(capability) + ", ";
                 }
                 
             }
-            
-            textBoxCPUPowerManagementSupported.Text = CPU.PowerManagementSupported.ToString();
+            else
+            {
+                textBoxCPUPowerManagementCapabilities.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+                textBoxCPUPowerManagementSupported.Text = CPU.PowerManagementSupported.ToString();
             textBoxCPUProcessorId.Text = CPU.ProcessorId;
             textBoxCPUProcessorType.Text = CPU.ProcessorType.ToString();
             textBoxCPURevision.Text = CPU.Revision.ToString();

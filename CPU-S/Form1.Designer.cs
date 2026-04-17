@@ -687,7 +687,7 @@
             // labelCPUManufacturer
             // 
             this.labelCPUManufacturer.AutoSize = true;
-            this.labelCPUManufacturer.Location = new System.Drawing.Point(7, 662);
+            this.labelCPUManufacturer.Location = new System.Drawing.Point(4, 662);
             this.labelCPUManufacturer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCPUManufacturer.Name = "labelCPUManufacturer";
             this.labelCPUManufacturer.Size = new System.Drawing.Size(73, 13);
@@ -705,7 +705,7 @@
             // labelCPULoadPercentage
             // 
             this.labelCPULoadPercentage.AutoSize = true;
-            this.labelCPULoadPercentage.Location = new System.Drawing.Point(7, 638);
+            this.labelCPULoadPercentage.Location = new System.Drawing.Point(4, 638);
             this.labelCPULoadPercentage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCPULoadPercentage.Name = "labelCPULoadPercentage";
             this.labelCPULoadPercentage.Size = new System.Drawing.Size(92, 13);
@@ -723,7 +723,7 @@
             // labelCPULevel
             // 
             this.labelCPULevel.AutoSize = true;
-            this.labelCPULevel.Location = new System.Drawing.Point(7, 614);
+            this.labelCPULevel.Location = new System.Drawing.Point(4, 614);
             this.labelCPULevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCPULevel.Name = "labelCPULevel";
             this.labelCPULevel.Size = new System.Drawing.Size(36, 13);
@@ -825,7 +825,7 @@
             this.textBoxCPUFamily.Location = new System.Drawing.Point(151, 443);
             this.textBoxCPUFamily.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUFamily.Name = "textBoxCPUFamily";
-            this.textBoxCPUFamily.Size = new System.Drawing.Size(135, 20);
+            this.textBoxCPUFamily.Size = new System.Drawing.Size(235, 20);
             this.textBoxCPUFamily.TabIndex = 51;
             // 
             // labelCPUErrorDescription
@@ -1115,7 +1115,7 @@
             // labelCPUMaxClockSpeed
             // 
             this.labelCPUMaxClockSpeed.AutoSize = true;
-            this.labelCPUMaxClockSpeed.Location = new System.Drawing.Point(7, 685);
+            this.labelCPUMaxClockSpeed.Location = new System.Drawing.Point(4, 685);
             this.labelCPUMaxClockSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCPUMaxClockSpeed.Name = "labelCPUMaxClockSpeed";
             this.labelCPUMaxClockSpeed.Size = new System.Drawing.Size(125, 13);

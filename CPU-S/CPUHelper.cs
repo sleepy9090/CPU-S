@@ -535,7 +535,7 @@ namespace CPU_S
                     family = "Intel® Core™ m7 processor";
                     break;
                 case 48:
-                    family = "Alpha Family";
+                    family = "Alpha Family (version 3.9.0 specifications) or Pentium® Pro processor (version 2.0 specifications)";
                     break;
                 case 49:
                     family = "Alpha 21064";
@@ -544,595 +544,595 @@ namespace CPU_S
                     family = "Alpha 21066";
                     break;
                 case 51:
-                    family = "";
+                    family = "Alpha 21164";
                     break;
                 case 52:
-                    family = "";
+                    family = "Alpha 21164PC";
                     break;
                 case 53:
-                    family = "";
+                    family = "Alpha 21164a";
                     break;
                 case 54:
-                    family = "";
+                    family = "Alpha 21264";
                     break;
                 case 55:
-                    family = "";
+                    family = "Alpha 21364";
                     break;
                 case 56:
-                    family = "";
+                    family = "AMD Turion™ II Ultra Dual-Core Mobile M Processor Family";
                     break;
                 case 57:
-                    family = "";
+                    family = "AMD Turion™ II Dual-Core Mobile M Processor Family";
                     break;
                 case 58:
-                    family = "";
+                    family = "AMD Athlon™ II Dual-Core M Processor Family";
                     break;
                 case 59:
-                    family = "";
+                    family = "AMD Opteron™ 6100 Series Processor";
                     break;
                 case 60:
-                    family = "";
+                    family = "AMD Opteron™ 4100 Series Processor";
                     break;
                 case 61:
-                    family = "";
+                    family = "AMD Opteron™ 6200 Series Processor";
                     break;
                 case 62:
-                    family = "";
+                    family = "AMD Opteron™ 4200 Series Processor";
                     break;
                 case 63:
-                    family = "";
+                    family = "AMD FX™ Series Processor";
                     break;
                 case 64:
-                    family = "";
+                    family = "MIPS Family";
                     break;
                 case 65:
-                    family = "";
+                    family = "MIPS R4000";
                     break;
                 case 66:
-                    family = "";
+                    family = "MIPS R4200";
                     break;
                 case 67:
-                    family = "";
+                    family = "MIPS R4400";
                     break;
                 case 68:
-                    family = "";
+                    family = "MIPS R4600";
                     break;
                 case 69:
-                    family = "";
+                    family = "MIPS R10000";
                     break;
                 case 70:
-                    family = "";
+                    family = "AMD C-Series Processor";
                     break;
                 case 71:
-                    family = "";
+                    family = "AMD E-Series Processor";
                     break;
                 case 72:
-                    family = "";
+                    family = "AMD A-Series Processor";
                     break;
                 case 73:
-                    family = "";
+                    family = "AMD G-Series Processor";
                     break;
                 case 74:
-                    family = "";
+                    family = "AMD Z-Series Processor";
                     break;
                 case 75:
-                    family = "";
+                    family = "AMD R-Series Processor";
                     break;
                 case 76:
-                    family = "";
+                    family = "AMD Opteron™ 4300 Series Processor";
                     break;
                 case 77:
-                    family = "";
+                    family = "AMD Opteron™ 6300 Series Processor";
                     break;
                 case 78:
-                    family = "";
+                    family = "AMD Opteron™ 3300 Series Processor";
                     break;
                 case 79:
-                    family = "";
+                    family = "AMD FirePro™ Series Processor";
                     break;
                 case 80:
-                    family = "";
+                    family = "SPARC Family";
                     break;
                 case 81:
-                    family = "";
+                    family = "SuperSPARC";
                     break;
                 case 82:
-                    family = "";
+                    family = "microSPARC II";
                     break;
                 case 83:
-                    family = "";
+                    family = "microSPARC IIep";
                     break;
                 case 84:
-                    family = "";
+                    family = "UltraSPARC";
                     break;
                 case 85:
-                    family = "";
+                    family = "UltraSPARC II";
                     break;
                 case 86:
-                    family = "";
+                    family = "UltraSPARC Iii";
                     break;
                 case 87:
-                    family = "";
+                    family = "UltraSPARC III";
                     break;
                 case 88:
-                    family = "";
+                    family = "UltraSPARC IIIi";
                     break;
                 case 96:
-                    family = "";
+                    family = "68040 Family";
                     break;
                 case 97:
-                    family = "";
+                    family = "68xxx";
                     break;
                 case 98:
-                    family = "";
+                    family = "68000";
                     break;
                 case 99:
-                    family = "";
+                    family = "68010";
                     break;
                 case 100:
-                    family = "";
+                    family = "68020";
                     break;
                 case 101:
-                    family = "";
+                    family = "68030";
                     break;
                 case 102:
-                    family = "";
+                    family = "AMD Athlon(TM) X4 Quad-Core Processor Family";
                     break;
                 case 103:
-                    family = "";
+                    family = "AMD Opteron(TM) X1000 Series Processor";
                     break;
                 case 104:
-                    family = "";
+                    family = "AMD Opteron(TM) X2000 Series APU";
                     break;
                 case 105:
-                    family = "";
+                    family = "AMD Opteron(TM) A-Series Processor";
                     break;
                 case 106:
-                    family = "";
+                    family = "AMD Opteron(TM) X3000 Series APU";
                     break;
                 case 107:
-                    family = "";
+                    family = "AMD Zen Processor Family";
                     break;
                 case 112:
-                    family = "";
+                    family = "Hobbit Family";
                     break;
                 case 120:
-                    family = "";
+                    family = "Crusoe™ TM5000 Family";
                     break;
                 case 121:
-                    family = "";
+                    family = "Crusoe™ TM3000 Family";
                     break;
                 case 122:
-                    family = "";
+                    family = "Efficeon™ TM8000 Family";
                     break;
                 case 128:
-                    family = "";
+                    family = "Weitek";
                     break;
                 case 130:
-                    family = "";
+                    family = "Itanium™ processor";
                     break;
                 case 131:
-                    family = "";
+                    family = "AMD Athlon™ 64 Processor Family";
                     break;
                 case 132:
-                    family = "";
+                    family = "AMD Opteron™ Processor Family";
                     break;
                 case 133:
-                    family = "";
+                    family = "AMD Sempron™ Processor Family";
                     break;
                 case 134:
-                    family = "";
+                    family = "AMD Turion™ 64 Mobile Technology";
                     break;
                 case 135:
-                    family = "";
+                    family = "Dual-Core AMD Opteron™ Processor Family";
                     break;
                 case 136:
-                    family = "";
+                    family = "AMD Athlon™ 64 X2 Dual-Core Processor Family";
                     break;
                 case 137:
-                    family = "";
+                    family = "AMD Turion™ 64 X2 Mobile Technology";
                     break;
                 case 138:
-                    family = "";
+                    family = "Quad-Core AMD Opteron™ Processor Family";
                     break;
                 case 139:
-                    family = "";
+                    family = "Third-Generation AMD Opteron™ Processor Family";
                     break;
                 case 140:
-                    family = "";
+                    family = "AMD Phenom™ FX Quad-Core Processor Family";
                     break;
                 case 141:
-                    family = "";
+                    family = "AMD Phenom™ X4 Quad-Core Processor Family";
                     break;
                 case 142:
-                    family = "";
+                    family = "AMD Phenom™ X2 Dual-Core Processor Family";
                     break;
                 case 143:
-                    family = "";
+                    family = "AMD Athlon™ X2 Dual-Core Processor Family";
                     break;
                 case 144:
-                    family = "";
+                    family = "PA-RISC Family";
                     break;
                 case 145:
-                    family = "";
+                    family = "PA-RISC 8500";
                     break;
                 case 146:
-                    family = "";
+                    family = "PA-RISC 8000";
                     break;
                 case 147:
-                    family = "";
+                    family = "PA-RISC 7300LC";
                     break;
                 case 148:
-                    family = "";
+                    family = "PA-RISC 7200";
                     break;
                 case 149:
-                    family = "";
+                    family = "PA-RISC 7100LC";
                     break;
                 case 150:
-                    family = "";
+                    family = "PA-RISC 7100";
                     break;
                 case 160:
-                    family = "";
+                    family = "V30 Family";
                     break;
                 case 161:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 3200 Series";
                     break;
                 case 162:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 3000 Series";
                     break;
                 case 163:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 5300 Series";
                     break;
                 case 164:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 5100 Series";
                     break;
                 case 165:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 5000 Series";
                     break;
                 case 166:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor LV";
                     break;
                 case 167:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor ULV";
                     break;
                 case 168:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 7100 Series";
                     break;
                 case 169:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 5400 Series";
                     break;
                 case 170:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor";
                     break;
                 case 171:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 5200 Series";
                     break;
                 case 172:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 7200 Series";
                     break;
                 case 173:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 7300 Series";
                     break;
                 case 174:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 7400 Series";
                     break;
                 case 175:
-                    family = "";
+                    family = "Multi-Core Intel® Xeon® processor 7400 Series";
                     break;
                 case 176:
-                    family = "";
+                    family = "Pentium® III Xeon® processor";
                     break;
                 case 177:
-                    family = "";
+                    family = "Pentium® III Processor with Intel® SpeedStep™ Technology";
                     break;
                 case 178:
-                    family = "";
+                    family = "Pentium® 4 Processor";
                     break;
                 case 179:
-                    family = "";
+                    family = "Intel® Xeon® processor";
                     break;
                 case 180:
-                    family = "";
+                    family = "AS400 Family";
                     break;
                 case 181:
-                    family = "";
+                    family = "Intel® Xeon® processor MP";
                     break;
                 case 182:
-                    family = "";
+                    family = "AMD Athlon™ XP Processor Family";
                     break;
                 case 183:
-                    family = "";
+                    family = "AMD Athlon™ MP Processor Family";
                     break;
                 case 184:
-                    family = "";
+                    family = "Intel® Itanium® 2 processor";
                     break;
                 case 185:
-                    family = "";
+                    family = "Intel® Pentium® M processor";
                     break;
                 case 186:
-                    family = "";
+                    family = "Intel® Celeron® D processor";
                     break;
                 case 187:
-                    family = "";
+                    family = "Intel® Pentium® D processor";
                     break;
                 case 188:
-                    family = "";
+                    family = "Intel® Pentium® Processor Extreme Edition";
                     break;
                 case 189:
-                    family = "";
+                    family = "Intel® Core™ Solo Processor";
                     break;
                 case 190:
-                    family = "";
+                    family = "Reserved (AMD K7 or Intel Core 2 as of SMBIOS version 2.5)";
                     break;
                 case 191:
-                    family = "";
+                    family = "Intel® Core™ 2 Duo Processor";
                     break;
                 case 192:
-                    family = "";
+                    family = "Intel® Core™ 2 Solo processor";
                     break;
                 case 193:
-                    family = "";
+                    family = "Intel® Core™ 2 Extreme processor";
                     break;
                 case 194:
-                    family = "";
+                    family = "Intel® Core™ 2 Quad processor";
                     break;
                 case 195:
-                    family = "";
+                    family = "Intel® Core™ 2 Extreme mobile processor";
                     break;
                 case 196:
-                    family = "";
+                    family = "Intel® Core™ 2 Duo mobile processor";
                     break;
                 case 197:
-                    family = "";
+                    family = "Intel® Core™ 2 Solo mobile processor";
                     break;
                 case 198:
-                    family = "";
+                    family = "Intel® Core™ i7 processor";
                     break;
                 case 199:
-                    family = "";
+                    family = "Dual-Core Intel® Celeron® processor";
                     break;
                 case 200:
-                    family = "";
+                    family = "IBM390 Family";
                     break;
                 case 201:
-                    family = "";
+                    family = "G4";
                     break;
                 case 202:
-                    family = "";
+                    family = "G5";
                     break;
                 case 203:
-                    family = "";
+                    family = "ESA/390 G6";
                     break;
                 case 204:
-                    family = "";
+                    family = "z/Architecture base";
                     break;
                 case 205:
-                    family = "";
+                    family = "Intel® Core™ i5 processor";
                     break;
                 case 206:
-                    family = "";
+                    family = "Intel® Core™ i3 processor";
                     break;
                 case 207:
-                    family = "";
+                    family = "Intel® Core™ i9 processor";
                     break;
                 case 208:
-                    family = "";
+                    family = "Intel® Xeon® D Processor family";
                     break;
                 case 210:
-                    family = "";
+                    family = "VIA C7™-M Processor Family";
                     break;
                 case 211:
-                    family = "";
+                    family = "VIA C7™-D Processor Family";
                     break;
                 case 212:
-                    family = "";
+                    family = "VIA C7™ Processor Family";
                     break;
                 case 213:
-                    family = "";
+                    family = "VIA Eden™ Processor Family";
                     break;
                 case 214:
-                    family = "";
+                    family = "Multi-Core Intel® Xeon® processor";
                     break;
                 case 215:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 3xxx Series";
                     break;
                 case 216:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 3xxx Series";
                     break;
                 case 217:
-                    family = "";
+                    family = "VIA Nano™ Processor Family";
                     break;
                 case 218:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 5xxx Series";
                     break;
                 case 219:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 5xxx Series";
                     break;
                 case 221:
-                    family = "";
+                    family = "Dual-Core Intel® Xeon® processor 7xxx Series";
                     break;
                 case 222:
-                    family = "";
+                    family = "Quad-Core Intel® Xeon® processor 7xxx Series";
                     break;
                 case 223:
-                    family = "";
+                    family = "Multi-Core Intel® Xeon® processor 7xxx Series";
                     break;
                 case 224:
-                    family = "";
+                    family = "Multi-Core Intel® Xeon® processor 3400 Series";
                     break;
                 case 228:
-                    family = "";
+                    family = "AMD Opteron™ 3000 Series Processor";
                     break;
                 case 229:
-                    family = "";
+                    family = "AMD Sempron™ II Processor";
                     break;
                 case 230:
-                    family = "80487";
+                    family = "Embedded AMD Opteron™ Quad-Core Processor Family";
                     break;
                 case 231:
-                    family = "";
+                    family = "AMD Phenom™ Triple-Core Processor Family";
                     break;
                 case 232:
-                    family = "";
+                    family = "AMD Turion™ Ultra Dual-Core Mobile Processor Family";
                     break;
                 case 233:
-                    family = "";
+                    family = "AMD Turion™ Dual-Core Mobile Processor Family";
                     break;
                 case 234:
-                    family = "";
+                    family = "AMD Athlon™ Dual-Core Processor Family";
                     break;
                 case 235:
-                    family = "";
+                    family = "AMD Sempron™ SI Processor Family";
                     break;
                 case 236:
-                    family = "";
+                    family = "AMD Phenom™ II Processor Family";
                     break;
                 case 237:
-                    family = "";
+                    family = "AMD Athlon™ II Processor Family";
                     break;
                 case 238:
-                    family = "";
+                    family = "Six-Core AMD Opteron™ Processor Family";
                     break;
                 case 239:
-                    family = "";
+                    family = "AMD Sempron™ M Processor Family";
                     break;
                 case 250:
-                    family = "80487";
+                    family = "i860";
                     break;
                 case 251:
-                    family = "";
+                    family = "i960";
                     break;
                 case 254:
-                    family = "";
+                    family = "Indicator to obtain the processor family from the Processor Family 2 field";
                     break;
                 case 255:
-                    family = "";
+                    family = "Reserved";
                     break;
                 case 256:
-                    family = "";
+                    family = "ARMv7";
                     break;
                 case 257:
-                    family = "";
+                    family = "ARMv8";
                     break;
                 case 258:
-                    family = "";
+                    family = "ARMv9";
                     break;
                 case 259:
-                    family = "";
+                    family = "Reserved for future use by ARM";
                     break;
                 case 260:
-                    family = "80487";
+                    family = "SH-3";
                     break;
                 case 261:
-                    family = "";
+                    family = "SH-4";
                     break;
                 case 280:
-                    family = "80487";
+                    family = "ARM";
                     break;
                 case 281:
-                    family = "";
+                    family = "StrongARM";
                     break;
                 case 300:
-                    family = "";
+                    family = "6x86";
                     break;
                 case 301:
-                    family = "";
+                    family = "MediaGX";
                     break;
                 case 302:
-                    family = "";
+                    family = "MII";
                     break;
                 case 320:
-                    family = "";
+                    family = "WinChip";
                     break;
                 case 350:
-                    family = "";
+                    family = "DSP";
                     break;
                 case 500:
-                    family = "";
+                    family = "Video Processor";
                     break;
                 case 512:
-                    family = "";
+                    family = "RISC-V RV32";
                     break;
                 case 513:
-                    family = "";
+                    family = "RISC-V RV64";
                     break;
                 case 514:
-                    family = "";
+                    family = "RISC-V RV128";
                     break;
                 case 600:
-                    family = "";
+                    family = "LoongArch";
                     break;
                 case 601:
-                    family = "";
+                    family = "Loongson™ 1 Processor Family";
                     break;
                 case 602:
-                    family = "";
+                    family = "Loongson™ 2 Processor Family";
                     break;
                 case 603:
-                    family = "";
+                    family = "Loongson™ 3 Processor Family";
                     break;
                 case 604:
-                    family = "";
+                    family = "Loongson™ 2K Processor Family";
                     break;
                 case 605:
-                    family = "";
+                    family = "Loongson™ 3A Processor Family";
                     break;
                 case 606:
-                    family = "";
+                    family = "Loongson™ 3B Processor Family";
                     break;
                 case 607:
-                    family = "";
+                    family = "Loongson™ 3C Processor Family";
                     break;
                 case 608:
-                    family = "";
+                    family = "Loongson™ 3D Processor Family";
                     break;
                 case 609:
-                    family = "";
+                    family = "Loongson™ 3E Processor Family";
                     break;
                 case 610:
-                    family = "";
+                    family = "Dual-Core Loongson™ 2K Processor 2xxx Series";
                     break;
                 case 620:
-                    family = "";
+                    family = "Quad-Core Loongson™ 3A Processor 5xxx Series";
                     break;
                 case 621:
-                    family = "";
+                    family = "Multi-Core Loongson™ 3A Processor 5xxx Series";
                     break;
                 case 622:
-                    family = "";
+                    family = "Quad-Core Loongson™ 3B Processor 5xxx Series";
                     break;
                 case 623:
-                    family = "";
+                    family = "Multi-Core Loongson™ 3B Processor 5xxx Series";
                     break;
                 case 624:
-                    family = "";
+                    family = "Multi-Core Loongson™ 3C Processor 5xxx Series";
                     break;
                 case 625:
-                    family = "";
+                    family = "Multi-Core Loongson™ 3D Processor 5xxx Series";
                     break;
                 case 768:
-                    family = "";
+                    family = "Intel® Core™ 3";
                     break;
                 case 769:
-                    family = "";
+                    family = "Intel® Core™ 5";
                     break;
                 case 770:
-                    family = "";
+                    family = "Intel® Core™ 7";
                     break;
                 case 771:
-                    family = "";
+                    family = "Intel® Core™ 9";
                     break;
                 case 772:
-                    family = "";
+                    family = "Intel® Core™ Ultra 3";
                     break;
                 case 773:
-                    family = "";
+                    family = "Intel® Core™ Ultra 5";
                     break;
                 case 774:
-                    family = "";
+                    family = "Intel® Core™ Ultra 7";
                     break;
                 case 775:
-                    family = "";
+                    family = "Intel® Core™ Ultra 9";
                     break;
                 case 65534:
                     family = "Reserved";
@@ -1146,6 +1146,42 @@ namespace CPU_S
 
             }
             return family;
+        }
+
+        public string GetPowerManagementCapabilities(ushort value)
+        {
+            string powerManagementCapability;
+            switch(value)
+            {
+                case 0:
+                    powerManagementCapability = "Unknown";
+                    break;
+                case 1:
+                    powerManagementCapability = "Not Supported";
+                    break;
+                case 2:
+                    powerManagementCapability = "Disabled";
+                    break;
+                case 3:
+                    powerManagementCapability = "Enabled";
+                    break;
+                case 4:
+                    powerManagementCapability = "Power Saving Modes Entered Automatically";
+                    break;
+                case 5:
+                    powerManagementCapability = "Power State Settable";
+                    break;
+                case 6:
+                    powerManagementCapability = "Power Cycling Supported";
+                    break;
+                case 7:
+                    powerManagementCapability = "Timed Power On Supported";
+                    break;
+                default:
+                    powerManagementCapability = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    break;
+            }
+            return powerManagementCapability;
         }
     }
 }
