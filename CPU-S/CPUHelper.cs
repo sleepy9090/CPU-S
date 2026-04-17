@@ -1183,5 +1183,338 @@ namespace CPU_S
             }
             return powerManagementCapability;
         }
+
+        public string GetProcessorType(ushort value)
+        {
+            string processorType;
+
+            switch (value)
+            {
+                case 1:
+                    processorType = "Other";
+                    break;
+                case 2:
+                    processorType = "Unknown";
+                    break;
+                case 3:
+                    processorType = "Central Processor";
+                    break;
+                case 4:
+                    processorType = "Math Processor";
+                    break;
+                case 5:
+                    processorType = "DSP Processor";
+                    break;
+                case 6:
+                    processorType = "Video Processor";
+                    break;
+                default:
+                    processorType = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    break;
+            }
+
+            return processorType;
+        }
+
+        public string GetStatusInfo(ushort value)
+        {
+            string statusInfo;
+
+            switch (value)
+            {
+                case 1:
+                    statusInfo = "Other";
+                    break;
+                case 2:
+                    statusInfo = "Unknown";
+                    break;
+                case 3:
+                    statusInfo = "Enabled";
+                    break;
+                case 4:
+                    statusInfo = "Disabled";
+                    break;
+                case 5:
+                    statusInfo = "Not Applicable";
+                    break;
+                default:
+                    statusInfo = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    break;
+            }
+
+            return statusInfo;
+        }
+
+        public string GetUpgradeMethod(ushort value)
+        {
+            string upgradeMethod;
+
+            switch (value)
+            {
+                case 1:
+                    upgradeMethod = "Other";
+                    break;
+                case 2:
+                    upgradeMethod = "Unknown";
+                    break;
+                case 3:
+                    upgradeMethod = "Daughter Board";
+                    break;
+                case 4:
+                    upgradeMethod = "ZIF Socket";
+                    break;
+                case 5:
+                    upgradeMethod = "Replaceable Piggy Back";
+                    break;
+                case 6:
+                    upgradeMethod = "None";
+                    break;
+                case 7:
+                    upgradeMethod = "LIF Socket";
+                    break;
+                case 8:
+                    upgradeMethod = "Slot 1";
+                    break;
+                case 9:
+                    upgradeMethod = "Slot 2";
+                    break;
+                case 10:
+                    upgradeMethod = "370-pin socket";
+                    break;
+                case 11:
+                    upgradeMethod = "Slot A";
+                    break;
+                case 12:
+                    upgradeMethod = "";
+                    break;
+                case 13:
+                    upgradeMethod = "";
+                    break;
+                case 14:
+                    upgradeMethod = "";
+                    break;
+                case 15:
+                    upgradeMethod = "";
+                    break;
+                case 16:
+                    upgradeMethod = "";
+                    break;
+                case 17:
+                    upgradeMethod = "";
+                    break;
+                case 18:
+                    upgradeMethod = "";
+                    break;
+                case 19:
+                    upgradeMethod = "";
+                    break;
+                case 20:
+                    upgradeMethod = "";
+                    break;
+                case 21:
+                    upgradeMethod = "";
+                    break;
+                case 22:
+                    upgradeMethod = "";
+                    break;
+                case 24:
+                    upgradeMethod = "";
+                    break;
+                case 25:
+                    upgradeMethod = "";
+                    break;
+                case 26:
+                    upgradeMethod = "";
+                    break;
+                case 27:
+                    upgradeMethod = "";
+                    break;
+                case 28:
+                    upgradeMethod = "";
+                    break;
+                case 29:
+                    upgradeMethod = "";
+                    break;
+                case 30:
+                    upgradeMethod = "";
+                    break;
+                case 31:
+                    upgradeMethod = "";
+                    break;
+                case 32:
+                    upgradeMethod = "";
+                    break;
+                case 33:
+                    upgradeMethod = "";
+                    break;
+                case 34:
+                    upgradeMethod = "";
+                    break;
+                case 35:
+                    upgradeMethod = "";
+                    break;
+                case 36:
+                    upgradeMethod = "";
+                    break;
+                case 37:
+                    upgradeMethod = "";
+                    break;
+                case 38:
+                    upgradeMethod = "";
+                    break;
+                case 39:
+                    upgradeMethod = "";
+                    break;
+                case 40:
+                    upgradeMethod = "";
+                    break;
+                case 41:
+                    upgradeMethod = "";
+                    break;
+                case 42:
+                    upgradeMethod = "";
+                    break;
+                case 43:
+                    upgradeMethod = "";
+                    break;
+                case 44:
+                    upgradeMethod = "";
+                    break;
+                case 45:
+                    upgradeMethod = "";
+                    break;
+                case 46:
+                    upgradeMethod = "";
+                    break;
+                case 47:
+                    upgradeMethod = "";
+                    break;
+                case 48:
+                    upgradeMethod = "";
+                    break;
+                case 49:
+                    upgradeMethod = "";
+                    break;
+                case 50:
+                    upgradeMethod = "";
+                    break;
+                case 51:
+                    upgradeMethod = "";
+                    break;
+                case 52:
+                    upgradeMethod = "";
+                    break;
+                case 53:
+                    upgradeMethod = "";
+                    break;
+                case 54:
+                    upgradeMethod = "";
+                    break;
+                case 55:
+                    upgradeMethod = "";
+                    break;
+                case 56:
+                    upgradeMethod = "";
+                    break;
+                case 57:
+                    upgradeMethod = "";
+                    break;
+                case 58:
+                    upgradeMethod = "";
+                    break;
+                case 59:
+                    upgradeMethod = "";
+                    break;
+                case 60:
+                    upgradeMethod = "";
+                    break;
+                case 61:
+                    upgradeMethod = "";
+                    break;
+                case 62:
+                    upgradeMethod = "";
+                    break;
+                case 63:
+                    upgradeMethod = "";
+                    break;
+                case 64:
+                    upgradeMethod = "";
+                    break;
+                case 65:
+                    upgradeMethod = "";
+                    break;
+                case 66:
+                    upgradeMethod = "";
+                    break;
+                case 67:
+                    upgradeMethod = "";
+                    break;
+                case 68:
+                    upgradeMethod = "";
+                    break;
+                case 69:
+                    upgradeMethod = "";
+                    break;
+                case 70:
+                    upgradeMethod = "";
+                    break;
+                case 71:
+                    upgradeMethod = "";
+                    break;
+                case 72:
+                    upgradeMethod = "";
+                    break;
+                case 73:
+                    upgradeMethod = "";
+                    break;
+                case 74:
+                    upgradeMethod = "";
+                    break;
+                case 75:
+                    upgradeMethod = "";
+                    break;
+                case 76:
+                    upgradeMethod = "";
+                    break;
+                case 77:
+                    upgradeMethod = "";
+                    break;
+                case 78:
+                    upgradeMethod = "";
+                    break;
+                case 79:
+                    upgradeMethod = "";
+                    break;
+                case 80:
+                    upgradeMethod = "";
+                    break;
+                case 81:
+                    upgradeMethod = "";
+                    break;
+                case 82:
+                    upgradeMethod = "";
+                    break;
+                case 83:
+                    upgradeMethod = "";
+                    break;
+                case 84:
+                    upgradeMethod = "";
+                    break;
+                case 85:
+                    upgradeMethod = "";
+                    break;
+                case 86:
+                    upgradeMethod = "";
+                    break;
+                case 87:
+                    upgradeMethod = "";
+                    break;
+                default:
+                    upgradeMethod = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    break;
+            }
+
+            return upgradeMethod;
+        }
     }
 }

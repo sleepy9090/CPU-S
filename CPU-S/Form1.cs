@@ -54,7 +54,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.ConfigManagerUserConfig = false;
+                
             }
             
             CPU.CpuStatus = (ushort)cpu["CpuStatus"];
@@ -71,7 +71,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.ErrorCleared = false;
+                
             }
 
             try
@@ -80,7 +80,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.ErrorDescription = "";
+                
             }
             
             CPU.ExtClock = (uint)cpu["ExtClock"];
@@ -92,7 +92,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                //CPU.InstallDate = new DateTime();
+                
             }
             
 
@@ -104,7 +104,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.L2CacheSpeed = 0;
+                
             }
             
             CPU.L3CacheSize = (uint)cpu["L3CacheSize"];
@@ -115,7 +115,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.L3CacheSpeed = 0;
+                
             }
 
             try
@@ -124,7 +124,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.LastErrorCode = 0;
+                
             }
 
             
@@ -150,7 +150,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.Revision = 0;
+                
             }
             
             CPU.Role = (string)cpu["Role"];
@@ -175,7 +175,7 @@ namespace CPU_S
             }
             catch (Exception ex)
             {
-                CPU.VoltageCaps = 0;
+                
             }
             
         }
@@ -284,16 +284,16 @@ namespace CPU_S
                 textBoxCPUPowerManagementCapabilities.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-                textBoxCPUPowerManagementSupported.Text = CPU.PowerManagementSupported.ToString();
+            textBoxCPUPowerManagementSupported.Text = CPU.PowerManagementSupported.ToString();
             textBoxCPUProcessorId.Text = CPU.ProcessorId;
-            textBoxCPUProcessorType.Text = CPU.ProcessorType.ToString();
+            textBoxCPUProcessorType.Text = $"{CPU.ProcessorType} - {cpuHelper.GetProcessorType(CPU.ProcessorType)}";
             textBoxCPURevision.Text = CPU.Revision.ToString();
             textBoxCPURole.Text = CPU.Role;
             textBoxCPUSecondLevelAddressTranslationExtensions.Text = CPU.SecondLevelAddressTranslationExtensions.ToString();
             textBoxCPUSerialNumber.Text = CPU.SerialNumber;
             textBoxCPUSocketDesignation.Text = CPU.SocketDesignation;
             textBoxCPUStatus.Text = CPU.Status;
-            textBoxCPUStatusInfo.Text = CPU.StatusInfo.ToString();
+            textBoxCPUStatusInfo.Text = $"{CPU.StatusInfo} - {cpuHelper.GetStatusInfo(CPU.StatusInfo)}";
             textBoxCPUStepping.Text = CPU.StatusInfo.ToString();
             textBoxCPUSystemCreationClassName.Text = CPU.SystemCreationClassName;
             textBoxCPUSystemName.Text = CPU.SystemName;
@@ -303,9 +303,22 @@ namespace CPU_S
             {
                 textBoxCPUUniqueId.Text = CPU.UniqueId;
             }
+            else
+            {
+                textBoxCPUUniqueId.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            textBoxCPUUpgradeMethod.Text = $"{CPU.UpgradeMethod} - {cpuHelper.GetUpgradeMethod(CPU.UpgradeMethod)}";
+
+            if (!String.IsNullOrEmpty(CPU.UniqueId))
+            {
+                textBoxCPUVersion.Text = CPU.Version;
+            }
+            else
+            {
+                textBoxCPUVersion.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
             
-            textBoxCPUUpgradeMethod.Text = CPU.UpgradeMethod.ToString();
-            textBoxCPUVersion.Text = CPU.Version;
             textBoxCPUVirtualizationFirmwareEnabled.Text = CPU.VirtualizationFirmwareEnabled.ToString();
             textBoxCPUVMMonitorModeExtensions.Text = CPU.VMMonitorModeExtensions.ToString();
             textBoxCPUVoltageCaps.Text = CPU.VoltageCaps.ToString();
