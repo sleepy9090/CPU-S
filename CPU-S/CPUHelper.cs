@@ -1285,46 +1285,46 @@ namespace CPU_S
                     upgradeMethod = "Slot A";
                     break;
                 case 12:
-                    upgradeMethod = "";
+                    upgradeMethod = "Slot M";
                     break;
                 case 13:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket 423";
                     break;
                 case 14:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket A (Socket 462)";
                     break;
                 case 15:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket 478";
                     break;
                 case 16:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket 754";
                     break;
                 case 17:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket 940";
                     break;
                 case 18:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket 939";
                     break;
                 case 19:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket mPGA604";
                     break;
                 case 20:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA771";
                     break;
                 case 21:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA775";
                     break;
                 case 22:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket S1";
                     break;
                 case 24:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket AM2";
                     break;
                 case 25:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket F (1207)";
                     break;
                 case 26:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1366";
                     break;
                 case 27:
                     upgradeMethod = "";
