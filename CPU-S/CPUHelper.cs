@@ -1520,14 +1520,25 @@ namespace CPU_S
             return upgradeMethod;
         }
 
-        /*
-        public bool isAvx2Supported()
+        [DllImport("AvxDetect.dll", CallingConvention = CallingConvention.Cdecl)]
+        private static extern int IsAvx2SupportedNative();
+
+        public bool IsAvx2Supported()
         {
-            if (Avx2.IsSupported)
+            try
             {
-                return true;
+                return IsAvx2SupportedNative() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. AVX2 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for AVX2 support: " + ex.Message);
+                return false;
             }
         }
-        */
     }
 }
