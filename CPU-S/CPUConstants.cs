@@ -16,8 +16,10 @@ namespace CPU_S
 
         public static string NOT_FOUND_OR_UNKNOWN = "Not found or unknown.";
 
-        public static string AVAILABLE_FOR_ASSIGNMENT = "Available for assignment";
+        public static string AVAILABLE_FOR_ASSIGNMENT = "Available for assignment.";
 
         public static string PERCENTAGE = "%";
+
+        public static string LOGICAL_PROC = "Logical Proc";
     }
 }

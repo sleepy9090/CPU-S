@@ -6,14 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Management;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using Timer = System.Threading.Timer;
 
 namespace CPU_S
 {
     public partial class FormCPUS : Form
     {
-        CPUHelper cpuHelper;
+        private CPUHelper cpuHelper;
+        private Timer timer;
+        ManagementObject cpu;
+        ManagementObjectCollection cpus;
+        ManagementObjectSearcher searcher2;
+        int counter = 0;
 
         public FormCPUS()
         {
@@ -21,307 +29,842 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            comboBoxCPU.Items.Clear();
+            
+
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_Processor");
+            cpus = searcher.Get();
+            foreach (ManagementObject cpu in cpus)
+            {
+                comboBoxCPU.Items.Add(cpu["DeviceID"]);
+            }
+            comboBoxCPU.SelectedIndex = 0;
+
+            searcher2 = new ManagementObjectSearcher("SELECT * FROM Win32_PerfFormattedData_PerfOS_Processor");
+
+            cpu = new ManagementObjectSearcher("SELECT * FROM Win32_Processor")
+                                               .Get()
+                                               .Cast<ManagementObject>()
+                                               .First();
+
+            try
+            {
+                timer = new Timer(TimerCallback, null, 0, 250);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Thread exception: " + ex);
+            }
+
             GetCPUInfo();
-            PopulateCPUInfo();
+        }
+
+        private void TimerCallback(object state)
+        {
+            counter++;
+            Console.WriteLine($"Task running on Thread ID: {Thread.CurrentThread.ManagedThreadId} Total count: {counter}");
+
+            try
+            {
+                CPU.CpuStatus = (ushort)cpu["CpuStatus"];
+
+                if (textBoxCPUCpuStatus.InvokeRequired)
+                {
+                    textBoxCPUCpuStatus.Invoke(new Action(() =>
+                    {
+                        textBoxCPUCpuStatus.Text = $"{CPU.CpuStatus.ToString()} - {cpuHelper.GetStatus(CPU.CpuStatus)}";
+                    }));
+                }
+                else
+                {
+                    textBoxCPUCpuStatus.Text = $"{CPU.CpuStatus.ToString()} - {cpuHelper.GetStatus(CPU.CpuStatus)}";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (textBoxCPUCpuStatus.InvokeRequired)
+                {
+                    textBoxCPUCpuStatus.Invoke(new Action(() =>
+                    {
+                        textBoxCPUCpuStatus.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    }));
+                }
+                else
+                {
+                    textBoxCPUCpuStatus.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+            }
+
+            try
+            {
+                CPU.CurrentClockSpeed = (uint)cpu["CurrentClockSpeed"];
+
+                if (textBoxCPUCurrentClockSpeed.InvokeRequired)
+                {
+                    textBoxCPUCurrentClockSpeed.Invoke(new Action(() =>
+                    {
+                        textBoxCPUCurrentClockSpeed.Text = $"{CPU.CurrentClockSpeed} {CPUConstants.MHZ}";
+                    }));
+                }
+                else
+                {
+                    textBoxCPUCurrentClockSpeed.Text = $"{CPU.CurrentClockSpeed} {CPUConstants.MHZ}";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (textBoxCPUCurrentClockSpeed.InvokeRequired)
+                {
+                    textBoxCPUCurrentClockSpeed.Invoke(new Action(() =>
+                    {
+                        textBoxCPUCurrentClockSpeed.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    }));
+                }
+                else
+                {
+                    textBoxCPUCurrentClockSpeed.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+            }
+
+            try
+            {
+                CPU.CurrentVoltage = (ushort)cpu["CurrentVoltage"];
+
+                if (textBoxCPUCurrentVoltage.InvokeRequired)
+                {
+                    textBoxCPUCurrentVoltage.Invoke(new Action(() =>
+                    {
+                        textBoxCPUCurrentVoltage.Text = $"{CPU.CurrentVoltage.ToString()} - {cpuHelper.GetCurrentVoltage(CPU.CurrentVoltage)}{CPUConstants.VOLTAGE}";
+                    }));
+                }
+                else
+                {
+                    textBoxCPUCurrentVoltage.Text = $"{CPU.CurrentVoltage.ToString()} - {cpuHelper.GetCurrentVoltage(CPU.CurrentVoltage)}{CPUConstants.VOLTAGE}";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (textBoxCPUCurrentVoltage.InvokeRequired)
+                {
+                    textBoxCPUCurrentVoltage.Invoke(new Action(() =>
+                    {
+                        textBoxCPUCurrentVoltage.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    }));
+                }
+                else
+                {
+                    textBoxCPUCurrentVoltage.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+            }
+
+            try
+            {
+                CPU.ExtClock = (uint)cpu["ExtClock"];
+
+                if (textBoxCPUExtClock.InvokeRequired)
+                {
+                    textBoxCPUExtClock.Invoke(new Action(() =>
+                    {
+                        textBoxCPUExtClock.Text = $"{CPU.ExtClock} {CPUConstants.MHZ}";
+                    }));
+                }
+                else
+                {
+                    textBoxCPUExtClock.Text = $"{CPU.ExtClock} {CPUConstants.MHZ}";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (textBoxCPUExtClock.InvokeRequired)
+                {
+                    textBoxCPUExtClock.Invoke(new Action(() =>
+                    {
+                        textBoxCPUExtClock.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    }));
+                }
+                else
+                {
+                    textBoxCPUExtClock.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+            }
+
+            /*
+            try
+            {
+                CPU.LoadPercentage = (ushort)cpu["LoadPercentage"];
+
+                if (textBoxCPULoadPercentage.InvokeRequired)
+                {
+                    textBoxCPULoadPercentage.Invoke(new Action(() =>
+                    {
+                        textBoxCPULoadPercentage.Text = $"{CPU.LoadPercentage.ToString()}{CPUConstants.PERCENTAGE}";
+                    }));
+                }
+                else
+                {
+                    textBoxCPULoadPercentage.Text = $"{CPU.LoadPercentage.ToString()}{CPUConstants.PERCENTAGE}";
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                if (textBoxCPULoadPercentage.InvokeRequired)
+                {
+                    textBoxCPULoadPercentage.Invoke(new Action(() =>
+                    {
+                        textBoxCPULoadPercentage.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    }));
+                }
+                else
+                {
+                    textBoxCPULoadPercentage.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+            }
+            */
+
+            if (textBoxCPULoadPercentageLogicalProcThread.InvokeRequired)
+            {
+                textBoxCPULoadPercentageLogicalProcThread.Invoke(new Action(() =>
+                {
+                    textBoxCPULoadPercentageLogicalProcThread.Text = "";
+                }));
+            }
+            else
+            {
+                textBoxCPULoadPercentageLogicalProcThread.Text = "";
+            }
+            
+
+            foreach (ManagementObject managementObject in searcher2.Get())
+            {
+                try
+                {
+
+                    string name = (string)managementObject["Name"];
+                    ulong usage = (ulong)managementObject["PercentProcessorTime"];
+
+                    if (textBoxCPULoadPercentageLogicalProcThread.InvokeRequired)
+                    {
+                        textBoxCPULoadPercentageLogicalProcThread.Invoke(new Action(() =>
+                        {
+                            if (name != "_Total")
+                            {
+                                textBoxCPULoadPercentageLogicalProcThread.Text += $"{CPUConstants.LOGICAL_PROC} {name}: {usage}{CPUConstants.PERCENTAGE}{Environment.NewLine}";
+                            }
+                            else
+                            {
+                                textBoxCPULoadPercentage.Text = $"{usage}{CPUConstants.PERCENTAGE}{Environment.NewLine}";
+                            }
+                            
+                        }));
+                    }
+                    else
+                    {
+                        if (name != "_Total")
+                        {
+                            textBoxCPULoadPercentageLogicalProcThread.Text += $"{CPUConstants.LOGICAL_PROC} {name}: {usage}{CPUConstants.PERCENTAGE}{Environment.NewLine}";
+                        }
+                        else
+                        {
+                            textBoxCPULoadPercentage.Text = $"{usage}{CPUConstants.PERCENTAGE}{Environment.NewLine}";
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    if (textBoxCPULoadPercentageLogicalProcThread.InvokeRequired)
+                    {
+                        textBoxCPULoadPercentageLogicalProcThread.Invoke(new Action(() =>
+                        {
+                            textBoxCPULoadPercentageLogicalProcThread.Text += CPUConstants.NOT_FOUND_OR_UNKNOWN + Environment.NewLine;
+                        }));
+                    }
+                    else
+                    {
+                        textBoxCPULoadPercentageLogicalProcThread.Text += CPUConstants.NOT_FOUND_OR_UNKNOWN + Environment.NewLine;
+                    }
+                }
+            }
+
+            try
+            {
+                CPU.MaxClockSpeed = (uint)cpu["MaxClockSpeed"];
+
+                if (textBoxCPUMaxClockSpeed.InvokeRequired)
+                {
+                    textBoxCPUMaxClockSpeed.Invoke(new Action(() =>
+                    {
+                        textBoxCPUMaxClockSpeed.Text = $"{CPU.MaxClockSpeed} {CPUConstants.MHZ}";
+                    }));
+                }
+                else
+                {
+                    textBoxCPUMaxClockSpeed.Text = $"{CPU.MaxClockSpeed} {CPUConstants.MHZ}";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (textBoxCPUMaxClockSpeed.InvokeRequired)
+                {
+                    textBoxCPUMaxClockSpeed.Invoke(new Action(() =>
+                    {
+                        textBoxCPUMaxClockSpeed.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                    }));
+                }
+                else
+                {
+                    textBoxCPUMaxClockSpeed.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+            }
         }
 
         private void GetCPUInfo()
         {
-            ManagementObject cpu = new ManagementObjectSearcher("SELECT * FROM Win32_Processor")
-                                   .Get()
-                                   .Cast<ManagementObject>()
-                                   .First();
-
-            CPU.AddressWidth = (ushort)cpu["AddressWidth"];
-            CPU.Architecture = (ushort)cpu["Architecture"];
-            CPU.AssetTag = (string)cpu["AssetTag"];
-            CPU.Availability = (ushort)cpu["Availability"];
-            CPU.Caption = (string)cpu["Caption"];
-            CPU.Characteristics = (uint)cpu["Characteristics"];
-
             try
             {
-                CPU.ConfigManagerErrorCode = (uint)cpu["ConfigManagerErrorCode"];
+                CPU.AddressWidth = (ushort)cpu["AddressWidth"];
+                textBoxCPUAddressWidth.Text = $"{CPU.AddressWidth} {CPUConstants.BITS}";
             }
             catch (Exception ex)
             {
-                CPU.ConfigManagerErrorCode = uint.MaxValue;
+                textBoxCPUAddressWidth.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Architecture = (ushort)cpu["Architecture"];
+                textBoxCPUArchitecture.Text = $"{CPU.Architecture} - {cpuHelper.GetArchitecture(CPU.Architecture)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUArchitecture.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.AssetTag = (string)cpu["AssetTag"];
+                textBoxCPUAssetTag.Text = CPU.AssetTag;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUAssetTag.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Availability = (ushort)cpu["Availability"];
+                textBoxCPUAvailability.Text = $"{CPU.Availability} - {cpuHelper.GetAvailability(CPU.Availability)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUAvailability.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Caption = (string)cpu["Caption"];
+                textBoxCPUCaption.Text = CPU.Caption;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUCaption.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Characteristics = (uint)cpu["Characteristics"];
+                textBoxCPUCharacteristics.Text = $"{CPU.Characteristics} - {cpuHelper.GetCharacteristics(CPU.Characteristics)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUCharacteristics.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            
+            try
+            {
+                CPU.ConfigManagerErrorCode = (uint)cpu["ConfigManagerErrorCode"];
+                textBoxCPUConfigManagerErrorCode.Text = $"{CPU.ConfigManagerErrorCode} - {cpuHelper.GetConfigManagerErrorCode(CPU.ConfigManagerErrorCode)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUConfigManagerErrorCode.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
             try
             {
                 CPU.ConfigManagerUserConfig = (bool)cpu["ConfigManagerUserConfig"];
+                textBoxCPUConfigManagerUserConfig.Text = CPU.ConfigManagerUserConfig.ToString();
             }
             catch (Exception ex)
             {
-                
+                textBoxCPUConfigManagerUserConfig.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
-            
-            CPU.CpuStatus = (ushort)cpu["CpuStatus"];
-            CPU.CreationClassName = (string)cpu["CreationClassName"];
-            CPU.CurrentClockSpeed = (uint)cpu["CurrentClockSpeed"];
-            CPU.CurrentVoltage = (ushort)cpu["CurrentVoltage"];
-            CPU.DataWidth = (ushort)cpu["DataWidth"];
-            CPU.Description = (string)cpu["Description"];
-            CPU.DeviceID = (string)cpu["DeviceID"];
+
+            try
+            {
+                CPU.CreationClassName = (string)cpu["CreationClassName"];
+                textBoxCPUCreationClassName.Text = CPU.CreationClassName;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUCreationClassName.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.DataWidth = (ushort)cpu["DataWidth"];
+                textBoxCPUDataWidth.Text = CPU.DataWidth.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUDataWidth.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Description = (string)cpu["Description"];
+                textBoxCPUDescription.Text = CPU.Description;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUDescription.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.DeviceID = (string)cpu["DeviceID"];
+                textBoxCPUDeviceID.Text = CPU.DeviceID;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUDeviceID.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
 
             try
             {
                 CPU.ErrorCleared = (bool)cpu["ErrorCleared"];
+                textBoxCPUErrorCleared.Text = CPU.ErrorCleared.ToString();
             }
             catch (Exception ex)
             {
-                
+                textBoxCPUErrorCleared.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
             try
             {
                 CPU.ErrorDescription = (string)cpu["ErrorDescription"];
+                textBoxCPUErrorDescription.Text = !string.IsNullOrEmpty(CPU.ErrorDescription) ? CPU.ErrorDescription : CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
             catch (Exception ex)
             {
-                
+                textBoxCPUErrorDescription.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
-            
-            CPU.ExtClock = (uint)cpu["ExtClock"];
-            CPU.Family = (ushort)cpu["Family"];
 
             try
             {
-                CPU.InstallDate = (DateTime)cpu["InstallDate"];
+                CPU.Family = (ushort)cpu["Family"];
+                textBoxCPUFamily.Text = $"{CPU.Family} - {cpuHelper.GetFamily(CPU.Family)}";
             }
             catch (Exception ex)
             {
-                
+                textBoxCPUFamily.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
             
+            try
+            {
+                CPU.InstallDate = (DateTime)cpu["InstallDate"];
+                if (CPU.InstallDate == DateTime.MinValue)
+                {
+                    textBoxCPUInstallDate.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+                else
+                {
+                    textBoxCPUInstallDate.Text = CPU.InstallDate.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUInstallDate.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
 
-            CPU.L2CacheSize = (uint)cpu["L2CacheSize"];
+            try
+            {
+                CPU.L2CacheSize = (uint)cpu["L2CacheSize"];
+                textBoxCPUL2CacheSize.Text = $"{CPU.L2CacheSize.ToString()} / {cpuHelper.GetCacheSizeFull(CPU.L2CacheSize)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUL2CacheSize.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
 
             try
             {
                 CPU.L2CacheSpeed = (uint)cpu["L2CacheSpeed"];
+                textBoxCPUL2CacheSpeed.Text = CPU.L2CacheSpeed.ToString();
             }
             catch (Exception ex)
             {
-                
+                textBoxCPUL2CacheSpeed.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
-            
-            CPU.L3CacheSize = (uint)cpu["L3CacheSize"];
+
+            try
+            {
+                CPU.L3CacheSize = (uint)cpu["L3CacheSize"];
+                textBoxCPUL3CacheSize.Text = $"{CPU.L3CacheSize.ToString()} / {cpuHelper.GetCacheSizeFull(CPU.L3CacheSize)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUL3CacheSize.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
 
             try
             {
                 CPU.L3CacheSpeed = (uint)cpu["L3CacheSpeed"];
+                textBoxCPUL3CacheSpeed.Text = CPU.L3CacheSpeed.ToString();
             }
             catch (Exception ex)
             {
-                
+                textBoxCPUL3CacheSpeed.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
             try
             {
                 CPU.LastErrorCode = (uint)cpu["LastErrorCode"];
+                textBoxCPULastErrorCode.Text = CPU.LastErrorCode.ToString();
             }
             catch (Exception ex)
             {
-                
+                textBoxCPULastErrorCode.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
-
-            
-            CPU.Level = (ushort)cpu["Level"];
-            CPU.LoadPercentage = (ushort)cpu["LoadPercentage"];
-            CPU.Manufacturer = (string)cpu["Manufacturer"];
-            CPU.MaxClockSpeed = (uint)cpu["MaxClockSpeed"];
-            CPU.Name = (string)cpu["Name"];
-            CPU.NumberOfCores = (uint)cpu["NumberOfCores"];
-            CPU.NumberOfEnabledCore = (uint)cpu["NumberOfEnabledCore"];
-            CPU.NumberOfLogicalProcessors = (uint)cpu["NumberOfLogicalProcessors"];
-            CPU.OtherFamilyDescription = (string)cpu["OtherFamilyDescription"];
-            CPU.PartNumber = (string)cpu["PartNumber"];
-            CPU.PNPDeviceID = (string)cpu["PNPDeviceID"];
-            CPU.PowerManagementCapabilities = (ushort[])cpu["PowerManagementCapabilities"];
-            CPU.PowerManagementSupported = (bool)cpu["PowerManagementSupported"];
-            CPU.ProcessorId = (string)cpu["ProcessorId"];
-            CPU.ProcessorType = (ushort)cpu["ProcessorType"];
 
             try
             {
-                CPU.Revision = (ushort)cpu["Revision"];
+                CPU.Level = (ushort)cpu["Level"];
+                textBoxCPULevel.Text = CPU.Level.ToString();
             }
             catch (Exception ex)
             {
-                
+                textBoxCPULevel.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
-            
-            CPU.Role = (string)cpu["Role"];
-            CPU.SecondLevelAddressTranslationExtensions = (bool)cpu["SecondLevelAddressTranslationExtensions"];
-            CPU.SerialNumber = (string)cpu["SerialNumber"];
-            CPU.SocketDesignation = (string)cpu["SocketDesignation"];
-            CPU.Status = (string)cpu["Status"];
-            CPU.StatusInfo = (ushort)cpu["StatusInfo"];
-            CPU.Stepping = (string)cpu["Stepping"];
-            CPU.SystemCreationClassName = (string)cpu["SystemCreationClassName"];
-            CPU.SystemName = (string)cpu["SystemName"];
-            CPU.ThreadCount = (uint)cpu["ThreadCount"];
-            CPU.UniqueId = (string)cpu["UniqueId"];
-            CPU.UpgradeMethod = (ushort)cpu["UpgradeMethod"];
-            CPU.Version = (string)cpu["Version"];
-            CPU.VirtualizationFirmwareEnabled = (bool)cpu["VirtualizationFirmwareEnabled"];
-            CPU.VMMonitorModeExtensions = (bool)cpu["VMMonitorModeExtensions"];
 
             try
             {
-                CPU.VoltageCaps = (uint)cpu["VoltageCaps"];
+                CPU.Manufacturer = (string)cpu["Manufacturer"];
+                textBoxCPUManufacturer.Text = CPU.Manufacturer;
             }
             catch (Exception ex)
             {
-                
-            }
-            
-        }
-
-        private void PopulateCPUInfo()
-        {
-            textBoxCPUAddressWidth.Text = $"{CPU.AddressWidth} {CPUConstants.BITS}";
-            textBoxCPUArchitecture.Text = $"{CPU.Architecture} - {cpuHelper.GetArchitecture(CPU.Architecture)}";
-            textBoxCPUAssetTag.Text = CPU.AssetTag;
-            textBoxCPUAvailability.Text = $"{CPU.Availability} - {cpuHelper.GetAvailability(CPU.Availability)}";
-            textBoxCPUCaption.Text = CPU.Caption;
-            textBoxCPUCharacteristics.Text = $"{CPU.Characteristics} - {cpuHelper.GetCharacteristics(CPU.Characteristics)}";
-            if (CPU.ConfigManagerErrorCode == uint.MaxValue)
-            {
-                textBoxCPUConfigManagerErrorCode.Text = $"{cpuHelper.GetConfigManagerErrorCode(CPU.ConfigManagerErrorCode)}";
-            }
-            else
-            {
-                textBoxCPUConfigManagerErrorCode.Text = $"{CPU.ConfigManagerErrorCode} - {cpuHelper.GetConfigManagerErrorCode(CPU.ConfigManagerErrorCode)}";
-            }
-                
-            textBoxCPUConfigManagerUserConfig.Text = CPU.ConfigManagerUserConfig.ToString();
-            textBoxCPUCpuStatus.Text = $"{CPU.CpuStatus.ToString()} - {cpuHelper.GetStatus(CPU.CpuStatus)}";
-            textBoxCPUCreationClassName.Text = CPU.CreationClassName;
-            textBoxCPUCurrentClockSpeed.Text = $"{CPU.CurrentClockSpeed} {CPUConstants.MHZ}";
-            textBoxCPUCurrentVoltage.Text = $"{CPU.CurrentVoltage.ToString()} - {cpuHelper.GetCurrentVoltage(CPU.CurrentVoltage)}{CPUConstants.VOLTAGE}";
-            textBoxCPUDataWidth.Text = CPU.DataWidth.ToString();
-            textBoxCPUDescription.Text = CPU.Description;
-            textBoxCPUDeviceID.Text = CPU.DeviceID;
-            textBoxCPUErrorCleared.Text = CPU.ErrorCleared.ToString();
-
-            if(!String.IsNullOrEmpty(CPU.ErrorDescription))
-            {
-                textBoxCPUErrorDescription.Text = CPU.ErrorDescription;
-            }
-            else
-            {
-                textBoxCPUErrorDescription.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                textBoxCPUManufacturer.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-            textBoxCPUExtClock.Text = $"{CPU.ExtClock} {CPUConstants.MHZ}";
-            textBoxCPUFamily.Text = $"{CPU.Family} - {cpuHelper.GetFamily(CPU.Family)}";
-
-            if (CPU.InstallDate == DateTime.MinValue)
+            try
             {
-                textBoxCPUInstallDate.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                CPU.Name = (string)cpu["Name"];
+                textBoxCPUName.Text = CPU.Name;
             }
-            else
+            catch (Exception ex)
             {
-                textBoxCPUInstallDate.Text = CPU.InstallDate.ToString();
-            }
-            
-
-            textBoxCPUL2CacheSize.Text = $"{CPU.L2CacheSize.ToString()} / {cpuHelper.GetCacheSizeFull(CPU.L2CacheSize)}";
-            if (CPU.L2CacheSpeed == 0)
-            {
-                textBoxCPUL2CacheSpeed.Text = $"{CPU.L2CacheSpeed.ToString()} - {CPUConstants.NOT_FOUND_OR_UNKNOWN}";
-            }
-            else
-            {
-                textBoxCPUL2CacheSpeed.Text = CPU.L2CacheSpeed.ToString();
+                textBoxCPUName.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-            textBoxCPUL3CacheSize.Text = $"{CPU.L3CacheSize.ToString()} / {cpuHelper.GetCacheSizeFull(CPU.L3CacheSize)}";
+            try
+            {
+                CPU.NumberOfCores = (uint)cpu["NumberOfCores"];
+                textBoxCPUNumberOfCores.Text = CPU.NumberOfCores.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUNumberOfCores.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
 
-            if (CPU.L3CacheSpeed == 0)
+            try
             {
-                textBoxCPUL3CacheSpeed.Text = $"{CPU.L3CacheSpeed.ToString()} - {CPUConstants.NOT_FOUND_OR_UNKNOWN}";
+                CPU.NumberOfEnabledCore = (uint)cpu["NumberOfEnabledCore"];
+                textBoxCPUNumberOfEnabledCore.Text = CPU.NumberOfEnabledCore.ToString();
             }
-            else
+            catch (Exception ex)
             {
-                textBoxCPUL3CacheSpeed.Text = CPU.L3CacheSpeed.ToString();
+                textBoxCPUNumberOfEnabledCore.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
-            textBoxCPULastErrorCode.Text = CPU.LastErrorCode.ToString();
-            textBoxCPULevel.Text = CPU.Level.ToString();
-            textBoxCPULoadPercentage.Text = $"{CPU.LoadPercentage.ToString()}{CPUConstants.PERCENTAGE}";
-            textBoxCPUManufacturer.Text = CPU.Manufacturer;
-            textBoxCPUMaxClockSpeed.Text = $"{CPU.MaxClockSpeed} {CPUConstants.MHZ}";
-            textBoxCPUName.Text = CPU.Name;
-            textBoxCPUNumberOfCores.Text = CPU.NumberOfCores.ToString();
-            textBoxCPUNumberOfEnabledCore.Text = CPU.NumberOfEnabledCore.ToString();
-            textBoxCPUNumberOfLogicalProcessors.Text = CPU.NumberOfLogicalProcessors.ToString();
 
-            if (!String.IsNullOrEmpty(CPU.OtherFamilyDescription))
+            try
             {
-                textBoxCPUOtherFamilyDescription.Text = CPU.OtherFamilyDescription;
+                CPU.NumberOfLogicalProcessors = (uint)cpu["NumberOfLogicalProcessors"];
+                textBoxCPUNumberOfLogicalProcessors.Text = CPU.NumberOfLogicalProcessors.ToString();
             }
-            else
+            catch (Exception ex)
+            {
+                textBoxCPUNumberOfLogicalProcessors.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.OtherFamilyDescription = (string)cpu["OtherFamilyDescription"];
+                textBoxCPUOtherFamilyDescription.Text = !string.IsNullOrEmpty(CPU.OtherFamilyDescription) ? CPU.OtherFamilyDescription : CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
             {
                 textBoxCPUOtherFamilyDescription.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-            textBoxCPUPartNumber.Text = CPU.PartNumber;
-            textBoxCPUPNPDeviceID.Text = CPU.DeviceID;
-
-            if ((null != CPU.PowerManagementCapabilities))
+            try
             {
-                foreach (ushort capability in CPU.PowerManagementCapabilities)
-                {
-                    textBoxCPUPowerManagementCapabilities.Text += capability.ToString() + " - " + cpuHelper.GetPowerManagementCapabilities(capability) + ", ";
-                }
-                
+                CPU.PartNumber = (string)cpu["PartNumber"];
+                textBoxCPUPartNumber.Text = CPU.PartNumber;
             }
-            else
+            catch (Exception ex)
+            {
+                textBoxCPUPartNumber.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.PNPDeviceID = (string)cpu["PNPDeviceID"];
+                textBoxCPUPNPDeviceID.Text = CPU.DeviceID;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUPNPDeviceID.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.PowerManagementCapabilities = (ushort[])cpu["PowerManagementCapabilities"];
+                if ((null != CPU.PowerManagementCapabilities))
+                {
+                    foreach (ushort capability in CPU.PowerManagementCapabilities)
+                    {
+                        textBoxCPUPowerManagementCapabilities.Text += capability.ToString() + " - " + cpuHelper.GetPowerManagementCapabilities(capability) + ", ";
+                    }
+
+                }
+                else
+                {
+                    textBoxCPUPowerManagementCapabilities.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                }
+            }
+            catch (Exception ex)
             {
                 textBoxCPUPowerManagementCapabilities.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-            textBoxCPUPowerManagementSupported.Text = CPU.PowerManagementSupported.ToString();
-            textBoxCPUProcessorId.Text = CPU.ProcessorId;
-            textBoxCPUProcessorType.Text = $"{CPU.ProcessorType} - {cpuHelper.GetProcessorType(CPU.ProcessorType)}";
-            textBoxCPURevision.Text = CPU.Revision.ToString();
-            textBoxCPURole.Text = CPU.Role;
-            textBoxCPUSecondLevelAddressTranslationExtensions.Text = CPU.SecondLevelAddressTranslationExtensions.ToString();
-            textBoxCPUSerialNumber.Text = CPU.SerialNumber;
-            textBoxCPUSocketDesignation.Text = CPU.SocketDesignation;
-            textBoxCPUStatus.Text = CPU.Status;
-            textBoxCPUStatusInfo.Text = $"{CPU.StatusInfo} - {cpuHelper.GetStatusInfo(CPU.StatusInfo)}";
-            textBoxCPUStepping.Text = CPU.StatusInfo.ToString();
-            textBoxCPUSystemCreationClassName.Text = CPU.SystemCreationClassName;
-            textBoxCPUSystemName.Text = CPU.SystemName;
-            textBoxCPUThreadCount.Text = CPU.ThreadCount.ToString();
-
-            if (!String.IsNullOrEmpty(CPU.UniqueId))
+            try
             {
-                textBoxCPUUniqueId.Text = CPU.UniqueId;
+                CPU.PowerManagementSupported = (bool)cpu["PowerManagementSupported"];
+                textBoxCPUPowerManagementSupported.Text = CPU.PowerManagementSupported.ToString();
             }
-            else
+            catch (Exception ex)
+            {
+                textBoxCPUPowerManagementSupported.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.ProcessorId = (string)cpu["ProcessorId"];
+                textBoxCPUProcessorId.Text = CPU.ProcessorId;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUProcessorId.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.ProcessorType = (ushort)cpu["ProcessorType"];
+                textBoxCPUProcessorType.Text = $"{CPU.ProcessorType} - {cpuHelper.GetProcessorType(CPU.ProcessorType)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUProcessorType.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Revision = (ushort)cpu["Revision"];
+                textBoxCPURevision.Text = CPU.Revision.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPURevision.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Role = (string)cpu["Role"];
+                textBoxCPURole.Text = CPU.Role;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPURole.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.SecondLevelAddressTranslationExtensions = (bool)cpu["SecondLevelAddressTranslationExtensions"];
+                textBoxCPUSecondLevelAddressTranslationExtensions.Text = CPU.SecondLevelAddressTranslationExtensions.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUSecondLevelAddressTranslationExtensions.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.SerialNumber = (string)cpu["SerialNumber"];
+                textBoxCPUSerialNumber.Text = CPU.SerialNumber;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUSerialNumber.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.SocketDesignation = (string)cpu["SocketDesignation"];
+                textBoxCPUSocketDesignation.Text = CPU.SocketDesignation;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUSocketDesignation.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Status = (string)cpu["Status"];
+                textBoxCPUStatus.Text = CPU.Status;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUStatus.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.StatusInfo = (ushort)cpu["StatusInfo"];
+                textBoxCPUStatusInfo.Text = $"{CPU.StatusInfo} - {cpuHelper.GetStatusInfo(CPU.StatusInfo)}";
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUStatusInfo.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Stepping = (string)cpu["Stepping"];
+                textBoxCPUStepping.Text = CPU.StatusInfo.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUStepping.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.SystemCreationClassName = (string)cpu["SystemCreationClassName"];
+                textBoxCPUSystemCreationClassName.Text = CPU.SystemCreationClassName;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUSystemCreationClassName.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.SystemName = (string)cpu["SystemName"];
+                textBoxCPUSystemName.Text = CPU.SystemName;
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUSystemName.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.ThreadCount = (uint)cpu["ThreadCount"];
+                textBoxCPUThreadCount.Text = CPU.ThreadCount.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUThreadCount.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.UniqueId = (string)cpu["UniqueId"];
+                textBoxCPUUniqueId.Text = !string.IsNullOrEmpty(CPU.UniqueId) ? CPU.UniqueId : CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
             {
                 textBoxCPUUniqueId.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-            textBoxCPUUpgradeMethod.Text = $"{CPU.UpgradeMethod} - {cpuHelper.GetUpgradeMethod(CPU.UpgradeMethod)}";
-
-            if (!String.IsNullOrEmpty(CPU.UniqueId))
+            try
             {
-                textBoxCPUVersion.Text = CPU.Version;
+                CPU.UpgradeMethod = (ushort)cpu["UpgradeMethod"];
+                textBoxCPUUpgradeMethod.Text = $"{CPU.UpgradeMethod} - {cpuHelper.GetUpgradeMethod(CPU.UpgradeMethod)}";
             }
-            else
+            catch (Exception ex)
+            {
+                textBoxCPUUpgradeMethod.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.Version = (string)cpu["Version"];
+                textBoxCPUVersion.Text = !string.IsNullOrEmpty(CPU.UniqueId) ? CPU.Version : CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
             {
                 textBoxCPUVersion.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
+
+            try
+            {
+                CPU.VirtualizationFirmwareEnabled = (bool)cpu["VirtualizationFirmwareEnabled"];
+                textBoxCPUVirtualizationFirmwareEnabled.Text = CPU.VirtualizationFirmwareEnabled.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUVirtualizationFirmwareEnabled.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+
+            try
+            {
+                CPU.VMMonitorModeExtensions = (bool)cpu["VMMonitorModeExtensions"];
+                textBoxCPUVMMonitorModeExtensions.Text = CPU.VMMonitorModeExtensions.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUVMMonitorModeExtensions.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
             
-            textBoxCPUVirtualizationFirmwareEnabled.Text = CPU.VirtualizationFirmwareEnabled.ToString();
-            textBoxCPUVMMonitorModeExtensions.Text = CPU.VMMonitorModeExtensions.ToString();
-            textBoxCPUVoltageCaps.Text = CPU.VoltageCaps.ToString();
+
+            try
+            {
+                CPU.VoltageCaps = (uint)cpu["VoltageCaps"];
+                textBoxCPUVoltageCaps.Text = CPU.VoltageCaps.ToString();
+            }
+            catch (Exception ex)
+            {
+                textBoxCPUVoltageCaps.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            
+        }
+
+        private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cpu != null)
+            {
+                cpu = cpus.OfType<ManagementObject>().ElementAt(comboBoxCPU.SelectedIndex);
+                GetCPUInfo();
+            }
+            
+        }
+
+        private void FormCPUS_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer.Dispose();
+            Dispose();
         }
     }
 }

@@ -1317,197 +1317,200 @@ namespace CPU_S
                 case 22:
                     upgradeMethod = "Socket S1";
                     break;
-                case 24:
+                case 23:
                     upgradeMethod = "Socket AM2";
                     break;
-                case 25:
+                case 24:
                     upgradeMethod = "Socket F (1207)";
                     break;
-                case 26:
+                case 25:
                     upgradeMethod = "Socket LGA1366";
                     break;
+                case 26:
+                    upgradeMethod = "Socket G34";
+                    break;
                 case 27:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket AM3";
                     break;
                 case 28:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket C32";
                     break;
                 case 29:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1156";
                     break;
                 case 30:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1567";
                     break;
                 case 31:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket PGA988A";
                     break;
                 case 32:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1288";
                     break;
                 case 33:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket rPGA988B";
                     break;
                 case 34:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1023";
                     break;
                 case 35:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1224";
                     break;
                 case 36:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1155";
                     break;
                 case 37:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1356";
                     break;
                 case 38:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA2011";
                     break;
                 case 39:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket FS1";
                     break;
                 case 40:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket FS2";
                     break;
                 case 41:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket FM1";
                     break;
                 case 42:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket FM2";
                     break;
                 case 43:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA2011-3";
                     break;
                 case 44:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1356-3";
                     break;
                 case 45:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1150";
                     break;
                 case 46:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1168";
                     break;
                 case 47:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1234";
                     break;
                 case 48:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1364";
                     break;
                 case 49:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket AM4";
                     break;
                 case 50:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1151";
                     break;
                 case 51:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1356";
                     break;
                 case 52:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1440";
                     break;
                 case 53:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1515";
                     break;
                 case 54:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA3647-1";
                     break;
                 case 55:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket SP3";
                     break;
                 case 56:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket SP3r2";
                     break;
                 case 57:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA2066";
                     break;
                 case 58:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1392";
                     break;
                 case 59:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1510";
                     break;
                 case 60:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1528";
                     break;
                 case 61:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA4189";
                     break;
                 case 62:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1200";
                     break;
                 case 63:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA4677";
                     break;
                 case 64:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1700";
                     break;
                 case 65:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1744";
                     break;
                 case 66:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1781";
                     break;
                 case 67:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1211";
                     break;
                 case 68:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA2422";
                     break;
                 case 69:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1211";
                     break;
                 case 70:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA2422";
                     break;
                 case 71:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA5773";
                     break;
                 case 72:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA5773";
                     break;
                 case 73:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket AM5";
                     break;
                 case 74:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket SP5";
                     break;
                 case 75:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket SP6";
                     break;
                 case 76:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA883";
                     break;
                 case 77:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1190";
                     break;
                 case 78:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA4129";
                     break;
                 case 79:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA4710";
                     break;
                 case 80:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA7529";
                     break;
                 case 81:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1964";
                     break;
                 case 82:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA1792";
                     break;
                 case 83:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA2049";
                     break;
                 case 84:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA2551";
                     break;
                 case 85:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket LGA1851";
                     break;
                 case 86:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA2114";
                     break;
                 case 87:
-                    upgradeMethod = "";
+                    upgradeMethod = "Socket BGA2833";
                     break;
                 default:
                     upgradeMethod = CPUConstants.NOT_FOUND_OR_UNKNOWN;
