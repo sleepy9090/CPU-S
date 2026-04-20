@@ -183,5 +183,6 @@ namespace CPU_S
 
         public static uint VoltageCaps { get; internal set; }
 
+        public static bool SSEx64Supported { get; internal set; }
     }
 }

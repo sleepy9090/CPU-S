@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBoxCPU = new System.Windows.Forms.GroupBox();
+            this.labelCPULoadPercentageLogicalProcThread = new System.Windows.Forms.Label();
             this.textBoxCPULoadPercentageLogicalProcThread = new System.Windows.Forms.TextBox();
             this.labelCPU = new System.Windows.Forms.Label();
             this.comboBoxCPU = new System.Windows.Forms.ComboBox();
@@ -146,12 +147,15 @@
             this.textBoxCPUName = new System.Windows.Forms.TextBox();
             this.textBoxCPUSocketDesignation = new System.Windows.Forms.TextBox();
             this.textBoxCPUProcessorId = new System.Windows.Forms.TextBox();
-            this.labelCPULoadPercentageLogicalProcThread = new System.Windows.Forms.Label();
+            this.textBoxCPUCharacteristicsMeaning = new System.Windows.Forms.TextBox();
+            this.labelCPUCharacteristicsMeaning = new System.Windows.Forms.Label();
             this.groupBoxCPU.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxCPU
             // 
+            this.groupBoxCPU.Controls.Add(this.labelCPUCharacteristicsMeaning);
+            this.groupBoxCPU.Controls.Add(this.textBoxCPUCharacteristicsMeaning);
             this.groupBoxCPU.Controls.Add(this.labelCPULoadPercentageLogicalProcThread);
             this.groupBoxCPU.Controls.Add(this.textBoxCPULoadPercentageLogicalProcThread);
             this.groupBoxCPU.Controls.Add(this.labelCPU);
@@ -278,13 +282,23 @@
             this.groupBoxCPU.TabIndex = 0;
             this.groupBoxCPU.TabStop = false;
             // 
+            // labelCPULoadPercentageLogicalProcThread
+            // 
+            this.labelCPULoadPercentageLogicalProcThread.AutoSize = true;
+            this.labelCPULoadPercentageLogicalProcThread.Location = new System.Drawing.Point(302, 501);
+            this.labelCPULoadPercentageLogicalProcThread.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPULoadPercentageLogicalProcThread.Name = "labelCPULoadPercentageLogicalProcThread";
+            this.labelCPULoadPercentageLogicalProcThread.Size = new System.Drawing.Size(146, 13);
+            this.labelCPULoadPercentageLogicalProcThread.TabIndex = 116;
+            this.labelCPULoadPercentageLogicalProcThread.Text = "Load % Logical Proc/Thread:";
+            // 
             // textBoxCPULoadPercentageLogicalProcThread
             // 
             this.textBoxCPULoadPercentageLogicalProcThread.Location = new System.Drawing.Point(302, 521);
             this.textBoxCPULoadPercentageLogicalProcThread.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPULoadPercentageLogicalProcThread.Multiline = true;
             this.textBoxCPULoadPercentageLogicalProcThread.Name = "textBoxCPULoadPercentageLogicalProcThread";
-            this.textBoxCPULoadPercentageLogicalProcThread.Size = new System.Drawing.Size(135, 184);
+            this.textBoxCPULoadPercentageLogicalProcThread.Size = new System.Drawing.Size(146, 184);
             this.textBoxCPULoadPercentageLogicalProcThread.TabIndex = 115;
             // 
             // labelCPU
@@ -1040,7 +1054,7 @@
             this.textBoxCPUCharacteristics.Location = new System.Drawing.Point(156, 161);
             this.textBoxCPUCharacteristics.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUCharacteristics.Name = "textBoxCPUCharacteristics";
-            this.textBoxCPUCharacteristics.Size = new System.Drawing.Size(235, 20);
+            this.textBoxCPUCharacteristics.Size = new System.Drawing.Size(135, 20);
             this.textBoxCPUCharacteristics.TabIndex = 9;
             // 
             // labelCPUCaption
@@ -1331,15 +1345,24 @@
             this.textBoxCPUProcessorId.Size = new System.Drawing.Size(135, 20);
             this.textBoxCPUProcessorId.TabIndex = 42;
             // 
-            // labelCPULoadPercentageLogicalProcThread
+            // textBoxCPUCharacteristicsMeaning
             // 
-            this.labelCPULoadPercentageLogicalProcThread.AutoSize = true;
-            this.labelCPULoadPercentageLogicalProcThread.Location = new System.Drawing.Point(302, 501);
-            this.labelCPULoadPercentageLogicalProcThread.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPULoadPercentageLogicalProcThread.Name = "labelCPULoadPercentageLogicalProcThread";
-            this.labelCPULoadPercentageLogicalProcThread.Size = new System.Drawing.Size(146, 13);
-            this.labelCPULoadPercentageLogicalProcThread.TabIndex = 116;
-            this.labelCPULoadPercentageLogicalProcThread.Text = "Load % Logical Proc/Thread:";
+            this.textBoxCPUCharacteristicsMeaning.Location = new System.Drawing.Point(295, 185);
+            this.textBoxCPUCharacteristicsMeaning.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCharacteristicsMeaning.Multiline = true;
+            this.textBoxCPUCharacteristicsMeaning.Name = "textBoxCPUCharacteristicsMeaning";
+            this.textBoxCPUCharacteristicsMeaning.Size = new System.Drawing.Size(153, 165);
+            this.textBoxCPUCharacteristicsMeaning.TabIndex = 117;
+            // 
+            // labelCPUCharacteristicsMeaning
+            // 
+            this.labelCPUCharacteristicsMeaning.AutoSize = true;
+            this.labelCPUCharacteristicsMeaning.Location = new System.Drawing.Point(295, 164);
+            this.labelCPUCharacteristicsMeaning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCharacteristicsMeaning.Name = "labelCPUCharacteristicsMeaning";
+            this.labelCPUCharacteristicsMeaning.Size = new System.Drawing.Size(123, 13);
+            this.labelCPUCharacteristicsMeaning.TabIndex = 118;
+            this.labelCPUCharacteristicsMeaning.Text = "Characteristics Meaning:";
             // 
             // FormCPUS
             // 
@@ -1479,6 +1502,8 @@
         private System.Windows.Forms.ComboBox comboBoxCPU;
         private System.Windows.Forms.TextBox textBoxCPULoadPercentageLogicalProcThread;
         private System.Windows.Forms.Label labelCPULoadPercentageLogicalProcThread;
+        private System.Windows.Forms.Label labelCPUCharacteristicsMeaning;
+        private System.Windows.Forms.TextBox textBoxCPUCharacteristicsMeaning;
     }
 }
 

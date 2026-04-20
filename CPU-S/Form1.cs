@@ -62,7 +62,7 @@ namespace CPU_S
         private void TimerCallback(object state)
         {
             counter++;
-            Console.WriteLine($"Task running on Thread ID: {Thread.CurrentThread.ManagedThreadId} Total count: {counter}");
+            //Console.WriteLine($"Task running on Thread ID: {Thread.CurrentThread.ManagedThreadId} Total count: {counter}");
 
             try
             {
@@ -226,12 +226,12 @@ namespace CPU_S
             {
                 textBoxCPULoadPercentageLogicalProcThread.Invoke(new Action(() =>
                 {
-                    textBoxCPULoadPercentageLogicalProcThread.Text = "";
+                    textBoxCPULoadPercentageLogicalProcThread.Clear();
                 }));
             }
             else
             {
-                textBoxCPULoadPercentageLogicalProcThread.Text = "";
+                textBoxCPULoadPercentageLogicalProcThread.Clear();
             }
             
 
@@ -373,11 +373,13 @@ namespace CPU_S
             try
             {
                 CPU.Characteristics = (uint)cpu["Characteristics"];
-                textBoxCPUCharacteristics.Text = $"{CPU.Characteristics} - {cpuHelper.GetCharacteristics(CPU.Characteristics)}";
+                textBoxCPUCharacteristics.Text = $"{CPU.Characteristics}";
+                textBoxCPUCharacteristicsMeaning.Text += $"{cpuHelper.GetCharacteristics(CPU.Characteristics)}";
             }
             catch (Exception ex)
             {
                 textBoxCPUCharacteristics.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                textBoxCPUCharacteristicsMeaning.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
             
             try

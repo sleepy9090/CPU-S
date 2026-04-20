@@ -156,67 +156,67 @@ namespace CPU_S
              */
             if (IsBitSet(bitmask, 0))
             {
-                characteristics += "Reserved, ";
+                characteristics += "Reserved" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 1))
             {
-                characteristics += "Unknown, ";
+                characteristics += "Unknown" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 2))
             {
-                characteristics += "64-bit Capable, ";
+                characteristics += "64-bit Capable" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 3))
             {
-                characteristics += "Multi-Core, ";
+                characteristics += "Multi-Core" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 4))
             {
-                characteristics += "Hardware Thread - (Hyper-threading), ";
+                characteristics += "Hardware Thread - (Hyper-threading)" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 5))
             {
-                characteristics += "Execute Protection - (NX bit), ";
+                characteristics += "Execute Protection - (NX bit)" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 6))
             {
-                characteristics += "Enhanced Virtualization - (VT-x/AMD-V), ";
+                characteristics += "Enhanced Virtualization - (VT-x/AMD-V)" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 7))
             {
-                characteristics += "Power/Performance Control, ";
+                characteristics += "Power/Performance Control" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 8))
             {
-                characteristics += "128-bit Capable, ";
+                characteristics += "128-bit Capable" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 9))
             {
-                characteristics += "Arm64 SoC ID, ";
+                characteristics += "Arm64 SoC ID" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 10))
             {
-                characteristics += "Reserved, ";
+                characteristics += "Reserved" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 11))
             {
-                characteristics += "Reserved, ";
+                characteristics += "Reserved" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 12))
             {
-                characteristics += "Reserved, ";
+                characteristics += "Reserved" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 13))
             {
-                characteristics += "Reserved, ";
+                characteristics += "Reserved" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 14))
             {
-                characteristics += "Reserved, ";
+                characteristics += "Reserved" + Environment.NewLine;
             }
             if (IsBitSet(bitmask, 15))
             {
-                characteristics += "Reserved, ";
+                characteristics += "Reserved" + Environment.NewLine;
             }
 
             return characteristics;
@@ -1519,5 +1519,15 @@ namespace CPU_S
 
             return upgradeMethod;
         }
+
+        /*
+        public bool isAvx2Supported()
+        {
+            if (Avx2.IsSupported)
+            {
+                return true;
+            }
+        }
+        */
     }
 }
