@@ -1521,13 +1521,13 @@ namespace CPU_S
         }
 
         [DllImport("AvxDetect.dll", CallingConvention = CallingConvention.Cdecl)]
-        private static extern int IsAvx2SupportedNative();
+        private static extern int IsAvx2Supported(); // Native();
 
-        public bool IsAvx2Supported()
+        public bool IsAvx2SupportedX()
         {
             try
             {
-                return IsAvx2SupportedNative() != 0;
+                return IsAvx2Supported() != 0;
             }
             catch (DllNotFoundException ex)
             {

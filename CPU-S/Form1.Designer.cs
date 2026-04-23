@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabPageCPUMain = new System.Windows.Forms.TabPage();
             this.groupBoxCPU = new System.Windows.Forms.GroupBox();
+            this.labelCPUCharacteristicsMeaning = new System.Windows.Forms.Label();
+            this.textBoxCPUCharacteristicsMeaning = new System.Windows.Forms.TextBox();
             this.labelCPULoadPercentageLogicalProcThread = new System.Windows.Forms.Label();
             this.textBoxCPULoadPercentageLogicalProcThread = new System.Windows.Forms.TextBox();
             this.labelCPU = new System.Windows.Forms.Label();
@@ -147,10 +151,38 @@
             this.textBoxCPUName = new System.Windows.Forms.TextBox();
             this.textBoxCPUSocketDesignation = new System.Windows.Forms.TextBox();
             this.textBoxCPUProcessorId = new System.Windows.Forms.TextBox();
-            this.textBoxCPUCharacteristicsMeaning = new System.Windows.Forms.TextBox();
-            this.labelCPUCharacteristicsMeaning = new System.Windows.Forms.Label();
+            this.tabPageX86SIMDInstructions = new System.Windows.Forms.TabPage();
+            this.tabPageX86CryptographicInstructions = new System.Windows.Forms.TabPage();
+            this.tabPageX86VirtualizationInstructions = new System.Windows.Forms.TabPage();
+            this.tabPageX86DiscontinuedInstructions = new System.Windows.Forms.TabPage();
+            this.tabControl.SuspendLayout();
+            this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.tabPageCPUMain);
+            this.tabControl.Controls.Add(this.tabPageX86SIMDInstructions);
+            this.tabControl.Controls.Add(this.tabPageX86CryptographicInstructions);
+            this.tabControl.Controls.Add(this.tabPageX86VirtualizationInstructions);
+            this.tabControl.Controls.Add(this.tabPageX86DiscontinuedInstructions);
+            this.tabControl.Location = new System.Drawing.Point(12, 4);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(984, 786);
+            this.tabControl.TabIndex = 119;
+            // 
+            // tabPageCPUMain
+            // 
+            this.tabPageCPUMain.Controls.Add(this.groupBoxCPU);
+            this.tabPageCPUMain.Location = new System.Drawing.Point(4, 22);
+            this.tabPageCPUMain.Name = "tabPageCPUMain";
+            this.tabPageCPUMain.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCPUMain.Size = new System.Drawing.Size(976, 760);
+            this.tabPageCPUMain.TabIndex = 0;
+            this.tabPageCPUMain.Text = "CPU Main";
+            this.tabPageCPUMain.UseVisualStyleBackColor = true;
             // 
             // groupBoxCPU
             // 
@@ -274,13 +306,32 @@
             this.groupBoxCPU.Controls.Add(this.textBoxCPUName);
             this.groupBoxCPU.Controls.Add(this.textBoxCPUSocketDesignation);
             this.groupBoxCPU.Controls.Add(this.textBoxCPUProcessorId);
-            this.groupBoxCPU.Location = new System.Drawing.Point(8, 8);
+            this.groupBoxCPU.Location = new System.Drawing.Point(5, 5);
             this.groupBoxCPU.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxCPU.Name = "groupBoxCPU";
             this.groupBoxCPU.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBoxCPU.Size = new System.Drawing.Size(989, 710);
-            this.groupBoxCPU.TabIndex = 0;
+            this.groupBoxCPU.Size = new System.Drawing.Size(966, 750);
+            this.groupBoxCPU.TabIndex = 1;
             this.groupBoxCPU.TabStop = false;
+            // 
+            // labelCPUCharacteristicsMeaning
+            // 
+            this.labelCPUCharacteristicsMeaning.AutoSize = true;
+            this.labelCPUCharacteristicsMeaning.Location = new System.Drawing.Point(295, 164);
+            this.labelCPUCharacteristicsMeaning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCPUCharacteristicsMeaning.Name = "labelCPUCharacteristicsMeaning";
+            this.labelCPUCharacteristicsMeaning.Size = new System.Drawing.Size(123, 13);
+            this.labelCPUCharacteristicsMeaning.TabIndex = 118;
+            this.labelCPUCharacteristicsMeaning.Text = "Characteristics Meaning:";
+            // 
+            // textBoxCPUCharacteristicsMeaning
+            // 
+            this.textBoxCPUCharacteristicsMeaning.Location = new System.Drawing.Point(295, 185);
+            this.textBoxCPUCharacteristicsMeaning.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCPUCharacteristicsMeaning.Multiline = true;
+            this.textBoxCPUCharacteristicsMeaning.Name = "textBoxCPUCharacteristicsMeaning";
+            this.textBoxCPUCharacteristicsMeaning.Size = new System.Drawing.Size(153, 165);
+            this.textBoxCPUCharacteristicsMeaning.TabIndex = 117;
             // 
             // labelCPULoadPercentageLogicalProcThread
             // 
@@ -317,7 +368,6 @@
             this.comboBoxCPU.Name = "comboBoxCPU";
             this.comboBoxCPU.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCPU.TabIndex = 3;
-            this.comboBoxCPU.SelectedIndexChanged += new System.EventHandler(this.comboBoxCPU_SelectedIndexChanged);
             // 
             // labelCPUVoltageCaps
             // 
@@ -331,7 +381,7 @@
             // 
             // textBoxCPUVoltageCaps
             // 
-            this.textBoxCPUVoltageCaps.Location = new System.Drawing.Point(687, 689);
+            this.textBoxCPUVoltageCaps.Location = new System.Drawing.Point(640, 688);
             this.textBoxCPUVoltageCaps.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUVoltageCaps.Name = "textBoxCPUVoltageCaps";
             this.textBoxCPUVoltageCaps.Size = new System.Drawing.Size(135, 20);
@@ -349,7 +399,7 @@
             // 
             // textBoxCPUVMMonitorModeExtensions
             // 
-            this.textBoxCPUVMMonitorModeExtensions.Location = new System.Drawing.Point(687, 665);
+            this.textBoxCPUVMMonitorModeExtensions.Location = new System.Drawing.Point(640, 664);
             this.textBoxCPUVMMonitorModeExtensions.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUVMMonitorModeExtensions.Name = "textBoxCPUVMMonitorModeExtensions";
             this.textBoxCPUVMMonitorModeExtensions.Size = new System.Drawing.Size(135, 20);
@@ -367,7 +417,7 @@
             // 
             // textBoxCPUVirtualizationFirmwareEnabled
             // 
-            this.textBoxCPUVirtualizationFirmwareEnabled.Location = new System.Drawing.Point(687, 641);
+            this.textBoxCPUVirtualizationFirmwareEnabled.Location = new System.Drawing.Point(640, 640);
             this.textBoxCPUVirtualizationFirmwareEnabled.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUVirtualizationFirmwareEnabled.Name = "textBoxCPUVirtualizationFirmwareEnabled";
             this.textBoxCPUVirtualizationFirmwareEnabled.Size = new System.Drawing.Size(135, 20);
@@ -385,7 +435,7 @@
             // 
             // textBoxCPUVersion
             // 
-            this.textBoxCPUVersion.Location = new System.Drawing.Point(687, 617);
+            this.textBoxCPUVersion.Location = new System.Drawing.Point(640, 616);
             this.textBoxCPUVersion.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUVersion.Name = "textBoxCPUVersion";
             this.textBoxCPUVersion.Size = new System.Drawing.Size(135, 20);
@@ -403,7 +453,7 @@
             // 
             // textBoxCPUUpgradeMethod
             // 
-            this.textBoxCPUUpgradeMethod.Location = new System.Drawing.Point(687, 594);
+            this.textBoxCPUUpgradeMethod.Location = new System.Drawing.Point(640, 593);
             this.textBoxCPUUpgradeMethod.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUUpgradeMethod.Name = "textBoxCPUUpgradeMethod";
             this.textBoxCPUUpgradeMethod.Size = new System.Drawing.Size(135, 20);
@@ -421,7 +471,7 @@
             // 
             // textBoxCPUUniqueId
             // 
-            this.textBoxCPUUniqueId.Location = new System.Drawing.Point(687, 570);
+            this.textBoxCPUUniqueId.Location = new System.Drawing.Point(640, 569);
             this.textBoxCPUUniqueId.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUUniqueId.Name = "textBoxCPUUniqueId";
             this.textBoxCPUUniqueId.Size = new System.Drawing.Size(135, 20);
@@ -439,7 +489,7 @@
             // 
             // textBoxCPUThreadCount
             // 
-            this.textBoxCPUThreadCount.Location = new System.Drawing.Point(687, 546);
+            this.textBoxCPUThreadCount.Location = new System.Drawing.Point(640, 545);
             this.textBoxCPUThreadCount.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUThreadCount.Name = "textBoxCPUThreadCount";
             this.textBoxCPUThreadCount.Size = new System.Drawing.Size(135, 20);
@@ -457,7 +507,7 @@
             // 
             // textBoxCPUSystemName
             // 
-            this.textBoxCPUSystemName.Location = new System.Drawing.Point(687, 522);
+            this.textBoxCPUSystemName.Location = new System.Drawing.Point(640, 521);
             this.textBoxCPUSystemName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUSystemName.Name = "textBoxCPUSystemName";
             this.textBoxCPUSystemName.Size = new System.Drawing.Size(135, 20);
@@ -475,7 +525,7 @@
             // 
             // textBoxCPUSystemCreationClassName
             // 
-            this.textBoxCPUSystemCreationClassName.Location = new System.Drawing.Point(687, 498);
+            this.textBoxCPUSystemCreationClassName.Location = new System.Drawing.Point(640, 497);
             this.textBoxCPUSystemCreationClassName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUSystemCreationClassName.Name = "textBoxCPUSystemCreationClassName";
             this.textBoxCPUSystemCreationClassName.Size = new System.Drawing.Size(135, 20);
@@ -493,7 +543,7 @@
             // 
             // textBoxCPUStepping
             // 
-            this.textBoxCPUStepping.Location = new System.Drawing.Point(687, 474);
+            this.textBoxCPUStepping.Location = new System.Drawing.Point(640, 473);
             this.textBoxCPUStepping.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUStepping.Name = "textBoxCPUStepping";
             this.textBoxCPUStepping.Size = new System.Drawing.Size(135, 20);
@@ -511,7 +561,7 @@
             // 
             // textBoxCPUStatusInfo
             // 
-            this.textBoxCPUStatusInfo.Location = new System.Drawing.Point(687, 450);
+            this.textBoxCPUStatusInfo.Location = new System.Drawing.Point(640, 449);
             this.textBoxCPUStatusInfo.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUStatusInfo.Name = "textBoxCPUStatusInfo";
             this.textBoxCPUStatusInfo.Size = new System.Drawing.Size(135, 20);
@@ -529,7 +579,7 @@
             // 
             // textBoxCPUStatus
             // 
-            this.textBoxCPUStatus.Location = new System.Drawing.Point(687, 426);
+            this.textBoxCPUStatus.Location = new System.Drawing.Point(640, 425);
             this.textBoxCPUStatus.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUStatus.Name = "textBoxCPUStatus";
             this.textBoxCPUStatus.Size = new System.Drawing.Size(135, 20);
@@ -547,7 +597,7 @@
             // 
             // textBoxCPUSerialNumber
             // 
-            this.textBoxCPUSerialNumber.Location = new System.Drawing.Point(687, 378);
+            this.textBoxCPUSerialNumber.Location = new System.Drawing.Point(640, 377);
             this.textBoxCPUSerialNumber.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUSerialNumber.Name = "textBoxCPUSerialNumber";
             this.textBoxCPUSerialNumber.Size = new System.Drawing.Size(135, 20);
@@ -559,13 +609,13 @@
             this.labelCPUSecondLevelAddressTranslationExtensions.Location = new System.Drawing.Point(457, 357);
             this.labelCPUSecondLevelAddressTranslationExtensions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCPUSecondLevelAddressTranslationExtensions.Name = "labelCPUSecondLevelAddressTranslationExtensions";
-            this.labelCPUSecondLevelAddressTranslationExtensions.Size = new System.Drawing.Size(226, 13);
+            this.labelCPUSecondLevelAddressTranslationExtensions.Size = new System.Drawing.Size(179, 13);
             this.labelCPUSecondLevelAddressTranslationExtensions.TabIndex = 86;
-            this.labelCPUSecondLevelAddressTranslationExtensions.Text = "Second Level Address Translation Extensions:";
+            this.labelCPUSecondLevelAddressTranslationExtensions.Text = "Second Level Addr Translation Exts:";
             // 
             // textBoxCPUSecondLevelAddressTranslationExtensions
             // 
-            this.textBoxCPUSecondLevelAddressTranslationExtensions.Location = new System.Drawing.Point(687, 354);
+            this.textBoxCPUSecondLevelAddressTranslationExtensions.Location = new System.Drawing.Point(640, 353);
             this.textBoxCPUSecondLevelAddressTranslationExtensions.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUSecondLevelAddressTranslationExtensions.Name = "textBoxCPUSecondLevelAddressTranslationExtensions";
             this.textBoxCPUSecondLevelAddressTranslationExtensions.Size = new System.Drawing.Size(135, 20);
@@ -583,7 +633,7 @@
             // 
             // textBoxCPURole
             // 
-            this.textBoxCPURole.Location = new System.Drawing.Point(687, 330);
+            this.textBoxCPURole.Location = new System.Drawing.Point(640, 329);
             this.textBoxCPURole.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPURole.Name = "textBoxCPURole";
             this.textBoxCPURole.Size = new System.Drawing.Size(135, 20);
@@ -601,7 +651,7 @@
             // 
             // textBoxCPURevision
             // 
-            this.textBoxCPURevision.Location = new System.Drawing.Point(687, 306);
+            this.textBoxCPURevision.Location = new System.Drawing.Point(640, 305);
             this.textBoxCPURevision.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPURevision.Name = "textBoxCPURevision";
             this.textBoxCPURevision.Size = new System.Drawing.Size(135, 20);
@@ -619,7 +669,7 @@
             // 
             // textBoxCPUProcessorType
             // 
-            this.textBoxCPUProcessorType.Location = new System.Drawing.Point(687, 281);
+            this.textBoxCPUProcessorType.Location = new System.Drawing.Point(640, 280);
             this.textBoxCPUProcessorType.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUProcessorType.Name = "textBoxCPUProcessorType";
             this.textBoxCPUProcessorType.Size = new System.Drawing.Size(135, 20);
@@ -637,7 +687,7 @@
             // 
             // textBoxCPUPowerManagementSupported
             // 
-            this.textBoxCPUPowerManagementSupported.Location = new System.Drawing.Point(687, 233);
+            this.textBoxCPUPowerManagementSupported.Location = new System.Drawing.Point(640, 232);
             this.textBoxCPUPowerManagementSupported.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUPowerManagementSupported.Name = "textBoxCPUPowerManagementSupported";
             this.textBoxCPUPowerManagementSupported.Size = new System.Drawing.Size(135, 20);
@@ -655,7 +705,7 @@
             // 
             // textBoxCPUPowerManagementCapabilities
             // 
-            this.textBoxCPUPowerManagementCapabilities.Location = new System.Drawing.Point(687, 209);
+            this.textBoxCPUPowerManagementCapabilities.Location = new System.Drawing.Point(640, 208);
             this.textBoxCPUPowerManagementCapabilities.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUPowerManagementCapabilities.Name = "textBoxCPUPowerManagementCapabilities";
             this.textBoxCPUPowerManagementCapabilities.Size = new System.Drawing.Size(135, 20);
@@ -673,7 +723,7 @@
             // 
             // textBoxCPUPNPDeviceID
             // 
-            this.textBoxCPUPNPDeviceID.Location = new System.Drawing.Point(687, 185);
+            this.textBoxCPUPNPDeviceID.Location = new System.Drawing.Point(640, 184);
             this.textBoxCPUPNPDeviceID.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUPNPDeviceID.Name = "textBoxCPUPNPDeviceID";
             this.textBoxCPUPNPDeviceID.Size = new System.Drawing.Size(135, 20);
@@ -691,7 +741,7 @@
             // 
             // textBoxCPUPartNumber
             // 
-            this.textBoxCPUPartNumber.Location = new System.Drawing.Point(687, 161);
+            this.textBoxCPUPartNumber.Location = new System.Drawing.Point(640, 160);
             this.textBoxCPUPartNumber.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUPartNumber.Name = "textBoxCPUPartNumber";
             this.textBoxCPUPartNumber.Size = new System.Drawing.Size(135, 20);
@@ -709,7 +759,7 @@
             // 
             // textBoxCPUOtherFamilyDescription
             // 
-            this.textBoxCPUOtherFamilyDescription.Location = new System.Drawing.Point(687, 137);
+            this.textBoxCPUOtherFamilyDescription.Location = new System.Drawing.Point(640, 136);
             this.textBoxCPUOtherFamilyDescription.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUOtherFamilyDescription.Name = "textBoxCPUOtherFamilyDescription";
             this.textBoxCPUOtherFamilyDescription.Size = new System.Drawing.Size(135, 20);
@@ -727,7 +777,7 @@
             // 
             // textBoxCPUNumberOfEnabledCore
             // 
-            this.textBoxCPUNumberOfEnabledCore.Location = new System.Drawing.Point(687, 89);
+            this.textBoxCPUNumberOfEnabledCore.Location = new System.Drawing.Point(640, 88);
             this.textBoxCPUNumberOfEnabledCore.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUNumberOfEnabledCore.Name = "textBoxCPUNumberOfEnabledCore";
             this.textBoxCPUNumberOfEnabledCore.Size = new System.Drawing.Size(135, 20);
@@ -1243,7 +1293,7 @@
             // 
             // textBoxCPUNumberOfLogicalProcessors
             // 
-            this.textBoxCPUNumberOfLogicalProcessors.Location = new System.Drawing.Point(687, 113);
+            this.textBoxCPUNumberOfLogicalProcessors.Location = new System.Drawing.Point(640, 112);
             this.textBoxCPUNumberOfLogicalProcessors.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUNumberOfLogicalProcessors.Name = "textBoxCPUNumberOfLogicalProcessors";
             this.textBoxCPUNumberOfLogicalProcessors.Size = new System.Drawing.Size(135, 20);
@@ -1251,7 +1301,7 @@
             // 
             // textBoxCPUNumberOfCores
             // 
-            this.textBoxCPUNumberOfCores.Location = new System.Drawing.Point(687, 65);
+            this.textBoxCPUNumberOfCores.Location = new System.Drawing.Point(640, 64);
             this.textBoxCPUNumberOfCores.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUNumberOfCores.Name = "textBoxCPUNumberOfCores";
             this.textBoxCPUNumberOfCores.Size = new System.Drawing.Size(135, 20);
@@ -1283,7 +1333,7 @@
             // 
             // textBoxCPUMaxClockSpeed
             // 
-            this.textBoxCPUMaxClockSpeed.Location = new System.Drawing.Point(687, 17);
+            this.textBoxCPUMaxClockSpeed.Location = new System.Drawing.Point(640, 16);
             this.textBoxCPUMaxClockSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUMaxClockSpeed.Name = "textBoxCPUMaxClockSpeed";
             this.textBoxCPUMaxClockSpeed.Size = new System.Drawing.Size(135, 20);
@@ -1318,12 +1368,12 @@
             this.textBoxCPUDescription.Location = new System.Drawing.Point(156, 353);
             this.textBoxCPUDescription.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUDescription.Name = "textBoxCPUDescription";
-            this.textBoxCPUDescription.Size = new System.Drawing.Size(235, 20);
+            this.textBoxCPUDescription.Size = new System.Drawing.Size(295, 20);
             this.textBoxCPUDescription.TabIndex = 17;
             // 
             // textBoxCPUName
             // 
-            this.textBoxCPUName.Location = new System.Drawing.Point(687, 41);
+            this.textBoxCPUName.Location = new System.Drawing.Point(640, 40);
             this.textBoxCPUName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUName.Name = "textBoxCPUName";
             this.textBoxCPUName.Size = new System.Drawing.Size(295, 20);
@@ -1331,7 +1381,7 @@
             // 
             // textBoxCPUSocketDesignation
             // 
-            this.textBoxCPUSocketDesignation.Location = new System.Drawing.Point(687, 402);
+            this.textBoxCPUSocketDesignation.Location = new System.Drawing.Point(640, 401);
             this.textBoxCPUSocketDesignation.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUSocketDesignation.Name = "textBoxCPUSocketDesignation";
             this.textBoxCPUSocketDesignation.Size = new System.Drawing.Size(135, 20);
@@ -1339,42 +1389,62 @@
             // 
             // textBoxCPUProcessorId
             // 
-            this.textBoxCPUProcessorId.Location = new System.Drawing.Point(687, 257);
+            this.textBoxCPUProcessorId.Location = new System.Drawing.Point(640, 256);
             this.textBoxCPUProcessorId.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUProcessorId.Name = "textBoxCPUProcessorId";
             this.textBoxCPUProcessorId.Size = new System.Drawing.Size(135, 20);
             this.textBoxCPUProcessorId.TabIndex = 42;
             // 
-            // textBoxCPUCharacteristicsMeaning
+            // tabPageX86SIMDInstructions
             // 
-            this.textBoxCPUCharacteristicsMeaning.Location = new System.Drawing.Point(295, 185);
-            this.textBoxCPUCharacteristicsMeaning.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCPUCharacteristicsMeaning.Multiline = true;
-            this.textBoxCPUCharacteristicsMeaning.Name = "textBoxCPUCharacteristicsMeaning";
-            this.textBoxCPUCharacteristicsMeaning.Size = new System.Drawing.Size(153, 165);
-            this.textBoxCPUCharacteristicsMeaning.TabIndex = 117;
+            this.tabPageX86SIMDInstructions.Location = new System.Drawing.Point(4, 22);
+            this.tabPageX86SIMDInstructions.Name = "tabPageX86SIMDInstructions";
+            this.tabPageX86SIMDInstructions.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageX86SIMDInstructions.Size = new System.Drawing.Size(976, 760);
+            this.tabPageX86SIMDInstructions.TabIndex = 1;
+            this.tabPageX86SIMDInstructions.Text = "x86 SIMD Instructions";
+            this.tabPageX86SIMDInstructions.UseVisualStyleBackColor = true;
             // 
-            // labelCPUCharacteristicsMeaning
+            // tabPageX86CryptographicInstructions
             // 
-            this.labelCPUCharacteristicsMeaning.AutoSize = true;
-            this.labelCPUCharacteristicsMeaning.Location = new System.Drawing.Point(295, 164);
-            this.labelCPUCharacteristicsMeaning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCPUCharacteristicsMeaning.Name = "labelCPUCharacteristicsMeaning";
-            this.labelCPUCharacteristicsMeaning.Size = new System.Drawing.Size(123, 13);
-            this.labelCPUCharacteristicsMeaning.TabIndex = 118;
-            this.labelCPUCharacteristicsMeaning.Text = "Characteristics Meaning:";
+            this.tabPageX86CryptographicInstructions.Location = new System.Drawing.Point(4, 22);
+            this.tabPageX86CryptographicInstructions.Name = "tabPageX86CryptographicInstructions";
+            this.tabPageX86CryptographicInstructions.Size = new System.Drawing.Size(976, 760);
+            this.tabPageX86CryptographicInstructions.TabIndex = 2;
+            this.tabPageX86CryptographicInstructions.Text = "x86 Cryptographic Instructions";
+            this.tabPageX86CryptographicInstructions.UseVisualStyleBackColor = true;
+            // 
+            // tabPageX86VirtualizationInstructions
+            // 
+            this.tabPageX86VirtualizationInstructions.Location = new System.Drawing.Point(4, 22);
+            this.tabPageX86VirtualizationInstructions.Name = "tabPageX86VirtualizationInstructions";
+            this.tabPageX86VirtualizationInstructions.Size = new System.Drawing.Size(976, 760);
+            this.tabPageX86VirtualizationInstructions.TabIndex = 3;
+            this.tabPageX86VirtualizationInstructions.Text = "x86 Virtualization Instructions";
+            this.tabPageX86VirtualizationInstructions.UseVisualStyleBackColor = true;
+            // 
+            // tabPageX86DiscontinuedInstructions
+            // 
+            this.tabPageX86DiscontinuedInstructions.Location = new System.Drawing.Point(4, 22);
+            this.tabPageX86DiscontinuedInstructions.Name = "tabPageX86DiscontinuedInstructions";
+            this.tabPageX86DiscontinuedInstructions.Size = new System.Drawing.Size(976, 760);
+            this.tabPageX86DiscontinuedInstructions.TabIndex = 4;
+            this.tabPageX86DiscontinuedInstructions.Text = "x86 Discontinued Instructions";
+            this.tabPageX86DiscontinuedInstructions.UseVisualStyleBackColor = true;
             // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.groupBoxCPU);
+            this.ClientSize = new System.Drawing.Size(1008, 796);
+            this.Controls.Add(this.tabControl);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormCPUS";
             this.Text = "CPU-S";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCPUS_FormClosed);
+            this.tabControl.ResumeLayout(false);
+            this.tabPageCPUMain.ResumeLayout(false);
             this.groupBoxCPU.ResumeLayout(false);
             this.groupBoxCPU.PerformLayout();
             this.ResumeLayout(false);
@@ -1383,20 +1453,103 @@
 
         #endregion
 
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabPageCPUMain;
         private System.Windows.Forms.GroupBox groupBoxCPU;
-        private System.Windows.Forms.TextBox textBoxCPUProcessorId;
-        private System.Windows.Forms.TextBox textBoxCPUName;
-        private System.Windows.Forms.TextBox textBoxCPUSocketDesignation;
-        private System.Windows.Forms.TextBox textBoxCPUNumberOfLogicalProcessors;
-        private System.Windows.Forms.TextBox textBoxCPUNumberOfCores;
-        private System.Windows.Forms.TextBox textBoxCPUL3CacheSize;
-        private System.Windows.Forms.TextBox textBoxCPUL2CacheSize;
-        private System.Windows.Forms.TextBox textBoxCPUExtClock;
-        private System.Windows.Forms.TextBox textBoxCPUMaxClockSpeed;
-        private System.Windows.Forms.TextBox textBoxCPUArchitecture;
-        private System.Windows.Forms.TextBox textBoxCPUDataWidth;
-        private System.Windows.Forms.TextBox textBoxCPUAddressWidth;
-        private System.Windows.Forms.TextBox textBoxCPUDescription;
+        private System.Windows.Forms.Label labelCPUCharacteristicsMeaning;
+        private System.Windows.Forms.TextBox textBoxCPUCharacteristicsMeaning;
+        private System.Windows.Forms.Label labelCPULoadPercentageLogicalProcThread;
+        private System.Windows.Forms.TextBox textBoxCPULoadPercentageLogicalProcThread;
+        private System.Windows.Forms.Label labelCPU;
+        private System.Windows.Forms.ComboBox comboBoxCPU;
+        private System.Windows.Forms.Label labelCPUVoltageCaps;
+        private System.Windows.Forms.TextBox textBoxCPUVoltageCaps;
+        private System.Windows.Forms.Label labelCPUVMMonitorModeExtensions;
+        private System.Windows.Forms.TextBox textBoxCPUVMMonitorModeExtensions;
+        private System.Windows.Forms.Label labelCPUVirtualizationFirmwareEnabled;
+        private System.Windows.Forms.TextBox textBoxCPUVirtualizationFirmwareEnabled;
+        private System.Windows.Forms.Label labelCPUVersion;
+        private System.Windows.Forms.TextBox textBoxCPUVersion;
+        private System.Windows.Forms.Label labelCPUUpgradeMethod;
+        private System.Windows.Forms.TextBox textBoxCPUUpgradeMethod;
+        private System.Windows.Forms.Label labelCPUUniqueId;
+        private System.Windows.Forms.TextBox textBoxCPUUniqueId;
+        private System.Windows.Forms.Label labelCPUThreadCount;
+        private System.Windows.Forms.TextBox textBoxCPUThreadCount;
+        private System.Windows.Forms.Label labelCPUSystemName;
+        private System.Windows.Forms.TextBox textBoxCPUSystemName;
+        private System.Windows.Forms.Label labelCPUSystemCreationClassName;
+        private System.Windows.Forms.TextBox textBoxCPUSystemCreationClassName;
+        private System.Windows.Forms.Label labelCPUStepping;
+        private System.Windows.Forms.TextBox textBoxCPUStepping;
+        private System.Windows.Forms.Label labelCPUStatusInfo;
+        private System.Windows.Forms.TextBox textBoxCPUStatusInfo;
+        private System.Windows.Forms.Label labelCPUStatus;
+        private System.Windows.Forms.TextBox textBoxCPUStatus;
+        private System.Windows.Forms.Label labelCPUSerialNumber;
+        private System.Windows.Forms.TextBox textBoxCPUSerialNumber;
+        private System.Windows.Forms.Label labelCPUSecondLevelAddressTranslationExtensions;
+        private System.Windows.Forms.TextBox textBoxCPUSecondLevelAddressTranslationExtensions;
+        private System.Windows.Forms.Label labelCPURole;
+        private System.Windows.Forms.TextBox textBoxCPURole;
+        private System.Windows.Forms.Label labelCPURevision;
+        private System.Windows.Forms.TextBox textBoxCPURevision;
+        private System.Windows.Forms.Label labelCPUProcessorType;
+        private System.Windows.Forms.TextBox textBoxCPUProcessorType;
+        private System.Windows.Forms.Label labelCPUPowerManagementSupported;
+        private System.Windows.Forms.TextBox textBoxCPUPowerManagementSupported;
+        private System.Windows.Forms.Label labelCPUPowerManagementCapabilities;
+        private System.Windows.Forms.TextBox textBoxCPUPowerManagementCapabilities;
+        private System.Windows.Forms.Label labelCPUPNPDeviceID;
+        private System.Windows.Forms.TextBox textBoxCPUPNPDeviceID;
+        private System.Windows.Forms.Label labelCPUPartNumber;
+        private System.Windows.Forms.TextBox textBoxCPUPartNumber;
+        private System.Windows.Forms.Label labelCPUOtherFamilyDescription;
+        private System.Windows.Forms.TextBox textBoxCPUOtherFamilyDescription;
+        private System.Windows.Forms.Label labelCPUNumberOfEnabledCore;
+        private System.Windows.Forms.TextBox textBoxCPUNumberOfEnabledCore;
+        private System.Windows.Forms.Label labelCPUManufacturer;
+        private System.Windows.Forms.TextBox textBoxCPUManufacturer;
+        private System.Windows.Forms.Label labelCPULoadPercentage;
+        private System.Windows.Forms.TextBox textBoxCPULoadPercentage;
+        private System.Windows.Forms.Label labelCPULevel;
+        private System.Windows.Forms.TextBox textBoxCPULevel;
+        private System.Windows.Forms.Label labelCPULastErrorCode;
+        private System.Windows.Forms.TextBox textBoxCPULastErrorCode;
+        private System.Windows.Forms.Label labelCPUL3CacheSpeed;
+        private System.Windows.Forms.TextBox textBoxCPUL3CacheSpeed;
+        private System.Windows.Forms.Label labelCPUL2CacheSpeed;
+        private System.Windows.Forms.TextBox textBoxCPUL2CacheSpeed;
+        private System.Windows.Forms.Label labelCPUInstallDate;
+        private System.Windows.Forms.TextBox textBoxCPUInstallDate;
+        private System.Windows.Forms.Label labelCPUFamily;
+        private System.Windows.Forms.TextBox textBoxCPUFamily;
+        private System.Windows.Forms.Label labelCPUErrorDescription;
+        private System.Windows.Forms.TextBox textBoxCPUErrorDescription;
+        private System.Windows.Forms.Label labelCPUErrorCleared;
+        private System.Windows.Forms.TextBox textBoxCPUErrorCleared;
+        private System.Windows.Forms.Label labelCPUDeviceID;
+        private System.Windows.Forms.TextBox textBoxCPUDeviceID;
+        private System.Windows.Forms.Label labelCPUCurrentVoltage;
+        private System.Windows.Forms.TextBox textBoxCPUCurrentVoltage;
+        private System.Windows.Forms.Label labelCPUCurrentClockSpeed;
+        private System.Windows.Forms.TextBox textBoxCPUCurrentClockSpeed;
+        private System.Windows.Forms.Label labelCPUCreationClassName;
+        private System.Windows.Forms.TextBox textBoxCPUCreationClassName;
+        private System.Windows.Forms.Label labelCPUCpuStatus;
+        private System.Windows.Forms.TextBox textBoxCPUCpuStatus;
+        private System.Windows.Forms.Label labelCPUConfigManagerUserConfig;
+        private System.Windows.Forms.TextBox textBoxCPUConfigManagerUserConfig;
+        private System.Windows.Forms.Label labelCPUConfigManagerErrorCode;
+        private System.Windows.Forms.TextBox textBoxCPUConfigManagerErrorCode;
+        private System.Windows.Forms.Label labelCPUCharacteristics;
+        private System.Windows.Forms.TextBox textBoxCPUCharacteristics;
+        private System.Windows.Forms.Label labelCPUCaption;
+        private System.Windows.Forms.TextBox textBoxCPUCaption;
+        private System.Windows.Forms.Label labelCPUAvailability;
+        private System.Windows.Forms.TextBox textBoxCPUAvailability;
+        private System.Windows.Forms.Label labelCPUAssetTag;
+        private System.Windows.Forms.TextBox textBoxCPUAssetTag;
         private System.Windows.Forms.Label labelCPUNumberOfLogicalProcessors;
         private System.Windows.Forms.Label labelCPUNumberOfCores;
         private System.Windows.Forms.Label labelCPUL3CacheSize;
@@ -1410,100 +1563,23 @@
         private System.Windows.Forms.Label labelCPUName;
         private System.Windows.Forms.Label labelCPUSocketDesignation;
         private System.Windows.Forms.Label labelCPUProcessorId;
-        private System.Windows.Forms.Label labelCPUAssetTag;
-        private System.Windows.Forms.TextBox textBoxCPUAssetTag;
-        private System.Windows.Forms.Label labelCPUAvailability;
-        private System.Windows.Forms.TextBox textBoxCPUAvailability;
-        private System.Windows.Forms.Label labelCPUCaption;
-        private System.Windows.Forms.TextBox textBoxCPUCaption;
-        private System.Windows.Forms.Label labelCPUCharacteristics;
-        private System.Windows.Forms.TextBox textBoxCPUCharacteristics;
-        private System.Windows.Forms.Label labelCPUConfigManagerErrorCode;
-        private System.Windows.Forms.TextBox textBoxCPUConfigManagerErrorCode;
-        private System.Windows.Forms.Label labelCPUConfigManagerUserConfig;
-        private System.Windows.Forms.TextBox textBoxCPUConfigManagerUserConfig;
-        private System.Windows.Forms.Label labelCPUCpuStatus;
-        private System.Windows.Forms.TextBox textBoxCPUCpuStatus;
-        private System.Windows.Forms.Label labelCPUCreationClassName;
-        private System.Windows.Forms.TextBox textBoxCPUCreationClassName;
-        private System.Windows.Forms.Label labelCPUCurrentClockSpeed;
-        private System.Windows.Forms.TextBox textBoxCPUCurrentClockSpeed;
-        private System.Windows.Forms.Label labelCPUCurrentVoltage;
-        private System.Windows.Forms.TextBox textBoxCPUCurrentVoltage;
-        private System.Windows.Forms.Label labelCPUDeviceID;
-        private System.Windows.Forms.TextBox textBoxCPUDeviceID;
-        private System.Windows.Forms.Label labelCPUErrorCleared;
-        private System.Windows.Forms.TextBox textBoxCPUErrorCleared;
-        private System.Windows.Forms.Label labelCPUErrorDescription;
-        private System.Windows.Forms.TextBox textBoxCPUErrorDescription;
-        private System.Windows.Forms.Label labelCPUFamily;
-        private System.Windows.Forms.TextBox textBoxCPUFamily;
-        private System.Windows.Forms.Label labelCPUInstallDate;
-        private System.Windows.Forms.TextBox textBoxCPUInstallDate;
-        private System.Windows.Forms.Label labelCPUL2CacheSpeed;
-        private System.Windows.Forms.TextBox textBoxCPUL2CacheSpeed;
-        private System.Windows.Forms.Label labelCPUL3CacheSpeed;
-        private System.Windows.Forms.TextBox textBoxCPUL3CacheSpeed;
-        private System.Windows.Forms.Label labelCPULastErrorCode;
-        private System.Windows.Forms.TextBox textBoxCPULastErrorCode;
-        private System.Windows.Forms.Label labelCPULevel;
-        private System.Windows.Forms.TextBox textBoxCPULevel;
-        private System.Windows.Forms.Label labelCPULoadPercentage;
-        private System.Windows.Forms.TextBox textBoxCPULoadPercentage;
-        private System.Windows.Forms.Label labelCPUManufacturer;
-        private System.Windows.Forms.TextBox textBoxCPUManufacturer;
-        private System.Windows.Forms.Label labelCPUNumberOfEnabledCore;
-        private System.Windows.Forms.TextBox textBoxCPUNumberOfEnabledCore;
-        private System.Windows.Forms.Label labelCPUOtherFamilyDescription;
-        private System.Windows.Forms.TextBox textBoxCPUOtherFamilyDescription;
-        private System.Windows.Forms.Label labelCPUPartNumber;
-        private System.Windows.Forms.TextBox textBoxCPUPartNumber;
-        private System.Windows.Forms.Label labelCPUPNPDeviceID;
-        private System.Windows.Forms.TextBox textBoxCPUPNPDeviceID;
-        private System.Windows.Forms.Label labelCPUPowerManagementCapabilities;
-        private System.Windows.Forms.TextBox textBoxCPUPowerManagementCapabilities;
-        private System.Windows.Forms.Label labelCPUPowerManagementSupported;
-        private System.Windows.Forms.TextBox textBoxCPUPowerManagementSupported;
-        private System.Windows.Forms.Label labelCPUProcessorType;
-        private System.Windows.Forms.TextBox textBoxCPUProcessorType;
-        private System.Windows.Forms.Label labelCPURevision;
-        private System.Windows.Forms.TextBox textBoxCPURevision;
-        private System.Windows.Forms.Label labelCPURole;
-        private System.Windows.Forms.TextBox textBoxCPURole;
-        private System.Windows.Forms.Label labelCPUSecondLevelAddressTranslationExtensions;
-        private System.Windows.Forms.TextBox textBoxCPUSecondLevelAddressTranslationExtensions;
-        private System.Windows.Forms.Label labelCPUSerialNumber;
-        private System.Windows.Forms.TextBox textBoxCPUSerialNumber;
-        private System.Windows.Forms.Label labelCPUStatus;
-        private System.Windows.Forms.TextBox textBoxCPUStatus;
-        private System.Windows.Forms.Label labelCPUStatusInfo;
-        private System.Windows.Forms.TextBox textBoxCPUStatusInfo;
-        private System.Windows.Forms.Label labelCPUStepping;
-        private System.Windows.Forms.TextBox textBoxCPUStepping;
-        private System.Windows.Forms.Label labelCPUSystemCreationClassName;
-        private System.Windows.Forms.TextBox textBoxCPUSystemCreationClassName;
-        private System.Windows.Forms.Label labelCPUSystemName;
-        private System.Windows.Forms.TextBox textBoxCPUSystemName;
-        private System.Windows.Forms.Label labelCPUThreadCount;
-        private System.Windows.Forms.TextBox textBoxCPUThreadCount;
-        private System.Windows.Forms.Label labelCPUUniqueId;
-        private System.Windows.Forms.TextBox textBoxCPUUniqueId;
-        private System.Windows.Forms.Label labelCPUUpgradeMethod;
-        private System.Windows.Forms.TextBox textBoxCPUUpgradeMethod;
-        private System.Windows.Forms.Label labelCPUVersion;
-        private System.Windows.Forms.TextBox textBoxCPUVersion;
-        private System.Windows.Forms.Label labelCPUVMMonitorModeExtensions;
-        private System.Windows.Forms.TextBox textBoxCPUVMMonitorModeExtensions;
-        private System.Windows.Forms.Label labelCPUVirtualizationFirmwareEnabled;
-        private System.Windows.Forms.TextBox textBoxCPUVirtualizationFirmwareEnabled;
-        private System.Windows.Forms.Label labelCPUVoltageCaps;
-        private System.Windows.Forms.TextBox textBoxCPUVoltageCaps;
-        private System.Windows.Forms.Label labelCPU;
-        private System.Windows.Forms.ComboBox comboBoxCPU;
-        private System.Windows.Forms.TextBox textBoxCPULoadPercentageLogicalProcThread;
-        private System.Windows.Forms.Label labelCPULoadPercentageLogicalProcThread;
-        private System.Windows.Forms.Label labelCPUCharacteristicsMeaning;
-        private System.Windows.Forms.TextBox textBoxCPUCharacteristicsMeaning;
+        private System.Windows.Forms.TextBox textBoxCPUNumberOfLogicalProcessors;
+        private System.Windows.Forms.TextBox textBoxCPUNumberOfCores;
+        private System.Windows.Forms.TextBox textBoxCPUL3CacheSize;
+        private System.Windows.Forms.TextBox textBoxCPUL2CacheSize;
+        private System.Windows.Forms.TextBox textBoxCPUExtClock;
+        private System.Windows.Forms.TextBox textBoxCPUMaxClockSpeed;
+        private System.Windows.Forms.TextBox textBoxCPUArchitecture;
+        private System.Windows.Forms.TextBox textBoxCPUDataWidth;
+        private System.Windows.Forms.TextBox textBoxCPUAddressWidth;
+        private System.Windows.Forms.TextBox textBoxCPUDescription;
+        private System.Windows.Forms.TextBox textBoxCPUName;
+        private System.Windows.Forms.TextBox textBoxCPUSocketDesignation;
+        private System.Windows.Forms.TextBox textBoxCPUProcessorId;
+        private System.Windows.Forms.TabPage tabPageX86SIMDInstructions;
+        private System.Windows.Forms.TabPage tabPageX86CryptographicInstructions;
+        private System.Windows.Forms.TabPage tabPageX86VirtualizationInstructions;
+        private System.Windows.Forms.TabPage tabPageX86DiscontinuedInstructions;
     }
 }
 

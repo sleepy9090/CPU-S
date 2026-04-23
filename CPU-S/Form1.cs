@@ -851,7 +851,7 @@ namespace CPU_S
                 textBoxCPUVoltageCaps.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-            bool isAvx2Supported = cpuHelper.IsAvx2Supported();
+            bool isAvx2Supported = cpuHelper.IsAvx2SupportedX();
             Console.WriteLine($"AVX2 Supported: {isAvx2Supported}");
         }
 
