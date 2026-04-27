@@ -159,8 +159,8 @@
             this.textBoxAVX101 = new System.Windows.Forms.TextBox();
             this.labelAMX = new System.Windows.Forms.Label();
             this.textBoxAMX = new System.Windows.Forms.TextBox();
-            this.labelAVX512 = new System.Windows.Forms.Label();
-            this.textBoxAVX512 = new System.Windows.Forms.TextBox();
+            this.labelAVX512F = new System.Windows.Forms.Label();
+            this.textBoxAVX512F = new System.Windows.Forms.TextBox();
             this.labelAVX2 = new System.Windows.Forms.Label();
             this.textBoxAVX2 = new System.Windows.Forms.TextBox();
             this.labelFMA3 = new System.Windows.Forms.Label();
@@ -185,6 +185,18 @@
             this.textBoxMMX = new System.Windows.Forms.TextBox();
             this.tabPageX86CryptographicInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxX86CryptographicInstructions = new System.Windows.Forms.GroupBox();
+            this.labelTDX = new System.Windows.Forms.Label();
+            this.textBoxTDX = new System.Windows.Forms.TextBox();
+            this.labelSGX = new System.Windows.Forms.Label();
+            this.textBoxSGX = new System.Windows.Forms.TextBox();
+            this.labelMPX = new System.Windows.Forms.Label();
+            this.textBoxMPX = new System.Windows.Forms.TextBox();
+            this.labelSM4 = new System.Windows.Forms.Label();
+            this.textBoxSM4 = new System.Windows.Forms.TextBox();
+            this.labelSM3 = new System.Windows.Forms.Label();
+            this.textBoxSM3 = new System.Windows.Forms.TextBox();
+            this.labelRDSEED = new System.Windows.Forms.Label();
+            this.textBoxRDSEED = new System.Windows.Forms.TextBox();
             this.labelPadLock = new System.Windows.Forms.Label();
             this.textBoxPadLock = new System.Windows.Forms.TextBox();
             this.labelKL = new System.Windows.Forms.Label();
@@ -204,9 +216,15 @@
             this.labelVIAVT = new System.Windows.Forms.Label();
             this.textBoxVIAVT = new System.Windows.Forms.TextBox();
             this.labelIntelVTX = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxIntelVTX = new System.Windows.Forms.TextBox();
             this.labelAMDV = new System.Windows.Forms.Label();
             this.textBoxAMDV = new System.Windows.Forms.TextBox();
+            this.tabPageX86TransactionalMemoryInstructions = new System.Windows.Forms.TabPage();
+            this.groupBoxx86TransactionalMemoryInstructions = new System.Windows.Forms.GroupBox();
+            this.labelASF = new System.Windows.Forms.Label();
+            this.textBoxASF = new System.Windows.Forms.TextBox();
+            this.labelTSX = new System.Windows.Forms.Label();
+            this.textBoxTSX = new System.Windows.Forms.TextBox();
             this.tabPageX86Instructions = new System.Windows.Forms.TabPage();
             this.groupBoxOtherX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
             this.label387Clones = new System.Windows.Forms.Label();
@@ -226,8 +244,6 @@
             this.groupBoxAMDX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
             this.labelLWP = new System.Windows.Forms.Label();
             this.textBoxLWP = new System.Windows.Forms.TextBox();
-            this.labelTBM = new System.Windows.Forms.Label();
-            this.textBoxTBM = new System.Windows.Forms.TextBox();
             this.labelFMA4 = new System.Windows.Forms.Label();
             this.textBoxFMA4 = new System.Windows.Forms.TextBox();
             this.labelXOP = new System.Windows.Forms.Label();
@@ -253,24 +269,46 @@
             this.textBoxItanium = new System.Windows.Forms.TextBox();
             this.labelI386 = new System.Windows.Forms.Label();
             this.textBoxI386 = new System.Windows.Forms.TextBox();
-            this.labelRDSEED = new System.Windows.Forms.Label();
-            this.textBoxRDSEED = new System.Windows.Forms.TextBox();
-            this.labelSM3 = new System.Windows.Forms.Label();
-            this.textBoxSM3 = new System.Windows.Forms.TextBox();
-            this.labelSM4 = new System.Windows.Forms.Label();
-            this.textBoxSM4 = new System.Windows.Forms.TextBox();
-            this.labelMPX = new System.Windows.Forms.Label();
-            this.textBoxMPX = new System.Windows.Forms.TextBox();
-            this.labelSGX = new System.Windows.Forms.Label();
-            this.textBoxSGX = new System.Windows.Forms.TextBox();
-            this.labelTDX = new System.Windows.Forms.Label();
-            this.textBoxTDX = new System.Windows.Forms.TextBox();
-            this.tabPageX86TransactionalMemoryInstructions = new System.Windows.Forms.TabPage();
-            this.groupBoxx86TransactionalMemoryInstructions = new System.Windows.Forms.GroupBox();
-            this.labelTSX = new System.Windows.Forms.Label();
-            this.textBoxTSX = new System.Windows.Forms.TextBox();
-            this.labelASF = new System.Windows.Forms.Label();
-            this.textBoxASF = new System.Windows.Forms.TextBox();
+            this.tabPageX86BitManipulation = new System.Windows.Forms.TabPage();
+            this.groupBoxX86BitManipulationInstructions = new System.Windows.Forms.GroupBox();
+            this.labelBMI1 = new System.Windows.Forms.Label();
+            this.textBoxBMI1 = new System.Windows.Forms.TextBox();
+            this.labelADX = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.labelBMI2 = new System.Windows.Forms.Label();
+            this.textBoxBMI2 = new System.Windows.Forms.TextBox();
+            this.labelABM = new System.Windows.Forms.Label();
+            this.textBoxABM = new System.Windows.Forms.TextBox();
+            this.labelTBM = new System.Windows.Forms.Label();
+            this.textBoxTBM = new System.Windows.Forms.TextBox();
+            this.labelAVX512CD = new System.Windows.Forms.Label();
+            this.textBoxAVX512CD = new System.Windows.Forms.TextBox();
+            this.labelAVX512ER = new System.Windows.Forms.Label();
+            this.textBoxAVX512ER = new System.Windows.Forms.TextBox();
+            this.labelAVX5124FMAPS = new System.Windows.Forms.Label();
+            this.textBoxAVX512PF = new System.Windows.Forms.TextBox();
+            this.labelAVX512PF = new System.Windows.Forms.Label();
+            this.textBoxAVX5124VNNIW = new System.Windows.Forms.TextBox();
+            this.labelAVX5124VNNIW = new System.Windows.Forms.Label();
+            this.textBoxAVX5124FMAPS = new System.Windows.Forms.TextBox();
+            this.labelAVX512VL = new System.Windows.Forms.Label();
+            this.textBoxAVX512VL = new System.Windows.Forms.TextBox();
+            this.labelAVX512DQ = new System.Windows.Forms.Label();
+            this.textBoxAVX512DQ = new System.Windows.Forms.TextBox();
+            this.labelAVX512BW = new System.Windows.Forms.Label();
+            this.textBoxAVX512BW = new System.Windows.Forms.TextBox();
+            this.labelAVX512IFMA = new System.Windows.Forms.Label();
+            this.textBoxAVX512IFMA = new System.Windows.Forms.TextBox();
+            this.labelAVX512VBMI = new System.Windows.Forms.Label();
+            this.textBoxAVX512VBMI = new System.Windows.Forms.TextBox();
+            this.labelAVX512VNNI = new System.Windows.Forms.Label();
+            this.textBoxAVX512VNNI = new System.Windows.Forms.TextBox();
+            this.labelAVX512VPOPCNTDQ = new System.Windows.Forms.Label();
+            this.textBoxAVX512VPOPCNTDQ = new System.Windows.Forms.TextBox();
+            this.labelAVX512VBMI2 = new System.Windows.Forms.Label();
+            this.textBoxAVX512VBMI2 = new System.Windows.Forms.TextBox();
+            this.labelAVX512BITALG = new System.Windows.Forms.Label();
+            this.textBoxBITALG = new System.Windows.Forms.TextBox();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -280,12 +318,14 @@
             this.groupBoxX86CryptographicInstructions.SuspendLayout();
             this.tabPageX86VirtualizationInstructions.SuspendLayout();
             this.groupBoxX86VirtualizationInstructions.SuspendLayout();
+            this.tabPageX86TransactionalMemoryInstructions.SuspendLayout();
+            this.groupBoxx86TransactionalMemoryInstructions.SuspendLayout();
             this.tabPageX86Instructions.SuspendLayout();
             this.groupBoxOtherX86DiscontinuedInstructions.SuspendLayout();
             this.groupBoxAMDX86DiscontinuedInstructions.SuspendLayout();
             this.groupBoxIntelX86DiscontinuedInstructions.SuspendLayout();
-            this.tabPageX86TransactionalMemoryInstructions.SuspendLayout();
-            this.groupBoxx86TransactionalMemoryInstructions.SuspendLayout();
+            this.tabPageX86BitManipulation.SuspendLayout();
+            this.groupBoxX86BitManipulationInstructions.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlCPUS
@@ -295,6 +335,7 @@
             this.tabControlCPUS.Controls.Add(this.tabPageX86CryptographicInstructions);
             this.tabControlCPUS.Controls.Add(this.tabPageX86VirtualizationInstructions);
             this.tabControlCPUS.Controls.Add(this.tabPageX86TransactionalMemoryInstructions);
+            this.tabControlCPUS.Controls.Add(this.tabPageX86BitManipulation);
             this.tabControlCPUS.Controls.Add(this.tabPageX86Instructions);
             this.tabControlCPUS.Location = new System.Drawing.Point(12, 4);
             this.tabControlCPUS.Name = "tabControlCPUS";
@@ -1537,14 +1578,42 @@
             // 
             // groupBoxX86SIMDInstructions
             // 
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512BITALG);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxBITALG);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512VBMI2);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512VBMI2);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512VPOPCNTDQ);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512VPOPCNTDQ);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512VNNI);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512VNNI);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512VBMI);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512VBMI);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512IFMA);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512IFMA);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512BW);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512BW);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512DQ);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512DQ);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512VL);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512VL);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX5124VNNIW);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX5124FMAPS);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512PF);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX5124VNNIW);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX5124FMAPS);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512PF);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512ER);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512ER);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512CD);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512CD);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX102);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX102);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX101);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX101);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAMX);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAMX);
-            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512);
-            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512F);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512F);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX2);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX2);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.labelFMA3);
@@ -1576,7 +1645,7 @@
             // labelAVX102
             // 
             this.labelAVX102.AutoSize = true;
-            this.labelAVX102.Location = new System.Drawing.Point(6, 386);
+            this.labelAVX102.Location = new System.Drawing.Point(597, 726);
             this.labelAVX102.Name = "labelAVX102";
             this.labelAVX102.Size = new System.Drawing.Size(255, 13);
             this.labelAVX102.TabIndex = 29;
@@ -1584,7 +1653,7 @@
             // 
             // textBoxAVX102
             // 
-            this.textBoxAVX102.Location = new System.Drawing.Point(327, 383);
+            this.textBoxAVX102.Location = new System.Drawing.Point(858, 723);
             this.textBoxAVX102.Name = "textBoxAVX102";
             this.textBoxAVX102.Size = new System.Drawing.Size(100, 20);
             this.textBoxAVX102.TabIndex = 28;
@@ -1592,7 +1661,7 @@
             // labelAVX101
             // 
             this.labelAVX101.AutoSize = true;
-            this.labelAVX101.Location = new System.Drawing.Point(6, 360);
+            this.labelAVX101.Location = new System.Drawing.Point(597, 700);
             this.labelAVX101.Name = "labelAVX101";
             this.labelAVX101.Size = new System.Drawing.Size(255, 13);
             this.labelAVX101.TabIndex = 27;
@@ -1600,7 +1669,7 @@
             // 
             // textBoxAVX101
             // 
-            this.textBoxAVX101.Location = new System.Drawing.Point(327, 357);
+            this.textBoxAVX101.Location = new System.Drawing.Point(858, 697);
             this.textBoxAVX101.Name = "textBoxAVX101";
             this.textBoxAVX101.Size = new System.Drawing.Size(100, 20);
             this.textBoxAVX101.TabIndex = 26;
@@ -1608,7 +1677,7 @@
             // labelAMX
             // 
             this.labelAMX.AutoSize = true;
-            this.labelAMX.Location = new System.Drawing.Point(6, 334);
+            this.labelAMX.Location = new System.Drawing.Point(643, 22);
             this.labelAMX.Name = "labelAMX";
             this.labelAMX.Size = new System.Drawing.Size(209, 13);
             this.labelAMX.TabIndex = 25;
@@ -1616,26 +1685,26 @@
             // 
             // textBoxAMX
             // 
-            this.textBoxAMX.Location = new System.Drawing.Point(327, 331);
+            this.textBoxAMX.Location = new System.Drawing.Point(858, 19);
             this.textBoxAMX.Name = "textBoxAMX";
             this.textBoxAMX.Size = new System.Drawing.Size(100, 20);
             this.textBoxAMX.TabIndex = 24;
             // 
-            // labelAVX512
+            // labelAVX512F
             // 
-            this.labelAVX512.AutoSize = true;
-            this.labelAVX512.Location = new System.Drawing.Point(6, 308);
-            this.labelAVX512.Name = "labelAVX512";
-            this.labelAVX512.Size = new System.Drawing.Size(266, 13);
-            this.labelAVX512.TabIndex = 23;
-            this.labelAVX512.Text = "AVX-512 (Advanced Vector Extensions 512-bit) (2016):";
+            this.labelAVX512F.AutoSize = true;
+            this.labelAVX512F.Location = new System.Drawing.Point(6, 308);
+            this.labelAVX512F.Name = "labelAVX512F";
+            this.labelAVX512F.Size = new System.Drawing.Size(258, 13);
+            this.labelAVX512F.TabIndex = 23;
+            this.labelAVX512F.Text = "AVX-512 F (Advanced Vector Extension Foundation):";
             // 
-            // textBoxAVX512
+            // textBoxAVX512F
             // 
-            this.textBoxAVX512.Location = new System.Drawing.Point(327, 305);
-            this.textBoxAVX512.Name = "textBoxAVX512";
-            this.textBoxAVX512.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAVX512.TabIndex = 22;
+            this.textBoxAVX512F.Location = new System.Drawing.Point(531, 305);
+            this.textBoxAVX512F.Name = "textBoxAVX512F";
+            this.textBoxAVX512F.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512F.TabIndex = 22;
             // 
             // labelAVX2
             // 
@@ -1648,7 +1717,7 @@
             // 
             // textBoxAVX2
             // 
-            this.textBoxAVX2.Location = new System.Drawing.Point(327, 279);
+            this.textBoxAVX2.Location = new System.Drawing.Point(531, 279);
             this.textBoxAVX2.Name = "textBoxAVX2";
             this.textBoxAVX2.Size = new System.Drawing.Size(100, 20);
             this.textBoxAVX2.TabIndex = 20;
@@ -1664,7 +1733,7 @@
             // 
             // textBoxFMA3
             // 
-            this.textBoxFMA3.Location = new System.Drawing.Point(327, 253);
+            this.textBoxFMA3.Location = new System.Drawing.Point(531, 253);
             this.textBoxFMA3.Name = "textBoxFMA3";
             this.textBoxFMA3.Size = new System.Drawing.Size(100, 20);
             this.textBoxFMA3.TabIndex = 18;
@@ -1680,7 +1749,7 @@
             // 
             // textBoxAVX
             // 
-            this.textBoxAVX.Location = new System.Drawing.Point(327, 227);
+            this.textBoxAVX.Location = new System.Drawing.Point(531, 227);
             this.textBoxAVX.Name = "textBoxAVX";
             this.textBoxAVX.Size = new System.Drawing.Size(100, 20);
             this.textBoxAVX.TabIndex = 16;
@@ -1696,14 +1765,14 @@
             // 
             // textBoxSSE42
             // 
-            this.textBoxSSE42.Location = new System.Drawing.Point(327, 201);
+            this.textBoxSSE42.Location = new System.Drawing.Point(531, 201);
             this.textBoxSSE42.Name = "textBoxSSE42";
             this.textBoxSSE42.Size = new System.Drawing.Size(100, 20);
             this.textBoxSSE42.TabIndex = 14;
             // 
             // textBoxSSE41
             // 
-            this.textBoxSSE41.Location = new System.Drawing.Point(327, 175);
+            this.textBoxSSE41.Location = new System.Drawing.Point(531, 175);
             this.textBoxSSE41.Name = "textBoxSSE41";
             this.textBoxSSE41.Size = new System.Drawing.Size(100, 20);
             this.textBoxSSE41.TabIndex = 13;
@@ -1728,7 +1797,7 @@
             // 
             // textBoxSSE4a
             // 
-            this.textBoxSSE4a.Location = new System.Drawing.Point(327, 149);
+            this.textBoxSSE4a.Location = new System.Drawing.Point(531, 149);
             this.textBoxSSE4a.Name = "textBoxSSE4a";
             this.textBoxSSE4a.Size = new System.Drawing.Size(100, 20);
             this.textBoxSSE4a.TabIndex = 10;
@@ -1744,7 +1813,7 @@
             // 
             // textBoxSSSE3
             // 
-            this.textBoxSSSE3.Location = new System.Drawing.Point(327, 123);
+            this.textBoxSSSE3.Location = new System.Drawing.Point(531, 123);
             this.textBoxSSSE3.Name = "textBoxSSSE3";
             this.textBoxSSSE3.Size = new System.Drawing.Size(100, 20);
             this.textBoxSSSE3.TabIndex = 8;
@@ -1760,7 +1829,7 @@
             // 
             // textBoxSSE3
             // 
-            this.textBoxSSE3.Location = new System.Drawing.Point(327, 97);
+            this.textBoxSSE3.Location = new System.Drawing.Point(531, 97);
             this.textBoxSSE3.Name = "textBoxSSE3";
             this.textBoxSSE3.Size = new System.Drawing.Size(100, 20);
             this.textBoxSSE3.TabIndex = 6;
@@ -1794,21 +1863,21 @@
             // 
             // textBoxSSE2
             // 
-            this.textBoxSSE2.Location = new System.Drawing.Point(327, 71);
+            this.textBoxSSE2.Location = new System.Drawing.Point(531, 71);
             this.textBoxSSE2.Name = "textBoxSSE2";
             this.textBoxSSE2.Size = new System.Drawing.Size(100, 20);
             this.textBoxSSE2.TabIndex = 2;
             // 
             // textBoxSSE
             // 
-            this.textBoxSSE.Location = new System.Drawing.Point(327, 45);
+            this.textBoxSSE.Location = new System.Drawing.Point(531, 45);
             this.textBoxSSE.Name = "textBoxSSE";
             this.textBoxSSE.Size = new System.Drawing.Size(100, 20);
             this.textBoxSSE.TabIndex = 1;
             // 
             // textBoxMMX
             // 
-            this.textBoxMMX.Location = new System.Drawing.Point(327, 19);
+            this.textBoxMMX.Location = new System.Drawing.Point(531, 19);
             this.textBoxMMX.Name = "textBoxMMX";
             this.textBoxMMX.Size = new System.Drawing.Size(100, 20);
             this.textBoxMMX.TabIndex = 0;
@@ -1854,6 +1923,102 @@
             this.groupBoxX86CryptographicInstructions.Size = new System.Drawing.Size(970, 754);
             this.groupBoxX86CryptographicInstructions.TabIndex = 0;
             this.groupBoxX86CryptographicInstructions.TabStop = false;
+            // 
+            // labelTDX
+            // 
+            this.labelTDX.AutoSize = true;
+            this.labelTDX.Location = new System.Drawing.Point(6, 308);
+            this.labelTDX.Name = "labelTDX";
+            this.labelTDX.Size = new System.Drawing.Size(158, 13);
+            this.labelTDX.TabIndex = 38;
+            this.labelTDX.Text = "TDX (Trust Domain Extensions):";
+            // 
+            // textBoxTDX
+            // 
+            this.textBoxTDX.Location = new System.Drawing.Point(412, 305);
+            this.textBoxTDX.Name = "textBoxTDX";
+            this.textBoxTDX.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTDX.TabIndex = 37;
+            // 
+            // labelSGX
+            // 
+            this.labelSGX.AutoSize = true;
+            this.labelSGX.Location = new System.Drawing.Point(6, 282);
+            this.labelSGX.Name = "labelSGX";
+            this.labelSGX.Size = new System.Drawing.Size(169, 13);
+            this.labelSGX.TabIndex = 36;
+            this.labelSGX.Text = "SGX (Software Guard Extensions):";
+            // 
+            // textBoxSGX
+            // 
+            this.textBoxSGX.Location = new System.Drawing.Point(412, 279);
+            this.textBoxSGX.Name = "textBoxSGX";
+            this.textBoxSGX.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSGX.TabIndex = 35;
+            // 
+            // labelMPX
+            // 
+            this.labelMPX.AutoSize = true;
+            this.labelMPX.Location = new System.Drawing.Point(6, 256);
+            this.labelMPX.Name = "labelMPX";
+            this.labelMPX.Size = new System.Drawing.Size(184, 13);
+            this.labelMPX.TabIndex = 34;
+            this.labelMPX.Text = "MPX (Memory Protection Extensions):";
+            // 
+            // textBoxMPX
+            // 
+            this.textBoxMPX.Location = new System.Drawing.Point(412, 253);
+            this.textBoxMPX.Name = "textBoxMPX";
+            this.textBoxMPX.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMPX.TabIndex = 33;
+            // 
+            // labelSM4
+            // 
+            this.labelSM4.AutoSize = true;
+            this.labelSM4.Location = new System.Drawing.Point(6, 178);
+            this.labelSM4.Name = "labelSM4";
+            this.labelSM4.Size = new System.Drawing.Size(148, 13);
+            this.labelSM4.TabIndex = 28;
+            this.labelSM4.Text = "Hygon CIS instructions (SM4):";
+            // 
+            // textBoxSM4
+            // 
+            this.textBoxSM4.Location = new System.Drawing.Point(412, 175);
+            this.textBoxSM4.Name = "textBoxSM4";
+            this.textBoxSM4.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSM4.TabIndex = 27;
+            // 
+            // labelSM3
+            // 
+            this.labelSM3.AutoSize = true;
+            this.labelSM3.Location = new System.Drawing.Point(6, 152);
+            this.labelSM3.Name = "labelSM3";
+            this.labelSM3.Size = new System.Drawing.Size(148, 13);
+            this.labelSM3.TabIndex = 26;
+            this.labelSM3.Text = "Hygon CIS instructions (SM3):";
+            // 
+            // textBoxSM3
+            // 
+            this.textBoxSM3.Location = new System.Drawing.Point(412, 149);
+            this.textBoxSM3.Name = "textBoxSM3";
+            this.textBoxSM3.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSM3.TabIndex = 25;
+            // 
+            // labelRDSEED
+            // 
+            this.labelRDSEED.AutoSize = true;
+            this.labelRDSEED.Location = new System.Drawing.Point(6, 74);
+            this.labelRDSEED.Name = "labelRDSEED";
+            this.labelRDSEED.Size = new System.Drawing.Size(316, 13);
+            this.labelRDSEED.TabIndex = 24;
+            this.labelRDSEED.Text = "RDSEED (Read Seed Instruction,  Intel Secure Key Technology):";
+            // 
+            // textBoxRDSEED
+            // 
+            this.textBoxRDSEED.Location = new System.Drawing.Point(412, 71);
+            this.textBoxRDSEED.Name = "textBoxRDSEED";
+            this.textBoxRDSEED.Size = new System.Drawing.Size(100, 20);
+            this.textBoxRDSEED.TabIndex = 23;
             // 
             // labelPadLock
             // 
@@ -1968,7 +2133,7 @@
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.labelVIAVT);
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBoxVIAVT);
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.labelIntelVTX);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBox1);
+            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBoxIntelVTX);
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.labelAMDV);
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBoxAMDV);
             this.groupBoxX86VirtualizationInstructions.Location = new System.Drawing.Point(3, 3);
@@ -2018,12 +2183,12 @@
             this.labelIntelVTX.TabIndex = 26;
             this.labelIntelVTX.Text = "Intel VT-x (VMX / Virtual Machine Extensions):";
             // 
-            // textBox1
+            // textBoxIntelVTX
             // 
-            this.textBox1.Location = new System.Drawing.Point(411, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 25;
+            this.textBoxIntelVTX.Location = new System.Drawing.Point(411, 45);
+            this.textBoxIntelVTX.Name = "textBoxIntelVTX";
+            this.textBoxIntelVTX.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIntelVTX.TabIndex = 25;
             // 
             // labelAMDV
             // 
@@ -2040,6 +2205,60 @@
             this.textBoxAMDV.Name = "textBoxAMDV";
             this.textBoxAMDV.Size = new System.Drawing.Size(100, 20);
             this.textBoxAMDV.TabIndex = 23;
+            // 
+            // tabPageX86TransactionalMemoryInstructions
+            // 
+            this.tabPageX86TransactionalMemoryInstructions.Controls.Add(this.groupBoxx86TransactionalMemoryInstructions);
+            this.tabPageX86TransactionalMemoryInstructions.Location = new System.Drawing.Point(4, 22);
+            this.tabPageX86TransactionalMemoryInstructions.Name = "tabPageX86TransactionalMemoryInstructions";
+            this.tabPageX86TransactionalMemoryInstructions.Size = new System.Drawing.Size(976, 760);
+            this.tabPageX86TransactionalMemoryInstructions.TabIndex = 5;
+            this.tabPageX86TransactionalMemoryInstructions.Text = "Transactional Memory Instructions";
+            this.tabPageX86TransactionalMemoryInstructions.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxx86TransactionalMemoryInstructions
+            // 
+            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.labelASF);
+            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.textBoxASF);
+            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.labelTSX);
+            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.textBoxTSX);
+            this.groupBoxx86TransactionalMemoryInstructions.Location = new System.Drawing.Point(3, 3);
+            this.groupBoxx86TransactionalMemoryInstructions.Name = "groupBoxx86TransactionalMemoryInstructions";
+            this.groupBoxx86TransactionalMemoryInstructions.Size = new System.Drawing.Size(970, 754);
+            this.groupBoxx86TransactionalMemoryInstructions.TabIndex = 0;
+            this.groupBoxx86TransactionalMemoryInstructions.TabStop = false;
+            // 
+            // labelASF
+            // 
+            this.labelASF.AutoSize = true;
+            this.labelASF.Location = new System.Drawing.Point(4, 48);
+            this.labelASF.Name = "labelASF";
+            this.labelASF.Size = new System.Drawing.Size(201, 13);
+            this.labelASF.TabIndex = 40;
+            this.labelASF.Text = "ASF (Advanced Synchronization Facility):";
+            // 
+            // textBoxASF
+            // 
+            this.textBoxASF.Location = new System.Drawing.Point(406, 45);
+            this.textBoxASF.Name = "textBoxASF";
+            this.textBoxASF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxASF.TabIndex = 39;
+            // 
+            // labelTSX
+            // 
+            this.labelTSX.AutoSize = true;
+            this.labelTSX.Location = new System.Drawing.Point(4, 22);
+            this.labelTSX.Name = "labelTSX";
+            this.labelTSX.Size = new System.Drawing.Size(396, 13);
+            this.labelTSX.TabIndex = 38;
+            this.labelTSX.Text = "TSX / TSX-NI (Transactional Synchronization Extensions / TSX New Instructions):";
+            // 
+            // textBoxTSX
+            // 
+            this.textBoxTSX.Location = new System.Drawing.Point(406, 19);
+            this.textBoxTSX.Name = "textBoxTSX";
+            this.textBoxTSX.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTSX.TabIndex = 37;
             // 
             // tabPageX86Instructions
             // 
@@ -2193,8 +2412,6 @@
             // 
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelLWP);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxLWP);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelTBM);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxTBM);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelFMA4);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxFMA4);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelXOP);
@@ -2229,22 +2446,6 @@
             this.textBoxLWP.Name = "textBoxLWP";
             this.textBoxLWP.Size = new System.Drawing.Size(100, 20);
             this.textBoxLWP.TabIndex = 43;
-            // 
-            // labelTBM
-            // 
-            this.labelTBM.AutoSize = true;
-            this.labelTBM.Location = new System.Drawing.Point(7, 178);
-            this.labelTBM.Name = "labelTBM";
-            this.labelTBM.Size = new System.Drawing.Size(211, 13);
-            this.labelTBM.TabIndex = 42;
-            this.labelTBM.Text = "TBM (Trailing Bit Manipulation Instructions):";
-            // 
-            // textBoxTBM
-            // 
-            this.textBoxTBM.Location = new System.Drawing.Point(409, 175);
-            this.textBoxTBM.Name = "textBoxTBM";
-            this.textBoxTBM.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTBM.TabIndex = 41;
             // 
             // labelFMA4
             // 
@@ -2459,155 +2660,341 @@
             this.textBoxI386.Size = new System.Drawing.Size(100, 20);
             this.textBoxI386.TabIndex = 27;
             // 
-            // labelRDSEED
+            // tabPageX86BitManipulation
             // 
-            this.labelRDSEED.AutoSize = true;
-            this.labelRDSEED.Location = new System.Drawing.Point(6, 74);
-            this.labelRDSEED.Name = "labelRDSEED";
-            this.labelRDSEED.Size = new System.Drawing.Size(316, 13);
-            this.labelRDSEED.TabIndex = 24;
-            this.labelRDSEED.Text = "RDSEED (Read Seed Instruction,  Intel Secure Key Technology):";
+            this.tabPageX86BitManipulation.Controls.Add(this.groupBoxX86BitManipulationInstructions);
+            this.tabPageX86BitManipulation.Location = new System.Drawing.Point(4, 22);
+            this.tabPageX86BitManipulation.Name = "tabPageX86BitManipulation";
+            this.tabPageX86BitManipulation.Size = new System.Drawing.Size(976, 760);
+            this.tabPageX86BitManipulation.TabIndex = 6;
+            this.tabPageX86BitManipulation.Text = "Bit Manipulation Instrutions";
+            this.tabPageX86BitManipulation.UseVisualStyleBackColor = true;
             // 
-            // textBoxRDSEED
+            // groupBoxX86BitManipulationInstructions
             // 
-            this.textBoxRDSEED.Location = new System.Drawing.Point(412, 71);
-            this.textBoxRDSEED.Name = "textBoxRDSEED";
-            this.textBoxRDSEED.Size = new System.Drawing.Size(100, 20);
-            this.textBoxRDSEED.TabIndex = 23;
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelTBM);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxTBM);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelABM);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxABM);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelBMI2);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxBMI2);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelBMI1);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxBMI1);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelADX);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBox3);
+            this.groupBoxX86BitManipulationInstructions.Location = new System.Drawing.Point(3, 3);
+            this.groupBoxX86BitManipulationInstructions.Name = "groupBoxX86BitManipulationInstructions";
+            this.groupBoxX86BitManipulationInstructions.Size = new System.Drawing.Size(970, 754);
+            this.groupBoxX86BitManipulationInstructions.TabIndex = 0;
+            this.groupBoxX86BitManipulationInstructions.TabStop = false;
             // 
-            // labelSM3
+            // labelBMI1
             // 
-            this.labelSM3.AutoSize = true;
-            this.labelSM3.Location = new System.Drawing.Point(6, 152);
-            this.labelSM3.Name = "labelSM3";
-            this.labelSM3.Size = new System.Drawing.Size(148, 13);
-            this.labelSM3.TabIndex = 26;
-            this.labelSM3.Text = "Hygon CIS instructions (SM3):";
+            this.labelBMI1.AutoSize = true;
+            this.labelBMI1.Location = new System.Drawing.Point(6, 48);
+            this.labelBMI1.Name = "labelBMI1";
+            this.labelBMI1.Size = new System.Drawing.Size(199, 13);
+            this.labelBMI1.TabIndex = 44;
+            this.labelBMI1.Text = "BMI1 (Bit Manipulation Instruction Set 1):";
             // 
-            // textBoxSM3
+            // textBoxBMI1
             // 
-            this.textBoxSM3.Location = new System.Drawing.Point(412, 149);
-            this.textBoxSM3.Name = "textBoxSM3";
-            this.textBoxSM3.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSM3.TabIndex = 25;
+            this.textBoxBMI1.Location = new System.Drawing.Point(408, 45);
+            this.textBoxBMI1.Name = "textBoxBMI1";
+            this.textBoxBMI1.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBMI1.TabIndex = 43;
             // 
-            // labelSM4
+            // labelADX
             // 
-            this.labelSM4.AutoSize = true;
-            this.labelSM4.Location = new System.Drawing.Point(6, 178);
-            this.labelSM4.Name = "labelSM4";
-            this.labelSM4.Size = new System.Drawing.Size(148, 13);
-            this.labelSM4.TabIndex = 28;
-            this.labelSM4.Text = "Hygon CIS instructions (SM4):";
+            this.labelADX.AutoSize = true;
+            this.labelADX.Location = new System.Drawing.Point(6, 22);
+            this.labelADX.Name = "labelADX";
+            this.labelADX.Size = new System.Drawing.Size(287, 13);
+            this.labelADX.TabIndex = 42;
+            this.labelADX.Text = "Intel ADX (Multi-Precision Add-Carry Instruction Extensions):";
             // 
-            // textBoxSM4
+            // textBox3
             // 
-            this.textBoxSM4.Location = new System.Drawing.Point(412, 175);
-            this.textBoxSM4.Name = "textBoxSM4";
-            this.textBoxSM4.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSM4.TabIndex = 27;
+            this.textBox3.Location = new System.Drawing.Point(408, 19);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 41;
             // 
-            // labelMPX
+            // labelBMI2
             // 
-            this.labelMPX.AutoSize = true;
-            this.labelMPX.Location = new System.Drawing.Point(6, 256);
-            this.labelMPX.Name = "labelMPX";
-            this.labelMPX.Size = new System.Drawing.Size(184, 13);
-            this.labelMPX.TabIndex = 34;
-            this.labelMPX.Text = "MPX (Memory Protection Extensions):";
+            this.labelBMI2.AutoSize = true;
+            this.labelBMI2.Location = new System.Drawing.Point(6, 74);
+            this.labelBMI2.Name = "labelBMI2";
+            this.labelBMI2.Size = new System.Drawing.Size(199, 13);
+            this.labelBMI2.TabIndex = 46;
+            this.labelBMI2.Text = "BMI2 (Bit Manipulation Instruction Set 2):";
             // 
-            // textBoxMPX
+            // textBoxBMI2
             // 
-            this.textBoxMPX.Location = new System.Drawing.Point(412, 253);
-            this.textBoxMPX.Name = "textBoxMPX";
-            this.textBoxMPX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMPX.TabIndex = 33;
+            this.textBoxBMI2.Location = new System.Drawing.Point(408, 71);
+            this.textBoxBMI2.Name = "textBoxBMI2";
+            this.textBoxBMI2.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBMI2.TabIndex = 45;
             // 
-            // labelSGX
+            // labelABM
             // 
-            this.labelSGX.AutoSize = true;
-            this.labelSGX.Location = new System.Drawing.Point(6, 282);
-            this.labelSGX.Name = "labelSGX";
-            this.labelSGX.Size = new System.Drawing.Size(169, 13);
-            this.labelSGX.TabIndex = 36;
-            this.labelSGX.Text = "SGX (Software Guard Extensions):";
+            this.labelABM.AutoSize = true;
+            this.labelABM.Location = new System.Drawing.Point(6, 126);
+            this.labelABM.Name = "labelABM";
+            this.labelABM.Size = new System.Drawing.Size(169, 13);
+            this.labelABM.TabIndex = 48;
+            this.labelABM.Text = "ABM (Advanced Bit Manipulation):";
             // 
-            // textBoxSGX
+            // textBoxABM
             // 
-            this.textBoxSGX.Location = new System.Drawing.Point(412, 279);
-            this.textBoxSGX.Name = "textBoxSGX";
-            this.textBoxSGX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSGX.TabIndex = 35;
+            this.textBoxABM.Location = new System.Drawing.Point(408, 123);
+            this.textBoxABM.Name = "textBoxABM";
+            this.textBoxABM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxABM.TabIndex = 47;
             // 
-            // labelTDX
+            // labelTBM
             // 
-            this.labelTDX.AutoSize = true;
-            this.labelTDX.Location = new System.Drawing.Point(6, 308);
-            this.labelTDX.Name = "labelTDX";
-            this.labelTDX.Size = new System.Drawing.Size(158, 13);
-            this.labelTDX.TabIndex = 38;
-            this.labelTDX.Text = "TDX (Trust Domain Extensions):";
+            this.labelTBM.AutoSize = true;
+            this.labelTBM.Location = new System.Drawing.Point(6, 100);
+            this.labelTBM.Name = "labelTBM";
+            this.labelTBM.Size = new System.Drawing.Size(211, 13);
+            this.labelTBM.TabIndex = 50;
+            this.labelTBM.Text = "TBM (Trailing Bit Manipulation Instructions):";
             // 
-            // textBoxTDX
+            // textBoxTBM
             // 
-            this.textBoxTDX.Location = new System.Drawing.Point(412, 305);
-            this.textBoxTDX.Name = "textBoxTDX";
-            this.textBoxTDX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTDX.TabIndex = 37;
+            this.textBoxTBM.Location = new System.Drawing.Point(408, 97);
+            this.textBoxTBM.Name = "textBoxTBM";
+            this.textBoxTBM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTBM.TabIndex = 49;
             // 
-            // tabPageX86TransactionalMemoryInstructions
+            // labelAVX512CD
             // 
-            this.tabPageX86TransactionalMemoryInstructions.Controls.Add(this.groupBoxx86TransactionalMemoryInstructions);
-            this.tabPageX86TransactionalMemoryInstructions.Location = new System.Drawing.Point(4, 22);
-            this.tabPageX86TransactionalMemoryInstructions.Name = "tabPageX86TransactionalMemoryInstructions";
-            this.tabPageX86TransactionalMemoryInstructions.Size = new System.Drawing.Size(976, 760);
-            this.tabPageX86TransactionalMemoryInstructions.TabIndex = 5;
-            this.tabPageX86TransactionalMemoryInstructions.Text = "Transactional Memory Instructions";
-            this.tabPageX86TransactionalMemoryInstructions.UseVisualStyleBackColor = true;
+            this.labelAVX512CD.AutoSize = true;
+            this.labelAVX512CD.Location = new System.Drawing.Point(6, 334);
+            this.labelAVX512CD.Name = "labelAVX512CD";
+            this.labelAVX512CD.Size = new System.Drawing.Size(355, 13);
+            this.labelAVX512CD.TabIndex = 31;
+            this.labelAVX512CD.Text = "AVX-512 CD (Advanced Vector Extension Conflict Detection Instructions):";
             // 
-            // groupBoxx86TransactionalMemoryInstructions
+            // textBoxAVX512CD
             // 
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.labelASF);
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.textBoxASF);
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.labelTSX);
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.textBoxTSX);
-            this.groupBoxx86TransactionalMemoryInstructions.Location = new System.Drawing.Point(3, 3);
-            this.groupBoxx86TransactionalMemoryInstructions.Name = "groupBoxx86TransactionalMemoryInstructions";
-            this.groupBoxx86TransactionalMemoryInstructions.Size = new System.Drawing.Size(970, 754);
-            this.groupBoxx86TransactionalMemoryInstructions.TabIndex = 0;
-            this.groupBoxx86TransactionalMemoryInstructions.TabStop = false;
+            this.textBoxAVX512CD.Location = new System.Drawing.Point(531, 331);
+            this.textBoxAVX512CD.Name = "textBoxAVX512CD";
+            this.textBoxAVX512CD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512CD.TabIndex = 30;
             // 
-            // labelTSX
+            // labelAVX512ER
             // 
-            this.labelTSX.AutoSize = true;
-            this.labelTSX.Location = new System.Drawing.Point(4, 22);
-            this.labelTSX.Name = "labelTSX";
-            this.labelTSX.Size = new System.Drawing.Size(396, 13);
-            this.labelTSX.TabIndex = 38;
-            this.labelTSX.Text = "TSX / TSX-NI (Transactional Synchronization Extensions / TSX New Instructions):";
+            this.labelAVX512ER.AutoSize = true;
+            this.labelAVX512ER.Location = new System.Drawing.Point(6, 360);
+            this.labelAVX512ER.Name = "labelAVX512ER";
+            this.labelAVX512ER.Size = new System.Drawing.Size(401, 13);
+            this.labelAVX512ER.TabIndex = 33;
+            this.labelAVX512ER.Text = "AVX-512 ER (Advanced Vector Extension Exponential and Reciprocal Instructions):";
             // 
-            // textBoxTSX
+            // textBoxAVX512ER
             // 
-            this.textBoxTSX.Location = new System.Drawing.Point(406, 19);
-            this.textBoxTSX.Name = "textBoxTSX";
-            this.textBoxTSX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTSX.TabIndex = 37;
+            this.textBoxAVX512ER.Location = new System.Drawing.Point(531, 357);
+            this.textBoxAVX512ER.Name = "textBoxAVX512ER";
+            this.textBoxAVX512ER.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512ER.TabIndex = 32;
             // 
-            // labelASF
+            // labelAVX5124FMAPS
             // 
-            this.labelASF.AutoSize = true;
-            this.labelASF.Location = new System.Drawing.Point(4, 48);
-            this.labelASF.Name = "labelASF";
-            this.labelASF.Size = new System.Drawing.Size(201, 13);
-            this.labelASF.TabIndex = 40;
-            this.labelASF.Text = "ASF (Advanced Synchronization Facility):";
+            this.labelAVX5124FMAPS.AutoSize = true;
+            this.labelAVX5124FMAPS.Location = new System.Drawing.Point(6, 438);
+            this.labelAVX5124FMAPS.Name = "labelAVX5124FMAPS";
+            this.labelAVX5124FMAPS.Size = new System.Drawing.Size(492, 13);
+            this.labelAVX5124FMAPS.TabIndex = 35;
+            this.labelAVX5124FMAPS.Text = "AVX-512 4FMAPS (Advanced Vector Extension Fused Multiply Accumulation Packed Sing" +
+    "le precision):";
             // 
-            // textBoxASF
+            // textBoxAVX512PF
             // 
-            this.textBoxASF.Location = new System.Drawing.Point(406, 45);
-            this.textBoxASF.Name = "textBoxASF";
-            this.textBoxASF.Size = new System.Drawing.Size(100, 20);
-            this.textBoxASF.TabIndex = 39;
+            this.textBoxAVX512PF.Location = new System.Drawing.Point(531, 383);
+            this.textBoxAVX512PF.Name = "textBoxAVX512PF";
+            this.textBoxAVX512PF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512PF.TabIndex = 34;
+            // 
+            // labelAVX512PF
+            // 
+            this.labelAVX512PF.AutoSize = true;
+            this.labelAVX512PF.Location = new System.Drawing.Point(6, 386);
+            this.labelAVX512PF.Name = "labelAVX512PF";
+            this.labelAVX512PF.Size = new System.Drawing.Size(309, 13);
+            this.labelAVX512PF.TabIndex = 37;
+            this.labelAVX512PF.Text = "AVX-512 PF (Advanced Vector Extension Prefetch Instructions):";
+            // 
+            // textBoxAVX5124VNNIW
+            // 
+            this.textBoxAVX5124VNNIW.Location = new System.Drawing.Point(531, 409);
+            this.textBoxAVX5124VNNIW.Name = "textBoxAVX5124VNNIW";
+            this.textBoxAVX5124VNNIW.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX5124VNNIW.TabIndex = 36;
+            // 
+            // labelAVX5124VNNIW
+            // 
+            this.labelAVX5124VNNIW.AutoSize = true;
+            this.labelAVX5124VNNIW.Location = new System.Drawing.Point(6, 412);
+            this.labelAVX5124VNNIW.Name = "labelAVX5124VNNIW";
+            this.labelAVX5124VNNIW.Size = new System.Drawing.Size(521, 13);
+            this.labelAVX5124VNNIW.TabIndex = 39;
+            this.labelAVX5124VNNIW.Text = "AVX-512 4VNNIW (Advanced Vector Extension Vector Neural Network Instructions Word" +
+    " variable precision):";
+            // 
+            // textBoxAVX5124FMAPS
+            // 
+            this.textBoxAVX5124FMAPS.Location = new System.Drawing.Point(531, 435);
+            this.textBoxAVX5124FMAPS.Name = "textBoxAVX5124FMAPS";
+            this.textBoxAVX5124FMAPS.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX5124FMAPS.TabIndex = 38;
+            // 
+            // labelAVX512VL
+            // 
+            this.labelAVX512VL.AutoSize = true;
+            this.labelAVX512VL.Location = new System.Drawing.Point(6, 464);
+            this.labelAVX512VL.Name = "labelAVX512VL";
+            this.labelAVX512VL.Size = new System.Drawing.Size(333, 13);
+            this.labelAVX512VL.TabIndex = 41;
+            this.labelAVX512VL.Text = "AVX-512 VL (Advanced Vector Extension Vector Length Extensions):";
+            // 
+            // textBoxAVX512VL
+            // 
+            this.textBoxAVX512VL.Location = new System.Drawing.Point(531, 461);
+            this.textBoxAVX512VL.Name = "textBoxAVX512VL";
+            this.textBoxAVX512VL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512VL.TabIndex = 40;
+            // 
+            // labelAVX512DQ
+            // 
+            this.labelAVX512DQ.AutoSize = true;
+            this.labelAVX512DQ.Location = new System.Drawing.Point(6, 490);
+            this.labelAVX512DQ.Name = "labelAVX512DQ";
+            this.labelAVX512DQ.Size = new System.Drawing.Size(402, 13);
+            this.labelAVX512DQ.TabIndex = 43;
+            this.labelAVX512DQ.Text = "AVX-512 DQ (Advanced Vector Extension Doubleword and Quadword Instructions):";
+            // 
+            // textBoxAVX512DQ
+            // 
+            this.textBoxAVX512DQ.Location = new System.Drawing.Point(531, 487);
+            this.textBoxAVX512DQ.Name = "textBoxAVX512DQ";
+            this.textBoxAVX512DQ.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512DQ.TabIndex = 42;
+            // 
+            // labelAVX512BW
+            // 
+            this.labelAVX512BW.AutoSize = true;
+            this.labelAVX512BW.Location = new System.Drawing.Point(6, 516);
+            this.labelAVX512BW.Name = "labelAVX512BW";
+            this.labelAVX512BW.Size = new System.Drawing.Size(345, 13);
+            this.labelAVX512BW.TabIndex = 45;
+            this.labelAVX512BW.Text = "AVX-512 BW (Advanced Vector Extension Byte and Word Instructions):";
+            // 
+            // textBoxAVX512BW
+            // 
+            this.textBoxAVX512BW.Location = new System.Drawing.Point(531, 513);
+            this.textBoxAVX512BW.Name = "textBoxAVX512BW";
+            this.textBoxAVX512BW.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512BW.TabIndex = 44;
+            // 
+            // labelAVX512IFMA
+            // 
+            this.labelAVX512IFMA.AutoSize = true;
+            this.labelAVX512IFMA.Location = new System.Drawing.Point(6, 542);
+            this.labelAVX512IFMA.Name = "labelAVX512IFMA";
+            this.labelAVX512IFMA.Size = new System.Drawing.Size(349, 13);
+            this.labelAVX512IFMA.TabIndex = 47;
+            this.labelAVX512IFMA.Text = "AVX-512 IFMA (Advanced Vector Extension Integer Fused Multiply Add):";
+            // 
+            // textBoxAVX512IFMA
+            // 
+            this.textBoxAVX512IFMA.Location = new System.Drawing.Point(531, 539);
+            this.textBoxAVX512IFMA.Name = "textBoxAVX512IFMA";
+            this.textBoxAVX512IFMA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512IFMA.TabIndex = 46;
+            // 
+            // labelAVX512VBMI
+            // 
+            this.labelAVX512VBMI.AutoSize = true;
+            this.labelAVX512VBMI.Location = new System.Drawing.Point(6, 568);
+            this.labelAVX512VBMI.Name = "labelAVX512VBMI";
+            this.labelAVX512VBMI.Size = new System.Drawing.Size(391, 13);
+            this.labelAVX512VBMI.TabIndex = 49;
+            this.labelAVX512VBMI.Text = "AVX-512 VBMI (Advanced Vector Extension Vector Bit Manipulation Instructions):";
+            // 
+            // textBoxAVX512VBMI
+            // 
+            this.textBoxAVX512VBMI.Location = new System.Drawing.Point(531, 565);
+            this.textBoxAVX512VBMI.Name = "textBoxAVX512VBMI";
+            this.textBoxAVX512VBMI.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512VBMI.TabIndex = 48;
+            // 
+            // labelAVX512VNNI
+            // 
+            this.labelAVX512VNNI.AutoSize = true;
+            this.labelAVX512VNNI.Location = new System.Drawing.Point(6, 594);
+            this.labelAVX512VNNI.Name = "labelAVX512VNNI";
+            this.labelAVX512VNNI.Size = new System.Drawing.Size(390, 13);
+            this.labelAVX512VNNI.TabIndex = 51;
+            this.labelAVX512VNNI.Text = "AVX-512 VNNI (Advanced Vector Extension Vector Neural Network Instructions):";
+            // 
+            // textBoxAVX512VNNI
+            // 
+            this.textBoxAVX512VNNI.Location = new System.Drawing.Point(531, 591);
+            this.textBoxAVX512VNNI.Name = "textBoxAVX512VNNI";
+            this.textBoxAVX512VNNI.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512VNNI.TabIndex = 50;
+            // 
+            // labelAVX512VPOPCNTDQ
+            // 
+            this.labelAVX512VPOPCNTDQ.AutoSize = true;
+            this.labelAVX512VPOPCNTDQ.Location = new System.Drawing.Point(6, 620);
+            this.labelAVX512VPOPCNTDQ.Name = "labelAVX512VPOPCNTDQ";
+            this.labelAVX512VPOPCNTDQ.Size = new System.Drawing.Size(430, 13);
+            this.labelAVX512VPOPCNTDQ.TabIndex = 53;
+            this.labelAVX512VPOPCNTDQ.Text = "AVX-512 VPOPCNTDQ (Advanced Vector Extension Vector population count instruction)" +
+    ":";
+            // 
+            // textBoxAVX512VPOPCNTDQ
+            // 
+            this.textBoxAVX512VPOPCNTDQ.Location = new System.Drawing.Point(531, 617);
+            this.textBoxAVX512VPOPCNTDQ.Name = "textBoxAVX512VPOPCNTDQ";
+            this.textBoxAVX512VPOPCNTDQ.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512VPOPCNTDQ.TabIndex = 52;
+            // 
+            // labelAVX512VBMI2
+            // 
+            this.labelAVX512VBMI2.AutoSize = true;
+            this.labelAVX512VBMI2.Location = new System.Drawing.Point(6, 646);
+            this.labelAVX512VBMI2.Name = "labelAVX512VBMI2";
+            this.labelAVX512VBMI2.Size = new System.Drawing.Size(406, 13);
+            this.labelAVX512VBMI2.TabIndex = 55;
+            this.labelAVX512VBMI2.Text = "AVX-512 VBMI2 (Advanced Vector Extension Vector Bit Manipulation Instructions 2):" +
+    "";
+            // 
+            // textBoxAVX512VBMI2
+            // 
+            this.textBoxAVX512VBMI2.Location = new System.Drawing.Point(531, 643);
+            this.textBoxAVX512VBMI2.Name = "textBoxAVX512VBMI2";
+            this.textBoxAVX512VBMI2.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512VBMI2.TabIndex = 54;
+            // 
+            // labelAVX512BITALG
+            // 
+            this.labelAVX512BITALG.AutoSize = true;
+            this.labelAVX512BITALG.Location = new System.Drawing.Point(6, 672);
+            this.labelAVX512BITALG.Name = "labelAVX512BITALG";
+            this.labelAVX512BITALG.Size = new System.Drawing.Size(300, 13);
+            this.labelAVX512BITALG.TabIndex = 57;
+            this.labelAVX512BITALG.Text = "AVX-512 BITALG (Advanced Vector Extension Bit Algorithms):";
+            // 
+            // textBoxBITALG
+            // 
+            this.textBoxBITALG.Location = new System.Drawing.Point(531, 669);
+            this.textBoxBITALG.Name = "textBoxBITALG";
+            this.textBoxBITALG.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBITALG.TabIndex = 56;
             // 
             // FormCPUS
             // 
@@ -2633,6 +3020,9 @@
             this.tabPageX86VirtualizationInstructions.ResumeLayout(false);
             this.groupBoxX86VirtualizationInstructions.ResumeLayout(false);
             this.groupBoxX86VirtualizationInstructions.PerformLayout();
+            this.tabPageX86TransactionalMemoryInstructions.ResumeLayout(false);
+            this.groupBoxx86TransactionalMemoryInstructions.ResumeLayout(false);
+            this.groupBoxx86TransactionalMemoryInstructions.PerformLayout();
             this.tabPageX86Instructions.ResumeLayout(false);
             this.groupBoxOtherX86DiscontinuedInstructions.ResumeLayout(false);
             this.groupBoxOtherX86DiscontinuedInstructions.PerformLayout();
@@ -2640,9 +3030,9 @@
             this.groupBoxAMDX86DiscontinuedInstructions.PerformLayout();
             this.groupBoxIntelX86DiscontinuedInstructions.ResumeLayout(false);
             this.groupBoxIntelX86DiscontinuedInstructions.PerformLayout();
-            this.tabPageX86TransactionalMemoryInstructions.ResumeLayout(false);
-            this.groupBoxx86TransactionalMemoryInstructions.ResumeLayout(false);
-            this.groupBoxx86TransactionalMemoryInstructions.PerformLayout();
+            this.tabPageX86BitManipulation.ResumeLayout(false);
+            this.groupBoxX86BitManipulationInstructions.ResumeLayout(false);
+            this.groupBoxX86BitManipulationInstructions.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2798,8 +3188,8 @@
         private System.Windows.Forms.Label labelSSE41;
         private System.Windows.Forms.Label labelAVX;
         private System.Windows.Forms.TextBox textBoxAVX;
-        private System.Windows.Forms.Label labelAVX512;
-        private System.Windows.Forms.TextBox textBoxAVX512;
+        private System.Windows.Forms.Label labelAVX512F;
+        private System.Windows.Forms.TextBox textBoxAVX512F;
         private System.Windows.Forms.Label labelAVX2;
         private System.Windows.Forms.TextBox textBoxAVX2;
         private System.Windows.Forms.Label labelFMA3;
@@ -2823,7 +3213,7 @@
         private System.Windows.Forms.Label labelPadLock;
         private System.Windows.Forms.TextBox textBoxPadLock;
         private System.Windows.Forms.Label labelIntelVTX;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxIntelVTX;
         private System.Windows.Forms.Label labelAMDV;
         private System.Windows.Forms.TextBox textBoxAMDV;
         private System.Windows.Forms.Label labelItanium;
@@ -2851,8 +3241,6 @@
         private System.Windows.Forms.TextBox textBox3DNowPlus;
         private System.Windows.Forms.Label labelLWP;
         private System.Windows.Forms.TextBox textBoxLWP;
-        private System.Windows.Forms.Label labelTBM;
-        private System.Windows.Forms.TextBox textBoxTBM;
         private System.Windows.Forms.Label labelFMA4;
         private System.Windows.Forms.TextBox textBoxFMA4;
         private System.Windows.Forms.GroupBox groupBoxOtherX86DiscontinuedInstructions;
@@ -2892,6 +3280,46 @@
         private System.Windows.Forms.TextBox textBoxTSX;
         private System.Windows.Forms.Label labelASF;
         private System.Windows.Forms.TextBox textBoxASF;
+        private System.Windows.Forms.TabPage tabPageX86BitManipulation;
+        private System.Windows.Forms.GroupBox groupBoxX86BitManipulationInstructions;
+        private System.Windows.Forms.Label labelBMI1;
+        private System.Windows.Forms.TextBox textBoxBMI1;
+        private System.Windows.Forms.Label labelADX;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label labelABM;
+        private System.Windows.Forms.TextBox textBoxABM;
+        private System.Windows.Forms.Label labelBMI2;
+        private System.Windows.Forms.TextBox textBoxBMI2;
+        private System.Windows.Forms.Label labelTBM;
+        private System.Windows.Forms.TextBox textBoxTBM;
+        private System.Windows.Forms.Label labelAVX512ER;
+        private System.Windows.Forms.TextBox textBoxAVX512ER;
+        private System.Windows.Forms.Label labelAVX512CD;
+        private System.Windows.Forms.TextBox textBoxAVX512CD;
+        private System.Windows.Forms.Label labelAVX5124VNNIW;
+        private System.Windows.Forms.TextBox textBoxAVX5124FMAPS;
+        private System.Windows.Forms.Label labelAVX512PF;
+        private System.Windows.Forms.TextBox textBoxAVX5124VNNIW;
+        private System.Windows.Forms.Label labelAVX5124FMAPS;
+        private System.Windows.Forms.TextBox textBoxAVX512PF;
+        private System.Windows.Forms.Label labelAVX512VL;
+        private System.Windows.Forms.TextBox textBoxAVX512VL;
+        private System.Windows.Forms.Label labelAVX512BW;
+        private System.Windows.Forms.TextBox textBoxAVX512BW;
+        private System.Windows.Forms.Label labelAVX512DQ;
+        private System.Windows.Forms.TextBox textBoxAVX512DQ;
+        private System.Windows.Forms.Label labelAVX512VPOPCNTDQ;
+        private System.Windows.Forms.TextBox textBoxAVX512VPOPCNTDQ;
+        private System.Windows.Forms.Label labelAVX512VNNI;
+        private System.Windows.Forms.TextBox textBoxAVX512VNNI;
+        private System.Windows.Forms.Label labelAVX512VBMI;
+        private System.Windows.Forms.TextBox textBoxAVX512VBMI;
+        private System.Windows.Forms.Label labelAVX512IFMA;
+        private System.Windows.Forms.TextBox textBoxAVX512IFMA;
+        private System.Windows.Forms.Label labelAVX512VBMI2;
+        private System.Windows.Forms.TextBox textBoxAVX512VBMI2;
+        private System.Windows.Forms.Label labelAVX512BITALG;
+        private System.Windows.Forms.TextBox textBoxBITALG;
     }
 }
 
