@@ -853,6 +853,9 @@ namespace CPU_S
 
             bool isAvx2Supported = cpuHelper.IsAvx2SupportedX();
             Console.WriteLine($"AVX2 Supported: {isAvx2Supported}");
+
+            string cpuIdEAX0EBXEDXECXCpuVendor = cpuHelper.GetEAX0EBXEDXECXCpuVendorX();
+            Console.WriteLine($"CPU Vendor: {cpuIdEAX0EBXEDXECXCpuVendor}");
         }
 
         private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)

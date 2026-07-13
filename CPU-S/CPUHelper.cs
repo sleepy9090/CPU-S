@@ -1540,5 +1540,52 @@ namespace CPU_S
                 return false;
             }
         }
+
+        /*
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.Cdecl)]
+        private static extern string GetEAX0EBXEDXECXCpuVendor(); // Native();
+
+        public string GetEAX0EBXEDXECXCpuVendorX()
+        {
+            try
+            {
+                return GetEAX0EBXEDXECXCpuVendor();
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+        */
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX0EBXEDXECXCpuVendor();
+
+        public string GetEAX0EBXEDXECXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX0EBXEDXECXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
     }
 }
