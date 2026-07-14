@@ -856,6 +856,9 @@ namespace CPU_S
 
             string cpuIdEAX0EBXEDXECXCpuVendor = cpuHelper.GetEAX0EBXEDXECXCpuVendorX();
             Console.WriteLine($"CPU Vendor: {cpuIdEAX0EBXEDXECXCpuVendor}");
+
+            string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();
+            Console.WriteLine($"EAX0EAX: {cpuIdEAX0EAX}");
         }
 
         private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)
