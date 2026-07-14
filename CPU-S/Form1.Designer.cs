@@ -261,8 +261,6 @@
             this.textBoxKNKM = new System.Windows.Forms.TextBox();
             this.labelKNC = new System.Windows.Forms.Label();
             this.textBoxKNC = new System.Windows.Forms.TextBox();
-            this.labelVP2INTERSECT = new System.Windows.Forms.Label();
-            this.textBoxVP2INTERSECT = new System.Windows.Forms.TextBox();
             this.labelHLE = new System.Windows.Forms.Label();
             this.textBoxHLE = new System.Windows.Forms.TextBox();
             this.labelItanium = new System.Windows.Forms.Label();
@@ -274,7 +272,7 @@
             this.labelBMI1 = new System.Windows.Forms.Label();
             this.textBoxBMI1 = new System.Windows.Forms.TextBox();
             this.labelADX = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxADX = new System.Windows.Forms.TextBox();
             this.labelBMI2 = new System.Windows.Forms.Label();
             this.textBoxBMI2 = new System.Windows.Forms.TextBox();
             this.labelABM = new System.Windows.Forms.Label();
@@ -309,6 +307,10 @@
             this.textBoxAVX512VBMI2 = new System.Windows.Forms.TextBox();
             this.labelAVX512BITALG = new System.Windows.Forms.Label();
             this.textBoxBITALG = new System.Windows.Forms.TextBox();
+            this.labelAVX512VP2INTERSECT = new System.Windows.Forms.Label();
+            this.textBoxAVX512VP2INTERSECT = new System.Windows.Forms.TextBox();
+            this.labelAVX512BMM = new System.Windows.Forms.Label();
+            this.textBoxAVX512BMM = new System.Windows.Forms.TextBox();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -1578,6 +1580,10 @@
             // 
             // groupBoxX86SIMDInstructions
             // 
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512BMM);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512BMM);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512VP2INTERSECT);
+            this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxAVX512VP2INTERSECT);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512BITALG);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.textBoxBITALG);
             this.groupBoxX86SIMDInstructions.Controls.Add(this.labelAVX512VBMI2);
@@ -1645,7 +1651,7 @@
             // labelAVX102
             // 
             this.labelAVX102.AutoSize = true;
-            this.labelAVX102.Location = new System.Drawing.Point(597, 726);
+            this.labelAVX102.Location = new System.Drawing.Point(656, 669);
             this.labelAVX102.Name = "labelAVX102";
             this.labelAVX102.Size = new System.Drawing.Size(255, 13);
             this.labelAVX102.TabIndex = 29;
@@ -1653,7 +1659,7 @@
             // 
             // textBoxAVX102
             // 
-            this.textBoxAVX102.Location = new System.Drawing.Point(858, 723);
+            this.textBoxAVX102.Location = new System.Drawing.Point(858, 691);
             this.textBoxAVX102.Name = "textBoxAVX102";
             this.textBoxAVX102.Size = new System.Drawing.Size(100, 20);
             this.textBoxAVX102.TabIndex = 28;
@@ -1661,7 +1667,7 @@
             // labelAVX101
             // 
             this.labelAVX101.AutoSize = true;
-            this.labelAVX101.Location = new System.Drawing.Point(597, 700);
+            this.labelAVX101.Location = new System.Drawing.Point(680, 565);
             this.labelAVX101.Name = "labelAVX101";
             this.labelAVX101.Size = new System.Drawing.Size(255, 13);
             this.labelAVX101.TabIndex = 27;
@@ -1669,7 +1675,7 @@
             // 
             // textBoxAVX101
             // 
-            this.textBoxAVX101.Location = new System.Drawing.Point(858, 697);
+            this.textBoxAVX101.Location = new System.Drawing.Point(858, 587);
             this.textBoxAVX101.Name = "textBoxAVX101";
             this.textBoxAVX101.Size = new System.Drawing.Size(100, 20);
             this.textBoxAVX101.TabIndex = 26;
@@ -2089,9 +2095,9 @@
             this.labelCLMUL.AutoSize = true;
             this.labelCLMUL.Location = new System.Drawing.Point(6, 48);
             this.labelCLMUL.Name = "labelCLMUL";
-            this.labelCLMUL.Size = new System.Drawing.Size(218, 13);
+            this.labelCLMUL.Size = new System.Drawing.Size(296, 13);
             this.labelCLMUL.TabIndex = 8;
-            this.labelCLMUL.Text = "CLMUL (Carry-less Multiplication Extensions):";
+            this.labelCLMUL.Text = "CLMUL / PCLMULQDQ (Carry-less Multiplication Extensions):";
             // 
             // labelAES
             // 
@@ -2549,8 +2555,6 @@
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxKNKM);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelKNC);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxKNC);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelVP2INTERSECT);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxVP2INTERSECT);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelHLE);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxHLE);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelItanium);
@@ -2595,22 +2599,6 @@
             this.textBoxKNC.Name = "textBoxKNC";
             this.textBoxKNC.Size = new System.Drawing.Size(100, 20);
             this.textBoxKNC.TabIndex = 39;
-            // 
-            // labelVP2INTERSECT
-            // 
-            this.labelVP2INTERSECT.AutoSize = true;
-            this.labelVP2INTERSECT.Location = new System.Drawing.Point(7, 100);
-            this.labelVP2INTERSECT.Name = "labelVP2INTERSECT";
-            this.labelVP2INTERSECT.Size = new System.Drawing.Size(247, 13);
-            this.labelVP2INTERSECT.TabIndex = 38;
-            this.labelVP2INTERSECT.Text = "VP2INTERSECT instructions (an AVX-512 subset):";
-            // 
-            // textBoxVP2INTERSECT
-            // 
-            this.textBoxVP2INTERSECT.Location = new System.Drawing.Point(409, 97);
-            this.textBoxVP2INTERSECT.Name = "textBoxVP2INTERSECT";
-            this.textBoxVP2INTERSECT.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVP2INTERSECT.TabIndex = 37;
             // 
             // labelHLE
             // 
@@ -2681,7 +2669,7 @@
             this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelBMI1);
             this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxBMI1);
             this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelADX);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBox3);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxADX);
             this.groupBoxX86BitManipulationInstructions.Location = new System.Drawing.Point(3, 3);
             this.groupBoxX86BitManipulationInstructions.Name = "groupBoxX86BitManipulationInstructions";
             this.groupBoxX86BitManipulationInstructions.Size = new System.Drawing.Size(970, 754);
@@ -2713,12 +2701,12 @@
             this.labelADX.TabIndex = 42;
             this.labelADX.Text = "Intel ADX (Multi-Precision Add-Carry Instruction Extensions):";
             // 
-            // textBox3
+            // textBoxADX
             // 
-            this.textBox3.Location = new System.Drawing.Point(408, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 41;
+            this.textBoxADX.Location = new System.Drawing.Point(408, 19);
+            this.textBoxADX.Name = "textBoxADX";
+            this.textBoxADX.Size = new System.Drawing.Size(100, 20);
+            this.textBoxADX.TabIndex = 41;
             // 
             // labelBMI2
             // 
@@ -2996,6 +2984,39 @@
             this.textBoxBITALG.Size = new System.Drawing.Size(100, 20);
             this.textBoxBITALG.TabIndex = 56;
             // 
+            // labelAVX512VP2INTERSECT
+            // 
+            this.labelAVX512VP2INTERSECT.AutoSize = true;
+            this.labelAVX512VP2INTERSECT.Location = new System.Drawing.Point(6, 698);
+            this.labelAVX512VP2INTERSECT.Name = "labelAVX512VP2INTERSECT";
+            this.labelAVX512VP2INTERSECT.Size = new System.Drawing.Size(520, 13);
+            this.labelAVX512VP2INTERSECT.TabIndex = 59;
+            this.labelAVX512VP2INTERSECT.Text = "AVX-512 VP2INTERSECT (Advanced Vector Extension Vector Pair Intersection to a Pai" +
+    "r of Mask Registers):";
+            // 
+            // textBoxAVX512VP2INTERSECT
+            // 
+            this.textBoxAVX512VP2INTERSECT.Location = new System.Drawing.Point(531, 695);
+            this.textBoxAVX512VP2INTERSECT.Name = "textBoxAVX512VP2INTERSECT";
+            this.textBoxAVX512VP2INTERSECT.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512VP2INTERSECT.TabIndex = 58;
+            // 
+            // labelAVX512BMM
+            // 
+            this.labelAVX512BMM.AutoSize = true;
+            this.labelAVX512BMM.Location = new System.Drawing.Point(6, 724);
+            this.labelAVX512BMM.Name = "labelAVX512BMM";
+            this.labelAVX512BMM.Size = new System.Drawing.Size(356, 13);
+            this.labelAVX512BMM.TabIndex = 61;
+            this.labelAVX512BMM.Text = "AVX-512 BMM (Advanced Vector Extension Bit Manipulation Instructions):";
+            // 
+            // textBoxAVX512BMM
+            // 
+            this.textBoxAVX512BMM.Location = new System.Drawing.Point(531, 721);
+            this.textBoxAVX512BMM.Name = "textBoxAVX512BMM";
+            this.textBoxAVX512BMM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAVX512BMM.TabIndex = 60;
+            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3224,8 +3245,6 @@
         private System.Windows.Forms.TextBox textBoxHLE;
         private System.Windows.Forms.Label labelKNC;
         private System.Windows.Forms.TextBox textBoxKNC;
-        private System.Windows.Forms.Label labelVP2INTERSECT;
-        private System.Windows.Forms.TextBox textBoxVP2INTERSECT;
         private System.Windows.Forms.Label labelKLKM;
         private System.Windows.Forms.TextBox textBoxKNKM;
         private System.Windows.Forms.GroupBox groupBoxAMDX86DiscontinuedInstructions;
@@ -3285,7 +3304,7 @@
         private System.Windows.Forms.Label labelBMI1;
         private System.Windows.Forms.TextBox textBoxBMI1;
         private System.Windows.Forms.Label labelADX;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxADX;
         private System.Windows.Forms.Label labelABM;
         private System.Windows.Forms.TextBox textBoxABM;
         private System.Windows.Forms.Label labelBMI2;
@@ -3320,6 +3339,10 @@
         private System.Windows.Forms.TextBox textBoxAVX512VBMI2;
         private System.Windows.Forms.Label labelAVX512BITALG;
         private System.Windows.Forms.TextBox textBoxBITALG;
+        private System.Windows.Forms.Label labelAVX512BMM;
+        private System.Windows.Forms.TextBox textBoxAVX512BMM;
+        private System.Windows.Forms.Label labelAVX512VP2INTERSECT;
+        private System.Windows.Forms.TextBox textBoxAVX512VP2INTERSECT;
     }
 }
 

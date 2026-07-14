@@ -851,14 +851,89 @@ namespace CPU_S
                 textBoxCPUVoltageCaps.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
+            // @TODO: Add to user interface to display this information
+            /*
             bool isAvx2Supported = cpuHelper.IsAvx2SupportedX();
             Console.WriteLine($"AVX2 Supported: {isAvx2Supported}");
+            */
+
+            string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();
+            Console.WriteLine($"EAX0EAX: {cpuIdEAX0EAX}");
+
+            string cpuIdEAX0EBX = cpuHelper.GetEAX0EBXX();
+            Console.WriteLine($"EAX0EBX: {cpuIdEAX0EBX}");
+
+            string cpuIdEAX0ECX = cpuHelper.GetEAX0ECXX();
+            Console.WriteLine($"EAX0ECX: {cpuIdEAX0ECX}");
+
+            string cpuIdEAX0EDX = cpuHelper.GetEAX0EDXX();
+            Console.WriteLine($"EAX0EDX: {cpuIdEAX0EDX}");
+
+            string cpuIdEAX0EAXHightestFunctionParameter = cpuHelper.GetEAX0EAXHightestFunctionParameterX();
+            Console.WriteLine($"EAX0EAX Highest Function Parameter: {cpuIdEAX0EAXHightestFunctionParameter}");
 
             string cpuIdEAX0EBXEDXECXCpuVendor = cpuHelper.GetEAX0EBXEDXECXCpuVendorX();
             Console.WriteLine($"CPU Vendor: {cpuIdEAX0EBXEDXECXCpuVendor}");
 
-            string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();
-            Console.WriteLine($"EAX0EAX: {cpuIdEAX0EAX}");
+            string cpuIdEAX1EAX = cpuHelper.GetEAX1EAXX();
+            Console.WriteLine($"EAX1EAX: {cpuIdEAX1EAX}");
+
+            string cpuIdEAX1EBX = cpuHelper.GetEAX1EBXX();
+            Console.WriteLine($"EAX1EBX: {cpuIdEAX1EBX}");
+
+            string cpuIdEAX1ECX = cpuHelper.GetEAX1ECXX();
+            Console.WriteLine($"EAX1ECX: {cpuIdEAX1ECX}");
+
+            string cpuIdEAX1EDX = cpuHelper.GetEAX1EDXX();
+            Console.WriteLine($"EAX1EDX: {cpuIdEAX1EDX}");
+
+            string cpuIdEAX1EAX0_3_SteppingId = cpuHelper.GetEAX1EAX0_3_SteppingIdX();
+            Console.WriteLine($"EAX1EAX0_3_SteppingId: {cpuIdEAX1EAX0_3_SteppingId}");
+
+            string cpuIdEAX1EAX4_7_ModelId = cpuHelper.GetEAX1EAX4_7_ModelIdX();
+            Console.WriteLine($"EAX1EAX4_7_ModelId: {cpuIdEAX1EAX4_7_ModelId}");
+
+            string cpuIdEAX1EAX8_11_FamilyId = cpuHelper.GetEAX1EAX8_11_FamilyIdX();
+            Console.WriteLine($"EAX1EAX8_11_FamilyId: {cpuIdEAX1EAX8_11_FamilyId}");
+
+            string cpuIdEAX1EAX12_13_ProcessorType = cpuHelper.GetEAX1EAX12_13_ProcessorTypeX();
+            Console.WriteLine($"EAX1EAX12_13_ProcessorType: {cpuIdEAX1EAX12_13_ProcessorType}");
+
+            string cpuIdEAX1EAX14_15_Reserved = cpuHelper.GetEAX1EAX14_15_ReservedX();
+            Console.WriteLine($"EAX1EAX14_15_Reserved: {cpuIdEAX1EAX14_15_Reserved}");
+
+            string cpuIdEAX1EAX16_19_ExtendedModelId = cpuHelper.GetEAX1EAX16_19_ExtendedModelIdX();
+            Console.WriteLine($"EAX1EAX16_19_ExtendedModelId: {cpuIdEAX1EAX16_19_ExtendedModelId}");
+
+            string cpuIdEAX1EAX16_19_ExtendedModelIdLeftShifted = cpuHelper.GetEAX1EAX16_19_ExtendedModelIdLeftShiftedX();
+            Console.WriteLine($"EAX1EAX16_19_ExtendedModelIdLeftShifted: {cpuIdEAX1EAX16_19_ExtendedModelIdLeftShifted}");
+            
+            string cpuIdEAX1EAX20_27_ExtendedFamilyId = cpuHelper.GetEAX1EAX20_27_ExtendedFamilyIdX();
+            Console.WriteLine($"EAX1EAX20_27_ExtendedFamilyId: {cpuIdEAX1EAX20_27_ExtendedFamilyId}");
+
+            string cpuIdEAX1EAX28_31_Reserved = cpuHelper.GetEAX1EAX28_31_ReservedX();
+            Console.WriteLine($"EAX1EAX28_31_Reserved: {cpuIdEAX1EAX28_31_Reserved}");
+
+            string cpuIdEAX1EBX0_7_BrandIndex = cpuHelper.GetEAX1EBX0_7_BrandIndexX();
+            Console.WriteLine($"EAX1EBX0_7_BrandIndex: {cpuIdEAX1EBX0_7_BrandIndex}");
+
+            string cpuIdEAX1EBX8_15_CLFLUSHLineSize = cpuHelper.GetEAX1EBX8_15_CLFLUSHLineSizeX();
+            Console.WriteLine($"EAX1EBX8_15_CLFLUSHLineSize: {cpuIdEAX1EBX8_15_CLFLUSHLineSize}");
+
+            string cpuIdEAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckg = cpuHelper.GetEAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckgX();
+            Console.WriteLine($"EAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckg: {cpuIdEAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckg}");
+            
+            string cpuIdEAX1EBX24_31_LocalAPICID = cpuHelper.GetEAX1EBX24_31_LocalAPICIDX();
+            Console.WriteLine($"EAX1EBX24_31_LocalAPICID: {cpuIdEAX1EBX24_31_LocalAPICID}");
+
+            bool cpuIdEAX1ECX0_SSE3IsSupported = cpuHelper.GetEAX1ECX0_SSE3IsSupportedX();
+            Console.WriteLine($"EAX1ECX0_SSE3IsSupported: {cpuIdEAX1ECX0_SSE3IsSupported}");
+
+            bool cpuIdEAX1ECX1_PCLMULQDQIsSupported = cpuHelper.GetEAX1ECX1_PCLMULQDQIsSupportedX();
+            Console.WriteLine($"EAX1ECX1_PCLMULQDQIsSupported: {cpuIdEAX1ECX1_PCLMULQDQIsSupported}");
+
+            bool cpuIdEAX1ECX2_DTES64IsSupported = cpuHelper.GetEAX1ECX2_DTES64IsSupportedX();
+            Console.WriteLine($"EAX1ECX2_DTES64IsSupported: {cpuIdEAX1ECX2_DTES64IsSupported}");
         }
 
         private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)
