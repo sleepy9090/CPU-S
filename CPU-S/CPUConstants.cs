@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+    File           CPUConstants.cs
+    Brief          Class for storing Constants.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           05/29/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

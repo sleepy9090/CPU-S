@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+    File           CPU.cs
+    Brief          CPU Frontend static class for Windows
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           05/29/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
