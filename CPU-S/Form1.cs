@@ -989,6 +989,45 @@ namespace CPU_S
 
             bool cpuIdEAX1ECX18_DCAIsSupported = cpuHelper.GetEAX1ECX18_DCAIsSupportedX();
             Console.WriteLine($"EAX1ECX18_DCAIsSupported: {cpuIdEAX1ECX18_DCAIsSupported}");
+
+            bool cpuIdEAX1ECX19_SSE41IsSupported = cpuHelper.GetEAX1ECX19_SSE41IsSupportedX();
+            Console.WriteLine($"EAX1ECX19_SSE41IsSupported: {cpuIdEAX1ECX19_SSE41IsSupported}");
+
+            bool cpuIdEAX1ECX20_SSE42IsSupported = cpuHelper.GetEAX1ECX20_SSE42IsSupportedX();
+            Console.WriteLine($"EAX1ECX20_SSE42IsSupported: {cpuIdEAX1ECX20_SSE42IsSupported}");
+
+            bool cpuIdEAX1ECX21_X2APICIsSupported = cpuHelper.GetEAX1ECX21_X2APICIsSupportedX();
+            Console.WriteLine($"EAX1ECX21_X2APICIsSupported: {cpuIdEAX1ECX21_X2APICIsSupported}");
+
+            bool cpuIdEAX1ECX22_MOVBEIsSupported = cpuHelper.GetEAX1ECX22_MOVBEIsSupportedX();
+            Console.WriteLine($"EAX1ECX22_MOVBEIsSupported: {cpuIdEAX1ECX22_MOVBEIsSupported}");
+
+            bool cpuIdEAX1ECX23_POPCNTIsSupported = cpuHelper.GetEAX1ECX23_POPCNTIsSupportedX();
+            Console.WriteLine($"EAX1ECX23_POPCNTIsSupported: {cpuIdEAX1ECX23_POPCNTIsSupported}");
+
+            bool cpuIdEAX1ECX24_TSCDeadlineIsSupported = cpuHelper.GetEAX1ECX24_TSCDeadlineIsSupportedX();
+            Console.WriteLine($"EAX1ECX24_TSCDeadlineIsSupported: {cpuIdEAX1ECX24_TSCDeadlineIsSupported}");
+
+            bool cpuIdEAX1ECX25_AESNIIsSupported = cpuHelper.GetEAX1ECX25_AESNIIsSupportedX();
+            Console.WriteLine($"EAX1ECX25_AESNIIsSupported: {cpuIdEAX1ECX25_AESNIIsSupported}");
+
+            bool cpuIdEAX1ECX26_XSAVEIsSupported = cpuHelper.GetEAX1ECX26_XSAVEIsSupportedX();
+            Console.WriteLine($"EAX1ECX26_XSAVEIsSupported: {cpuIdEAX1ECX26_XSAVEIsSupported}");
+
+            bool cpuIdEAX1ECX27_OSXSAVEIsSupported = cpuHelper.GetEAX1ECX27_OSXSAVEIsSupportedX();
+            Console.WriteLine($"EAX1ECX27_OSXSAVEIsSupported: {cpuIdEAX1ECX27_OSXSAVEIsSupported}");
+
+            bool cpuIdEAX1ECX28_AVXIsSupported = cpuHelper.GetEAX1ECX28_AVXIsSupportedX();
+            Console.WriteLine($"EAX1ECX28_AVXIsSupported: {cpuIdEAX1ECX28_AVXIsSupported}");
+
+            bool cpuIdEAX1ECX29_F16CIsSupported = cpuHelper.GetEAX1ECX29_F16CIsSupportedX();
+            Console.WriteLine($"EAX1ECX29_F16CIsSupported: {cpuIdEAX1ECX29_F16CIsSupported}");
+
+            bool cpuIdEAX1ECX30_RDRANDIsSupported = cpuHelper.GetEAX1ECX30_RDRANDIsSupportedX();
+            Console.WriteLine($"EAX1ECX30_RDRANDIsSupported: {cpuIdEAX1ECX30_RDRANDIsSupported}");
+
+            bool cpuIdEAX1ECX31_HypervisorIsSupported = cpuHelper.GetEAX1ECX31_HypervisorIsSupportedX();
+            Console.WriteLine($"EAX1ECX31_HypervisorIsSupported: {cpuIdEAX1ECX31_HypervisorIsSupported}");
         }
 
         private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)
