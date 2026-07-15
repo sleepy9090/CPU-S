@@ -7,6 +7,7 @@
 */
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -1550,6 +1551,8 @@ namespace CPU_S
         }
         */
 
+        #region EAX = 0x0: Highest Function Parameter and Manufacturer ID
+
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX0EAX();
 
@@ -1693,6 +1696,10 @@ namespace CPU_S
                 return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
+
+        #endregion
+
+        #region EAX=0x1: Processor Info and Feature Bits
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX1EAX();
@@ -2101,6 +2108,8 @@ namespace CPU_S
                 return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
+
+        #region ECX feature bits
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         private static extern int GetEAX1ECX0_SSE3IsSupported();
@@ -2773,5 +2782,705 @@ namespace CPU_S
                 return false;
             }
         }
+
+        #endregion
+
+        #region EDX feature bits
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX0_FPUIsSupported();
+
+        public bool GetEAX1EDX0_FPUIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX0_FPUIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. FPU support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for FPU support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX1_VMEIsSupported();
+
+        public bool GetEAX1EDX1_VMEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX1_VMEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. VME support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for VME support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX2_DEIsSupported();
+
+        public bool GetEAX1EDX2_DEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX2_DEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. DE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for DE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX3_PSEIsSupported();
+
+        public bool GetEAX1EDX3_PSEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX3_PSEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. PSE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for PSE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX4_TSCIsSupported();
+
+        public bool GetEAX1EDX4_TSCIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX4_TSCIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. TSC support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for TSC support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX5_MSRIsSupported();
+
+        public bool GetEAX1EDX5_MSRIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX5_MSRIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. MSR support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for MSR support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX6_PAEIsSupported();
+
+        public bool GetEAX1EDX6_PAEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX6_PAEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. PAE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for PAE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX7_MCEIsSupported();
+
+        public bool GetEAX1EDX7_MCEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX7_MCEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. MCE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for MCE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX8_CX8IsSupported();
+
+        public bool GetEAX1EDX8_CX8IsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX8_CX8IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. CX8 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CX8 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX9_APICIsSupported();
+
+        public bool GetEAX1EDX9_APICIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX9_APICIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. APIC support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for APIC support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX10_ReservedIsSupported();
+
+        public bool GetEAX1EDX10_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX10_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX11_SEPIsSupported();
+
+        public bool GetEAX1EDX11_SEPIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX11_SEPIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. SEP support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SEP support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX12_MTRRIsSupported();
+
+        public bool GetEAX1EDX12_MTRRIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX12_MTRRIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. MTRR support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for MTRR support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX13_PGEIsSupported();
+
+        public bool GetEAX1EDX13_PGEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX13_PGEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. PGE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for PGE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX14_MCAIsSupported();
+
+        public bool GetEAX1EDX14_MCAIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX14_MCAIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. MCA support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for MCA support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX15_CMOVIsSupported();
+
+        public bool GetEAX1EDX15_CMOVIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX15_CMOVIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. CMOV support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CMOV support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX16_PATIsSupported();
+
+        public bool GetEAX1EDX16_PATIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX16_PATIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. PAT support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for PAT support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX17_PSE36IsSupported();
+
+        public bool GetEAX1EDX17_PSE36IsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX17_PSE36IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. PSE36 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for PSE36 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX18_PSNIsSupported();
+
+        public bool GetEAX1EDX18_PSNIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX18_PSNIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. PSN support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for PSN support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX19_CLFSHIsSupported();
+
+        public bool GetEAX1EDX19_CLFSHIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX19_CLFSHIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. CLFSH support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CLFSH support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX20_NXIsSupported();
+
+        public bool GetEAX1EDX20_NXIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX20_NXIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. NX support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for NX support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX21_DSIsSupported();
+
+        public bool GetEAX1EDX21_DSIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX21_DSIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. DS support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for DS support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX22_ACPIIsSupported();
+
+        public bool GetEAX1EDX22_ACPIIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX22_ACPIIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. ACPI support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for ACPI support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX23_MMXIsSupported();
+
+        public bool GetEAX1EDX23_MMXIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX23_MMXIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. MMX support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for MMX support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX24_FXSRIsSupported();
+
+        public bool GetEAX1EDX24_FXSRIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX24_FXSRIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. FXSR support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for FXSR support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX25_SSEIsSupported();
+
+        public bool GetEAX1EDX25_SSEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX25_SSEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. SSE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX26_SSE2IsSupported();
+
+        public bool GetEAX1EDX26_SSE2IsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX26_SSE2IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. SSE2 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE2 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX27_SSIsSupported();
+
+        public bool GetEAX1EDX27_SSIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX27_SSIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. SS support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SS support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX28_HTTIsSupported();
+
+        public bool GetEAX1EDX28_HTTIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX28_HTTIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. HTT support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for HTT support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX29_TMIsSupported();
+
+        public bool GetEAX1EDX29_TMIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX29_TMIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. TM support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for TM support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX30_IA64IsSupported();
+
+        public bool GetEAX1EDX30_IA64IsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX30_IA64IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. IA64 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for IA64 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX1EDX31_PBEIsSupported();
+
+        public bool GetEAX1EDX31_PBEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX1EDX31_PBEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: AvxDetect.dll not found. PBE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for PBE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        #endregion
+
+        #endregion
+
+        #region region EAX=0x2: Cache and TLB Descriptor Information
+
+
+
+        #endregion
+
+
+        #region EAX=0x3: Processor Serial Number
+
+
+
+        #endregion
+
+
+        #region EAX=0x4 and EAX=0x8000001D: Cache Hierarchy and Topology
+
+
+        #endregion
+
     }
 }
