@@ -864,6 +864,8 @@ namespace CPU_S
             Console.WriteLine($"AVX2 Supported: {isAvx2Supported}");
             */
 
+            #region EAX = 0x0: Highest Function Parameter and Manufacturer ID
+
             string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();
             Console.WriteLine($"EAX0EAX: {cpuIdEAX0EAX}");
 
@@ -881,6 +883,10 @@ namespace CPU_S
 
             string cpuIdEAX0EBXEDXECXCpuVendor = cpuHelper.GetEAX0EBXEDXECXCpuVendorX();
             Console.WriteLine($"CPU Vendor: {cpuIdEAX0EBXEDXECXCpuVendor}");
+
+            #endregion
+
+            #region EAX=0x1: Processor Info and Feature Bits
 
             string cpuIdEAX1EAX = cpuHelper.GetEAX1EAXX();
             Console.WriteLine($"EAX1EAX: {cpuIdEAX1EAX}");
@@ -1125,6 +1131,10 @@ namespace CPU_S
             bool cpuIdEAX1EDX31_PBEIsSupported = cpuHelper.GetEAX1EDX31_PBEIsSupportedX();
             Console.WriteLine($"EAX1EDX31_PBEIsSupported: {cpuIdEAX1EDX31_PBEIsSupported}");
 
+            #endregion
+
+            #region EAX=0x2: Cache and TLB Descriptor Information
+
             string cpuIdEAX2EAX = cpuHelper.GetEAX2EAXX();
             Console.WriteLine($"EAX2EAX: {cpuIdEAX2EAX}");
 
@@ -1187,6 +1197,31 @@ namespace CPU_S
 
             string cpuIdEAX2_EDX24_31_CacheAndTLBDescriptorInformation3 = cpuHelper.GetEAX2_EDX24_31_CacheAndTLBDescriptorInformation3X();
             Console.WriteLine($"EAX2_EDX24_31_CacheAndTLBDescriptorInformation3: {cpuIdEAX2_EDX24_31_CacheAndTLBDescriptorInformation3}");
+
+            #endregion
+
+            #region EAX=0x3: Processor Serial Number
+
+            string cpuIdEAX3EAX = cpuHelper.GetEAX3EAXX();
+            Console.WriteLine($"EAX3EAX: {cpuIdEAX3EAX}");
+
+            string cpuIdEAX3EBX = cpuHelper.GetEAX3EBXX();
+            Console.WriteLine($"EAX3EBX: {cpuIdEAX3EBX}");
+
+            string cpuIdEAX3ECX = cpuHelper.GetEAX3ECXX();
+            Console.WriteLine($"EAX3ECX: {cpuIdEAX3ECX}");
+
+            string cpuIdEAX3EDX = cpuHelper.GetEAX3EDXX();
+            Console.WriteLine($"EAX3EDX: {cpuIdEAX3EDX}");
+
+            string cpuIdeAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumberString = cpuHelper.GetEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumberX();
+            Console.WriteLine($"Pentium 3 CPU 96-Bit Serial Number: {cpuIdeAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumberString}");
+
+            string cpuIdeAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumberString = cpuHelper.GetEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumberX();
+            Console.WriteLine($"Transmeta Crusoe and Efficeon CPU 128-Bit Serial Number: {cpuIdeAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumberString}");
+
+            #endregion
+
         }
 
         private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)
