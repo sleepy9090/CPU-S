@@ -1268,6 +1268,79 @@ namespace CPU_S
 
             #region EAX=0x5: MONITOR/MWAIT Features
 
+            string cpuIdEAX5EAX = cpuHelper.GetEAX5EAXX();
+            Console.WriteLine($"EAX5EAX: {cpuIdEAX5EAX}");
+
+            string cpuIdEAX5EBX = cpuHelper.GetEAX5EBXX();
+            Console.WriteLine($"EAX5EBX: {cpuIdEAX5EBX}");
+
+            string cpuIdEAX5ECX = cpuHelper.GetEAX5ECXX();
+            Console.WriteLine($"EAX5ECX: {cpuIdEAX5ECX}");
+
+            string cpuIdEAX5EDX = cpuHelper.GetEAX5EDXX();
+            Console.WriteLine($"EAX5EDX: {cpuIdEAX5EDX}");
+
+            string cpuIdEAX5_EAX0_15_SmallestMonitorLineSize = cpuHelper.GetEAX5_EAX0_15_SmallestMonitorLineSizeX();
+            Console.WriteLine($"EAX5EAX0_15_SmallestMonitorLineSize: {cpuIdEAX5_EAX0_15_SmallestMonitorLineSize}");
+
+            string cpuIdEAX5_EAX16_31_Reserved = cpuHelper.GetEAX5_EAX16_31_ReservedX();
+            Console.WriteLine($"EAX5EAX16_31_Reserved: {cpuIdEAX5_EAX16_31_Reserved}");
+
+            string cpuIdEAX5_EBX0_15_LargestMonitorLineSize = cpuHelper.GetEAX5_EBX0_15_LargestMonitorLineSizeX();
+            Console.WriteLine($"EAX5EBX0_15_LargestMonitorLineSize: {cpuIdEAX5_EBX0_15_LargestMonitorLineSize}");
+
+            string cpuIdEAX5_EBX16_31_Reserved = cpuHelper.GetEAX5_EBX16_31_ReservedX();
+            Console.WriteLine($"EAX5EBX16_31_Reserved: {cpuIdEAX5_EBX16_31_Reserved}");
+
+            string cpuIdEAX5_ECX0_EnumOfMonitorMWAITExtensionsInECXAndEDXSupported_EMX = cpuHelper.GetEAX5_ECX0_EnumOfMonitorMWAITExtensionsInECXAndEDXSupported_EMXX();
+            Console.WriteLine($"EAX5ECX0_EnumOfMonitorMWAITExtensionsInECXAndEDXSupported_EMX: {cpuIdEAX5_ECX0_EnumOfMonitorMWAITExtensionsInECXAndEDXSupported_EMX}");
+
+            string cpuIdEAX5_ECX1_SupportsTreatingInterruptsAsBreakEventsForMWAITEvenWhenInterruptsAreDisabled_IBE = cpuHelper.GetEAX5_ECX1_SupportsTreatingInterruptsAsBreakEventsForMWAITEvenWhenInterruptsAreDisabled_IBEX();
+            Console.WriteLine($"EAX5ECX1_SupportsTreatingInterruptsAsBreakEventsForMWAITEvenWhenInterruptsAreDisabled_IBE: {cpuIdEAX5_ECX1_SupportsTreatingInterruptsAsBreakEventsForMWAITEvenWhenInterruptsAreDisabled_IBE}");
+
+            string cpuIdEAX5_ECX2_Reserved = cpuHelper.GetEAX5_ECX2_ReservedX();
+            Console.WriteLine($"EAX5ECX2_Reserved: {cpuIdEAX5_ECX2_Reserved}");
+
+            string cpuIdEAX5_ECX3_AllowMWAITToBeUsedForPowerManagementWithoutSettingUpMemoryMonitoringWithMONITOR_Monitorless_MWAIT = cpuHelper.GetEAX5_ECX3_AllowMWAITToBeUsedForPowerManagementWithoutSettingUpMemoryMonitoringWithMONITOR_Monitorless_MWAITX();
+            Console.WriteLine($"EAX5ECX3_AllowMWAITToBeUsedForPowerManagementWithoutSettingUpMemoryMonitoringWithMONITOR_Monitorless_MWAIT: {cpuIdEAX5_ECX3_AllowMWAITToBeUsedForPowerManagementWithoutSettingUpMemoryMonitoringWithMONITOR_Monitorless_MWAIT}");
+
+            string cpuIdEAX5_ECX4_31_Reserved = cpuHelper.GetEAX5_ECX4_31_ReservedX();
+            Console.WriteLine($"EAX5ECX4_31_Reserved: {cpuIdEAX5_ECX4_31_Reserved}");
+
+            string cpuIdEAX5_EDX0_3_NumberOfC0SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX0_3_NumberOfC0SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX0_3_NumberOfC0SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX0_3_NumberOfC0SubStatesSupportedForMWAIT}");
+
+            string cpuIdEAX5_EDX4_7_NumberOfC1SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX4_7_NumberOfC1SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX4_7_NumberOfC1SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX4_7_NumberOfC1SubStatesSupportedForMWAIT}");
+
+            string cpuIdEAX5_EDX8_11_NumberOfC2SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX8_11_NumberOfC2SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX8_11_NumberOfC2SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX8_11_NumberOfC2SubStatesSupportedForMWAIT}");
+
+            string cpuIdEAX5_EDX12_15_NumberOfC3SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX12_15_NumberOfC3SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX12_15_NumberOfC3SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX12_15_NumberOfC3SubStatesSupportedForMWAIT}");
+
+            string cpuIdEAX5_EDX16_19_NumberOfC4SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX16_19_NumberOfC4SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX16_19_NumberOfC4SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX16_19_NumberOfC4SubStatesSupportedForMWAIT}");
+
+            string cpuIdEAX5_EDX20_23_NumberOfC5SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX20_23_NumberOfC5SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX20_23_NumberOfC5SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX20_23_NumberOfC5SubStatesSupportedForMWAIT}");
+
+            string cpuIdEAX5_EDX24_27_NumberOfC6SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX24_27_NumberOfC6SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX24_27_NumberOfC6SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX24_27_NumberOfC6SubStatesSupportedForMWAIT}");
+
+            string cpuIdEAX5_EDX28_31_NumberOfC7SubStatesSupportedForMWAIT = cpuHelper.GetEAX5_EDX28_31_NumberOfC7SubStatesSupportedForMWAITX();
+            Console.WriteLine($"EAX5EDX28_31_NumberOfC7SubStatesSupportedForMWAIT: {cpuIdEAX5_EDX28_31_NumberOfC7SubStatesSupportedForMWAIT}");
+
+            #endregion
+
+            #region region EAX=0x6: Thermal and Power Management
+
+
+
+            #endregion
+
+            #region region EAX=0x7, ECX=0x0: Extended Features
+
 
 
             #endregion
