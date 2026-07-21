@@ -4119,7 +4119,6 @@ namespace CPU_S
 
         #endregion
 
-
         #region EAX=0x4 and EAX=0x8000001D: Cache Hierarchy and Topology
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
@@ -4926,8 +4925,981 @@ namespace CPU_S
 
         #region region EAX=0x6: Thermal and Power Management
 
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX6EAX();
 
+        public string GetEAX6EAXX()
+        {
+            try
+            {
+                IntPtr eAX6EAXPtr = GetEAX6EAX();
+                string eAX6EAXString = Marshal.PtrToStringAnsi(eAX6EAXPtr);
 
+                return eAX6EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX6EBX();
+
+        public string GetEAX6EBXX()
+        {
+            try
+            {
+                IntPtr eAX6EBXPtr = GetEAX6EBX();
+                string eAX6EBXString = Marshal.PtrToStringAnsi(eAX6EBXPtr);
+
+                return eAX6EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX6ECX();
+
+        public string GetEAX6ECXX()
+        {
+            try
+            {
+                IntPtr eAX6ECXPtr = GetEAX6ECX();
+                string eAX6ECXString = Marshal.PtrToStringAnsi(eAX6ECXPtr);
+
+                return eAX6ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX6EDX();
+
+        public string GetEAX6EDXX()
+        {
+            try
+            {
+                IntPtr eAX6EDXPtr = GetEAX6EDX();
+                string eAX6EDXString = Marshal.PtrToStringAnsi(eAX6EDXPtr);
+
+                return eAX6EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX0_DTSIsSupported();
+
+        public bool GetEAX6EAX0_DTSIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX0_DTSIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. DTS support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for DTS support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX1_TURBO_BOOSTIsSupported();
+
+        public bool GetEAX6EAX1_TURBO_BOOSTIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX1_TURBO_BOOSTIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. TURBO BOOST support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for TURBO BOOST support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX2_ARATIsSupported();
+
+        public bool GetEAX6EAX2_ARATIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX2_ARATIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. ARAT support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for ARAT support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX3_ReservedIsSupported();
+
+        public bool GetEAX6EAX3_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX3_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupported();
+
+        public bool GetEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Power Limit Notification capability (PLN) support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Power Limit Notification capability (PLN) support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported();
+
+        public bool GetEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Extended Clock Modulation Duty capability (ECMD) support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Extended Clock Modulation Duty capability (ECMD) support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX6_PackageThermalManagementCapability_PTMIsSupported();
+
+        public bool GetEAX6EAX6_PackageThermalManagementCapability_PTMIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX6_PackageThermalManagementCapability_PTMIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Package Thermal Management capability (PTM) support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Package Thermal Management capability (PTM) support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported();
+
+        public bool GetEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Hardware Controlled Performance States capability (HWP) support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Hardware Controlled Performance States capability (HWP) support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupported();
+
+        public bool GetEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Hardware Controlled Performance States capability (HWP) notification support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Hardware Controlled Performance States capability (HWP) notification support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported();
+
+        public bool GetEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Hardware Controlled Performance States capability (HWP) activity window support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Hardware Controlled Performance States capability (HWP) activity window support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported();
+
+        public bool GetEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Hardware Controlled Performance States capability (HWP) energy performance preference support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Hardware Controlled Performance States capability (HWP) energy performance preference support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported();
+
+        public bool GetEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Hardware Controlled Performance States capability (HWP) package level request support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Hardware Controlled Performance States capability (HWP) package level request support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX12_ReservedIsSupported();
+
+        public bool GetEAX6EAX12_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX12_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupported();
+
+        public bool GetEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Hardware Duty Cycling capability (HDC) support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Hardware Duty Cycling capability (HDC) support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported();
+
+        public bool GetEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Intel Turbo Boost Max Technology 3.0 availability (TURBO_BOOST_MAX) support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Intel Turbo Boost Max Technology 3.0 availability (TURBO_BOOST_MAX) support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX15_HWP_CAPIsSupported();
+
+        public bool GetEAX6EAX15_HWP_CAPIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX15_HWP_CAPIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. HWP_CAP support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for HWP_CAP support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX16_HWP_PECI_OVERRIDEIsSupported();
+
+        public bool GetEAX6EAX16_HWP_PECI_OVERRIDEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX16_HWP_PECI_OVERRIDEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. HWP_PECI_OVERRIDE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for HWP_PECI_OVERRIDE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX17_FlexibleHWPIsSupported();
+
+        public bool GetEAX6EAX17_FlexibleHWPIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX17_FlexibleHWPIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Flexible HWP support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Flexible HWP support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupported();
+
+        public bool GetEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. HWP_REQUEST_FAST_ACCESS support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for HWP_REQUEST_FAST_ACCESS support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX19_HW_FEEDBACKIsSupported();
+
+        public bool GetEAX6EAX19_HW_FEEDBACKIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX19_HW_FEEDBACKIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. HW_FEEDBACK support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for HW_FEEDBACK support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported();
+
+        public bool GetEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. HWP_REQUEST_IGNORE_IDLE support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for HWP_REQUEST_IGNORE_IDLE support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX21_ReservedIsSupported();
+
+        public bool GetEAX6EAX21_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX21_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX22_HWP_CTLIsSupported();
+
+        public bool GetEAX6EAX22_HWP_CTLIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX22_HWP_CTLIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. HWP_CTL support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for HWP_CTL support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX23_THREAD_DIRECTORIsSupported();
+
+        public bool GetEAX6EAX23_THREAD_DIRECTORIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX23_THREAD_DIRECTORIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. THREAD_DIRECTOR support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for THREAD_DIRECTOR support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX24_IA32_THERM_INTERRUPTIsSupported();
+
+        public bool GetEAX6EAX24_IA32_THERM_INTERRUPTIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX24_IA32_THERM_INTERRUPTIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. IA32_THERM_INTERRUPT support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for IA32_THERM_INTERRUPT support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX25_ReservedIsSupported();
+
+        public bool GetEAX6EAX25_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX25_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX26_ReservedIsSupported();
+
+        public bool GetEAX6EAX26_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX26_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX27_ReservedIsSupported();
+
+        public bool GetEAX6EAX27_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX27_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX28_ReservedIsSupported();
+
+        public bool GetEAX6EAX28_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX28_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX29_ReservedIsSupported();
+
+        public bool GetEAX6EAX29_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX29_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX30_ReservedIsSupported();
+
+        public bool GetEAX6EAX30_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX30_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6EAX31_ReservedIsSupported();
+
+        public bool GetEAX6EAX31_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6EAX31_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        #region Thermal / power management feature fields in EBX, ECX and EDX.
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor();
+
+        public string GetEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorX()
+        {
+            try
+            {
+                int eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorValue = GetEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor();
+                string eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString = eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorValue.ToString();
+
+                return eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX6_EBX4_31_Reserved();
+
+        public string GetEAX6_EBX4_31_ReservedX()
+        {
+            try
+            {
+                int eAX6_EBX4_31_ReservedValue = GetEAX6_EBX4_31_Reserved();
+                string eAX6_EBX4_31_ReservedString = eAX6_EBX4_31_ReservedValue.ToString();
+
+                return eAX6_EBX4_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6ECX0_EffectiveFrequencyInterfaceIsSupported();
+
+        public bool GetEAX6ECX0_EffectiveFrequencyInterfaceIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6ECX0_EffectiveFrequencyInterfaceIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Effective Frequency Interface support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Effective Frequency Interface support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6ECX1_ACNT2CapabilityIsSupported();
+
+        public bool GetEAX6ECX1_ACNT2CapabilityIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6ECX1_ACNT2CapabilityIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. ACNT2 Capability support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for ACNT2 Capability support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6ECX2_ReservedIsSupported();
+
+        public bool GetEAX6ECX2_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6ECX2_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved feature support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved feature support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupported();
+
+        public bool GetEAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupportedX()
+        {
+            try
+            {
+                return GetEAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Performance Energy Bias Capability MSR support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Performance Energy Bias Capability MSR support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX6ECX4_7_Reserved();
+
+        public string GetEAX6ECX4_7_ReservedX()
+        {
+            try
+            {
+                int eAX6ECX4_7_ReservedValue = GetEAX6ECX4_7_Reserved();
+                string eAX6ECX4_7_ReservedString = eAX6ECX4_7_ReservedValue.ToString();
+
+                return eAX6ECX4_7_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX6ECX8_15_NumberOfIntelThreadDirectorClasses();
+
+        public string GetEAX6ECX8_15_NumberOfIntelThreadDirectorClassesX()
+        {
+            try
+            {
+                int eAX6ECX8_15_NumberOfIntelThreadDirectorClassesValue = GetEAX6ECX8_15_NumberOfIntelThreadDirectorClasses();
+                string eAX6ECX8_15_NumberOfIntelThreadDirectorClassesString = eAX6ECX8_15_NumberOfIntelThreadDirectorClassesValue.ToString();
+
+                return eAX6ECX8_15_NumberOfIntelThreadDirectorClassesString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX6ECX16_31_Reserved();
+
+        public string GetEAX6ECX16_31_ReservedX()
+        {
+            try
+            {
+                int eAX6ECX16_31_ReservedValue = GetEAX6ECX16_31_Reserved();
+                string eAX6ECX16_31_ReservedString = eAX6ECX16_31_ReservedValue.ToString();
+
+                return eAX6ECX16_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        #endregion
         #endregion
 
         #region region EAX=0x7, ECX=0x0: Extended Features

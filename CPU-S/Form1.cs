@@ -1335,7 +1335,140 @@ namespace CPU_S
 
             #region region EAX=0x6: Thermal and Power Management
 
+            string cpuIdEAX6EAX = cpuHelper.GetEAX6EAXX();
+            Console.WriteLine($"EAX6EAX: {cpuIdEAX6EAX}");
 
+            string cpuIdEAX6EBX = cpuHelper.GetEAX6EBXX();
+            Console.WriteLine($"EAX6EBX: {cpuIdEAX6EBX}");
+
+            string cpuIdEAX6ECX = cpuHelper.GetEAX6ECXX();
+            Console.WriteLine($"EAX6ECX: {cpuIdEAX6ECX}");
+
+            string cpuIdEAX6EDX = cpuHelper.GetEAX6EDXX();
+            Console.WriteLine($"EAX6EDX: {cpuIdEAX6EDX}");
+
+            bool cpuIdEAX6EAX0_DTSIsSupported = cpuHelper.GetEAX6EAX0_DTSIsSupportedX();
+            Console.WriteLine($"EAX6EAX0_DTSIsSupported: {cpuIdEAX6EAX0_DTSIsSupported}");
+
+            bool cpuIdEAX6EAX1_TURBO_BOOSTIsSupported = cpuHelper.GetEAX6EAX1_TURBO_BOOSTIsSupportedX();
+            Console.WriteLine($"EAX6EAX1_TURBO_BOOSTIsSupported: {cpuIdEAX6EAX1_TURBO_BOOSTIsSupported}");
+
+            bool cpuIdEAX6EAX2_ARATIsSupported = cpuHelper.GetEAX6EAX2_ARATIsSupportedX();
+            Console.WriteLine($"EAX6EAX2_ARATIsSupported: {cpuIdEAX6EAX2_ARATIsSupported}");
+
+            bool cpuIdEAX6EAX3_ReservedIsSupported = cpuHelper.GetEAX6EAX3_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX3_ReservedIsSupported: {cpuIdEAX6EAX3_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupported = cpuHelper.GetEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupportedX();
+            Console.WriteLine($"EAX6EAX4_PowerLimitNotificationCapability_PLNIsSupported: {cpuIdEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupported}");
+
+            bool cpuIdEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported = cpuHelper.GetEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupportedX();
+            Console.WriteLine($"EAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported: {cpuIdEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported}");
+
+            bool cpuIdEAX6EAX6_PackageThermalManagementCapability_PTMIsSupported = cpuHelper.GetEAX6EAX6_PackageThermalManagementCapability_PTMIsSupportedX();
+            Console.WriteLine($"EAX6EAX6_PackageThermalManagementCapability_PTMIsSupported: {cpuIdEAX6EAX6_PackageThermalManagementCapability_PTMIsSupported}");
+
+            bool cpuIdEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported = cpuHelper.GetEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupportedX();
+            Console.WriteLine($"EAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported: {cpuIdEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported}");
+
+            bool cpuIdEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupported = cpuHelper.GetEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupportedX();
+            Console.WriteLine($"EAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupported: {cpuIdEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupported}");
+
+            bool cpuIdEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported = cpuHelper.GetEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupportedX();
+            Console.WriteLine($"EAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported: {cpuIdEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported}");
+
+            bool cpuIdEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported = cpuHelper.GetEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupportedX();
+            Console.WriteLine($"EAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported: {cpuIdEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported}");
+
+            bool cpuIdEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported = cpuHelper.GetEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupportedX();
+            Console.WriteLine($"EAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported: {cpuIdEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported}");
+
+            bool cpuIdEAX6EAX12_ReservedIsSupported = cpuHelper.GetEAX6EAX12_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX12_ReservedIsSupported: {cpuIdEAX6EAX12_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupported = cpuHelper.GetEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupportedX();
+            Console.WriteLine($"EAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupported: {cpuIdEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupported}");
+
+            bool cpuIdEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported = cpuHelper.GetEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupportedX();
+            Console.WriteLine($"EAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported: {cpuIdEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported}");
+
+            bool cpuIdEAX6EAX15_HWP_CAPIsSupported = cpuHelper.GetEAX6EAX15_HWP_CAPIsSupportedX();
+            Console.WriteLine($"EAX6EAX15_HWP_CAPIsSupported: {cpuIdEAX6EAX15_HWP_CAPIsSupported}");
+
+            bool cpuIdEAX6EAX16_HWP_PECI_OVERRIDEIsSupported = cpuHelper.GetEAX6EAX16_HWP_PECI_OVERRIDEIsSupportedX();
+            Console.WriteLine($"EAX6EAX16_HWP_PECI_OVERRIDEIsSupported: {cpuIdEAX6EAX16_HWP_PECI_OVERRIDEIsSupported}");
+
+            bool cpuIdEAX6EAX17_FlexibleHWPIsSupported = cpuHelper.GetEAX6EAX17_FlexibleHWPIsSupportedX();
+            Console.WriteLine($"EAX6EAX17_FlexibleHWPIsSupported: {cpuIdEAX6EAX17_FlexibleHWPIsSupported}");
+
+            bool cpuIdEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupported = cpuHelper.GetEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupportedX();
+            Console.WriteLine($"EAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupported: {cpuIdEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupported}");
+
+            bool cpuIdEAX6EAX19_HW_FEEDBACKIsSupported = cpuHelper.GetEAX6EAX19_HW_FEEDBACKIsSupportedX();
+            Console.WriteLine($"EAX6EAX19_HW_FEEDBACKIsSupported: {cpuIdEAX6EAX19_HW_FEEDBACKIsSupported}");
+
+            bool cpuIdEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported = cpuHelper.GetEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupportedX();
+            Console.WriteLine($"EAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported: {cpuIdEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported}");
+
+            bool cpuIdEAX6EAX21_ReservedIsSupported = cpuHelper.GetEAX6EAX21_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX21_ReservedIsSupported: {cpuIdEAX6EAX21_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX22_HWP_CTLIsSupported = cpuHelper.GetEAX6EAX22_HWP_CTLIsSupportedX();
+            Console.WriteLine($"EAX6EAX22_HWP_CTLIsSupported: {cpuIdEAX6EAX22_HWP_CTLIsSupported}");
+
+            bool cpuIdEAX6EAX23_THREAD_DIRECTORIsSupported = cpuHelper.GetEAX6EAX23_THREAD_DIRECTORIsSupportedX();
+            Console.WriteLine($"EAX6EAX23_THREAD_DIRECTORIsSupported: {cpuIdEAX6EAX23_THREAD_DIRECTORIsSupported}");
+
+            bool cpuIdEAX6EAX24_IA32_THERM_INTERRUPTIsSupported = cpuHelper.GetEAX6EAX24_IA32_THERM_INTERRUPTIsSupportedX();
+            Console.WriteLine($"EAX6EAX24_IA32_THERM_INTERRUPTIsSupported: {cpuIdEAX6EAX24_IA32_THERM_INTERRUPTIsSupported}");
+
+            bool cpuIdEAX6EAX25_ReservedIsSupported = cpuHelper.GetEAX6EAX25_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX25_ReservedIsSupported: {cpuIdEAX6EAX25_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX26_ReservedIsSupported = cpuHelper.GetEAX6EAX26_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX26_ReservedIsSupported: {cpuIdEAX6EAX26_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX27_ReservedIsSupported = cpuHelper.GetEAX6EAX27_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX27_ReservedIsSupported: {cpuIdEAX6EAX27_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX28_ReservedIsSupported = cpuHelper.GetEAX6EAX28_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX28_ReservedIsSupported: {cpuIdEAX6EAX28_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX29_ReservedIsSupported = cpuHelper.GetEAX6EAX29_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX29_ReservedIsSupported: {cpuIdEAX6EAX29_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX30_ReservedIsSupported = cpuHelper.GetEAX6EAX30_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX30_ReservedIsSupported: {cpuIdEAX6EAX30_ReservedIsSupported}");
+
+            bool cpuIdEAX6EAX31_ReservedIsSupported = cpuHelper.GetEAX6EAX31_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6EAX31_ReservedIsSupported: {cpuIdEAX6EAX31_ReservedIsSupported}");
+
+            string spuIdEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString = cpuHelper.GetEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorX();
+            Console.WriteLine($"EAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor: {spuIdEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString}");
+
+            string spuIdEAX6_EBX4_31_ReservedString = cpuHelper.GetEAX6_EBX4_31_ReservedX();
+            Console.WriteLine($"EAX6_EBX4_31_Reserved: {spuIdEAX6_EBX4_31_ReservedString}");
+
+            bool spuIdEAX6ECX0_EffectiveFrequencyInterfaceString = cpuHelper.GetEAX6ECX0_EffectiveFrequencyInterfaceIsSupportedX();
+            Console.WriteLine($"EAX6ECX0_EffectiveFrequencyInterfaceIsSupported: {spuIdEAX6ECX0_EffectiveFrequencyInterfaceString}");
+
+            bool spuIdEAX6ECX1_ACNT2CapabilityString = cpuHelper.GetEAX6ECX1_ACNT2CapabilityIsSupportedX();
+            Console.WriteLine($"EAX6ECX1_ACNT2CapabilityIsSupported: {spuIdEAX6ECX1_ACNT2CapabilityString}");
+
+            bool spuIdEAX6ECX2_ReservedString = cpuHelper.GetEAX6ECX2_ReservedIsSupportedX();
+            Console.WriteLine($"EAX6ECX2_ReservedIsSupported: {spuIdEAX6ECX2_ReservedString}");
+
+            bool spuIdEAX6ECX3_PerformanceEnergyBiasCapabilityMSRString = cpuHelper.GetEAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupportedX();
+            Console.WriteLine($"EAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupported: {spuIdEAX6ECX3_PerformanceEnergyBiasCapabilityMSRString}");
+
+            string spuIdEAX6ECX4_7_ReservedString = cpuHelper.GetEAX6ECX4_7_ReservedX();
+            Console.WriteLine($"EAX6ECX4_7_Reserved: {spuIdEAX6ECX4_7_ReservedString}");
+
+            string spuIdEAX6ECX8_15_NumberOfIntelThreadDirectorClassesString = cpuHelper.GetEAX6ECX8_15_NumberOfIntelThreadDirectorClassesX();
+            Console.WriteLine($"EAX6ECX8_15_NumberOfIntelThreadDirectorClasses: {spuIdEAX6ECX8_15_NumberOfIntelThreadDirectorClassesString}");
+
+            string spuIdEAX6ECX16_31_ReservedString = cpuHelper.GetEAX6ECX16_31_ReservedX();
+            Console.WriteLine($"EAX6ECX16_31_Reserved: {spuIdEAX6ECX16_31_ReservedString}");
 
             #endregion
 
