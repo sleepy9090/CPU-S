@@ -4936,5 +4936,217 @@ namespace CPU_S
 
         #endregion
 
+        #region EAX=0x0D: XSAVE Features and State Components
+
+
+
+        #endregion
+
+        #region EAX=0x12: SGX Capabilities
+
+
+
+        #endregion
+
+        #region region EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX
+
+
+
+        #endregion
+
+        #region EAX=0x14, ECX=0x1: Processor Trace packet generation information in EAX, EBX and ECX
+
+
+
+        #endregion
+
+        #region EAX=0x15: TSC and Core Crystal frequency information
+
+
+
+        #endregion
+
+        #region EAX=0x16: Processor and Bus specification frequencies
+
+
+
+        #endregion
+
+        #region EAX=0x17: SoC Vendor Attribute Enumeration
+
+
+
+        #endregion
+
+        #region EAX=0x18: TLB Hierarchy and Topology
+
+
+
+        #endregion
+
+        #region EAX=0x19: Intel Key Locker Features
+
+
+
+        #endregion
+
+        #region EAX=0x1D: Intel AMX Tile Information
+
+
+
+        #endregion
+
+        #region EAX=0x1E: Intel AMX Tile Multiplier (TMUL) Information
+
+
+
+        #endregion
+
+        #region EAX=0x21: Reserved for TDX enumeration
+
+
+
+        #endregion
+
+        #region EAX=0x24, ECX=0x0: AVX10 Converged Vector ISA
+
+
+
+        #endregion
+
+        #region EAX=0x24, ECX=0x1: Discrete AVX10 Features
+
+
+
+        #endregion
+
+        #region EAX=0x20000000: Highest Xeon Phi Function Implemented
+
+
+
+        #endregion
+
+        #region EAX=0x20000001: Xeon Phi Feature Bits
+
+
+
+        #endregion
+
+        #region EAX=0x40000000h-0x4FFFFFFFh: Reserved for Hypervisors
+
+
+
+        #endregion
+
+        #region EAX=0x80000000: Highest Extended Function Implemented
+
+
+
+        #endregion
+
+        #region EAX=0x80000001: Extended Processor Info and Feature Bits
+
+
+
+        #endregion
+
+        #region EAX=0x80000002,0x80000003,0x80000004: Processor Brand String
+
+
+
+        #endregion
+
+        #region EAX=0x80000005: L1 Cache and TLB Identifiers
+
+
+
+        #endregion
+
+        #region EAX=0x80000006: Extended L2 Cache Features
+
+
+
+        #endregion
+
+        #region EAX=0x80000007: Processor Power Management Information and RAS Capabilities
+
+
+
+        #endregion
+
+        #region EAX=0x80000008: Virtual and Physical Address Sizes
+
+
+
+        #endregion
+
+        #region EAX=0x8000000A: SVM features
+
+
+
+        #endregion
+
+        #region EAX=0x8000001F: Encrypted Memory Capabilities
+
+
+
+        #endregion
+
+        #region EAX=0x80000021: Extended Feature Identification
+
+
+
+        #endregion
+
+        #region EAX=0x80000025: Encrypted Memory Capabilities 2
+
+
+
+        #endregion
+
+        #region EAX=0x8C860000: Hygon Extended Feature Flags
+
+
+
+        #endregion
+
+        #region EAX=0x8FFFFFFE: AMD Easter Eggs
+
+
+
+        #endregion
+
+        #region EAX=0x8FFFFFFF: AMD Easter Eggs
+
+
+
+        #endregion
+
+        #region EAX=0xC0000000: Highest Centaur Extended Function
+
+
+
+        #endregion
+
+        #region EAX=0xC0000001: Centaur Feature Information
+
+
+
+        #endregion
+
+        #region EAX=0xC0000002: Centaur Extended CPUID Performance Data
+
+
+
+        #endregion
+
+        #region EAX=0xC0000006, ECX=0: Zhaoxin Feature Information
+
+
+
+        #endregion
+
+
+
     }
 }
