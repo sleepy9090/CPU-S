@@ -1222,6 +1222,55 @@ namespace CPU_S
 
             #endregion
 
+            #region EAX=0x4 and EAX=0x8000001D: Cache Hierarchy and Topology
+
+            string cpuIdEAX4EAX = cpuHelper.GetEAX4EAXX();
+            Console.WriteLine($"EAX4EAX: {cpuIdEAX4EAX}");
+
+            string cpuIdEAX4EBX = cpuHelper.GetEAX4EBXX();
+            Console.WriteLine($"EAX4EBX: {cpuIdEAX4EBX}");
+
+            string cpuIdEAX4ECX = cpuHelper.GetEAX4ECXX();
+            Console.WriteLine($"EAX4ECX: {cpuIdEAX4ECX}");
+
+            string cpuIdEAX4EDX = cpuHelper.GetEAX4EDXX();
+            Console.WriteLine($"EAX4EDX: {cpuIdEAX4EDX}");
+
+            string cpuIdEAX8000001DEAX = cpuHelper.GetEAX8000001DEAXX();
+            Console.WriteLine($"EAX8000001DEAX: {cpuIdEAX8000001DEAX}");
+
+            string cpuIdEAX8000001DEBX = cpuHelper.GetEAX8000001DEBXX();
+            Console.WriteLine($"EAX8000001DEBX: {cpuIdEAX8000001DEBX}");
+
+            string cpuIdEAX8000001DECX = cpuHelper.GetEAX8000001DECXX();
+            Console.WriteLine($"EAX8000001DECX: {cpuIdEAX8000001DECX}");
+
+            string cpuIdEAX8000001DEDX = cpuHelper.GetEAX8000001DEDXX();
+            Console.WriteLine($"EAX8000001DEDX: {cpuIdEAX8000001DEDX}");
+
+            #endregion
+
+            #region EAX=0x4 and EAX=0xB: Intel Thread/Core and Cache Topology
+
+            string cpuIdEAXBEAX = cpuHelper.GetEAXBEAXX();
+            Console.WriteLine($"EAXBEAX: {cpuIdEAXBEAX}");
+
+            string cpuIdEAXBEBX = cpuHelper.GetEAXBEBXX();
+            Console.WriteLine($"EAXBEBX: {cpuIdEAXBEBX}");
+
+            string cpuIdEAXBEECX = cpuHelper.GetEAXBECXX();
+            Console.WriteLine($"EAXBECX: {cpuIdEAXBEECX}");
+
+            string cpuIdEAXBEDX = cpuHelper.GetEAXBEDXX();
+            Console.WriteLine($"EAXBEDX: {cpuIdEAXBEDX}");
+
+            #endregion
+
+            #region EAX=0x5: MONITOR/MWAIT Features
+
+
+
+            #endregion
         }
 
         private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)
