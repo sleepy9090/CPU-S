@@ -1470,11 +1470,39 @@ namespace CPU_S
             string spuIdEAX6ECX16_31_ReservedString = cpuHelper.GetEAX6ECX16_31_ReservedX();
             Console.WriteLine($"EAX6ECX16_31_Reserved: {spuIdEAX6ECX16_31_ReservedString}");
 
+            bool spuIdEAX6EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupportedString = cpuHelper.GetEAX6EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupportedX();
+            Console.WriteLine($"EAX6EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupported: {spuIdEAX6EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupportedString}");
+
+            bool spuIdEAX6EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupportedString = cpuHelper.GetEAX6EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupportedX();
+            Console.WriteLine($"EAX6EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupported: {spuIdEAX6EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupportedString}");
+
+            string spuIdEAX6EDX2_7_ReservedString = cpuHelper.GetEAX6EDX2_7_ReservedX();
+            Console.WriteLine($"EAX6EDX2_7_Reserved: {spuIdEAX6EDX2_7_ReservedString}");
+
+            string spuIdEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureString = cpuHelper.GetEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureX();
+            Console.WriteLine($"EAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure: {spuIdEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureString}");
+
+            string spuIdEAX6EDX12_15_ReservedString = cpuHelper.GetEAX6EDX12_15_ReservedX();
+            Console.WriteLine($"EAX6EDX12_15_Reserved: {spuIdEAX6EDX12_15_ReservedString}");
+
+            string spuIdEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureString = cpuHelper.GetEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureX();
+            Console.WriteLine($"EAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure: {spuIdEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureString}");
+
             #endregion
 
             #region region EAX=0x7, ECX=0x0: Extended Features
 
+            string cpuIdEAX7ECX0EAX = cpuHelper.GetEAX7ECX0EAXX();
+            Console.WriteLine($"EAX7ECX0EAX: {cpuIdEAX7ECX0EAX}");
 
+            string cpuIdEAX7ECX0EBX = cpuHelper.GetEAX7ECX0EBXX();
+            Console.WriteLine($"EAX7ECX0EBX: {cpuIdEAX7ECX0EBX}");
+
+            string cpuIdEAX7ECX0ECX = cpuHelper.GetEAX7ECX0ECXX();
+            Console.WriteLine($"EAX7ECX0ECX: {cpuIdEAX7ECX0ECX}");
+
+            string cpuIdEAX7ECX0EDX = cpuHelper.GetEAX7ECX0EDXX();
+            Console.WriteLine($"EAX7ECX0EDX: {cpuIdEAX7ECX0EDX}");
 
             #endregion
 
