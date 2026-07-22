@@ -1504,6 +1504,198 @@ namespace CPU_S
             string cpuIdEAX7ECX0EDX = cpuHelper.GetEAX7ECX0EDXX();
             Console.WriteLine($"EAX7ECX0EDX: {cpuIdEAX7ECX0EDX}");
 
+            bool cpuIdEAX7ECX0_EBX0_FSGSBaseIsSupported = cpuHelper.GetEAX7ECX0_EBX0_FSGSBaseIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX0_FSGSBaseIsSupported: {cpuIdEAX7ECX0_EBX0_FSGSBaseIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX1_TSCAdjustIsSupported = cpuHelper.GetEAX7ECX0_EBX1_TSCAdjustIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX1_TSCAdjustIsSupported: {cpuIdEAX7ECX0_EBX1_TSCAdjustIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX2_SGXIsSupported = cpuHelper.GetEAX7ECX0_EBX2_SGXIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX2_SGXIsSupported: {cpuIdEAX7ECX0_EBX2_SGXIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX3_BMI1IsSupported = cpuHelper.GetEAX7ECX0_EBX3_BMI1IsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX3_BMI1IsSupported: {cpuIdEAX7ECX0_EBX3_BMI1IsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX4_HLEIsSupported = cpuHelper.GetEAX7ECX0_EBX4_HLEIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX4_HLEIsSupported: {cpuIdEAX7ECX0_EBX4_HLEIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX5_AVX2IsSupported = cpuHelper.GetEAX7ECX0_EBX5_AVX2IsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX5_AVX2IsSupported: {cpuIdEAX7ECX0_EBX5_AVX2IsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX6_FDPExcptnOnlyIsSupported = cpuHelper.GetEAX7ECX0_EBX6_FDPExcptnOnlyIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX6_FDPExcptnOnlyIsSupported: {cpuIdEAX7ECX0_EBX6_FDPExcptnOnlyIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX7_SMEPIsSupported = cpuHelper.GetEAX7ECX0_EBX7_SMEPIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX7_SMEPIsSupported: {cpuIdEAX7ECX0_EBX7_SMEPIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX8_BMI2IsSupported = cpuHelper.GetEAX7ECX0_EBX8_BMI2IsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX8_BMI2IsSupported: {cpuIdEAX7ECX0_EBX8_BMI2IsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX9_ERMSIsSupported = cpuHelper.GetEAX7ECX0_EBX9_ERMSIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX9_ERMSIsSupported: {cpuIdEAX7ECX0_EBX9_ERMSIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX10_INVPCIDIsSupported = cpuHelper.GetEAX7ECX0_EBX10_INVPCIDIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX10_INVPCIDIsSupported: {cpuIdEAX7ECX0_EBX10_INVPCIDIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX11_RTMIsSupported = cpuHelper.GetEAX7ECX0_EBX11_RTMIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX11_RTMIsSupported: {cpuIdEAX7ECX0_EBX11_RTMIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX12_RDTMIsSupported = cpuHelper.GetEAX7ECX0_EBX12_RDTMIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX12_RDTMIsSupported: {cpuIdEAX7ECX0_EBX12_RDTMIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX13_FCSFDSDeprecationIsSupported = cpuHelper.GetEAX7ECX0_EBX13_FCSFDSDeprecationIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX13_FCSFDSDeprecationIsSupported: {cpuIdEAX7ECX0_EBX13_FCSFDSDeprecationIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX14_MPXIsSupported = cpuHelper.GetEAX7ECX0_EBX14_MPXIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX14_MPXIsSupported: {cpuIdEAX7ECX0_EBX14_MPXIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX15_RDTAIsSupported = cpuHelper.GetEAX7ECX0_EBX15_RDTAIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX15_RDTAIsSupported: {cpuIdEAX7ECX0_EBX15_RDTAIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX16_AVX512FIsSupported = cpuHelper.GetEAX7ECX0_EBX16_AVX512FIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX16_AVX512FIsSupported: {cpuIdEAX7ECX0_EBX16_AVX512FIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX17_AVX512DQIsSupported = cpuHelper.GetEAX7ECX0_EBX17_AVX512DQIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX17_AVX512DQIsSupported: {cpuIdEAX7ECX0_EBX17_AVX512DQIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX18_RDSEEDIsSupported = cpuHelper.GetEAX7ECX0_EBX18_RDSEEDIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX18_RDSEEDIsSupported: {cpuIdEAX7ECX0_EBX18_RDSEEDIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX19_ADXIsSupported = cpuHelper.GetEAX7ECX0_EBX19_ADXIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX19_ADXIsSupported: {cpuIdEAX7ECX0_EBX19_ADXIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX20_SMAPIsSupported = cpuHelper.GetEAX7ECX0_EBX20_SMAPIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX20_SMAPIsSupported: {cpuIdEAX7ECX0_EBX20_SMAPIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX21_AVX512IFMAIsSupported = cpuHelper.GetEAX7ECX0_EBX21_AVX512IFMAIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX21_AVX512IFMAIsSupported: {cpuIdEAX7ECX0_EBX21_AVX512IFMAIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX22_PCOMMITIsSupported = cpuHelper.GetEAX7ECX0_EBX22_PCOMMITIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX22_PCOMMITIsSupported: {cpuIdEAX7ECX0_EBX22_PCOMMITIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX23_CLFLUSHOPTIsSupported = cpuHelper.GetEAX7ECX0_EBX23_CLFLUSHOPTIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX23_CLFLUSHOPTIsSupported: {cpuIdEAX7ECX0_EBX23_CLFLUSHOPTIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX24_CLWBIsSupported = cpuHelper.GetEAX7ECX0_EBX24_CLWBIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX24_CLWBIsSupported: {cpuIdEAX7ECX0_EBX24_CLWBIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX25_PTIsSupported = cpuHelper.GetEAX7ECX0_EBX25_PTIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX25_PTIsSupported: {cpuIdEAX7ECX0_EBX25_PTIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX26_AVX512PFIsSupported = cpuHelper.GetEAX7ECX0_EBX26_AVX512PFIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX26_AVX512PFIsSupported: {cpuIdEAX7ECX0_EBX26_AVX512PFIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX27_AVX512ERIsSupported = cpuHelper.GetEAX7ECX0_EBX27_AVX512ERIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX27_AVX512ERIsSupported: {cpuIdEAX7ECX0_EBX27_AVX512ERIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX28_AVX512CDIsSupported = cpuHelper.GetEAX7ECX0_EBX28_AVX512CDIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX28_AVX512CDIsSupported: {cpuIdEAX7ECX0_EBX28_AVX512CDIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX29_SHAIsSupported = cpuHelper.GetEAX7ECX0_EBX29_SHAIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX29_SHAIsSupported: {cpuIdEAX7ECX0_EBX29_SHAIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX30_AVX512BWIsSupported = cpuHelper.GetEAX7ECX0_EBX30_AVX512BWIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX30_AVX512BWIsSupported: {cpuIdEAX7ECX0_EBX30_AVX512BWIsSupported}");
+
+            bool cpuIdEAX7ECX0_EBX31_AVX512VLIsSupported = cpuHelper.GetEAX7ECX0_EBX31_AVX512VLIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_EBX31_AVX512VLIsSupported: {cpuIdEAX7ECX0_EBX31_AVX512VLIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX0_PREFETCHWT1IsSupported = cpuHelper.GetEAX7ECX0_ECX0_PREFETCHWT1IsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX0_PREFETCHWT1IsSupported: {cpuIdEAX7ECX0_ECX0_PREFETCHWT1IsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX1_AVX512VBMIIsSupported = cpuHelper.GetEAX7ECX0_ECX1_AVX512VBMIIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX1_AVX512VBMIIsSupported: {cpuIdEAX7ECX0_ECX1_AVX512VBMIIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX2_UMIPIsSupported = cpuHelper.GetEAX7ECX0_ECX2_UMIPIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX2_UMIPIsSupported: {cpuIdEAX7ECX0_ECX2_UMIPIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX3_PKUIsSupported = cpuHelper.GetEAX7ECX0_ECX3_PKUIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX3_PKUIsSupported: {cpuIdEAX7ECX0_ECX3_PKUIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX4_OSPKEIsSupported = cpuHelper.GetEAX7ECX0_ECX4_OSPKEIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX4_OSPKEIsSupported: {cpuIdEAX7ECX0_ECX4_OSPKEIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX5_WAITPKGIsSupported = cpuHelper.GetEAX7ECX0_ECX5_WAITPKGIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX5_WAITPKGIsSupported: {cpuIdEAX7ECX0_ECX5_WAITPKGIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX6_AVX512VBMI2IsSupported = cpuHelper.GetEAX7ECX0_ECX6_AVX512VBMI2IsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX6_AVX512VBMI2IsSupported: {cpuIdEAX7ECX0_ECX6_AVX512VBMI2IsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX7_CETSSIsSupported = cpuHelper.GetEAX7ECX0_ECX7_CETSSIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX7_CETSSIsSupported: {cpuIdEAX7ECX0_ECX7_CETSSIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX8_GFNIIsSupported = cpuHelper.GetEAX7ECX0_ECX8_GFNIIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX8_GFNIIsSupported: {cpuIdEAX7ECX0_ECX8_GFNIIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX9_VAESIsSupported = cpuHelper.GetEAX7ECX0_ECX9_VAESIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX9_VAESIsSupported: {cpuIdEAX7ECX0_ECX9_VAESIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX10_VPCLMULQDQIsSupported = cpuHelper.GetEAX7ECX0_ECX10_VPCLMULQDQIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX10_VPCLMULQDQIsSupported: {cpuIdEAX7ECX0_ECX10_VPCLMULQDQIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX11_AVX512VNNIIsSupported = cpuHelper.GetEAX7ECX0_ECX11_AVX512VNNIIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX11_AVX512VNNIIsSupported: {cpuIdEAX7ECX0_ECX11_AVX512VNNIIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX12_AVX512BITALGIsSupported = cpuHelper.GetEAX7ECX0_ECX12_AVX512BITALGIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX12_AVX512BITALGIsSupported: {cpuIdEAX7ECX0_ECX12_AVX512BITALGIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX13_TME_ENIsSupported = cpuHelper.GetEAX7ECX0_ECX13_TME_ENIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX13_TME_ENIsSupported: {cpuIdEAX7ECX0_ECX13_TME_ENIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX14_AVX512VPOPCNTDQIsSupported = cpuHelper.GetEAX7ECX0_ECX14_AVX512VPOPCNTDQIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX14_AVX512VPOPCNTDQIsSupported: {cpuIdEAX7ECX0_ECX14_AVX512VPOPCNTDQIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX15_FZMIsSupported = cpuHelper.GetEAX7ECX0_ECX15_FZMIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX15_FZMIsSupported: {cpuIdEAX7ECX0_ECX15_FZMIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX16_LA57IsSupported = cpuHelper.GetEAX7ECX0_ECX16_LA57IsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX16_LA57IsSupported: {cpuIdEAX7ECX0_ECX16_LA57IsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX17_MAWAUIsSupported1 = cpuHelper.GetEAX7ECX0_ECX17_MAWAUIsSupported1X();
+            Console.WriteLine($"EAX7ECX0_ECX17_MAWAUIsSupported1: {cpuIdEAX7ECX0_ECX17_MAWAUIsSupported1}");
+
+            bool cpuIdEAX7ECX0_ECX18_MAWAUIsSupported2 = cpuHelper.GetEAX7ECX0_ECX18_MAWAUIsSupported2X();
+            Console.WriteLine($"EAX7ECX0_ECX18_MAWAUIsSupported2: {cpuIdEAX7ECX0_ECX18_MAWAUIsSupported2}");
+
+            bool cpuIdEAX7ECX0_ECX19_MAWAUIsSupported3 = cpuHelper.GetEAX7ECX0_ECX19_MAWAUIsSupported3X();
+            Console.WriteLine($"EAX7ECX0_ECX19_MAWAUIsSupported3: {cpuIdEAX7ECX0_ECX19_MAWAUIsSupported3}");
+
+            bool cpuIdEAX7ECX0_ECX20_MAWAUIsSupported4 = cpuHelper.GetEAX7ECX0_ECX20_MAWAUIsSupported4X();
+            Console.WriteLine($"EAX7ECX0_ECX20_MAWAUIsSupported4: {cpuIdEAX7ECX0_ECX20_MAWAUIsSupported4}");
+
+            bool cpuIdEAX7ECX0_ECX21_MAWAUIsSupported5 = cpuHelper.GetEAX7ECX0_ECX21_MAWAUIsSupported5X();
+            Console.WriteLine($"EAX7ECX0_ECX21_MAWAUIsSupported5: {cpuIdEAX7ECX0_ECX21_MAWAUIsSupported5}");
+
+            bool cpuIdEAX7ECX0_ECX22_RDPIDIsSupported = cpuHelper.GetEAX7ECX0_ECX22_RDPIDIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX22_RDPIDIsSupported: {cpuIdEAX7ECX0_ECX22_RDPIDIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX23_KLIsSupported = cpuHelper.GetEAX7ECX0_ECX23_KLIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX23_KLIsSupported: {cpuIdEAX7ECX0_ECX23_KLIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX24_BusLockDetectIsSupported = cpuHelper.GetEAX7ECX0_ECX24_BusLockDetectIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX24_BusLockDetectIsSupported: {cpuIdEAX7ECX0_ECX24_BusLockDetectIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX25_CLDEMOTEIsSupported = cpuHelper.GetEAX7ECX0_ECX25_CLDEMOTEIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX25_CLDEMOTEIsSupported: {cpuIdEAX7ECX0_ECX25_CLDEMOTEIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX26_MPRRIsSupported = cpuHelper.GetEAX7ECX0_ECX26_MPRRIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX26_MPRRIsSupported: {cpuIdEAX7ECX0_ECX26_MPRRIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX27_MOVDIRIIsSupported = cpuHelper.GetEAX7ECX0_ECX27_MOVDIRIIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX27_MOVDIRIIsSupported: {cpuIdEAX7ECX0_ECX27_MOVDIRIIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX28_MOVDIR64BIsSupported = cpuHelper.GetEAX7ECX0_ECX28_MOVDIR64BIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX28_MOVDIR64BIsSupported: {cpuIdEAX7ECX0_ECX28_MOVDIR64BIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX29_ENQCMDIsSupported = cpuHelper.GetEAX7ECX0_ECX29_ENQCMDIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX29_ENQCMDIsSupported: {cpuIdEAX7ECX0_ECX29_ENQCMDIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX30_SGXLcIsSupported = cpuHelper.GetEAX7ECX0_ECX30_SGXLcIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX30_SGXLcIsSupported: {cpuIdEAX7ECX0_ECX30_SGXLcIsSupported}");
+
+            bool cpuIdEAX7ECX0_ECX31_PKSIsSupported = cpuHelper.GetEAX7ECX0_ECX31_PKSIsSupportedX();
+            Console.WriteLine($"EAX7ECX0_ECX31_PKSIsSupported: {cpuIdEAX7ECX0_ECX31_PKSIsSupported}");
+
             #endregion
 
             #region EAX=0x0D: XSAVE Features and State Components
