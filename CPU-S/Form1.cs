@@ -2332,6 +2332,113 @@ namespace CPU_S
 
             #region region EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX
 
+            string cpuIdEAX14ECX0EAX = cpuHelper.GetEAX14ECX0EAXX();
+            Console.WriteLine($"EAX14ECX0EAX: {cpuIdEAX14ECX0EAX}");
+
+            string cpuIdEAX14ECX0EBX = cpuHelper.GetEAX14ECX0EBXX();
+            Console.WriteLine($"EAX14ECX0EBX: {cpuIdEAX14ECX0EBX}");
+
+            string cpuIdEAX14ECX0ECX = cpuHelper.GetEAX14ECX0ECXX();
+            Console.WriteLine($"EAX14ECX0ECX: {cpuIdEAX14ECX0ECX}");
+
+            string cpuIdEAX14ECX0EDX = cpuHelper.GetEAX14ECX0EDXX();
+            Console.WriteLine($"EAX14ECX0EDX: {cpuIdEAX14ECX0EDX}");
+
+            bool cpuIdEAX14ECX0_EBX0_Cr3FilterIsSupported = cpuHelper.GetEAX14ECX0_EBX0_Cr3FilterIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX0_Cr3FilterIsSupported: {cpuIdEAX14ECX0_EBX0_Cr3FilterIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX1_ConfigurablePSBIsSupported = cpuHelper.GetEAX14ECX0_EBX1_ConfigurablePSBIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX1_ConfigurablePSBIsSupported: {cpuIdEAX14ECX0_EBX1_ConfigurablePSBIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX2_IPFilterIsSupported = cpuHelper.GetEAX14ECX0_EBX2_IPFilterIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX2_IPFilterIsSupported: {cpuIdEAX14ECX0_EBX2_IPFilterIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX3_MtcIsSupported = cpuHelper.GetEAX14ECX0_EBX3_MtcIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX3_MtcIsSupported: {cpuIdEAX14ECX0_EBX3_MtcIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX4_PtwriteIsSupported = cpuHelper.GetEAX14ECX0_EBX4_PtwriteIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX4_PtwriteIsSupported: {cpuIdEAX14ECX0_EBX4_PtwriteIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX5_PwrEvtTraceIsSupported = cpuHelper.GetEAX14ECX0_EBX5_PwrEvtTraceIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX5_PwrEvtTraceIsSupported: {cpuIdEAX14ECX0_EBX5_PwrEvtTraceIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX6_PmiPreserveIsSupported = cpuHelper.GetEAX14ECX0_EBX6_PmiPreserveIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX6_PmiPreserveIsSupported: {cpuIdEAX14ECX0_EBX6_PmiPreserveIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX7_EventTraceIsSupported = cpuHelper.GetEAX14ECX0_EBX7_EventTraceIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX7_EventTraceIsSupported: {cpuIdEAX14ECX0_EBX7_EventTraceIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX8_TntDisIsSupported = cpuHelper.GetEAX14ECX0_EBX8_TntDisIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX8_TntDisIsSupported: {cpuIdEAX14ECX0_EBX8_TntDisIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX9_PtttIsSupported = cpuHelper.GetEAX14ECX0_EBX9_PtttIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX9_PtttIsSupported: {cpuIdEAX14ECX0_EBX9_PtttIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX10_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX10_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX10_ReservedIsSupported: {cpuIdEAX14ECX0_EBX10_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX11_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX11_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX11_ReservedIsSupported: {cpuIdEAX14ECX0_EBX11_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX12_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX12_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX12_ReservedIsSupported: {cpuIdEAX14ECX0_EBX12_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX13_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX13_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX13_ReservedIsSupported: {cpuIdEAX14ECX0_EBX13_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX14_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX14_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX14_ReservedIsSupported: {cpuIdEAX14ECX0_EBX14_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX15_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX15_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX15_ReservedIsSupported: {cpuIdEAX14ECX0_EBX15_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX16_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX16_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX16_ReservedIsSupported: {cpuIdEAX14ECX0_EBX16_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX17_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX17_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX17_ReservedIsSupported: {cpuIdEAX14ECX0_EBX17_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX18_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX18_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX18_ReservedIsSupported: {cpuIdEAX14ECX0_EBX18_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX19_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX19_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX19_ReservedIsSupported: {cpuIdEAX14ECX0_EBX19_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX20_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX20_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX20_ReservedIsSupported: {cpuIdEAX14ECX0_EBX20_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX21_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX21_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX21_ReservedIsSupported: {cpuIdEAX14ECX0_EBX21_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX22_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX22_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX22_ReservedIsSupported: {cpuIdEAX14ECX0_EBX22_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX23_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX23_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX23_ReservedIsSupported: {cpuIdEAX14ECX0_EBX23_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX24_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX24_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX24_ReservedIsSupported: {cpuIdEAX14ECX0_EBX24_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX25_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX25_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX25_ReservedIsSupported: {cpuIdEAX14ECX0_EBX25_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX26_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX26_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX26_ReservedIsSupported: {cpuIdEAX14ECX0_EBX26_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX27_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX27_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX27_ReservedIsSupported: {cpuIdEAX14ECX0_EBX27_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX28_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX28_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX28_ReservedIsSupported: {cpuIdEAX14ECX0_EBX28_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX29_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX29_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX29_ReservedIsSupported: {cpuIdEAX14ECX0_EBX29_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX30_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX30_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX30_ReservedIsSupported: {cpuIdEAX14ECX0_EBX30_ReservedIsSupported}");
+
+            bool cpuIdEAX14ECX0_EBX31_ReservedIsSupported = cpuHelper.GetEAX14ECX0_EBX31_ReservedIsSupportedX();
+            Console.WriteLine($"cpuIdEAX14ECX0_EBX31_ReservedIsSupported: {cpuIdEAX14ECX0_EBX31_ReservedIsSupported}");
 
 
             #endregion
