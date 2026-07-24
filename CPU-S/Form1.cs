@@ -2300,7 +2300,17 @@ namespace CPU_S
 
             #region EAX=0x0D: XSAVE Features and State Components
 
+            string cpuIdEAXDEAX = cpuHelper.GetEAXDEAXX();
+            Console.WriteLine($"EAXDEAX: {cpuIdEAXDEAX}");
 
+            string cpuIdEAXDEBX = cpuHelper.GetEAXDEBXX();
+            Console.WriteLine($"EAXDEBX: {cpuIdEAXDEBX}");
+
+            string cpuIdEAXDECX = cpuHelper.GetEAXDECXX();
+            Console.WriteLine($"EAXDECX: {cpuIdEAXDECX}");
+
+            string cpuIdEAXDEDX = cpuHelper.GetEAXDEDXX();
+            Console.WriteLine($"EAXDEDX: {cpuIdEAXDEDX}");
 
             #endregion
 
