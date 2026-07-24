@@ -2316,7 +2316,17 @@ namespace CPU_S
 
             #region EAX=0x12: SGX Capabilities
 
+            string cpuIdEAX12EAX = cpuHelper.GetEAX12EAXX();
+            Console.WriteLine($"EAX12EAX: {cpuIdEAX12EAX}");
 
+            string cpuIdEAX12EBX = cpuHelper.GetEAX12EBXX();
+            Console.WriteLine($"EAX12EBX: {cpuIdEAX12EBX}");
+
+            string cpuIdEAX12ECX = cpuHelper.GetEAX12ECXX();
+            Console.WriteLine($"EAX12ECX: {cpuIdEAX12ECX}");
+
+            string cpuIdEAX12EDX = cpuHelper.GetEAX12EDXX();
+            Console.WriteLine($"EAX12EDX: {cpuIdEAX12EDX}");
 
             #endregion
 
