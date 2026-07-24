@@ -1984,8 +1984,8 @@ namespace CPU_S
             bool cpuIdEAX7ECX1_EBX27_ReservedIsSupported = cpuHelper.GetEAX7ECX1_EBX27_ReservedIsSupportedX();
             Console.WriteLine($"cpuIdEAX7ECX1_EBX27_ReservedIsSupported: {cpuIdEAX7ECX1_EBX27_ReservedIsSupported}");
 
-            bool cpuIdEAX7ECX1_EBX28_ReservedIsSupported = cpuHelper.GetEAX7ECX1_EBX28_ReservedIsSupportedX();
-            Console.WriteLine($"cpuIdEAX7ECX1_EBX28_ReservedIsSupported: {cpuIdEAX7ECX1_EBX28_ReservedIsSupported}");
+            bool cpuIdEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupported = cpuHelper.GetEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupportedX();
+            Console.WriteLine($"cpuIdEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupported: {cpuIdEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupported}");
 
             bool cpuIdEAX7ECX1_EBX29_ReservedIsSupported = cpuHelper.GetEAX7ECX1_EBX29_ReservedIsSupportedX();
             Console.WriteLine($"cpuIdEAX7ECX1_EBX29_ReservedIsSupported: {cpuIdEAX7ECX1_EBX29_ReservedIsSupported}");
@@ -1997,10 +1997,10 @@ namespace CPU_S
             Console.WriteLine($"cpuIdEAX7ECX1_EBX31_Reserved_AVX512_RAO_FPIsSupported: {cpuIdEAX7ECX1_EBX31_Reserved_AVX512_RAO_FPIsSupported}");
 
             bool cpuIdEAX7ECX1_ECX0_RDT_M_­ASYMIsSupported = cpuHelper.GetEAX7ECX1_ECX0_RDT_M_­ASYMIsSupportedX();
-            Console.WriteLine($"cpuIdEAX7ECX1_ECX0_RDT_M_­ASYMIsSupported: {cpuIdEAX7ECX1_ECX0_RDT_M_­ASYMIsSupported}");
+            Console.WriteLine($"cpuIdEAX7ECX1_ECX0_RDT_M_­ASYMIsSupported­ASYMIsSupported: {cpuIdEAX7ECX1_ECX0_RDT_M_­ASYMIsSupported}");
 
             bool cpuIdEAX7ECX1_ECX1_RDT_M_­ASYMIsSupported = cpuHelper.GetEAX7ECX1_ECX1_RDT_M_­ASYMIsSupportedX();
-            Console.WriteLine($"cpuIdEAX7ECX1_ECX1_RDT_M_­ASYMIsSupported: {cpuIdEAX7ECX1_ECX1_RDT_M_­ASYMIsSupported}");
+            Console.WriteLine($"cpuIdEAX7ECX1_ECX1_RDT_M_­ASYMIsSupported­ASYMIsSupported: {cpuIdEAX7ECX1_ECX1_RDT_M_­ASYMIsSupported}");
 
             bool cpuIdEAX7ECX1_ECX2_Reserved_LEGACY_REDUCED_ISAIsSupported = cpuHelper.GetEAX7ECX1_ECX2_Reserved_LEGACY_REDUCED_ISAIsSupportedX();
             Console.WriteLine($"cpuIdEAX7ECX1_ECX2_Reserved_LEGACY_REDUCED_ISAIsSupported: {cpuIdEAX7ECX1_ECX2_Reserved_LEGACY_REDUCED_ISAIsSupported}");

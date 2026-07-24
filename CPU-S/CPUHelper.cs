@@ -9511,22 +9511,22 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX1_EBX28_ReservedIsSupported();
+        private static extern int GetEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupported();
 
-        public bool GetEAX7ECX1_EBX28_ReservedIsSupportedX()
+        public bool GetEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupportedX()
         {
             try
             {
-                return GetEAX7ECX1_EBX28_ReservedIsSupported() != 0;
+                return GetEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved_MPSADBW_512 support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                Console.WriteLine("An error occurred while checking for Reserved_MPSADBW_512 support: " + ex.Message);
                 return false;
             }
         }
