@@ -2533,6 +2533,10 @@ namespace CPU_S
             bool cpuIdEAX14ECX0_ECX30_ReservedIsSupported = cpuHelper.GetEAX14ECX0_ECX30_ReservedIsSupportedX();
             Console.WriteLine($"cpuIdEAX14ECX0_ECX30_ReservedIsSupported: {cpuIdEAX14ECX0_ECX30_ReservedIsSupported}");
 
+            #endregion
+
+            #region EAX=0x14, ECX=0x1: Processor Trace packet generation information in EAX, EBX and ECX
+
             string cpuIdEAX14ECX1EAX = cpuHelper.GetEAX14ECX1EAXX();
             Console.WriteLine($"EAX14ECX1EAX: {cpuIdEAX14ECX1EAX}");
 
@@ -2592,12 +2596,6 @@ namespace CPU_S
 
             string cpuIdEAX14ECX1ECX16_31_Reserved = cpuHelper.GetEAX14ECX1ECX16_31_ReservedX();
             Console.WriteLine($"EAX14ECX1ECX16_31_Reserved: {cpuIdEAX14ECX1ECX16_31_Reserved}");
-
-            #endregion
-
-            #region EAX=0x14, ECX=0x1: Processor Trace packet generation information in EAX, EBX and ECX
-
-
 
             #endregion
 
