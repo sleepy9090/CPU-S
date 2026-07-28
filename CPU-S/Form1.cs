@@ -2330,7 +2330,7 @@ namespace CPU_S
 
             #endregion
 
-            #region region EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX
+            #region EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX
 
             string cpuIdEAX14ECX0EAX = cpuHelper.GetEAX14ECX0EAXX();
             Console.WriteLine($"EAX14ECX0EAX: {cpuIdEAX14ECX0EAX}");
@@ -2533,7 +2533,65 @@ namespace CPU_S
             bool cpuIdEAX14ECX0_ECX30_ReservedIsSupported = cpuHelper.GetEAX14ECX0_ECX30_ReservedIsSupportedX();
             Console.WriteLine($"cpuIdEAX14ECX0_ECX30_ReservedIsSupported: {cpuIdEAX14ECX0_ECX30_ReservedIsSupported}");
 
+            string cpuIdEAX14ECX1EAX = cpuHelper.GetEAX14ECX1EAXX();
+            Console.WriteLine($"EAX14ECX1EAX: {cpuIdEAX14ECX1EAX}");
 
+            string cpuIdEAX14ECX1EBX = cpuHelper.GetEAX14ECX1EBXX();
+            Console.WriteLine($"EAX14ECX1EBX: {cpuIdEAX14ECX1EBX}");
+
+            string cpuIdEAX14ECX1ECX = cpuHelper.GetEAX14ECX1ECXX();
+            Console.WriteLine($"EAX14ECX1ECX: {cpuIdEAX14ECX1ECX}");
+
+            string cpuIdEAX14ECX1EDX = cpuHelper.GetEAX14ECX1EDXX();
+            Console.WriteLine($"EAX14ECX1EDX: {cpuIdEAX14ECX1EDX}");
+
+            string cpuIdEAX14ECX1EAX0_2_Rangecnt = cpuHelper.GetEAX14ECX1EAX0_2_RangecntX();
+            Console.WriteLine($"EAX14ECX1EAX0_2_Rangecnt: {cpuIdEAX14ECX1EAX0_2_Rangecnt}");
+
+            string cpuIdEAX14ECX1EAX3_5_Reserved = cpuHelper.GetEAX14ECX1EAX3_5_ReservedX();
+            Console.WriteLine($"EAX14ECX1EAX3_5_Reserved: {cpuIdEAX14ECX1EAX3_5_Reserved}");
+
+            string cpuIdEAX14ECX1EAX8_10_TriggerConfigCount = cpuHelper.GetEAX14ECX1EAX8_10_TriggerConfigCountX();
+            Console.WriteLine($"EAX14ECX1EAX8_10_TriggerConfigCount: {cpuIdEAX14ECX1EAX8_10_TriggerConfigCount}");
+
+            string cpuIdEAX14ECX1EAX11_14_Reserved = cpuHelper.GetEAX14ECX1EAX11_14_ReservedX();
+            Console.WriteLine($"EAX14ECX1EAX11_14_Reserved: {cpuIdEAX14ECX1EAX11_14_Reserved}");
+
+            string cpuIdEAX14ECX1EAX15_Reserved = cpuHelper.GetEAX14ECX1EAX15_ReservedX();
+            Console.WriteLine($"EAX14ECX1EAX15_Reserved: {cpuIdEAX14ECX1EAX15_Reserved}");
+
+            string cpuIdEAX14ECX1EAX16_31_MtcRate = cpuHelper.GetEAX14ECX1EAX16_31_MtcRateX();
+            Console.WriteLine($"EAX14ECX1EAX16_31_MtcRate: {cpuIdEAX14ECX1EAX16_31_MtcRate}");
+
+            string cpuIdEAX14ECX1EBX0_15_CycThresholds = cpuHelper.GetEAX14ECX1EBX0_15_CycThresholdsX();
+            Console.WriteLine($"EAX14ECX1EBX0_15_CycThresholds: {cpuIdEAX14ECX1EBX0_15_CycThresholds}");
+
+            string cpuIdEAX14ECX1EBX16_31_PsbRate = cpuHelper.GetEAX14ECX1EBX16_31_PsbRateX();
+            Console.WriteLine($"EAX14ECX1EBX16_31_PsbRate: {cpuIdEAX14ECX1EBX16_31_PsbRate}");
+
+            string cpuIdEAX14ECX1ECX0_Icnt = cpuHelper.GetEAX14ECX1ECX0_IcntX();
+            Console.WriteLine($"EAX14ECX1ECX0_Icnt: {cpuIdEAX14ECX1ECX0_Icnt}");
+
+            string cpuIdEAX14ECX1ECX1_TriggerPause = cpuHelper.GetEAX14ECX1ECX1_TriggerPauseX();
+            Console.WriteLine($"EAX14ECX1ECX1_TriggerPause: {cpuIdEAX14ECX1ECX1_TriggerPause}");
+
+            string cpuIdEAX14ECX1ECX2_Reserved = cpuHelper.GetEAX14ECX1ECX2_ReservedX();
+            Console.WriteLine($"EAX14ECX1ECX2_Reserved: {cpuIdEAX14ECX1ECX2_Reserved}");
+
+            string cpuIdEAX14ECX1ECX3_7_Reserved = cpuHelper.GetEAX14ECX1ECX3_7_ReservedX();
+            Console.WriteLine($"EAX14ECX1ECX3_7_Reserved: {cpuIdEAX14ECX1ECX3_7_Reserved}");
+
+            string cpuIdEAX14ECX1ECX8_10_Reserved = cpuHelper.GetEAX14ECX1ECX8_10_ReservedX();
+            Console.WriteLine($"EAX14ECX1ECX8_10_Reserved: {cpuIdEAX14ECX1ECX8_10_Reserved}");
+
+            string cpuIdEAX14ECX1ECX11_14_Reserved = cpuHelper.GetEAX14ECX1ECX11_14_ReservedX();
+            Console.WriteLine($"EAX14ECX1ECX11_14_Reserved: {cpuIdEAX14ECX1ECX11_14_Reserved}");
+
+            string cpuIdEAX14ECX1ECX15_TriggerDrMatch = cpuHelper.GetEAX14ECX1ECX15_TriggerDrMatchX();
+            Console.WriteLine($"EAX14ECX1ECX15_TriggerDrMatch: {cpuIdEAX14ECX1ECX15_TriggerDrMatch}");
+
+            string cpuIdEAX14ECX1ECX16_31_Reserved = cpuHelper.GetEAX14ECX1ECX16_31_ReservedX();
+            Console.WriteLine($"EAX14ECX1ECX16_31_Reserved: {cpuIdEAX14ECX1ECX16_31_Reserved}");
 
             #endregion
 

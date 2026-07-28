@@ -13354,7 +13354,485 @@ namespace CPU_S
 
         #region EAX=0x14, ECX=0x1: Processor Trace packet generation information in EAX, EBX and ECX
 
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX14ECX1EAX();
 
+        public string GetEAX14ECX1EAXX()
+        {
+            try
+            {
+                IntPtr eAX14ECX1EAXPtr = GetEAX14ECX1EAX();
+                string eAX14ECX1EAXString = Marshal.PtrToStringAnsi(eAX14ECX1EAXPtr);
+
+                return eAX14ECX1EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX14ECX1EBX();
+
+        public string GetEAX14ECX1EBXX()
+        {
+            try
+            {
+                IntPtr eAX14ECX1EBXPtr = GetEAX14ECX1EBX();
+                string eAX14ECX1EBXString = Marshal.PtrToStringAnsi(eAX14ECX1EBXPtr);
+
+                return eAX14ECX1EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX14ECX1ECX();
+
+        public string GetEAX14ECX1ECXX()
+        {
+            try
+            {
+                IntPtr eAX14ECX1ECXPtr = GetEAX14ECX1ECX();
+                string eAX14ECX1ECXString = Marshal.PtrToStringAnsi(eAX14ECX1ECXPtr);
+
+                return eAX14ECX1ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX14ECX1EDX();
+
+        public string GetEAX14ECX1EDXX()
+        {
+            try
+            {
+                IntPtr eAX14ECX1EDXPtr = GetEAX14ECX1EDX();
+                string eAX14ECX1EDXString = Marshal.PtrToStringAnsi(eAX14ECX1EDXPtr);
+
+                return eAX14ECX1EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EAX0_2_Rangecnt();
+
+        public string GetEAX14ECX1EAX0_2_RangecntX()
+        {
+            try
+            {
+                int eAX14ECX1EAX0_2_RangecntValue = GetEAX14ECX1EAX0_2_Rangecnt();
+                string eAX14ECX1EAX0_2_RangecntString = eAX14ECX1EAX0_2_RangecntValue.ToString();
+
+                return eAX14ECX1EAX0_2_RangecntString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EAX3_5_Reserved();
+
+        public string GetEAX14ECX1EAX3_5_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1EAX3_5_ReservedValue = GetEAX14ECX1EAX3_5_Reserved();
+                string eAX14ECX1EAX3_5_ReservedString = eAX14ECX1EAX3_5_ReservedValue.ToString();
+
+                return eAX14ECX1EAX3_5_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EAX8_10_TriggerConfigCount();
+
+        public string GetEAX14ECX1EAX8_10_TriggerConfigCountX()
+        {
+            try
+            {
+                int eAX14ECX1EAX8_10_TriggerConfigCountValue = GetEAX14ECX1EAX8_10_TriggerConfigCount();
+                string eAX14ECX1EAX8_10_TriggerConfigCountString = eAX14ECX1EAX8_10_TriggerConfigCountValue.ToString();
+
+                return eAX14ECX1EAX8_10_TriggerConfigCountString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EAX11_14_Reserved();
+
+        public string GetEAX14ECX1EAX11_14_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1EAX11_14_ReservedValue = GetEAX14ECX1EAX11_14_Reserved();
+                string eAX14ECX1EAX11_14_ReservedString = eAX14ECX1EAX11_14_ReservedValue.ToString();
+
+                return eAX14ECX1EAX11_14_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EAX15_Reserved();
+
+        public string GetEAX14ECX1EAX15_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1EAX15_ReservedValue = GetEAX14ECX1EAX15_Reserved();
+                string eAX14ECX1EAX15_ReservedString = eAX14ECX1EAX15_ReservedValue.ToString();
+
+                return eAX14ECX1EAX15_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EAX16_31_MtcRate();
+
+        public string GetEAX14ECX1EAX16_31_MtcRateX()
+        {
+            try
+            {
+                int eAX14ECX1EAX16_31_MtcRateValue = GetEAX14ECX1EAX16_31_MtcRate();
+                string eAX14ECX1EAX16_31_MtcRateString = eAX14ECX1EAX16_31_MtcRateValue.ToString();
+
+                return eAX14ECX1EAX16_31_MtcRateString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EBX0_15_CycThresholds();
+
+        public string GetEAX14ECX1EBX0_15_CycThresholdsX()
+        {
+            try
+            {
+                int eAX14ECX1EBX0_15_CycThresholdsValue = GetEAX14ECX1EBX0_15_CycThresholds();
+                string eAX14ECX1EBX0_15_CycThresholdsString = eAX14ECX1EBX0_15_CycThresholdsValue.ToString();
+
+                return eAX14ECX1EBX0_15_CycThresholdsString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1EBX16_31_PsbRate();
+
+        public string GetEAX14ECX1EBX16_31_PsbRateX()
+        {
+            try
+            {
+                int eAX14ECX1EBX16_31_PsbRateValue = GetEAX14ECX1EBX16_31_PsbRate();
+                string eAX14ECX1EBX16_31_PsbRateString = eAX14ECX1EBX16_31_PsbRateValue.ToString();
+
+                return eAX14ECX1EBX16_31_PsbRateString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX0_Icnt();
+
+        public string GetEAX14ECX1ECX0_IcntX()
+        {
+            try
+            {
+                int eAX14ECX1ECX0_IcntValue = GetEAX14ECX1ECX0_Icnt();
+                string eAX14ECX1ECX0_IcntString = eAX14ECX1ECX0_IcntValue.ToString();
+
+                return eAX14ECX1ECX0_IcntString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX1_TriggerPause();
+
+        public string GetEAX14ECX1ECX1_TriggerPauseX()
+        {
+            try
+            {
+                int eAX14ECX1ECX1_TriggerPauseValue = GetEAX14ECX1ECX1_TriggerPause();
+                string eAX14ECX1ECX1_TriggerPauseString = eAX14ECX1ECX1_TriggerPauseValue.ToString();
+
+                return eAX14ECX1ECX1_TriggerPauseString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX2_Reserved();
+
+        public string GetEAX14ECX1ECX2_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1ECX2_ReservedValue = GetEAX14ECX1ECX2_Reserved();
+                string eAX14ECX1ECX2_ReservedString = eAX14ECX1ECX2_ReservedValue.ToString();
+
+                return eAX14ECX1ECX2_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX3_7_Reserved();
+
+        public string GetEAX14ECX1ECX3_7_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1ECX3_7_ReservedValue = GetEAX14ECX1ECX3_7_Reserved();
+                string eAX14ECX1ECX3_7_ReservedString = eAX14ECX1ECX3_7_ReservedValue.ToString();
+
+                return eAX14ECX1ECX3_7_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX8_10_Reserved();
+
+        public string GetEAX14ECX1ECX8_10_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1ECX8_10_ReservedValue = GetEAX14ECX1ECX8_10_Reserved();
+                string eAX14ECX1ECX8_10_ReservedValueString = eAX14ECX1ECX8_10_ReservedValue.ToString();
+
+                return eAX14ECX1ECX8_10_ReservedValueString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX11_14_Reserved();
+
+        public string GetEAX14ECX1ECX11_14_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1ECX11_14_ReservedValue = GetEAX14ECX1ECX11_14_Reserved();
+                string eAX14ECX1ECX11_14_ReservedValueString = eAX14ECX1ECX11_14_ReservedValue.ToString();
+
+                return eAX14ECX1ECX11_14_ReservedValueString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX15_TriggerDrMatch();
+
+        public string GetEAX14ECX1ECX15_TriggerDrMatchX()
+        {
+            try
+            {
+                int eAX14ECX1ECX15_TriggerDrMatchValue = GetEAX14ECX1ECX15_TriggerDrMatch();
+                string eAX14ECX1ECX15_TriggerDrMatchValueString = eAX14ECX1ECX15_TriggerDrMatchValue.ToString();
+
+                return eAX14ECX1ECX15_TriggerDrMatchValueString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX14ECX1ECX16_31_Reserved();
+
+        public string GetEAX14ECX1ECX16_31_ReservedX()
+        {
+            try
+            {
+                int eAX14ECX1ECX16_31_ReservedValue = GetEAX14ECX1ECX16_31_Reserved();
+                string eAX14ECX1ECX16_31_ReservedValueString = eAX14ECX1ECX16_31_ReservedValue.ToString();
+
+                return eAX14ECX1ECX16_31_ReservedValueString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
 
         #endregion
 
