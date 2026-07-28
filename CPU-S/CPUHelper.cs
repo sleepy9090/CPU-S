@@ -13838,7 +13838,197 @@ namespace CPU_S
 
         #region EAX=0x15: TSC and Core Crystal frequency information
 
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX15EAX();
 
+        public string GetEAX15EAXX()
+        {
+            try
+            {
+                IntPtr eAX15EAXPtr = GetEAX15EAX();
+                string eAX15EAXString = Marshal.PtrToStringAnsi(eAX15EAXPtr);
+
+                return eAX15EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX15EBX();
+
+        public string GetEAX15EBXX()
+        {
+            try
+            {
+                IntPtr eAX15EBXPtr = GetEAX15EBX();
+                string eAX15EBXString = Marshal.PtrToStringAnsi(eAX15EBXPtr);
+
+                return eAX15EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX15ECX();
+
+        public string GetEAX15ECXX()
+        {
+            try
+            {
+                IntPtr eAX15ECXPtr = GetEAX15ECX();
+                string eAX15ECXString = Marshal.PtrToStringAnsi(eAX15ECXPtr);
+
+                return eAX15ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX15EDX();
+
+        public string GetEAX15EDXX()
+        {
+            try
+            {
+                IntPtr eAX15EDXPtr = GetEAX15EDX();
+                string eAX15EDXString = Marshal.PtrToStringAnsi(eAX15EDXPtr);
+
+                return eAX15EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Denominator();
+
+        public string GetEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_DenominatorX()
+        {
+            try
+            {
+                int eAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_DenominatorValue = GetEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Denominator();
+                string eAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_DenominatorString = eAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_DenominatorValue.ToString();
+
+                return eAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_DenominatorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Numerator();
+
+        public string GetEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_NumeratorX()
+        {
+            try
+            {
+                int eAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_NumeratorValue = GetEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Numerator();
+                string eAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_NumeratorString = eAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_NumeratorValue.ToString();
+
+                return eAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_NumeratorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX15ECX_CoreCrystalClockFrequencyInHz();
+
+        public string GetEAX15ECX_CoreCrystalClockFrequencyInHzX()
+        {
+            try
+            {
+                int eAX15ECX_CoreCrystalClockFrequencyInHzValue = GetEAX15ECX_CoreCrystalClockFrequencyInHz();
+                string eAX15ECX_CoreCrystalClockFrequencyInHzString = eAX15ECX_CoreCrystalClockFrequencyInHzValue.ToString();
+
+                return eAX15ECX_CoreCrystalClockFrequencyInHzString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX15EDX_TSCFrequencyInUnitsOfHz();
+
+        public string GetEAX15EDX_TSCFrequencyInUnitsOfHzX()
+        {
+            try
+            {
+                int eAX15EDX_TSCFrequencyInUnitsOfHzValue = GetEAX15EDX_TSCFrequencyInUnitsOfHz();
+                string eAX15EDX_TSCFrequencyInUnitsOfHzString = eAX15EDX_TSCFrequencyInUnitsOfHzValue.ToString();
+
+                return eAX15EDX_TSCFrequencyInUnitsOfHzString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
 
         #endregion
 

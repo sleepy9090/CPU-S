@@ -2601,7 +2601,29 @@ namespace CPU_S
 
             #region EAX=0x15: TSC and Core Crystal frequency information
 
+            string cpuIdEAX15EAX = cpuHelper.GetEAX15EAXX();
+            Console.WriteLine($"EAX15EAX: {cpuIdEAX15EAX}");
 
+            string cpuIdEAX15EBX = cpuHelper.GetEAX15EBXX();
+            Console.WriteLine($"EAX15EBX: {cpuIdEAX15EBX}");
+
+            string cpuIdEAX15ECX = cpuHelper.GetEAX15ECXX();
+            Console.WriteLine($"EAX15ECX: {cpuIdEAX15ECX}");
+
+            string cpuIdEAX15EDX = cpuHelper.GetEAX15EDXX();
+            Console.WriteLine($"EAX15EDX: {cpuIdEAX15EDX}");
+
+            string cpuIdEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Denominator = cpuHelper.GetEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_DenominatorX();
+            Console.WriteLine($"EAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Denominator: {cpuIdEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Denominator}");
+
+            string cpuIdEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Numerator = cpuHelper.GetEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_NumeratorX();
+            Console.WriteLine($"EAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Numerator: {cpuIdEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Numerator}");
+
+            string cpuIdEAX15ECX_CoreCrystalClockFrequencyInHz = cpuHelper.GetEAX15ECX_CoreCrystalClockFrequencyInHzX();
+            Console.WriteLine($"EAX15ECX_CoreCrystalClockFrequencyInHz: {cpuIdEAX15ECX_CoreCrystalClockFrequencyInHz}");
+
+            string cpuIdEAX15EDX_TSCFrequencyInUnitsOfHz = cpuHelper.GetEAX15EDX_TSCFrequencyInUnitsOfHzX();
+            Console.WriteLine($"EAX15EDX_TSCFrequencyInUnitsOfHz: {cpuIdEAX15EDX_TSCFrequencyInUnitsOfHz}");
 
             #endregion
 
