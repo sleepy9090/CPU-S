@@ -1551,7 +1551,7 @@ namespace CPU_S
         }
         */
 
-        #region EAX = 0x0: Highest Function Parameter and Manufacturer ID
+        #region EAX=0x0: Highest Function Parameter and Manufacturer ID
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX0EAX();

@@ -2823,5 +2823,11 @@ namespace CPU_S
             timer.Dispose();
             Dispose();
         }
+
+        private void eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0 eax0Form = new EAX0();
+            eax0Form.Show();
+        }
     }
 }

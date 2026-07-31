@@ -73,6 +73,12 @@
     <Compile Include="CPU.cs" />
     <Compile Include="CPUConstants.cs" />
     <Compile Include="CPUHelper.cs" />
+    <Compile Include="EAX0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX0.Designer.cs">
+      <DependentUpon>EAX0.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EAX0.resx">
+      <DependentUpon>EAX0.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

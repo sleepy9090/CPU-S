@@ -311,6 +311,13 @@
             this.textBoxItanium = new System.Windows.Forms.TextBox();
             this.labelI386 = new System.Windows.Forms.Label();
             this.textBoxI386 = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -328,6 +335,7 @@
             this.groupBoxOtherX86DiscontinuedInstructions.SuspendLayout();
             this.groupBoxAMDX86DiscontinuedInstructions.SuspendLayout();
             this.groupBoxIntelX86DiscontinuedInstructions.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlCPUS
@@ -339,7 +347,7 @@
             this.tabControlCPUS.Controls.Add(this.tabPageX86TransactionalMemoryInstructions);
             this.tabControlCPUS.Controls.Add(this.tabPageX86BitManipulation);
             this.tabControlCPUS.Controls.Add(this.tabPageX86Instructions);
-            this.tabControlCPUS.Location = new System.Drawing.Point(12, 4);
+            this.tabControlCPUS.Location = new System.Drawing.Point(12, 27);
             this.tabControlCPUS.Name = "tabControlCPUS";
             this.tabControlCPUS.SelectedIndex = 0;
             this.tabControlCPUS.Size = new System.Drawing.Size(984, 786);
@@ -3018,12 +3026,68 @@
             this.textBoxI386.Size = new System.Drawing.Size(100, 20);
             this.textBoxI386.TabIndex = 27;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.viewToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1264, 24);
+            this.menuStrip1.TabIndex = 120;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "E&dit";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "&View";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            // 
+            // eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem
+            // 
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Name = "eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem";
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Text = "EAX=0x0: Highest Function Parameter and Manufacturer ID";
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Click += new System.EventHandler(this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem_Click);
+            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 796);
+            this.ClientSize = new System.Drawing.Size(1264, 985);
             this.Controls.Add(this.tabControlCPUS);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormCPUS";
@@ -3055,7 +3119,10 @@
             this.groupBoxAMDX86DiscontinuedInstructions.PerformLayout();
             this.groupBoxIntelX86DiscontinuedInstructions.ResumeLayout(false);
             this.groupBoxIntelX86DiscontinuedInstructions.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -3344,6 +3411,13 @@
         private System.Windows.Forms.TextBox textBoxAVX512BMM;
         private System.Windows.Forms.Label labelAVX512VP2INTERSECT;
         private System.Windows.Forms.TextBox textBoxAVX512VP2INTERSECT;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
     }
 }
 
