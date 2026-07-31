@@ -24,6 +24,24 @@ namespace CPU_S
 
         }
 
+        public string BinaryStringToHexString(string binaryString)
+        {
+            StringBuilder hexString = new StringBuilder();
+            for (int i = 0; i < binaryString.Length; i += 4)
+            {
+                string nibble = binaryString.Substring(i, Math.Min(4, binaryString.Length - i));
+                int decimalValue = Convert.ToInt32(nibble, 2);
+                hexString.Append(decimalValue.ToString("X"));
+            }
+            return hexString.ToString();
+        }
+
+        public string BinaryStringToDecimalString(string binaryString)
+        {
+            int decimalValue = Convert.ToInt32(binaryString, 2);
+            return decimalValue.ToString();
+        }
+
         public string GetArchitecture(ushort value)
         {
             string architecture;
