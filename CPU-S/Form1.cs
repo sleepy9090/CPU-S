@@ -2629,7 +2629,35 @@ namespace CPU_S
 
             #region EAX=0x16: Processor and Bus specification frequencies
 
+            string cpuIdEAX16EAX = cpuHelper.GetEAX16EAXX();
+            Console.WriteLine($"EAX16EAX: {cpuIdEAX16EAX}");
 
+            string cpuIdEAX16EBX = cpuHelper.GetEAX16EBXX();
+            Console.WriteLine($"EAX16EBX: {cpuIdEAX16EBX}");
+
+            string cpuIdEAX16ECX = cpuHelper.GetEAX16ECXX();
+            Console.WriteLine($"EAX16ECX: {cpuIdEAX16ECX}");
+
+            string cpuIdEAX16EDX = cpuHelper.GetEAX16EDXX();
+            Console.WriteLine($"EAX16EDX: {cpuIdEAX16EDX}");
+
+            string cpuIdEAX16EAX0_15_ProcessorBaseFrequencyInMHz = cpuHelper.GetEAX16EAX0_15_ProcessorBaseFrequencyInMHzX();
+            Console.WriteLine($"EAX16EAX0_15_ProcessorBaseFrequencyInMHz: {cpuIdEAX16EAX0_15_ProcessorBaseFrequencyInMHz}");
+
+            string GetEAX16EBX0_15_ProcessorMaxFrequencyInMHz = cpuHelper.GetEAX16EBX0_15_ProcessorMaxFrequencyInMHzX();
+            Console.WriteLine($"GetEAX16EBX0_15_ProcessorMaxFrequencyInMHz: {GetEAX16EBX0_15_ProcessorMaxFrequencyInMHz}");
+
+            string GetEAX16EBX16_31_Reserved = cpuHelper.GetEAX16EBX16_31_ReservedX();
+            Console.WriteLine($"GetEAX16EBX16_31_Reserved: {GetEAX16EBX16_31_Reserved}");
+
+            string GetEAX16ECX0_15_BusReferenceFrequencyInMHz = cpuHelper.GetEAX16ECX0_15_BusReferenceFrequencyInMHzX();
+            Console.WriteLine($"GetEAX16ECX0_15_BusReferenceFrequencyInMHz: {GetEAX16ECX0_15_BusReferenceFrequencyInMHz}");
+
+            string GetEAX16ECX16_31_Reserved = cpuHelper.GetEAX16ECX16_31_ReservedX();
+            Console.WriteLine($"GetEAX16ECX16_31_Reserved: {GetEAX16ECX16_31_Reserved}");
+
+            string GetEAX16EDX0_31_Reserved = cpuHelper.GetEAX16EDX0_31_ReservedX();
+            Console.WriteLine($"GetEAX16EDX0_31_Reserved: {GetEAX16EDX0_31_Reserved}");
 
             #endregion
 
