@@ -2775,7 +2775,17 @@ namespace CPU_S
 
             #region EAX=0x24, ECX=0x1: Discrete AVX10 Features
 
+            string cpuIdEAX24ECX1EAX = cpuHelper.GetEAX24ECX1EAXX();
+            Console.WriteLine($"EAX24ECX1EAX: {cpuIdEAX24ECX1EAX}");
 
+            string cpuIdEAX24ECX1EBX = cpuHelper.GetEAX24ECX1EBXX();
+            Console.WriteLine($"EAX24ECX1EBX: {cpuIdEAX24ECX1EBX}");
+
+            string cpuIdEAX24ECX1ECX = cpuHelper.GetEAX24ECX1ECXX();
+            Console.WriteLine($"EAX24ECX1ECX: {cpuIdEAX24ECX1ECX}");
+
+            string cpuIdEAX24ECX1EDX = cpuHelper.GetEAX24ECX1EDXX();
+            Console.WriteLine($"EAX24ECX1EDX: {cpuIdEAX24ECX1EDX}");
 
             #endregion
 
