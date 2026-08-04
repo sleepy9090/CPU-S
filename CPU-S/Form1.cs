@@ -2877,7 +2877,44 @@ namespace CPU_S
 
             #region EAX=0x80000002,0x80000003,0x80000004: Processor Brand String
 
+            string cpuIdEAX80000002EAX = cpuHelper.GetEAX80000002EAXX();
+            Console.WriteLine($"EAX80000002EAX: {cpuIdEAX80000002EAX}");
 
+            string cpuIdEAX80000002EBX = cpuHelper.GetEAX80000002EBXX();
+            Console.WriteLine($"EAX80000002EBX: {cpuIdEAX80000002EBX}");
+
+            string cpuIdEAX80000002ECX = cpuHelper.GetEAX80000002ECXX();
+            Console.WriteLine($"EAX80000002ECX: {cpuIdEAX80000002ECX}");
+
+            string cpuIdEAX80000002EDX = cpuHelper.GetEAX80000002EDXX();
+            Console.WriteLine($"EAX80000002EDX: {cpuIdEAX80000002EDX}");
+
+            string cpuIdEAX80000003EAX = cpuHelper.GetEAX80000003EAXX();
+            Console.WriteLine($"EAX80000003EAX: {cpuIdEAX80000003EAX}");
+
+            string cpuIdEAX80000003EBX = cpuHelper.GetEAX80000003EBXX();
+            Console.WriteLine($"EAX80000003EBX: {cpuIdEAX80000003EBX}");
+
+            string cpuIdEAX80000003ECX = cpuHelper.GetEAX80000003ECXX();
+            Console.WriteLine($"EAX80000003ECX: {cpuIdEAX80000003ECX}");
+
+            string cpuIdEAX80000003EDX = cpuHelper.GetEAX80000003EDXX();
+            Console.WriteLine($"EAX80000003EDX: {cpuIdEAX80000003EDX}");
+
+            string cpuIdEAX80000004EAX = cpuHelper.GetEAX80000004EAXX();
+            Console.WriteLine($"EAX80000004EAX: {cpuIdEAX80000004EAX}");
+
+            string cpuIdEAX80000004EBX = cpuHelper.GetEAX80000004EBXX();
+            Console.WriteLine($"EAX80000004EBX: {cpuIdEAX80000004EBX}");
+
+            string cpuIdEAX80000004ECX = cpuHelper.GetEAX80000004ECXX();
+            Console.WriteLine($"EAX80000004ECX: {cpuIdEAX80000004ECX}");
+
+            string cpuIdEAX80000004EDX = cpuHelper.GetEAX80000004EDXX();
+            Console.WriteLine($"EAX80000004EDX: {cpuIdEAX80000004EDX}");
+
+            string cpuIdEAX80000002_3_4EAXEBXECXEDXProcessorBrandString = cpuHelper.GetEAX80000002_3_4EAXEBXECXEDXProcessorBrandStringX();
+            Console.WriteLine($"EAX80000002_3_4EAXEBXECXEDXProcessorBrandString: {cpuIdEAX80000002_3_4EAXEBXECXEDXProcessorBrandString}");
 
             #endregion
 
