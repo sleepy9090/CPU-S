@@ -2759,7 +2759,17 @@ namespace CPU_S
 
             #region EAX=0x24, ECX=0x0: AVX10 Converged Vector ISA
 
+            string cpuIdEAX24ECX0EAX = cpuHelper.GetEAX24ECX0EAXX();
+            Console.WriteLine($"EAX24ECX0EAX: {cpuIdEAX24ECX0EAX}");
 
+            string cpuIdEAX24ECX0EBX = cpuHelper.GetEAX24ECX0EBXX();
+            Console.WriteLine($"EAX24ECX0EBX: {cpuIdEAX24ECX0EBX}");
+
+            string cpuIdEAX24ECX0ECX = cpuHelper.GetEAX24ECX0ECXX();
+            Console.WriteLine($"EAX24ECX0ECX: {cpuIdEAX24ECX0ECX}");
+
+            string cpuIdEAX24ECX0EDX = cpuHelper.GetEAX24ECX0EDXX();
+            Console.WriteLine($"EAX24ECX0EDX: {cpuIdEAX24ECX0EDX}");
 
             #endregion
 
