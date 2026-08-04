@@ -2679,7 +2679,17 @@ namespace CPU_S
 
             #region EAX=0x18: TLB Hierarchy and Topology
 
+            string cpuIdEAX18EAX = cpuHelper.GetEAX18EAXX();
+            Console.WriteLine($"EAX18EAX: {cpuIdEAX18EAX}");
 
+            string cpuIdEAX18EBX = cpuHelper.GetEAX18EBXX();
+            Console.WriteLine($"EAX18EBX: {cpuIdEAX18EBX}");
+
+            string cpuIdEAX18ECX = cpuHelper.GetEAX18ECXX();
+            Console.WriteLine($"EAX18ECX: {cpuIdEAX18ECX}");
+
+            string cpuIdEAX18EDX = cpuHelper.GetEAX18EDXX();
+            Console.WriteLine($"EAX18EDX: {cpuIdEAX18EDX}");
 
             #endregion
 
