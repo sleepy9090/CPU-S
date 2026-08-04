@@ -2791,13 +2791,36 @@ namespace CPU_S
 
             #region EAX=0x20000000: Highest Xeon Phi Function Implemented
 
+            string cpuIdEAX20000000EAX = cpuHelper.GetEAX20000000EAXX();
+            Console.WriteLine($"EAX20000000EAX: {cpuIdEAX20000000EAX}");
 
+            string cpuIdEAX20000000EBX = cpuHelper.GetEAX20000000EBXX();
+            Console.WriteLine($"EAX20000000EBX: {cpuIdEAX20000000EBX}");
+
+            string cpuIdEAX20000000ECX = cpuHelper.GetEAX20000000ECXX();
+            Console.WriteLine($"EAX20000000ECX: {cpuIdEAX20000000ECX}");
+
+            string cpuIdEAX20000000EDX = cpuHelper.GetEAX20000000EDXX();
+            Console.WriteLine($"EAX20000000EDX: {cpuIdEAX20000000EDX}");
+
+            string cpuIdEAX20000000EAX_HighestXeonPhiFunctionImplemented = cpuHelper.GetEAX20000000EAX_HighestXeonPhiFunctionImplementedX();
+            Console.WriteLine($"EAX20000000EAX_HighestXeonPhiFunctionImplemented: {cpuIdEAX20000000EAX_HighestXeonPhiFunctionImplemented}");
 
             #endregion
 
             #region EAX=0x20000001: Xeon Phi Feature Bits
 
+            string cpuIdEAX20000001EAX = cpuHelper.GetEAX20000001EAXX();
+            Console.WriteLine($"EAX20000001EAX: {cpuIdEAX20000001EAX}");
 
+            string cpuIdEAX20000001EBX = cpuHelper.GetEAX20000001EBXX();
+            Console.WriteLine($"EAX20000001EBX: {cpuIdEAX20000001EBX}");
+
+            string cpuIdEAX20000001ECX = cpuHelper.GetEAX20000001ECXX();
+            Console.WriteLine($"EAX20000001ECX: {cpuIdEAX20000001ECX}");
+
+            string cpuIdEAX20000001EDX = cpuHelper.GetEAX20000001EDXX();
+            Console.WriteLine($"EAX20000001EDX: {cpuIdEAX20000001EDX}");
 
             #endregion
 
