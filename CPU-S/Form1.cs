@@ -2727,7 +2727,17 @@ namespace CPU_S
 
             #region EAX=0x1E: Intel AMX Tile Multiplier (TMUL) Information
 
+            string cpuIdEAX1EEAX = cpuHelper.GetEAX1EEAXX();
+            Console.WriteLine($"EAX1EEAX: {cpuIdEAX1EEAX}");
 
+            string cpuIdEAX1EEBX = cpuHelper.GetEAX1EEBXX();
+            Console.WriteLine($"EAX1EEBX: {cpuIdEAX1EEBX}");
+
+            string cpuIdEAX1EECX = cpuHelper.GetEAX1EECXX();
+            Console.WriteLine($"EAX1EECX: {cpuIdEAX1EECX}");
+
+            string cpuIdEAX1EEDX = cpuHelper.GetEAX1EEDXX();
+            Console.WriteLine($"EAX1EEDX: {cpuIdEAX1EEDX}");
 
             #endregion
 
