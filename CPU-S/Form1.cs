@@ -2743,7 +2743,17 @@ namespace CPU_S
 
             #region EAX=0x21: Reserved for TDX enumeration
 
+            string cpuIdEAX21EAX = cpuHelper.GetEAX21EAXX();
+            Console.WriteLine($"EAX21EAX: {cpuIdEAX21EAX}");
 
+            string cpuIdEAX21EBX = cpuHelper.GetEAX21EBXX();
+            Console.WriteLine($"EAX21EBX: {cpuIdEAX21EBX}");
+
+            string cpuIdEAX21ECX = cpuHelper.GetEAX21ECXX();
+            Console.WriteLine($"EAX21ECX: {cpuIdEAX21ECX}");
+
+            string cpuIdEAX21EDX = cpuHelper.GetEAX21EDXX();
+            Console.WriteLine($"EAX21EDX: {cpuIdEAX21EDX}");
 
             #endregion
 
