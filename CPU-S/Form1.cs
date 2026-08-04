@@ -2695,7 +2695,17 @@ namespace CPU_S
 
             #region EAX=0x19: Intel Key Locker Features
 
+            string cpuIdEAX19EAX = cpuHelper.GetEAX19EAXX();
+            Console.WriteLine($"EAX19EAX: {cpuIdEAX19EAX}");
 
+            string cpuIdEAX19EBX = cpuHelper.GetEAX19EBXX();
+            Console.WriteLine($"EAX19EBX: {cpuIdEAX19EBX}");
+
+            string cpuIdEAX19ECX = cpuHelper.GetEAX19ECXX();
+            Console.WriteLine($"EAX19ECX: {cpuIdEAX19ECX}");
+
+            string cpuIdEAX19EDX = cpuHelper.GetEAX19EDXX();
+            Console.WriteLine($"EAX19EDX: {cpuIdEAX19EDX}");
 
             #endregion
 
