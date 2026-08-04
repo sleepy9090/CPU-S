@@ -2842,7 +2842,20 @@ namespace CPU_S
 
             #region EAX=0x80000000: Highest Extended Function Implemented
 
+            string cpuIdEAX80000000EAX = cpuHelper.GetEAX80000000EAXX();
+            Console.WriteLine($"EAX80000000EAX: {cpuIdEAX80000000EAX}");
 
+            string cpuIdEAX80000000EBX = cpuHelper.GetEAX80000000EBXX();
+            Console.WriteLine($"EAX80000000EBX: {cpuIdEAX80000000EBX}");
+
+            string cpuIdEAX80000000ECX = cpuHelper.GetEAX80000000ECXX();
+            Console.WriteLine($"EAX80000000ECX: {cpuIdEAX80000000ECX}");
+
+            string cpuIdEAX80000000EDX = cpuHelper.GetEAX80000000EDXX();
+            Console.WriteLine($"EAX80000000EDX: {cpuIdEAX80000000EDX}");
+
+            string cpuIdEAX80000000EAX_HighestExtendedFunctionImplemented = cpuHelper.GetEAX80000000EAX_HighestExtendedFunctionImplementedX();
+            Console.WriteLine($"EAX80000000EAX_HighestExtendedFunctionImplemented: {cpuIdEAX80000000EAX_HighestExtendedFunctionImplemented}");
 
             #endregion
 
