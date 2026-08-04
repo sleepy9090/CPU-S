@@ -2663,7 +2663,17 @@ namespace CPU_S
 
             #region EAX=0x17: SoC Vendor Attribute Enumeration
 
+            string cpuIdEAX17EAX = cpuHelper.GetEAX17EAXX();
+            Console.WriteLine($"EAX17EAX: {cpuIdEAX17EAX}");
 
+            string cpuIdEAX17EBX = cpuHelper.GetEAX17EBXX();
+            Console.WriteLine($"EAX17EBX: {cpuIdEAX17EBX}");
+
+            string cpuIdEAX17ECX = cpuHelper.GetEAX17ECXX();
+            Console.WriteLine($"EAX17ECX: {cpuIdEAX17ECX}");
+
+            string cpuIdEAX17EDX = cpuHelper.GetEAX17EDXX();
+            Console.WriteLine($"EAX17EDX: {cpuIdEAX17EDX}");
 
             #endregion
 
