@@ -2711,7 +2711,17 @@ namespace CPU_S
 
             #region EAX=0x1D: Intel AMX Tile Information
 
+            string cpuIdEAX1DEAX = cpuHelper.GetEAX1DEAXX();
+            Console.WriteLine($"EAX1DEAX: {cpuIdEAX1DEAX}");
 
+            string cpuIdEAX1DEBX = cpuHelper.GetEAX1DEBXX();
+            Console.WriteLine($"EAX1DEBX: {cpuIdEAX1DEBX}");
+
+            string cpuIdEAX1DECX = cpuHelper.GetEAX1DECXX();
+            Console.WriteLine($"EAX1DECX: {cpuIdEAX1DECX}");
+
+            string cpuIdEAX1DEDX = cpuHelper.GetEAX1DEDXX();
+            Console.WriteLine($"EAX1DEDX: {cpuIdEAX1DEDX}");
 
             #endregion
 
