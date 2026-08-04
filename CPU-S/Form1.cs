@@ -2826,7 +2826,17 @@ namespace CPU_S
 
             #region EAX=0x40000000h-0x4FFFFFFFh: Reserved for Hypervisors
 
+            string cpuIdEAX40000000EAX = cpuHelper.GetEAX40000000EAXX();
+            Console.WriteLine($"EAX40000000EAX: {cpuIdEAX40000000EAX}");
 
+            string cpuIdEAX40000000EBX = cpuHelper.GetEAX40000000EBXX();
+            Console.WriteLine($"EAX40000000EBX: {cpuIdEAX40000000EBX}");
+
+            string cpuIdEAX40000000ECX = cpuHelper.GetEAX40000000ECXX();
+            Console.WriteLine($"EAX40000000ECX: {cpuIdEAX40000000ECX}");
+
+            string cpuIdEAX40000000EDX = cpuHelper.GetEAX40000000EDXX();
+            Console.WriteLine($"EAX40000000EDX: {cpuIdEAX40000000EDX}");
 
             #endregion
 
