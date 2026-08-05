@@ -3190,7 +3190,17 @@ namespace CPU_S
 
             #region EAX=0x80000021: Extended Feature Identification
 
+            string cpuIdEAX80000021EAX = cpuHelper.GetEAX80000021EAXX();
+            Console.WriteLine($"EAX80000021EAX: {cpuIdEAX80000021EAX}");
 
+            string cpuIdEAX80000021EBX = cpuHelper.GetEAX80000021EBXX();
+            Console.WriteLine($"EAX80000021EBX: {cpuIdEAX80000021EBX}");
+
+            string cpuIdEAX80000021ECX = cpuHelper.GetEAX80000021ECXX();
+            Console.WriteLine($"EAX80000021ECX: {cpuIdEAX80000021ECX}");
+
+            string cpuIdEAX80000021EDX = cpuHelper.GetEAX80000021EDXX();
+            Console.WriteLine($"EAX80000021EDX: {cpuIdEAX80000021EDX}");
 
             #endregion
 
