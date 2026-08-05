@@ -3158,7 +3158,17 @@ namespace CPU_S
 
             #region EAX=0x8000000A: SVM features
 
+            string cpuIdEAX8000000AEAX = cpuHelper.GetEAX8000000AEAXX();
+            Console.WriteLine($"EAX8000000AEAX: {cpuIdEAX8000000AEAX}");
 
+            string cpuIdEAX8000000AEBX = cpuHelper.GetEAX8000000AEBXX();
+            Console.WriteLine($"EAX8000000AEBX: {cpuIdEAX8000000AEBX}");
+
+            string cpuIdEAX8000000AECX = cpuHelper.GetEAX8000000AECXX();
+            Console.WriteLine($"EAX8000000AECX: {cpuIdEAX8000000AECX}");
+
+            string cpuIdEAX8000000AEDX = cpuHelper.GetEAX8000000AEDXX();
+            Console.WriteLine($"EAX8000000AEDX: {cpuIdEAX8000000AEDX}");
 
             #endregion
 
