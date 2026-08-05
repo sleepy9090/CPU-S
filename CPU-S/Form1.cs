@@ -2920,7 +2920,53 @@ namespace CPU_S
 
             #region EAX=0x80000005: L1 Cache and TLB Identifiers
 
+            string cpuIdEAX80000005EAX = cpuHelper.GetEAX80000005EAXX();
+            Console.WriteLine($"EAX80000005EAX: {cpuIdEAX80000005EAX}");
 
+            string cpuIdEAX80000005EBX = cpuHelper.GetEAX80000005EBXX();
+            Console.WriteLine($"EAX80000005EBX: {cpuIdEAX80000005EBX}");
+
+            string cpuIdEAX80000005ECX = cpuHelper.GetEAX80000005ECXX();
+            Console.WriteLine($"EAX80000005ECX: {cpuIdEAX80000005ECX}");
+
+            string cpuIdEAX80000005EDX = cpuHelper.GetEAX80000005EDXX();
+            Console.WriteLine($"EAX80000005EDX: {cpuIdEAX80000005EDX}");
+
+            string cpuIdEAX80000005EAX0_7_NumberOfInstructionTLBEntriesString = cpuHelper.GetEAX80000005EAX0_7_NumberOfInstructionTLBEntriesX();
+            Console.WriteLine($"EAX80000005EAX0_7_NumberOfInstructionTLBEntries: {cpuIdEAX80000005EAX0_7_NumberOfInstructionTLBEntriesString}");
+
+            string cpuIdEAX80000005EAX8_15_InstructionTLBAssociativityString = cpuHelper.GetEAX80000005EAX8_15_InstructionTLBAssociativityX();
+            Console.WriteLine($"EAX80000005EAX8_15_InstructionTLBAssociativity: {cpuIdEAX80000005EAX8_15_InstructionTLBAssociativityString}");
+
+            string cpuIdEAX80000005EAX16_23_DataTLBEntriesString = cpuHelper.GetEAX80000005EAX16_23_DataTLBEntriesX();
+            Console.WriteLine($"EAX80000005EAX16_23_DataTLBEntries: {cpuIdEAX80000005EAX16_23_DataTLBEntriesString}");
+
+            string cpuIdEAX80000005EAX24_31_DataTLBAssociativityString = cpuHelper.GetEAX80000005EAX24_31_DataTLBAssociativityX();
+            Console.WriteLine($"EAX80000005EAX24_31_DataTLBAssociativity: {cpuIdEAX80000005EAX24_31_DataTLBAssociativityString}");
+
+            string cpuIdEAX80000005EBX0_7_NumberOfInstructionTLBEntriesString = cpuHelper.GetEAX80000005EBX0_7_NumberOfInstructionTLBEntriesX();
+            Console.WriteLine($"EAX80000005EBX0_7_NumberOfInstructionTLBEntries: {cpuIdEAX80000005EBX0_7_NumberOfInstructionTLBEntriesString}");
+
+            string cpuIdEAX80000005ECX8_15_NumberOfCacheLinesPerTagString = cpuHelper.GetEAX80000005ECX8_15_NumberOfCacheLinesPerTagX();
+            Console.WriteLine($"EAX80000005ECX8_15_NumberOfCacheLinesPerTag: {cpuIdEAX80000005ECX8_15_NumberOfCacheLinesPerTagString}");
+
+            string cpuIdEAX80000005ECX16_23_CacheAssociativityString = cpuHelper.GetEAX80000005ECX16_23_CacheAssociativityX();
+            Console.WriteLine($"EAX80000005ECX16_23_CacheAssociativity: {cpuIdEAX80000005ECX16_23_CacheAssociativityString}");
+
+            string cpuIdEAX80000005ECX24_31_CacheSizeString = cpuHelper.GetEAX80000005ECX24_31_CacheSizeX();
+            Console.WriteLine($"EAX80000005ECX24_31_CacheSize: {cpuIdEAX80000005ECX24_31_CacheSizeString}");
+
+            string cpuIdEAX80000005EDX0_7_CacheLineSizeInBytesString = cpuHelper.GetEAX80000005EDX0_7_CacheLineSizeInBytesX();
+            Console.WriteLine($"EAX80000005EDX0_7_CacheLineSizeInBytes: {cpuIdEAX80000005EDX0_7_CacheLineSizeInBytesString}");
+
+            string cpuIdEAX80000005EDX8_15_NumberOfCacheLinesPerTagString = cpuHelper.GetEAX80000005EDX8_15_NumberOfCacheLinesPerTagX();
+            Console.WriteLine($"EAX80000005EDX8_15_NumberOfCacheLinesPerTag: {cpuIdEAX80000005EDX8_15_NumberOfCacheLinesPerTagString}");
+
+            string cpuIdEAX80000005EDX16_23_CacheAssociativityString = cpuHelper.GetEAX80000005EDX16_23_CacheAssociativityX();
+            Console.WriteLine($"EAX80000005EDX16_23_CacheAssociativity: {cpuIdEAX80000005EDX16_23_CacheAssociativityString}");
+
+            string cpuIdEAX80000005EDX24_31_CacheSizeString = cpuHelper.GetEAX80000005EDX24_31_CacheSizeX();
+            Console.WriteLine($"EAX80000005EDX24_31_CacheSize: {cpuIdEAX80000005EDX24_31_CacheSizeString}");
 
             #endregion
 
