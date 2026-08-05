@@ -3052,6 +3052,87 @@ namespace CPU_S
             bool cpuIdEAX80000008EBX4_RDPRU_IsSupported = cpuHelper.GetEAX80000008EBX4_RDPRU_IsSupportedX();
             Console.WriteLine($"EAX80000008EBX4_RDPRU_IsSupported: {cpuIdEAX80000008EBX4_RDPRU_IsSupported}");
 
+            bool cpuIdEAX80000008EBX5_XOTEXT_IsSupported = cpuHelper.GetEAX80000008EBX5_XOTEXT_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX5_XOTEXT_IsSupported: {cpuIdEAX80000008EBX5_XOTEXT_IsSupported}");
+
+            bool cpuIdEAX80000008EBX6_MBE_IsSupported = cpuHelper.GetEAX80000008EBX6_MBE_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX6_MBE_IsSupported: {cpuIdEAX80000008EBX6_MBE_IsSupported}");
+
+            bool cpuIdEAX80000008EBX7_ReservedIsSupported = cpuHelper.GetEAX80000008EBX7_ReservedIsSupportedX();
+            Console.WriteLine($"EAX80000008EBX7_ReservedIsSupported: {cpuIdEAX80000008EBX7_ReservedIsSupported}");
+
+            bool cpuIdEAX80000008EBX8_MCOMMIT_IsSupported = cpuHelper.GetEAX80000008EBX8_MCOMMIT_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX8_MCOMMIT_IsSupported: {cpuIdEAX80000008EBX8_MCOMMIT_IsSupported}");
+
+            bool cpuIdEAX80000008EBX9_WBNOINVD_IsSupported = cpuHelper.GetEAX80000008EBX9_WBNOINVD_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX9_WBNOINVD_IsSupported: {cpuIdEAX80000008EBX9_WBNOINVD_IsSupported}");
+
+            bool cpuIdEAX80000008EBX10_LBR_EXT_V1_IsSupported = cpuHelper.GetEAX80000008EBX10_LBR_EXT_V1_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX10_LBR_EXT_V1_IsSupported: {cpuIdEAX80000008EBX10_LBR_EXT_V1_IsSupported}");
+
+            bool cpuIdEAX80000008EBX11_ReservedIsSupported = cpuHelper.GetEAX80000008EBX11_ReservedIsSupportedX();
+            Console.WriteLine($"EAX80000008EBX11_ReservedIsSupported: {cpuIdEAX80000008EBX11_ReservedIsSupported}");
+
+            bool cpuIdEAX80000008EBX12_IBPB_IsSupported = cpuHelper.GetEAX80000008EBX12_IBPB_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX12_IBPB_IsSupported: {cpuIdEAX80000008EBX12_IBPB_IsSupported}");
+
+            bool cpuIdEAX80000008EBX13_WBINVD_INT_IsSupported = cpuHelper.GetEAX80000008EBX13_WBINVD_INT_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX13_WBINVD_INT_IsSupported: {cpuIdEAX80000008EBX13_WBINVD_INT_IsSupported}");
+
+            bool cpuIdEAX80000008EBX14_IBRS_IsSupported = cpuHelper.GetEAX80000008EBX14_IBRS_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX14_IBRS_IsSupported: {cpuIdEAX80000008EBX14_IBRS_IsSupported}");
+
+            bool cpuIdEAX80000008EBX15_STIBP_IsSupported = cpuHelper.GetEAX80000008EBX15_STIBP_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX15_STIBP_IsSupported: {cpuIdEAX80000008EBX15_STIBP_IsSupported}");
+
+            bool cpuIdEAX80000008EBX16_IBRS_ALWAYS_ON_IsSupported = cpuHelper.GetEAX80000008EBX16_IBRS_ALWAYS_ON_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX16_IBRS_ALWAYS_ON_IsSupported: {cpuIdEAX80000008EBX16_IBRS_ALWAYS_ON_IsSupported}");
+
+            bool cpuIdEAX80000008EBX17_STIBP_ALWAYS_ON_IsSupported = cpuHelper.GetEAX80000008EBX17_STIBP_ALWAYS_ON_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX17_STIBP_ALWAYS_ON_IsSupported: {cpuIdEAX80000008EBX17_STIBP_ALWAYS_ON_IsSupported}");
+
+            bool cpuIdEAX80000008EBX18_IBRS_PREFERRED_IsSupported = cpuHelper.GetEAX80000008EBX18_IBRS_PREFERRED_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX18_IBRS_PREFERRED_IsSupported: {cpuIdEAX80000008EBX18_IBRS_PREFERRED_IsSupported}");
+
+            bool cpuIdEAX80000008EBX19_IBRS_SAME_MODE_PROTECTION_IsSupported = cpuHelper.GetEAX80000008EBX19_IBRS_SAME_MODE_PROTECTION_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX19_IBRS_SAME_MODE_PROTECTION_IsSupported: {cpuIdEAX80000008EBX19_IBRS_SAME_MODE_PROTECTION_IsSupported}");
+
+            bool cpuIdEAX80000008EBX20_NO_EFER_LMSLE_IsSupported = cpuHelper.GetEAX80000008EBX20_NO_EFER_LMSLE_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX20_NO_EFER_LMSLE_IsSupported: {cpuIdEAX80000008EBX20_NO_EFER_LMSLE_IsSupported}");
+
+            bool cpuIdEAX80000008EBX21_INVLPGB_NESTED_IsSupported = cpuHelper.GetEAX80000008EBX21_INVLPGB_NESTED_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX21_INVLPGB_NESTED_IsSupported: {cpuIdEAX80000008EBX21_INVLPGB_NESTED_IsSupported}");
+
+            bool cpuIdEAX80000008EBX22_LBR_TSX_IsSupported = cpuHelper.GetEAX80000008EBX22_LBR_TSX_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX22_LBR_TSX_IsSupported: {cpuIdEAX80000008EBX22_LBR_TSX_IsSupported}");
+
+            bool cpuIdEAX80000008EBX23_PPIN_IsSupported = cpuHelper.GetEAX80000008EBX23_PPIN_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX23_PPIN_IsSupported: {cpuIdEAX80000008EBX23_PPIN_IsSupported}");
+
+            bool cpuIdEAX80000008EBX24_SSBD_IsSupported = cpuHelper.GetEAX80000008EBX24_SSBD_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX24_SSBD_IsSupported: {cpuIdEAX80000008EBX24_SSBD_IsSupported}");
+
+            bool cpuIdEAX80000008EBX25_SSBD_LEGACY_IsSupported = cpuHelper.GetEAX80000008EBX25_SSBD_LEGACY_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX25_SSBD_LEGACY_IsSupported: {cpuIdEAX80000008EBX25_SSBD_LEGACY_IsSupported}");
+
+            bool cpuIdEAX80000008EBX26_SSBD_NO_IsSupported = cpuHelper.GetEAX80000008EBX26_SSBD_NO_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX26_SSBD_NO_IsSupported: {cpuIdEAX80000008EBX26_SSBD_NO_IsSupported}");
+
+            bool cpuIdEAX80000008EBX27_CPPC_IsSupported = cpuHelper.GetEAX80000008EBX27_CPPC_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX27_CPPC_IsSupported: {cpuIdEAX80000008EBX27_CPPC_IsSupported}");
+
+            bool cpuIdEAX80000008EBX28_PSFD_IsSupported = cpuHelper.GetEAX80000008EBX28_PSFD_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX28_PSFD_IsSupported: {cpuIdEAX80000008EBX28_PSFD_IsSupported}");
+
+            bool cpuIdEAX80000008EBX29_BTC_NO_IsSupported = cpuHelper.GetEAX80000008EBX29_BTC_NO_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX29_BTC_NO_IsSupported: {cpuIdEAX80000008EBX29_BTC_NO_IsSupported}");
+
+            bool cpuIdEAX80000008EBX30_IBPB_RET_IsSupported = cpuHelper.GetEAX80000008EBX30_IBPB_RET_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX30_IBPB_RET_IsSupported: {cpuIdEAX80000008EBX30_IBPB_RET_IsSupported}");
+
+            bool cpuIdEAX80000008EBX31_BRANCH_SAMPLING_IsSupported = cpuHelper.GetEAX80000008EBX31_BRANCH_SAMPLING_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX31_BRANCH_SAMPLING_IsSupported: {cpuIdEAX80000008EBX31_BRANCH_SAMPLING_IsSupported}");
+
             #endregion
 
             #region EAX=0x8000000A: SVM features
