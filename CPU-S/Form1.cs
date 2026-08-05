@@ -3133,6 +3133,27 @@ namespace CPU_S
             bool cpuIdEAX80000008EBX31_BRANCH_SAMPLING_IsSupported = cpuHelper.GetEAX80000008EBX31_BRANCH_SAMPLING_IsSupportedX();
             Console.WriteLine($"EAX80000008EBX31_BRANCH_SAMPLING_IsSupported: {cpuIdEAX80000008EBX31_BRANCH_SAMPLING_IsSupported}");
 
+            string cpuIdEAX80000008ECX0_7_NumberOfPhysicalThreadsInProcessorMinus1String = cpuHelper.GetEAX80000008ECX0_7_NumberOfPhysicalThreadsInProcessorMinus1X();
+            Console.WriteLine($"EAX80000008ECX0_7_NumberOfPhysicalThreadsInProcessorMinus1: {cpuIdEAX80000008ECX0_7_NumberOfPhysicalThreadsInProcessorMinus1String}");
+
+            string cpuIdEAX80000008ECX8_11_ReservedString = cpuHelper.GetEAX80000008ECX8_11_ReservedX();
+            Console.WriteLine($"EAX80000008ECX8_11_Reserved: {cpuIdEAX80000008ECX8_11_ReservedString}");
+
+            string cpuIdEAX80000008ECX12_15_APIC_IDSizeString = cpuHelper.GetEAX80000008ECX12_15_APIC_IDSizeX();
+            Console.WriteLine($"EAX80000008ECX12_15_APIC_IDSize: {cpuIdEAX80000008ECX12_15_APIC_IDSizeString}");
+
+            string cpuIdEAX80000008ECX16_17_PerformanceTimestampCounterSizeString = cpuHelper.GetEAX80000008ECX16_17_PerformanceTimestampCounterSizeX();
+            Console.WriteLine($"EAX80000008ECX16_17_PerformanceTimestampCounterSize: {cpuIdEAX80000008ECX16_17_PerformanceTimestampCounterSizeString}");
+
+            string cpuIdEAX80000008ECX18_31_ReserverdString = cpuHelper.GetEAX80000008ECX18_31_ReserverdX();
+            Console.WriteLine($"EAX80000008ECX18_31_Reserverd: {cpuIdEAX80000008ECX18_31_ReserverdString}");
+
+            string cpuIdEAX80000008EDX0_15_MaximumPageCountForINVLPGBInstructionString = cpuHelper.GetEAX80000008EDX0_15_MaximumPageCountForINVLPGBInstructionX();
+            Console.WriteLine($"EAX80000008EDX0_15_MaximumPageCountForINVLPGBInstruction: {cpuIdEAX80000008EDX0_15_MaximumPageCountForINVLPGBInstructionString}");
+
+            string cpuIdEAX80000008EDX16_31_MaximumECXValueForRDPRUInstructionString = cpuHelper.GetEAX80000008EDX16_31_MaximumECXValueForRDPRUInstructionX();
+            Console.WriteLine($"EAX80000008EDX16_31_MaximumECXValueForRDPRUInstruction: {cpuIdEAX80000008EDX16_31_MaximumECXValueForRDPRUInstructionString}");
+
             #endregion
 
             #region EAX=0x8000000A: SVM features
