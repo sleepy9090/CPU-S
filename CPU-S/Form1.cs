@@ -3174,7 +3174,17 @@ namespace CPU_S
 
             #region EAX=0x8000001F: Encrypted Memory Capabilities
 
+            string cpuIdEAX8000001FEAX = cpuHelper.GetEAX8000001FEAXX();
+            Console.WriteLine($"EAX8000001FEAX: {cpuIdEAX8000001FEAX}");
 
+            string cpuIdEAX8000001FEBX = cpuHelper.GetEAX8000001FEBXX();
+            Console.WriteLine($"EAX8000001FEBX: {cpuIdEAX8000001FEBX}");
+
+            string cpuIdEAX8000001FECX = cpuHelper.GetEAX8000001FECXX();
+            Console.WriteLine($"EAX8000001FECX: {cpuIdEAX8000001FECX}");
+
+            string cpuIdEAX8000001FEDX = cpuHelper.GetEAX8000001FEDXX();
+            Console.WriteLine($"EAX8000001FEDX: {cpuIdEAX8000001FEDX}");
 
             #endregion
 
