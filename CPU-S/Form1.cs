@@ -3013,7 +3013,44 @@ namespace CPU_S
 
             #region EAX=0x80000008: Virtual and Physical Address Sizes
 
+            string cpuIdEAX80000008EAX = cpuHelper.GetEAX80000008EAXX();
+            Console.WriteLine($"EAX80000008EAX: {cpuIdEAX80000008EAX}");
 
+            string cpuIdEAX80000008EBX = cpuHelper.GetEAX80000008EBXX();
+            Console.WriteLine($"EAX80000008EBX: {cpuIdEAX80000008EBX}");
+
+            string cpuIdEAX80000008ECX = cpuHelper.GetEAX80000008ECXX();
+            Console.WriteLine($"EAX80000008ECX: {cpuIdEAX80000008ECX}");
+
+            string cpuIdEAX80000008EDX = cpuHelper.GetEAX80000008EDXX();
+            Console.WriteLine($"EAX80000008EDX: {cpuIdEAX80000008EDX}");
+
+            string cpuIdEAX80000008EAX0_7_NumberOfPhysicalAddressBitsString = cpuHelper.GetEAX80000008EAX0_7_NumberOfPhysicalAddressBitsX();
+            Console.WriteLine($"EAX80000008EAX0_7_NumberOfPhysicalAddressBits: {cpuIdEAX80000008EAX0_7_NumberOfPhysicalAddressBitsString}");
+
+            string cpuIdEAX80000008EAX8_15_NumberOfLinearAddressBitsString = cpuHelper.GetEAX80000008EAX8_15_NumberOfLinearAddressBitsX();
+            Console.WriteLine($"EAX80000008EAX8_15_NumberOfLinearAddressBits: {cpuIdEAX80000008EAX8_15_NumberOfLinearAddressBitsString}");
+
+            string cpuIdEAX80000008EAX16_23_GuestPhysicalAddressSizeString = cpuHelper.GetEAX80000008EAX16_23_GuestPhysicalAddressSizeX();
+            Console.WriteLine($"EAX80000008EAX16_23_GuestPhysicalAddressSize: {cpuIdEAX80000008EAX16_23_GuestPhysicalAddressSizeString}");
+
+            string cpuIdEAX80000008EAX24_31_ReservedString = cpuHelper.GetEAX80000008EAX24_31_ReservedX();
+            Console.WriteLine($"EAX80000008EAX24_31_Reserved: {cpuIdEAX80000008EAX24_31_ReservedString}");
+
+            bool cpuIdEAX80000008EBX0_CLZERO_IsSupported = cpuHelper.GetEAX80000008EBX0_CLZERO_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX0_CLZERO_IsSupported: {cpuIdEAX80000008EBX0_CLZERO_IsSupported}");
+
+            bool cpuIdEAX80000008EBX1_RetiredInstr_IsSupported = cpuHelper.GetEAX80000008EBX1_RetiredInstr_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX1_RetiredInstr_IsSupported: {cpuIdEAX80000008EBX1_RetiredInstr_IsSupported}");
+
+            bool cpuIdEAX80000008EBX2_XRSTOR_FP_ERR_IsSupported = cpuHelper.GetEAX80000008EBX2_XRSTOR_FP_ERR_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX2_XRSTOR_FP_ERR_IsSupported: {cpuIdEAX80000008EBX2_XRSTOR_FP_ERR_IsSupported}");
+
+            bool cpuIdEAX80000008EBX3_INVLPGB_TLBSYNC_IsSupported = cpuHelper.GetEAX80000008EBX3_INVLPGB_TLBSYNC_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX3_INVLPGB_TLBSYNC_IsSupported: {cpuIdEAX80000008EBX3_INVLPGB_TLBSYNC_IsSupported}");
+
+            bool cpuIdEAX80000008EBX4_RDPRU_IsSupported = cpuHelper.GetEAX80000008EBX4_RDPRU_IsSupportedX();
+            Console.WriteLine($"EAX80000008EBX4_RDPRU_IsSupported: {cpuIdEAX80000008EBX4_RDPRU_IsSupported}");
 
             #endregion
 
