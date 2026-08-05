@@ -2972,13 +2972,42 @@ namespace CPU_S
 
             #region EAX=0x80000006: Extended L2 Cache Features
 
+            string cpuIdEAX80000006EAX = cpuHelper.GetEAX80000006EAXX();
+            Console.WriteLine($"EAX80000006EAX: {cpuIdEAX80000006EAX}");
 
+            string cpuIdEAX80000006EBX = cpuHelper.GetEAX80000006EBXX();
+            Console.WriteLine($"EAX80000006EBX: {cpuIdEAX80000006EBX}");
+
+            string cpuIdEAX80000006ECX = cpuHelper.GetEAX80000006ECXX();
+            Console.WriteLine($"EAX80000006ECX: {cpuIdEAX80000006ECX}");
+
+            string cpuIdEAX80000006EDX = cpuHelper.GetEAX80000006EDXX();
+            Console.WriteLine($"EAX80000006EDX: {cpuIdEAX80000006EDX}");
+
+            string cpuIdEAX80000006ECX_LineSizeString = cpuHelper.GetEAX80000006ECX_LineSizeX();
+            Console.WriteLine($"EAX80000006ECX_LineSize: {cpuIdEAX80000006ECX_LineSizeString}");
+
+            string cpuIdEAX80000006ECX_AssociativityString = cpuHelper.GetEAX80000006ECX_AssociativityX();
+            Console.WriteLine($"EAX80000006ECX_Associativity: {cpuIdEAX80000006ECX_AssociativityString}");
+
+            string cpuIdEAX80000006ECX_CacheSizeString = cpuHelper.GetEAX80000006ECX_CacheSizeX();
+            Console.WriteLine($"EAX80000006ECX_CacheSize: {cpuIdEAX80000006ECX_CacheSizeString}");
 
             #endregion
 
             #region EAX=0x80000007: Processor Power Management Information and RAS Capabilities
 
+            string cpuIdEAX80000007EAX = cpuHelper.GetEAX80000007EAXX();
+            Console.WriteLine($"EAX80000007EAX: {cpuIdEAX80000007EAX}");
 
+            string cpuIdEAX80000007EBX = cpuHelper.GetEAX80000007EBXX();
+            Console.WriteLine($"EAX80000007EBX: {cpuIdEAX80000007EBX}");
+
+            string cpuIdEAX80000007ECX = cpuHelper.GetEAX80000007ECXX();
+            Console.WriteLine($"EAX80000007ECX: {cpuIdEAX80000007ECX}");
+
+            string cpuIdEAX80000007EDX = cpuHelper.GetEAX80000007EDXX();
+            Console.WriteLine($"EAX80000007EDX: {cpuIdEAX80000007EDX}");
 
             #endregion
 
