@@ -3302,7 +3302,17 @@ namespace CPU_S
 
             #region EAX=0xC0000002: Centaur Extended CPUID Performance Data
 
+            string cpuIdEAXC0000002EAX = cpuHelper.GetEAXC0000002EAXX();
+            Console.WriteLine($"EAXC0000002EAX: {cpuIdEAXC0000002EAX}");
 
+            string cpuIdEAXC0000002EBX = cpuHelper.GetEAXC0000002EBXX();
+            Console.WriteLine($"EAXC0000002EBX: {cpuIdEAXC0000002EBX}");
+
+            string cpuIdEAXC0000002ECX = cpuHelper.GetEAXC0000002ECXX();
+            Console.WriteLine($"EAXC0000002ECX: {cpuIdEAXC0000002ECX}");
+
+            string cpuIdEAXC0000002EDX = cpuHelper.GetEAXC0000002EDXX();
+            Console.WriteLine($"EAXC0000002EDX: {cpuIdEAXC0000002EDX}");
 
             #endregion
 
