@@ -3318,7 +3318,17 @@ namespace CPU_S
 
             #region EAX=0xC0000006, ECX=0: Zhaoxin Feature Information
 
+            string cpuIdEAXC0000006ECX0EAX = cpuHelper.GetEAXC0000006ECX0EAXX();
+            Console.WriteLine($"EAXC0000006ECX0EAX: {cpuIdEAXC0000006ECX0EAX}");
 
+            string cpuIdEAXC0000006ECX0EBX = cpuHelper.GetEAXC0000006ECX0EBXX();
+            Console.WriteLine($"EAXC0000006ECX0EBX: {cpuIdEAXC0000006ECX0EBX}");
+
+            string cpuIdEAXC0000006ECX0ECX = cpuHelper.GetEAXC0000006ECX0ECXX();
+            Console.WriteLine($"EAXC0000006ECX0ECX: {cpuIdEAXC0000006ECX0ECX}");
+
+            string cpuIdEAXC0000006ECX0EDX = cpuHelper.GetEAXC0000006ECX0EDXX();
+            Console.WriteLine($"EAXC0000006ECX0EDX: {cpuIdEAXC0000006ECX0EDX}");
 
             #endregion
         }
