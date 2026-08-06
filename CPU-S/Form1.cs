@@ -3270,13 +3270,33 @@ namespace CPU_S
 
             #region EAX=0xC0000000: Highest Centaur Extended Function
 
+            string cpuIdEAXC0000000EAX = cpuHelper.GetEAXC0000000EAXX();
+            Console.WriteLine($"EAXC0000000EAX: {cpuIdEAXC0000000EAX}");
 
+            string cpuIdEAXC0000000EBX = cpuHelper.GetEAXC0000000EBXX();
+            Console.WriteLine($"EAXC0000000EBX: {cpuIdEAXC0000000EBX}");
+
+            string cpuIdEAXC0000000ECX = cpuHelper.GetEAXC0000000ECXX();
+            Console.WriteLine($"EAXC0000000ECX: {cpuIdEAXC0000000ECX}");
+
+            string cpuIdEAXC0000000EDX = cpuHelper.GetEAXC0000000EDXX();
+            Console.WriteLine($"EAXC0000000EDX: {cpuIdEAXC0000000EDX}");
 
             #endregion
 
             #region EAX=0xC0000001: Centaur Feature Information
 
+            string cpuIdEAXC0000001EAX = cpuHelper.GetEAXC0000001EAXX();
+            Console.WriteLine($"EAXC0000001EAX: {cpuIdEAXC0000001EAX}");
 
+            string cpuIdEAXC0000001EBX = cpuHelper.GetEAXC0000001EBXX();
+            Console.WriteLine($"EAXC0000001EBX: {cpuIdEAXC0000001EBX}");
+
+            string cpuIdEAXC0000001ECX = cpuHelper.GetEAXC0000001ECXX();
+            Console.WriteLine($"EAXC0000001ECX: {cpuIdEAXC0000001ECX}");
+
+            string cpuIdEAXC0000001EDX = cpuHelper.GetEAXC0000001EDXX();
+            Console.WriteLine($"EAXC0000001EDX: {cpuIdEAXC0000001EDX}");
 
             #endregion
 
