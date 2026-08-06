@@ -28,7 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEAX0 = new System.Windows.Forms.GroupBox();
+            this.textBoxEAX0ID3 = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0ID2 = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0ID1 = new System.Windows.Forms.TextBox();
+            this.labelEAX0ID3 = new System.Windows.Forms.Label();
+            this.labelEAX0ID2 = new System.Windows.Forms.Label();
+            this.labelEAX0ID1 = new System.Windows.Forms.Label();
+            this.labelEAX0Extended = new System.Windows.Forms.Label();
+            this.labelEAX0Basic = new System.Windows.Forms.Label();
+            this.labelEAX0Processors = new System.Windows.Forms.Label();
+            this.textBoxEAX0Processors = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0Extended = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0Basic = new System.Windows.Forms.TextBox();
             this.labelEAX0EBXEDXECXCpuVendor = new System.Windows.Forms.Label();
             this.labelEAX0HighestFunctionParam = new System.Windows.Forms.Label();
             this.labelEAX0EDX = new System.Windows.Forms.Label();
@@ -41,53 +53,137 @@
             this.textBoxEAX0EBX = new System.Windows.Forms.TextBox();
             this.textBoxEAX0EAX = new System.Windows.Forms.TextBox();
             this.labelEAX0EAX = new System.Windows.Forms.Label();
-            this.textBoxEAX0Basic = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0Extended = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0Processors = new System.Windows.Forms.TextBox();
-            this.labelEAX0Processors = new System.Windows.Forms.Label();
-            this.labelEAX0Basic = new System.Windows.Forms.Label();
-            this.labelEAX0Extended = new System.Windows.Forms.Label();
-            this.labelEAX0ID1 = new System.Windows.Forms.Label();
-            this.labelEAX0ID2 = new System.Windows.Forms.Label();
-            this.labelEAX0ID3 = new System.Windows.Forms.Label();
-            this.textBoxEAX0ID1 = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0ID2 = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0ID3 = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxEAX0.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxEAX0
             // 
-            this.groupBox1.Controls.Add(this.textBoxEAX0ID3);
-            this.groupBox1.Controls.Add(this.textBoxEAX0ID2);
-            this.groupBox1.Controls.Add(this.textBoxEAX0ID1);
-            this.groupBox1.Controls.Add(this.labelEAX0ID3);
-            this.groupBox1.Controls.Add(this.labelEAX0ID2);
-            this.groupBox1.Controls.Add(this.labelEAX0ID1);
-            this.groupBox1.Controls.Add(this.labelEAX0Extended);
-            this.groupBox1.Controls.Add(this.labelEAX0Basic);
-            this.groupBox1.Controls.Add(this.labelEAX0Processors);
-            this.groupBox1.Controls.Add(this.textBoxEAX0Processors);
-            this.groupBox1.Controls.Add(this.textBoxEAX0Extended);
-            this.groupBox1.Controls.Add(this.textBoxEAX0Basic);
-            this.groupBox1.Controls.Add(this.labelEAX0EBXEDXECXCpuVendor);
-            this.groupBox1.Controls.Add(this.labelEAX0HighestFunctionParam);
-            this.groupBox1.Controls.Add(this.labelEAX0EDX);
-            this.groupBox1.Controls.Add(this.labelEAX0ECX);
-            this.groupBox1.Controls.Add(this.labelEAX0EBX);
-            this.groupBox1.Controls.Add(this.textBoxEAX0EBXEDXECXCpuVendor);
-            this.groupBox1.Controls.Add(this.textBoxEAX0EAXHightestFunctionParameter);
-            this.groupBox1.Controls.Add(this.textBoxEAX0EDX);
-            this.groupBox1.Controls.Add(this.textBoxEAX0ECX);
-            this.groupBox1.Controls.Add(this.textBoxEAX0EBX);
-            this.groupBox1.Controls.Add(this.textBoxEAX0EAX);
-            this.groupBox1.Controls.Add(this.labelEAX0EAX);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(688, 210);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "EAX=0";
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID3);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID2);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID1);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0ID3);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0ID2);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0ID1);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0Extended);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0Basic);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0Processors);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Processors);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Extended);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Basic);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0EBXEDXECXCpuVendor);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0HighestFunctionParam);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0EDX);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0ECX);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0EBX);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EBXEDXECXCpuVendor);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EAXHightestFunctionParameter);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EDX);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ECX);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EBX);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EAX);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0EAX);
+            this.groupBoxEAX0.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxEAX0.Name = "groupBoxEAX0";
+            this.groupBoxEAX0.Size = new System.Drawing.Size(688, 210);
+            this.groupBoxEAX0.TabIndex = 0;
+            this.groupBoxEAX0.TabStop = false;
+            this.groupBoxEAX0.Text = "EAX=0";
+            // 
+            // textBoxEAX0ID3
+            // 
+            this.textBoxEAX0ID3.Location = new System.Drawing.Point(425, 97);
+            this.textBoxEAX0ID3.Name = "textBoxEAX0ID3";
+            this.textBoxEAX0ID3.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0ID3.TabIndex = 23;
+            // 
+            // textBoxEAX0ID2
+            // 
+            this.textBoxEAX0ID2.Location = new System.Drawing.Point(425, 71);
+            this.textBoxEAX0ID2.Name = "textBoxEAX0ID2";
+            this.textBoxEAX0ID2.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0ID2.TabIndex = 22;
+            // 
+            // textBoxEAX0ID1
+            // 
+            this.textBoxEAX0ID1.Location = new System.Drawing.Point(425, 45);
+            this.textBoxEAX0ID1.Name = "textBoxEAX0ID1";
+            this.textBoxEAX0ID1.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0ID1.TabIndex = 21;
+            // 
+            // labelEAX0ID3
+            // 
+            this.labelEAX0ID3.AutoSize = true;
+            this.labelEAX0ID3.Location = new System.Drawing.Point(383, 100);
+            this.labelEAX0ID3.Name = "labelEAX0ID3";
+            this.labelEAX0ID3.Size = new System.Drawing.Size(30, 13);
+            this.labelEAX0ID3.TabIndex = 20;
+            this.labelEAX0ID3.Text = "ID 3:";
+            // 
+            // labelEAX0ID2
+            // 
+            this.labelEAX0ID2.AutoSize = true;
+            this.labelEAX0ID2.Location = new System.Drawing.Point(383, 74);
+            this.labelEAX0ID2.Name = "labelEAX0ID2";
+            this.labelEAX0ID2.Size = new System.Drawing.Size(30, 13);
+            this.labelEAX0ID2.TabIndex = 19;
+            this.labelEAX0ID2.Text = "ID 2:";
+            // 
+            // labelEAX0ID1
+            // 
+            this.labelEAX0ID1.AutoSize = true;
+            this.labelEAX0ID1.Location = new System.Drawing.Point(383, 48);
+            this.labelEAX0ID1.Name = "labelEAX0ID1";
+            this.labelEAX0ID1.Size = new System.Drawing.Size(30, 13);
+            this.labelEAX0ID1.TabIndex = 18;
+            this.labelEAX0ID1.Text = "ID 1:";
+            // 
+            // labelEAX0Extended
+            // 
+            this.labelEAX0Extended.AutoSize = true;
+            this.labelEAX0Extended.Location = new System.Drawing.Point(546, 126);
+            this.labelEAX0Extended.Name = "labelEAX0Extended";
+            this.labelEAX0Extended.Size = new System.Drawing.Size(25, 13);
+            this.labelEAX0Extended.TabIndex = 17;
+            this.labelEAX0Extended.Text = "Ext:";
+            // 
+            // labelEAX0Basic
+            // 
+            this.labelEAX0Basic.AutoSize = true;
+            this.labelEAX0Basic.Location = new System.Drawing.Point(383, 126);
+            this.labelEAX0Basic.Name = "labelEAX0Basic";
+            this.labelEAX0Basic.Size = new System.Drawing.Size(36, 13);
+            this.labelEAX0Basic.TabIndex = 16;
+            this.labelEAX0Basic.Text = "Basic:";
+            // 
+            // labelEAX0Processors
+            // 
+            this.labelEAX0Processors.AutoSize = true;
+            this.labelEAX0Processors.Location = new System.Drawing.Point(6, 152);
+            this.labelEAX0Processors.Name = "labelEAX0Processors";
+            this.labelEAX0Processors.Size = new System.Drawing.Size(62, 13);
+            this.labelEAX0Processors.TabIndex = 15;
+            this.labelEAX0Processors.Text = "Processors:";
+            // 
+            // textBoxEAX0Processors
+            // 
+            this.textBoxEAX0Processors.Location = new System.Drawing.Point(177, 149);
+            this.textBoxEAX0Processors.Name = "textBoxEAX0Processors";
+            this.textBoxEAX0Processors.Size = new System.Drawing.Size(500, 20);
+            this.textBoxEAX0Processors.TabIndex = 14;
+            // 
+            // textBoxEAX0Extended
+            // 
+            this.textBoxEAX0Extended.Location = new System.Drawing.Point(577, 123);
+            this.textBoxEAX0Extended.Name = "textBoxEAX0Extended";
+            this.textBoxEAX0Extended.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0Extended.TabIndex = 13;
+            // 
+            // textBoxEAX0Basic
+            // 
+            this.textBoxEAX0Basic.Location = new System.Drawing.Point(425, 123);
+            this.textBoxEAX0Basic.Name = "textBoxEAX0Basic";
+            this.textBoxEAX0Basic.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0Basic.TabIndex = 12;
             // 
             // labelEAX0EBXEDXECXCpuVendor
             // 
@@ -185,120 +281,24 @@
             this.labelEAX0EAX.TabIndex = 0;
             this.labelEAX0EAX.Text = "EAX:";
             // 
-            // textBoxEAX0Basic
-            // 
-            this.textBoxEAX0Basic.Location = new System.Drawing.Point(425, 123);
-            this.textBoxEAX0Basic.Name = "textBoxEAX0Basic";
-            this.textBoxEAX0Basic.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0Basic.TabIndex = 12;
-            // 
-            // textBoxEAX0Extended
-            // 
-            this.textBoxEAX0Extended.Location = new System.Drawing.Point(577, 123);
-            this.textBoxEAX0Extended.Name = "textBoxEAX0Extended";
-            this.textBoxEAX0Extended.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0Extended.TabIndex = 13;
-            // 
-            // textBoxEAX0Processors
-            // 
-            this.textBoxEAX0Processors.Location = new System.Drawing.Point(177, 149);
-            this.textBoxEAX0Processors.Name = "textBoxEAX0Processors";
-            this.textBoxEAX0Processors.Size = new System.Drawing.Size(500, 20);
-            this.textBoxEAX0Processors.TabIndex = 14;
-            // 
-            // labelEAX0Processors
-            // 
-            this.labelEAX0Processors.AutoSize = true;
-            this.labelEAX0Processors.Location = new System.Drawing.Point(6, 152);
-            this.labelEAX0Processors.Name = "labelEAX0Processors";
-            this.labelEAX0Processors.Size = new System.Drawing.Size(62, 13);
-            this.labelEAX0Processors.TabIndex = 15;
-            this.labelEAX0Processors.Text = "Processors:";
-            // 
-            // labelEAX0Basic
-            // 
-            this.labelEAX0Basic.AutoSize = true;
-            this.labelEAX0Basic.Location = new System.Drawing.Point(383, 126);
-            this.labelEAX0Basic.Name = "labelEAX0Basic";
-            this.labelEAX0Basic.Size = new System.Drawing.Size(36, 13);
-            this.labelEAX0Basic.TabIndex = 16;
-            this.labelEAX0Basic.Text = "Basic:";
-            // 
-            // labelEAX0Extended
-            // 
-            this.labelEAX0Extended.AutoSize = true;
-            this.labelEAX0Extended.Location = new System.Drawing.Point(546, 126);
-            this.labelEAX0Extended.Name = "labelEAX0Extended";
-            this.labelEAX0Extended.Size = new System.Drawing.Size(25, 13);
-            this.labelEAX0Extended.TabIndex = 17;
-            this.labelEAX0Extended.Text = "Ext:";
-            // 
-            // labelEAX0ID1
-            // 
-            this.labelEAX0ID1.AutoSize = true;
-            this.labelEAX0ID1.Location = new System.Drawing.Point(383, 48);
-            this.labelEAX0ID1.Name = "labelEAX0ID1";
-            this.labelEAX0ID1.Size = new System.Drawing.Size(30, 13);
-            this.labelEAX0ID1.TabIndex = 18;
-            this.labelEAX0ID1.Text = "ID 1:";
-            // 
-            // labelEAX0ID2
-            // 
-            this.labelEAX0ID2.AutoSize = true;
-            this.labelEAX0ID2.Location = new System.Drawing.Point(383, 74);
-            this.labelEAX0ID2.Name = "labelEAX0ID2";
-            this.labelEAX0ID2.Size = new System.Drawing.Size(30, 13);
-            this.labelEAX0ID2.TabIndex = 19;
-            this.labelEAX0ID2.Text = "ID 2:";
-            // 
-            // labelEAX0ID3
-            // 
-            this.labelEAX0ID3.AutoSize = true;
-            this.labelEAX0ID3.Location = new System.Drawing.Point(383, 100);
-            this.labelEAX0ID3.Name = "labelEAX0ID3";
-            this.labelEAX0ID3.Size = new System.Drawing.Size(30, 13);
-            this.labelEAX0ID3.TabIndex = 20;
-            this.labelEAX0ID3.Text = "ID 3:";
-            // 
-            // textBoxEAX0ID1
-            // 
-            this.textBoxEAX0ID1.Location = new System.Drawing.Point(425, 45);
-            this.textBoxEAX0ID1.Name = "textBoxEAX0ID1";
-            this.textBoxEAX0ID1.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0ID1.TabIndex = 21;
-            // 
-            // textBoxEAX0ID2
-            // 
-            this.textBoxEAX0ID2.Location = new System.Drawing.Point(425, 71);
-            this.textBoxEAX0ID2.Name = "textBoxEAX0ID2";
-            this.textBoxEAX0ID2.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0ID2.TabIndex = 22;
-            // 
-            // textBoxEAX0ID3
-            // 
-            this.textBoxEAX0ID3.Location = new System.Drawing.Point(425, 97);
-            this.textBoxEAX0ID3.Name = "textBoxEAX0ID3";
-            this.textBoxEAX0ID3.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0ID3.TabIndex = 23;
-            // 
             // EAX0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 233);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxEAX0);
             this.MaximizeBox = false;
             this.Name = "EAX0";
             this.Text = "EAX=0x0: Highest Function Parameter and Manufacturer ID";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxEAX0.ResumeLayout(false);
+            this.groupBoxEAX0.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxEAX0;
         private System.Windows.Forms.TextBox textBoxEAX0EDX;
         private System.Windows.Forms.TextBox textBoxEAX0ECX;
         private System.Windows.Forms.TextBox textBoxEAX0EBX;

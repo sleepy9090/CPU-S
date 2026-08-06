@@ -44,8 +44,6 @@ namespace CPU_S
             string cpuIdHexEAX0EAXHightestFunctionParameter = cpuHelper.BinaryStringToHexString(cpuIdEAX0EAXHightestFunctionParameter);
             textBoxEAX0Basic.Text = "0x" + cpuIdHexEAX0EAXHightestFunctionParameter;
 
-
-
             #endregion
         }
     }

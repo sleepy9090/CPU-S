@@ -3354,5 +3354,11 @@ namespace CPU_S
             EAX0 eax0Form = new EAX0();
             eax0Form.Show();
         }
+
+        private void eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX1 eax1Form = new EAX1();
+            eax1Form.Show();
+        }
     }
 }

@@ -318,6 +318,7 @@
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3062,7 +3063,8 @@
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem});
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem,
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3079,6 +3081,13 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem
+            // 
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Name = "eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem";
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Text = "EAX=0x1: Processor Info and Feature Bits";
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3418,6 +3427,7 @@
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem;
     }
 }
 
