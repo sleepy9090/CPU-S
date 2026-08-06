@@ -3222,19 +3222,49 @@ namespace CPU_S
 
             #region EAX=0x8C860000: Hygon Extended Feature Flags
 
+            string cpuIdEAX8C860000EAX = cpuHelper.GetEAX8C860000EAXX();
+            Console.WriteLine($"EAX8C860000EAX: {cpuIdEAX8C860000EAX}");
 
+            string cpuIdEAX8C860000EBX = cpuHelper.GetEAX8C860000EBXX();
+            Console.WriteLine($"EAX8C860000EBX: {cpuIdEAX8C860000EBX}");
+
+            string cpuIdEAX8C860000ECX = cpuHelper.GetEAX8C860000ECXX();
+            Console.WriteLine($"EAX8C860000ECX: {cpuIdEAX8C860000ECX}");
+
+            string cpuIdEAX8C860000EDX = cpuHelper.GetEAX8C860000EDXX();
+            Console.WriteLine($"EAX8C860000EDX: {cpuIdEAX8C860000EDX}");
 
             #endregion
 
             #region EAX=0x8FFFFFFE: AMD Easter Eggs
 
+            string cpuIdEAX8FFFFFFEEAX = cpuHelper.GetEAX8FFFFFFEEAXX();
+            Console.WriteLine($"EAX8FFFFFFEEAX: {cpuIdEAX8FFFFFFEEAX}");
 
+            string cpuIdEAX8FFFFFFEEBX = cpuHelper.GetEAX8FFFFFFEEBXX();
+            Console.WriteLine($"EAX8FFFFFFEEBX: {cpuIdEAX8FFFFFFEEBX}");
+
+            string cpuIdEAX8FFFFFFEECX = cpuHelper.GetEAX8FFFFFFEECXX();
+            Console.WriteLine($"EAX8FFFFFFEECX: {cpuIdEAX8FFFFFFEECX}");
+
+            string cpuIdEAX8FFFFFFEEDX = cpuHelper.GetEAX8FFFFFFEEDXX();
+            Console.WriteLine($"EAX8FFFFFFEEDX: {cpuIdEAX8FFFFFFEEDX}");
 
             #endregion
 
             #region EAX=0x8FFFFFFF: AMD Easter Eggs
 
+            string cpuIdEAX8FFFFFFFEAX = cpuHelper.GetEAX8FFFFFFFEAXX();
+            Console.WriteLine($"EAX8FFFFFFFEAX: {cpuIdEAX8FFFFFFFEAX}");
 
+            string cpuIdEAX8FFFFFFFEBX = cpuHelper.GetEAX8FFFFFFFEBXX();
+            Console.WriteLine($"EAX8FFFFFFFEBX: {cpuIdEAX8FFFFFFFEBX}");
+
+            string cpuIdEAX8FFFFFFFECX = cpuHelper.GetEAX8FFFFFFFECXX();
+            Console.WriteLine($"EAX8FFFFFFFECX: {cpuIdEAX8FFFFFFFECX}");
+
+            string cpuIdEAX8FFFFFFFEDX = cpuHelper.GetEAX8FFFFFFFEDXX();
+            Console.WriteLine($"EAX8FFFFFFFEDX: {cpuIdEAX8FFFFFFFEDX}");
 
             #endregion
 
