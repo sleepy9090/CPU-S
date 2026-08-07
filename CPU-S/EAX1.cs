@@ -68,6 +68,63 @@ namespace CPU_S
             string cpuIdEAX1EBX0_7_BrandIndex = cpuHelper.GetEAX1EBX0_7_BrandIndexX();
             textBoxEAX1EBX0_7_BrandIndex.Text = cpuIdEAX1EBX0_7_BrandIndex;
 
+            string cpuIdEAX1EBX8_15_CLFLUSHLineSize = cpuHelper.GetEAX1EBX8_15_CLFLUSHLineSizeX();
+            textBoxEAX1EBX8_15_CLFLUSHLineSize.Text = cpuIdEAX1EBX8_15_CLFLUSHLineSize;
+
+            string cpuIdEAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckg = cpuHelper.GetEAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckgX();
+            textBoxEAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckg.Text = cpuIdEAX1EBX16_23_MaxNumAddrIdsLogProcsInPhyPckg;
+
+            string cpuIdEAX1EBX24_31_LocalAPICID = cpuHelper.GetEAX1EBX24_31_LocalAPICIDX();
+            textBoxEAX1EBX24_31_LocalAPICID.Text = cpuIdEAX1EBX24_31_LocalAPICID;
+
+            bool cpuIdEAX1ECX0_SSE3IsSupported = cpuHelper.GetEAX1ECX0_SSE3IsSupportedX();
+            checkBoxEAX1ECX0_SSE3.Checked = cpuIdEAX1ECX0_SSE3IsSupported;
+
+            bool cpuIdEAX1ECX1_PCLMULQDQIsSupported = cpuHelper.GetEAX1ECX1_PCLMULQDQIsSupportedX();
+            checkBoxEAX1ECX1_PCLMULQDQ.Checked = cpuIdEAX1ECX1_PCLMULQDQIsSupported;
+
+            bool cpuIdEAX1ECX2_DTES64IsSupported = cpuHelper.GetEAX1ECX2_DTES64IsSupportedX();
+            checkBoxEAX1ECX2_DTES64.Checked = cpuIdEAX1ECX2_DTES64IsSupported;
+
+            bool cpuIdEAX1ECX3_MONITORIsSupported = cpuHelper.GetEAX1ECX3_MONITORIsSupportedX();
+            checkBoxEAX1ECX3_MONITOR.Checked = cpuIdEAX1ECX3_MONITORIsSupported;
+
+            bool cpuIdEAX1ECX4_DSCPLIsSupported = cpuHelper.GetEAX1ECX4_DSCPLIsSupportedX();
+            checkBoxEAX1ECX4_DSCPL.Checked = cpuIdEAX1ECX4_DSCPLIsSupported;
+
+            bool cpuIdEAX1ECX5_VMXIsSupported = cpuHelper.GetEAX1ECX5_VMXIsSupportedX();
+            checkBoxEAX1ECX5_VMX.Checked = cpuIdEAX1ECX5_VMXIsSupported;
+
+            bool cpuIdEAX1ECX6_SMXIsSupported = cpuHelper.GetEAX1ECX6_SMXIsSupportedX();
+            checkBoxEAX1ECX6_SMX.Checked = cpuIdEAX1ECX6_SMXIsSupported;
+
+            bool cpuIdEAX1ECX7_ESTIsSupported = cpuHelper.GetEAX1ECX7_ESTIsSupportedX();
+            checkBoxEAX1ECX7_EST.Checked = cpuIdEAX1ECX7_ESTIsSupported;
+
+            bool cpuIdEAX1ECX8_TM2IsSupported = cpuHelper.GetEAX1ECX8_TM2IsSupportedX();
+            checkBoxEAX1ECX8_TM2.Checked = cpuIdEAX1ECX8_TM2IsSupported;
+
+            bool cpuIdEAX1ECX9_SSSE3IsSupported = cpuHelper.GetEAX1ECX9_SSSE3IsSupportedX();
+            checkBoxEAX1ECX9_SSSE3.Checked = cpuIdEAX1ECX9_SSSE3IsSupported;
+
+            bool cpuIdEAX1ECX10_CNXTIDIsSupported = cpuHelper.GetEAX1ECX10_CNXTIDIsSupportedX();
+            checkBoxEAX1ECX10_CNXTID.Checked = cpuIdEAX1ECX10_CNXTIDIsSupported;
+
+            bool cpuIdEAX1ECX11_SDBGIsSupported = cpuHelper.GetEAX1ECX11_SDBGIsSupportedX();
+            checkBoxEAX1ECX11_SDBG.Checked = cpuIdEAX1ECX11_SDBGIsSupported;
+
+            bool cpuIdEAX1ECX12_FMAIsSupported = cpuHelper.GetEAX1ECX12_FMAIsSupportedX();
+            checkBoxEAX1ECX12_FMA.Checked = cpuIdEAX1ECX12_FMAIsSupported;
+
+            bool cpuIdEAX1ECX13_CMPXCHG16BIsSupported = cpuHelper.GetEAX1ECX13_CMPXCHG16BIsSupportedX();
+            checkBoxEAX1ECX13_CMPXCHG16B.Checked = cpuIdEAX1ECX13_CMPXCHG16BIsSupported;
+
+            bool cpuIdEAX1ECX14_xTPRUpdateControlIsSupported = cpuHelper.GetEAX1ECX14_xTPRUpdateControlIsSupportedX();
+            checkBoxEAX1ECX14_xTPRUpdateControl.Checked = cpuIdEAX1ECX14_xTPRUpdateControlIsSupported;
+
+            bool cpuIdEAX1ECX15_PDCMIsSupported = cpuHelper.GetEAX1ECX15_PDCMIsSupportedX();
+            checkBoxEAX1ECX15_PDCM.Checked = cpuIdEAX1ECX15_PDCMIsSupported;
+
             #endregion
         }
     }
