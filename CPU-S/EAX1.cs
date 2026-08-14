@@ -125,6 +125,54 @@ namespace CPU_S
             bool cpuIdEAX1ECX15_PDCMIsSupported = cpuHelper.GetEAX1ECX15_PDCMIsSupportedX();
             checkBoxEAX1ECX15_PDCM.Checked = cpuIdEAX1ECX15_PDCMIsSupported;
 
+            bool cpuIdEAX1ECX16_ReservedIsSupported = cpuHelper.GetEAX1ECX16_ReservedIsSupportedX();
+            checkBoxEAX1ECX16_Reserved.Checked = cpuIdEAX1ECX16_ReservedIsSupported;
+
+            bool cpuIdEAX1ECX17_PCIDIsSupported = cpuHelper.GetEAX1ECX17_PCIDIsSupportedX();
+            checkBoxEAX1ECX17_PCID.Checked = cpuIdEAX1ECX17_PCIDIsSupported;
+
+            bool cpuIdEAX1ECX18_DCAIsSupported = cpuHelper.GetEAX1ECX18_DCAIsSupportedX();
+            checkBoxEAX1ECX18_DCA.Checked = cpuIdEAX1ECX18_DCAIsSupported;
+
+            bool cpuIdEAX1ECX19_SSE41IsSupported = cpuHelper.GetEAX1ECX19_SSE41IsSupportedX();
+            checkBoxEAX1ECX19_SSE41.Checked = cpuIdEAX1ECX19_SSE41IsSupported;
+
+            bool cpuIdEAX1ECX20_SSE42IsSupported = cpuHelper.GetEAX1ECX20_SSE42IsSupportedX();
+            checkBoxEAX1ECX20_SSE42.Checked = cpuIdEAX1ECX20_SSE42IsSupported;
+
+            bool cpuIdEAX1ECX21_X2APICIsSupported = cpuHelper.GetEAX1ECX21_X2APICIsSupportedX();
+            checkBoxEAX1ECX21_X2APIC.Checked = cpuIdEAX1ECX21_X2APICIsSupported;
+
+            bool cpuIdEAX1ECX22_MOVBEIsSupported = cpuHelper.GetEAX1ECX22_MOVBEIsSupportedX();
+            checkBoxEAX1ECX22_MOVBE.Checked = cpuIdEAX1ECX22_MOVBEIsSupported;
+
+            bool cpuIdEAX1ECX23_POPCNTIsSupported = cpuHelper.GetEAX1ECX23_POPCNTIsSupportedX();
+            checkBoxEAX1ECX23_POPCNT.Checked = cpuIdEAX1ECX23_POPCNTIsSupported;
+
+            bool cpuIdEAX1ECX24_TSCDeadlineIsSupported = cpuHelper.GetEAX1ECX24_TSCDeadlineIsSupportedX();
+            checkBoxEAX1ECX24_TSCDeadline.Checked = cpuIdEAX1ECX24_TSCDeadlineIsSupported;
+
+            bool cpuIdEAX1ECX25_AESNIIsSupported = cpuHelper.GetEAX1ECX25_AESNIIsSupportedX();
+            checkBoxEAX1ECX25_AESNI.Checked = cpuIdEAX1ECX25_AESNIIsSupported;
+
+            bool cpuIdEAX1ECX26_XSAVEIsSupported = cpuHelper.GetEAX1ECX26_XSAVEIsSupportedX();
+            checkBoxEAX1ECX26_XSAVE.Checked = cpuIdEAX1ECX26_XSAVEIsSupported;
+
+            bool cpuIdEAX1ECX27_OSXSAVEIsSupported = cpuHelper.GetEAX1ECX27_OSXSAVEIsSupportedX();
+            checkBoxEAX1ECX27_OSXSAVE.Checked = cpuIdEAX1ECX27_OSXSAVEIsSupported;
+
+            bool cpuIdEAX1ECX28_AVXIsSupported = cpuHelper.GetEAX1ECX28_AVXIsSupportedX();
+            checkBoxEAX1ECX28_AVX.Checked = cpuIdEAX1ECX28_AVXIsSupported;
+
+            bool cpuIdEAX1ECX29_F16CIsSupported = cpuHelper.GetEAX1ECX29_F16CIsSupportedX();
+            checkBoxEAX1ECX29_F16C.Checked = cpuIdEAX1ECX29_F16CIsSupported;
+
+            bool cpuIdEAX1ECX30_RDRANDIsSupported = cpuHelper.GetEAX1ECX30_RDRANDIsSupportedX();
+            checkBoxEAX1ECX30_RDRAND.Checked = cpuIdEAX1ECX30_RDRANDIsSupported;
+
+            bool cpuIdEAX1ECX31_HypervisorIsSupported = cpuHelper.GetEAX1ECX31_HypervisorIsSupportedX();
+            checkBoxEAX1ECX31_Hypervisor.Checked = cpuIdEAX1ECX31_HypervisorIsSupported;
+
             #endregion
         }
     }
