@@ -102,7 +102,17 @@
             this.checkBoxEAX1ECX29_F16C = new System.Windows.Forms.CheckBox();
             this.checkBoxEAX1ECX30_RDRAND = new System.Windows.Forms.CheckBox();
             this.checkBoxEAX1ECX31_Hypervisor = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX0_FPU = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX1_VME = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX2_DE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX3_PSE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX4_TSC = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX5_MSR = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX6_PAE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX7_MCE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX1EDX8_CX8 = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX1.SuspendLayout();
+            this.groupBoxEDXBits.SuspendLayout();
             this.groupBoxECXBits.SuspendLayout();
             this.groupBoxEBXBits.SuspendLayout();
             this.groupBoxEAXBits.SuspendLayout();
@@ -125,6 +135,15 @@
             // 
             // groupBoxEDXBits
             // 
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX8_CX8);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX7_MCE);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX6_PAE);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX5_MSR);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX4_TSC);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX3_PSE);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX2_DE);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX1_VME);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX1EDX0_FPU);
             this.groupBoxEDXBits.Location = new System.Drawing.Point(834, 158);
             this.groupBoxEDXBits.Name = "groupBoxEDXBits";
             this.groupBoxEDXBits.Size = new System.Drawing.Size(400, 797);
@@ -843,15 +862,108 @@
             this.checkBoxEAX1ECX31_Hypervisor.Text = "Hypervisor - Hypervisor present (always zero on physical CPUs) [31]";
             this.checkBoxEAX1ECX31_Hypervisor.UseVisualStyleBackColor = true;
             // 
+            // checkBoxEAX1EDX0_FPU
+            // 
+            this.checkBoxEAX1EDX0_FPU.AutoSize = true;
+            this.checkBoxEAX1EDX0_FPU.Location = new System.Drawing.Point(6, 22);
+            this.checkBoxEAX1EDX0_FPU.Name = "checkBoxEAX1EDX0_FPU";
+            this.checkBoxEAX1EDX0_FPU.Size = new System.Drawing.Size(156, 17);
+            this.checkBoxEAX1EDX0_FPU.TabIndex = 31;
+            this.checkBoxEAX1EDX0_FPU.Text = "FPU - Onboard x87 FPU [0]";
+            this.checkBoxEAX1EDX0_FPU.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX1_VME
+            // 
+            this.checkBoxEAX1EDX1_VME.AutoSize = true;
+            this.checkBoxEAX1EDX1_VME.Location = new System.Drawing.Point(6, 45);
+            this.checkBoxEAX1EDX1_VME.Name = "checkBoxEAX1EDX1_VME";
+            this.checkBoxEAX1EDX1_VME.Size = new System.Drawing.Size(322, 17);
+            this.checkBoxEAX1EDX1_VME.TabIndex = 32;
+            this.checkBoxEAX1EDX1_VME.Text = "VME - Virtual 8086 mode extensions (such as VIF, VIP, PVI) [1]";
+            this.checkBoxEAX1EDX1_VME.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX2_DE
+            // 
+            this.checkBoxEAX1EDX2_DE.AutoSize = true;
+            this.checkBoxEAX1EDX2_DE.Location = new System.Drawing.Point(6, 67);
+            this.checkBoxEAX1EDX2_DE.Name = "checkBoxEAX1EDX2_DE";
+            this.checkBoxEAX1EDX2_DE.Size = new System.Drawing.Size(224, 17);
+            this.checkBoxEAX1EDX2_DE.TabIndex = 33;
+            this.checkBoxEAX1EDX2_DE.Text = "DE - Debugging Extensions (CR4 bit 3) [2]";
+            this.checkBoxEAX1EDX2_DE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX3_PSE
+            // 
+            this.checkBoxEAX1EDX3_PSE.AutoSize = true;
+            this.checkBoxEAX1EDX3_PSE.Location = new System.Drawing.Point(6, 90);
+            this.checkBoxEAX1EDX3_PSE.Name = "checkBoxEAX1EDX3_PSE";
+            this.checkBoxEAX1EDX3_PSE.Size = new System.Drawing.Size(234, 17);
+            this.checkBoxEAX1EDX3_PSE.TabIndex = 34;
+            this.checkBoxEAX1EDX3_PSE.Text = "PSE - Page Size Extension (4 MB pages) [3]";
+            this.checkBoxEAX1EDX3_PSE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX4_TSC
+            // 
+            this.checkBoxEAX1EDX4_TSC.AutoSize = true;
+            this.checkBoxEAX1EDX4_TSC.Location = new System.Drawing.Point(6, 113);
+            this.checkBoxEAX1EDX4_TSC.Name = "checkBoxEAX1EDX4_TSC";
+            this.checkBoxEAX1EDX4_TSC.Size = new System.Drawing.Size(279, 17);
+            this.checkBoxEAX1EDX4_TSC.TabIndex = 35;
+            this.checkBoxEAX1EDX4_TSC.Text = "TSC - Time Stamp Counter and RDTSC instruction [4]";
+            this.checkBoxEAX1EDX4_TSC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX5_MSR
+            // 
+            this.checkBoxEAX1EDX5_MSR.AutoSize = true;
+            this.checkBoxEAX1EDX5_MSR.Location = new System.Drawing.Point(6, 136);
+            this.checkBoxEAX1EDX5_MSR.Name = "checkBoxEAX1EDX5_MSR";
+            this.checkBoxEAX1EDX5_MSR.Size = new System.Drawing.Size(352, 17);
+            this.checkBoxEAX1EDX5_MSR.TabIndex = 36;
+            this.checkBoxEAX1EDX5_MSR.Text = "MSR - Model-specific registers and RDMSR/WRMSR instructions [5]";
+            this.checkBoxEAX1EDX5_MSR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX6_PAE
+            // 
+            this.checkBoxEAX1EDX6_PAE.AutoSize = true;
+            this.checkBoxEAX1EDX6_PAE.Location = new System.Drawing.Point(6, 159);
+            this.checkBoxEAX1EDX6_PAE.Name = "checkBoxEAX1EDX6_PAE";
+            this.checkBoxEAX1EDX6_PAE.Size = new System.Drawing.Size(200, 17);
+            this.checkBoxEAX1EDX6_PAE.TabIndex = 37;
+            this.checkBoxEAX1EDX6_PAE.Text = "PAE - Physical Address Extension [6]";
+            this.checkBoxEAX1EDX6_PAE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX7_MCE
+            // 
+            this.checkBoxEAX1EDX7_MCE.AutoSize = true;
+            this.checkBoxEAX1EDX7_MCE.Location = new System.Drawing.Point(6, 182);
+            this.checkBoxEAX1EDX7_MCE.Name = "checkBoxEAX1EDX7_MCE";
+            this.checkBoxEAX1EDX7_MCE.Size = new System.Drawing.Size(198, 17);
+            this.checkBoxEAX1EDX7_MCE.TabIndex = 38;
+            this.checkBoxEAX1EDX7_MCE.Text = "MCE - Machine Check Exception [7]";
+            this.checkBoxEAX1EDX7_MCE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX1EDX8_CX8
+            // 
+            this.checkBoxEAX1EDX8_CX8.AutoSize = true;
+            this.checkBoxEAX1EDX8_CX8.Location = new System.Drawing.Point(6, 205);
+            this.checkBoxEAX1EDX8_CX8.Name = "checkBoxEAX1EDX8_CX8";
+            this.checkBoxEAX1EDX8_CX8.Size = new System.Drawing.Size(286, 17);
+            this.checkBoxEAX1EDX8_CX8.TabIndex = 39;
+            this.checkBoxEAX1EDX8_CX8.Text = "CX8 - CMPXCHG8B (compare-and-swap) instruction [8]";
+            this.checkBoxEAX1EDX8_CX8.UseVisualStyleBackColor = true;
+            // 
             // EAX1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 985);
             this.Controls.Add(this.groupBoxEAX1);
+            this.MaximizeBox = false;
             this.Name = "EAX1";
             this.Text = "EAX1";
             this.groupBoxEAX1.ResumeLayout(false);
+            this.groupBoxEDXBits.ResumeLayout(false);
+            this.groupBoxEDXBits.PerformLayout();
             this.groupBoxECXBits.ResumeLayout(false);
             this.groupBoxECXBits.PerformLayout();
             this.groupBoxEBXBits.ResumeLayout(false);
@@ -940,5 +1052,14 @@
         private System.Windows.Forms.CheckBox checkBoxEAX1ECX29_F16C;
         private System.Windows.Forms.CheckBox checkBoxEAX1ECX30_RDRAND;
         private System.Windows.Forms.CheckBox checkBoxEAX1ECX31_Hypervisor;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX0_FPU;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX1_VME;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX2_DE;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX3_PSE;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX4_TSC;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX5_MSR;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX6_PAE;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX7_MCE;
+        private System.Windows.Forms.CheckBox checkBoxEAX1EDX8_CX8;
     }
 }

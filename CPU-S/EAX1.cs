@@ -173,6 +173,33 @@ namespace CPU_S
             bool cpuIdEAX1ECX31_HypervisorIsSupported = cpuHelper.GetEAX1ECX31_HypervisorIsSupportedX();
             checkBoxEAX1ECX31_Hypervisor.Checked = cpuIdEAX1ECX31_HypervisorIsSupported;
 
+            bool cpuIdEAX1EDX0_FPUIsSupported = cpuHelper.GetEAX1EDX0_FPUIsSupportedX();
+            checkBoxEAX1EDX0_FPU.Checked = cpuIdEAX1EDX0_FPUIsSupported;
+
+            bool cpuIdEAX1EDX1_VMEIsSupported = cpuHelper.GetEAX1EDX1_VMEIsSupportedX();
+            checkBoxEAX1EDX1_VME.Checked = cpuIdEAX1EDX1_VMEIsSupported;
+
+            bool cpuIdEAX1EDX2_DEIsSupported = cpuHelper.GetEAX1EDX2_DEIsSupportedX();
+            checkBoxEAX1EDX2_DE.Checked = cpuIdEAX1EDX2_DEIsSupported;
+
+            bool cpuIdEAX1EDX3_PSEIsSupported = cpuHelper.GetEAX1EDX3_PSEIsSupportedX();
+            checkBoxEAX1EDX3_PSE.Checked = cpuIdEAX1EDX3_PSEIsSupported;
+
+            bool cpuIdEAX1EDX4_TSCIsSupported = cpuHelper.GetEAX1EDX4_TSCIsSupportedX();
+            checkBoxEAX1EDX4_TSC.Checked = cpuIdEAX1EDX4_TSCIsSupported;
+
+            bool cpuIdEAX1EDX5_MSRIsSupported = cpuHelper.GetEAX1EDX5_MSRIsSupportedX();
+            checkBoxEAX1EDX5_MSR.Checked = cpuIdEAX1EDX5_MSRIsSupported;
+
+            bool cpuIdEAX1EDX6_PAEIsSupported = cpuHelper.GetEAX1EDX6_PAEIsSupportedX();
+            checkBoxEAX1EDX6_PAE.Checked = cpuIdEAX1EDX6_PAEIsSupported;
+
+            bool cpuIdEAX1EDX7_MCEIsSupported = cpuHelper.GetEAX1EDX7_MCEIsSupportedX();
+            checkBoxEAX1EDX7_MCE.Checked = cpuIdEAX1EDX7_MCEIsSupported;
+
+            bool cpuIdEAX1EDX8_CX8IsSupported = cpuHelper.GetEAX1EDX8_CX8IsSupportedX();
+            checkBoxEAX1EDX8_CX8.Checked = cpuIdEAX1EDX8_CX8IsSupported;
+
             #endregion
         }
     }
