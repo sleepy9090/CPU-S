@@ -200,6 +200,75 @@ namespace CPU_S
             bool cpuIdEAX1EDX8_CX8IsSupported = cpuHelper.GetEAX1EDX8_CX8IsSupportedX();
             checkBoxEAX1EDX8_CX8.Checked = cpuIdEAX1EDX8_CX8IsSupported;
 
+            bool cpuIdEAX1EDX9_APICIsSupported = cpuHelper.GetEAX1EDX9_APICIsSupportedX();
+            checkBoxEAX1EDX9_APIC.Checked = cpuIdEAX1EDX9_APICIsSupported;
+
+            bool cpuIdEAX1EDX10_ReservedIsSupported = cpuHelper.GetEAX1EDX10_ReservedIsSupportedX();
+            checkBoxEAX1EDX10_Reserved.Checked = cpuIdEAX1EDX10_ReservedIsSupported;
+
+            bool cpuIdEAX1EDX11_SEPIsSupported = cpuHelper.GetEAX1EDX11_SEPIsSupportedX();
+            checkBoxEAX1EDX11_SEP.Checked = cpuIdEAX1EDX11_SEPIsSupported;
+
+            bool cpuIdEAX1EDX12_MTRRIsSupported = cpuHelper.GetEAX1EDX12_MTRRIsSupportedX();
+            checkBoxEAX1EDX12_MTRR.Checked = cpuIdEAX1EDX12_MTRRIsSupported;
+
+            bool cpuIdEAX1EDX13_PGEIsSupported = cpuHelper.GetEAX1EDX13_PGEIsSupportedX();
+            checkBoxEAX1EDX13_PGE.Checked = cpuIdEAX1EDX13_PGEIsSupported;
+
+            bool cpuIdEAX1EDX14_MCAIsSupported = cpuHelper.GetEAX1EDX14_MCAIsSupportedX();
+            checkBoxEAX1EDX14_MCA.Checked = cpuIdEAX1EDX14_MCAIsSupported;
+
+            bool cpuIdEAX1EDX15_CMOVIsSupported = cpuHelper.GetEAX1EDX15_CMOVIsSupportedX();
+            checkBoxEAX1EDX15_CMOV.Checked = cpuIdEAX1EDX15_CMOVIsSupported;
+
+            bool cpuIdEAX1EDX16_PATIsSupported = cpuHelper.GetEAX1EDX16_PATIsSupportedX();
+            checkBoxEAX1EDX16_PAT.Checked = cpuIdEAX1EDX16_PATIsSupported;
+
+            bool cpuIdEAX1EDX17_PSE36IsSupported = cpuHelper.GetEAX1EDX17_PSE36IsSupportedX();
+            checkBoxEAX1EDX17_PSE36.Checked = cpuIdEAX1EDX17_PSE36IsSupported;
+
+            bool cpuIdEAX1EDX18_PSNIsSupported = cpuHelper.GetEAX1EDX18_PSNIsSupportedX();
+            checkBoxEAX1EDX18_PSN.Checked = cpuIdEAX1EDX18_PSNIsSupported;
+
+            bool cpuIdEAX1EDX19_CLFSHIsSupported = cpuHelper.GetEAX1EDX19_CLFSHIsSupportedX();
+            checkBoxEAX1EDX19_CLFSH.Checked = cpuIdEAX1EDX19_CLFSHIsSupported;
+
+            bool cpuIdEAX1EDX20_NXIsSupported = cpuHelper.GetEAX1EDX20_NXIsSupportedX();
+            checkBoxEAX1EDX20_NX.Checked = cpuIdEAX1EDX20_NXIsSupported;
+
+            bool cpuIdEAX1EDX21_DSIsSupported = cpuHelper.GetEAX1EDX21_DSIsSupportedX();
+            checkBoxEAX1EDX21_DS.Checked = cpuIdEAX1EDX21_DSIsSupported;
+
+            bool cpuIdEAX1EDX22_ACPIIsSupported = cpuHelper.GetEAX1EDX22_ACPIIsSupportedX();
+            checkBoxEAX1EDX22_ACPI.Checked = cpuIdEAX1EDX22_ACPIIsSupported;
+
+            bool cpuIdEAX1EDX23_MMXIsSupported = cpuHelper.GetEAX1EDX23_MMXIsSupportedX();
+            checkBoxEAX1EDX23_MMX.Checked = cpuIdEAX1EDX23_MMXIsSupported;
+
+            bool cpuIdEAX1EDX24_FXSRIsSupported = cpuHelper.GetEAX1EDX24_FXSRIsSupportedX();
+            checkBoxEAX1EDX24_FXSR.Checked = cpuIdEAX1EDX24_FXSRIsSupported;
+
+            bool cpuIdEAX1EDX25_SSEIsSupported = cpuHelper.GetEAX1EDX25_SSEIsSupportedX();
+            checkBoxEAX1EDX25_SSE.Checked = cpuIdEAX1EDX25_SSEIsSupported;
+
+            bool cpuIdEAX1EDX26_SSE2IsSupported = cpuHelper.GetEAX1EDX26_SSE2IsSupportedX();
+            checkBoxEAX1EDX26_SSE2.Checked = cpuIdEAX1EDX26_SSE2IsSupported;
+
+            bool cpuIdEAX1EDX27_SSIsSupported = cpuHelper.GetEAX1EDX27_SSIsSupportedX();
+            checkBoxEAX1EDX27_SS.Checked = cpuIdEAX1EDX27_SSIsSupported;
+
+            bool cpuIdEAX1EDX28_HTTIsSupported = cpuHelper.GetEAX1EDX28_HTTIsSupportedX();
+            checkBoxEAX1EDX28_HTT.Checked = cpuIdEAX1EDX28_HTTIsSupported;
+
+            bool cpuIdEAX1EDX29_TMIsSupported = cpuHelper.GetEAX1EDX29_TMIsSupportedX();
+            checkBoxEAX1EDX29_TM.Checked = cpuIdEAX1EDX29_TMIsSupported;
+
+            bool cpuIdEAX1EDX30_IA64IsSupported = cpuHelper.GetEAX1EDX30_IA64IsSupportedX();
+            checkBoxEAX1EDX30_IA64.Checked = cpuIdEAX1EDX30_IA64IsSupported;
+
+            bool cpuIdEAX1EDX31_PBEIsSupported = cpuHelper.GetEAX1EDX31_PBEIsSupportedX();
+            checkBoxEAX1EDX31_PBE.Checked = cpuIdEAX1EDX31_PBEIsSupported;
+
             #endregion
         }
     }
