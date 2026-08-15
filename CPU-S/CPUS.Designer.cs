@@ -317,8 +317,9 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3064,7 +3065,8 @@
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem,
-            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem});
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem,
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3076,18 +3078,25 @@
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Text = "EAX=0x0: Highest Function Parameter and Manufacturer ID";
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Click += new System.EventHandler(this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem_Click);
             // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
             // eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem
             // 
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Name = "eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem";
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Text = "EAX=0x1: Processor Info and Feature Bits";
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem
+            // 
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Name = "eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem";
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Text = "EAX=0x2: Cache and TLB Descriptor Information";
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3428,6 +3437,7 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem;
     }
 }
 

@@ -154,7 +154,7 @@
             this.groupBoxEAX1.Size = new System.Drawing.Size(1240, 961);
             this.groupBoxEAX1.TabIndex = 1;
             this.groupBoxEAX1.TabStop = false;
-            this.groupBoxEAX1.Text = "EAX=1";
+            this.groupBoxEAX1.Text = "EAX=0x1";
             // 
             // groupBoxEDXBits
             // 
@@ -1236,7 +1236,7 @@
             this.Controls.Add(this.groupBoxEAX1);
             this.MaximizeBox = false;
             this.Name = "EAX1";
-            this.Text = "EAX1";
+            this.Text = "EAX=0x1: Processor Info and Feature Bits";
             this.groupBoxEAX1.ResumeLayout(false);
             this.groupBoxEDXBits.ResumeLayout(false);
             this.groupBoxEDXBits.PerformLayout();

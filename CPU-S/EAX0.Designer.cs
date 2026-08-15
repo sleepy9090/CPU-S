@@ -87,7 +87,7 @@
             this.groupBoxEAX0.Size = new System.Drawing.Size(688, 210);
             this.groupBoxEAX0.TabIndex = 0;
             this.groupBoxEAX0.TabStop = false;
-            this.groupBoxEAX0.Text = "EAX=0";
+            this.groupBoxEAX0.Text = "EAX=0x0";
             // 
             // textBoxEAX0ID3
             // 

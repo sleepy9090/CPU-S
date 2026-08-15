@@ -1147,10 +1147,10 @@ namespace CPU_S
             string cpuIdEAX2EDX = cpuHelper.GetEAX2EDXX();
             Console.WriteLine($"EAX2EDX: {cpuIdEAX2EDX}");
 
-            string cpuIdEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAX = cpuHelper.GetEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXX();
+            bool cpuIdEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAX = cpuHelper.GetEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXX();
             Console.WriteLine($"EAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAX: {cpuIdEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAX}");
 
-            string cpuIdEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAX2 = cpuHelper.GetEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAX2X();
+            string cpuIdEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAX2 = cpuHelper.GetEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAXX();
             Console.WriteLine($"EAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAX2: {cpuIdEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAX2}");
 
             string cpuIdEAX2_EAX8_15_CacheAndTLBDescriptorInformation1 = cpuHelper.GetEAX2_EAX8_15_CacheAndTLBDescriptorInformation1X();
@@ -1162,7 +1162,7 @@ namespace CPU_S
             string cpuIdEAX2_EAX24_31_CacheAndTLBDescriptorInformation3 = cpuHelper.GetEAX2_EAX24_31_CacheAndTLBDescriptorInformation3X();
             Console.WriteLine($"EAX2_EAX24_31_CacheAndTLBDescriptorInformation3: {cpuIdEAX2_EAX24_31_CacheAndTLBDescriptorInformation3}");
 
-            string cpuIdEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBX = cpuHelper.GetEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXX();
+            bool cpuIdEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBX = cpuHelper.GetEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXX();
             Console.WriteLine($"EAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBX: {cpuIdEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBX}");
 
             string cpuIdEAX2_EBX8_15_CacheAndTLBDescriptorInformation1 = cpuHelper.GetEAX2_EBX8_15_CacheAndTLBDescriptorInformation1X();
@@ -1174,7 +1174,7 @@ namespace CPU_S
             string cpuIdEAX2_EBX24_31_CacheAndTLBDescriptorInformation3 = cpuHelper.GetEAX2_EBX24_31_CacheAndTLBDescriptorInformation3X();
             Console.WriteLine($"EAX2_EBX24_31_CacheAndTLBDescriptorInformation3: {cpuIdEAX2_EBX24_31_CacheAndTLBDescriptorInformation3}");
 
-            string cpuIdEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECX = cpuHelper.GetEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXX();
+            bool cpuIdEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECX = cpuHelper.GetEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXX();
             Console.WriteLine($"EAX2_ECX31_IsInvalidCacheAndTblDescriptorsECX: {cpuIdEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECX}");
 
             string cpuIdEAX2_ECX8_15_CacheAndTLBDescriptorInformation1 = cpuHelper.GetEAX2_ECX8_15_CacheAndTLBDescriptorInformation1X();
@@ -1186,7 +1186,7 @@ namespace CPU_S
             string cpuIdEAX2_ECX24_31_CacheAndTLBDescriptorInformation3 = cpuHelper.GetEAX2_ECX24_31_CacheAndTLBDescriptorInformation3X();
             Console.WriteLine($"EAX2_ECX24_31_CacheAndTLBDescriptorInformation3: {cpuIdEAX2_ECX24_31_CacheAndTLBDescriptorInformation3}");
 
-            string cpuIdEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDX = cpuHelper.GetEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXX();
+            bool cpuIdEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDX = cpuHelper.GetEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXX();
             Console.WriteLine($"EAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDX: {cpuIdEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDX}");
 
             string cpuIdEAX2_EDX8_15_CacheAndTLBDescriptorInformation1 = cpuHelper.GetEAX2_EDX8_15_CacheAndTLBDescriptorInformation1X();
@@ -3359,6 +3359,12 @@ namespace CPU_S
         {
             EAX1 eax1Form = new EAX1();
             eax1Form.Show();
+        }
+
+        private void eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX2 eax2Form = new EAX2();
+            eax2Form.Show();
         }
     }
 }

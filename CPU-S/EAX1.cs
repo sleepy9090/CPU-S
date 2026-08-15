@@ -21,7 +21,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region
+            #region EAX=0x1: Processor Info and Feature Bits
 
             string cpuIdEAX1EAX = cpuHelper.GetEAX1EAXX();
             textBoxEAX1EAX.Text = cpuIdEAX1EAX;

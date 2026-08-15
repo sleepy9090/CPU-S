@@ -3582,31 +3582,28 @@ namespace CPU_S
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int GetEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAX();
 
-        public string GetEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXX()
+        public bool GetEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXX()
         {
             try
             {
-                int eAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXValue = GetEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAX();
-                string eAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXString = eAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXValue.ToString();
-
-                return eAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAXString;
+                return GetEAX2_EAX31_IsInvalidCacheAndTblDescriptorsEAX() != 0;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("Error: AvxDetect.dll not found. Hypervisor support cannot be determined. " + ex.Message);
+                return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("An error occurred while checking for Hypervisor support: " + ex.Message);
+                return false;
             }
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int GetEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAX2();
 
-        public string GetEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAX2X()
+        public string GetEAX2_EAX0_7_NumberOfTimeToQueryCPUIDWithEAXX()
         {
             try
             {
@@ -3702,24 +3699,21 @@ namespace CPU_S
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int GetEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBX();
 
-        public string GetEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXX()
+        public bool GetEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXX()
         {
             try
             {
-                int eAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXValue = GetEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBX();
-                string eAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXString = eAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXValue.ToString();
-
-                return eAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBXString;
+                return GetEAX2_EBX31_IsInvalidCacheAndTblDescriptorsEBX() != 0;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("Error: AvxDetect.dll not found. Hypervisor support cannot be determined. " + ex.Message);
+                return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("An error occurred while checking for Hypervisor support: " + ex.Message);
+                return false;
             }
         }
 
@@ -3798,24 +3792,21 @@ namespace CPU_S
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int GetEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECX();
 
-        public string GetEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXX()
+        public bool GetEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXX()
         {
             try
             {
-                int eAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXValue = GetEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECX();
-                string eAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXString = eAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXValue.ToString();
-
-                return eAX2_ECX31_IsInvalidCacheAndTblDescriptorsECXString;
+                return GetEAX2_ECX31_IsInvalidCacheAndTblDescriptorsECX() != 0;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("Error: AvxDetect.dll not found. Hypervisor support cannot be determined. " + ex.Message);
+                return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("An error occurred while checking for Hypervisor support: " + ex.Message);
+                return false;
             }
         }
 
@@ -3894,24 +3885,21 @@ namespace CPU_S
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int GetEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDX();
 
-        public string GetEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXX()
+        public bool GetEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXX()
         {
             try
             {
-                int eAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXValue = GetEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDX();
-                string eAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXString = eAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXValue.ToString();
-
-                return eAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDXString;
+                return GetEAX2_EDX31_IsInvalidCacheAndTblDescriptorsEDX() != 0;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("Error: AvxDetect.dll not found. Hypervisor support cannot be determined. " + ex.Message);
+                return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
-                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+                Console.WriteLine("An error occurred while checking for Hypervisor support: " + ex.Message);
+                return false;
             }
         }
 
