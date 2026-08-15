@@ -3366,5 +3366,11 @@ namespace CPU_S
             EAX2 eax2Form = new EAX2();
             eax2Form.Show();
         }
+
+        private void eAX0x3ProcessorSerialNumberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX3 eax3Form = new EAX3();
+            eax3Form.Show();
+        }
     }
 }

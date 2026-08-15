@@ -320,6 +320,7 @@
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3066,7 +3067,8 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem,
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem,
-            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem});
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem,
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3097,6 +3099,13 @@
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Text = "EAX=0x2: Cache and TLB Descriptor Information";
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x3ProcessorSerialNumberToolStripMenuItem
+            // 
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Name = "eAX0x3ProcessorSerialNumberToolStripMenuItem";
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Text = "EAX=0x3: Processor Serial Number";
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Click += new System.EventHandler(this.eAX0x3ProcessorSerialNumberToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3438,6 +3447,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x3ProcessorSerialNumberToolStripMenuItem;
     }
 }
 

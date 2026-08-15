@@ -602,6 +602,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 729);
             this.Controls.Add(this.groupBoxEAX2);
+            this.MaximizeBox = false;
             this.Name = "EAX2";
             this.Text = "EAX=0x2: Cache and TLB Descriptor Information";
             this.groupBoxEAX2.ResumeLayout(false);

@@ -111,32 +111,7 @@ namespace CPU_S
 
             #endregion
 
-            #region 
-
-            string GetCacheType(int cacheType)
-            {
-                string type;
-                switch (cacheType)
-                {
-                    case 0:
-                        type = "No more caches";
-                        break;
-                    case 1:
-                        type = "Data Cache";
-                        break;
-                    case 2:
-                        type = "Instruction Cache";
-                        break;
-                    case 3:
-                        type = "Unified Cache";
-                        break;
-                    default:
-                        // 4 - 31 are reserved
-                        type = "Reserved";
-                        break;
-                }
-                return type;
-            }
+            #region Cache and TLB Descriptor Method
 
             string GetCacheAndTableDescriptor(int descriptor)
             {
