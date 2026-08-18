@@ -3372,5 +3372,35 @@ namespace CPU_S
             EAX3 eax3Form = new EAX3();
             eax3Form.Show();
         }
+
+        private void eAX0x4CacheHierarchyAndTopologyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX4 eax4Form = new EAX4();
+            eax4Form.Show();
+        }
+
+        private void eAX0x8000001DToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000001D eax8000001DForm = new EAX8000001D();
+            eax8000001DForm.Show();
+        }
+
+        private void eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX4i eax4iForm = new EAX4i();
+            eax4iForm.Show();
+        }
+
+        private void eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXB eaxB = new EAXB();
+            eaxB.Show();
+        }
+
+        private void eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX5 eax5Form = new EAX5();
+            eax5Form.Show();
+        }
     }
 }

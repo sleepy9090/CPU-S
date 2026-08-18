@@ -321,6 +321,11 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x8000001DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3068,7 +3073,12 @@
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem,
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem,
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem,
-            this.eAX0x3ProcessorSerialNumberToolStripMenuItem});
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem,
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem,
+            this.eAX0x8000001DToolStripMenuItem,
+            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem,
+            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem,
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3106,6 +3116,41 @@
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Text = "EAX=0x3: Processor Serial Number";
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Click += new System.EventHandler(this.eAX0x3ProcessorSerialNumberToolStripMenuItem_Click);
+            // 
+            // eAX0x4CacheHierarchyAndTopologyToolStripMenuItem
+            // 
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Name = "eAX0x4CacheHierarchyAndTopologyToolStripMenuItem";
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Text = "EAX=0x4: Cache Hierarchy and Topology";
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem_Click);
+            // 
+            // eAX0x8000001DToolStripMenuItem
+            // 
+            this.eAX0x8000001DToolStripMenuItem.Name = "eAX0x8000001DToolStripMenuItem";
+            this.eAX0x8000001DToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x8000001DToolStripMenuItem.Text = "EAX=0x8000001D: Cache Hierarchy and Topology";
+            this.eAX0x8000001DToolStripMenuItem.Click += new System.EventHandler(this.eAX0x8000001DToolStripMenuItem_Click);
+            // 
+            // eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem
+            // 
+            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Name = "eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem";
+            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Text = "EAX=0x4: Intel Thread/Core and Cache Topology";
+            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem_Click);
+            // 
+            // eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem
+            // 
+            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Name = "eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem";
+            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Text = "EAX=0xB: Intel Thread/Core and Cache Topology";
+            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click);
+            // 
+            // eAX0x5MONITORMWAITFeaturesToolStripMenuItem
+            // 
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Name = "eAX0x5MONITORMWAITFeaturesToolStripMenuItem";
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Text = "EAX=0x5: MONITOR/MWAIT Features";
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3448,6 +3493,11 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x3ProcessorSerialNumberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x4CacheHierarchyAndTopologyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x8000001DToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x5MONITORMWAITFeaturesToolStripMenuItem;
     }
 }
 

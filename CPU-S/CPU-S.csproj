@@ -103,6 +103,36 @@
     <Compile Include="EAX3.Designer.cs">
       <DependentUpon>EAX3.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX4.Designer.cs">
+      <DependentUpon>EAX4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX4i.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX4i.Designer.cs">
+      <DependentUpon>EAX4i.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX5.Designer.cs">
+      <DependentUpon>EAX5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX8000001D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX8000001D.Designer.cs">
+      <DependentUpon>EAX8000001D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAXB.Designer.cs">
+      <DependentUpon>EAXB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EAX0.resx">
@@ -119,6 +149,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EAX3.resx">
       <DependentUpon>EAX3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX4.resx">
+      <DependentUpon>EAX4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX4i.resx">
+      <DependentUpon>EAX4i.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX5.resx">
+      <DependentUpon>EAX5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX8000001D.resx">
+      <DependentUpon>EAX8000001D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAXB.resx">
+      <DependentUpon>EAXB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
