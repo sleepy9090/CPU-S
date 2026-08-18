@@ -3432,5 +3432,59 @@ namespace CPU_S
             EAX12 eax12Form = new EAX12();
             eax12Form.Show();
         }
+
+        private void eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX14ECX1 eax14ECX1 = new EAX14ECX1();
+            eax14ECX1.Show();
+        }
+
+        private void eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX15 eax15 = new EAX15();
+            eax15.Show();
+        }
+
+        private void eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX16 eax16 = new EAX16();
+            eax16.Show();
+        }
+
+        private void eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX17 eax17 = new EAX17();
+            eax17.Show();
+        }
+
+        private void eAX0x18TLBHierarchyAndTopologyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX18 eax18 = new EAX18();
+            eax18.Show();
+        }
+
+        private void eAX0x19IntelKeyLockerFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX19 eax19 = new EAX19();
+            eax19.Show();
+        }
+
+        private void eAX0x1DIntelAMXTileInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX1D eax1D = new EAX1D();
+            eax1D.Show();
+        }
+
+        private void eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX1E eax1E = new EAX1E();
+            eax1E.Show();
+        }
+
+        private void eAX0x21ReservedForTDXEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX21 eax21 = new EAX21();
+            eax21.Show();
+        }
     }
 }

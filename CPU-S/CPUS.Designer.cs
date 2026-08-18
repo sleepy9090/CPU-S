@@ -331,6 +331,15 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x12SGXCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x18TLBHierarchyAndTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x1DIntelAMXTileInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3088,7 +3097,16 @@
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem,
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem,
             this.eAX0x12SGXCapabilitiesToolStripMenuItem,
-            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem});
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem,
+            this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem,
+            this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem,
+            this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem,
+            this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem,
+            this.eAX0x18TLBHierarchyAndTopologyToolStripMenuItem,
+            this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem,
+            this.eAX0x1DIntelAMXTileInformationToolStripMenuItem,
+            this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem,
+            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3196,6 +3214,71 @@
             this.eAX0x12SGXCapabilitiesToolStripMenuItem.Size = new System.Drawing.Size(411, 22);
             this.eAX0x12SGXCapabilitiesToolStripMenuItem.Text = "EAX=0x12: SGX Capabilities";
             this.eAX0x12SGXCapabilitiesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x12SGXCapabilitiesToolStripMenuItem_Click);
+            // 
+            // eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem
+            // 
+            this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem.Name = "eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenu" +
+    "Item";
+            this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem.Text = "EAX=0x14, ECX=0x1: Processor Trace packet generation information in EAX, EBX and " +
+    "ECX";
+            this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem.Click += new System.EventHandler(this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem_Click);
+            // 
+            // eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem
+            // 
+            this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem.Name = "eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem";
+            this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem.Text = "EAX=0x15: TSC and Core Crystal frequency information";
+            this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem
+            // 
+            this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem.Name = "eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem";
+            this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem.Text = "EAX=0x16: Processor and Bus specification frequencies";
+            this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem_Click);
+            // 
+            // eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem
+            // 
+            this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem";
+            this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x17: SoC Vendor Attribute Enumeration";
+            this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x18TLBHierarchyAndTopologyToolStripMenuItem
+            // 
+            this.eAX0x18TLBHierarchyAndTopologyToolStripMenuItem.Name = "eAX0x18TLBHierarchyAndTopologyToolStripMenuItem";
+            this.eAX0x18TLBHierarchyAndTopologyToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x18TLBHierarchyAndTopologyToolStripMenuItem.Text = "EAX=0x18: TLB Hierarchy and Topology";
+            this.eAX0x18TLBHierarchyAndTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0x18TLBHierarchyAndTopologyToolStripMenuItem_Click);
+            // 
+            // eAX0x19IntelKeyLockerFeaturesToolStripMenuItem
+            // 
+            this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem.Name = "eAX0x19IntelKeyLockerFeaturesToolStripMenuItem";
+            this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem.Text = "EAX=0x19: Intel Key Locker Features";
+            this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem_Click);
+            // 
+            // eAX0x1DIntelAMXTileInformationToolStripMenuItem
+            // 
+            this.eAX0x1DIntelAMXTileInformationToolStripMenuItem.Name = "eAX0x1DIntelAMXTileInformationToolStripMenuItem";
+            this.eAX0x1DIntelAMXTileInformationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x1DIntelAMXTileInformationToolStripMenuItem.Text = "EAX=0x1D: Intel AMX Tile Information";
+            this.eAX0x1DIntelAMXTileInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x1DIntelAMXTileInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem
+            // 
+            this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem.Name = "eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem";
+            this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem.Text = "EAX=0x1E: Intel AMX Tile Multiplier (TMUL) Information";
+            this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x21ReservedForTDXEnumerationToolStripMenuItem
+            // 
+            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem.Name = "eAX0x21ReservedForTDXEnumerationToolStripMenuItem";
+            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem.Text = "EAX=0x21: Reserved for TDX enumeration";
+            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3549,6 +3632,15 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x12SGXCapabilitiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x18TLBHierarchyAndTopologyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x19IntelKeyLockerFeaturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x1DIntelAMXTileInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x21ReservedForTDXEnumerationToolStripMenuItem;
     }
 }
 
