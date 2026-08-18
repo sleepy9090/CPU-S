@@ -318,7 +318,6 @@
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -329,6 +328,9 @@
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x12SGXCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3084,7 +3086,9 @@
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem,
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem,
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem,
-            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem});
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem,
+            this.eAX0x12SGXCapabilitiesToolStripMenuItem,
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3102,12 +3106,6 @@
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Text = "EAX=0x1: Processor Info and Feature Bits";
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
             // 
             // eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem
             // 
@@ -3178,6 +3176,26 @@
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Text = "EAX=0xD: XSAVE Features and State Components";
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Click += new System.EventHandler(this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem
+            // 
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Name = "eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem";
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Size = new System.Drawing.Size(411, 22);
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Text = "EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX";
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Click += new System.EventHandler(this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click);
+            // 
+            // eAX0x12SGXCapabilitiesToolStripMenuItem
+            // 
+            this.eAX0x12SGXCapabilitiesToolStripMenuItem.Name = "eAX0x12SGXCapabilitiesToolStripMenuItem";
+            this.eAX0x12SGXCapabilitiesToolStripMenuItem.Size = new System.Drawing.Size(411, 22);
+            this.eAX0x12SGXCapabilitiesToolStripMenuItem.Text = "EAX=0x12: SGX Capabilities";
+            this.eAX0x12SGXCapabilitiesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x12SGXCapabilitiesToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3529,6 +3547,8 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x6ThermalAndPowerManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x12SGXCapabilitiesToolStripMenuItem;
     }
 }
 

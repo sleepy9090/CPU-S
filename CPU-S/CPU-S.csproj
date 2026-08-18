@@ -91,6 +91,18 @@
     <Compile Include="CPUS.Designer.cs">
       <DependentUpon>CPUS.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX12.Designer.cs">
+      <DependentUpon>EAX12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX14ECX0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX14ECX0.Designer.cs">
+      <DependentUpon>EAX14ECX0.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EAX1.resx">
       <DependentUpon>EAX1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX12.resx">
+      <DependentUpon>EAX12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX14ECX0.resx">
+      <DependentUpon>EAX14ECX0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX2.resx">
       <DependentUpon>EAX2.cs</DependentUpon>

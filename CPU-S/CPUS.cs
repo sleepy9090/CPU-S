@@ -3420,5 +3420,17 @@ namespace CPU_S
             EAXD eaxDForm = new EAXD();
             eaxDForm.Show();
         }
+
+        private void eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX14ECX0 eax14ECX0Form = new EAX14ECX0();
+            eax14ECX0Form.Show();
+        }
+
+        private void eAX0x12SGXCapabilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX12 eax12Form = new EAX12();
+            eax12Form.Show();
+        }
     }
 }

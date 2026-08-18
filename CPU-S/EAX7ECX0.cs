@@ -23,17 +23,17 @@ namespace CPU_S
 
             #region EAX=0x7, ECX=0x0: Extended Features
 
-            string cpuIdEAX7EAX = cpuHelper.GetEAX7ECX0EAXX();
-            textBoxEAX7EAX.Text = cpuIdEAX7EAX;
+            string cpuIdEAX7ECX0EAX = cpuHelper.GetEAX7ECX0EAXX();
+            textBoxEAX7ECX0EAX.Text = cpuIdEAX7ECX0EAX;
 
-            string cpuIdEAX7EBX = cpuHelper.GetEAX7ECX0EBXX();
-            textBoxEAX7EBX.Text = cpuIdEAX7EBX;
+            string cpuIdEAX7ECX0EBX = cpuHelper.GetEAX7ECX0EBXX();
+            textBoxEAX7ECX0EBX.Text = cpuIdEAX7ECX0EBX;
 
-            string cpuIdEAX7ECX = cpuHelper.GetEAX7ECX0ECXX();
-            textBoxEAX7ECX.Text = cpuIdEAX7ECX;
+            string cpuIdEAX7ECX0ECX = cpuHelper.GetEAX7ECX0ECXX();
+            textBoxEAX7ECX0ECX.Text = cpuIdEAX7ECX0ECX;
 
-            string cpuIdEAX7EDX = cpuHelper.GetEAX7ECX0EDXX();
-            textBoxEAX7EDX.Text = cpuIdEAX7EDX;
+            string cpuIdEAX7ECX0EDX = cpuHelper.GetEAX7ECX0EDXX();
+            textBoxEAX7ECX0EDX.Text = cpuIdEAX7ECX0EDX;
 
             #endregion
         }
