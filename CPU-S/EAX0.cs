@@ -44,6 +44,15 @@ namespace CPU_S
             string cpuIdHexEAX0EAXHightestFunctionParameter = cpuHelper.BinaryStringToHexString(cpuIdEAX0EAXHightestFunctionParameter);
             textBoxEAX0Basic.Text = "0x" + cpuIdHexEAX0EAXHightestFunctionParameter;
 
+            string cpuIdEAX0EBXCpuVendor = cpuHelper.GetEAX0EBXCpuVendorX();
+            textBoxEAX0ID1.Text = cpuIdEAX0EBXCpuVendor;
+
+            string cpuIdEAX0ECXCpuVendor = cpuHelper.GetEAX0ECXCpuVendorX();
+            textBoxEAX0ID2.Text = cpuIdEAX0ECXCpuVendor;
+
+            string cpuIdEAX0EDXCpuVendor = cpuHelper.GetEAX0EDXCpuVendorX();
+            textBoxEAX0ID3.Text = cpuIdEAX0EDXCpuVendor;
+
             #endregion
         }
     }
