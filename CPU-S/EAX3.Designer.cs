@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBoxEAX3 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber = new System.Windows.Forms.TextBox();
+            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber = new System.Windows.Forms.TextBox();
+            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber = new System.Windows.Forms.Label();
+            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber = new System.Windows.Forms.Label();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX3EAX = new System.Windows.Forms.TextBox();
             this.labelEAX3EAX = new System.Windows.Forms.Label();
@@ -38,14 +43,9 @@
             this.labelEAX3EBX = new System.Windows.Forms.Label();
             this.labelEAX3ECX = new System.Windows.Forms.Label();
             this.labelEAX3EDX = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber = new System.Windows.Forms.Label();
-            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber = new System.Windows.Forms.Label();
-            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber = new System.Windows.Forms.TextBox();
-            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber = new System.Windows.Forms.TextBox();
             this.groupBoxEAX3.SuspendLayout();
-            this.groupBoxAll.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX3
@@ -58,6 +58,51 @@
             this.groupBoxEAX3.TabIndex = 0;
             this.groupBoxEAX3.TabStop = false;
             this.groupBoxEAX3.Text = "EAX=0x3";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber);
+            this.groupBox1.Controls.Add(this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber);
+            this.groupBox1.Controls.Add(this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber);
+            this.groupBox1.Controls.Add(this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber);
+            this.groupBox1.Location = new System.Drawing.Point(6, 158);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1228, 87);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "EAX EBX ECX EDX";
+            // 
+            // textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber
+            // 
+            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Location = new System.Drawing.Point(311, 52);
+            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Name = "textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber";
+            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Size = new System.Drawing.Size(911, 20);
+            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.TabIndex = 3;
+            // 
+            // textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber
+            // 
+            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Location = new System.Drawing.Point(311, 26);
+            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Name = "textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber";
+            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Size = new System.Drawing.Size(911, 20);
+            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.TabIndex = 2;
+            // 
+            // labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber
+            // 
+            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.AutoSize = true;
+            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Location = new System.Drawing.Point(6, 55);
+            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Name = "labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber";
+            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Size = new System.Drawing.Size(299, 13);
+            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.TabIndex = 1;
+            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Text = "Transmeta Crusoe and Efficeon CPUs - 128-bit Serial Number:";
+            // 
+            // labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber
+            // 
+            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.AutoSize = true;
+            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Location = new System.Drawing.Point(6, 29);
+            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Name = "labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber";
+            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Size = new System.Drawing.Size(191, 13);
+            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.TabIndex = 0;
+            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Text = "Pentium 3 CPUs - 96-bit Serial Number:";
             // 
             // groupBoxAll
             // 
@@ -139,65 +184,21 @@
             this.labelEAX3EDX.TabIndex = 9;
             this.labelEAX3EDX.Text = "EDX:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber);
-            this.groupBox1.Controls.Add(this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber);
-            this.groupBox1.Controls.Add(this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber);
-            this.groupBox1.Controls.Add(this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber);
-            this.groupBox1.Location = new System.Drawing.Point(6, 158);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1228, 87);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "EAX EBX ECX EDX";
-            // 
-            // labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber
-            // 
-            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.AutoSize = true;
-            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Location = new System.Drawing.Point(6, 29);
-            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Name = "labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber";
-            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Size = new System.Drawing.Size(191, 13);
-            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.TabIndex = 0;
-            this.labelEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Text = "Pentium 3 CPUs - 96-bit Serial Number:";
-            // 
-            // labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber
-            // 
-            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.AutoSize = true;
-            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Location = new System.Drawing.Point(6, 55);
-            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Name = "labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber";
-            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Size = new System.Drawing.Size(299, 13);
-            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.TabIndex = 1;
-            this.labelEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Text = "Transmeta Crusoe and Efficeon CPUs - 128-bit Serial Number:";
-            // 
-            // textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber
-            // 
-            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Location = new System.Drawing.Point(311, 26);
-            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Name = "textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber";
-            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.Size = new System.Drawing.Size(911, 20);
-            this.textBoxEAX3_EAX_EDX_ECX_Pentium3CPU96BitSerialNumber.TabIndex = 2;
-            // 
-            // textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber
-            // 
-            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Location = new System.Drawing.Point(311, 52);
-            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Name = "textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber";
-            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.Size = new System.Drawing.Size(911, 20);
-            this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber.TabIndex = 3;
-            // 
             // EAX3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 729);
             this.Controls.Add(this.groupBoxEAX3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX3";
             this.Text = "EAX=0x3: Processor Serial Number";
             this.groupBoxEAX3.ResumeLayout(false);
-            this.groupBoxAll.ResumeLayout(false);
-            this.groupBoxAll.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBoxAll.ResumeLayout(false);
+            this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
 
         }

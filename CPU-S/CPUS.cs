@@ -3402,5 +3402,23 @@ namespace CPU_S
             EAX5 eax5Form = new EAX5();
             eax5Form.Show();
         }
+
+        private void eAX0x6ThermalAndPowerManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX6 eax6Form = new EAX6();
+            eax6Form.Show();
+        }
+
+        private void eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX7ECX0 eax7ECX0Form = new EAX7ECX0();
+            eax7ECX0Form.Show();
+        }
+
+        private void eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXD eaxDForm = new EAXD();
+            eaxDForm.Show();
+        }
     }
 }

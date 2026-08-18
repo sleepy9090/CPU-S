@@ -287,6 +287,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 233);
             this.Controls.Add(this.groupBoxEAX0);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX0";
             this.Text = "EAX=0x0: Highest Function Parameter and Manufacturer ID";

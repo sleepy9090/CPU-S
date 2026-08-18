@@ -121,6 +121,18 @@
     <Compile Include="EAX5.Designer.cs">
       <DependentUpon>EAX5.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX6.Designer.cs">
+      <DependentUpon>EAX6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX7ECX0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX7ECX0.Designer.cs">
+      <DependentUpon>EAX7ECX0.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX8000001D.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +144,12 @@
     </Compile>
     <Compile Include="EAXB.Designer.cs">
       <DependentUpon>EAXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAXD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAXD.Designer.cs">
+      <DependentUpon>EAXD.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,11 +177,20 @@
     <EmbeddedResource Include="EAX5.resx">
       <DependentUpon>EAX5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EAX6.resx">
+      <DependentUpon>EAX6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX7ECX0.resx">
+      <DependentUpon>EAX7ECX0.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EAX8000001D.resx">
       <DependentUpon>EAX8000001D.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAXB.resx">
       <DependentUpon>EAXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAXD.resx">
+      <DependentUpon>EAXD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

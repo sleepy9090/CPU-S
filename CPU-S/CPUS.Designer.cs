@@ -326,6 +326,9 @@
             this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3078,7 +3081,10 @@
             this.eAX0x8000001DToolStripMenuItem,
             this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem,
             this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem,
-            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem});
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem,
+            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem,
+            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem,
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3152,6 +3158,27 @@
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Text = "EAX=0x5: MONITOR/MWAIT Features";
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click);
             // 
+            // eAX0x6ThermalAndPowerManagementToolStripMenuItem
+            // 
+            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Name = "eAX0x6ThermalAndPowerManagementToolStripMenuItem";
+            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Text = "EAX=0x6: Thermal and Power Management";
+            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Click += new System.EventHandler(this.eAX0x6ThermalAndPowerManagementToolStripMenuItem_Click);
+            // 
+            // eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem
+            // 
+            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem";
+            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x0: Extended Features";
+            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem_Click);
+            // 
+            // eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem
+            // 
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Name = "eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem";
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Text = "EAX=0xD: XSAVE Features and State Components";
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Click += new System.EventHandler(this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click);
+            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3159,6 +3186,7 @@
             this.ClientSize = new System.Drawing.Size(1009, 823);
             this.Controls.Add(this.tabControlCPUS);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
@@ -3498,6 +3526,9 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x5MONITORMWAITFeaturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x6ThermalAndPowerManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem;
     }
 }
 
