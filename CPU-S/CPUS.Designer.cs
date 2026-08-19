@@ -340,6 +340,7 @@
             this.eAX0x1DIntelAMXTileInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3106,7 +3107,8 @@
             this.eAX0x19IntelKeyLockerFeaturesToolStripMenuItem,
             this.eAX0x1DIntelAMXTileInformationToolStripMenuItem,
             this.eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem,
-            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem});
+            this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem,
+            this.eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3279,6 +3281,13 @@
             this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem.Text = "EAX=0x21: Reserved for TDX enumeration";
             this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x21ReservedForTDXEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem
+            // 
+            this.eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem.Name = "eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem";
+            this.eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem.Text = "EAX=0x24, ECX=0x0: AVX10 Converged Vector ISA";
+            this.eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem.Click += new System.EventHandler(this.eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3641,6 +3650,7 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x1DIntelAMXTileInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x21ReservedForTDXEnumerationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem;
     }
 }
 

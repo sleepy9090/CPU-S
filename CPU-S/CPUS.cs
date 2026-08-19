@@ -3486,5 +3486,11 @@ namespace CPU_S
             EAX21 eax21 = new EAX21();
             eax21.Show();
         }
+
+        private void eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX24ECX0 eAX24ECX0 = new EAX24ECX0();
+            eAX24ECX0.Show();
+        }
     }
 }
