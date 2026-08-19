@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EAX80000006.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000006.Designer.cs">
+      <DependentUpon>EAX80000006.cs</DependentUpon>
+    </Compile>
     <Compile Include="CPU.cs" />
     <Compile Include="CPUConstants.cs" />
     <Compile Include="CPUHelper.cs" />
@@ -157,6 +163,18 @@
     <Compile Include="EAX2.Designer.cs">
       <DependentUpon>EAX2.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX20000000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX20000000.Designer.cs">
+      <DependentUpon>EAX20000000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX20000001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX20000001.Designer.cs">
+      <DependentUpon>EAX20000001.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX21.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +187,12 @@
     <Compile Include="EAX24ECX0.Designer.cs">
       <DependentUpon>EAX24ECX0.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX24ECX1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX24ECX1.Designer.cs">
+      <DependentUpon>EAX24ECX1.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +204,12 @@
     </Compile>
     <Compile Include="EAX4.Designer.cs">
       <DependentUpon>EAX4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX40000000_4FFFFFFF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX40000000_4FFFFFFF.Designer.cs">
+      <DependentUpon>EAX40000000_4FFFFFFF.cs</DependentUpon>
     </Compile>
     <Compile Include="EAX4i.cs">
       <SubType>Form</SubType>
@@ -204,6 +234,42 @@
     </Compile>
     <Compile Include="EAX7ECX0.Designer.cs">
       <DependentUpon>EAX7ECX0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX80000000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000000.Designer.cs">
+      <DependentUpon>EAX80000000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX80000001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000001.Designer.cs">
+      <DependentUpon>EAX80000001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX80000002_80000003_80000004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000002_80000003_80000004.Designer.cs">
+      <DependentUpon>EAX80000002_80000003_80000004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX80000005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000005.Designer.cs">
+      <DependentUpon>EAX80000005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX80000007.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000007.Designer.cs">
+      <DependentUpon>EAX80000007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX80000008.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000008.Designer.cs">
+      <DependentUpon>EAX80000008.cs</DependentUpon>
     </Compile>
     <Compile Include="EAX8000001D.cs">
       <SubType>Form</SubType>
@@ -267,17 +333,29 @@
     <EmbeddedResource Include="EAX2.resx">
       <DependentUpon>EAX2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EAX20000000.resx">
+      <DependentUpon>EAX20000000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX20000001.resx">
+      <DependentUpon>EAX20000001.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EAX21.resx">
       <DependentUpon>EAX21.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX24ECX0.resx">
       <DependentUpon>EAX24ECX0.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EAX24ECX1.resx">
+      <DependentUpon>EAX24ECX1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EAX3.resx">
       <DependentUpon>EAX3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX4.resx">
       <DependentUpon>EAX4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000000_4FFFFFFF.resx">
+      <DependentUpon>EAX40000000_4FFFFFFF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX4i.resx">
       <DependentUpon>EAX4i.cs</DependentUpon>
@@ -290,6 +368,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EAX7ECX0.resx">
       <DependentUpon>EAX7ECX0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000000.resx">
+      <DependentUpon>EAX80000000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000001.resx">
+      <DependentUpon>EAX80000001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000002_80000003_80000004.resx">
+      <DependentUpon>EAX80000002_80000003_80000004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000005.resx">
+      <DependentUpon>EAX80000005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000006.resx">
+      <DependentUpon>EAX80000006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000007.resx">
+      <DependentUpon>EAX80000007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000008.resx">
+      <DependentUpon>EAX80000008.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX8000001D.resx">
       <DependentUpon>EAX8000001D.cs</DependentUpon>
