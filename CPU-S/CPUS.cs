@@ -3558,5 +3558,65 @@ namespace CPU_S
             EAX80000008 eAX80000008 = new EAX80000008();
             eAX80000008.ShowDialog();
         }
+
+        private void eAX0x8000000ASVMFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000000A eAX8000000A = new EAX8000000A();
+            eAX8000000A.ShowDialog();
+        }
+
+        private void eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000001F eAX8000001F = new EAX8000001F();
+            eAX8000001F.ShowDialog();
+        }
+
+        private void eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000021 eAX80000021 = new EAX80000021();
+            eAX80000021.ShowDialog();
+        }
+
+        private void eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000025 eAX80000025 = new EAX80000025();
+            eAX80000025.ShowDialog();
+        }
+
+        private void eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8C860000 eAX8C860000 = new EAX8C860000();
+            eAX8C860000.ShowDialog();
+        }
+
+        private void eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8FFFFFFE_8FFFFFFF eAX8FFFFFFE_8FFFFFFF = new EAX8FFFFFFE_8FFFFFFF();
+            eAX8FFFFFFE_8FFFFFFF.ShowDialog();
+        }
+
+        private void eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXC0000000 eAXC0000000 = new EAXC0000000();
+            eAXC0000000.ShowDialog();
+        }
+
+        private void eAX0xC0000001CentaurFeatureInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXC0000001 eAXC0000001 = new EAXC0000001();
+            eAXC0000001.ShowDialog();
+        }
+
+        private void eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXC0000002 eAXC0000002 = new EAXC0000002();
+            eAXC0000002.ShowDialog();
+        }
+
+        private void eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXC0000006ECX0 eAXC0000006ECX0 = new EAXC0000006ECX0();
+            eAXC0000006ECX0.ShowDialog();
+        }
     }
 }

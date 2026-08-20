@@ -353,6 +353,16 @@
             this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x8000000ASVMFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3131,7 +3141,17 @@
             this.eAX0x80000005L1CacheAndTLBIdentifiersToolStripMenuItem,
             this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem,
             this.eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem,
-            this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem});
+            this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem,
+            this.eAX0x8000000ASVMFeaturesToolStripMenuItem,
+            this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem,
+            this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem,
+            this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem,
+            this.eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem,
+            this.eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem,
+            this.eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem,
+            this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem,
+            this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem,
+            this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -3397,6 +3417,76 @@
             this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem.Text = "EAX=0x80000008: Virtual and Physical Address Sizes";
             this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem_Click);
+            // 
+            // eAX0x8000000ASVMFeaturesToolStripMenuItem
+            // 
+            this.eAX0x8000000ASVMFeaturesToolStripMenuItem.Name = "eAX0x8000000ASVMFeaturesToolStripMenuItem";
+            this.eAX0x8000000ASVMFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x8000000ASVMFeaturesToolStripMenuItem.Text = "EAX=0x8000000A: SVM features";
+            this.eAX0x8000000ASVMFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x8000000ASVMFeaturesToolStripMenuItem_Click);
+            // 
+            // eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem
+            // 
+            this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem.Name = "eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem";
+            this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem.Text = "EAX=0x8000001F: Encrypted Memory Capabilities";
+            this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem_Click);
+            // 
+            // eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem
+            // 
+            this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem.Name = "eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem";
+            this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem.Text = "EAX=0x80000021: Extended Feature Identification";
+            this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem_Click);
+            // 
+            // eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem
+            // 
+            this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem.Name = "eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem";
+            this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem.Text = "EAX=0x80000025: Encrypted Memory Capabilities 2";
+            this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem_Click);
+            // 
+            // eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem
+            // 
+            this.eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem.Name = "eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem";
+            this.eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem.Text = "EAX=0x8C860000: Hygon Extended Feature Flags";
+            this.eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem_Click);
+            // 
+            // eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem
+            // 
+            this.eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem.Name = "eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem";
+            this.eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem.Text = "EAX=0x8FFFFFFE-0x8FFFFFFF: AMD Easter Eggs";
+            this.eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem_Click);
+            // 
+            // eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem
+            // 
+            this.eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem.Name = "eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem";
+            this.eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem.Text = "EAX=0xC0000000: Highest Centaur Extended Function";
+            this.eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem.Click += new System.EventHandler(this.eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem_Click);
+            // 
+            // eAX0xC0000001CentaurFeatureInformationToolStripMenuItem
+            // 
+            this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem.Name = "eAX0xC0000001CentaurFeatureInformationToolStripMenuItem";
+            this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem.Text = "EAX=0xC0000001: Centaur Feature Information";
+            this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem_Click);
+            // 
+            // eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem
+            // 
+            this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem.Name = "eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem";
+            this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem.Text = "EAX=0xC0000002: Centaur Extended CPUID Performance Data";
+            this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem.Click += new System.EventHandler(this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem_Click);
+            // 
+            // eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem
+            // 
+            this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Name = "eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem";
+            this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Text = "EAX=0xC0000006, ECX=0: Zhaoxin Feature Information";
+            this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3772,6 +3862,16 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x8000000ASVMFeaturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x8C860000HygonExtendedFeatureFlagsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0xC0000001CentaurFeatureInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem;
     }
 }
 
