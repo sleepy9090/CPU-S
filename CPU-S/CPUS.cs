@@ -3618,5 +3618,17 @@ namespace CPU_S
             EAXC0000006ECX0 eAXC0000006ECX0 = new EAXC0000006ECX0();
             eAXC0000006ECX0.ShowDialog();
         }
+
+        private void eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX7ECX1 eAX7ECX1 = new EAX7ECX1();
+            eAX7ECX1.ShowDialog();
+        }
+
+        private void eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX7ECX2 eAX7ECX2 = new EAX7ECX2();
+            eAX7ECX2.ShowDialog();
+        }
     }
 }

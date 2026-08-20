@@ -38,16 +38,36 @@
             this.labelEAX7ECX0EBX = new System.Windows.Forms.Label();
             this.labelEAX7ECX0ECX = new System.Windows.Forms.Label();
             this.labelEAX7ECX0EDX = new System.Windows.Forms.Label();
+            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelMaxSubLeaf = new System.Windows.Forms.Label();
+            this.textBoxMaxSubLeaf = new System.Windows.Forms.TextBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.checkBoxFSGSBASE = new System.Windows.Forms.CheckBox();
+            this.checkBoxTSC_ADJUST = new System.Windows.Forms.CheckBox();
+            this.checkBoxSGX = new System.Windows.Forms.CheckBox();
+            this.checkBoxBMI1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxHLE = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxFDP_EXCPTN_ONLY = new System.Windows.Forms.CheckBox();
+            this.checkBoxSMEP = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX7ECX0.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
+            this.groupBoxEAX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX7ECX0
             // 
+            this.groupBoxEAX7ECX0.Controls.Add(this.groupBoxEDX);
+            this.groupBoxEAX7ECX0.Controls.Add(this.groupBoxECX);
+            this.groupBoxEAX7ECX0.Controls.Add(this.groupBoxEBX);
+            this.groupBoxEAX7ECX0.Controls.Add(this.groupBoxEAX);
             this.groupBoxEAX7ECX0.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX7ECX0.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX7ECX0.Name = "groupBoxEAX7ECX0";
-            this.groupBoxEAX7ECX0.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX7ECX0.Size = new System.Drawing.Size(1236, 957);
             this.groupBoxEAX7ECX0.TabIndex = 1;
             this.groupBoxEAX7ECX0.TabStop = false;
             this.groupBoxEAX7ECX0.Text = "EAX=0x7 ECX=0x0";
@@ -132,11 +152,153 @@
             this.labelEAX7ECX0EDX.TabIndex = 9;
             this.labelEAX7ECX0EDX.Text = "EDX:";
             // 
+            // groupBoxEAX
+            // 
+            this.groupBoxEAX.Controls.Add(this.textBoxMaxSubLeaf);
+            this.groupBoxEAX.Controls.Add(this.labelMaxSubLeaf);
+            this.groupBoxEAX.Location = new System.Drawing.Point(6, 158);
+            this.groupBoxEAX.Name = "groupBoxEAX";
+            this.groupBoxEAX.Size = new System.Drawing.Size(252, 47);
+            this.groupBoxEAX.TabIndex = 41;
+            this.groupBoxEAX.TabStop = false;
+            this.groupBoxEAX.Text = "EAX";
+            // 
+            // labelMaxSubLeaf
+            // 
+            this.labelMaxSubLeaf.AutoSize = true;
+            this.labelMaxSubLeaf.Location = new System.Drawing.Point(3, 22);
+            this.labelMaxSubLeaf.Name = "labelMaxSubLeaf";
+            this.labelMaxSubLeaf.Size = new System.Drawing.Size(70, 13);
+            this.labelMaxSubLeaf.TabIndex = 2;
+            this.labelMaxSubLeaf.Text = "Max sub-leaf:";
+            // 
+            // textBoxMaxSubLeaf
+            // 
+            this.textBoxMaxSubLeaf.Location = new System.Drawing.Point(140, 15);
+            this.textBoxMaxSubLeaf.Name = "textBoxMaxSubLeaf";
+            this.textBoxMaxSubLeaf.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaxSubLeaf.TabIndex = 3;
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.checkBoxSMEP);
+            this.groupBoxEBX.Controls.Add(this.checkBoxFDP_EXCPTN_ONLY);
+            this.groupBoxEBX.Controls.Add(this.checkBoxAVX2);
+            this.groupBoxEBX.Controls.Add(this.checkBoxHLE);
+            this.groupBoxEBX.Controls.Add(this.checkBoxBMI1);
+            this.groupBoxEBX.Controls.Add(this.checkBoxSGX);
+            this.groupBoxEBX.Controls.Add(this.checkBoxTSC_ADJUST);
+            this.groupBoxEBX.Controls.Add(this.checkBoxFSGSBASE);
+            this.groupBoxEBX.Location = new System.Drawing.Point(6, 211);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(627, 740);
+            this.groupBoxEBX.TabIndex = 42;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Location = new System.Drawing.Point(1036, 19);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxECX.TabIndex = 43;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Location = new System.Drawing.Point(1036, 125);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEDX.TabIndex = 44;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // checkBoxFSGSBASE
+            // 
+            this.checkBoxFSGSBASE.AutoSize = true;
+            this.checkBoxFSGSBASE.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxFSGSBASE.Name = "checkBoxFSGSBASE";
+            this.checkBoxFSGSBASE.Size = new System.Drawing.Size(238, 17);
+            this.checkBoxFSGSBASE.TabIndex = 0;
+            this.checkBoxFSGSBASE.Text = "FSGSBASE - Access to base of %fs and %gs";
+            this.checkBoxFSGSBASE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTSC_ADJUST
+            // 
+            this.checkBoxTSC_ADJUST.AutoSize = true;
+            this.checkBoxTSC_ADJUST.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxTSC_ADJUST.Name = "checkBoxTSC_ADJUST";
+            this.checkBoxTSC_ADJUST.Size = new System.Drawing.Size(228, 17);
+            this.checkBoxTSC_ADJUST.TabIndex = 1;
+            this.checkBoxTSC_ADJUST.Text = "TSC_ADJUST - IA32_TSC_ADJUST MSR";
+            this.checkBoxTSC_ADJUST.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSGX
+            // 
+            this.checkBoxSGX.AutoSize = true;
+            this.checkBoxSGX.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxSGX.Name = "checkBoxSGX";
+            this.checkBoxSGX.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxSGX.TabIndex = 2;
+            this.checkBoxSGX.Text = "SGX - Software Guard Extensions";
+            this.checkBoxSGX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBMI1
+            // 
+            this.checkBoxBMI1.AutoSize = true;
+            this.checkBoxBMI1.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxBMI1.Name = "checkBoxBMI1";
+            this.checkBoxBMI1.Size = new System.Drawing.Size(215, 17);
+            this.checkBoxBMI1.TabIndex = 3;
+            this.checkBoxBMI1.Text = "BMI1 - Bit Manipulation Instruction Set 1";
+            this.checkBoxBMI1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHLE
+            // 
+            this.checkBoxHLE.AutoSize = true;
+            this.checkBoxHLE.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxHLE.Name = "checkBoxHLE";
+            this.checkBoxHLE.Size = new System.Drawing.Size(186, 17);
+            this.checkBoxHLE.TabIndex = 4;
+            this.checkBoxHLE.Text = "HLE - TSX Hardware Lock Elision";
+            this.checkBoxHLE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX2
+            // 
+            this.checkBoxAVX2.AutoSize = true;
+            this.checkBoxAVX2.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxAVX2.Name = "checkBoxAVX2";
+            this.checkBoxAVX2.Size = new System.Drawing.Size(208, 17);
+            this.checkBoxAVX2.TabIndex = 5;
+            this.checkBoxAVX2.Text = "AVX2 - Advanced Vector Extensions 2";
+            this.checkBoxAVX2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFDP_EXCPTN_ONLY
+            // 
+            this.checkBoxFDP_EXCPTN_ONLY.AutoSize = true;
+            this.checkBoxFDP_EXCPTN_ONLY.Location = new System.Drawing.Point(6, 157);
+            this.checkBoxFDP_EXCPTN_ONLY.Name = "checkBoxFDP_EXCPTN_ONLY";
+            this.checkBoxFDP_EXCPTN_ONLY.Size = new System.Drawing.Size(404, 17);
+            this.checkBoxFDP_EXCPTN_ONLY.TabIndex = 6;
+            this.checkBoxFDP_EXCPTN_ONLY.Text = "FDP-EXCPTN-ONLY - x87 FPU data pointer register updated on exceptions only";
+            this.checkBoxFDP_EXCPTN_ONLY.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSMEP
+            // 
+            this.checkBoxSMEP.AutoSize = true;
+            this.checkBoxSMEP.Location = new System.Drawing.Point(6, 180);
+            this.checkBoxSMEP.Name = "checkBoxSMEP";
+            this.checkBoxSMEP.Size = new System.Drawing.Size(249, 17);
+            this.checkBoxSMEP.TabIndex = 7;
+            this.checkBoxSMEP.Text = "SMEP - Supervisor Mode Execution Prevention";
+            this.checkBoxSMEP.UseVisualStyleBackColor = true;
+            // 
             // EAX7ECX0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1260, 981);
             this.Controls.Add(this.groupBoxEAX7ECX0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "EAX7ECX0";
@@ -144,6 +306,10 @@
             this.groupBoxEAX7ECX0.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
+            this.groupBoxEAX.ResumeLayout(false);
+            this.groupBoxEAX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -160,5 +326,19 @@
         private System.Windows.Forms.Label labelEAX7ECX0EBX;
         private System.Windows.Forms.Label labelEAX7ECX0ECX;
         private System.Windows.Forms.Label labelEAX7ECX0EDX;
+        private System.Windows.Forms.GroupBox groupBoxEAX;
+        private System.Windows.Forms.TextBox textBoxMaxSubLeaf;
+        private System.Windows.Forms.Label labelMaxSubLeaf;
+        private System.Windows.Forms.GroupBox groupBoxEDX;
+        private System.Windows.Forms.GroupBox groupBoxECX;
+        private System.Windows.Forms.GroupBox groupBoxEBX;
+        private System.Windows.Forms.CheckBox checkBoxFSGSBASE;
+        private System.Windows.Forms.CheckBox checkBoxTSC_ADJUST;
+        private System.Windows.Forms.CheckBox checkBoxHLE;
+        private System.Windows.Forms.CheckBox checkBoxBMI1;
+        private System.Windows.Forms.CheckBox checkBoxSGX;
+        private System.Windows.Forms.CheckBox checkBoxAVX2;
+        private System.Windows.Forms.CheckBox checkBoxFDP_EXCPTN_ONLY;
+        private System.Windows.Forms.CheckBox checkBoxSMEP;
     }
 }

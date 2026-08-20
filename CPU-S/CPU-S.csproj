@@ -70,6 +70,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EAX7ECX1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX7ECX1.Designer.cs">
+      <DependentUpon>EAX7ECX1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX7ECX2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX7ECX2.Designer.cs">
+      <DependentUpon>EAX7ECX2.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX80000006.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -428,6 +440,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EAX7ECX0.resx">
       <DependentUpon>EAX7ECX0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX7ECX1.resx">
+      <DependentUpon>EAX7ECX1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX7ECX2.resx">
+      <DependentUpon>EAX7ECX2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX80000000.resx">
       <DependentUpon>EAX80000000.cs</DependentUpon>

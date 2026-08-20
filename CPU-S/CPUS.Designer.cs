@@ -363,6 +363,8 @@
             this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3118,6 +3120,8 @@
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem,
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem,
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem,
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem,
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem,
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem,
             this.eAX0x12SGXCapabilitiesToolStripMenuItem,
             this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem,
@@ -3487,6 +3491,20 @@
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Text = "EAX=0xC0000006, ECX=0: Zhaoxin Feature Information";
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem
+            // 
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem";
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x1: Extended Features";
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem_Click);
+            // 
+            // eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem
+            // 
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem";
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x2: Extended Features";
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3872,6 +3890,8 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0xC0000001CentaurFeatureInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem;
     }
 }
 
