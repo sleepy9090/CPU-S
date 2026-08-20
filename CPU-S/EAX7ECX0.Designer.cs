@@ -52,6 +52,8 @@
             this.checkBoxAVX2 = new System.Windows.Forms.CheckBox();
             this.checkBoxFDP_EXCPTN_ONLY = new System.Windows.Forms.CheckBox();
             this.checkBoxSMEP = new System.Windows.Forms.CheckBox();
+            this.checkBoxBMI2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxERMS = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX7ECX0.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
@@ -181,6 +183,8 @@
             // 
             // groupBoxEBX
             // 
+            this.groupBoxEBX.Controls.Add(this.checkBoxERMS);
+            this.groupBoxEBX.Controls.Add(this.checkBoxBMI2);
             this.groupBoxEBX.Controls.Add(this.checkBoxSMEP);
             this.groupBoxEBX.Controls.Add(this.checkBoxFDP_EXCPTN_ONLY);
             this.groupBoxEBX.Controls.Add(this.checkBoxAVX2);
@@ -294,6 +298,26 @@
             this.checkBoxSMEP.Text = "SMEP - Supervisor Mode Execution Prevention";
             this.checkBoxSMEP.UseVisualStyleBackColor = true;
             // 
+            // checkBoxBMI2
+            // 
+            this.checkBoxBMI2.AutoSize = true;
+            this.checkBoxBMI2.Location = new System.Drawing.Point(6, 203);
+            this.checkBoxBMI2.Name = "checkBoxBMI2";
+            this.checkBoxBMI2.Size = new System.Drawing.Size(215, 17);
+            this.checkBoxBMI2.TabIndex = 8;
+            this.checkBoxBMI2.Text = "BMI2 - Bit Manipulation Instruction Set 2";
+            this.checkBoxBMI2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxERMS
+            // 
+            this.checkBoxERMS.AutoSize = true;
+            this.checkBoxERMS.Location = new System.Drawing.Point(6, 226);
+            this.checkBoxERMS.Name = "checkBoxERMS";
+            this.checkBoxERMS.Size = new System.Drawing.Size(222, 17);
+            this.checkBoxERMS.TabIndex = 9;
+            this.checkBoxERMS.Text = "ERMS - Enhanced REP MOVSB/STOSB";
+            this.checkBoxERMS.UseVisualStyleBackColor = true;
+            // 
             // EAX7ECX0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,5 +364,7 @@
         private System.Windows.Forms.CheckBox checkBoxAVX2;
         private System.Windows.Forms.CheckBox checkBoxFDP_EXCPTN_ONLY;
         private System.Windows.Forms.CheckBox checkBoxSMEP;
+        private System.Windows.Forms.CheckBox checkBoxBMI2;
+        private System.Windows.Forms.CheckBox checkBoxERMS;
     }
 }
