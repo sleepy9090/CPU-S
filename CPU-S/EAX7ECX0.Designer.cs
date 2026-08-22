@@ -78,6 +78,36 @@
             this.checkBoxAVX512VL = new System.Windows.Forms.CheckBox();
             this.checkBoxPREFETCHWT1 = new System.Windows.Forms.CheckBox();
             this.checkBoxAVX512VBMI = new System.Windows.Forms.CheckBox();
+            this.checkBoxUMIP = new System.Windows.Forms.CheckBox();
+            this.checkBoxPKU = new System.Windows.Forms.CheckBox();
+            this.checkBoxOSPKE = new System.Windows.Forms.CheckBox();
+            this.checkBoxWAITPKG = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VBMI2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCETSSSHSTK = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFNI = new System.Windows.Forms.CheckBox();
+            this.checkBoxVAES = new System.Windows.Forms.CheckBox();
+            this.checkBoxVPCLMULQDQ = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VNNI = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512BITALG = new System.Windows.Forms.CheckBox();
+            this.checkBoxTMEEN = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VPOPCNTDQ = new System.Windows.Forms.CheckBox();
+            this.checkBoxFZM = new System.Windows.Forms.CheckBox();
+            this.checkBoxLA57 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMAWAU1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRDPID = new System.Windows.Forms.CheckBox();
+            this.checkBoxMAWAU2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMAWAU3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMAWAU4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMAWAU5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxKL = new System.Windows.Forms.CheckBox();
+            this.checkBoxBUSLOCKDETECT = new System.Windows.Forms.CheckBox();
+            this.checkBoxCLDEMOTE = new System.Windows.Forms.CheckBox();
+            this.checkBoxMPRR = new System.Windows.Forms.CheckBox();
+            this.checkBoxMOVDIRI = new System.Windows.Forms.CheckBox();
+            this.checkBoxMOVDIR64B = new System.Windows.Forms.CheckBox();
+            this.checkBoxENQCMD = new System.Windows.Forms.CheckBox();
+            this.checkBoxSGXLC = new System.Windows.Forms.CheckBox();
+            this.checkBoxPKS = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX7ECX0.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
@@ -94,27 +124,57 @@
             this.groupBoxEAX7ECX0.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX7ECX0.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX7ECX0.Name = "groupBoxEAX7ECX0";
-            this.groupBoxEAX7ECX0.Size = new System.Drawing.Size(1236, 957);
+            this.groupBoxEAX7ECX0.Size = new System.Drawing.Size(1356, 957);
             this.groupBoxEAX7ECX0.TabIndex = 1;
             this.groupBoxEAX7ECX0.TabStop = false;
             this.groupBoxEAX7ECX0.Text = "EAX=0x7 ECX=0x0";
             // 
             // groupBoxEDX
             // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(980, 19);
+            this.groupBoxEDX.Location = new System.Drawing.Point(1203, 19);
             this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(250, 932);
+            this.groupBoxEDX.Size = new System.Drawing.Size(147, 932);
             this.groupBoxEDX.TabIndex = 44;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
             // groupBoxECX
             // 
+            this.groupBoxECX.Controls.Add(this.checkBoxPKS);
+            this.groupBoxECX.Controls.Add(this.checkBoxSGXLC);
+            this.groupBoxECX.Controls.Add(this.checkBoxENQCMD);
+            this.groupBoxECX.Controls.Add(this.checkBoxMOVDIR64B);
+            this.groupBoxECX.Controls.Add(this.checkBoxMOVDIRI);
+            this.groupBoxECX.Controls.Add(this.checkBoxMPRR);
+            this.groupBoxECX.Controls.Add(this.checkBoxCLDEMOTE);
+            this.groupBoxECX.Controls.Add(this.checkBoxBUSLOCKDETECT);
+            this.groupBoxECX.Controls.Add(this.checkBoxKL);
+            this.groupBoxECX.Controls.Add(this.checkBoxMAWAU5);
+            this.groupBoxECX.Controls.Add(this.checkBoxMAWAU4);
+            this.groupBoxECX.Controls.Add(this.checkBoxMAWAU3);
+            this.groupBoxECX.Controls.Add(this.checkBoxMAWAU2);
+            this.groupBoxECX.Controls.Add(this.checkBoxRDPID);
+            this.groupBoxECX.Controls.Add(this.checkBoxMAWAU1);
+            this.groupBoxECX.Controls.Add(this.checkBoxLA57);
+            this.groupBoxECX.Controls.Add(this.checkBoxFZM);
+            this.groupBoxECX.Controls.Add(this.checkBoxAVX512VPOPCNTDQ);
+            this.groupBoxECX.Controls.Add(this.checkBoxTMEEN);
+            this.groupBoxECX.Controls.Add(this.checkBoxAVX512BITALG);
+            this.groupBoxECX.Controls.Add(this.checkBoxAVX512VNNI);
+            this.groupBoxECX.Controls.Add(this.checkBoxVPCLMULQDQ);
+            this.groupBoxECX.Controls.Add(this.checkBoxVAES);
+            this.groupBoxECX.Controls.Add(this.checkBoxGFNI);
+            this.groupBoxECX.Controls.Add(this.checkBoxCETSSSHSTK);
+            this.groupBoxECX.Controls.Add(this.checkBoxAVX512VBMI2);
+            this.groupBoxECX.Controls.Add(this.checkBoxWAITPKG);
+            this.groupBoxECX.Controls.Add(this.checkBoxOSPKE);
+            this.groupBoxECX.Controls.Add(this.checkBoxPKU);
+            this.groupBoxECX.Controls.Add(this.checkBoxUMIP);
             this.groupBoxECX.Controls.Add(this.checkBoxAVX512VBMI);
             this.groupBoxECX.Controls.Add(this.checkBoxPREFETCHWT1);
             this.groupBoxECX.Location = new System.Drawing.Point(493, 19);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(481, 932);
+            this.groupBoxECX.Size = new System.Drawing.Size(704, 932);
             this.groupBoxECX.TabIndex = 43;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
@@ -372,9 +432,9 @@
             this.checkBoxINVPCID.AutoSize = true;
             this.checkBoxINVPCID.Location = new System.Drawing.Point(6, 249);
             this.checkBoxINVPCID.Name = "checkBoxINVPCID";
-            this.checkBoxINVPCID.Size = new System.Drawing.Size(193, 17);
+            this.checkBoxINVPCID.Size = new System.Drawing.Size(147, 17);
             this.checkBoxINVPCID.TabIndex = 10;
-            this.checkBoxINVPCID.Text = "INVPCID - INVPCID instruction [10]";
+            this.checkBoxINVPCID.Text = "INVPCID - instruction [10]";
             this.checkBoxINVPCID.UseVisualStyleBackColor = true;
             // 
             // checkBoxRTM
@@ -504,9 +564,9 @@
             this.checkBoxCLFLUSHOPT.AutoSize = true;
             this.checkBoxCLFLUSHOPT.Location = new System.Drawing.Point(6, 548);
             this.checkBoxCLFLUSHOPT.Name = "checkBoxCLFLUSHOPT";
-            this.checkBoxCLFLUSHOPT.Size = new System.Drawing.Size(247, 17);
+            this.checkBoxCLFLUSHOPT.Size = new System.Drawing.Size(174, 17);
             this.checkBoxCLFLUSHOPT.TabIndex = 23;
-            this.checkBoxCLFLUSHOPT.Text = "CLFLUSHOPT - CLFLUSHOPT instruction [23]";
+            this.checkBoxCLFLUSHOPT.Text = "CLFLUSHOPT - instruction [23]";
             this.checkBoxCLFLUSHOPT.UseVisualStyleBackColor = true;
             // 
             // checkBoxCLWB
@@ -594,9 +654,9 @@
             this.checkBoxPREFETCHWT1.AutoSize = true;
             this.checkBoxPREFETCHWT1.Location = new System.Drawing.Point(6, 18);
             this.checkBoxPREFETCHWT1.Name = "checkBoxPREFETCHWT1";
-            this.checkBoxPREFETCHWT1.Size = new System.Drawing.Size(263, 17);
+            this.checkBoxPREFETCHWT1.Size = new System.Drawing.Size(179, 17);
             this.checkBoxPREFETCHWT1.TabIndex = 0;
-            this.checkBoxPREFETCHWT1.Text = "PREFETCHWT1 - PREFETCHWT1 instruction [0]";
+            this.checkBoxPREFETCHWT1.Text = "PREFETCHWT1 - instruction [0]";
             this.checkBoxPREFETCHWT1.UseVisualStyleBackColor = true;
             // 
             // checkBoxAVX512VBMI
@@ -609,11 +669,318 @@
             this.checkBoxAVX512VBMI.Text = "AVX512-VBMI - AVX-512 Vector Bit Manipulation Instructions [1]";
             this.checkBoxAVX512VBMI.UseVisualStyleBackColor = true;
             // 
+            // checkBoxUMIP
+            // 
+            this.checkBoxUMIP.AutoSize = true;
+            this.checkBoxUMIP.Location = new System.Drawing.Point(6, 64);
+            this.checkBoxUMIP.Name = "checkBoxUMIP";
+            this.checkBoxUMIP.Size = new System.Drawing.Size(234, 17);
+            this.checkBoxUMIP.TabIndex = 2;
+            this.checkBoxUMIP.Text = "UMIP - User-mode Instruction Prevention [2]";
+            this.checkBoxUMIP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPKU
+            // 
+            this.checkBoxPKU.AutoSize = true;
+            this.checkBoxPKU.Location = new System.Drawing.Point(6, 87);
+            this.checkBoxPKU.Name = "checkBoxPKU";
+            this.checkBoxPKU.Size = new System.Drawing.Size(287, 17);
+            this.checkBoxPKU.TabIndex = 3;
+            this.checkBoxPKU.Text = "PKU - Memory Protection Keys for User-mode pages [3]";
+            this.checkBoxPKU.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOSPKE
+            // 
+            this.checkBoxOSPKE.AutoSize = true;
+            this.checkBoxOSPKE.Location = new System.Drawing.Point(6, 110);
+            this.checkBoxOSPKE.Name = "checkBoxOSPKE";
+            this.checkBoxOSPKE.Size = new System.Drawing.Size(181, 17);
+            this.checkBoxOSPKE.TabIndex = 4;
+            this.checkBoxOSPKE.Text = "OSPKE - PKU enabled by OS [4]";
+            this.checkBoxOSPKE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxWAITPKG
+            // 
+            this.checkBoxWAITPKG.AutoSize = true;
+            this.checkBoxWAITPKG.Location = new System.Drawing.Point(6, 133);
+            this.checkBoxWAITPKG.Name = "checkBoxWAITPKG";
+            this.checkBoxWAITPKG.Size = new System.Drawing.Size(515, 17);
+            this.checkBoxWAITPKG.TabIndex = 5;
+            this.checkBoxWAITPKG.Text = "WAITPKG - Timed pause and user-level monitor/wait instructions (TPAUSE, UMONITOR," +
+    " UMWAIT) [5]";
+            this.checkBoxWAITPKG.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VBMI2
+            // 
+            this.checkBoxAVX512VBMI2.AutoSize = true;
+            this.checkBoxAVX512VBMI2.Location = new System.Drawing.Point(6, 156);
+            this.checkBoxAVX512VBMI2.Name = "checkBoxAVX512VBMI2";
+            this.checkBoxAVX512VBMI2.Size = new System.Drawing.Size(344, 17);
+            this.checkBoxAVX512VBMI2.TabIndex = 6;
+            this.checkBoxAVX512VBMI2.Text = "AVX512-VBMI2 - AVX-512 Vector Bit Manipulation Instructions 2 [6]";
+            this.checkBoxAVX512VBMI2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCETSSSHSTK
+            // 
+            this.checkBoxCETSSSHSTK.AutoSize = true;
+            this.checkBoxCETSSSHSTK.Location = new System.Drawing.Point(6, 179);
+            this.checkBoxCETSSSHSTK.Name = "checkBoxCETSSSHSTK";
+            this.checkBoxCETSSSHSTK.Size = new System.Drawing.Size(477, 17);
+            this.checkBoxCETSSSHSTK.TabIndex = 7;
+            this.checkBoxCETSSSHSTK.Text = "CET_SS/SHSTK - Control flow enforcement (CET): shadow stack (SHSTK alternative na" +
+    "me) [7]";
+            this.checkBoxCETSSSHSTK.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFNI
+            // 
+            this.checkBoxGFNI.AutoSize = true;
+            this.checkBoxGFNI.Location = new System.Drawing.Point(6, 202);
+            this.checkBoxGFNI.Name = "checkBoxGFNI";
+            this.checkBoxGFNI.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxGFNI.TabIndex = 8;
+            this.checkBoxGFNI.Text = "GFNI - Galois Field instructions [8]";
+            this.checkBoxGFNI.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVAES
+            // 
+            this.checkBoxVAES.AutoSize = true;
+            this.checkBoxVAES.Location = new System.Drawing.Point(6, 225);
+            this.checkBoxVAES.Name = "checkBoxVAES";
+            this.checkBoxVAES.Size = new System.Drawing.Size(285, 17);
+            this.checkBoxVAES.TabIndex = 9;
+            this.checkBoxVAES.Text = "VAES - Vector AES instruction set (VEX-256/EVEX) [9]";
+            this.checkBoxVAES.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVPCLMULQDQ
+            // 
+            this.checkBoxVPCLMULQDQ.AutoSize = true;
+            this.checkBoxVPCLMULQDQ.Location = new System.Drawing.Point(6, 248);
+            this.checkBoxVPCLMULQDQ.Name = "checkBoxVPCLMULQDQ";
+            this.checkBoxVPCLMULQDQ.Size = new System.Drawing.Size(318, 17);
+            this.checkBoxVPCLMULQDQ.TabIndex = 10;
+            this.checkBoxVPCLMULQDQ.Text = "VPCLMULQDQ - CLMUL instruction set (VEX-256/EVEX) [10]";
+            this.checkBoxVPCLMULQDQ.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VNNI
+            // 
+            this.checkBoxAVX512VNNI.AutoSize = true;
+            this.checkBoxAVX512VNNI.Location = new System.Drawing.Point(6, 271);
+            this.checkBoxAVX512VNNI.Name = "checkBoxAVX512VNNI";
+            this.checkBoxAVX512VNNI.Size = new System.Drawing.Size(334, 17);
+            this.checkBoxAVX512VNNI.TabIndex = 11;
+            this.checkBoxAVX512VNNI.Text = "AVX512-VNNI - AVX-512 Vector Neural Network Instructions [11]";
+            this.checkBoxAVX512VNNI.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512BITALG
+            // 
+            this.checkBoxAVX512BITALG.AutoSize = true;
+            this.checkBoxAVX512BITALG.Location = new System.Drawing.Point(6, 294);
+            this.checkBoxAVX512BITALG.Name = "checkBoxAVX512BITALG";
+            this.checkBoxAVX512BITALG.Size = new System.Drawing.Size(275, 17);
+            this.checkBoxAVX512BITALG.TabIndex = 12;
+            this.checkBoxAVX512BITALG.Text = "AVX512-BITALG - AVX-512 BITALG instructions [12]";
+            this.checkBoxAVX512BITALG.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTMEEN
+            // 
+            this.checkBoxTMEEN.AutoSize = true;
+            this.checkBoxTMEEN.Location = new System.Drawing.Point(6, 317);
+            this.checkBoxTMEEN.Name = "checkBoxTMEEN";
+            this.checkBoxTMEEN.Size = new System.Drawing.Size(294, 17);
+            this.checkBoxTMEEN.TabIndex = 13;
+            this.checkBoxTMEEN.Text = "TME_EN - Total Memory Encryption MSRs available [13]";
+            this.checkBoxTMEEN.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VPOPCNTDQ
+            // 
+            this.checkBoxAVX512VPOPCNTDQ.AutoSize = true;
+            this.checkBoxAVX512VPOPCNTDQ.Location = new System.Drawing.Point(6, 340);
+            this.checkBoxAVX512VPOPCNTDQ.Name = "checkBoxAVX512VPOPCNTDQ";
+            this.checkBoxAVX512VPOPCNTDQ.Size = new System.Drawing.Size(438, 17);
+            this.checkBoxAVX512VPOPCNTDQ.TabIndex = 14;
+            this.checkBoxAVX512VPOPCNTDQ.Text = "AVX512-VPOPCNTDQ - AVX-512 Vector Population Count Double and Quad-word [14]";
+            this.checkBoxAVX512VPOPCNTDQ.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFZM
+            // 
+            this.checkBoxFZM.AutoSize = true;
+            this.checkBoxFZM.Location = new System.Drawing.Point(6, 363);
+            this.checkBoxFZM.Name = "checkBoxFZM";
+            this.checkBoxFZM.Size = new System.Drawing.Size(84, 17);
+            this.checkBoxFZM.TabIndex = 15;
+            this.checkBoxFZM.Text = "FZM - ? [15]";
+            this.checkBoxFZM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxLA57
+            // 
+            this.checkBoxLA57.AutoSize = true;
+            this.checkBoxLA57.Location = new System.Drawing.Point(6, 386);
+            this.checkBoxLA57.Name = "checkBoxLA57";
+            this.checkBoxLA57.Size = new System.Drawing.Size(227, 17);
+            this.checkBoxLA57.TabIndex = 16;
+            this.checkBoxLA57.Text = "LA57 - 5-level paging (57 address bits) [16]";
+            this.checkBoxLA57.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMAWAU1
+            // 
+            this.checkBoxMAWAU1.AutoSize = true;
+            this.checkBoxMAWAU1.Location = new System.Drawing.Point(6, 409);
+            this.checkBoxMAWAU1.Name = "checkBoxMAWAU1";
+            this.checkBoxMAWAU1.Size = new System.Drawing.Size(687, 17);
+            this.checkBoxMAWAU1.TabIndex = 17;
+            this.checkBoxMAWAU1.Text = "MAWAU - The value of userspace MPX Address-Width Adjust used by the BNDLDX and BN" +
+    "DSTX Intel MPX instructions in 64-bit mode [17]";
+            this.checkBoxMAWAU1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRDPID
+            // 
+            this.checkBoxRDPID.AutoSize = true;
+            this.checkBoxRDPID.Location = new System.Drawing.Point(6, 524);
+            this.checkBoxRDPID.Name = "checkBoxRDPID";
+            this.checkBoxRDPID.Size = new System.Drawing.Size(365, 17);
+            this.checkBoxRDPID.TabIndex = 18;
+            this.checkBoxRDPID.Text = "RDPID - (Read Processor ID) instruction and IA32_TSC_AUX MSR [22]";
+            this.checkBoxRDPID.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMAWAU2
+            // 
+            this.checkBoxMAWAU2.AutoSize = true;
+            this.checkBoxMAWAU2.Location = new System.Drawing.Point(6, 432);
+            this.checkBoxMAWAU2.Name = "checkBoxMAWAU2";
+            this.checkBoxMAWAU2.Size = new System.Drawing.Size(687, 17);
+            this.checkBoxMAWAU2.TabIndex = 19;
+            this.checkBoxMAWAU2.Text = "MAWAU - The value of userspace MPX Address-Width Adjust used by the BNDLDX and BN" +
+    "DSTX Intel MPX instructions in 64-bit mode [18]";
+            this.checkBoxMAWAU2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMAWAU3
+            // 
+            this.checkBoxMAWAU3.AutoSize = true;
+            this.checkBoxMAWAU3.Location = new System.Drawing.Point(6, 455);
+            this.checkBoxMAWAU3.Name = "checkBoxMAWAU3";
+            this.checkBoxMAWAU3.Size = new System.Drawing.Size(687, 17);
+            this.checkBoxMAWAU3.TabIndex = 20;
+            this.checkBoxMAWAU3.Text = "MAWAU - The value of userspace MPX Address-Width Adjust used by the BNDLDX and BN" +
+    "DSTX Intel MPX instructions in 64-bit mode [19]";
+            this.checkBoxMAWAU3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMAWAU4
+            // 
+            this.checkBoxMAWAU4.AutoSize = true;
+            this.checkBoxMAWAU4.Location = new System.Drawing.Point(6, 478);
+            this.checkBoxMAWAU4.Name = "checkBoxMAWAU4";
+            this.checkBoxMAWAU4.Size = new System.Drawing.Size(687, 17);
+            this.checkBoxMAWAU4.TabIndex = 21;
+            this.checkBoxMAWAU4.Text = "MAWAU - The value of userspace MPX Address-Width Adjust used by the BNDLDX and BN" +
+    "DSTX Intel MPX instructions in 64-bit mode [20]";
+            this.checkBoxMAWAU4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMAWAU5
+            // 
+            this.checkBoxMAWAU5.AutoSize = true;
+            this.checkBoxMAWAU5.Location = new System.Drawing.Point(6, 501);
+            this.checkBoxMAWAU5.Name = "checkBoxMAWAU5";
+            this.checkBoxMAWAU5.Size = new System.Drawing.Size(687, 17);
+            this.checkBoxMAWAU5.TabIndex = 22;
+            this.checkBoxMAWAU5.Text = "MAWAU - The value of userspace MPX Address-Width Adjust used by the BNDLDX and BN" +
+    "DSTX Intel MPX instructions in 64-bit mode [21]";
+            this.checkBoxMAWAU5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKL
+            // 
+            this.checkBoxKL.AutoSize = true;
+            this.checkBoxKL.Location = new System.Drawing.Point(6, 547);
+            this.checkBoxKL.Name = "checkBoxKL";
+            this.checkBoxKL.Size = new System.Drawing.Size(147, 17);
+            this.checkBoxKL.TabIndex = 23;
+            this.checkBoxKL.Text = "KL - AES Key Locker [23]";
+            this.checkBoxKL.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBUSLOCKDETECT
+            // 
+            this.checkBoxBUSLOCKDETECT.AutoSize = true;
+            this.checkBoxBUSLOCKDETECT.Location = new System.Drawing.Point(6, 570);
+            this.checkBoxBUSLOCKDETECT.Name = "checkBoxBUSLOCKDETECT";
+            this.checkBoxBUSLOCKDETECT.Size = new System.Drawing.Size(283, 17);
+            this.checkBoxBUSLOCKDETECT.TabIndex = 24;
+            this.checkBoxBUSLOCKDETECT.Text = "BUS-LOCK-DETECT - Bus lock debug exceptions [24]";
+            this.checkBoxBUSLOCKDETECT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCLDEMOTE
+            // 
+            this.checkBoxCLDEMOTE.AutoSize = true;
+            this.checkBoxCLDEMOTE.Location = new System.Drawing.Point(6, 593);
+            this.checkBoxCLDEMOTE.Name = "checkBoxCLDEMOTE";
+            this.checkBoxCLDEMOTE.Size = new System.Drawing.Size(260, 17);
+            this.checkBoxCLDEMOTE.TabIndex = 25;
+            this.checkBoxCLDEMOTE.Text = "CLDEMOTE - (Cache line demote) instruction [25]";
+            this.checkBoxCLDEMOTE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMPRR
+            // 
+            this.checkBoxMPRR.AutoSize = true;
+            this.checkBoxMPRR.Location = new System.Drawing.Point(6, 616);
+            this.checkBoxMPRR.Name = "checkBoxMPRR";
+            this.checkBoxMPRR.Size = new System.Drawing.Size(94, 17);
+            this.checkBoxMPRR.TabIndex = 26;
+            this.checkBoxMPRR.Text = "MPRR - ? [26]";
+            this.checkBoxMPRR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMOVDIRI
+            // 
+            this.checkBoxMOVDIRI.AutoSize = true;
+            this.checkBoxMOVDIRI.Location = new System.Drawing.Point(6, 639);
+            this.checkBoxMOVDIRI.Name = "checkBoxMOVDIRI";
+            this.checkBoxMOVDIRI.Size = new System.Drawing.Size(150, 17);
+            this.checkBoxMOVDIRI.TabIndex = 27;
+            this.checkBoxMOVDIRI.Text = "MOVDIRI - instruction [27]";
+            this.checkBoxMOVDIRI.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMOVDIR64B
+            // 
+            this.checkBoxMOVDIR64B.AutoSize = true;
+            this.checkBoxMOVDIR64B.Location = new System.Drawing.Point(6, 662);
+            this.checkBoxMOVDIR64B.Name = "checkBoxMOVDIR64B";
+            this.checkBoxMOVDIR64B.Size = new System.Drawing.Size(265, 17);
+            this.checkBoxMOVDIR64B.TabIndex = 28;
+            this.checkBoxMOVDIR64B.Text = "MOVDIR64B - (64-byte direct store) instruction [28]";
+            this.checkBoxMOVDIR64B.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxENQCMD
+            // 
+            this.checkBoxENQCMD.AutoSize = true;
+            this.checkBoxENQCMD.Location = new System.Drawing.Point(6, 685);
+            this.checkBoxENQCMD.Name = "checkBoxENQCMD";
+            this.checkBoxENQCMD.Size = new System.Drawing.Size(367, 17);
+            this.checkBoxENQCMD.TabIndex = 29;
+            this.checkBoxENQCMD.Text = "ENQCMD - Enqueue Stores and EMQCMD/EMQCMDS instructions [29]";
+            this.checkBoxENQCMD.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSGXLC
+            // 
+            this.checkBoxSGXLC.AutoSize = true;
+            this.checkBoxSGXLC.Location = new System.Drawing.Point(6, 708);
+            this.checkBoxSGXLC.Name = "checkBoxSGXLC";
+            this.checkBoxSGXLC.Size = new System.Drawing.Size(220, 17);
+            this.checkBoxSGXLC.TabIndex = 30;
+            this.checkBoxSGXLC.Text = "SGX-LC - SGX Launch Configuration [30]";
+            this.checkBoxSGXLC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPKS
+            // 
+            this.checkBoxPKS.AutoSize = true;
+            this.checkBoxPKS.Location = new System.Drawing.Point(6, 731);
+            this.checkBoxPKS.Name = "checkBoxPKS";
+            this.checkBoxPKS.Size = new System.Drawing.Size(277, 17);
+            this.checkBoxPKS.TabIndex = 31;
+            this.checkBoxPKS.Text = "PKS - Protection keys for supervisor-mode pages [31]";
+            this.checkBoxPKS.UseVisualStyleBackColor = true;
+            // 
             // EAX7ECX0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 981);
+            this.ClientSize = new System.Drawing.Size(1380, 981);
             this.Controls.Add(this.groupBoxEAX7ECX0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "EAX7ECX0";
@@ -683,5 +1050,35 @@
         private System.Windows.Forms.CheckBox checkBoxAVX512VL;
         private System.Windows.Forms.CheckBox checkBoxPREFETCHWT1;
         private System.Windows.Forms.CheckBox checkBoxAVX512VBMI;
+        private System.Windows.Forms.CheckBox checkBoxUMIP;
+        private System.Windows.Forms.CheckBox checkBoxPKU;
+        private System.Windows.Forms.CheckBox checkBoxOSPKE;
+        private System.Windows.Forms.CheckBox checkBoxWAITPKG;
+        private System.Windows.Forms.CheckBox checkBoxAVX512VBMI2;
+        private System.Windows.Forms.CheckBox checkBoxCETSSSHSTK;
+        private System.Windows.Forms.CheckBox checkBoxGFNI;
+        private System.Windows.Forms.CheckBox checkBoxVAES;
+        private System.Windows.Forms.CheckBox checkBoxVPCLMULQDQ;
+        private System.Windows.Forms.CheckBox checkBoxAVX512VNNI;
+        private System.Windows.Forms.CheckBox checkBoxAVX512BITALG;
+        private System.Windows.Forms.CheckBox checkBoxTMEEN;
+        private System.Windows.Forms.CheckBox checkBoxAVX512VPOPCNTDQ;
+        private System.Windows.Forms.CheckBox checkBoxFZM;
+        private System.Windows.Forms.CheckBox checkBoxLA57;
+        private System.Windows.Forms.CheckBox checkBoxMAWAU1;
+        private System.Windows.Forms.CheckBox checkBoxMAWAU5;
+        private System.Windows.Forms.CheckBox checkBoxMAWAU4;
+        private System.Windows.Forms.CheckBox checkBoxMAWAU3;
+        private System.Windows.Forms.CheckBox checkBoxMAWAU2;
+        private System.Windows.Forms.CheckBox checkBoxRDPID;
+        private System.Windows.Forms.CheckBox checkBoxKL;
+        private System.Windows.Forms.CheckBox checkBoxBUSLOCKDETECT;
+        private System.Windows.Forms.CheckBox checkBoxCLDEMOTE;
+        private System.Windows.Forms.CheckBox checkBoxMPRR;
+        private System.Windows.Forms.CheckBox checkBoxMOVDIRI;
+        private System.Windows.Forms.CheckBox checkBoxMOVDIR64B;
+        private System.Windows.Forms.CheckBox checkBoxENQCMD;
+        private System.Windows.Forms.CheckBox checkBoxSGXLC;
+        private System.Windows.Forms.CheckBox checkBoxPKS;
     }
 }
