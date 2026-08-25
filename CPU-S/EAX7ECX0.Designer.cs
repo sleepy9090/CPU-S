@@ -95,12 +95,12 @@
             this.checkBoxERMS = new System.Windows.Forms.CheckBox();
             this.checkBoxBMI2 = new System.Windows.Forms.CheckBox();
             this.checkBoxSMEP = new System.Windows.Forms.CheckBox();
-            this.checkBoxFDP_EXCPTN_ONLY = new System.Windows.Forms.CheckBox();
+            this.checkBoxFDPEXCPTNONLY = new System.Windows.Forms.CheckBox();
             this.checkBoxAVX2 = new System.Windows.Forms.CheckBox();
             this.checkBoxHLE = new System.Windows.Forms.CheckBox();
             this.checkBoxBMI1 = new System.Windows.Forms.CheckBox();
             this.checkBoxSGX = new System.Windows.Forms.CheckBox();
-            this.checkBoxTSC_ADJUST = new System.Windows.Forms.CheckBox();
+            this.checkBoxTSCADJUST = new System.Windows.Forms.CheckBox();
             this.checkBoxFSGSBASE = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
             this.textBoxMaxSubLeaf = new System.Windows.Forms.TextBox();
@@ -644,12 +644,12 @@
             this.groupBoxEBX.Controls.Add(this.checkBoxERMS);
             this.groupBoxEBX.Controls.Add(this.checkBoxBMI2);
             this.groupBoxEBX.Controls.Add(this.checkBoxSMEP);
-            this.groupBoxEBX.Controls.Add(this.checkBoxFDP_EXCPTN_ONLY);
+            this.groupBoxEBX.Controls.Add(this.checkBoxFDPEXCPTNONLY);
             this.groupBoxEBX.Controls.Add(this.checkBoxAVX2);
             this.groupBoxEBX.Controls.Add(this.checkBoxHLE);
             this.groupBoxEBX.Controls.Add(this.checkBoxBMI1);
             this.groupBoxEBX.Controls.Add(this.checkBoxSGX);
-            this.groupBoxEBX.Controls.Add(this.checkBoxTSC_ADJUST);
+            this.groupBoxEBX.Controls.Add(this.checkBoxTSCADJUST);
             this.groupBoxEBX.Controls.Add(this.checkBoxFSGSBASE);
             this.groupBoxEBX.Location = new System.Drawing.Point(6, 158);
             this.groupBoxEBX.Name = "groupBoxEBX";
@@ -910,15 +910,15 @@
             this.checkBoxSMEP.Text = "SMEP - Supervisor Mode Execution Prevention [7]";
             this.checkBoxSMEP.UseVisualStyleBackColor = true;
             // 
-            // checkBoxFDP_EXCPTN_ONLY
+            // checkBoxFDPEXCPTNONLY
             // 
-            this.checkBoxFDP_EXCPTN_ONLY.AutoSize = true;
-            this.checkBoxFDP_EXCPTN_ONLY.Location = new System.Drawing.Point(6, 157);
-            this.checkBoxFDP_EXCPTN_ONLY.Name = "checkBoxFDP_EXCPTN_ONLY";
-            this.checkBoxFDP_EXCPTN_ONLY.Size = new System.Drawing.Size(419, 17);
-            this.checkBoxFDP_EXCPTN_ONLY.TabIndex = 6;
-            this.checkBoxFDP_EXCPTN_ONLY.Text = "FDP-EXCPTN-ONLY - x87 FPU data pointer register updated on exceptions only [6]";
-            this.checkBoxFDP_EXCPTN_ONLY.UseVisualStyleBackColor = true;
+            this.checkBoxFDPEXCPTNONLY.AutoSize = true;
+            this.checkBoxFDPEXCPTNONLY.Location = new System.Drawing.Point(6, 157);
+            this.checkBoxFDPEXCPTNONLY.Name = "checkBoxFDPEXCPTNONLY";
+            this.checkBoxFDPEXCPTNONLY.Size = new System.Drawing.Size(419, 17);
+            this.checkBoxFDPEXCPTNONLY.TabIndex = 6;
+            this.checkBoxFDPEXCPTNONLY.Text = "FDP-EXCPTN-ONLY - x87 FPU data pointer register updated on exceptions only [6]";
+            this.checkBoxFDPEXCPTNONLY.UseVisualStyleBackColor = true;
             // 
             // checkBoxAVX2
             // 
@@ -960,15 +960,15 @@
             this.checkBoxSGX.Text = "SGX - Software Guard Extensions [2]";
             this.checkBoxSGX.UseVisualStyleBackColor = true;
             // 
-            // checkBoxTSC_ADJUST
+            // checkBoxTSCADJUST
             // 
-            this.checkBoxTSC_ADJUST.AutoSize = true;
-            this.checkBoxTSC_ADJUST.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxTSC_ADJUST.Name = "checkBoxTSC_ADJUST";
-            this.checkBoxTSC_ADJUST.Size = new System.Drawing.Size(243, 17);
-            this.checkBoxTSC_ADJUST.TabIndex = 1;
-            this.checkBoxTSC_ADJUST.Text = "TSC_ADJUST - IA32_TSC_ADJUST MSR [1]";
-            this.checkBoxTSC_ADJUST.UseVisualStyleBackColor = true;
+            this.checkBoxTSCADJUST.AutoSize = true;
+            this.checkBoxTSCADJUST.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxTSCADJUST.Name = "checkBoxTSCADJUST";
+            this.checkBoxTSCADJUST.Size = new System.Drawing.Size(243, 17);
+            this.checkBoxTSCADJUST.TabIndex = 1;
+            this.checkBoxTSCADJUST.Text = "TSC_ADJUST - IA32_TSC_ADJUST MSR [1]";
+            this.checkBoxTSCADJUST.UseVisualStyleBackColor = true;
             // 
             // checkBoxFSGSBASE
             // 
@@ -1377,12 +1377,12 @@
         private System.Windows.Forms.GroupBox groupBoxECX;
         private System.Windows.Forms.GroupBox groupBoxEBX;
         private System.Windows.Forms.CheckBox checkBoxFSGSBASE;
-        private System.Windows.Forms.CheckBox checkBoxTSC_ADJUST;
+        private System.Windows.Forms.CheckBox checkBoxTSCADJUST;
         private System.Windows.Forms.CheckBox checkBoxHLE;
         private System.Windows.Forms.CheckBox checkBoxBMI1;
         private System.Windows.Forms.CheckBox checkBoxSGX;
         private System.Windows.Forms.CheckBox checkBoxAVX2;
-        private System.Windows.Forms.CheckBox checkBoxFDP_EXCPTN_ONLY;
+        private System.Windows.Forms.CheckBox checkBoxFDPEXCPTNONLY;
         private System.Windows.Forms.CheckBox checkBoxSMEP;
         private System.Windows.Forms.CheckBox checkBoxBMI2;
         private System.Windows.Forms.CheckBox checkBoxERMS;
