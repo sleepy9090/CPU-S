@@ -30,7 +30,18 @@
         {
             this.groupBoxEAX7ECX0 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.checkBoxReserved7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxReserved6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxUINTR = new System.Windows.Forms.CheckBox();
+            this.checkBoxFSRM = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX5124FMAPS = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX5124VNNIW = new System.Windows.Forms.CheckBox();
+            this.checkBoxSGXKEYS = new System.Windows.Forms.CheckBox();
+            this.checkBoxSGXTEM = new System.Windows.Forms.CheckBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.textBoxMAWAU = new System.Windows.Forms.TextBox();
+            this.labelMAWAU2 = new System.Windows.Forms.Label();
+            this.labelMAWAU1 = new System.Windows.Forms.Label();
             this.checkBoxPKS = new System.Windows.Forms.CheckBox();
             this.checkBoxSGXLC = new System.Windows.Forms.CheckBox();
             this.checkBoxENQCMD = new System.Windows.Forms.CheckBox();
@@ -103,17 +114,30 @@
             this.labelEAX7ECX0EBX = new System.Windows.Forms.Label();
             this.labelEAX7ECX0ECX = new System.Windows.Forms.Label();
             this.labelEAX7ECX0EDX = new System.Windows.Forms.Label();
-            this.checkBoxSGXTEM = new System.Windows.Forms.CheckBox();
-            this.checkBoxSGXKEYS = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX5124VNNIW = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX5124FMAPS = new System.Windows.Forms.CheckBox();
-            this.labelMAWAU1 = new System.Windows.Forms.Label();
-            this.labelMAWAU2 = new System.Windows.Forms.Label();
-            this.textBoxMAWAU = new System.Windows.Forms.TextBox();
-            this.checkBoxFSRM = new System.Windows.Forms.CheckBox();
-            this.checkBoxUINTR = new System.Windows.Forms.CheckBox();
-            this.checkBoxReserved6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxReserved7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512CP2INTERSECT = new System.Windows.Forms.CheckBox();
+            this.checkBoxSRBDSCTRL = new System.Windows.Forms.CheckBox();
+            this.checkBoxMDCLEAR = new System.Windows.Forms.CheckBox();
+            this.checkBoxRTMALWAYSABORT = new System.Windows.Forms.CheckBox();
+            this.checkBoxReserved12 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRTMFORCEABORT = new System.Windows.Forms.CheckBox();
+            this.checkBoxSERIALIZE = new System.Windows.Forms.CheckBox();
+            this.checkBoxHYBRID = new System.Windows.Forms.CheckBox();
+            this.checkBoxTSXLDTRK = new System.Windows.Forms.CheckBox();
+            this.checkBoxReserved17 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPCONFIG = new System.Windows.Forms.CheckBox();
+            this.checkBoxLBR = new System.Windows.Forms.CheckBox();
+            this.checkBoxCETIBT = new System.Windows.Forms.CheckBox();
+            this.checkBoxReserved21 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAMXBF16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512FP16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAMXTILE = new System.Windows.Forms.CheckBox();
+            this.checkBoxAMXINT8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxIBRSSPECCTRL = new System.Windows.Forms.CheckBox();
+            this.checkBoxSTIBP = new System.Windows.Forms.CheckBox();
+            this.checkBoxL1DFLUSH = new System.Windows.Forms.CheckBox();
+            this.checkBoxARCHCAPABILITIES = new System.Windows.Forms.CheckBox();
+            this.checkBoxCORECAPABILITIES = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSBD = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX7ECX0.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
@@ -138,6 +162,30 @@
             // 
             // groupBoxEDX
             // 
+            this.groupBoxEDX.Controls.Add(this.checkBoxSSBD);
+            this.groupBoxEDX.Controls.Add(this.checkBoxCORECAPABILITIES);
+            this.groupBoxEDX.Controls.Add(this.checkBoxARCHCAPABILITIES);
+            this.groupBoxEDX.Controls.Add(this.checkBoxL1DFLUSH);
+            this.groupBoxEDX.Controls.Add(this.checkBoxSTIBP);
+            this.groupBoxEDX.Controls.Add(this.checkBoxIBRSSPECCTRL);
+            this.groupBoxEDX.Controls.Add(this.checkBoxAMXINT8);
+            this.groupBoxEDX.Controls.Add(this.checkBoxAMXTILE);
+            this.groupBoxEDX.Controls.Add(this.checkBoxAVX512FP16);
+            this.groupBoxEDX.Controls.Add(this.checkBoxAMXBF16);
+            this.groupBoxEDX.Controls.Add(this.checkBoxReserved21);
+            this.groupBoxEDX.Controls.Add(this.checkBoxCETIBT);
+            this.groupBoxEDX.Controls.Add(this.checkBoxLBR);
+            this.groupBoxEDX.Controls.Add(this.checkBoxPCONFIG);
+            this.groupBoxEDX.Controls.Add(this.checkBoxReserved17);
+            this.groupBoxEDX.Controls.Add(this.checkBoxTSXLDTRK);
+            this.groupBoxEDX.Controls.Add(this.checkBoxHYBRID);
+            this.groupBoxEDX.Controls.Add(this.checkBoxSERIALIZE);
+            this.groupBoxEDX.Controls.Add(this.checkBoxRTMFORCEABORT);
+            this.groupBoxEDX.Controls.Add(this.checkBoxReserved12);
+            this.groupBoxEDX.Controls.Add(this.checkBoxRTMALWAYSABORT);
+            this.groupBoxEDX.Controls.Add(this.checkBoxMDCLEAR);
+            this.groupBoxEDX.Controls.Add(this.checkBoxSRBDSCTRL);
+            this.groupBoxEDX.Controls.Add(this.checkBoxAVX512CP2INTERSECT);
             this.groupBoxEDX.Controls.Add(this.checkBoxReserved7);
             this.groupBoxEDX.Controls.Add(this.checkBoxReserved6);
             this.groupBoxEDX.Controls.Add(this.checkBoxUINTR);
@@ -152,6 +200,86 @@
             this.groupBoxEDX.TabIndex = 44;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
+            // 
+            // checkBoxReserved7
+            // 
+            this.checkBoxReserved7.AutoSize = true;
+            this.checkBoxReserved7.Location = new System.Drawing.Point(6, 179);
+            this.checkBoxReserved7.Name = "checkBoxReserved7";
+            this.checkBoxReserved7.Size = new System.Drawing.Size(87, 17);
+            this.checkBoxReserved7.TabIndex = 7;
+            this.checkBoxReserved7.Text = "Reserved [7]";
+            this.checkBoxReserved7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxReserved6
+            // 
+            this.checkBoxReserved6.AutoSize = true;
+            this.checkBoxReserved6.Location = new System.Drawing.Point(6, 156);
+            this.checkBoxReserved6.Name = "checkBoxReserved6";
+            this.checkBoxReserved6.Size = new System.Drawing.Size(87, 17);
+            this.checkBoxReserved6.TabIndex = 6;
+            this.checkBoxReserved6.Text = "Reserved [6]";
+            this.checkBoxReserved6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxUINTR
+            // 
+            this.checkBoxUINTR.AutoSize = true;
+            this.checkBoxUINTR.Location = new System.Drawing.Point(6, 133);
+            this.checkBoxUINTR.Name = "checkBoxUINTR";
+            this.checkBoxUINTR.Size = new System.Drawing.Size(226, 17);
+            this.checkBoxUINTR.TabIndex = 5;
+            this.checkBoxUINTR.Text = "UINTR - User Inter-processor Interrupts [5]";
+            this.checkBoxUINTR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFSRM
+            // 
+            this.checkBoxFSRM.AutoSize = true;
+            this.checkBoxFSRM.Location = new System.Drawing.Point(6, 110);
+            this.checkBoxFSRM.Name = "checkBoxFSRM";
+            this.checkBoxFSRM.Size = new System.Drawing.Size(194, 17);
+            this.checkBoxFSRM.TabIndex = 4;
+            this.checkBoxFSRM.Text = "FSRM - Fast Short REP MOVSB [4]";
+            this.checkBoxFSRM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX5124FMAPS
+            // 
+            this.checkBoxAVX5124FMAPS.AutoSize = true;
+            this.checkBoxAVX5124FMAPS.Location = new System.Drawing.Point(6, 90);
+            this.checkBoxAVX5124FMAPS.Name = "checkBoxAVX5124FMAPS";
+            this.checkBoxAVX5124FMAPS.Size = new System.Drawing.Size(404, 17);
+            this.checkBoxAVX5124FMAPS.TabIndex = 3;
+            this.checkBoxAVX5124FMAPS.Text = "AVX512-4FMAPS - AVX-512 4-register Multiply Accumulation Single precision [3]";
+            this.checkBoxAVX5124FMAPS.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX5124VNNIW
+            // 
+            this.checkBoxAVX5124VNNIW.AutoSize = true;
+            this.checkBoxAVX5124VNNIW.Location = new System.Drawing.Point(6, 67);
+            this.checkBoxAVX5124VNNIW.Name = "checkBoxAVX5124VNNIW";
+            this.checkBoxAVX5124VNNIW.Size = new System.Drawing.Size(357, 17);
+            this.checkBoxAVX5124VNNIW.TabIndex = 2;
+            this.checkBoxAVX5124VNNIW.Text = "AVX512-4VNNIW - AVX-512 4-register Neural Network Instructions [2]";
+            this.checkBoxAVX5124VNNIW.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSGXKEYS
+            // 
+            this.checkBoxSGXKEYS.AutoSize = true;
+            this.checkBoxSGXKEYS.Location = new System.Drawing.Point(6, 44);
+            this.checkBoxSGXKEYS.Name = "checkBoxSGXKEYS";
+            this.checkBoxSGXKEYS.Size = new System.Drawing.Size(260, 17);
+            this.checkBoxSGXKEYS.TabIndex = 1;
+            this.checkBoxSGXKEYS.Text = "SGX-KEYS - Attestation Services for Intel SGX [1]";
+            this.checkBoxSGXKEYS.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSGXTEM
+            // 
+            this.checkBoxSGXTEM.AutoSize = true;
+            this.checkBoxSGXTEM.Location = new System.Drawing.Point(6, 22);
+            this.checkBoxSGXTEM.Name = "checkBoxSGXTEM";
+            this.checkBoxSGXTEM.Size = new System.Drawing.Size(104, 17);
+            this.checkBoxSGXTEM.TabIndex = 0;
+            this.checkBoxSGXTEM.Text = "SGX-TEM - ? [0]";
+            this.checkBoxSGXTEM.UseVisualStyleBackColor = true;
             // 
             // groupBoxECX
             // 
@@ -191,6 +319,31 @@
             this.groupBoxECX.TabIndex = 43;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
+            // 
+            // textBoxMAWAU
+            // 
+            this.textBoxMAWAU.Location = new System.Drawing.Point(294, 428);
+            this.textBoxMAWAU.Name = "textBoxMAWAU";
+            this.textBoxMAWAU.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMAWAU.TabIndex = 34;
+            // 
+            // labelMAWAU2
+            // 
+            this.labelMAWAU2.AutoSize = true;
+            this.labelMAWAU2.Location = new System.Drawing.Point(3, 431);
+            this.labelMAWAU2.Name = "labelMAWAU2";
+            this.labelMAWAU2.Size = new System.Drawing.Size(285, 13);
+            this.labelMAWAU2.TabIndex = 33;
+            this.labelMAWAU2.Text = "and BNDSTX Intel MPX instructions in 64-bit mode [17-21]:";
+            // 
+            // labelMAWAU1
+            // 
+            this.labelMAWAU1.AutoSize = true;
+            this.labelMAWAU1.Location = new System.Drawing.Point(3, 412);
+            this.labelMAWAU1.Name = "labelMAWAU1";
+            this.labelMAWAU1.Size = new System.Drawing.Size(405, 13);
+            this.labelMAWAU1.TabIndex = 32;
+            this.labelMAWAU1.Text = "MAWAU - The value of userspace MPX Address-Width Adjust used by the BNDLDX";
             // 
             // checkBoxPKS
             // 
@@ -934,110 +1087,251 @@
             this.labelEAX7ECX0EDX.TabIndex = 9;
             this.labelEAX7ECX0EDX.Text = "EDX:";
             // 
-            // checkBoxSGXTEM
+            // checkBoxAVX512CP2INTERSECT
             // 
-            this.checkBoxSGXTEM.AutoSize = true;
-            this.checkBoxSGXTEM.Location = new System.Drawing.Point(6, 22);
-            this.checkBoxSGXTEM.Name = "checkBoxSGXTEM";
-            this.checkBoxSGXTEM.Size = new System.Drawing.Size(104, 17);
-            this.checkBoxSGXTEM.TabIndex = 0;
-            this.checkBoxSGXTEM.Text = "SGX-TEM - ? [0]";
-            this.checkBoxSGXTEM.UseVisualStyleBackColor = true;
+            this.checkBoxAVX512CP2INTERSECT.AutoSize = true;
+            this.checkBoxAVX512CP2INTERSECT.Location = new System.Drawing.Point(6, 202);
+            this.checkBoxAVX512CP2INTERSECT.Name = "checkBoxAVX512CP2INTERSECT";
+            this.checkBoxAVX512CP2INTERSECT.Size = new System.Drawing.Size(457, 17);
+            this.checkBoxAVX512CP2INTERSECT.TabIndex = 8;
+            this.checkBoxAVX512CP2INTERSECT.Text = "AVX512-CP2INTERSECT - AVX-512 vector intersection instructions on 32/64-bit integ" +
+    "er [8]";
+            this.checkBoxAVX512CP2INTERSECT.UseVisualStyleBackColor = true;
             // 
-            // checkBoxSGXKEYS
+            // checkBoxSRBDSCTRL
             // 
-            this.checkBoxSGXKEYS.AutoSize = true;
-            this.checkBoxSGXKEYS.Location = new System.Drawing.Point(6, 44);
-            this.checkBoxSGXKEYS.Name = "checkBoxSGXKEYS";
-            this.checkBoxSGXKEYS.Size = new System.Drawing.Size(260, 17);
-            this.checkBoxSGXKEYS.TabIndex = 1;
-            this.checkBoxSGXKEYS.Text = "SGX-KEYS - Attestation Services for Intel SGX [1]";
-            this.checkBoxSGXKEYS.UseVisualStyleBackColor = true;
+            this.checkBoxSRBDSCTRL.AutoSize = true;
+            this.checkBoxSRBDSCTRL.Location = new System.Drawing.Point(6, 225);
+            this.checkBoxSRBDSCTRL.Name = "checkBoxSRBDSCTRL";
+            this.checkBoxSRBDSCTRL.Size = new System.Drawing.Size(351, 17);
+            this.checkBoxSRBDSCTRL.TabIndex = 9;
+            this.checkBoxSRBDSCTRL.Text = "SRBDS-CTRL - Special Register Buffer Data Sampling Mitigations [9]";
+            this.checkBoxSRBDSCTRL.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAVX5124VNNIW
+            // checkBoxMDCLEAR
             // 
-            this.checkBoxAVX5124VNNIW.AutoSize = true;
-            this.checkBoxAVX5124VNNIW.Location = new System.Drawing.Point(6, 67);
-            this.checkBoxAVX5124VNNIW.Name = "checkBoxAVX5124VNNIW";
-            this.checkBoxAVX5124VNNIW.Size = new System.Drawing.Size(357, 17);
-            this.checkBoxAVX5124VNNIW.TabIndex = 2;
-            this.checkBoxAVX5124VNNIW.Text = "AVX512-4VNNIW - AVX-512 4-register Neural Network Instructions [2]";
-            this.checkBoxAVX5124VNNIW.UseVisualStyleBackColor = true;
+            this.checkBoxMDCLEAR.AutoSize = true;
+            this.checkBoxMDCLEAR.Location = new System.Drawing.Point(6, 248);
+            this.checkBoxMDCLEAR.Name = "checkBoxMDCLEAR";
+            this.checkBoxMDCLEAR.Size = new System.Drawing.Size(286, 17);
+            this.checkBoxMDCLEAR.TabIndex = 10;
+            this.checkBoxMDCLEAR.Text = "MD-CLEAR - VERW instruction clears CPU buffers [10]";
+            this.checkBoxMDCLEAR.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAVX5124FMAPS
+            // checkBoxRTMALWAYSABORT
             // 
-            this.checkBoxAVX5124FMAPS.AutoSize = true;
-            this.checkBoxAVX5124FMAPS.Location = new System.Drawing.Point(6, 90);
-            this.checkBoxAVX5124FMAPS.Name = "checkBoxAVX5124FMAPS";
-            this.checkBoxAVX5124FMAPS.Size = new System.Drawing.Size(404, 17);
-            this.checkBoxAVX5124FMAPS.TabIndex = 3;
-            this.checkBoxAVX5124FMAPS.Text = "AVX512-4FMAPS - AVX-512 4-register Multiply Accumulation Single precision [3]";
-            this.checkBoxAVX5124FMAPS.UseVisualStyleBackColor = true;
+            this.checkBoxRTMALWAYSABORT.AutoSize = true;
+            this.checkBoxRTMALWAYSABORT.Location = new System.Drawing.Point(6, 271);
+            this.checkBoxRTMALWAYSABORT.Name = "checkBoxRTMALWAYSABORT";
+            this.checkBoxRTMALWAYSABORT.Size = new System.Drawing.Size(320, 17);
+            this.checkBoxRTMALWAYSABORT.TabIndex = 11;
+            this.checkBoxRTMALWAYSABORT.Text = "RTM-ALWAYS-ABORT - All TSX transactions are aborted [11]";
+            this.checkBoxRTMALWAYSABORT.UseVisualStyleBackColor = true;
             // 
-            // labelMAWAU1
+            // checkBoxReserved12
             // 
-            this.labelMAWAU1.AutoSize = true;
-            this.labelMAWAU1.Location = new System.Drawing.Point(3, 412);
-            this.labelMAWAU1.Name = "labelMAWAU1";
-            this.labelMAWAU1.Size = new System.Drawing.Size(405, 13);
-            this.labelMAWAU1.TabIndex = 32;
-            this.labelMAWAU1.Text = "MAWAU - The value of userspace MPX Address-Width Adjust used by the BNDLDX";
+            this.checkBoxReserved12.AutoSize = true;
+            this.checkBoxReserved12.Location = new System.Drawing.Point(6, 294);
+            this.checkBoxReserved12.Name = "checkBoxReserved12";
+            this.checkBoxReserved12.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxReserved12.TabIndex = 12;
+            this.checkBoxReserved12.Text = "Reserved [12]";
+            this.checkBoxReserved12.UseVisualStyleBackColor = true;
             // 
-            // labelMAWAU2
+            // checkBoxRTMFORCEABORT
             // 
-            this.labelMAWAU2.AutoSize = true;
-            this.labelMAWAU2.Location = new System.Drawing.Point(3, 431);
-            this.labelMAWAU2.Name = "labelMAWAU2";
-            this.labelMAWAU2.Size = new System.Drawing.Size(285, 13);
-            this.labelMAWAU2.TabIndex = 33;
-            this.labelMAWAU2.Text = "and BNDSTX Intel MPX instructions in 64-bit mode [17-21]:";
+            this.checkBoxRTMFORCEABORT.AutoSize = true;
+            this.checkBoxRTMFORCEABORT.Location = new System.Drawing.Point(6, 317);
+            this.checkBoxRTMFORCEABORT.Name = "checkBoxRTMFORCEABORT";
+            this.checkBoxRTMFORCEABORT.Size = new System.Drawing.Size(382, 17);
+            this.checkBoxRTMFORCEABORT.TabIndex = 13;
+            this.checkBoxRTMFORCEABORT.Text = "RTM-FORCE-ABORT - TSX_FORCE_ABORT (MSR 0x10f) is available [13]";
+            this.checkBoxRTMFORCEABORT.UseVisualStyleBackColor = true;
             // 
-            // textBoxMAWAU
+            // checkBoxSERIALIZE
             // 
-            this.textBoxMAWAU.Location = new System.Drawing.Point(294, 428);
-            this.textBoxMAWAU.Name = "textBoxMAWAU";
-            this.textBoxMAWAU.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMAWAU.TabIndex = 34;
+            this.checkBoxSERIALIZE.AutoSize = true;
+            this.checkBoxSERIALIZE.Location = new System.Drawing.Point(6, 340);
+            this.checkBoxSERIALIZE.Name = "checkBoxSERIALIZE";
+            this.checkBoxSERIALIZE.Size = new System.Drawing.Size(159, 17);
+            this.checkBoxSERIALIZE.TabIndex = 14;
+            this.checkBoxSERIALIZE.Text = "SERIALIZE - instruction [14]";
+            this.checkBoxSERIALIZE.UseVisualStyleBackColor = true;
             // 
-            // checkBoxFSRM
+            // checkBoxHYBRID
             // 
-            this.checkBoxFSRM.AutoSize = true;
-            this.checkBoxFSRM.Location = new System.Drawing.Point(6, 110);
-            this.checkBoxFSRM.Name = "checkBoxFSRM";
-            this.checkBoxFSRM.Size = new System.Drawing.Size(194, 17);
-            this.checkBoxFSRM.TabIndex = 4;
-            this.checkBoxFSRM.Text = "FSRM - Fast Short REP MOVSB [4]";
-            this.checkBoxFSRM.UseVisualStyleBackColor = true;
+            this.checkBoxHYBRID.AutoSize = true;
+            this.checkBoxHYBRID.Location = new System.Drawing.Point(6, 363);
+            this.checkBoxHYBRID.Name = "checkBoxHYBRID";
+            this.checkBoxHYBRID.Size = new System.Drawing.Size(380, 17);
+            this.checkBoxHYBRID.TabIndex = 15;
+            this.checkBoxHYBRID.Text = "HYBRID - Mixture of CPU types in processor topology (e.g. Alder Lake) [15]";
+            this.checkBoxHYBRID.UseVisualStyleBackColor = true;
             // 
-            // checkBoxUINTR
+            // checkBoxTSXLDTRK
             // 
-            this.checkBoxUINTR.AutoSize = true;
-            this.checkBoxUINTR.Location = new System.Drawing.Point(6, 133);
-            this.checkBoxUINTR.Name = "checkBoxUINTR";
-            this.checkBoxUINTR.Size = new System.Drawing.Size(226, 17);
-            this.checkBoxUINTR.TabIndex = 5;
-            this.checkBoxUINTR.Text = "UINTR - User Inter-processor Interrupts [5]";
-            this.checkBoxUINTR.UseVisualStyleBackColor = true;
+            this.checkBoxTSXLDTRK.AutoSize = true;
+            this.checkBoxTSXLDTRK.Location = new System.Drawing.Point(6, 386);
+            this.checkBoxTSXLDTRK.Name = "checkBoxTSXLDTRK";
+            this.checkBoxTSXLDTRK.Size = new System.Drawing.Size(506, 17);
+            this.checkBoxTSXLDTRK.TabIndex = 16;
+            this.checkBoxTSXLDTRK.Text = "TSXLDTRK - TSX load address tracking suspend/resume instructs (TSUSLDTRK/TRESLDTR" +
+    "K) [16]";
+            this.checkBoxTSXLDTRK.UseVisualStyleBackColor = true;
             // 
-            // checkBoxReserved6
+            // checkBoxReserved17
             // 
-            this.checkBoxReserved6.AutoSize = true;
-            this.checkBoxReserved6.Location = new System.Drawing.Point(6, 156);
-            this.checkBoxReserved6.Name = "checkBoxReserved6";
-            this.checkBoxReserved6.Size = new System.Drawing.Size(87, 17);
-            this.checkBoxReserved6.TabIndex = 6;
-            this.checkBoxReserved6.Text = "Reserved [6]";
-            this.checkBoxReserved6.UseVisualStyleBackColor = true;
+            this.checkBoxReserved17.AutoSize = true;
+            this.checkBoxReserved17.Location = new System.Drawing.Point(6, 409);
+            this.checkBoxReserved17.Name = "checkBoxReserved17";
+            this.checkBoxReserved17.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxReserved17.TabIndex = 17;
+            this.checkBoxReserved17.Text = "Reserved [17]";
+            this.checkBoxReserved17.UseVisualStyleBackColor = true;
             // 
-            // checkBoxReserved7
+            // checkBoxPCONFIG
             // 
-            this.checkBoxReserved7.AutoSize = true;
-            this.checkBoxReserved7.Location = new System.Drawing.Point(6, 179);
-            this.checkBoxReserved7.Name = "checkBoxReserved7";
-            this.checkBoxReserved7.Size = new System.Drawing.Size(87, 17);
-            this.checkBoxReserved7.TabIndex = 7;
-            this.checkBoxReserved7.Text = "Reserved [7]";
-            this.checkBoxReserved7.UseVisualStyleBackColor = true;
+            this.checkBoxPCONFIG.AutoSize = true;
+            this.checkBoxPCONFIG.Location = new System.Drawing.Point(6, 430);
+            this.checkBoxPCONFIG.Name = "checkBoxPCONFIG";
+            this.checkBoxPCONFIG.Size = new System.Drawing.Size(428, 17);
+            this.checkBoxPCONFIG.TabIndex = 18;
+            this.checkBoxPCONFIG.Text = "PCONFIG - Platform configuration (Memory Encryption Technologies Instructions) [1" +
+    "8]";
+            this.checkBoxPCONFIG.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxLBR
+            // 
+            this.checkBoxLBR.AutoSize = true;
+            this.checkBoxLBR.Location = new System.Drawing.Point(6, 453);
+            this.checkBoxLBR.Name = "checkBoxLBR";
+            this.checkBoxLBR.Size = new System.Drawing.Size(239, 17);
+            this.checkBoxLBR.TabIndex = 19;
+            this.checkBoxLBR.Text = "LBR - Architectural Last Branch Records [19]";
+            this.checkBoxLBR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCETIBT
+            // 
+            this.checkBoxCETIBT.AutoSize = true;
+            this.checkBoxCETIBT.Location = new System.Drawing.Point(6, 476);
+            this.checkBoxCETIBT.Name = "checkBoxCETIBT";
+            this.checkBoxCETIBT.Size = new System.Drawing.Size(361, 17);
+            this.checkBoxCETIBT.TabIndex = 20;
+            this.checkBoxCETIBT.Text = "CET-IBT - Control flow enforcement (CET): indirect branch tracking [20]";
+            this.checkBoxCETIBT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxReserved21
+            // 
+            this.checkBoxReserved21.AutoSize = true;
+            this.checkBoxReserved21.Location = new System.Drawing.Point(6, 499);
+            this.checkBoxReserved21.Name = "checkBoxReserved21";
+            this.checkBoxReserved21.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxReserved21.TabIndex = 21;
+            this.checkBoxReserved21.Text = "Reserved [21]";
+            this.checkBoxReserved21.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAMXBF16
+            // 
+            this.checkBoxAMXBF16.AutoSize = true;
+            this.checkBoxAMXBF16.Location = new System.Drawing.Point(6, 522);
+            this.checkBoxAMXBF16.Name = "checkBoxAMXBF16";
+            this.checkBoxAMXBF16.Size = new System.Drawing.Size(306, 17);
+            this.checkBoxAMXBF16.TabIndex = 22;
+            this.checkBoxAMXBF16.Text = "AMX-BF16 - AMX tile computation on bfloat16 numbers [22]";
+            this.checkBoxAMXBF16.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512FP16
+            // 
+            this.checkBoxAVX512FP16.AutoSize = true;
+            this.checkBoxAVX512FP16.Location = new System.Drawing.Point(6, 545);
+            this.checkBoxAVX512FP16.Name = "checkBoxAVX512FP16";
+            this.checkBoxAVX512FP16.Size = new System.Drawing.Size(397, 17);
+            this.checkBoxAVX512FP16.TabIndex = 23;
+            this.checkBoxAVX512FP16.Text = "AVX512-FP16 - AVX-512 half-precision floating-point arithmetic instructions [23]";
+            this.checkBoxAVX512FP16.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAMXTILE
+            // 
+            this.checkBoxAMXTILE.AutoSize = true;
+            this.checkBoxAMXTILE.Location = new System.Drawing.Point(6, 568);
+            this.checkBoxAMXTILE.Name = "checkBoxAMXTILE";
+            this.checkBoxAMXTILE.Size = new System.Drawing.Size(251, 17);
+            this.checkBoxAMXTILE.TabIndex = 24;
+            this.checkBoxAMXTILE.Text = "AMX-TILE - AMX tile load/store instructions [24]";
+            this.checkBoxAMXTILE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAMXINT8
+            // 
+            this.checkBoxAMXINT8.AutoSize = true;
+            this.checkBoxAMXINT8.Location = new System.Drawing.Point(6, 591);
+            this.checkBoxAMXINT8.Name = "checkBoxAMXINT8";
+            this.checkBoxAMXINT8.Size = new System.Drawing.Size(284, 17);
+            this.checkBoxAMXINT8.TabIndex = 25;
+            this.checkBoxAMXINT8.Text = "AMX-INT8 - AMX tile computation on 8-bit integers [25]";
+            this.checkBoxAMXINT8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxIBRSSPECCTRL
+            // 
+            this.checkBoxIBRSSPECCTRL.AutoSize = true;
+            this.checkBoxIBRSSPECCTRL.Location = new System.Drawing.Point(6, 614);
+            this.checkBoxIBRSSPECCTRL.Name = "checkBoxIBRSSPECCTRL";
+            this.checkBoxIBRSSPECCTRL.Size = new System.Drawing.Size(375, 17);
+            this.checkBoxIBRSSPECCTRL.TabIndex = 26;
+            this.checkBoxIBRSSPECCTRL.Text = "IBRS/SPEC_CTRL - Speculation Control, part of IBC: IBRS and IBPB [26]";
+            this.checkBoxIBRSSPECCTRL.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSTIBP
+            // 
+            this.checkBoxSTIBP.AutoSize = true;
+            this.checkBoxSTIBP.Location = new System.Drawing.Point(6, 637);
+            this.checkBoxSTIBP.Name = "checkBoxSTIBP";
+            this.checkBoxSTIBP.Size = new System.Drawing.Size(329, 17);
+            this.checkBoxSTIBP.TabIndex = 27;
+            this.checkBoxSTIBP.Text = "STIBP - Single Thread Indirect Branch Predictor, part of IBC [27]";
+            this.checkBoxSTIBP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxL1DFLUSH
+            // 
+            this.checkBoxL1DFLUSH.AutoSize = true;
+            this.checkBoxL1DFLUSH.Location = new System.Drawing.Point(6, 660);
+            this.checkBoxL1DFLUSH.Name = "checkBoxL1DFLUSH";
+            this.checkBoxL1DFLUSH.Size = new System.Drawing.Size(237, 17);
+            this.checkBoxL1DFLUSH.TabIndex = 28;
+            this.checkBoxL1DFLUSH.Text = "L1D_FLUSH - IA32_FLUSH_CMD MSR [28]";
+            this.checkBoxL1DFLUSH.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxARCHCAPABILITIES
+            // 
+            this.checkBoxARCHCAPABILITIES.AutoSize = true;
+            this.checkBoxARCHCAPABILITIES.Location = new System.Drawing.Point(6, 683);
+            this.checkBoxARCHCAPABILITIES.Name = "checkBoxARCHCAPABILITIES";
+            this.checkBoxARCHCAPABILITIES.Size = new System.Drawing.Size(506, 17);
+            this.checkBoxARCHCAPABILITIES.TabIndex = 29;
+            this.checkBoxARCHCAPABILITIES.Text = "ARCH_CAPABILITIES - IA32_ARCH_CAPABILITIES MSR: lists speculative side chan mitig" +
+    "ations [29]";
+            this.checkBoxARCHCAPABILITIES.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCORECAPABILITIES
+            // 
+            this.checkBoxCORECAPABILITIES.AutoSize = true;
+            this.checkBoxCORECAPABILITIES.Location = new System.Drawing.Point(6, 706);
+            this.checkBoxCORECAPABILITIES.Name = "checkBoxCORECAPABILITIES";
+            this.checkBoxCORECAPABILITIES.Size = new System.Drawing.Size(497, 17);
+            this.checkBoxCORECAPABILITIES.TabIndex = 30;
+            this.checkBoxCORECAPABILITIES.Text = "CORE_CAPABILITIES - IA32_CORE_CAPABILITIES MSR: lists model-specific core capabil" +
+    "ities [30]";
+            this.checkBoxCORECAPABILITIES.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSBD
+            // 
+            this.checkBoxSSBD.AutoSize = true;
+            this.checkBoxSSBD.Location = new System.Drawing.Point(6, 729);
+            this.checkBoxSSBD.Name = "checkBoxSSBD";
+            this.checkBoxSSBD.Size = new System.Drawing.Size(484, 17);
+            this.checkBoxSSBD.TabIndex = 31;
+            this.checkBoxSSBD.Text = "SSBD - Spec Store Bypass Disable, as mitigation for Spec Store Bypass (IA32_SPEC_" +
+    "CTRL) [31]";
+            this.checkBoxSSBD.UseVisualStyleBackColor = true;
             // 
             // EAX7ECX0
             // 
@@ -1046,6 +1340,7 @@
             this.ClientSize = new System.Drawing.Size(1580, 981);
             this.Controls.Add(this.groupBoxEAX7ECX0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX7ECX0";
             this.Text = "EAX=0x7, ECX=0x0: Extended Features";
             this.groupBoxEAX7ECX0.ResumeLayout(false);
@@ -1151,5 +1446,29 @@
         private System.Windows.Forms.CheckBox checkBoxUINTR;
         private System.Windows.Forms.CheckBox checkBoxReserved7;
         private System.Windows.Forms.CheckBox checkBoxReserved6;
+        private System.Windows.Forms.CheckBox checkBoxAVX512CP2INTERSECT;
+        private System.Windows.Forms.CheckBox checkBoxSRBDSCTRL;
+        private System.Windows.Forms.CheckBox checkBoxMDCLEAR;
+        private System.Windows.Forms.CheckBox checkBoxRTMALWAYSABORT;
+        private System.Windows.Forms.CheckBox checkBoxReserved12;
+        private System.Windows.Forms.CheckBox checkBoxRTMFORCEABORT;
+        private System.Windows.Forms.CheckBox checkBoxSERIALIZE;
+        private System.Windows.Forms.CheckBox checkBoxHYBRID;
+        private System.Windows.Forms.CheckBox checkBoxTSXLDTRK;
+        private System.Windows.Forms.CheckBox checkBoxReserved17;
+        private System.Windows.Forms.CheckBox checkBoxPCONFIG;
+        private System.Windows.Forms.CheckBox checkBoxLBR;
+        private System.Windows.Forms.CheckBox checkBoxCETIBT;
+        private System.Windows.Forms.CheckBox checkBoxReserved21;
+        private System.Windows.Forms.CheckBox checkBoxAMXBF16;
+        private System.Windows.Forms.CheckBox checkBoxAVX512FP16;
+        private System.Windows.Forms.CheckBox checkBoxAMXTILE;
+        private System.Windows.Forms.CheckBox checkBoxAMXINT8;
+        private System.Windows.Forms.CheckBox checkBoxIBRSSPECCTRL;
+        private System.Windows.Forms.CheckBox checkBoxSTIBP;
+        private System.Windows.Forms.CheckBox checkBoxL1DFLUSH;
+        private System.Windows.Forms.CheckBox checkBoxARCHCAPABILITIES;
+        private System.Windows.Forms.CheckBox checkBoxCORECAPABILITIES;
+        private System.Windows.Forms.CheckBox checkBoxSSBD;
     }
 }
