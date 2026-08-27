@@ -1,22 +1,15 @@
 ﻿/*
-    File           Form1.cs
+    File           CPUS.cs
     Brief          Main form for CPU information display.
     Copyright      2026 Shawn M. Crawford [sleepy]
     Date           05/29/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Management;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 using Timer = System.Threading.Timer;
 
 namespace CPU_S
