@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+    File           EAX80000002_80000003_80000004.cs
+    Brief          Form for displaying EAX=0x80000002, 0x80000003, and 0x80000004 CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           08/XX/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
 using System.Windows.Forms;
 
 namespace CPU_S

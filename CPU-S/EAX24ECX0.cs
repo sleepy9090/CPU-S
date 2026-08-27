@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+    File           EAX24ECX0.cs
+    Brief          Form for displaying EAX=0x24, ECX=0x0 CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           08/XX/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
 using System.Windows.Forms;
 
 namespace CPU_S

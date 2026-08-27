@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+    File           EAX8000001F.cs
+    Brief          Form for displaying EAX=0x8000001F CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           08/XX/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
 using System.Windows.Forms;
 
 namespace CPU_S
