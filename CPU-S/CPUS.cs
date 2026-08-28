@@ -3548,22 +3548,38 @@ namespace CPU_S
         private void eAX0x4CacheHierarchyAndTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int i = 0;
-            while (int.Parse(cpuHelper.GetEAX4EAX0_4_CacheTypeX(i)) != 0)
+            if (int.Parse(cpuHelper.GetEAX4EAX0_4_CacheTypeX(i)) == 0)
             {
-                EAX4 eax4Form = new EAX4(i);
-                eax4Form.Show();
-                i++;
+                MessageBox.Show("No cache information available for this CPU at EAX=0x4.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                while (int.Parse(cpuHelper.GetEAX4EAX0_4_CacheTypeX(i)) != 0)
+                {
+                    EAX4 eax4Form = new EAX4(i);
+                    eax4Form.Show();
+                    i++;
+                }
             }
         }
 
         private void eAX0x8000001DToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int i = 0;
-            while (int.Parse(cpuHelper.GetEAX8000001DEAX0_4_CacheTypeX(i)) != 0)
+            if (int.Parse(cpuHelper.GetEAX8000001DEAX0_4_CacheTypeX(i)) == 0)
             {
-                EAX8000001D eax8000001DForm = new EAX8000001D(i);
-                eax8000001DForm.Show();
-                i++;
+                MessageBox.Show("No cache information available for this CPU at EAX=0x8000001D.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                while (int.Parse(cpuHelper.GetEAX8000001DEAX0_4_CacheTypeX(i)) != 0)
+                {
+                    EAX8000001D eax8000001DForm = new EAX8000001D(i);
+                    eax8000001DForm.Show();
+                    i++;
+                }
             }
         }
 
