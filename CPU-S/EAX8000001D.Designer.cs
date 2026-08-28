@@ -141,7 +141,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX8000001D";
-            this.Text = "EAX=0x8000001D: Cache Hierarchy and Topology";
+            this.Text = "EAX=0x8000001D: Cache Hierarchy and Topology (AMD)";
             this.groupBoxEAX8000001D.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();

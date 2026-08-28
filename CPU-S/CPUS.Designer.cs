@@ -327,10 +327,11 @@
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x12SGXCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -345,7 +346,6 @@
             this.eAX0x20000000HighestXeonPhiFunctionImplementedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -363,8 +363,8 @@
             this.eAX0xC0000001CentaurFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0xC0000002CentaurExtendedCPUIDPerformanceDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3163,108 +3163,114 @@
             // eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem
             // 
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Name = "eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem";
-            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Text = "EAX=0x0: Highest Function Parameter and Manufacturer ID";
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem.Click += new System.EventHandler(this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem_Click);
             // 
             // eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem
             // 
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Name = "eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem";
-            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Text = "EAX=0x1: Processor Info and Feature Bits";
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem_Click);
             // 
             // eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem
             // 
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Name = "eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem";
-            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Text = "EAX=0x2: Cache and TLB Descriptor Information";
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem_Click);
             // 
             // eAX0x3ProcessorSerialNumberToolStripMenuItem
             // 
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Name = "eAX0x3ProcessorSerialNumberToolStripMenuItem";
-            this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Text = "EAX=0x3: Processor Serial Number";
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Click += new System.EventHandler(this.eAX0x3ProcessorSerialNumberToolStripMenuItem_Click);
             // 
             // eAX0x4CacheHierarchyAndTopologyToolStripMenuItem
             // 
             this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Name = "eAX0x4CacheHierarchyAndTopologyToolStripMenuItem";
-            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
-            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Text = "EAX=0x4: Cache Hierarchy and Topology";
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Text = "EAX=0x4: Cache Hierarchy and Topology (Intel)";
             this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem_Click);
             // 
             // eAX0x8000001DToolStripMenuItem
             // 
             this.eAX0x8000001DToolStripMenuItem.Name = "eAX0x8000001DToolStripMenuItem";
-            this.eAX0x8000001DToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
-            this.eAX0x8000001DToolStripMenuItem.Text = "EAX=0x8000001D: Cache Hierarchy and Topology";
+            this.eAX0x8000001DToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x8000001DToolStripMenuItem.Text = "EAX=0x8000001D: Cache Hierarchy and Topology (AMD)";
             this.eAX0x8000001DToolStripMenuItem.Click += new System.EventHandler(this.eAX0x8000001DToolStripMenuItem_Click);
             // 
             // eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem
             // 
             this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Name = "eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem";
-            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Text = "EAX=0x4: Intel Thread/Core and Cache Topology";
             this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem_Click);
             // 
             // eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem
             // 
             this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Name = "eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem";
-            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Text = "EAX=0xB: Intel Thread/Core and Cache Topology";
             this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click);
             // 
             // eAX0x5MONITORMWAITFeaturesToolStripMenuItem
             // 
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Name = "eAX0x5MONITORMWAITFeaturesToolStripMenuItem";
-            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Text = "EAX=0x5: MONITOR/MWAIT Features";
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click);
             // 
             // eAX0x6ThermalAndPowerManagementToolStripMenuItem
             // 
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Name = "eAX0x6ThermalAndPowerManagementToolStripMenuItem";
-            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Text = "EAX=0x6: Thermal and Power Management";
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem.Click += new System.EventHandler(this.eAX0x6ThermalAndPowerManagementToolStripMenuItem_Click);
             // 
             // eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem
             // 
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem";
-            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x0: Extended Features";
             this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem_Click);
+            // 
+            // eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem
+            // 
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem";
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x1: Extended Features";
+            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem_Click);
+            // 
+            // eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem
+            // 
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem";
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x2: Extended Features";
+            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem_Click);
             // 
             // eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem
             // 
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Name = "eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem";
-            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Size = new System.Drawing.Size(386, 22);
+            this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Text = "EAX=0xD: XSAVE Features and State Components";
             this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem.Click += new System.EventHandler(this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem
-            // 
-            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Name = "eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem";
-            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Size = new System.Drawing.Size(411, 22);
-            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Text = "EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX";
-            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Click += new System.EventHandler(this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click);
             // 
             // eAX0x12SGXCapabilitiesToolStripMenuItem
             // 
             this.eAX0x12SGXCapabilitiesToolStripMenuItem.Name = "eAX0x12SGXCapabilitiesToolStripMenuItem";
-            this.eAX0x12SGXCapabilitiesToolStripMenuItem.Size = new System.Drawing.Size(411, 22);
+            this.eAX0x12SGXCapabilitiesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x12SGXCapabilitiesToolStripMenuItem.Text = "EAX=0x12: SGX Capabilities";
             this.eAX0x12SGXCapabilitiesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x12SGXCapabilitiesToolStripMenuItem_Click);
+            // 
+            // eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem
+            // 
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Name = "eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem";
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Text = "EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX";
+            this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Click += new System.EventHandler(this.eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click);
             // 
             // eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem
             // 
@@ -3365,12 +3371,6 @@
             this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000000-0x4FFFFFFF: Reserved for Hypervisors";
             this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem_Click);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "&About";
             // 
             // eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem
             // 
@@ -3492,19 +3492,19 @@
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Text = "EAX=0xC0000006, ECX=0: Zhaoxin Feature Information";
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem_Click);
             // 
-            // eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem
+            // helpToolStripMenuItem
             // 
-            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem";
-            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x1: Extended Features";
-            this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem_Click);
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
             // 
-            // eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem
+            // aboutToolStripMenuItem
             // 
-            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Name = "eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem";
-            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Text = "EAX=0x7, ECX=0x2: Extended Features";
-            this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem_Click);
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
             // 
             // FormCPUS
             // 

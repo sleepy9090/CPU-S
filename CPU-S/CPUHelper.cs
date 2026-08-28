@@ -4416,16 +4416,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX11_CacheInvlusiveness();
+        public static extern int GetEAX4EAX11_CacheInclusiveness();
 
-        public string GetEAX4EAX11_CacheInvlusivenessX()
+        public string GetEAX4EAX11_CacheInclusivenessX()
         {
             try
             {
-                int eAX4EAX11_CacheInvlusivenessValue = GetEAX4EAX11_CacheInvlusiveness();
-                string eAX4EAX11_CacheInvlusivenessString = eAX4EAX11_CacheInvlusivenessValue.ToString();
+                int eAX4EAX11_CacheInclusivenessValue = GetEAX4EAX11_CacheInclusiveness();
+                string eAX4EAX11_CacheInclusivenessString = eAX4EAX11_CacheInclusivenessValue.ToString();
 
-                return eAX4EAX11_CacheInvlusivenessString;
+                return eAX4EAX11_CacheInclusivenessString;
             }
             catch (DllNotFoundException ex)
             {
@@ -5184,16 +5184,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX11_CacheInvlusiveness();
+        public static extern int GetEAX8000001DEAX11_CacheInclusiveness();
 
-        public string GetEAX8000001DEAX11_CacheInvlusivenessX()
+        public string GetEAX8000001DEAX11_CacheInclusivenessX()
         {
             try
             {
-                int eAX8000001DEAX11_CacheInvlusivenessValue = GetEAX8000001DEAX11_CacheInvlusiveness();
-                string eAX8000001DEAX11_CacheInvlusivenessString = eAX8000001DEAX11_CacheInvlusivenessValue.ToString();
+                int eAX8000001DEAX11_CacheInclusivenessValue = GetEAX8000001DEAX11_CacheInclusiveness();
+                string eAX8000001DEAX11_CacheInclusivenessString = eAX8000001DEAX11_CacheInclusivenessValue.ToString();
 
-                return eAX8000001DEAX11_CacheInvlusivenessString;
+                return eAX8000001DEAX11_CacheInclusivenessString;
             }
             catch (DllNotFoundException ex)
             {
