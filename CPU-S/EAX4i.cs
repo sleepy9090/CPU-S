@@ -22,16 +22,16 @@ namespace CPU_S
 
             #region EAX=0x4: Intel Thread/Core and Cache Topology
 
-            string cpuIdEAX4EAX = cpuHelper.GetEAX4EAXX();
+            string cpuIdEAX4EAX = cpuHelper.GetEAX4EAXX(0);
             textBoxEAX4EAX.Text = cpuIdEAX4EAX;
 
-            string cpuIdEAX4EBX = cpuHelper.GetEAX4EBXX();
+            string cpuIdEAX4EBX = cpuHelper.GetEAX4EBXX(0);
             textBoxEAX4EBX.Text = cpuIdEAX4EBX;
 
-            string cpuIdEAX4ECX = cpuHelper.GetEAX4ECXX();
+            string cpuIdEAX4ECX = cpuHelper.GetEAX4ECXX(0);
             textBoxEAX4ECX.Text = cpuIdEAX4ECX;
 
-            string cpuIdEAX4EDX = cpuHelper.GetEAX4EDXX();
+            string cpuIdEAX4EDX = cpuHelper.GetEAX4EDXX(0);
             textBoxEAX4EDX.Text = cpuIdEAX4EDX;
 
             #endregion

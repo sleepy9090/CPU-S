@@ -4200,13 +4200,13 @@ namespace CPU_S
         #region EAX=0x4 and EAX=0x8000001D: Cache Hierarchy and Topology
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX4EAX();
+        public static extern IntPtr GetEAX4EAX(int ecxSubLeaf);
 
-        public string GetEAX4EAXX()
+        public string GetEAX4EAXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX4EAXPtr = GetEAX4EAX();
+                IntPtr eAX4EAXPtr = GetEAX4EAX(ecxSubLeaf);
                 string eAX4EAXString = Marshal.PtrToStringAnsi(eAX4EAXPtr);
 
                 return eAX4EAXString;
@@ -4224,13 +4224,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX4EBX();
+        public static extern IntPtr GetEAX4EBX(int ecxSubLeaf);
 
-        public string GetEAX4EBXX()
+        public string GetEAX4EBXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX4EBXPtr = GetEAX4EBX();
+                IntPtr eAX4EBXPtr = GetEAX4EBX(ecxSubLeaf);
                 string eAX4EBXString = Marshal.PtrToStringAnsi(eAX4EBXPtr);
 
                 return eAX4EBXString;
@@ -4248,13 +4248,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX4ECX();
+        public static extern IntPtr GetEAX4ECX(int ecxSubLeaf);
 
-        public string GetEAX4ECXX()
+        public string GetEAX4ECXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX4ECXPtr = GetEAX4ECX();
+                IntPtr eAX4ECXPtr = GetEAX4ECX(ecxSubLeaf);
                 string eAX4ECXString = Marshal.PtrToStringAnsi(eAX4ECXPtr);
 
                 return eAX4ECXString;
@@ -4272,13 +4272,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX4EDX();
+        public static extern IntPtr GetEAX4EDX(int ecxSubLeaf);
 
-        public string GetEAX4EDXX()
+        public string GetEAX4EDXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX4EDXPtr = GetEAX4EDX();
+                IntPtr eAX4EDXPtr = GetEAX4EDX(ecxSubLeaf);
                 string eAX4EDXString = Marshal.PtrToStringAnsi(eAX4EDXPtr);
 
                 return eAX4EDXString;
@@ -4296,13 +4296,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX0_4_CacheType();
+        public static extern int GetEAX4EAX0_4_CacheType(int ecxSubLeaf);
 
-        public string GetEAX4EAX0_4_CacheTypeX()
+        public string GetEAX4EAX0_4_CacheTypeX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX0_4_CacheTypeValue = GetEAX4EAX0_4_CacheType();
+                int eAX4EAX0_4_CacheTypeValue = GetEAX4EAX0_4_CacheType(ecxSubLeaf);
                 string eAX4EAX0_4_CacheTypeString = eAX4EAX0_4_CacheTypeValue.ToString();
 
                 return eAX4EAX0_4_CacheTypeString;
@@ -4320,13 +4320,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX5_7_CacheLevel();
+        public static extern int GetEAX4EAX5_7_CacheLevel(int ecxSubLeaf);
 
-        public string GetEAX4EAX5_7_CacheLevelX()
+        public string GetEAX4EAX5_7_CacheLevelX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX5_7_CacheLevelValue = GetEAX4EAX5_7_CacheLevel();
+                int eAX4EAX5_7_CacheLevelValue = GetEAX4EAX5_7_CacheLevel(ecxSubLeaf);
                 string eAX4EAX5_7_CacheLevelString = eAX4EAX5_7_CacheLevelValue.ToString();
 
                 return eAX4EAX5_7_CacheLevelString;
@@ -4344,13 +4344,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX8_SelfInitCacheLevel();
+        public static extern int GetEAX4EAX8_SelfInitCacheLevel(int ecxSubLeaf);
 
-        public string GetEAX4EAX8_SelfInitCacheLevelX()
+        public string GetEAX4EAX8_SelfInitCacheLevelX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX8_SelfInitCacheLevelValue = GetEAX4EAX8_SelfInitCacheLevel();
+                int eAX4EAX8_SelfInitCacheLevelValue = GetEAX4EAX8_SelfInitCacheLevel(ecxSubLeaf);
                 string eAX4EAX8_SelfInitCacheLevelString = eAX4EAX8_SelfInitCacheLevelValue.ToString();
 
                 return eAX4EAX8_SelfInitCacheLevelString;
@@ -4368,13 +4368,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX9_FullyAssociativeCache();
+        public static extern int GetEAX4EAX9_FullyAssociativeCache(int ecxSubLeaf);
 
-        public string GetEAX4EAX9_FullyAssociativeCacheX()
+        public string GetEAX4EAX9_FullyAssociativeCacheX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX9_FullyAssociativeCacheValue = GetEAX4EAX9_FullyAssociativeCache();
+                int eAX4EAX9_FullyAssociativeCacheValue = GetEAX4EAX9_FullyAssociativeCache(ecxSubLeaf);
                 string eAX4EAX9_FullyAssociativeCacheString = eAX4EAX9_FullyAssociativeCacheValue.ToString();
 
                 return eAX4EAX9_FullyAssociativeCacheString;
@@ -4392,13 +4392,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX10_WBINVDCacheInvalidationExecutionScope();
+        public static extern int GetEAX4EAX10_WBINVDCacheInvalidationExecutionScope(int ecxSubLeaf);
 
-        public string GetEAX4EAX10_WBINVDCacheInvalidationExecutionScopeX()
+        public string GetEAX4EAX10_WBINVDCacheInvalidationExecutionScopeX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX10_WBINVDCacheInvalidationExecutionScopeValue = GetEAX4EAX10_WBINVDCacheInvalidationExecutionScope();
+                int eAX4EAX10_WBINVDCacheInvalidationExecutionScopeValue = GetEAX4EAX10_WBINVDCacheInvalidationExecutionScope(ecxSubLeaf);
                 string eAX4EAX10_WBINVDCacheInvalidationExecutionScopeString = eAX4EAX10_WBINVDCacheInvalidationExecutionScopeValue.ToString();
 
                 return eAX4EAX10_WBINVDCacheInvalidationExecutionScopeString;
@@ -4416,13 +4416,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX11_CacheInclusiveness();
+        public static extern int GetEAX4EAX11_CacheInclusiveness(int ecxSubLeaf);
 
-        public string GetEAX4EAX11_CacheInclusivenessX()
+        public string GetEAX4EAX11_CacheInclusivenessX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX11_CacheInclusivenessValue = GetEAX4EAX11_CacheInclusiveness();
+                int eAX4EAX11_CacheInclusivenessValue = GetEAX4EAX11_CacheInclusiveness(ecxSubLeaf);
                 string eAX4EAX11_CacheInclusivenessString = eAX4EAX11_CacheInclusivenessValue.ToString();
 
                 return eAX4EAX11_CacheInclusivenessString;
@@ -4440,13 +4440,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX12_13_Reserved();
+        public static extern int GetEAX4EAX12_13_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EAX12_13_ReservedX()
+        public string GetEAX4EAX12_13_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX12_13_ReservedValue = GetEAX4EAX12_13_Reserved();
+                int eAX4EAX12_13_ReservedValue = GetEAX4EAX12_13_Reserved(ecxSubLeaf);
                 string eAX4EAX12_13_ReservedString = eAX4EAX12_13_ReservedValue.ToString();
 
                 return eAX4EAX12_13_ReservedString;
@@ -4464,13 +4464,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne();
+        public static extern int GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne(int ecxSubLeaf);
 
-        public string GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX()
+        public string GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneValue = GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne();
+                int eAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneValue = GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne(ecxSubLeaf);
                 string eAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneString = eAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneValue.ToString();
 
                 return eAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneString;
@@ -4488,13 +4488,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne();
+        public static extern int GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne(int ecxSubLeaf);
 
-        public string GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX()
+        public string GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneValue = GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne();
+                int eAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneValue = GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne(ecxSubLeaf);
                 string eAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneString = eAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneValue.ToString();
 
                 return eAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneString;
@@ -4512,13 +4512,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne();
+        public static extern int GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne(int ecxSubLeaf);
 
-        public string GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneX()
+        public string GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneValue = GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne();
+                int eAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneValue = GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne(ecxSubLeaf);
                 string eAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneString = eAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneValue.ToString();
 
                 return eAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneString;
@@ -4536,13 +4536,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EBX12_21_PhysicalLinePartitionsMinusOne();
+        public static extern int GetEAX4EBX12_21_PhysicalLinePartitionsMinusOne(int ecxSubLeaf);
 
-        public string GetEAX4EBX12_21_PhysicalLinePartitionsMinusOneX()
+        public string GetEAX4EBX12_21_PhysicalLinePartitionsMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EBX12_21_PhysicalLinePartitionsMinusOneValue = GetEAX4EBX12_21_PhysicalLinePartitionsMinusOne();
+                int eAX4EBX12_21_PhysicalLinePartitionsMinusOneValue = GetEAX4EBX12_21_PhysicalLinePartitionsMinusOne(ecxSubLeaf);
                 string eAX4EBX12_21_PhysicalLinePartitionsMinusOneString = eAX4EBX12_21_PhysicalLinePartitionsMinusOneValue.ToString();
 
                 return eAX4EBX12_21_PhysicalLinePartitionsMinusOneString;
@@ -4560,13 +4560,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOne();
+        public static extern int GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOne(int ecxSubLeaf);
 
-        public string GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOneX()
+        public string GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EBX22_31_WaysOfCacheAssociativityMinusOneValue = GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOne();
+                int eAX4EBX22_31_WaysOfCacheAssociativityMinusOneValue = GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOne(ecxSubLeaf);
                 string eAX4EBX22_31_WaysOfCacheAssociativityMinusOneString = eAX4EBX22_31_WaysOfCacheAssociativityMinusOneValue.ToString();
 
                 return eAX4EBX22_31_WaysOfCacheAssociativityMinusOneString;
@@ -4584,13 +4584,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4ECX0_31_NumberOfSetsInCacheMinusOne();
+        public static extern int GetEAX4ECX0_31_NumberOfSetsInCacheMinusOne(int ecxSubLeaf);
 
-        public string GetEAX4ECX0_31_NumberOfSetsInCacheMinusOneX()
+        public string GetEAX4ECX0_31_NumberOfSetsInCacheMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4ECX0_31_NumberOfSetsInCacheMinusOneValue = GetEAX4ECX0_31_NumberOfSetsInCacheMinusOne();
+                int eAX4ECX0_31_NumberOfSetsInCacheMinusOneValue = GetEAX4ECX0_31_NumberOfSetsInCacheMinusOne(ecxSubLeaf);
                 string eAX4ECX0_31_NumberOfSetsInCacheMinusOneString = eAX4ECX0_31_NumberOfSetsInCacheMinusOneValue.ToString();
 
                 return eAX4ECX0_31_NumberOfSetsInCacheMinusOneString;
@@ -4608,13 +4608,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4TotalCacheSizeInBytes();
+        public static extern int GetEAX4TotalCacheSizeInBytes(int ecxSubLeaf);
 
-        public string GetEAX4TotalCacheSizeInBytesX()
+        public string GetEAX4TotalCacheSizeInBytesX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4TotalCacheSizeInBytesValue = GetEAX4TotalCacheSizeInBytes();
+                int eAX4TotalCacheSizeInBytesValue = GetEAX4TotalCacheSizeInBytes(ecxSubLeaf);
                 string eAX4TotalCacheSizeInBytesString = eAX4TotalCacheSizeInBytesValue.ToString();
 
                 return eAX4TotalCacheSizeInBytesString;
@@ -4632,13 +4632,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX0_WBINVDCacheInvalidationExecutionScope();
+        public static extern int GetEAX4EDX0_WBINVDCacheInvalidationExecutionScope(int ecxSubLeaf);
 
-        public string GetEAX4EDX0_WBINVDCacheInvalidationExecutionScopeX()
+        public string GetEAX4EDX0_WBINVDCacheInvalidationExecutionScopeX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX0_WBINVDCacheInvalidationExecutionScopeValue = GetEAX4EDX0_WBINVDCacheInvalidationExecutionScope();
+                int eAX4EDX0_WBINVDCacheInvalidationExecutionScopeValue = GetEAX4EDX0_WBINVDCacheInvalidationExecutionScope(ecxSubLeaf);
                 string eAX4EDX0_WBINVDCacheInvalidationExecutionScopeString = eAX4EDX0_WBINVDCacheInvalidationExecutionScopeValue.ToString();
 
                 return eAX4EDX0_WBINVDCacheInvalidationExecutionScopeString;
@@ -4656,13 +4656,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX1_CacheInclusiveness();
+        public static extern int GetEAX4EDX1_CacheInclusiveness(int ecxSubLeaf);
 
-        public string GetEAX4EDX1_CacheInclusivenessX()
+        public string GetEAX4EDX1_CacheInclusivenessX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX1_CacheInclusivenessValue = GetEAX4EDX1_CacheInclusiveness();
+                int eAX4EDX1_CacheInclusivenessValue = GetEAX4EDX1_CacheInclusiveness(ecxSubLeaf);
                 string eAX4EDX1_CacheInclusivenessString = eAX4EDX1_CacheInclusivenessValue.ToString();
 
                 return eAX4EDX1_CacheInclusivenessString;
@@ -4680,13 +4680,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX2_ComplexCacheIndexing();
+        public static extern int GetEAX4EDX2_ComplexCacheIndexing(int ecxSubLeaf);
 
-        public string GetEAX4EDX2_ComplexCacheIndexingX()
+        public string GetEAX4EDX2_ComplexCacheIndexingX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX2_ComplexCacheIndexingValue = GetEAX4EDX2_ComplexCacheIndexing();
+                int eAX4EDX2_ComplexCacheIndexingValue = GetEAX4EDX2_ComplexCacheIndexing(ecxSubLeaf);
                 string eAX4EDX2_ComplexCacheIndexingString = eAX4EDX2_ComplexCacheIndexingValue.ToString();
 
                 return eAX4EDX2_ComplexCacheIndexingString;
@@ -4704,13 +4704,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX3_Reserved();
+        public static extern int GetEAX4EDX3_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX3_ReservedX()
+        public string GetEAX4EDX3_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX3_ReservedValue = GetEAX4EDX3_Reserved();
+                int eAX4EDX3_ReservedValue = GetEAX4EDX3_Reserved(ecxSubLeaf);
                 string eAX4EDX3_ReservedString = eAX4EDX3_ReservedValue.ToString();
 
                 return eAX4EDX3_ReservedString;
@@ -4728,13 +4728,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX4_Reserved();
+        public static extern int GetEAX4EDX4_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX4_ReservedX()
+        public string GetEAX4EDX4_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX4_ReservedValue = GetEAX4EDX4_Reserved();
+                int eAX4EDX4_ReservedValue = GetEAX4EDX4_Reserved(ecxSubLeaf);
                 string eAX4EDX4_ReservedString = eAX4EDX4_ReservedValue.ToString();
 
                 return eAX4EDX4_ReservedString;
@@ -4752,13 +4752,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX5_7_Reserved();
+        public static extern int GetEAX4EDX5_7_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX5_7_ReservedX()
+        public string GetEAX4EDX5_7_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX5_7_ReservedValue = GetEAX4EDX5_7_Reserved();
+                int eAX4EDX5_7_ReservedValue = GetEAX4EDX5_7_Reserved(ecxSubLeaf);
                 string eAX4EDX5_7_ReservedString = eAX4EDX5_7_ReservedValue.ToString();
 
                 return eAX4EDX5_7_ReservedString;
@@ -4776,13 +4776,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX8_Reserved();
+        public static extern int GetEAX4EDX8_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX8_ReservedX()
+        public string GetEAX4EDX8_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX8_ReservedValue = GetEAX4EDX8_Reserved();
+                int eAX4EDX8_ReservedValue = GetEAX4EDX8_Reserved(ecxSubLeaf);
                 string eAX4EDX8_ReservedString = eAX4EDX8_ReservedValue.ToString();
 
                 return eAX4EDX8_ReservedString;
@@ -4800,13 +4800,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX9_Reserved();
+        public static extern int GetEAX4EDX9_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX9_ReservedX()
+        public string GetEAX4EDX9_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX9_ReservedValue = GetEAX4EDX9_Reserved();
+                int eAX4EDX9_ReservedValue = GetEAX4EDX9_Reserved(ecxSubLeaf);
                 string eAX4EDX9_ReservedString = eAX4EDX9_ReservedValue.ToString();
 
                 return eAX4EDX9_ReservedString;
@@ -4824,13 +4824,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX10_Reserved();
+        public static extern int GetEAX4EDX10_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX10_ReservedX()
+        public string GetEAX4EDX10_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX10_ReservedValue = GetEAX4EDX10_Reserved();
+                int eAX4EDX10_ReservedValue = GetEAX4EDX10_Reserved(ecxSubLeaf);
                 string eAX4EDX10_ReservedString = eAX4EDX10_ReservedValue.ToString();
 
                 return eAX4EDX10_ReservedString;
@@ -4848,13 +4848,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX11_Reserved();
+        public static extern int GetEAX4EDX11_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX11_ReservedX()
+        public string GetEAX4EDX11_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX11_ReservedValue = GetEAX4EDX11_Reserved();
+                int eAX4EDX11_ReservedValue = GetEAX4EDX11_Reserved(ecxSubLeaf);
                 string eAX4EDX11_ReservedString = eAX4EDX11_ReservedValue.ToString();
 
                 return eAX4EDX11_ReservedString;
@@ -4872,13 +4872,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX12_13_Reserved();
+        public static extern int GetEAX4EDX12_13_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX12_13_ReservedX()
+        public string GetEAX4EDX12_13_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX12_13_ReservedValue = GetEAX4EDX12_13_Reserved();
+                int eAX4EDX12_13_ReservedValue = GetEAX4EDX12_13_Reserved(ecxSubLeaf);
                 string eAX4EDX12_13_ReservedString = eAX4EDX12_13_ReservedValue.ToString();
 
                 return eAX4EDX12_13_ReservedString;
@@ -4896,13 +4896,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX14_21_Reserved();
+        public static extern int GetEAX4EDX14_21_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX14_21_ReservedX()
+        public string GetEAX4EDX14_21_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX14_21_ReservedValue = GetEAX4EDX14_21_Reserved();
+                int eAX4EDX14_21_ReservedValue = GetEAX4EDX14_21_Reserved(ecxSubLeaf);
                 string eAX4EDX14_21_ReservedString = eAX4EDX14_21_ReservedValue.ToString();
 
                 return eAX4EDX14_21_ReservedString;
@@ -4920,13 +4920,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX22_25_Reserved();
+        public static extern int GetEAX4EDX22_25_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX22_25_ReservedX()
+        public string GetEAX4EDX22_25_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX22_25_ReservedValue = GetEAX4EDX22_25_Reserved();
+                int eAX4EDX22_25_ReservedValue = GetEAX4EDX22_25_Reserved(ecxSubLeaf);
                 string eAX4EDX22_25_ReservedString = eAX4EDX22_25_ReservedValue.ToString();
 
                 return eAX4EDX22_25_ReservedString;
@@ -4944,13 +4944,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX4EDX26_31_Reserved();
+        public static extern int GetEAX4EDX26_31_Reserved(int ecxSubLeaf);
 
-        public string GetEAX4EDX26_31_ReservedX()
+        public string GetEAX4EDX26_31_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX4EDX26_31_ReservedValue = GetEAX4EDX26_31_Reserved();
+                int eAX4EDX26_31_ReservedValue = GetEAX4EDX26_31_Reserved(ecxSubLeaf);
                 string eAX4EDX26_31_ReservedString = eAX4EDX26_31_ReservedValue.ToString();
 
                 return eAX4EDX26_31_ReservedString;
@@ -4968,13 +4968,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX8000001DEAX();
+        public static extern IntPtr GetEAX8000001DEAX(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAXX()
+        public string GetEAX8000001DEAXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX8000001DEAXPtr = GetEAX8000001DEAX();
+                IntPtr eAX8000001DEAXPtr = GetEAX8000001DEAX(ecxSubLeaf);
                 string eAX8000001DEAXString = Marshal.PtrToStringAnsi(eAX8000001DEAXPtr);
 
                 return eAX8000001DEAXString;
@@ -4992,13 +4992,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX8000001DEBX();
+        public static extern IntPtr GetEAX8000001DEBX(int ecxSubLeaf);
 
-        public string GetEAX8000001DEBXX()
+        public string GetEAX8000001DEBXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX8000001DEBXPtr = GetEAX8000001DEBX();
+                IntPtr eAX8000001DEBXPtr = GetEAX8000001DEBX(ecxSubLeaf);
                 string eAX8000001DEBXString = Marshal.PtrToStringAnsi(eAX8000001DEBXPtr);
 
                 return eAX8000001DEBXString;
@@ -5016,13 +5016,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX8000001DECX();
+        public static extern IntPtr GetEAX8000001DECX(int ecxSubLeaf);
 
-        public string GetEAX8000001DECXX()
+        public string GetEAX8000001DECXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX8000001DECXPtr = GetEAX8000001DECX();
+                IntPtr eAX8000001DECXPtr = GetEAX8000001DECX(ecxSubLeaf);
                 string eAX8000001DECXString = Marshal.PtrToStringAnsi(eAX8000001DECXPtr);
 
                 return eAX8000001DECXString;
@@ -5040,13 +5040,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX8000001DEDX();
+        public static extern IntPtr GetEAX8000001DEDX(int ecxSubLeaf);
 
-        public string GetEAX8000001DEDXX()
+        public string GetEAX8000001DEDXX(int ecxSubLeaf)
         {
             try
             {
-                IntPtr eAX8000001DEDXPtr = GetEAX8000001DEDX();
+                IntPtr eAX8000001DEDXPtr = GetEAX8000001DEDX(ecxSubLeaf);
                 string eAX8000001DEDXString = Marshal.PtrToStringAnsi(eAX8000001DEDXPtr);
 
                 return eAX8000001DEDXString;
@@ -5064,13 +5064,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX0_4_CacheType();
+        public static extern int GetEAX8000001DEAX0_4_CacheType(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX0_4_CacheTypeX()
+        public string GetEAX8000001DEAX0_4_CacheTypeX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX0_4_CacheTypeValue = GetEAX8000001DEAX0_4_CacheType();
+                int eAX8000001DEAX0_4_CacheTypeValue = GetEAX8000001DEAX0_4_CacheType(ecxSubLeaf);
                 string eAX8000001DEAX0_4_CacheTypeString = eAX8000001DEAX0_4_CacheTypeValue.ToString();
 
                 return eAX8000001DEAX0_4_CacheTypeString;
@@ -5088,13 +5088,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX5_7_CacheLevel();
+        public static extern int GetEAX8000001DEAX5_7_CacheLevel(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX5_7_CacheLevelX()
+        public string GetEAX8000001DEAX5_7_CacheLevelX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX5_7_CacheLevelValue = GetEAX8000001DEAX5_7_CacheLevel();
+                int eAX8000001DEAX5_7_CacheLevelValue = GetEAX8000001DEAX5_7_CacheLevel(ecxSubLeaf);
                 string eAX8000001DEAX5_7_CacheLevelString = eAX8000001DEAX5_7_CacheLevelValue.ToString();
 
                 return eAX8000001DEAX5_7_CacheLevelString;
@@ -5112,13 +5112,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX8_SelfInitCacheLevel();
+        public static extern int GetEAX8000001DEAX8_SelfInitCacheLevel(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX8_SelfInitCacheLevelX()
+        public string GetEAX8000001DEAX8_SelfInitCacheLevelX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX8_SelfInitCacheLevelValue = GetEAX8000001DEAX8_SelfInitCacheLevel();
+                int eAX8000001DEAX8_SelfInitCacheLevelValue = GetEAX8000001DEAX8_SelfInitCacheLevel(ecxSubLeaf);
                 string eAX8000001DEAX8_SelfInitCacheLevelString = eAX8000001DEAX8_SelfInitCacheLevelValue.ToString();
 
                 return eAX8000001DEAX8_SelfInitCacheLevelString;
@@ -5136,13 +5136,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX9_FullyAssociativeCache();
+        public static extern int GetEAX8000001DEAX9_FullyAssociativeCache(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX9_FullyAssociativeCacheX()
+        public string GetEAX8000001DEAX9_FullyAssociativeCacheX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX9_FullyAssociativeCacheValue = GetEAX8000001DEAX9_FullyAssociativeCache();
+                int eAX8000001DEAX9_FullyAssociativeCacheValue = GetEAX8000001DEAX9_FullyAssociativeCache(ecxSubLeaf);
                 string eAX8000001DEAX9_FullyAssociativeCacheString = eAX8000001DEAX9_FullyAssociativeCacheValue.ToString();
 
                 return eAX8000001DEAX9_FullyAssociativeCacheString;
@@ -5160,13 +5160,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope();
+        public static extern int GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeX()
+        public string GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeValue = GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope();
+                int eAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeValue = GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope(ecxSubLeaf);
                 string eAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeString = eAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeValue.ToString();
 
                 return eAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeString;
@@ -5184,13 +5184,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX11_CacheInclusiveness();
+        public static extern int GetEAX8000001DEAX11_CacheInclusiveness(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX11_CacheInclusivenessX()
+        public string GetEAX8000001DEAX11_CacheInclusivenessX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX11_CacheInclusivenessValue = GetEAX8000001DEAX11_CacheInclusiveness();
+                int eAX8000001DEAX11_CacheInclusivenessValue = GetEAX8000001DEAX11_CacheInclusiveness(ecxSubLeaf);
                 string eAX8000001DEAX11_CacheInclusivenessString = eAX8000001DEAX11_CacheInclusivenessValue.ToString();
 
                 return eAX8000001DEAX11_CacheInclusivenessString;
@@ -5208,13 +5208,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX12_13_Reserved();
+        public static extern int GetEAX8000001DEAX12_13_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX12_13_ReservedX()
+        public string GetEAX8000001DEAX12_13_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX12_13_ReservedValue = GetEAX8000001DEAX12_13_Reserved();
+                int eAX8000001DEAX12_13_ReservedValue = GetEAX8000001DEAX12_13_Reserved(ecxSubLeaf);
                 string eAX8000001DEAX12_13_ReservedString = eAX8000001DEAX12_13_ReservedValue.ToString();
 
                 return eAX8000001DEAX12_13_ReservedString;
@@ -5232,13 +5232,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne();
+        public static extern int GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX()
+        public string GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneValue = GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne();
+                int eAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneValue = GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne(ecxSubLeaf);
                 string eAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneString = eAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneValue.ToString();
 
                 return eAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneString;
@@ -5256,13 +5256,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne();
+        public static extern int GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne(int ecxSubLeaf);
 
-        public string GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX()
+        public string GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneValue = GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne();
+                int eAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneValue = GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne(ecxSubLeaf);
                 string eAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneString = eAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneValue.ToString();
 
                 return eAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneString;
@@ -5280,13 +5280,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne();
+        public static extern int GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne(int ecxSubLeaf);
 
-        public string GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneX()
+        public string GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneValue = GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne();
+                int eAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneValue = GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne(ecxSubLeaf);
                 string eAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneString = eAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneValue.ToString();
 
                 return eAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneString;
@@ -5304,13 +5304,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne();
+        public static extern int GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne(int ecxSubLeaf);
 
-        public string GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneX()
+        public string GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneValue = GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne();
+                int eAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneValue = GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne(ecxSubLeaf);
                 string eAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneString = eAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneValue.ToString();
 
                 return eAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneString;
@@ -5328,13 +5328,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne();
+        public static extern int GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne(int ecxSubLeaf);
 
-        public string GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneX()
+        public string GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneValue = GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne();
+                int eAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneValue = GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne(ecxSubLeaf);
                 string eAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneString = eAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneValue.ToString();
 
                 return eAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneString;
@@ -5352,13 +5352,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne();
+        public static extern int GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne(int ecxSubLeaf);
 
-        public string GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOneX()
+        public string GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOneX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DECX0_31_NumberOfSetsInCacheMinusOneValue = GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne();
+                int eAX8000001DECX0_31_NumberOfSetsInCacheMinusOneValue = GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne(ecxSubLeaf);
                 string eAX8000001DECX0_31_NumberOfSetsInCacheMinusOneString = eAX8000001DECX0_31_NumberOfSetsInCacheMinusOneValue.ToString();
 
                 return eAX8000001DECX0_31_NumberOfSetsInCacheMinusOneString;
@@ -5376,13 +5376,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001DTotalCacheSizeInBytes();
+        public static extern int GetEAX8000001DTotalCacheSizeInBytes(int ecxSubLeaf);
 
-        public string GetEAX8000001DTotalCacheSizeInBytesX()
+        public string GetEAX8000001DTotalCacheSizeInBytesX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001DTotalCacheSizeInBytesValue = GetEAX8000001DTotalCacheSizeInBytes();
+                int eAX8000001DTotalCacheSizeInBytesValue = GetEAX8000001DTotalCacheSizeInBytes(ecxSubLeaf);
                 string eAX8000001DTotalCacheSizeInBytesString = eAX8000001DTotalCacheSizeInBytesValue.ToString();
 
                 return eAX8000001DTotalCacheSizeInBytesString;
@@ -5400,13 +5400,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScope();
+        public static extern int GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScope(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeX()
+        public string GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeValue = GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScope();
+                int eAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeValue = GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScope(ecxSubLeaf);
                 string eAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeString = eAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeValue.ToString();
 
                 return eAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeString;
@@ -5424,13 +5424,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX1_CacheInclusiveness();
+        public static extern int GetEAX8000001D_EDX1_CacheInclusiveness(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX1_CacheInclusivenessX()
+        public string GetEAX8000001D_EDX1_CacheInclusivenessX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX1_CacheInclusivenessValue = GetEAX8000001D_EDX1_CacheInclusiveness();
+                int eAX8000001D_EDX1_CacheInclusivenessValue = GetEAX8000001D_EDX1_CacheInclusiveness(ecxSubLeaf);
                 string eAX8000001D_EDX1_CacheInclusivenessString = eAX8000001D_EDX1_CacheInclusivenessValue.ToString();
 
                 return eAX8000001D_EDX1_CacheInclusivenessString;
@@ -5448,13 +5448,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX2_ComplexCacheIndexing();
+        public static extern int GetEAX8000001D_EDX2_ComplexCacheIndexing(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX2_ComplexCacheIndexingX()
+        public string GetEAX8000001D_EDX2_ComplexCacheIndexingX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX2_ComplexCacheIndexingValue = GetEAX8000001D_EDX2_ComplexCacheIndexing();
+                int eAX8000001D_EDX2_ComplexCacheIndexingValue = GetEAX8000001D_EDX2_ComplexCacheIndexing(ecxSubLeaf);
                 string eAX8000001D_EDX2_ComplexCacheIndexingString = eAX8000001D_EDX2_ComplexCacheIndexingValue.ToString();
 
                 return eAX8000001D_EDX2_ComplexCacheIndexingString;
@@ -5472,13 +5472,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX3_Reserved();
+        public static extern int GetEAX8000001D_EDX3_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX3_ReservedX()
+        public string GetEAX8000001D_EDX3_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX3_ReservedValue = GetEAX8000001D_EDX3_Reserved();
+                int eAX8000001D_EDX3_ReservedValue = GetEAX8000001D_EDX3_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX3_ReservedString = eAX8000001D_EDX3_ReservedValue.ToString();
 
                 return eAX8000001D_EDX3_ReservedString;
@@ -5496,13 +5496,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX4_Reserved();
+        public static extern int GetEAX8000001D_EDX4_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX4_ReservedX()
+        public string GetEAX8000001D_EDX4_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX4_ReservedValue = GetEAX8000001D_EDX4_Reserved();
+                int eAX8000001D_EDX4_ReservedValue = GetEAX8000001D_EDX4_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX4_ReservedString = eAX8000001D_EDX4_ReservedValue.ToString();
 
                 return eAX8000001D_EDX4_ReservedString;
@@ -5520,13 +5520,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX5_7_Reserved();
+        public static extern int GetEAX8000001D_EDX5_7_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX5_7_ReservedX()
+        public string GetEAX8000001D_EDX5_7_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX5_7_ReservedValue = GetEAX8000001D_EDX5_7_Reserved();
+                int eAX8000001D_EDX5_7_ReservedValue = GetEAX8000001D_EDX5_7_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX5_7_ReservedString = eAX8000001D_EDX5_7_ReservedValue.ToString();
 
                 return eAX8000001D_EDX5_7_ReservedString;
@@ -5544,13 +5544,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX8_Reserved();
+        public static extern int GetEAX8000001D_EDX8_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX8_ReservedX()
+        public string GetEAX8000001D_EDX8_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX8_ReservedValue = GetEAX8000001D_EDX8_Reserved();
+                int eAX8000001D_EDX8_ReservedValue = GetEAX8000001D_EDX8_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX8_ReservedString = eAX8000001D_EDX8_ReservedValue.ToString();
 
                 return eAX8000001D_EDX8_ReservedString;
@@ -5568,13 +5568,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX9_Reserved();
+        public static extern int GetEAX8000001D_EDX9_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX9_ReservedX()
+        public string GetEAX8000001D_EDX9_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX9_ReservedValue = GetEAX8000001D_EDX9_Reserved();
+                int eAX8000001D_EDX9_ReservedValue = GetEAX8000001D_EDX9_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX9_ReservedString = eAX8000001D_EDX9_ReservedValue.ToString();
 
                 return eAX8000001D_EDX9_ReservedString;
@@ -5592,13 +5592,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX10_Reserved();
+        public static extern int GetEAX8000001D_EDX10_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX10_ReservedX()
+        public string GetEAX8000001D_EDX10_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX10_ReservedValue = GetEAX8000001D_EDX10_Reserved();
+                int eAX8000001D_EDX10_ReservedValue = GetEAX8000001D_EDX10_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX10_ReservedString = eAX8000001D_EDX10_ReservedValue.ToString();
 
                 return eAX8000001D_EDX10_ReservedString;
@@ -5616,13 +5616,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX11_Reserved();
+        public static extern int GetEAX8000001D_EDX11_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX11_ReservedX()
+        public string GetEAX8000001D_EDX11_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX11_ReservedValue = GetEAX8000001D_EDX11_Reserved();
+                int eAX8000001D_EDX11_ReservedValue = GetEAX8000001D_EDX11_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX11_ReservedString = eAX8000001D_EDX11_ReservedValue.ToString();
 
                 return eAX8000001D_EDX11_ReservedString;
@@ -5640,13 +5640,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX12_13_Reserved();
+        public static extern int GetEAX8000001D_EDX12_13_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX12_13_ReservedX()
+        public string GetEAX8000001D_EDX12_13_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX12_13_ReservedValue = GetEAX8000001D_EDX12_13_Reserved();
+                int eAX8000001D_EDX12_13_ReservedValue = GetEAX8000001D_EDX12_13_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX12_13_ReservedString = eAX8000001D_EDX12_13_ReservedValue.ToString();
 
                 return eAX8000001D_EDX12_13_ReservedString;
@@ -5664,13 +5664,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX14_21_Reserved();
+        public static extern int GetEAX8000001D_EDX14_21_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX14_21_ReservedX()
+        public string GetEAX8000001D_EDX14_21_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX14_21_ReservedValue = GetEAX8000001D_EDX14_21_Reserved();
+                int eAX8000001D_EDX14_21_ReservedValue = GetEAX8000001D_EDX14_21_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX14_21_ReservedString = eAX8000001D_EDX14_21_ReservedValue.ToString();
 
                 return eAX8000001D_EDX14_21_ReservedString;
@@ -5688,13 +5688,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX22_25_Reserved();
+        public static extern int GetEAX8000001D_EDX22_25_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX22_25_ReservedX()
+        public string GetEAX8000001D_EDX22_25_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX22_25_ReservedValue = GetEAX8000001D_EDX22_25_Reserved();
+                int eAX8000001D_EDX22_25_ReservedValue = GetEAX8000001D_EDX22_25_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX22_25_ReservedString = eAX8000001D_EDX22_25_ReservedValue.ToString();
 
                 return eAX8000001D_EDX22_25_ReservedString;
@@ -5712,13 +5712,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX8000001D_EDX26_31_Reserved();
+        public static extern int GetEAX8000001D_EDX26_31_Reserved(int ecxSubLeaf);
 
-        public string GetEAX8000001D_EDX26_31_ReservedX()
+        public string GetEAX8000001D_EDX26_31_ReservedX(int ecxSubLeaf)
         {
             try
             {
-                int eAX8000001D_EDX26_31_ReservedValue = GetEAX8000001D_EDX26_31_Reserved();
+                int eAX8000001D_EDX26_31_ReservedValue = GetEAX8000001D_EDX26_31_Reserved(ecxSubLeaf);
                 string eAX8000001D_EDX26_31_ReservedString = eAX8000001D_EDX26_31_ReservedValue.ToString();
 
                 return eAX8000001D_EDX26_31_ReservedString;

@@ -1221,197 +1221,203 @@ namespace CPU_S
 
                 #region EAX=0x4 and EAX=0x8000001D: Cache Hierarchy and Topology
 
-                string cpuIdEAX4EAX = cpuHelper.GetEAX4EAXX();
-                Console.WriteLine($"EAX4EAX: {cpuIdEAX4EAX}");
+                int i = 0;
+                while (int.Parse(cpuHelper.GetEAX4EAX0_4_CacheTypeX(i)) != 0)
+                {
+                    string cpuIdEAX4EAX = cpuHelper.GetEAX4EAXX(i);
+                    Console.WriteLine($"EAX4EAX: {cpuIdEAX4EAX}");
 
-                string cpuIdEAX4EBX = cpuHelper.GetEAX4EBXX();
-                Console.WriteLine($"EAX4EBX: {cpuIdEAX4EBX}");
+                    string cpuIdEAX4EBX = cpuHelper.GetEAX4EBXX(i);
+                    Console.WriteLine($"EAX4EBX: {cpuIdEAX4EBX}");
 
-                string cpuIdEAX4ECX = cpuHelper.GetEAX4ECXX();
-                Console.WriteLine($"EAX4ECX: {cpuIdEAX4ECX}");
+                    string cpuIdEAX4ECX = cpuHelper.GetEAX4ECXX(i);
+                    Console.WriteLine($"EAX4ECX: {cpuIdEAX4ECX}");
 
-                string cpuIdEAX4EDX = cpuHelper.GetEAX4EDXX();
-                Console.WriteLine($"EAX4EDX: {cpuIdEAX4EDX}");
+                    string cpuIdEAX4EDX = cpuHelper.GetEAX4EDXX(i);
+                    Console.WriteLine($"EAX4EDX: {cpuIdEAX4EDX}");
 
-                string cpuIdEAX4EAX0_4_CacheType = cpuHelper.GetEAX4EAX0_4_CacheTypeX();
-                Console.WriteLine($"EAX4EAX0_4_CacheType: {cpuIdEAX4EAX0_4_CacheType}");
+                    string cpuIdEAX4EAX0_4_CacheType = cpuHelper.GetEAX4EAX0_4_CacheTypeX(i);
+                    Console.WriteLine($"EAX4EAX0_4_CacheType: {cpuIdEAX4EAX0_4_CacheType}");
 
-                string cpuIdEAX4EAX5_7_CacheLevel = cpuHelper.GetEAX4EAX5_7_CacheLevelX();
-                Console.WriteLine($"EAX4EAX5_7_CacheLevel: {cpuIdEAX4EAX5_7_CacheLevel}");
+                    string cpuIdEAX4EAX5_7_CacheLevel = cpuHelper.GetEAX4EAX5_7_CacheLevelX(i);
+                    Console.WriteLine($"EAX4EAX5_7_CacheLevel: {cpuIdEAX4EAX5_7_CacheLevel}");
 
-                string cpuIdEAX4EAX8_SelfInitCacheLevel = cpuHelper.GetEAX4EAX8_SelfInitCacheLevelX();
-                Console.WriteLine($"EAX4EAX8_SelfInitCacheLevel: {cpuIdEAX4EAX8_SelfInitCacheLevel}");
+                    string cpuIdEAX4EAX8_SelfInitCacheLevel = cpuHelper.GetEAX4EAX8_SelfInitCacheLevelX(i);
+                    Console.WriteLine($"EAX4EAX8_SelfInitCacheLevel: {cpuIdEAX4EAX8_SelfInitCacheLevel}");
 
-                string cpuIdEAX4EAX9_FullyAssociativeCache = cpuHelper.GetEAX4EAX9_FullyAssociativeCacheX();
-                Console.WriteLine($"EAX4EAX9_FullyAssociativeCache: {cpuIdEAX4EAX9_FullyAssociativeCache}");
+                    string cpuIdEAX4EAX9_FullyAssociativeCache = cpuHelper.GetEAX4EAX9_FullyAssociativeCacheX(i);
+                    Console.WriteLine($"EAX4EAX9_FullyAssociativeCache: {cpuIdEAX4EAX9_FullyAssociativeCache}");
 
-                string cpuIdEAX4EAX10_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX4EAX10_WBINVDCacheInvalidationExecutionScopeX();
-                Console.WriteLine($"EAX4EAX10_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX4EAX10_WBINVDCacheInvalidationExecutionScope}");
+                    string cpuIdEAX4EAX10_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX4EAX10_WBINVDCacheInvalidationExecutionScopeX(i);
+                    Console.WriteLine($"EAX4EAX10_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX4EAX10_WBINVDCacheInvalidationExecutionScope}");
 
-                string cpuIdEAX4EAX4EAX11_CacheInclusiveness = cpuHelper.GetEAX4EAX11_CacheInclusivenessX();
-                Console.WriteLine($"EAX4EAX11_CacheInclusiveness: {cpuIdEAX4EAX4EAX11_CacheInclusiveness}");
+                    string cpuIdEAX4EAX4EAX11_CacheInclusiveness = cpuHelper.GetEAX4EAX11_CacheInclusivenessX(i);
+                    Console.WriteLine($"EAX4EAX11_CacheInclusiveness: {cpuIdEAX4EAX4EAX11_CacheInclusiveness}");
 
-                string cpuIdEAX4EAX12_13_Reserved = cpuHelper.GetEAX4EAX12_13_ReservedX();
-                Console.WriteLine($"EAX4EAX12_13_Reserved: {cpuIdEAX4EAX12_13_Reserved}");
+                    string cpuIdEAX4EAX12_13_Reserved = cpuHelper.GetEAX4EAX12_13_ReservedX(i);
+                    Console.WriteLine($"EAX4EAX12_13_Reserved: {cpuIdEAX4EAX12_13_Reserved}");
 
-                string cpuIdEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne = cpuHelper.GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX();
-                Console.WriteLine($"EAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne: {cpuIdEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne}");
+                    string cpuIdEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne = cpuHelper.GetEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX(i);
+                    Console.WriteLine($"EAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne: {cpuIdEAX4EAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne}");
 
-                string cpuIdEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne = cpuHelper.GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX();
-                Console.WriteLine($"EAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne: {cpuIdEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne}");
+                    string cpuIdEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne = cpuHelper.GetEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX(i);
+                    Console.WriteLine($"EAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne: {cpuIdEAX4EAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne}");
 
-                string cpuIdEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne = cpuHelper.GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneX();
-                Console.WriteLine($"EAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne: {cpuIdEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne}");
+                    string cpuIdEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne = cpuHelper.GetEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOneX(i);
+                    Console.WriteLine($"EAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne: {cpuIdEAX4EBX0_11_SystemCoherencyLineSizeInBytesMinusOne}");
 
-                string cpuIdEAX4EBX12_21_PhysicalLinePartitionsMinusOne = cpuHelper.GetEAX4EBX12_21_PhysicalLinePartitionsMinusOneX();
-                Console.WriteLine($"EAX4EBX12_21_PhysicalLinePartitionsMinusOne: {cpuIdEAX4EBX12_21_PhysicalLinePartitionsMinusOne}");
+                    string cpuIdEAX4EBX12_21_PhysicalLinePartitionsMinusOne = cpuHelper.GetEAX4EBX12_21_PhysicalLinePartitionsMinusOneX(i);
+                    Console.WriteLine($"EAX4EBX12_21_PhysicalLinePartitionsMinusOne: {cpuIdEAX4EBX12_21_PhysicalLinePartitionsMinusOne}");
 
-                string cpuIdEAX4EBX22_31_WaysOfCacheAssociativityMinusOne = cpuHelper.GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOneX();
-                Console.WriteLine($"EAX4EBX22_31_WaysOfCacheAssociativityMinusOne: {cpuIdEAX4EBX22_31_WaysOfCacheAssociativityMinusOne}");
+                    string cpuIdEAX4EBX22_31_WaysOfCacheAssociativityMinusOne = cpuHelper.GetEAX4EBX22_31_WaysOfCacheAssociativityMinusOneX(i);
+                    Console.WriteLine($"EAX4EBX22_31_WaysOfCacheAssociativityMinusOne: {cpuIdEAX4EBX22_31_WaysOfCacheAssociativityMinusOne}");
 
-                string cpuIdEAX4ECX0_31_NumberOfSetsInCacheMinusOne = cpuHelper.GetEAX4ECX0_31_NumberOfSetsInCacheMinusOneX();
-                Console.WriteLine($"EAX4ECX0_31_NumberOfSetsInCacheMinusOne: {cpuIdEAX4ECX0_31_NumberOfSetsInCacheMinusOne}");
+                    string cpuIdEAX4ECX0_31_NumberOfSetsInCacheMinusOne = cpuHelper.GetEAX4ECX0_31_NumberOfSetsInCacheMinusOneX(i);
+                    Console.WriteLine($"EAX4ECX0_31_NumberOfSetsInCacheMinusOne: {cpuIdEAX4ECX0_31_NumberOfSetsInCacheMinusOne}");
 
-                string cpuIdEAX4TotalCacheSizeInBytes = cpuHelper.GetEAX4TotalCacheSizeInBytesX();
-                Console.WriteLine($"EAX4TotalCacheSizeInBytes: {cpuIdEAX4TotalCacheSizeInBytes}");
+                    string cpuIdEAX4TotalCacheSizeInBytes = cpuHelper.GetEAX4TotalCacheSizeInBytesX(i);
+                    Console.WriteLine($"EAX4TotalCacheSizeInBytes: {cpuIdEAX4TotalCacheSizeInBytes}");
 
-                string cpuIdEAX4EDX0_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX4EDX0_WBINVDCacheInvalidationExecutionScopeX();
-                Console.WriteLine($"EAX4EDX0_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX4EDX0_WBINVDCacheInvalidationExecutionScope}");
+                    string cpuIdEAX4EDX0_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX4EDX0_WBINVDCacheInvalidationExecutionScopeX(i);
+                    Console.WriteLine($"EAX4EDX0_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX4EDX0_WBINVDCacheInvalidationExecutionScope}");
 
-                string cpuIdEAX4EDX1_CacheInclusiveness = cpuHelper.GetEAX4EDX1_CacheInclusivenessX();
-                Console.WriteLine($"EAX4EDX1_CacheInclusiveness: {cpuIdEAX4EDX1_CacheInclusiveness}");
+                    string cpuIdEAX4EDX1_CacheInclusiveness = cpuHelper.GetEAX4EDX1_CacheInclusivenessX(i);
+                    Console.WriteLine($"EAX4EDX1_CacheInclusiveness: {cpuIdEAX4EDX1_CacheInclusiveness}");
 
-                string cpuIdEAX4EDX2_ComplexCacheIndexing = cpuHelper.GetEAX4EDX2_ComplexCacheIndexingX();
-                Console.WriteLine($"EAX4EDX2_ComplexCacheIndexing: {cpuIdEAX4EDX2_ComplexCacheIndexing}");
+                    string cpuIdEAX4EDX2_ComplexCacheIndexing = cpuHelper.GetEAX4EDX2_ComplexCacheIndexingX(i);
+                    Console.WriteLine($"EAX4EDX2_ComplexCacheIndexing: {cpuIdEAX4EDX2_ComplexCacheIndexing}");
 
-                string cpuIdEAX4EDX3_Reserved = cpuHelper.GetEAX4EDX3_ReservedX();
-                Console.WriteLine($"EAX4EDX3_Reserved: {cpuIdEAX4EDX3_Reserved}");
+                    string cpuIdEAX4EDX3_Reserved = cpuHelper.GetEAX4EDX3_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX3_Reserved: {cpuIdEAX4EDX3_Reserved}");
 
-                string cpuIdEAX4EDX4_Reserved = cpuHelper.GetEAX4EDX4_ReservedX();
-                Console.WriteLine($"EAX4EDX4_Reserved: {cpuIdEAX4EDX4_Reserved}");
+                    string cpuIdEAX4EDX4_Reserved = cpuHelper.GetEAX4EDX4_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX4_Reserved: {cpuIdEAX4EDX4_Reserved}");
 
-                string cpuIdEAX4EDX5_7_Reserved = cpuHelper.GetEAX4EDX5_7_ReservedX();
-                Console.WriteLine($"EAX4EDX5_7_Reserved: {cpuIdEAX4EDX5_7_Reserved}");
+                    string cpuIdEAX4EDX5_7_Reserved = cpuHelper.GetEAX4EDX5_7_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX5_7_Reserved: {cpuIdEAX4EDX5_7_Reserved}");
 
-                string cpuIdEAX4EDX8_Reserved = cpuHelper.GetEAX4EDX8_ReservedX();
-                Console.WriteLine($"EAX4EDX8_Reserved: {cpuIdEAX4EDX8_Reserved}");
+                    string cpuIdEAX4EDX8_Reserved = cpuHelper.GetEAX4EDX8_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX8_Reserved: {cpuIdEAX4EDX8_Reserved}");
 
-                string cpuIdEAX4EDX9_Reserved = cpuHelper.GetEAX4EDX9_ReservedX();
-                Console.WriteLine($"EAX4EDX9_Reserved: {cpuIdEAX4EDX9_Reserved}");
+                    string cpuIdEAX4EDX9_Reserved = cpuHelper.GetEAX4EDX9_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX9_Reserved: {cpuIdEAX4EDX9_Reserved}");
 
-                string cpuIdEAX4EDX10_Reserved = cpuHelper.GetEAX4EDX10_ReservedX();
-                Console.WriteLine($"EAX4EDX10_Reserved: {cpuIdEAX4EDX10_Reserved}");
+                    string cpuIdEAX4EDX10_Reserved = cpuHelper.GetEAX4EDX10_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX10_Reserved: {cpuIdEAX4EDX10_Reserved}");
 
-                string cpuIdEAX4EDX11_Reserved = cpuHelper.GetEAX4EDX11_ReservedX();
-                Console.WriteLine($"EAX4EDX11_Reserved: {cpuIdEAX4EDX11_Reserved}");
+                    string cpuIdEAX4EDX11_Reserved = cpuHelper.GetEAX4EDX11_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX11_Reserved: {cpuIdEAX4EDX11_Reserved}");
 
-                string cpuIdEAX4EDX12_13_Reserved = cpuHelper.GetEAX4EDX12_13_ReservedX();
-                Console.WriteLine($"EAX4EDX12_13_Reserved: {cpuIdEAX4EDX12_13_Reserved}");
+                    string cpuIdEAX4EDX12_13_Reserved = cpuHelper.GetEAX4EDX12_13_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX12_13_Reserved: {cpuIdEAX4EDX12_13_Reserved}");
 
-                string cpuIdEAX4EDX14_21_Reserved = cpuHelper.GetEAX4EDX14_21_ReservedX();
-                Console.WriteLine($"EAX4EDX14_21_Reserved: {cpuIdEAX4EDX14_21_Reserved}");
+                    string cpuIdEAX4EDX14_21_Reserved = cpuHelper.GetEAX4EDX14_21_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX14_21_Reserved: {cpuIdEAX4EDX14_21_Reserved}");
 
-                string cpuIdEAX4EDX22_25_Reserved = cpuHelper.GetEAX4EDX22_25_ReservedX();
-                Console.WriteLine($"EAX4EDX22_25_Reserved: {cpuIdEAX4EDX22_25_Reserved}");
+                    string cpuIdEAX4EDX22_25_Reserved = cpuHelper.GetEAX4EDX22_25_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX22_25_Reserved: {cpuIdEAX4EDX22_25_Reserved}");
 
-                string cpuIdEAX4EDX26_31_Reserved = cpuHelper.GetEAX4EDX26_31_ReservedX();
-                Console.WriteLine($"EAX4EDX26_31_Reserved: {cpuIdEAX4EDX26_31_Reserved}");
+                    string cpuIdEAX4EDX26_31_Reserved = cpuHelper.GetEAX4EDX26_31_ReservedX(i);
+                    Console.WriteLine($"EAX4EDX26_31_Reserved: {cpuIdEAX4EDX26_31_Reserved}");
 
-                string cpuIdEAX8000001DEAX = cpuHelper.GetEAX8000001DEAXX();
-                Console.WriteLine($"EAX8000001DEAX: {cpuIdEAX8000001DEAX}");
+                    string cpuIdEAX8000001DEAX = cpuHelper.GetEAX8000001DEAXX(i);
+                    Console.WriteLine($"EAX8000001DEAX: {cpuIdEAX8000001DEAX}");
 
-                string cpuIdEAX8000001DEBX = cpuHelper.GetEAX8000001DEBXX();
-                Console.WriteLine($"EAX8000001DEBX: {cpuIdEAX8000001DEBX}");
+                    string cpuIdEAX8000001DEBX = cpuHelper.GetEAX8000001DEBXX(i);
+                    Console.WriteLine($"EAX8000001DEBX: {cpuIdEAX8000001DEBX}");
 
-                string cpuIdEAX8000001DECX = cpuHelper.GetEAX8000001DECXX();
-                Console.WriteLine($"EAX8000001DECX: {cpuIdEAX8000001DECX}");
+                    string cpuIdEAX8000001DECX = cpuHelper.GetEAX8000001DECXX(i);
+                    Console.WriteLine($"EAX8000001DECX: {cpuIdEAX8000001DECX}");
 
-                string cpuIdEAX8000001DEDX = cpuHelper.GetEAX8000001DEDXX();
-                Console.WriteLine($"EAX8000001DEDX: {cpuIdEAX8000001DEDX}");
+                    string cpuIdEAX8000001DEDX = cpuHelper.GetEAX8000001DEDXX(i);
+                    Console.WriteLine($"EAX8000001DEDX: {cpuIdEAX8000001DEDX}");
 
-                string cpuIdEAX8000001DEAX0_4_CacheType = cpuHelper.GetEAX8000001DEAX0_4_CacheTypeX();
-                Console.WriteLine($"EAX8000001DEAX0_4_CacheType: {cpuIdEAX8000001DEAX0_4_CacheType}");
+                    string cpuIdEAX8000001DEAX0_4_CacheType = cpuHelper.GetEAX8000001DEAX0_4_CacheTypeX(i);
+                    Console.WriteLine($"EAX8000001DEAX0_4_CacheType: {cpuIdEAX8000001DEAX0_4_CacheType}");
 
-                string cpuIdEAX8000001DEAX5_7_CacheLevel = cpuHelper.GetEAX8000001DEAX5_7_CacheLevelX();
-                Console.WriteLine($"EAX8000001DEAX5_7_CacheLevel: {cpuIdEAX8000001DEAX5_7_CacheLevel}");
+                    string cpuIdEAX8000001DEAX5_7_CacheLevel = cpuHelper.GetEAX8000001DEAX5_7_CacheLevelX(i);
+                    Console.WriteLine($"EAX8000001DEAX5_7_CacheLevel: {cpuIdEAX8000001DEAX5_7_CacheLevel}");
 
-                string cpuIdEAX8000001DEAX8_SelfInitCacheLevel = cpuHelper.GetEAX8000001DEAX8_SelfInitCacheLevelX();
-                Console.WriteLine($"EAX8000001DEAX8_SelfInitCacheLevel: {cpuIdEAX8000001DEAX8_SelfInitCacheLevel}");
+                    string cpuIdEAX8000001DEAX8_SelfInitCacheLevel = cpuHelper.GetEAX8000001DEAX8_SelfInitCacheLevelX(i);
+                    Console.WriteLine($"EAX8000001DEAX8_SelfInitCacheLevel: {cpuIdEAX8000001DEAX8_SelfInitCacheLevel}");
 
-                string cpuIdEAX8000001DEAX9_FullyAssociativeCache = cpuHelper.GetEAX8000001DEAX9_FullyAssociativeCacheX();
-                Console.WriteLine($"EAX8000001DEAX9_FullyAssociativeCache: {cpuIdEAX8000001DEAX9_FullyAssociativeCache}");
+                    string cpuIdEAX8000001DEAX9_FullyAssociativeCache = cpuHelper.GetEAX8000001DEAX9_FullyAssociativeCacheX(i);
+                    Console.WriteLine($"EAX8000001DEAX9_FullyAssociativeCache: {cpuIdEAX8000001DEAX9_FullyAssociativeCache}");
 
-                string cpuIdEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeX();
-                Console.WriteLine($"EAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope}");
+                    string cpuIdEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScopeX(i);
+                    Console.WriteLine($"EAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX8000001DEAX10_WBINVDCacheInvalidationExecutionScope}");
 
-                string cpuIdEAX8000001DEAX11_CacheInclusiveness = cpuHelper.GetEAX8000001DEAX11_CacheInclusivenessX();
-                Console.WriteLine($"EAX8000001DEAX11_CacheInclusiveness: {cpuIdEAX8000001DEAX11_CacheInclusiveness}");
+                    string cpuIdEAX8000001DEAX11_CacheInclusiveness = cpuHelper.GetEAX8000001DEAX11_CacheInclusivenessX(i);
+                    Console.WriteLine($"EAX8000001DEAX11_CacheInclusiveness: {cpuIdEAX8000001DEAX11_CacheInclusiveness}");
 
-                string cpuIdEAX8000001DEAX12_13_Reserved = cpuHelper.GetEAX8000001DEAX12_13_ReservedX();
-                Console.WriteLine($"EAX8000001DEAX12_13_Reserved: {cpuIdEAX8000001DEAX12_13_Reserved}");
+                    string cpuIdEAX8000001DEAX12_13_Reserved = cpuHelper.GetEAX8000001DEAX12_13_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEAX12_13_Reserved: {cpuIdEAX8000001DEAX12_13_Reserved}");
 
-                string cpuIdEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne = cpuHelper.GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX();
-                Console.WriteLine($"EAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne: {cpuIdEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne}");
+                    string cpuIdEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne = cpuHelper.GetEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOneX(i);
+                    Console.WriteLine($"EAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne: {cpuIdEAX8000001DEAX14_25_MaxNumAddrIDsForLogicalProcsSharingThisCacheMinusOne}");
 
-                string cpuIdEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne = cpuHelper.GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX();
-                Console.WriteLine($"EAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne: {cpuIdEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne}");
+                    string cpuIdEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne = cpuHelper.GetEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOneX(i);
+                    Console.WriteLine($"EAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne: {cpuIdEAX8000001DEAX26_31_MaxNumAddrIDsForProcCoresInPhysicalPackageMinusOne}");
 
-                string cpuIdEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne = cpuHelper.GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneX();
-                Console.WriteLine($"EAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne: {cpuIdEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne}");
+                    string cpuIdEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne = cpuHelper.GetEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOneX(i);
+                    Console.WriteLine($"EAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne: {cpuIdEAX8000001DEBX0_11_SystemCoherencyLineSizeInBytesMinusOne}");
 
-                string cpuIdEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne = cpuHelper.GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneX();
-                Console.WriteLine($"EAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne: {cpuIdEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne}");
+                    string cpuIdEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne = cpuHelper.GetEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOneX(i);
+                    Console.WriteLine($"EAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne: {cpuIdEAX8000001DEBX12_21_PhysicalLinePartitionsMinusOne}");
 
-                string cpuIdEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne = cpuHelper.GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneX();
-                Console.WriteLine($"EAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne: {cpuIdEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne}");
+                    string cpuIdEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne = cpuHelper.GetEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOneX(i);
+                    Console.WriteLine($"EAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne: {cpuIdEAX8000001DEBX22_31_WaysOfCacheAssociativityMinusOne}");
 
-                string cpuIdEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne = cpuHelper.GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOneX();
-                Console.WriteLine($"EAX8000001DECX0_31_NumberOfSetsInCacheMinusOne: {cpuIdEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne}");
+                    string cpuIdEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne = cpuHelper.GetEAX8000001DECX0_31_NumberOfSetsInCacheMinusOneX(i);
+                    Console.WriteLine($"EAX8000001DECX0_31_NumberOfSetsInCacheMinusOne: {cpuIdEAX8000001DECX0_31_NumberOfSetsInCacheMinusOne}");
 
-                string cpuIdEAX8000001DEDXTotalCacheSizeInBytes = cpuHelper.GetEAX8000001DTotalCacheSizeInBytesX();
-                Console.WriteLine($"EAX8000001DEDXTotalCacheSizeInBytes: {cpuIdEAX8000001DEDXTotalCacheSizeInBytes}");
+                    string cpuIdEAX8000001DEDXTotalCacheSizeInBytes = cpuHelper.GetEAX8000001DTotalCacheSizeInBytesX(i);
+                    Console.WriteLine($"EAX8000001DEDXTotalCacheSizeInBytes: {cpuIdEAX8000001DEDXTotalCacheSizeInBytes}");
 
-                string cpuIdEAX8000001DEDX0_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeX();
-                Console.WriteLine($"EAX8000001DEDX0_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX8000001DEDX0_WBINVDCacheInvalidationExecutionScope}");
+                    string cpuIdEAX8000001DEDX0_WBINVDCacheInvalidationExecutionScope = cpuHelper.GetEAX8000001D_EDX0_WBINVDCacheInvalidationExecutionScopeX(i);
+                    Console.WriteLine($"EAX8000001DEDX0_WBINVDCacheInvalidationExecutionScope: {cpuIdEAX8000001DEDX0_WBINVDCacheInvalidationExecutionScope}");
 
-                string cpuIdEAX8000001DEDX1_CacheInclusiveness = cpuHelper.GetEAX8000001D_EDX1_CacheInclusivenessX();
-                Console.WriteLine($"EAX8000001DEDX1_CacheInclusiveness: {cpuIdEAX8000001DEDX1_CacheInclusiveness}");
+                    string cpuIdEAX8000001DEDX1_CacheInclusiveness = cpuHelper.GetEAX8000001D_EDX1_CacheInclusivenessX(i);
+                    Console.WriteLine($"EAX8000001DEDX1_CacheInclusiveness: {cpuIdEAX8000001DEDX1_CacheInclusiveness}");
 
-                string cpuIdEAX8000001DEDX2_ComplexCacheIndexing = cpuHelper.GetEAX8000001D_EDX2_ComplexCacheIndexingX();
-                Console.WriteLine($"EAX8000001DEDX2_ComplexCacheIndexing: {cpuIdEAX8000001DEDX2_ComplexCacheIndexing}");
+                    string cpuIdEAX8000001DEDX2_ComplexCacheIndexing = cpuHelper.GetEAX8000001D_EDX2_ComplexCacheIndexingX(i);
+                    Console.WriteLine($"EAX8000001DEDX2_ComplexCacheIndexing: {cpuIdEAX8000001DEDX2_ComplexCacheIndexing}");
 
-                string cpuIdEAX8000001DEDX3_Reserved = cpuHelper.GetEAX8000001D_EDX3_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX3_Reserved: {cpuIdEAX8000001DEDX3_Reserved}");
+                    string cpuIdEAX8000001DEDX3_Reserved = cpuHelper.GetEAX8000001D_EDX3_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX3_Reserved: {cpuIdEAX8000001DEDX3_Reserved}");
 
-                string cpuIdEAX8000001DEDX4_Reserved = cpuHelper.GetEAX8000001D_EDX4_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX4_Reserved: {cpuIdEAX8000001DEDX4_Reserved}");
+                    string cpuIdEAX8000001DEDX4_Reserved = cpuHelper.GetEAX8000001D_EDX4_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX4_Reserved: {cpuIdEAX8000001DEDX4_Reserved}");
 
-                string cpuIdEAX8000001DEDX5_7_Reserved = cpuHelper.GetEAX8000001D_EDX5_7_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX5_7_Reserved: {cpuIdEAX8000001DEDX5_7_Reserved}");
+                    string cpuIdEAX8000001DEDX5_7_Reserved = cpuHelper.GetEAX8000001D_EDX5_7_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX5_7_Reserved: {cpuIdEAX8000001DEDX5_7_Reserved}");
 
-                string cpuIdEAX8000001DEDX8_Reserved = cpuHelper.GetEAX8000001D_EDX8_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX8_Reserved: {cpuIdEAX8000001DEDX8_Reserved}");
+                    string cpuIdEAX8000001DEDX8_Reserved = cpuHelper.GetEAX8000001D_EDX8_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX8_Reserved: {cpuIdEAX8000001DEDX8_Reserved}");
 
-                string cpuIdEAX8000001DEDX9_Reserved = cpuHelper.GetEAX8000001D_EDX9_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX9_Reserved: {cpuIdEAX8000001DEDX9_Reserved}");
+                    string cpuIdEAX8000001DEDX9_Reserved = cpuHelper.GetEAX8000001D_EDX9_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX9_Reserved: {cpuIdEAX8000001DEDX9_Reserved}");
 
-                string cpuIdEAX8000001DEDX10_Reserved = cpuHelper.GetEAX8000001D_EDX10_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX10_Reserved: {cpuIdEAX8000001DEDX10_Reserved}");
+                    string cpuIdEAX8000001DEDX10_Reserved = cpuHelper.GetEAX8000001D_EDX10_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX10_Reserved: {cpuIdEAX8000001DEDX10_Reserved}");
 
-                string cpuIdEAX8000001DEDX11_Reserved = cpuHelper.GetEAX8000001D_EDX11_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX11_Reserved: {cpuIdEAX8000001DEDX11_Reserved}");
+                    string cpuIdEAX8000001DEDX11_Reserved = cpuHelper.GetEAX8000001D_EDX11_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX11_Reserved: {cpuIdEAX8000001DEDX11_Reserved}");
 
-                string cpuIdEAX8000001DEDX12_13_Reserved = cpuHelper.GetEAX8000001D_EDX12_13_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX12_13_Reserved: {cpuIdEAX8000001DEDX12_13_Reserved}");
+                    string cpuIdEAX8000001DEDX12_13_Reserved = cpuHelper.GetEAX8000001D_EDX12_13_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX12_13_Reserved: {cpuIdEAX8000001DEDX12_13_Reserved}");
 
-                string cpuIdEAX8000001DEDX14_21_Reserved = cpuHelper.GetEAX8000001D_EDX14_21_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX14_21_Reserved: {cpuIdEAX8000001DEDX14_21_Reserved}");
+                    string cpuIdEAX8000001DEDX14_21_Reserved = cpuHelper.GetEAX8000001D_EDX14_21_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX14_21_Reserved: {cpuIdEAX8000001DEDX14_21_Reserved}");
 
-                string cpuIdEAX8000001DEDX22_25_Reserved = cpuHelper.GetEAX8000001D_EDX22_25_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX22_25_Reserved: {cpuIdEAX8000001DEDX22_25_Reserved}");
+                    string cpuIdEAX8000001DEDX22_25_Reserved = cpuHelper.GetEAX8000001D_EDX22_25_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX22_25_Reserved: {cpuIdEAX8000001DEDX22_25_Reserved}");
 
-                string cpuIdEAX8000001DEDX26_31_Reserved = cpuHelper.GetEAX8000001D_EDX26_31_ReservedX();
-                Console.WriteLine($"EAX8000001DEDX26_31_Reserved: {cpuIdEAX8000001DEDX26_31_Reserved}");
+                    string cpuIdEAX8000001DEDX26_31_Reserved = cpuHelper.GetEAX8000001D_EDX26_31_ReservedX(i);
+                    Console.WriteLine($"EAX8000001DEDX26_31_Reserved: {cpuIdEAX8000001DEDX26_31_Reserved}");
+
+                    i++;
+                }
 
                 #endregion
 
@@ -3541,14 +3547,24 @@ namespace CPU_S
 
         private void eAX0x4CacheHierarchyAndTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX4 eax4Form = new EAX4();
-            eax4Form.ShowDialog();
+            int i = 0;
+            while (int.Parse(cpuHelper.GetEAX4EAX0_4_CacheTypeX(i)) != 0)
+            {
+                EAX4 eax4Form = new EAX4(i);
+                eax4Form.Show();
+                i++;
+            }
         }
 
         private void eAX0x8000001DToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX8000001D eax8000001DForm = new EAX8000001D();
-            eax8000001DForm.ShowDialog();
+            int i = 0;
+            while (int.Parse(cpuHelper.GetEAX8000001DEAX0_4_CacheTypeX(i)) != 0)
+            {
+                EAX8000001D eax8000001DForm = new EAX8000001D(i);
+                eax8000001DForm.Show();
+                i++;
+            }
         }
 
         private void eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
