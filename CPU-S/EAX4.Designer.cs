@@ -745,7 +745,7 @@
             this.groupBoxTotalCacheSize.Controls.Add(this.textBoxTotalCacheSizeInBytes);
             this.groupBoxTotalCacheSize.Location = new System.Drawing.Point(6, 158);
             this.groupBoxTotalCacheSize.Name = "groupBoxTotalCacheSize";
-            this.groupBoxTotalCacheSize.Size = new System.Drawing.Size(252, 71);
+            this.groupBoxTotalCacheSize.Size = new System.Drawing.Size(252, 60);
             this.groupBoxTotalCacheSize.TabIndex = 47;
             this.groupBoxTotalCacheSize.TabStop = false;
             // 
