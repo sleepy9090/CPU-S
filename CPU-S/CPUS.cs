@@ -2723,8 +2723,8 @@ namespace CPU_S
                 string cpuIdEAX14ECX1EAX0_2_Rangecnt = cpuHelper.GetEAX14ECX1EAX0_2_RangecntX();
                 Console.WriteLine($"EAX14ECX1EAX0_2_Rangecnt: {cpuIdEAX14ECX1EAX0_2_Rangecnt}");
 
-                string cpuIdEAX14ECX1EAX3_5_Reserved = cpuHelper.GetEAX14ECX1EAX3_5_ReservedX();
-                Console.WriteLine($"EAX14ECX1EAX3_5_Reserved: {cpuIdEAX14ECX1EAX3_5_Reserved}");
+                string cpuIdEAX14ECX1EAX3_7_Reserved = cpuHelper.GetEAX14ECX1EAX3_7_ReservedX();
+                Console.WriteLine($"EAX14ECX1EAX3_7_Reserved: {cpuIdEAX14ECX1EAX3_7_Reserved}");
 
                 string cpuIdEAX14ECX1EAX8_10_TriggerConfigCount = cpuHelper.GetEAX14ECX1EAX8_10_TriggerConfigCountX();
                 Console.WriteLine($"EAX14ECX1EAX8_10_TriggerConfigCount: {cpuIdEAX14ECX1EAX8_10_TriggerConfigCount}");
