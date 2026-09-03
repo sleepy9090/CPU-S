@@ -169,21 +169,21 @@
             // 
             // textBoxEAX40000000ID3
             // 
-            this.textBoxEAX40000000ID3.Location = new System.Drawing.Point(52, 71);
+            this.textBoxEAX40000000ID3.Location = new System.Drawing.Point(107, 123);
             this.textBoxEAX40000000ID3.Name = "textBoxEAX40000000ID3";
             this.textBoxEAX40000000ID3.Size = new System.Drawing.Size(100, 20);
             this.textBoxEAX40000000ID3.TabIndex = 31;
             // 
             // textBoxEAX40000000ID2
             // 
-            this.textBoxEAX40000000ID2.Location = new System.Drawing.Point(52, 45);
+            this.textBoxEAX40000000ID2.Location = new System.Drawing.Point(107, 97);
             this.textBoxEAX40000000ID2.Name = "textBoxEAX40000000ID2";
             this.textBoxEAX40000000ID2.Size = new System.Drawing.Size(100, 20);
             this.textBoxEAX40000000ID2.TabIndex = 30;
             // 
             // textBoxEAX40000000ID1
             // 
-            this.textBoxEAX40000000ID1.Location = new System.Drawing.Point(52, 19);
+            this.textBoxEAX40000000ID1.Location = new System.Drawing.Point(107, 71);
             this.textBoxEAX40000000ID1.Name = "textBoxEAX40000000ID1";
             this.textBoxEAX40000000ID1.Size = new System.Drawing.Size(100, 20);
             this.textBoxEAX40000000ID1.TabIndex = 29;
@@ -191,50 +191,50 @@
             // labelEAX40000000ID3
             // 
             this.labelEAX40000000ID3.AutoSize = true;
-            this.labelEAX40000000ID3.Location = new System.Drawing.Point(10, 74);
+            this.labelEAX40000000ID3.Location = new System.Drawing.Point(17, 126);
             this.labelEAX40000000ID3.Name = "labelEAX40000000ID3";
-            this.labelEAX40000000ID3.Size = new System.Drawing.Size(30, 13);
+            this.labelEAX40000000ID3.Size = new System.Drawing.Size(85, 13);
             this.labelEAX40000000ID3.TabIndex = 28;
-            this.labelEAX40000000ID3.Text = "ID 3:";
+            this.labelEAX40000000ID3.Text = "ID 3 [EDX 0-31]:";
             // 
             // labelEAX40000000ID2
             // 
             this.labelEAX40000000ID2.AutoSize = true;
-            this.labelEAX40000000ID2.Location = new System.Drawing.Point(10, 48);
+            this.labelEAX40000000ID2.Location = new System.Drawing.Point(17, 100);
             this.labelEAX40000000ID2.Name = "labelEAX40000000ID2";
-            this.labelEAX40000000ID2.Size = new System.Drawing.Size(30, 13);
+            this.labelEAX40000000ID2.Size = new System.Drawing.Size(84, 13);
             this.labelEAX40000000ID2.TabIndex = 27;
-            this.labelEAX40000000ID2.Text = "ID 2:";
+            this.labelEAX40000000ID2.Text = "ID 2 [ECX 0-31]:";
             // 
             // labelEAX40000000ID1
             // 
             this.labelEAX40000000ID1.AutoSize = true;
-            this.labelEAX40000000ID1.Location = new System.Drawing.Point(10, 22);
+            this.labelEAX40000000ID1.Location = new System.Drawing.Point(17, 74);
             this.labelEAX40000000ID1.Name = "labelEAX40000000ID1";
-            this.labelEAX40000000ID1.Size = new System.Drawing.Size(30, 13);
+            this.labelEAX40000000ID1.Size = new System.Drawing.Size(84, 13);
             this.labelEAX40000000ID1.TabIndex = 26;
-            this.labelEAX40000000ID1.Text = "ID 1:";
+            this.labelEAX40000000ID1.Text = "ID 1 [EBX 0-31]:";
             // 
             // labelEAX40000000HighestFunctionParam
             // 
             this.labelEAX40000000HighestFunctionParam.AutoSize = true;
-            this.labelEAX40000000HighestFunctionParam.Location = new System.Drawing.Point(10, 168);
+            this.labelEAX40000000HighestFunctionParam.Location = new System.Drawing.Point(10, 22);
             this.labelEAX40000000HighestFunctionParam.Name = "labelEAX40000000HighestFunctionParam";
-            this.labelEAX40000000HighestFunctionParam.Size = new System.Drawing.Size(149, 13);
+            this.labelEAX40000000HighestFunctionParam.Size = new System.Drawing.Size(203, 13);
             this.labelEAX40000000HighestFunctionParam.TabIndex = 25;
-            this.labelEAX40000000HighestFunctionParam.Text = "Highest Functional Parameter:";
+            this.labelEAX40000000HighestFunctionParam.Text = "Highest Functional Parameter [EAX 0-31]:";
             // 
             // textBoxEAX40000000EAXHightestFunctionParameter
             // 
-            this.textBoxEAX40000000EAXHightestFunctionParameter.Location = new System.Drawing.Point(165, 165);
+            this.textBoxEAX40000000EAXHightestFunctionParameter.Location = new System.Drawing.Point(219, 19);
             this.textBoxEAX40000000EAXHightestFunctionParameter.Name = "textBoxEAX40000000EAXHightestFunctionParameter";
-            this.textBoxEAX40000000EAXHightestFunctionParameter.Size = new System.Drawing.Size(335, 20);
+            this.textBoxEAX40000000EAXHightestFunctionParameter.Size = new System.Drawing.Size(281, 20);
             this.textBoxEAX40000000EAXHightestFunctionParameter.TabIndex = 24;
             // 
             // label40000000CpuVendor
             // 
             this.label40000000CpuVendor.AutoSize = true;
-            this.label40000000CpuVendor.Location = new System.Drawing.Point(10, 100);
+            this.label40000000CpuVendor.Location = new System.Drawing.Point(17, 152);
             this.label40000000CpuVendor.Name = "label40000000CpuVendor";
             this.label40000000CpuVendor.Size = new System.Drawing.Size(69, 13);
             this.label40000000CpuVendor.TabIndex = 33;
@@ -242,14 +242,14 @@
             // 
             // textBox40000000CpuVendor
             // 
-            this.textBox40000000CpuVendor.Location = new System.Drawing.Point(85, 97);
+            this.textBox40000000CpuVendor.Location = new System.Drawing.Point(107, 149);
             this.textBox40000000CpuVendor.Name = "textBox40000000CpuVendor";
-            this.textBox40000000CpuVendor.Size = new System.Drawing.Size(112, 20);
+            this.textBox40000000CpuVendor.Size = new System.Drawing.Size(100, 20);
             this.textBox40000000CpuVendor.TabIndex = 32;
             // 
             // textBoxEAX40000000Basic
             // 
-            this.textBoxEAX40000000Basic.Location = new System.Drawing.Point(165, 191);
+            this.textBoxEAX40000000Basic.Location = new System.Drawing.Point(219, 45);
             this.textBoxEAX40000000Basic.Name = "textBoxEAX40000000Basic";
             this.textBoxEAX40000000Basic.Size = new System.Drawing.Size(100, 20);
             this.textBoxEAX40000000Basic.TabIndex = 34;
