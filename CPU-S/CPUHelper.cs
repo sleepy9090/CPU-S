@@ -16843,6 +16843,102 @@ namespace CPU_S
             }
         }
 
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000000EAXHightestFunctionParameter();
+
+        public string GetEAX40000000EAXHightestFunctionParameterX()
+        {
+            try
+            {
+                IntPtr eAX40000000EAXHightestFunctionParameterPtr = GetEAX40000000EAXHightestFunctionParameter();
+                string eAX40000000EAXHightestFunctionParameterString = Marshal.PtrToStringAnsi(eAX40000000EAXHightestFunctionParameterPtr);
+
+                return eAX40000000EAXHightestFunctionParameterString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000000EBXCpuVendor();
+
+        public string GetEAX40000000EBXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX40000000EBXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000000ECXCpuVendor();
+
+        public string GetEAX40000000ECXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX40000000ECXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000000EDXCpuVendor();
+
+        public string GetEAX40000000EDXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX40000000EDXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
         #endregion
 
         #region EAX=0x80000000: Highest Extended Function Implemented

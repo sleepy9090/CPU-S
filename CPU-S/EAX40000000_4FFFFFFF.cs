@@ -34,6 +34,23 @@ namespace CPU_S
             string cpuIdEAX40000000_4FFFFFFFEDX = cpuHelper.GetEAX40000000EDXX();
             textBoxEAX40000000_4FFFFFFFEDX.Text = cpuIdEAX40000000_4FFFFFFFEDX;
 
+            string cpuIdEAX40000000HightestFunctionParameter = cpuHelper.GetEAX40000000EAXHightestFunctionParameterX();
+            textBoxEAX40000000EAXHightestFunctionParameter.Text = cpuIdEAX40000000HightestFunctionParameter;
+
+            string cpuIdHexEAX40000000_4FFFFFFFEAXHightestFunctionParameter = cpuHelper.BinaryStringToHexString(cpuIdEAX40000000HightestFunctionParameter);
+            textBoxEAX40000000Basic.Text = "0x" + cpuIdHexEAX40000000_4FFFFFFFEAXHightestFunctionParameter;
+
+            string cpuIdEAX40000000_4FFFFFFFEBXCpuVendor = cpuHelper.GetEAX40000000EBXCpuVendorX();
+            textBoxEAX40000000ID1.Text = cpuIdEAX40000000_4FFFFFFFEBXCpuVendor;
+
+            string cpuIdEAX40000000_4FFFFFFFECXCpuVendor = cpuHelper.GetEAX40000000ECXCpuVendorX();
+            textBoxEAX40000000ID2.Text = cpuIdEAX40000000_4FFFFFFFECXCpuVendor;
+
+            string cpuIdEAX40000000_4FFFFFFFEDXCpuVendor = cpuHelper.GetEAX40000000EDXCpuVendorX();
+            textBoxEAX40000000ID3.Text = cpuIdEAX40000000_4FFFFFFFEDXCpuVendor;
+
+            textBox40000000CpuVendor.Text = cpuIdEAX40000000_4FFFFFFFEBXCpuVendor + cpuIdEAX40000000_4FFFFFFFECXCpuVendor + cpuIdEAX40000000_4FFFFFFFEDXCpuVendor;
+
             #endregion
         }
     }
