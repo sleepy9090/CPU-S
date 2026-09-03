@@ -38,16 +38,36 @@
             this.labelEAX15EBX = new System.Windows.Forms.Label();
             this.labelEAX15ECX = new System.Windows.Forms.Label();
             this.labelEAX15EDX = new System.Windows.Forms.Label();
+            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.textBoxTSCDenominator = new System.Windows.Forms.TextBox();
+            this.labelTSCDenominator = new System.Windows.Forms.Label();
+            this.textBoxTSCNumerator = new System.Windows.Forms.TextBox();
+            this.labelTSCNumerator = new System.Windows.Forms.Label();
+            this.textBoxCoreCystalClockFreqHz = new System.Windows.Forms.TextBox();
+            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
+            this.labelCoreCystalClockFreqHz = new System.Windows.Forms.Label();
+            this.labelEDXReserved = new System.Windows.Forms.Label();
             this.groupBoxEAX15.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
+            this.groupBoxEAX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX15
             // 
+            this.groupBoxEAX15.Controls.Add(this.groupBoxEDX);
+            this.groupBoxEAX15.Controls.Add(this.groupBoxECX);
+            this.groupBoxEAX15.Controls.Add(this.groupBoxEBX);
+            this.groupBoxEAX15.Controls.Add(this.groupBoxEAX);
             this.groupBoxEAX15.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX15.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX15.Name = "groupBoxEAX15";
-            this.groupBoxEAX15.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX15.Size = new System.Drawing.Size(522, 413);
             this.groupBoxEAX15.TabIndex = 3;
             this.groupBoxEAX15.TabStop = false;
             this.groupBoxEAX15.Text = "EAX=0x15";
@@ -132,11 +152,119 @@
             this.labelEAX15EDX.TabIndex = 9;
             this.labelEAX15EDX.Text = "EDX:";
             // 
+            // groupBoxEAX
+            // 
+            this.groupBoxEAX.Controls.Add(this.labelTSCDenominator);
+            this.groupBoxEAX.Controls.Add(this.textBoxTSCDenominator);
+            this.groupBoxEAX.Location = new System.Drawing.Point(6, 158);
+            this.groupBoxEAX.Name = "groupBoxEAX";
+            this.groupBoxEAX.Size = new System.Drawing.Size(485, 55);
+            this.groupBoxEAX.TabIndex = 41;
+            this.groupBoxEAX.TabStop = false;
+            this.groupBoxEAX.Text = "EAX";
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.labelTSCNumerator);
+            this.groupBoxEBX.Controls.Add(this.textBoxTSCNumerator);
+            this.groupBoxEBX.Location = new System.Drawing.Point(6, 219);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(485, 57);
+            this.groupBoxEBX.TabIndex = 42;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.labelCoreCystalClockFreqHz);
+            this.groupBoxECX.Controls.Add(this.textBoxCoreCystalClockFreqHz);
+            this.groupBoxECX.Location = new System.Drawing.Point(6, 282);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(485, 56);
+            this.groupBoxECX.TabIndex = 43;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(6, 344);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(485, 52);
+            this.groupBoxEDX.TabIndex = 44;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // textBoxTSCDenominator
+            // 
+            this.textBoxTSCDenominator.Location = new System.Drawing.Point(378, 19);
+            this.textBoxTSCDenominator.Name = "textBoxTSCDenominator";
+            this.textBoxTSCDenominator.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTSCDenominator.TabIndex = 0;
+            // 
+            // labelTSCDenominator
+            // 
+            this.labelTSCDenominator.AutoSize = true;
+            this.labelTSCDenominator.Location = new System.Drawing.Point(6, 22);
+            this.labelTSCDenominator.Name = "labelTSCDenominator";
+            this.labelTSCDenominator.Size = new System.Drawing.Size(366, 13);
+            this.labelTSCDenominator.TabIndex = 1;
+            this.labelTSCDenominator.Text = "Ratio of TSC frequency to Core Crystal Clock frequency, denominator [0-31]:";
+            // 
+            // textBoxTSCNumerator
+            // 
+            this.textBoxTSCNumerator.Location = new System.Drawing.Point(378, 19);
+            this.textBoxTSCNumerator.Name = "textBoxTSCNumerator";
+            this.textBoxTSCNumerator.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTSCNumerator.TabIndex = 0;
+            // 
+            // labelTSCNumerator
+            // 
+            this.labelTSCNumerator.AutoSize = true;
+            this.labelTSCNumerator.Location = new System.Drawing.Point(6, 22);
+            this.labelTSCNumerator.Name = "labelTSCNumerator";
+            this.labelTSCNumerator.Size = new System.Drawing.Size(355, 13);
+            this.labelTSCNumerator.TabIndex = 1;
+            this.labelTSCNumerator.Text = "Ratio of TSC frequency to Core Crystal Clock frequency, numerator [0-31]:";
+            // 
+            // textBoxCoreCystalClockFreqHz
+            // 
+            this.textBoxCoreCystalClockFreqHz.Location = new System.Drawing.Point(378, 19);
+            this.textBoxCoreCystalClockFreqHz.Name = "textBoxCoreCystalClockFreqHz";
+            this.textBoxCoreCystalClockFreqHz.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCoreCystalClockFreqHz.TabIndex = 0;
+            // 
+            // textBoxEDXReserved
+            // 
+            this.textBoxEDXReserved.Location = new System.Drawing.Point(378, 19);
+            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
+            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXReserved.TabIndex = 0;
+            // 
+            // labelCoreCystalClockFreqHz
+            // 
+            this.labelCoreCystalClockFreqHz.AutoSize = true;
+            this.labelCoreCystalClockFreqHz.Location = new System.Drawing.Point(6, 22);
+            this.labelCoreCystalClockFreqHz.Name = "labelCoreCystalClockFreqHz";
+            this.labelCoreCystalClockFreqHz.Size = new System.Drawing.Size(243, 13);
+            this.labelCoreCystalClockFreqHz.TabIndex = 1;
+            this.labelCoreCystalClockFreqHz.Text = "Core Crystal Clock frequency, in units of Hz [0-31]:";
+            // 
+            // labelEDXReserved
+            // 
+            this.labelEDXReserved.AutoSize = true;
+            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXReserved.Name = "labelEDXReserved";
+            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDXReserved.TabIndex = 1;
+            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            // 
             // EAX15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(549, 436);
             this.Controls.Add(this.groupBoxEAX15);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
@@ -145,6 +273,14 @@
             this.groupBoxEAX15.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
+            this.groupBoxEAX.ResumeLayout(false);
+            this.groupBoxEAX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -161,5 +297,17 @@
         private System.Windows.Forms.Label labelEAX15EBX;
         private System.Windows.Forms.Label labelEAX15ECX;
         private System.Windows.Forms.Label labelEAX15EDX;
+        private System.Windows.Forms.GroupBox groupBoxEBX;
+        private System.Windows.Forms.GroupBox groupBoxEAX;
+        private System.Windows.Forms.GroupBox groupBoxECX;
+        private System.Windows.Forms.GroupBox groupBoxEDX;
+        private System.Windows.Forms.Label labelTSCNumerator;
+        private System.Windows.Forms.TextBox textBoxTSCNumerator;
+        private System.Windows.Forms.Label labelTSCDenominator;
+        private System.Windows.Forms.TextBox textBoxTSCDenominator;
+        private System.Windows.Forms.Label labelEDXReserved;
+        private System.Windows.Forms.TextBox textBoxEDXReserved;
+        private System.Windows.Forms.Label labelCoreCystalClockFreqHz;
+        private System.Windows.Forms.TextBox textBoxCoreCystalClockFreqHz;
     }
 }

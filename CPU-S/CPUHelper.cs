@@ -15428,16 +15428,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX15EDX_TSCFrequencyInUnitsOfHz();
+        public static extern int GetEAX15EDX0_31_Reserved();
 
-        public string GetEAX15EDX_TSCFrequencyInUnitsOfHzX()
+        public string GetEAX15EDX0_31_ReservedX()
         {
             try
             {
-                int eAX15EDX_TSCFrequencyInUnitsOfHzValue = GetEAX15EDX_TSCFrequencyInUnitsOfHz();
-                string eAX15EDX_TSCFrequencyInUnitsOfHzString = eAX15EDX_TSCFrequencyInUnitsOfHzValue.ToString();
+                int eAX15EDX0_31_ReservedValue = GetEAX15EDX0_31_Reserved();
+                string eAX15EDX0_31_ReservedString = eAX15EDX0_31_ReservedValue.ToString();
 
-                return eAX15EDX_TSCFrequencyInUnitsOfHzString;
+                return eAX15EDX0_31_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
@@ -15562,6 +15562,30 @@ namespace CPU_S
                 string eAX16EAX0_15_ProcessorBaseFrequencyInMHzString = eAX16EAX0_15_ProcessorBaseFrequencyInMHzValue.ToString();
 
                 return eAX16EAX0_15_ProcessorBaseFrequencyInMHzString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX16EAX16_31_Reserved();
+
+        public string GetEAX16EAX16_31_ReservedX()
+        {
+            try
+            {
+                int eAX16EAX16_31_ReservedValue = GetEAX16EAX16_31_Reserved();
+                string eAX16EAX16_31_ReservedString = eAX16EAX16_31_ReservedValue.ToString();
+
+                return eAX16EAX16_31_ReservedString;
             }
             catch (DllNotFoundException ex)
             {

@@ -34,6 +34,18 @@ namespace CPU_S
             string cpuIdEAX15EDX = cpuHelper.GetEAX15EDXX();
             textBoxEAX15EDX.Text = cpuIdEAX15EDX;
 
+            string cpuIdEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Denominator = cpuHelper.GetEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_DenominatorX();
+            textBoxTSCDenominator.Text = cpuIdEAX15EAX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Denominator;
+
+            string cpuIdEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Numerator = cpuHelper.GetEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_NumeratorX();
+            textBoxTSCNumerator.Text = cpuIdEAX15EBX_RatioOfTSCFrequencyToCoreCrystalClockFrequency_Numerator;
+
+            string cpuIdEAX15ECX_CoreCrystalClockFrequencyInHz = cpuHelper.GetEAX15ECX_CoreCrystalClockFrequencyInHzX();
+            textBoxCoreCystalClockFreqHz.Text = cpuIdEAX15ECX_CoreCrystalClockFrequencyInHz;
+
+            string cpuIdEAX15EDX0_31_Reserved = cpuHelper.GetEAX15EDX0_31_ReservedX();
+            textBoxEDXReserved.Text = cpuIdEAX15EDX0_31_Reserved;
+
             #endregion
         }
     }

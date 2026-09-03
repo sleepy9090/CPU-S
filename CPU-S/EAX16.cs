@@ -34,6 +34,27 @@ namespace CPU_S
             string cpuIdEAX16EDX = cpuHelper.GetEAX16EDXX();
             textBoxEAX16EDX.Text = cpuIdEAX16EDX;
 
+            string cpuIdEAX16EAX0_15_ProcessorBaseFrequencyInMHz = cpuHelper.GetEAX16EAX0_15_ProcessorBaseFrequencyInMHzX();
+            textBoxProcBaseFreqMHz.Text = cpuIdEAX16EAX0_15_ProcessorBaseFrequencyInMHz;
+
+            string cpuIdEAX16EAX16_31_Reserved = cpuHelper.GetEAX16EAX16_31_ReservedX();
+            textBoxEAXReserved.Text = cpuIdEAX16EAX16_31_Reserved;
+
+            string cpuIdEAX16EBX0_15_ProcessorMaxFrequencyInMHz = cpuHelper.GetEAX16EBX0_15_ProcessorMaxFrequencyInMHzX();
+            textBoxProcMaxFreqMHz.Text = cpuIdEAX16EBX0_15_ProcessorMaxFrequencyInMHz;
+
+            string cpuIdEAX16EBX16_31_Reserved = cpuHelper.GetEAX16EBX16_31_ReservedX();
+            textBoxEBXReserved.Text = cpuIdEAX16EBX16_31_Reserved;
+
+            string cpuIdEAX16ECX0_15_BusReferenceFrequencyInMHz = cpuHelper.GetEAX16ECX0_15_BusReferenceFrequencyInMHzX();
+            textBoxBusFreqMHz.Text = cpuIdEAX16ECX0_15_BusReferenceFrequencyInMHz;
+
+            string cpuIdEAX16ECX16_31_Reserved = cpuHelper.GetEAX16ECX16_31_ReservedX();
+            textBoxECXReserved.Text = cpuIdEAX16ECX16_31_Reserved;
+
+            string cpuIdEAX16EDX0_31_Reserved = cpuHelper.GetEAX16EDX0_31_ReservedX();
+            textBoxEDXReserved.Text = cpuIdEAX16EDX0_31_Reserved;
+
             #endregion
         }
     }

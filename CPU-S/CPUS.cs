@@ -2793,8 +2793,8 @@ namespace CPU_S
                 string cpuIdEAX15ECX_CoreCrystalClockFrequencyInHz = cpuHelper.GetEAX15ECX_CoreCrystalClockFrequencyInHzX();
                 Console.WriteLine($"EAX15ECX_CoreCrystalClockFrequencyInHz: {cpuIdEAX15ECX_CoreCrystalClockFrequencyInHz}");
 
-                string cpuIdEAX15EDX_TSCFrequencyInUnitsOfHz = cpuHelper.GetEAX15EDX_TSCFrequencyInUnitsOfHzX();
-                Console.WriteLine($"EAX15EDX_TSCFrequencyInUnitsOfHz: {cpuIdEAX15EDX_TSCFrequencyInUnitsOfHz}");
+                string cpuIdEAX15EDX0_31_Reserved = cpuHelper.GetEAX15EDX0_31_ReservedX();
+                Console.WriteLine($"EAX15EDX0_31_Reserved: {cpuIdEAX15EDX0_31_Reserved}");
 
                 #endregion
 
