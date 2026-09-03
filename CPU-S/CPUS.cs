@@ -17,11 +17,17 @@ namespace CPU_S
     public partial class FormCPUS : Form
     {
         private CPUHelper cpuHelper;
+
         private Timer timer;
+
         ManagementObject cpu;
+
         ManagementObjectCollection cpus;
+
         ManagementObjectSearcher searcher2;
-        bool isDebug = true;
+
+        /* If true, outputs to console for debugging purposes. */
+        bool isDebug = false;
 
         int counter = 0;
 
