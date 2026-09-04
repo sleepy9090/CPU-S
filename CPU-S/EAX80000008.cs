@@ -34,6 +34,18 @@ namespace CPU_S
             string cpuIdEAX80000008EDX = cpuHelper.GetEAX80000008EDXX();
             textBoxEAX80000008EDX.Text = cpuIdEAX80000008EDX;
 
+            string cpuIdEAX80000008EAX0_7_NumberOfPhysicalAddressBits = cpuHelper.GetEAX80000008EAX0_7_NumberOfPhysicalAddressBitsX();
+            textBoxNumberOfPhysicalAddressBits.Text = cpuIdEAX80000008EAX0_7_NumberOfPhysicalAddressBits;
+
+            string cpuIdEAX80000008EAX8_15_NumberOfLinearAddressBits = cpuHelper.GetEAX80000008EAX8_15_NumberOfLinearAddressBitsX();
+            textBoxNumberOfLinearAddressBits.Text = cpuIdEAX80000008EAX8_15_NumberOfLinearAddressBits;
+
+            string cpuIdEAX80000008EAX16_23_GuestPhysicalAddressSize = cpuHelper.GetEAX80000008EAX16_23_GuestPhysicalAddressSizeX();
+            textBoxGuestPhysicalAddressSize.Text = cpuIdEAX80000008EAX16_23_GuestPhysicalAddressSize;
+
+            string cpuIdEAX80000008EAX24_31_Reserved = cpuHelper.GetEAX80000008EAX24_31_ReservedX();
+            textBoxReserved.Text = cpuIdEAX80000008EAX24_31_Reserved;
+
             #endregion
         }
     }
