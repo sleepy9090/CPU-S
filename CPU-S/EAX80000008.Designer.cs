@@ -43,7 +43,7 @@
             this.labelGuestPhysicalAddressSize = new System.Windows.Forms.Label();
             this.labelNumberOfLinearAddressBits = new System.Windows.Forms.Label();
             this.labelNumberOfPhysicalAddressBits = new System.Windows.Forms.Label();
-            this.textBoxReserved = new System.Windows.Forms.TextBox();
+            this.textBoxEAXReserved24_31 = new System.Windows.Forms.TextBox();
             this.textBoxGuestPhysicalAddressSize = new System.Windows.Forms.TextBox();
             this.textBoxNumberOfLinearAddressBits = new System.Windows.Forms.TextBox();
             this.textBoxNumberOfPhysicalAddressBits = new System.Windows.Forms.TextBox();
@@ -204,7 +204,7 @@
             this.groupBoxEAX.Controls.Add(this.labelGuestPhysicalAddressSize);
             this.groupBoxEAX.Controls.Add(this.labelNumberOfLinearAddressBits);
             this.groupBoxEAX.Controls.Add(this.labelNumberOfPhysicalAddressBits);
-            this.groupBoxEAX.Controls.Add(this.textBoxReserved);
+            this.groupBoxEAX.Controls.Add(this.textBoxEAXReserved24_31);
             this.groupBoxEAX.Controls.Add(this.textBoxGuestPhysicalAddressSize);
             this.groupBoxEAX.Controls.Add(this.textBoxNumberOfLinearAddressBits);
             this.groupBoxEAX.Controls.Add(this.textBoxNumberOfPhysicalAddressBits);
@@ -251,12 +251,12 @@
             this.labelNumberOfPhysicalAddressBits.TabIndex = 4;
             this.labelNumberOfPhysicalAddressBits.Text = "Number Of Physical Address Bits [0-7]:";
             // 
-            // textBoxReserved
+            // textBoxEAXReserved24_31
             // 
-            this.textBoxReserved.Location = new System.Drawing.Point(317, 99);
-            this.textBoxReserved.Name = "textBoxReserved";
-            this.textBoxReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxReserved.TabIndex = 3;
+            this.textBoxEAXReserved24_31.Location = new System.Drawing.Point(317, 99);
+            this.textBoxEAXReserved24_31.Name = "textBoxEAXReserved24_31";
+            this.textBoxEAXReserved24_31.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXReserved24_31.TabIndex = 3;
             // 
             // textBoxGuestPhysicalAddressSize
             // 
@@ -830,7 +830,7 @@
         private System.Windows.Forms.Label labelGuestPhysicalAddressSize;
         private System.Windows.Forms.Label labelNumberOfLinearAddressBits;
         private System.Windows.Forms.Label labelNumberOfPhysicalAddressBits;
-        private System.Windows.Forms.TextBox textBoxReserved;
+        private System.Windows.Forms.TextBox textBoxEAXReserved24_31;
         private System.Windows.Forms.TextBox textBoxGuestPhysicalAddressSize;
         private System.Windows.Forms.TextBox textBoxNumberOfLinearAddressBits;
         private System.Windows.Forms.TextBox textBoxNumberOfPhysicalAddressBits;
