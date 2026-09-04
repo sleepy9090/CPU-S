@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBoxEAX80000007 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX80000007EAX = new System.Windows.Forms.TextBox();
             this.labelEAX80000007EAX = new System.Windows.Forms.Label();
@@ -39,28 +42,16 @@
             this.labelEAX80000007ECX = new System.Windows.Forms.Label();
             this.labelEAX80000007EDX = new System.Windows.Forms.Label();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.textBoxNumberOfPhysicalAddressBits = new System.Windows.Forms.TextBox();
-            this.textBoxNumberOfLinearAddressBits = new System.Windows.Forms.TextBox();
-            this.textBoxGuestPhysicalAddressSize = new System.Windows.Forms.TextBox();
-            this.textBoxReserved = new System.Windows.Forms.TextBox();
-            this.labelNumberOfPhysicalAddressBits = new System.Windows.Forms.Label();
-            this.labelNumberOfLinearAddressBits = new System.Windows.Forms.Label();
-            this.labelGuestPhysicalAddressSize = new System.Windows.Forms.Label();
-            this.labelReserved = new System.Windows.Forms.Label();
             this.groupBoxEAX80000007.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
-            this.groupBoxEAX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX80000007
             // 
+            this.groupBoxEAX80000007.Controls.Add(this.groupBoxEAX);
             this.groupBoxEAX80000007.Controls.Add(this.groupBoxEDX);
             this.groupBoxEAX80000007.Controls.Add(this.groupBoxECX);
             this.groupBoxEAX80000007.Controls.Add(this.groupBoxEBX);
-            this.groupBoxEAX80000007.Controls.Add(this.groupBoxEAX);
             this.groupBoxEAX80000007.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX80000007.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX80000007.Name = "groupBoxEAX80000007";
@@ -68,6 +59,33 @@
             this.groupBoxEAX80000007.TabIndex = 18;
             this.groupBoxEAX80000007.TabStop = false;
             this.groupBoxEAX80000007.Text = "EAX=0x80000007";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Location = new System.Drawing.Point(570, 231);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEDX.TabIndex = 44;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Location = new System.Drawing.Point(570, 125);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxECX.TabIndex = 43;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Location = new System.Drawing.Point(570, 19);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEBX.TabIndex = 42;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
             // 
             // groupBoxAll
             // 
@@ -151,111 +169,12 @@
             // 
             // groupBoxEAX
             // 
-            this.groupBoxEAX.Controls.Add(this.labelReserved);
-            this.groupBoxEAX.Controls.Add(this.labelGuestPhysicalAddressSize);
-            this.groupBoxEAX.Controls.Add(this.labelNumberOfLinearAddressBits);
-            this.groupBoxEAX.Controls.Add(this.labelNumberOfPhysicalAddressBits);
-            this.groupBoxEAX.Controls.Add(this.textBoxReserved);
-            this.groupBoxEAX.Controls.Add(this.textBoxGuestPhysicalAddressSize);
-            this.groupBoxEAX.Controls.Add(this.textBoxNumberOfLinearAddressBits);
-            this.groupBoxEAX.Controls.Add(this.textBoxNumberOfPhysicalAddressBits);
             this.groupBoxEAX.Location = new System.Drawing.Point(6, 158);
             this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(311, 131);
-            this.groupBoxEAX.TabIndex = 41;
+            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEAX.TabIndex = 45;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
-            // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Location = new System.Drawing.Point(570, 19);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEBX.TabIndex = 42;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Location = new System.Drawing.Point(570, 125);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxECX.TabIndex = 43;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(570, 231);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEDX.TabIndex = 44;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // textBoxNumberOfPhysicalAddressBits
-            // 
-            this.textBoxNumberOfPhysicalAddressBits.Location = new System.Drawing.Point(200, 19);
-            this.textBoxNumberOfPhysicalAddressBits.Name = "textBoxNumberOfPhysicalAddressBits";
-            this.textBoxNumberOfPhysicalAddressBits.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNumberOfPhysicalAddressBits.TabIndex = 0;
-            // 
-            // textBoxNumberOfLinearAddressBits
-            // 
-            this.textBoxNumberOfLinearAddressBits.Location = new System.Drawing.Point(200, 45);
-            this.textBoxNumberOfLinearAddressBits.Name = "textBoxNumberOfLinearAddressBits";
-            this.textBoxNumberOfLinearAddressBits.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNumberOfLinearAddressBits.TabIndex = 1;
-            // 
-            // textBoxGuestPhysicalAddressSize
-            // 
-            this.textBoxGuestPhysicalAddressSize.Location = new System.Drawing.Point(200, 73);
-            this.textBoxGuestPhysicalAddressSize.Name = "textBoxGuestPhysicalAddressSize";
-            this.textBoxGuestPhysicalAddressSize.Size = new System.Drawing.Size(100, 20);
-            this.textBoxGuestPhysicalAddressSize.TabIndex = 2;
-            // 
-            // textBoxReserved
-            // 
-            this.textBoxReserved.Location = new System.Drawing.Point(200, 99);
-            this.textBoxReserved.Name = "textBoxReserved";
-            this.textBoxReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxReserved.TabIndex = 3;
-            // 
-            // labelNumberOfPhysicalAddressBits
-            // 
-            this.labelNumberOfPhysicalAddressBits.AutoSize = true;
-            this.labelNumberOfPhysicalAddressBits.Location = new System.Drawing.Point(6, 22);
-            this.labelNumberOfPhysicalAddressBits.Name = "labelNumberOfPhysicalAddressBits";
-            this.labelNumberOfPhysicalAddressBits.Size = new System.Drawing.Size(188, 13);
-            this.labelNumberOfPhysicalAddressBits.TabIndex = 4;
-            this.labelNumberOfPhysicalAddressBits.Text = "Number Of Physical Address Bits [0-7]:";
-            // 
-            // labelNumberOfLinearAddressBits
-            // 
-            this.labelNumberOfLinearAddressBits.AutoSize = true;
-            this.labelNumberOfLinearAddressBits.Location = new System.Drawing.Point(6, 48);
-            this.labelNumberOfLinearAddressBits.Name = "labelNumberOfLinearAddressBits";
-            this.labelNumberOfLinearAddressBits.Size = new System.Drawing.Size(184, 13);
-            this.labelNumberOfLinearAddressBits.TabIndex = 5;
-            this.labelNumberOfLinearAddressBits.Text = "Number Of Linear Address Bits [8-15]:";
-            // 
-            // labelGuestPhysicalAddressSize
-            // 
-            this.labelGuestPhysicalAddressSize.AutoSize = true;
-            this.labelGuestPhysicalAddressSize.Location = new System.Drawing.Point(6, 76);
-            this.labelGuestPhysicalAddressSize.Name = "labelGuestPhysicalAddressSize";
-            this.labelGuestPhysicalAddressSize.Size = new System.Drawing.Size(180, 13);
-            this.labelGuestPhysicalAddressSize.TabIndex = 6;
-            this.labelGuestPhysicalAddressSize.Text = "Guest Physical Address Size [16-23]:";
-            // 
-            // labelReserved
-            // 
-            this.labelReserved.AutoSize = true;
-            this.labelReserved.Location = new System.Drawing.Point(6, 102);
-            this.labelReserved.Name = "labelReserved";
-            this.labelReserved.Size = new System.Drawing.Size(92, 13);
-            this.labelReserved.TabIndex = 7;
-            this.labelReserved.Text = "Reserved [24-31]:";
             // 
             // EAX80000007
             // 
@@ -270,8 +189,6 @@
             this.groupBoxEAX80000007.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
-            this.groupBoxEAX.ResumeLayout(false);
-            this.groupBoxEAX.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -289,16 +206,8 @@
         private System.Windows.Forms.Label labelEAX80000007ECX;
         private System.Windows.Forms.Label labelEAX80000007EDX;
         private System.Windows.Forms.GroupBox groupBoxEBX;
-        private System.Windows.Forms.GroupBox groupBoxEAX;
         private System.Windows.Forms.GroupBox groupBoxEDX;
         private System.Windows.Forms.GroupBox groupBoxECX;
-        private System.Windows.Forms.Label labelNumberOfPhysicalAddressBits;
-        private System.Windows.Forms.TextBox textBoxReserved;
-        private System.Windows.Forms.TextBox textBoxGuestPhysicalAddressSize;
-        private System.Windows.Forms.TextBox textBoxNumberOfLinearAddressBits;
-        private System.Windows.Forms.TextBox textBoxNumberOfPhysicalAddressBits;
-        private System.Windows.Forms.Label labelReserved;
-        private System.Windows.Forms.Label labelGuestPhysicalAddressSize;
-        private System.Windows.Forms.Label labelNumberOfLinearAddressBits;
+        private System.Windows.Forms.GroupBox groupBoxEAX;
     }
 }
