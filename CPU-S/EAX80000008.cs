@@ -106,6 +106,63 @@ namespace CPU_S
             bool cpuIdEAX80000008EBX12_IBPB_IsSupported = cpuHelper.GetEAX80000008EBX12_IBPB_IsSupportedX();
             checkBoxIBPB.Checked = cpuIdEAX80000008EBX12_IBPB_IsSupported;
 
+            bool cpuIdEAX80000008EBX13_WBINVD_INT_IsSupported = cpuHelper.GetEAX80000008EBX13_WBINVD_INT_IsSupportedX();
+            checkBoxWBINVDINT.Checked = cpuIdEAX80000008EBX13_WBINVD_INT_IsSupported;
+
+            bool cpuIdEAX80000008EBX14_IBRS_IsSupported = cpuHelper.GetEAX80000008EBX14_IBRS_IsSupportedX();
+            checkBoxIBRS.Checked = cpuIdEAX80000008EBX14_IBRS_IsSupported;
+
+            bool cpuIdEAX80000008EBX15_STIBP_IsSupported = cpuHelper.GetEAX80000008EBX15_STIBP_IsSupportedX();
+            checkBoxSTIBP.Checked = cpuIdEAX80000008EBX15_STIBP_IsSupported;
+
+            bool cpuIdEAX80000008EBX16_IBRS_ALWAYS_ON_IsSupported = cpuHelper.GetEAX80000008EBX16_IBRS_ALWAYS_ON_IsSupportedX();
+            checkBoxIBRSALWAYSON.Checked = cpuIdEAX80000008EBX16_IBRS_ALWAYS_ON_IsSupported;
+
+            bool cpuIdEAX80000008EBX17_STIBP_ALWAYS_ON_IsSupported = cpuHelper.GetEAX80000008EBX17_STIBP_ALWAYS_ON_IsSupportedX();
+            checkBoxSTIBPALWAYSON.Checked = cpuIdEAX80000008EBX17_STIBP_ALWAYS_ON_IsSupported;
+
+            bool cpuIdEAX80000008EBX18_IBRS_PREFERRED_IsSupported = cpuHelper.GetEAX80000008EBX18_IBRS_PREFERRED_IsSupportedX();
+            checkBoxIBRSPREFERRED.Checked = cpuIdEAX80000008EBX18_IBRS_PREFERRED_IsSupported;
+
+            bool cpuIdEAX80000008EBX19_IBRS_SAME_MODE_PROTECTION_IsSupported = cpuHelper.GetEAX80000008EBX19_IBRS_SAME_MODE_PROTECTION_IsSupportedX();
+            checkBoxIBRSSAMEMODEPROTECTION.Checked = cpuIdEAX80000008EBX19_IBRS_SAME_MODE_PROTECTION_IsSupported;
+
+            bool cpuIdEAX80000008EBX20_NO_EFER_LMSLE_IsSupported = cpuHelper.GetEAX80000008EBX20_NO_EFER_LMSLE_IsSupportedX();
+            checkBoxNOEFERLMSLE.Checked = cpuIdEAX80000008EBX20_NO_EFER_LMSLE_IsSupported;
+
+            bool cpuIdEAX80000008EBX21_INVLPGB_NESTED_IsSupported = cpuHelper.GetEAX80000008EBX21_INVLPGB_NESTED_IsSupportedX();
+            checkBoxINVLPGBNESTED.Checked = cpuIdEAX80000008EBX21_INVLPGB_NESTED_IsSupported;
+
+            bool cpuIdEAX80000008EBX22_LBR_TSX_IsSupported = cpuHelper.GetEAX80000008EBX22_LBR_TSX_IsSupportedX();
+            checkBoxLBRTSX.Checked = cpuIdEAX80000008EBX22_LBR_TSX_IsSupported;
+
+            bool cpuIdEAX80000008EBX23_PPIN_IsSupported = cpuHelper.GetEAX80000008EBX23_PPIN_IsSupportedX();
+            checkBoxPPIN.Checked = cpuIdEAX80000008EBX23_PPIN_IsSupported;
+
+            bool cpuIdEAX80000008EBX24_SSBD_IsSupported = cpuHelper.GetEAX80000008EBX24_SSBD_IsSupportedX();
+            checkBoxSSBD.Checked = cpuIdEAX80000008EBX24_SSBD_IsSupported;
+
+            bool cpuIdEAX80000008EBX25_SSBD_LEGACY_IsSupported = cpuHelper.GetEAX80000008EBX25_SSBD_LEGACY_IsSupportedX();
+            checkBoxSSBDLEGACY.Checked = cpuIdEAX80000008EBX25_SSBD_LEGACY_IsSupported;
+
+            bool cpuIdEAX80000008EBX26_SSBD_NO_IsSupported = cpuHelper.GetEAX80000008EBX26_SSBD_NO_IsSupportedX();
+            checkBoxSSBDNO.Checked = cpuIdEAX80000008EBX26_SSBD_NO_IsSupported;
+
+            bool cpuIdEAX80000008EBX27_CPPC_IsSupported = cpuHelper.GetEAX80000008EBX27_CPPC_IsSupportedX();
+            checkBoxCPPC.Checked = cpuIdEAX80000008EBX27_CPPC_IsSupported;
+
+            bool cpuIdEAX80000008EBX28_PSFD_IsSupported = cpuHelper.GetEAX80000008EBX28_PSFD_IsSupportedX();
+            checkBoxPSFD.Checked = cpuIdEAX80000008EBX28_PSFD_IsSupported;
+
+            bool cpuIdEAX80000008EBX29_BTC_NO_IsSupported = cpuHelper.GetEAX80000008EBX29_BTC_NO_IsSupportedX();
+            checkBoxBTCNO.Checked = cpuIdEAX80000008EBX29_BTC_NO_IsSupported;
+
+            bool cpuIdEAX80000008EBX30_IBPB_RET_IsSupported = cpuHelper.GetEAX80000008EBX30_IBPB_RET_IsSupportedX();
+            checkBoxIBPBRET.Checked = cpuIdEAX80000008EBX30_IBPB_RET_IsSupported;
+
+            bool cpuIdEAX80000008EBX31_BRANCH_SAMPLING_IsSupported = cpuHelper.GetEAX80000008EBX31_BRANCH_SAMPLING_IsSupportedX();
+            checkBoxBRANCHSAMPLING.Checked = cpuIdEAX80000008EBX31_BRANCH_SAMPLING_IsSupported;
+
             #endregion
         }
     }

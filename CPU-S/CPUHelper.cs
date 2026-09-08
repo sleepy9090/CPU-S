@@ -18342,7 +18342,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. CLZERO support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. CLZERO support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18363,7 +18363,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. RetiredInstr support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. RetiredInstr support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18384,7 +18384,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. XRSTOR_FP_ERR support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. XRSTOR_FP_ERR support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18405,7 +18405,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. INVLPGB_TLBSYNC support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. INVLPGB_TLBSYNC support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18426,7 +18426,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. RDPRU support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. RDPRU support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18447,7 +18447,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. XOTEXT support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. XOTEXT support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18468,7 +18468,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. MBE support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. MBE support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18489,7 +18489,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. Reserved support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18510,7 +18510,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. MCOMMIT support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. MCOMMIT support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18531,7 +18531,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. WBNOINVD support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. WBNOINVD support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18552,7 +18552,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. LBR_EXT_V1 support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. LBR_EXT_V1 support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18573,7 +18573,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. Reserved support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18594,7 +18594,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. IBPB support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. IBPB support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18615,7 +18615,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. WBINVD_INT support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. WBINVD_INT support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18636,7 +18636,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. IBRS support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. IBRS support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18657,7 +18657,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. STIBP support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. STIBP support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18678,7 +18678,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. IBRS_ALWAYS_ON support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. IBRS_ALWAYS_ON support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18699,7 +18699,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. STIBP_ALWAYS_ON support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. STIBP_ALWAYS_ON support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18720,7 +18720,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. IBRS_PREFERRED support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. IBRS_PREFERRED support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18741,7 +18741,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. IBRS_SAME_MODE_PROTECTION support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. IBRS_SAME_MODE_PROTECTION support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18762,7 +18762,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. NO_EFER_LMSLE support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. NO_EFER_LMSLE support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18783,7 +18783,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. INVLPGB_NESTED support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. INVLPGB_NESTED support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18804,7 +18804,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. LBR_TSX support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. LBR_TSX support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18825,7 +18825,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. PPIN support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. PPIN support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18846,7 +18846,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. SSBD support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSBD support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18867,7 +18867,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. SSBD_LEGACY support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSBD_LEGACY support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18888,7 +18888,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. SSBD_NO support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSBD_NO support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18909,7 +18909,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. CPPC support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPPC support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18930,7 +18930,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. PSFD support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. PSFD support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18951,7 +18951,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. BTC_NO support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. BTC_NO support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18972,7 +18972,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. IBPB_RET support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. IBPB_RET support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
@@ -18993,7 +18993,7 @@ namespace CPU_S
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: AvxDetect.dll not found. BRANCH_SAMPLING support cannot be determined. " + ex.Message);
+                Console.WriteLine("Error: CPUIDBE.dll not found. BRANCH_SAMPLING support cannot be determined. " + ex.Message);
                 return false;
             }
             catch (Exception ex)
