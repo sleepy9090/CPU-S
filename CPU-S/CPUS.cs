@@ -3747,7 +3747,13 @@ namespace CPU_S
 
         private void eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX80000006 eAX80000006 = new EAX80000006();
+            EAX80000006_Intel eAX80000006 = new EAX80000006_Intel();
+            eAX80000006.ShowDialog();
+        }
+
+        private void eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000006_AMD eAX80000006 = new EAX80000006_AMD();
             eAX80000006.ShowDialog();
         }
 
@@ -3834,5 +3840,7 @@ namespace CPU_S
             EAX7ECX2 eAX7ECX2 = new EAX7ECX2();
             eAX7ECX2.ShowDialog();
         }
+
+
     }
 }

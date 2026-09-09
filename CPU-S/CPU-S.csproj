@@ -82,11 +82,17 @@
     <Compile Include="EAX7ECX2.Designer.cs">
       <DependentUpon>EAX7ECX2.cs</DependentUpon>
     </Compile>
-    <Compile Include="EAX80000006.cs">
+    <Compile Include="EAX80000006_AMD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EAX80000006.Designer.cs">
-      <DependentUpon>EAX80000006.cs</DependentUpon>
+    <Compile Include="EAX80000006_AMD.Designer.cs">
+      <DependentUpon>EAX80000006_AMD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX80000006_Intel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX80000006_Intel.Designer.cs">
+      <DependentUpon>EAX80000006_Intel.cs</DependentUpon>
     </Compile>
     <Compile Include="CPU.cs" />
     <Compile Include="CPUConstants.cs" />
@@ -459,8 +465,11 @@
     <EmbeddedResource Include="EAX80000005.resx">
       <DependentUpon>EAX80000005.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EAX80000006.resx">
-      <DependentUpon>EAX80000006.cs</DependentUpon>
+    <EmbeddedResource Include="EAX80000006_AMD.resx">
+      <DependentUpon>EAX80000006_AMD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX80000006_Intel.resx">
+      <DependentUpon>EAX80000006_Intel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX80000007.resx">
       <DependentUpon>EAX80000007.cs</DependentUpon>

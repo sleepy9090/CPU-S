@@ -9,18 +9,18 @@ using System.Windows.Forms;
 
 namespace CPU_S
 {
-    public partial class EAX80000006 : Form
+    public partial class EAX80000006_Intel : Form
     {
 
         private CPUHelper cpuHelper;
 
-        public EAX80000006()
+        public EAX80000006_Intel()
         {
             InitializeComponent();
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x80000006: Extended L2 Cache Features
+            #region EAX=0x80000006: Extended L2 Cache Features (Intel)
 
             string cpuIdEAX80000006EAX = cpuHelper.GetEAX80000006EAXX();
             textBoxEAX80000006EAX.Text = cpuIdEAX80000006EAX;
