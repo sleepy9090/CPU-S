@@ -3404,7 +3404,7 @@
             // 
             this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem.Name = "eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem";
             this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem.Text = "EAX=0x80000006: Extended L2 Cache Features";
+            this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem.Text = "EAX=0x80000006: Extended L2 Cache Features (Intel)";
             this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem_Click);
             // 
             // eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem
