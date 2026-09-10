@@ -351,6 +351,7 @@
             this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000005L1CacheAndTLBIdentifiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000006ExtendedL2CacheFeaturesIntelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000008VirtualAndPhysicalAddressSizesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x8000000ASVMFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -365,7 +366,7 @@
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CustomRegisterCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -3110,6 +3111,7 @@
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CustomRegisterCallToolStripMenuItem,
             this.eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem,
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem,
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem,
@@ -3409,6 +3411,13 @@
             this.eAX0x80000006ExtendedL2CacheFeaturesIntelToolStripMenuItem.Text = "EAX=0x80000006: Extended L2 Cache Features (Intel)";
             this.eAX0x80000006ExtendedL2CacheFeaturesIntelToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000006ExtendedL2CacheFeaturesToolStripMenuItem_Click);
             // 
+            // eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem
+            // 
+            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Name = "eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem";
+            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Text = "EAX=0x80000006: Extended L2 Cache Features (AMD)";
+            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem_Click);
+            // 
             // eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem
             // 
             this.eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem.Name = "eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuIt" +
@@ -3508,12 +3517,12 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             // 
-            // eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem
+            // CustomRegisterCallToolStripMenuItem
             // 
-            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Name = "eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem";
-            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Text = "EAX=0x80000006: Extended L2 Cache Features (AMD)";
-            this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem_Click);
+            this.CustomRegisterCallToolStripMenuItem.Name = "CustomRegisterCallToolStripMenuItem";
+            this.CustomRegisterCallToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.CustomRegisterCallToolStripMenuItem.Text = "Custom Register Call";
+            this.CustomRegisterCallToolStripMenuItem.Click += new System.EventHandler(this.CustomRegisterCallToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3902,6 +3911,7 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CustomRegisterCallToolStripMenuItem;
     }
 }
 

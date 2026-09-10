@@ -3841,6 +3841,10 @@ namespace CPU_S
             eAX7ECX2.ShowDialog();
         }
 
-
+        private void CustomRegisterCallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Custom custom = new Custom();
+            custom.ShowDialog();
+        }
     }
 }
