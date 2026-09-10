@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom.Designer.cs">
+      <DependentUpon>Custom.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX7ECX1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -369,6 +375,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Custom.resx">
+      <DependentUpon>Custom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EAX14ECX1.resx">
       <DependentUpon>EAX14ECX1.cs</DependentUpon>
     </EmbeddedResource>
