@@ -152,6 +152,7 @@
             this.buttonQuery.TabIndex = 8;
             this.buttonQuery.Text = "&Query";
             this.buttonQuery.UseVisualStyleBackColor = true;
+            this.buttonQuery.Click += new System.EventHandler(this.buttonQuery_Click);
             // 
             // comboBoxRegisterIndex
             // 

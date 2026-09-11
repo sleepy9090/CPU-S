@@ -5,6 +5,7 @@
     Date           09/10/2026
     Author         Shawn M. Crawford [sleepy]
 */
+using System;
 using System.Windows.Forms;
 
 namespace CPU_S
@@ -108,6 +109,80 @@ namespace CPU_S
             comboBoxRegisterIndex.Items.Insert(3, "EDX");
             comboBoxRegisterIndex.SelectedIndex = 0;
 
+        }
+
+        private void buttonQuery_Click(object sender, System.EventArgs e)
+        {
+            textBoxResult.Clear();
+            cpuHelper = new CPUHelper();
+            uint leaf = 0;
+            uint subleaf = 0;
+            uint registerIndex = 0;
+            bool isInvalidInput = false;
+
+            if (checkBoxOverrideLeaf.Checked)
+            {
+                try
+                {
+                    leaf = Convert.ToUInt32(textBoxOverrideLeaf.Text, 16);
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid leaf value. Please enter a valid hexadecimal number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    isInvalidInput = true;
+                }
+            }
+            else
+            {
+                leaf = Convert.ToUInt32(comboBoxLeaf.SelectedItem.ToString(), 16);
+            }
+
+            if (!isInvalidInput)
+            {
+                if (checkBoxOverrideSubleaf.Checked)
+                {
+                    try
+                    {
+                        subleaf = Convert.ToUInt32(textBoxOverrideSubleaf.Text, 16);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Invalid subleaf value. Please enter a valid hexadecimal number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        isInvalidInput = true;
+                    }
+                }
+                else
+                {
+                    subleaf = Convert.ToUInt32(comboBoxSubleaf.SelectedItem.ToString(), 16);
+                }
+            }
+
+            if (!isInvalidInput)
+            {
+                if (checkBoxOverrideRegisterIndex.Checked)
+                {
+                    try
+                    {
+                        registerIndex = Convert.ToUInt32(textBoxOverrideRegisterIndex.Text, 16);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Invalid register index value. Please enter a valid hexadecimal number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        isInvalidInput = true;
+                    }
+                }
+                else
+                {
+                    registerIndex = (uint)comboBoxRegisterIndex.SelectedIndex;
+                }
+            }
+
+            if (!isInvalidInput)
+            {
+                string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
+                textBoxResult.Text = registerValue;
+            }
+            
         }
     }
 }

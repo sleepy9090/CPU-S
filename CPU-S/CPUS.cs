@@ -27,7 +27,7 @@ namespace CPU_S
         ManagementObjectSearcher searcher2;
 
         /* If true, outputs to console for debugging purposes. */
-        bool isDebug = true;
+        bool isDebug = false;
 
         int counter = 0;
 

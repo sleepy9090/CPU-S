@@ -1549,9 +1549,9 @@ namespace CPU_S
         #region Custom Leaf/Sub-Leaf Functions
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetCustom(int leaf, int subleaf, int registerIndex);
+        public static extern IntPtr GetCustom(uint leaf, uint subleaf, uint registerIndex);
 
-        public string GetCustomX(int leaf, int subleaf, int registerIndex)
+        public string GetCustomX(uint leaf, uint subleaf, uint registerIndex)
         {
             try
             {
@@ -1573,9 +1573,9 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetCustomRange(int leaf, int subleaf, int registerIndex, int pos, int k);
+        public static extern int GetCustomRange(uint leaf, uint subleaf, uint registerIndex, uint pos, uint k);
 
-        public string GetCustomRangeX(int leaf, int subleaf, int registerIndex, int pos, int k)
+        public string GetCustomRangeX(uint leaf, uint subleaf, uint registerIndex, uint pos, uint k)
         {
             try
             {
@@ -1597,9 +1597,9 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetCustomBitAsBool(int leaf, int subleaf, int registerIndex, int pos);
+        private static extern int GetCustomBitAsBool(uint leaf, uint subleaf, uint registerIndex, uint pos);
 
-        public bool GetCustomBitAsBoolX(int leaf, int subleaf, int registerIndex, int pos)
+        public bool GetCustomBitAsBoolX(uint leaf, uint subleaf, uint registerIndex, uint pos)
         {
             try
             {
