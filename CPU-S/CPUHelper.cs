@@ -1597,6 +1597,54 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetCustomRangeFromPosition(uint leaf, uint subleaf, uint registerIndex, uint pos);
+
+        public string GetCustomRangeFromPositionX(uint leaf, uint subleaf, uint registerIndex, uint pos)
+        {
+            try
+            {
+                int registerRange = GetCustomRangeFromPosition(leaf, subleaf, registerIndex, pos);
+                string registerRangeString = registerRange.ToString();
+
+                return registerRangeString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetCustomRangeFromStartBit(uint leaf, uint subleaf, uint registerIndex, uint k);
+
+        public string GetCustomRangeFromStartBitX(uint leaf, uint subleaf, uint registerIndex, uint k)
+        {
+            try
+            {
+                int registerRange = GetCustomRangeFromStartBit(leaf, subleaf, registerIndex, k);
+                string registerRangeString = registerRange.ToString();
+
+                return registerRangeString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         private static extern int GetCustomBitAsBool(uint leaf, uint subleaf, uint registerIndex, uint pos);
 
         public bool GetCustomBitAsBoolX(uint leaf, uint subleaf, uint registerIndex, uint pos)

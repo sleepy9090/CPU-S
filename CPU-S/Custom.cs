@@ -109,6 +109,22 @@ namespace CPU_S
             comboBoxRegisterIndex.Items.Insert(3, "EDX");
             comboBoxRegisterIndex.SelectedIndex = 0;
 
+            comboBoxStartPosition.Items.Clear();
+            comboBoxNumberOfBits.Items.Clear();
+            int i = 0;
+            for (i = 0; i < 32; i++)
+            {
+                comboBoxStartPosition.Items.Insert(i, $"Bit {i}");
+                comboBoxNumberOfBits.Items.Insert(i, (i+1).ToString());
+            }
+            comboBoxStartPosition.SelectedIndex = 0;
+            comboBoxNumberOfBits.SelectedIndex = 0;
+
+            comboBoxStartPosition.Enabled = false;
+            comboBoxNumberOfBits.Enabled = false;
+
+            
+
         }
 
         private void buttonQuery_Click(object sender, System.EventArgs e)
@@ -179,10 +195,52 @@ namespace CPU_S
 
             if (!isInvalidInput)
             {
-                string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
-                textBoxResult.Text = registerValue;
+                if ((checkBoxUseStartPosition.Checked) && (checkBoxUseNumberOfBits.Checked))
+                {
+                    uint startPosition = (uint)comboBoxStartPosition.SelectedIndex;
+                    uint numberOfBits = (uint)comboBoxNumberOfBits.SelectedIndex + 1; // +1 because index starts at 0
+                    if (startPosition + numberOfBits > 32)
+                    {
+                        MessageBox.Show("Invalid bit range. The combination of start position and number of bits exceeds the register size.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        isInvalidInput = true;
+                    }
+                    else
+                    {
+                        string registerValue = cpuHelper.GetCustomRangeX(leaf, subleaf, registerIndex, startPosition, numberOfBits);
+                        textBoxResult.Text = registerValue;
+                    }
+                }
+                else if ((checkBoxUseStartPosition.Checked) && (!checkBoxUseNumberOfBits.Checked))
+                {
+                    uint startPosition = (uint)comboBoxStartPosition.SelectedIndex;
+                    string registerValue = cpuHelper.GetCustomRangeFromPositionX(leaf, subleaf, registerIndex, startPosition);
+                    textBoxResult.Text = registerValue;
+
+                }
+                else if ((!checkBoxUseStartPosition.Checked) && (checkBoxUseNumberOfBits.Checked))
+                {
+                    uint numberOfBits = (uint)comboBoxNumberOfBits.SelectedIndex + 1; // +1 because index starts at 0
+                    string registerValue = cpuHelper.GetCustomRangeFromStartBitX(leaf, subleaf, registerIndex, numberOfBits);
+                    textBoxResult.Text = registerValue;
+
+                }
+                else
+                {
+                    string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
+                    textBoxResult.Text = registerValue;
+                }
+
             }
-            
+        }
+
+        private void checkBoxUseStartPosition_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBoxStartPosition.Enabled = checkBoxUseStartPosition.Checked;
+        }
+
+        private void checkBoxUseNumberOfBits_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBoxNumberOfBits.Enabled = checkBoxUseNumberOfBits.Checked;
         }
     }
 }
