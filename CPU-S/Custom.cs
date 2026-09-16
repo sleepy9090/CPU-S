@@ -195,51 +195,58 @@ namespace CPU_S
 
             if (!isInvalidInput)
             {
-                if ((checkBoxUseStartPosition.Checked) && (checkBoxUseNumberOfBits.Checked))
+                try
                 {
-                    int startPosition = comboBoxStartPosition.SelectedIndex;
-                    int numberOfBits = comboBoxNumberOfBits.SelectedIndex + 1;
+                    if ((checkBoxUseStartPosition.Checked) && (checkBoxUseNumberOfBits.Checked))
+                    {
+                        int startPosition = comboBoxStartPosition.SelectedIndex;
+                        int numberOfBits = comboBoxNumberOfBits.SelectedIndex + 1;
 
-                    if ((startPosition + 1) < numberOfBits)
-                    {
-                        MessageBox.Show("Invalid bit range. The start position must be greater than or equal to the number of bits to extract. Bits: [32...0].", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        isInvalidInput = true;
+                        if ((startPosition + 1) < numberOfBits)
+                        {
+                            MessageBox.Show("Invalid bit range. The start position must be greater than or equal to the number of bits to extract. Bits: [32...0].", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            isInvalidInput = true;
+                        }
+                        else
+                        {
+                            string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
+
+                            // if start position is bit 2, we want to get bits 2, 1, and 0;
+                            registerValue = registerValue.Remove(0, 32 - (startPosition + 1));
+
+                            // if start position is bit 2, and numberOfBits is 2, we want to get bits 2 and 1;
+                            registerValue = registerValue.Substring(0, numberOfBits);
+                            textBoxResult.Text = registerValue;
+                        }
                     }
-                    else
+                    else if ((checkBoxUseStartPosition.Checked) && (!checkBoxUseNumberOfBits.Checked))
                     {
+                        int startPosition = comboBoxStartPosition.SelectedIndex;
                         string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
 
                         // if start position is bit 2, we want to get bits 2, 1, and 0;
                         registerValue = registerValue.Remove(0, 32 - (startPosition + 1));
+                        textBoxResult.Text = registerValue;
 
-                        // if start position is bit 2, and numberOfBits is 2, we want to get bits 2 and 1;
+                    }
+                    else if ((!checkBoxUseStartPosition.Checked) && (checkBoxUseNumberOfBits.Checked))
+                    {
+                        int numberOfBits = comboBoxNumberOfBits.SelectedIndex + 1;
+                        string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
+
+                        // Assumes start position is 31, so if number of bits is 2, we want to get bits 31 and 30;
                         registerValue = registerValue.Substring(0, numberOfBits);
                         textBoxResult.Text = registerValue;
                     }
+                    else
+                    {
+                        string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
+                        textBoxResult.Text = registerValue;
+                    }
                 }
-                else if ((checkBoxUseStartPosition.Checked) && (!checkBoxUseNumberOfBits.Checked))
+                catch (Exception ex)
                 {
-                    int startPosition = comboBoxStartPosition.SelectedIndex;
-                    string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
-
-                    // if start position is bit 2, we want to get bits 2, 1, and 0;
-                    registerValue = registerValue.Remove(0, 32 - (startPosition + 1));
-                    textBoxResult.Text = registerValue;
-
-                }
-                else if ((!checkBoxUseStartPosition.Checked) && (checkBoxUseNumberOfBits.Checked))
-                {
-                    int numberOfBits = comboBoxNumberOfBits.SelectedIndex + 1;
-                    string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
-
-                    // Assumes start position is 31, so if number of bits is 2, we want to get bits 31 and 30;
-                    registerValue = registerValue.Substring(0, numberOfBits);
-                    textBoxResult.Text = registerValue;
-                }
-                else
-                {
-                    string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
-                    textBoxResult.Text = registerValue;
+                    MessageBox.Show($"An error occurred while querying the CPU: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
