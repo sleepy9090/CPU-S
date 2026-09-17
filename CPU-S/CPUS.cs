@@ -859,11 +859,112 @@ namespace CPU_S
                 textBoxCPUVoltageCaps.Text = CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
 
-            // @TODO: Add to user interface to display this information
-            /*
-            bool isAvx2Supported = cpuHelper.IsAvx2SupportedX();
-            Console.WriteLine($"AVX2 Supported: {isAvx2Supported}");
-            */
+            #region x86 SIMD Instructions
+
+            checkBoxMMX.Checked = cpuHelper.GetEAX1EDX23_MMXIsSupportedX();
+            checkBoxSSE.Checked = cpuHelper.GetEAX1EDX25_SSEIsSupportedX();
+            checkBoxSSE2.Checked = cpuHelper.GetEAX1EDX26_SSE2IsSupportedX();
+            checkBoxSSE3.Checked = cpuHelper.GetEAX1ECX0_SSE3IsSupportedX();
+            checkBoxSSSE3.Checked = cpuHelper.GetEAX1ECX9_SSSE3IsSupportedX();
+            // checkBoxSSE4a.Checked = cpuHelper.   // 800000001h, ECX bit 6
+            checkBoxSSE41.Checked = cpuHelper.GetEAX1ECX19_SSE41IsSupportedX();
+            checkBoxSSE42.Checked = cpuHelper.GetEAX1ECX20_SSE42IsSupportedX();
+            checkBoxAVX.Checked = cpuHelper.GetEAX1ECX28_AVXIsSupportedX();
+            checkBoxFMA3.Checked = cpuHelper.GetEAX1ECX12_FMAIsSupportedX();
+            //checkBoxAVX2.Checked = cpuHelper.GetEAX7EBX5_AVX2IsSupportedX();
+            //checkBoxAVX512F.Checked = cpuHelper.GetEAX7EBX16_AVX512FIsSupportedX();
+            //checkBoxAVX512CD.Checked = cpuHelper.GetEAX7EBX28_AVX512CDIsSupportedX();
+            //checkBoxAVX512ER.Checked = cpuHelper.GetEAX7EBX27_AVX512ERIsSupportedX();
+            //checkBoxAVX512PF.Checked = cpuHelper.GetEAX7EBX26_AVX512PFIsSupportedX();
+            //checkBoxAVX5124VNNIW.Checked = cpuHelper.GetEAX7EBX2_AVX5124VNNIWIsSupportedX();
+            //checkBoxAVX5124FMAPS.Checked = cpuHelper.GetEAX7EBX16_AVX5124FMAPSIsSupportedX();
+            //checkBoxAVX512VL.Checked = cpuHelper.GetEAX7EBX31_AVX512VLIsSupportedX();
+            //checkBoxAVX512DQ.Checked = cpuHelper.GetEAX7EBX17_AVX512DQIsSupportedX();
+            //checkBoxAVX512BW.Checked = cpuHelper.GetEAX7EBX30_AVX512BWIsSupportedX();
+            //checkBoxAVX512IFMA.Checked = cpuHelper.GetEAX7EBX21_AVX512IFMAIsSupportedX();
+            //checkBoxAVX512VBMI.Checked = cpuHelper.GetEAX7ECX1_AVX512VBMIIsSupportedX();
+            //checkBoxAVX512VNNI.Checked = cpuHelper.GetEAX7ECX11_AVX512VNNIIsSupportedX();
+            //checkBoxAVX512VPOPCNTDQ.Checked = cpuHelper.GetEAX7ECX14_AVX512VPOPCNTDQIsSupportedX();
+            //checkBoxAVX512VBMI2.Checked = cpuHelper.GetEAX7ECX6_AVX512VBMI2IsSupportedX();
+            //checkBoxAVX512BITALG.Checked = cpuHelper.GetEAX7ECX5_AVX512BITALGIsSupportedX();
+            //checkBoxAVX512VP2INTERSECT.Checked = cpuHelper.GetEAX7ECX8_AVX512VP2INTERSECTIsSupportedX();
+            //checkBoxAVX512BMM.Checked = cpuHelper.GetEAX7EDX1_AVX512BMMIsSupportedX();
+            //checkBoxAMX.Checked = cpuHelper.GetEAX7EDX22_AMXIsSupportedX();
+            //checkBoxAVX101.Checked = cpuHelper.GetEAX7EBX10_AVX101IsSupportedX();
+            //checkBoxAVX102.Checked = cpuHelper.GetEAX7EBX11_AVX102IsSupportedX();
+
+            #endregion
+
+            #region x86 Cryptographic Instructions
+
+            //checkBoxAES.Checked = cpuHelper.GetEAX1ECX25_AESIsSupportedX();
+            checkBoxCLMUL.Checked = cpuHelper.GetEAX1ECX1_PCLMULQDQIsSupportedX();
+            //checkBoxRDSEED.Checked = cpuHelper.GetEAX7EBX18_RDSEEDIsSupportedX();
+            checkBoxRDRAND.Checked = cpuHelper.GetEAX1ECX30_RDRANDIsSupportedX();
+            //checkBoxSHA.Checked = cpuHelper.GetEAX7EBX29_SHAIsSupportedX();
+            //checkBoxSM3.Checked = cpuHelper.GetEAX7ECX2_SM3IsSupportedX();
+            //checkBoxSM4.Checked = cpuHelper.GetEAX7ECX3_SM4IsSupportedX();
+            //checkBoxKL.Checked = cpuHelper.GetEAX7EBX22_KLIsSupportedX();
+            //checkBoxPadLock.Checked = cpuHelper.GetEAX7EBX6_PADLOCKIsSupportedX();
+            //checkBoxMPX.Checked = cpuHelper.GetEAX7EBX1_MPXIsSupportedX();
+            //checkBoxSGX.Checked = cpuHelper.GetEAX7EBX2_SGXIsSupportedX();
+            //checkBoxTDX.Checked = cpuHelper.GetEAX7EBX13_TDXIsSupportedX();
+
+            #endregion
+
+            #region x86 Virtualization Instructions
+
+            //checkBoxAMDV.Checked = cpuHelper.GetEAX80000001ECX2_SVMIsSupportedX();
+            //checkBoxIntelVTX.Checked = 
+            //checkBoxVIAVT.Checked = 
+            //checkBoxV8086M.Checked = cpuHelper.GetEAX1EDX0_V8086MIsSupportedX();
+
+            #endregion
+
+            #region Transactional Memory Instructions
+
+            //checkBoxTSX.Checked = cpuHelper.GetEAX7EBX11_TSXIsSupportedX();
+            //checkBoxASF.Checked = cpuHelper.GetEAX1EDX22_ASFIsSupportedX();
+
+            #endregion
+
+            #region Bit Manipulation Instructions
+
+            //checkBoxADX.Checked = cpuHelper.GetEAX7EBX19_ADXIsSupportedX();
+            //checkBoxBMI1.Checked = cpuHelper.GetEAX7EBX3_BMI1IsSupportedX();
+            //checkBoxBMI2.Checked = cpuHelper.GetEAX7EBX8_BMI2IsSupportedX();
+            //checkBoxTBM.Checked = cpuHelper.GetEAX80000001ECX21_TBMIsSupportedX();
+            //checkBoxABM.Checked = cpuHelper.GetEAX80000001ECX5_ABMIsSupportedX();
+
+            #endregion
+
+            #region x86 Instructions
+
+            //checkBoxI386.Checked = cpuHelper.GetEAX1EDX0_I386IsSupportedX();
+            //checkBoxItanium.Checked = cpuHelper.GetEAX1EDX30_ItaniumIsSupportedX();
+            //checkBoxHLE.Checked = cpuHelper.GetEAX7EBX4_HLEIsSupportedX();
+            //checkBoxKNC.Checked = cpuHelper.GetEAX1EDX31_KNCIsSupportedX();
+            //checkBoxKLKM.Checked = cpuHelper.GetEAX7EBX22_KLIsSupportedX();
+
+            //checkBoxAM386SMM.Checked = cpuHelper.GetEAX1EDX1_AM386SMMIsSupportedX();
+            //checkBox3DNow.Checked = cpuHelper.GetEAX80000001EDX31_3DNowIsSupportedX();
+            //checkBox3DNowPlus.Checked = cpuHelper.GetEAX80000001EDX30_3DNowPlusIsSupportedX();
+            //checkBoxSSE5.Checked = cpuHelper.GetEAX80000001ECX11_SSE5IsSupportedX();
+            //checkBoxXOP.Checked = cpuHelper.GetEAX80000001ECX2_XOPIsSupportedX();
+            //checkBoxFMA4.Checked = cpuHelper.GetEAX1ECX16_FMA4IsSupportedX();
+            //checkBoxLWP.Checked = cpuHelper.GetEAX80000001ECX15_LWPIsSupportedX();
+
+            //checkBoxNECV.Checked = cpuHelper.GetEAX80000001EDX5_NECVIsSupportedX();
+            //checkBoxCyrixGeode.Checked = cpuHelper.GetEAX80000001EDX6_CyrixGeodeIsSupportedX();
+            //checkBoxCyrixEMMi.Checked = cpuHelper.GetEAX80000001EDX7_CyrixEMMiIsSupportedX();
+            //checkBoxVIAAIS.Checked = cpuHelper.GetEAX80000001EDX22_VIAAISIsSupportedX();
+            //checkBoxCAndT.Checked = cpuHelper.GetEAX80000001EDX23_CAndTIsSupportedX();
+            //checkBoxAliNvidiaDMP.Checked = cpuHelper.GetEAX80000001EDX24_AliNvidiaDMPIsSupportedX();
+            //checkBox387Clones.Checked = cpuHelper.GetEAX1EDX6_387ClonesIsSupportedX();
+
+            #endregion
+
+            #region Debug
 
             if (isDebug)
             {
@@ -3509,6 +3610,8 @@ namespace CPU_S
 
                 #endregion
             }
+
+            #endregion
         }
 
         private void comboBoxCPU_SelectedIndexChanged(object sender, EventArgs e)
@@ -3846,5 +3949,6 @@ namespace CPU_S
             Custom custom = new Custom();
             custom.ShowDialog();
         }
+
     }
 }
