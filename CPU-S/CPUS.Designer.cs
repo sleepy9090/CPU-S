@@ -155,100 +155,16 @@
             this.groupBoxX86SIMDInstructions = new System.Windows.Forms.GroupBox();
             this.tabPageX86CryptographicInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxX86CryptographicInstructions = new System.Windows.Forms.GroupBox();
-            this.labelTDX = new System.Windows.Forms.Label();
-            this.textBoxTDX = new System.Windows.Forms.TextBox();
-            this.labelSGX = new System.Windows.Forms.Label();
-            this.textBoxSGX = new System.Windows.Forms.TextBox();
-            this.labelMPX = new System.Windows.Forms.Label();
-            this.textBoxMPX = new System.Windows.Forms.TextBox();
-            this.labelSM4 = new System.Windows.Forms.Label();
-            this.textBoxSM4 = new System.Windows.Forms.TextBox();
-            this.labelSM3 = new System.Windows.Forms.Label();
-            this.textBoxSM3 = new System.Windows.Forms.TextBox();
-            this.labelRDSEED = new System.Windows.Forms.Label();
-            this.textBoxRDSEED = new System.Windows.Forms.TextBox();
-            this.labelPadLock = new System.Windows.Forms.Label();
-            this.textBoxPadLock = new System.Windows.Forms.TextBox();
-            this.labelKL = new System.Windows.Forms.Label();
-            this.textBoxKL = new System.Windows.Forms.TextBox();
-            this.labelSHA = new System.Windows.Forms.Label();
-            this.textBoxSHA = new System.Windows.Forms.TextBox();
-            this.labelRDRAND = new System.Windows.Forms.Label();
-            this.textBoxRDRAND = new System.Windows.Forms.TextBox();
-            this.labelCLMUL = new System.Windows.Forms.Label();
-            this.labelAES = new System.Windows.Forms.Label();
-            this.textBoxCLMUL = new System.Windows.Forms.TextBox();
-            this.textBoxAES = new System.Windows.Forms.TextBox();
             this.tabPageX86VirtualizationInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxX86VirtualizationInstructions = new System.Windows.Forms.GroupBox();
-            this.labelV8086M = new System.Windows.Forms.Label();
-            this.textBoxV8086M = new System.Windows.Forms.TextBox();
-            this.labelVIAVT = new System.Windows.Forms.Label();
-            this.textBoxVIAVT = new System.Windows.Forms.TextBox();
-            this.labelIntelVTX = new System.Windows.Forms.Label();
-            this.textBoxIntelVTX = new System.Windows.Forms.TextBox();
-            this.labelAMDV = new System.Windows.Forms.Label();
-            this.textBoxAMDV = new System.Windows.Forms.TextBox();
             this.tabPageX86TransactionalMemoryInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxx86TransactionalMemoryInstructions = new System.Windows.Forms.GroupBox();
-            this.labelASF = new System.Windows.Forms.Label();
-            this.textBoxASF = new System.Windows.Forms.TextBox();
-            this.labelTSX = new System.Windows.Forms.Label();
-            this.textBoxTSX = new System.Windows.Forms.TextBox();
             this.tabPageX86BitManipulation = new System.Windows.Forms.TabPage();
             this.groupBoxX86BitManipulationInstructions = new System.Windows.Forms.GroupBox();
-            this.labelTBM = new System.Windows.Forms.Label();
-            this.textBoxTBM = new System.Windows.Forms.TextBox();
-            this.labelABM = new System.Windows.Forms.Label();
-            this.textBoxABM = new System.Windows.Forms.TextBox();
-            this.labelBMI2 = new System.Windows.Forms.Label();
-            this.textBoxBMI2 = new System.Windows.Forms.TextBox();
-            this.labelBMI1 = new System.Windows.Forms.Label();
-            this.textBoxBMI1 = new System.Windows.Forms.TextBox();
-            this.labelADX = new System.Windows.Forms.Label();
-            this.textBoxADX = new System.Windows.Forms.TextBox();
             this.tabPageX86Instructions = new System.Windows.Forms.TabPage();
             this.groupBoxOtherX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
-            this.label387Clones = new System.Windows.Forms.Label();
-            this.textBox387Clones = new System.Windows.Forms.TextBox();
-            this.labelAliNvidiaDMP = new System.Windows.Forms.Label();
-            this.textBoxAliNvidiaDMP = new System.Windows.Forms.TextBox();
-            this.labelCAndT = new System.Windows.Forms.Label();
-            this.textBoxCAndT = new System.Windows.Forms.TextBox();
-            this.labelVIAAIS = new System.Windows.Forms.Label();
-            this.textBoxVIAAIS = new System.Windows.Forms.TextBox();
-            this.labelCyrixEMMi = new System.Windows.Forms.Label();
-            this.textBoxCyrixEMMi = new System.Windows.Forms.TextBox();
-            this.labelCyrixGeode = new System.Windows.Forms.Label();
-            this.textBoxCyrixGeode = new System.Windows.Forms.TextBox();
-            this.labelNECV = new System.Windows.Forms.Label();
-            this.textBoxNECV = new System.Windows.Forms.TextBox();
             this.groupBoxAMDX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
-            this.labelLWP = new System.Windows.Forms.Label();
-            this.textBoxLWP = new System.Windows.Forms.TextBox();
-            this.labelFMA4 = new System.Windows.Forms.Label();
-            this.textBoxFMA4 = new System.Windows.Forms.TextBox();
-            this.labelXOP = new System.Windows.Forms.Label();
-            this.textBoxXOP = new System.Windows.Forms.TextBox();
-            this.labelSSE5Derived = new System.Windows.Forms.Label();
-            this.textBoxSSE5Derived = new System.Windows.Forms.TextBox();
-            this.label3DNowPlus = new System.Windows.Forms.Label();
-            this.textBox3DNowPlus = new System.Windows.Forms.TextBox();
-            this.label3DNow = new System.Windows.Forms.Label();
-            this.textBox3DNow = new System.Windows.Forms.TextBox();
-            this.labelAm386SMM = new System.Windows.Forms.Label();
-            this.textBoxAm386SMM = new System.Windows.Forms.TextBox();
             this.groupBoxIntelX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
-            this.labelKLKM = new System.Windows.Forms.Label();
-            this.textBoxKNKM = new System.Windows.Forms.TextBox();
-            this.labelKNC = new System.Windows.Forms.Label();
-            this.textBoxKNC = new System.Windows.Forms.TextBox();
-            this.labelHLE = new System.Windows.Forms.Label();
-            this.textBoxHLE = new System.Windows.Forms.TextBox();
-            this.labelItanium = new System.Windows.Forms.Label();
-            this.textBoxItanium = new System.Windows.Forms.TextBox();
-            this.labelI386 = new System.Windows.Forms.Label();
-            this.textBoxI386 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -336,6 +252,48 @@
             this.checkBoxAMX = new System.Windows.Forms.CheckBox();
             this.checkBoxAVX101 = new System.Windows.Forms.CheckBox();
             this.checkBoxAVX102 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAES = new System.Windows.Forms.CheckBox();
+            this.checkBoxCLMUL = new System.Windows.Forms.CheckBox();
+            this.checkBoxRDSEED = new System.Windows.Forms.CheckBox();
+            this.checkBoxRDRAND = new System.Windows.Forms.CheckBox();
+            this.checkBoxSHA = new System.Windows.Forms.CheckBox();
+            this.checkBoxSM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSM4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxKL = new System.Windows.Forms.CheckBox();
+            this.checkBoxPadLock = new System.Windows.Forms.CheckBox();
+            this.checkBoxMPX = new System.Windows.Forms.CheckBox();
+            this.checkBoxSGX = new System.Windows.Forms.CheckBox();
+            this.checkBoxTDX = new System.Windows.Forms.CheckBox();
+            this.checkBoxAMDV = new System.Windows.Forms.CheckBox();
+            this.checkBoxIntelVTX = new System.Windows.Forms.CheckBox();
+            this.checkBoxVIAVT = new System.Windows.Forms.CheckBox();
+            this.checkBoxV8086M = new System.Windows.Forms.CheckBox();
+            this.checkBoxTSX = new System.Windows.Forms.CheckBox();
+            this.checkBoxASF = new System.Windows.Forms.CheckBox();
+            this.checkBoxADX = new System.Windows.Forms.CheckBox();
+            this.checkBoxBMI1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBMI2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTBM = new System.Windows.Forms.CheckBox();
+            this.checkBoxABM = new System.Windows.Forms.CheckBox();
+            this.checkBoxI386 = new System.Windows.Forms.CheckBox();
+            this.checkBoxItanium = new System.Windows.Forms.CheckBox();
+            this.checkBoxHLE = new System.Windows.Forms.CheckBox();
+            this.checkBoxKNC = new System.Windows.Forms.CheckBox();
+            this.checkBoxKLKM = new System.Windows.Forms.CheckBox();
+            this.checkBoxAM386SMM = new System.Windows.Forms.CheckBox();
+            this.checkBox3DNow = new System.Windows.Forms.CheckBox();
+            this.checkBox3DNowPlus = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSE5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxXOP = new System.Windows.Forms.CheckBox();
+            this.checkBoxFMA4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxLWP = new System.Windows.Forms.CheckBox();
+            this.checkBoxNECV = new System.Windows.Forms.CheckBox();
+            this.checkBoxCyrixGeode = new System.Windows.Forms.CheckBox();
+            this.checkBoxCyrixEMMi = new System.Windows.Forms.CheckBox();
+            this.checkBoxVIAAIS = new System.Windows.Forms.CheckBox();
+            this.checkBoxCAndT = new System.Windows.Forms.CheckBox();
+            this.checkBoxAliNvidiaDMP = new System.Windows.Forms.CheckBox();
+            this.checkBox387Clones = new System.Windows.Forms.CheckBox();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -1656,227 +1614,23 @@
             // 
             // groupBoxX86CryptographicInstructions
             // 
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelTDX);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxTDX);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelSGX);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxSGX);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelMPX);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxMPX);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelSM4);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxSM4);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelSM3);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxSM3);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelRDSEED);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxRDSEED);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelPadLock);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxPadLock);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelKL);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxKL);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelSHA);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxSHA);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelRDRAND);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxRDRAND);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelCLMUL);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.labelAES);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxCLMUL);
-            this.groupBoxX86CryptographicInstructions.Controls.Add(this.textBoxAES);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxTDX);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxSGX);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxMPX);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxPadLock);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxKL);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxSM4);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxSM3);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxSHA);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxRDRAND);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxRDSEED);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxCLMUL);
+            this.groupBoxX86CryptographicInstructions.Controls.Add(this.checkBoxAES);
             this.groupBoxX86CryptographicInstructions.Location = new System.Drawing.Point(3, 3);
             this.groupBoxX86CryptographicInstructions.Name = "groupBoxX86CryptographicInstructions";
             this.groupBoxX86CryptographicInstructions.Size = new System.Drawing.Size(970, 754);
             this.groupBoxX86CryptographicInstructions.TabIndex = 0;
             this.groupBoxX86CryptographicInstructions.TabStop = false;
-            // 
-            // labelTDX
-            // 
-            this.labelTDX.AutoSize = true;
-            this.labelTDX.Location = new System.Drawing.Point(6, 308);
-            this.labelTDX.Name = "labelTDX";
-            this.labelTDX.Size = new System.Drawing.Size(158, 13);
-            this.labelTDX.TabIndex = 38;
-            this.labelTDX.Text = "TDX (Trust Domain Extensions):";
-            // 
-            // textBoxTDX
-            // 
-            this.textBoxTDX.Location = new System.Drawing.Point(412, 305);
-            this.textBoxTDX.Name = "textBoxTDX";
-            this.textBoxTDX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTDX.TabIndex = 37;
-            // 
-            // labelSGX
-            // 
-            this.labelSGX.AutoSize = true;
-            this.labelSGX.Location = new System.Drawing.Point(6, 282);
-            this.labelSGX.Name = "labelSGX";
-            this.labelSGX.Size = new System.Drawing.Size(169, 13);
-            this.labelSGX.TabIndex = 36;
-            this.labelSGX.Text = "SGX (Software Guard Extensions):";
-            // 
-            // textBoxSGX
-            // 
-            this.textBoxSGX.Location = new System.Drawing.Point(412, 279);
-            this.textBoxSGX.Name = "textBoxSGX";
-            this.textBoxSGX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSGX.TabIndex = 35;
-            // 
-            // labelMPX
-            // 
-            this.labelMPX.AutoSize = true;
-            this.labelMPX.Location = new System.Drawing.Point(6, 256);
-            this.labelMPX.Name = "labelMPX";
-            this.labelMPX.Size = new System.Drawing.Size(184, 13);
-            this.labelMPX.TabIndex = 34;
-            this.labelMPX.Text = "MPX (Memory Protection Extensions):";
-            // 
-            // textBoxMPX
-            // 
-            this.textBoxMPX.Location = new System.Drawing.Point(412, 253);
-            this.textBoxMPX.Name = "textBoxMPX";
-            this.textBoxMPX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMPX.TabIndex = 33;
-            // 
-            // labelSM4
-            // 
-            this.labelSM4.AutoSize = true;
-            this.labelSM4.Location = new System.Drawing.Point(6, 178);
-            this.labelSM4.Name = "labelSM4";
-            this.labelSM4.Size = new System.Drawing.Size(148, 13);
-            this.labelSM4.TabIndex = 28;
-            this.labelSM4.Text = "Hygon CIS instructions (SM4):";
-            // 
-            // textBoxSM4
-            // 
-            this.textBoxSM4.Location = new System.Drawing.Point(412, 175);
-            this.textBoxSM4.Name = "textBoxSM4";
-            this.textBoxSM4.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSM4.TabIndex = 27;
-            // 
-            // labelSM3
-            // 
-            this.labelSM3.AutoSize = true;
-            this.labelSM3.Location = new System.Drawing.Point(6, 152);
-            this.labelSM3.Name = "labelSM3";
-            this.labelSM3.Size = new System.Drawing.Size(148, 13);
-            this.labelSM3.TabIndex = 26;
-            this.labelSM3.Text = "Hygon CIS instructions (SM3):";
-            // 
-            // textBoxSM3
-            // 
-            this.textBoxSM3.Location = new System.Drawing.Point(412, 149);
-            this.textBoxSM3.Name = "textBoxSM3";
-            this.textBoxSM3.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSM3.TabIndex = 25;
-            // 
-            // labelRDSEED
-            // 
-            this.labelRDSEED.AutoSize = true;
-            this.labelRDSEED.Location = new System.Drawing.Point(6, 74);
-            this.labelRDSEED.Name = "labelRDSEED";
-            this.labelRDSEED.Size = new System.Drawing.Size(316, 13);
-            this.labelRDSEED.TabIndex = 24;
-            this.labelRDSEED.Text = "RDSEED (Read Seed Instruction,  Intel Secure Key Technology):";
-            // 
-            // textBoxRDSEED
-            // 
-            this.textBoxRDSEED.Location = new System.Drawing.Point(412, 71);
-            this.textBoxRDSEED.Name = "textBoxRDSEED";
-            this.textBoxRDSEED.Size = new System.Drawing.Size(100, 20);
-            this.textBoxRDSEED.TabIndex = 23;
-            // 
-            // labelPadLock
-            // 
-            this.labelPadLock.AutoSize = true;
-            this.labelPadLock.Location = new System.Drawing.Point(6, 230);
-            this.labelPadLock.Name = "labelPadLock";
-            this.labelPadLock.Size = new System.Drawing.Size(212, 13);
-            this.labelPadLock.TabIndex = 22;
-            this.labelPadLock.Text = "PadLock Instructions (VIA/Zhaoxin) (2003):";
-            // 
-            // textBoxPadLock
-            // 
-            this.textBoxPadLock.Location = new System.Drawing.Point(412, 227);
-            this.textBoxPadLock.Name = "textBoxPadLock";
-            this.textBoxPadLock.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPadLock.TabIndex = 21;
-            // 
-            // labelKL
-            // 
-            this.labelKL.AutoSize = true;
-            this.labelKL.Location = new System.Drawing.Point(6, 204);
-            this.labelKL.Name = "labelKL";
-            this.labelKL.Size = new System.Drawing.Size(172, 13);
-            this.labelKL.TabIndex = 20;
-            this.labelKL.Text = "KL (Key Locker Instructions) (Intel):";
-            // 
-            // textBoxKL
-            // 
-            this.textBoxKL.Location = new System.Drawing.Point(412, 201);
-            this.textBoxKL.Name = "textBoxKL";
-            this.textBoxKL.Size = new System.Drawing.Size(100, 20);
-            this.textBoxKL.TabIndex = 19;
-            // 
-            // labelSHA
-            // 
-            this.labelSHA.AutoSize = true;
-            this.labelSHA.Location = new System.Drawing.Point(6, 126);
-            this.labelSHA.Name = "labelSHA";
-            this.labelSHA.Size = new System.Drawing.Size(236, 13);
-            this.labelSHA.TabIndex = 14;
-            this.labelSHA.Text = "SHA (Secure Hash Algorithm Extensions) (2013):";
-            // 
-            // textBoxSHA
-            // 
-            this.textBoxSHA.Location = new System.Drawing.Point(412, 123);
-            this.textBoxSHA.Name = "textBoxSHA";
-            this.textBoxSHA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSHA.TabIndex = 13;
-            // 
-            // labelRDRAND
-            // 
-            this.labelRDRAND.AutoSize = true;
-            this.labelRDRAND.Location = new System.Drawing.Point(6, 100);
-            this.labelRDRAND.Name = "labelRDRAND";
-            this.labelRDRAND.Size = new System.Drawing.Size(333, 13);
-            this.labelRDRAND.TabIndex = 12;
-            this.labelRDRAND.Text = "RDRAND (Read Random Instruction,  Intel Secure Key Technology):";
-            // 
-            // textBoxRDRAND
-            // 
-            this.textBoxRDRAND.Location = new System.Drawing.Point(412, 97);
-            this.textBoxRDRAND.Name = "textBoxRDRAND";
-            this.textBoxRDRAND.Size = new System.Drawing.Size(100, 20);
-            this.textBoxRDRAND.TabIndex = 11;
-            // 
-            // labelCLMUL
-            // 
-            this.labelCLMUL.AutoSize = true;
-            this.labelCLMUL.Location = new System.Drawing.Point(6, 48);
-            this.labelCLMUL.Name = "labelCLMUL";
-            this.labelCLMUL.Size = new System.Drawing.Size(296, 13);
-            this.labelCLMUL.TabIndex = 8;
-            this.labelCLMUL.Text = "CLMUL / PCLMULQDQ (Carry-less Multiplication Extensions):";
-            // 
-            // labelAES
-            // 
-            this.labelAES.AutoSize = true;
-            this.labelAES.Location = new System.Drawing.Point(6, 22);
-            this.labelAES.Name = "labelAES";
-            this.labelAES.Size = new System.Drawing.Size(373, 13);
-            this.labelAES.TabIndex = 7;
-            this.labelAES.Text = "AES / AES-NI (Advanced Encryption Standard New Instructions Extensions)):";
-            // 
-            // textBoxCLMUL
-            // 
-            this.textBoxCLMUL.Location = new System.Drawing.Point(412, 45);
-            this.textBoxCLMUL.Name = "textBoxCLMUL";
-            this.textBoxCLMUL.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCLMUL.TabIndex = 6;
-            // 
-            // textBoxAES
-            // 
-            this.textBoxAES.Location = new System.Drawing.Point(412, 19);
-            this.textBoxAES.Name = "textBoxAES";
-            this.textBoxAES.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAES.TabIndex = 5;
             // 
             // tabPageX86VirtualizationInstructions
             // 
@@ -1890,83 +1644,15 @@
             // 
             // groupBoxX86VirtualizationInstructions
             // 
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.labelV8086M);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBoxV8086M);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.labelVIAVT);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBoxVIAVT);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.labelIntelVTX);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBoxIntelVTX);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.labelAMDV);
-            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.textBoxAMDV);
+            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxV8086M);
+            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxVIAVT);
+            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxIntelVTX);
+            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxAMDV);
             this.groupBoxX86VirtualizationInstructions.Location = new System.Drawing.Point(3, 3);
             this.groupBoxX86VirtualizationInstructions.Name = "groupBoxX86VirtualizationInstructions";
             this.groupBoxX86VirtualizationInstructions.Size = new System.Drawing.Size(970, 754);
             this.groupBoxX86VirtualizationInstructions.TabIndex = 0;
             this.groupBoxX86VirtualizationInstructions.TabStop = false;
-            // 
-            // labelV8086M
-            // 
-            this.labelV8086M.AutoSize = true;
-            this.labelV8086M.Location = new System.Drawing.Point(5, 100);
-            this.labelV8086M.Name = "labelV8086M";
-            this.labelV8086M.Size = new System.Drawing.Size(95, 13);
-            this.labelV8086M.TabIndex = 30;
-            this.labelV8086M.Text = "Virtual 8086 mode:";
-            // 
-            // textBoxV8086M
-            // 
-            this.textBoxV8086M.Location = new System.Drawing.Point(411, 97);
-            this.textBoxV8086M.Name = "textBoxV8086M";
-            this.textBoxV8086M.Size = new System.Drawing.Size(100, 20);
-            this.textBoxV8086M.TabIndex = 29;
-            // 
-            // labelVIAVT
-            // 
-            this.labelVIAVT.AutoSize = true;
-            this.labelVIAVT.Location = new System.Drawing.Point(5, 74);
-            this.labelVIAVT.Name = "labelVIAVT";
-            this.labelVIAVT.Size = new System.Drawing.Size(131, 13);
-            this.labelVIAVT.TabIndex = 28;
-            this.labelVIAVT.Text = "VIA virtualization (VIA VT):";
-            // 
-            // textBoxVIAVT
-            // 
-            this.textBoxVIAVT.Location = new System.Drawing.Point(411, 71);
-            this.textBoxVIAVT.Name = "textBoxVIAVT";
-            this.textBoxVIAVT.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVIAVT.TabIndex = 27;
-            // 
-            // labelIntelVTX
-            // 
-            this.labelIntelVTX.AutoSize = true;
-            this.labelIntelVTX.Location = new System.Drawing.Point(5, 48);
-            this.labelIntelVTX.Name = "labelIntelVTX";
-            this.labelIntelVTX.Size = new System.Drawing.Size(225, 13);
-            this.labelIntelVTX.TabIndex = 26;
-            this.labelIntelVTX.Text = "Intel VT-x (VMX / Virtual Machine Extensions):";
-            // 
-            // textBoxIntelVTX
-            // 
-            this.textBoxIntelVTX.Location = new System.Drawing.Point(411, 45);
-            this.textBoxIntelVTX.Name = "textBoxIntelVTX";
-            this.textBoxIntelVTX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIntelVTX.TabIndex = 25;
-            // 
-            // labelAMDV
-            // 
-            this.labelAMDV.AutoSize = true;
-            this.labelAMDV.Location = new System.Drawing.Point(5, 22);
-            this.labelAMDV.Name = "labelAMDV";
-            this.labelAMDV.Size = new System.Drawing.Size(235, 13);
-            this.labelAMDV.TabIndex = 24;
-            this.labelAMDV.Text = "AMD-V (Advanced Micro Devices Virtualization):";
-            // 
-            // textBoxAMDV
-            // 
-            this.textBoxAMDV.Location = new System.Drawing.Point(411, 19);
-            this.textBoxAMDV.Name = "textBoxAMDV";
-            this.textBoxAMDV.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAMDV.TabIndex = 23;
             // 
             // tabPageX86TransactionalMemoryInstructions
             // 
@@ -1980,47 +1666,13 @@
             // 
             // groupBoxx86TransactionalMemoryInstructions
             // 
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.labelASF);
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.textBoxASF);
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.labelTSX);
-            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.textBoxTSX);
+            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.checkBoxASF);
+            this.groupBoxx86TransactionalMemoryInstructions.Controls.Add(this.checkBoxTSX);
             this.groupBoxx86TransactionalMemoryInstructions.Location = new System.Drawing.Point(3, 3);
             this.groupBoxx86TransactionalMemoryInstructions.Name = "groupBoxx86TransactionalMemoryInstructions";
             this.groupBoxx86TransactionalMemoryInstructions.Size = new System.Drawing.Size(970, 754);
             this.groupBoxx86TransactionalMemoryInstructions.TabIndex = 0;
             this.groupBoxx86TransactionalMemoryInstructions.TabStop = false;
-            // 
-            // labelASF
-            // 
-            this.labelASF.AutoSize = true;
-            this.labelASF.Location = new System.Drawing.Point(4, 48);
-            this.labelASF.Name = "labelASF";
-            this.labelASF.Size = new System.Drawing.Size(201, 13);
-            this.labelASF.TabIndex = 40;
-            this.labelASF.Text = "ASF (Advanced Synchronization Facility):";
-            // 
-            // textBoxASF
-            // 
-            this.textBoxASF.Location = new System.Drawing.Point(406, 45);
-            this.textBoxASF.Name = "textBoxASF";
-            this.textBoxASF.Size = new System.Drawing.Size(100, 20);
-            this.textBoxASF.TabIndex = 39;
-            // 
-            // labelTSX
-            // 
-            this.labelTSX.AutoSize = true;
-            this.labelTSX.Location = new System.Drawing.Point(4, 22);
-            this.labelTSX.Name = "labelTSX";
-            this.labelTSX.Size = new System.Drawing.Size(396, 13);
-            this.labelTSX.TabIndex = 38;
-            this.labelTSX.Text = "TSX / TSX-NI (Transactional Synchronization Extensions / TSX New Instructions):";
-            // 
-            // textBoxTSX
-            // 
-            this.textBoxTSX.Location = new System.Drawing.Point(406, 19);
-            this.textBoxTSX.Name = "textBoxTSX";
-            this.textBoxTSX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTSX.TabIndex = 37;
             // 
             // tabPageX86BitManipulation
             // 
@@ -2034,101 +1686,16 @@
             // 
             // groupBoxX86BitManipulationInstructions
             // 
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelTBM);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxTBM);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelABM);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxABM);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelBMI2);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxBMI2);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelBMI1);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxBMI1);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.labelADX);
-            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.textBoxADX);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.checkBoxABM);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.checkBoxTBM);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.checkBoxBMI2);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.checkBoxBMI1);
+            this.groupBoxX86BitManipulationInstructions.Controls.Add(this.checkBoxADX);
             this.groupBoxX86BitManipulationInstructions.Location = new System.Drawing.Point(3, 3);
             this.groupBoxX86BitManipulationInstructions.Name = "groupBoxX86BitManipulationInstructions";
             this.groupBoxX86BitManipulationInstructions.Size = new System.Drawing.Size(970, 754);
             this.groupBoxX86BitManipulationInstructions.TabIndex = 0;
             this.groupBoxX86BitManipulationInstructions.TabStop = false;
-            // 
-            // labelTBM
-            // 
-            this.labelTBM.AutoSize = true;
-            this.labelTBM.Location = new System.Drawing.Point(6, 100);
-            this.labelTBM.Name = "labelTBM";
-            this.labelTBM.Size = new System.Drawing.Size(211, 13);
-            this.labelTBM.TabIndex = 50;
-            this.labelTBM.Text = "TBM (Trailing Bit Manipulation Instructions):";
-            // 
-            // textBoxTBM
-            // 
-            this.textBoxTBM.Location = new System.Drawing.Point(408, 97);
-            this.textBoxTBM.Name = "textBoxTBM";
-            this.textBoxTBM.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTBM.TabIndex = 49;
-            // 
-            // labelABM
-            // 
-            this.labelABM.AutoSize = true;
-            this.labelABM.Location = new System.Drawing.Point(6, 126);
-            this.labelABM.Name = "labelABM";
-            this.labelABM.Size = new System.Drawing.Size(169, 13);
-            this.labelABM.TabIndex = 48;
-            this.labelABM.Text = "ABM (Advanced Bit Manipulation):";
-            // 
-            // textBoxABM
-            // 
-            this.textBoxABM.Location = new System.Drawing.Point(408, 123);
-            this.textBoxABM.Name = "textBoxABM";
-            this.textBoxABM.Size = new System.Drawing.Size(100, 20);
-            this.textBoxABM.TabIndex = 47;
-            // 
-            // labelBMI2
-            // 
-            this.labelBMI2.AutoSize = true;
-            this.labelBMI2.Location = new System.Drawing.Point(6, 74);
-            this.labelBMI2.Name = "labelBMI2";
-            this.labelBMI2.Size = new System.Drawing.Size(199, 13);
-            this.labelBMI2.TabIndex = 46;
-            this.labelBMI2.Text = "BMI2 (Bit Manipulation Instruction Set 2):";
-            // 
-            // textBoxBMI2
-            // 
-            this.textBoxBMI2.Location = new System.Drawing.Point(408, 71);
-            this.textBoxBMI2.Name = "textBoxBMI2";
-            this.textBoxBMI2.Size = new System.Drawing.Size(100, 20);
-            this.textBoxBMI2.TabIndex = 45;
-            // 
-            // labelBMI1
-            // 
-            this.labelBMI1.AutoSize = true;
-            this.labelBMI1.Location = new System.Drawing.Point(6, 48);
-            this.labelBMI1.Name = "labelBMI1";
-            this.labelBMI1.Size = new System.Drawing.Size(199, 13);
-            this.labelBMI1.TabIndex = 44;
-            this.labelBMI1.Text = "BMI1 (Bit Manipulation Instruction Set 1):";
-            // 
-            // textBoxBMI1
-            // 
-            this.textBoxBMI1.Location = new System.Drawing.Point(408, 45);
-            this.textBoxBMI1.Name = "textBoxBMI1";
-            this.textBoxBMI1.Size = new System.Drawing.Size(100, 20);
-            this.textBoxBMI1.TabIndex = 43;
-            // 
-            // labelADX
-            // 
-            this.labelADX.AutoSize = true;
-            this.labelADX.Location = new System.Drawing.Point(6, 22);
-            this.labelADX.Name = "labelADX";
-            this.labelADX.Size = new System.Drawing.Size(287, 13);
-            this.labelADX.TabIndex = 42;
-            this.labelADX.Text = "Intel ADX (Multi-Precision Add-Carry Instruction Extensions):";
-            // 
-            // textBoxADX
-            // 
-            this.textBoxADX.Location = new System.Drawing.Point(408, 19);
-            this.textBoxADX.Name = "textBoxADX";
-            this.textBoxADX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxADX.TabIndex = 41;
             // 
             // tabPageX86Instructions
             // 
@@ -2144,20 +1711,13 @@
             // 
             // groupBoxOtherX86DiscontinuedInstructions
             // 
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.label387Clones);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.textBox387Clones);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.labelAliNvidiaDMP);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.textBoxAliNvidiaDMP);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.labelCAndT);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.textBoxCAndT);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.labelVIAAIS);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.textBoxVIAAIS);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.labelCyrixEMMi);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.textBoxCyrixEMMi);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.labelCyrixGeode);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.textBoxCyrixGeode);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.labelNECV);
-            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.textBoxNECV);
+            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.checkBox387Clones);
+            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.checkBoxAliNvidiaDMP);
+            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.checkBoxCAndT);
+            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.checkBoxVIAAIS);
+            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.checkBoxCyrixEMMi);
+            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.checkBoxCyrixGeode);
+            this.groupBoxOtherX86DiscontinuedInstructions.Controls.Add(this.checkBoxNECV);
             this.groupBoxOtherX86DiscontinuedInstructions.Location = new System.Drawing.Point(3, 481);
             this.groupBoxOtherX86DiscontinuedInstructions.Name = "groupBoxOtherX86DiscontinuedInstructions";
             this.groupBoxOtherX86DiscontinuedInstructions.Size = new System.Drawing.Size(525, 264);
@@ -2165,135 +1725,15 @@
             this.groupBoxOtherX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxOtherX86DiscontinuedInstructions.Text = "Other";
             // 
-            // label387Clones
-            // 
-            this.label387Clones.AutoSize = true;
-            this.label387Clones.Location = new System.Drawing.Point(7, 178);
-            this.label387Clones.Name = "label387Clones";
-            this.label387Clones.Size = new System.Drawing.Size(219, 13);
-            this.label387Clones.TabIndex = 42;
-            this.label387Clones.Text = "Instructions present in specific 80387 clones:";
-            // 
-            // textBox387Clones
-            // 
-            this.textBox387Clones.Location = new System.Drawing.Point(409, 175);
-            this.textBox387Clones.Name = "textBox387Clones";
-            this.textBox387Clones.Size = new System.Drawing.Size(100, 20);
-            this.textBox387Clones.TabIndex = 41;
-            // 
-            // labelAliNvidiaDMP
-            // 
-            this.labelAliNvidiaDMP.AutoSize = true;
-            this.labelAliNvidiaDMP.Location = new System.Drawing.Point(7, 152);
-            this.labelAliNvidiaDMP.Name = "labelAliNvidiaDMP";
-            this.labelAliNvidiaDMP.Size = new System.Drawing.Size(265, 13);
-            this.labelAliNvidiaDMP.TabIndex = 40;
-            this.labelAliNvidiaDMP.Text = "Instructions specific to ALi/Nvidia/DM&P M6117 MCUs:";
-            // 
-            // textBoxAliNvidiaDMP
-            // 
-            this.textBoxAliNvidiaDMP.Location = new System.Drawing.Point(409, 149);
-            this.textBoxAliNvidiaDMP.Name = "textBoxAliNvidiaDMP";
-            this.textBoxAliNvidiaDMP.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAliNvidiaDMP.TabIndex = 39;
-            // 
-            // labelCAndT
-            // 
-            this.labelCAndT.AutoSize = true;
-            this.labelCAndT.Location = new System.Drawing.Point(7, 126);
-            this.labelCAndT.Name = "labelCAndT";
-            this.labelCAndT.Size = new System.Drawing.Size(262, 13);
-            this.labelCAndT.TabIndex = 38;
-            this.labelCAndT.Text = "Instructions specific to Chips and Technologies CPUs:";
-            // 
-            // textBoxCAndT
-            // 
-            this.textBoxCAndT.Location = new System.Drawing.Point(409, 123);
-            this.textBoxCAndT.Name = "textBoxCAndT";
-            this.textBoxCAndT.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCAndT.TabIndex = 37;
-            // 
-            // labelVIAAIS
-            // 
-            this.labelVIAAIS.AutoSize = true;
-            this.labelVIAAIS.Location = new System.Drawing.Point(7, 100);
-            this.labelVIAAIS.Name = "labelVIAAIS";
-            this.labelVIAAIS.Size = new System.Drawing.Size(400, 13);
-            this.labelVIAAIS.TabIndex = 36;
-            this.labelVIAAIS.Text = "Instructions specific to VIA Technologies CPUs (VIA AIS) (Alternate Instruction S" +
-    "et):";
-            // 
-            // textBoxVIAAIS
-            // 
-            this.textBoxVIAAIS.Location = new System.Drawing.Point(409, 97);
-            this.textBoxVIAAIS.Name = "textBoxVIAAIS";
-            this.textBoxVIAAIS.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVIAAIS.TabIndex = 35;
-            // 
-            // labelCyrixEMMi
-            // 
-            this.labelCyrixEMMi.AutoSize = true;
-            this.labelCyrixEMMi.Location = new System.Drawing.Point(7, 74);
-            this.labelCyrixEMMi.Name = "labelCyrixEMMi";
-            this.labelCyrixEMMi.Size = new System.Drawing.Size(231, 13);
-            this.labelCyrixEMMi.TabIndex = 34;
-            this.labelCyrixEMMi.Text = "Cyrix EMMI (Extended Multi-Media Instructions):";
-            // 
-            // textBoxCyrixEMMi
-            // 
-            this.textBoxCyrixEMMi.Location = new System.Drawing.Point(409, 71);
-            this.textBoxCyrixEMMi.Name = "textBoxCyrixEMMi";
-            this.textBoxCyrixEMMi.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCyrixEMMi.TabIndex = 33;
-            // 
-            // labelCyrixGeode
-            // 
-            this.labelCyrixGeode.AutoSize = true;
-            this.labelCyrixGeode.Location = new System.Drawing.Point(7, 48);
-            this.labelCyrixGeode.Name = "labelCyrixGeode";
-            this.labelCyrixGeode.Size = new System.Drawing.Size(226, 13);
-            this.labelCyrixGeode.TabIndex = 32;
-            this.labelCyrixGeode.Text = "Instructions specific to Cyrix and Geode CPUs:";
-            // 
-            // textBoxCyrixGeode
-            // 
-            this.textBoxCyrixGeode.Location = new System.Drawing.Point(409, 45);
-            this.textBoxCyrixGeode.Name = "textBoxCyrixGeode";
-            this.textBoxCyrixGeode.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCyrixGeode.TabIndex = 31;
-            // 
-            // labelNECV
-            // 
-            this.labelNECV.AutoSize = true;
-            this.labelNECV.Location = new System.Drawing.Point(7, 22);
-            this.labelNECV.Name = "labelNECV";
-            this.labelNECV.Size = new System.Drawing.Size(234, 13);
-            this.labelNECV.TabIndex = 30;
-            this.labelNECV.Text = "Instructions specific to NEC V-series processors:";
-            // 
-            // textBoxNECV
-            // 
-            this.textBoxNECV.Location = new System.Drawing.Point(409, 19);
-            this.textBoxNECV.Name = "textBoxNECV";
-            this.textBoxNECV.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNECV.TabIndex = 29;
-            // 
             // groupBoxAMDX86DiscontinuedInstructions
             // 
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelLWP);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxLWP);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelFMA4);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxFMA4);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelXOP);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxXOP);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelSSE5Derived);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxSSE5Derived);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.label3DNowPlus);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBox3DNowPlus);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.label3DNow);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBox3DNow);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.labelAm386SMM);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.textBoxAm386SMM);
+            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxLWP);
+            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxFMA4);
+            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxXOP);
+            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxSSE5);
+            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBox3DNowPlus);
+            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBox3DNow);
+            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxAM386SMM);
             this.groupBoxAMDX86DiscontinuedInstructions.Location = new System.Drawing.Point(3, 241);
             this.groupBoxAMDX86DiscontinuedInstructions.Name = "groupBoxAMDX86DiscontinuedInstructions";
             this.groupBoxAMDX86DiscontinuedInstructions.Size = new System.Drawing.Size(525, 234);
@@ -2301,216 +1741,19 @@
             this.groupBoxAMDX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxAMDX86DiscontinuedInstructions.Text = "AMD";
             // 
-            // labelLWP
-            // 
-            this.labelLWP.AutoSize = true;
-            this.labelLWP.Location = new System.Drawing.Point(7, 204);
-            this.labelLWP.Name = "labelLWP";
-            this.labelLWP.Size = new System.Drawing.Size(193, 13);
-            this.labelLWP.TabIndex = 44;
-            this.labelLWP.Text = "LWP (Lightweight Profiling instructions):";
-            // 
-            // textBoxLWP
-            // 
-            this.textBoxLWP.Location = new System.Drawing.Point(409, 201);
-            this.textBoxLWP.Name = "textBoxLWP";
-            this.textBoxLWP.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLWP.TabIndex = 43;
-            // 
-            // labelFMA4
-            // 
-            this.labelFMA4.AutoSize = true;
-            this.labelFMA4.Location = new System.Drawing.Point(7, 152);
-            this.labelFMA4.Name = "labelFMA4";
-            this.labelFMA4.Size = new System.Drawing.Size(145, 13);
-            this.labelFMA4.TabIndex = 40;
-            this.labelFMA4.Text = "FMA4 (Fused Multiply-Add 4):";
-            // 
-            // textBoxFMA4
-            // 
-            this.textBoxFMA4.Location = new System.Drawing.Point(409, 149);
-            this.textBoxFMA4.Name = "textBoxFMA4";
-            this.textBoxFMA4.Size = new System.Drawing.Size(100, 20);
-            this.textBoxFMA4.TabIndex = 39;
-            // 
-            // labelXOP
-            // 
-            this.labelXOP.AutoSize = true;
-            this.labelXOP.Location = new System.Drawing.Point(7, 126);
-            this.labelXOP.Name = "labelXOP";
-            this.labelXOP.Size = new System.Drawing.Size(198, 13);
-            this.labelXOP.TabIndex = 38;
-            this.labelXOP.Text = "XOP (eXtended Operations Instructions):";
-            // 
-            // textBoxXOP
-            // 
-            this.textBoxXOP.Location = new System.Drawing.Point(409, 123);
-            this.textBoxXOP.Name = "textBoxXOP";
-            this.textBoxXOP.Size = new System.Drawing.Size(100, 20);
-            this.textBoxXOP.TabIndex = 37;
-            // 
-            // labelSSE5Derived
-            // 
-            this.labelSSE5Derived.AutoSize = true;
-            this.labelSSE5Derived.Location = new System.Drawing.Point(7, 100);
-            this.labelSSE5Derived.Name = "labelSSE5Derived";
-            this.labelSSE5Derived.Size = new System.Drawing.Size(280, 13);
-            this.labelSSE5Derived.TabIndex = 36;
-            this.labelSSE5Derived.Text = "SSE5 derived instructions (Streaming SIMD Extensions 5):";
-            // 
-            // textBoxSSE5Derived
-            // 
-            this.textBoxSSE5Derived.Location = new System.Drawing.Point(409, 97);
-            this.textBoxSSE5Derived.Name = "textBoxSSE5Derived";
-            this.textBoxSSE5Derived.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSSE5Derived.TabIndex = 35;
-            // 
-            // label3DNowPlus
-            // 
-            this.label3DNowPlus.AutoSize = true;
-            this.label3DNowPlus.Location = new System.Drawing.Point(7, 74);
-            this.label3DNowPlus.Name = "label3DNowPlus";
-            this.label3DNowPlus.Size = new System.Drawing.Size(308, 13);
-            this.label3DNowPlus.TabIndex = 34;
-            this.label3DNowPlus.Text = "3DNow+ / Extended 3DNow! / Enhanced 3DNow! instructions:";
-            // 
-            // textBox3DNowPlus
-            // 
-            this.textBox3DNowPlus.Location = new System.Drawing.Point(409, 71);
-            this.textBox3DNowPlus.Name = "textBox3DNowPlus";
-            this.textBox3DNowPlus.Size = new System.Drawing.Size(100, 20);
-            this.textBox3DNowPlus.TabIndex = 33;
-            // 
-            // label3DNow
-            // 
-            this.label3DNow.AutoSize = true;
-            this.label3DNow.Location = new System.Drawing.Point(7, 48);
-            this.label3DNow.Name = "label3DNow";
-            this.label3DNow.Size = new System.Drawing.Size(105, 13);
-            this.label3DNow.TabIndex = 32;
-            this.label3DNow.Text = "3DNow! instructions:";
-            // 
-            // textBox3DNow
-            // 
-            this.textBox3DNow.Location = new System.Drawing.Point(409, 45);
-            this.textBox3DNow.Name = "textBox3DNow";
-            this.textBox3DNow.Size = new System.Drawing.Size(100, 20);
-            this.textBox3DNow.TabIndex = 31;
-            // 
-            // labelAm386SMM
-            // 
-            this.labelAm386SMM.AutoSize = true;
-            this.labelAm386SMM.Location = new System.Drawing.Point(7, 22);
-            this.labelAm386SMM.Name = "labelAm386SMM";
-            this.labelAm386SMM.Size = new System.Drawing.Size(266, 13);
-            this.labelAm386SMM.TabIndex = 30;
-            this.labelAm386SMM.Text = "Am386 SMM (System Management Mode Instructions):";
-            // 
-            // textBoxAm386SMM
-            // 
-            this.textBoxAm386SMM.Location = new System.Drawing.Point(409, 19);
-            this.textBoxAm386SMM.Name = "textBoxAm386SMM";
-            this.textBoxAm386SMM.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAm386SMM.TabIndex = 29;
-            // 
             // groupBoxIntelX86DiscontinuedInstructions
             // 
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelKLKM);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxKNKM);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelKNC);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxKNC);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelHLE);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxHLE);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelItanium);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxItanium);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.labelI386);
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.textBoxI386);
+            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxKLKM);
+            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxKNC);
+            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxHLE);
+            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxItanium);
+            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxI386);
             this.groupBoxIntelX86DiscontinuedInstructions.Location = new System.Drawing.Point(3, 3);
             this.groupBoxIntelX86DiscontinuedInstructions.Name = "groupBoxIntelX86DiscontinuedInstructions";
             this.groupBoxIntelX86DiscontinuedInstructions.Size = new System.Drawing.Size(525, 232);
             this.groupBoxIntelX86DiscontinuedInstructions.TabIndex = 0;
             this.groupBoxIntelX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxIntelX86DiscontinuedInstructions.Text = "Intel";
-            // 
-            // labelKLKM
-            // 
-            this.labelKLKM.AutoSize = true;
-            this.labelKLKM.Location = new System.Drawing.Point(7, 152);
-            this.labelKLKM.Name = "labelKLKM";
-            this.labelKLKM.Size = new System.Drawing.Size(219, 13);
-            this.labelKLKM.TabIndex = 42;
-            this.labelKLKM.Text = "Knights Landing and Knights Mill instructions:";
-            // 
-            // textBoxKNKM
-            // 
-            this.textBoxKNKM.Location = new System.Drawing.Point(409, 149);
-            this.textBoxKNKM.Name = "textBoxKNKM";
-            this.textBoxKNKM.Size = new System.Drawing.Size(100, 20);
-            this.textBoxKNKM.TabIndex = 41;
-            // 
-            // labelKNC
-            // 
-            this.labelKNC.AutoSize = true;
-            this.labelKNC.Location = new System.Drawing.Point(7, 126);
-            this.labelKNC.Name = "labelKNC";
-            this.labelKNC.Size = new System.Drawing.Size(166, 13);
-            this.labelKNC.TabIndex = 40;
-            this.labelKNC.Text = "KNC (Knights Corner instructions):";
-            // 
-            // textBoxKNC
-            // 
-            this.textBoxKNC.Location = new System.Drawing.Point(409, 123);
-            this.textBoxKNC.Name = "textBoxKNC";
-            this.textBoxKNC.Size = new System.Drawing.Size(100, 20);
-            this.textBoxKNC.TabIndex = 39;
-            // 
-            // labelHLE
-            // 
-            this.labelHLE.AutoSize = true;
-            this.labelHLE.Location = new System.Drawing.Point(7, 74);
-            this.labelHLE.Name = "labelHLE";
-            this.labelHLE.Size = new System.Drawing.Size(212, 13);
-            this.labelHLE.TabIndex = 34;
-            this.labelHLE.Text = "HLE (Hardware Lock Elision) (TSX feature):";
-            // 
-            // textBoxHLE
-            // 
-            this.textBoxHLE.Location = new System.Drawing.Point(409, 71);
-            this.textBoxHLE.Name = "textBoxHLE";
-            this.textBoxHLE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxHLE.TabIndex = 33;
-            // 
-            // labelItanium
-            // 
-            this.labelItanium.AutoSize = true;
-            this.labelItanium.Location = new System.Drawing.Point(7, 48);
-            this.labelItanium.Name = "labelItanium";
-            this.labelItanium.Size = new System.Drawing.Size(44, 13);
-            this.labelItanium.TabIndex = 30;
-            this.labelItanium.Text = "Itanium:";
-            // 
-            // textBoxItanium
-            // 
-            this.textBoxItanium.Location = new System.Drawing.Point(409, 45);
-            this.textBoxItanium.Name = "textBoxItanium";
-            this.textBoxItanium.Size = new System.Drawing.Size(100, 20);
-            this.textBoxItanium.TabIndex = 29;
-            // 
-            // labelI386
-            // 
-            this.labelI386.AutoSize = true;
-            this.labelI386.Location = new System.Drawing.Point(7, 22);
-            this.labelI386.Name = "labelI386";
-            this.labelI386.Size = new System.Drawing.Size(30, 13);
-            this.labelI386.TabIndex = 28;
-            this.labelI386.Text = "i386:";
-            // 
-            // textBoxI386
-            // 
-            this.textBoxI386.Location = new System.Drawing.Point(409, 19);
-            this.textBoxI386.Name = "textBoxI386";
-            this.textBoxI386.Size = new System.Drawing.Size(100, 20);
-            this.textBoxI386.TabIndex = 27;
             // 
             // menuStrip1
             // 
@@ -3275,6 +2518,427 @@
             this.checkBoxAVX102.Text = "AVX10.2 (Advanced Vector Extensions 10.2) (2026)";
             this.checkBoxAVX102.UseVisualStyleBackColor = true;
             // 
+            // checkBoxAES
+            // 
+            this.checkBoxAES.AutoSize = true;
+            this.checkBoxAES.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxAES.Name = "checkBoxAES";
+            this.checkBoxAES.Size = new System.Drawing.Size(389, 17);
+            this.checkBoxAES.TabIndex = 39;
+            this.checkBoxAES.Text = "AES / AES-NI (Advanced Encryption Standard New Instructions Extensions))";
+            this.checkBoxAES.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCLMUL
+            // 
+            this.checkBoxCLMUL.AutoSize = true;
+            this.checkBoxCLMUL.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxCLMUL.Name = "checkBoxCLMUL";
+            this.checkBoxCLMUL.Size = new System.Drawing.Size(312, 17);
+            this.checkBoxCLMUL.TabIndex = 40;
+            this.checkBoxCLMUL.Text = "CLMUL / PCLMULQDQ (Carry-less Multiplication Extensions)";
+            this.checkBoxCLMUL.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRDSEED
+            // 
+            this.checkBoxRDSEED.AutoSize = true;
+            this.checkBoxRDSEED.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxRDSEED.Name = "checkBoxRDSEED";
+            this.checkBoxRDSEED.Size = new System.Drawing.Size(332, 17);
+            this.checkBoxRDSEED.TabIndex = 41;
+            this.checkBoxRDSEED.Text = "RDSEED (Read Seed Instruction,  Intel Secure Key Technology)";
+            this.checkBoxRDSEED.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRDRAND
+            // 
+            this.checkBoxRDRAND.AutoSize = true;
+            this.checkBoxRDRAND.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxRDRAND.Name = "checkBoxRDRAND";
+            this.checkBoxRDRAND.Size = new System.Drawing.Size(349, 17);
+            this.checkBoxRDRAND.TabIndex = 42;
+            this.checkBoxRDRAND.Text = "RDRAND (Read Random Instruction,  Intel Secure Key Technology)";
+            this.checkBoxRDRAND.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSHA
+            // 
+            this.checkBoxSHA.AutoSize = true;
+            this.checkBoxSHA.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxSHA.Name = "checkBoxSHA";
+            this.checkBoxSHA.Size = new System.Drawing.Size(252, 17);
+            this.checkBoxSHA.TabIndex = 43;
+            this.checkBoxSHA.Text = "SHA (Secure Hash Algorithm Extensions) (2013)";
+            this.checkBoxSHA.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSM3
+            // 
+            this.checkBoxSM3.AutoSize = true;
+            this.checkBoxSM3.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxSM3.Name = "checkBoxSM3";
+            this.checkBoxSM3.Size = new System.Drawing.Size(164, 17);
+            this.checkBoxSM3.TabIndex = 44;
+            this.checkBoxSM3.Text = "Hygon CIS instructions (SM3)";
+            this.checkBoxSM3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSM4
+            // 
+            this.checkBoxSM4.AutoSize = true;
+            this.checkBoxSM4.Location = new System.Drawing.Point(6, 157);
+            this.checkBoxSM4.Name = "checkBoxSM4";
+            this.checkBoxSM4.Size = new System.Drawing.Size(164, 17);
+            this.checkBoxSM4.TabIndex = 45;
+            this.checkBoxSM4.Text = "Hygon CIS instructions (SM4)";
+            this.checkBoxSM4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKL
+            // 
+            this.checkBoxKL.AutoSize = true;
+            this.checkBoxKL.Location = new System.Drawing.Point(6, 180);
+            this.checkBoxKL.Name = "checkBoxKL";
+            this.checkBoxKL.Size = new System.Drawing.Size(188, 17);
+            this.checkBoxKL.TabIndex = 46;
+            this.checkBoxKL.Text = "KL (Key Locker Instructions) (Intel)";
+            this.checkBoxKL.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPadLock
+            // 
+            this.checkBoxPadLock.AutoSize = true;
+            this.checkBoxPadLock.Location = new System.Drawing.Point(6, 203);
+            this.checkBoxPadLock.Name = "checkBoxPadLock";
+            this.checkBoxPadLock.Size = new System.Drawing.Size(228, 17);
+            this.checkBoxPadLock.TabIndex = 47;
+            this.checkBoxPadLock.Text = "PadLock Instructions (VIA/Zhaoxin) (2003)";
+            this.checkBoxPadLock.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMPX
+            // 
+            this.checkBoxMPX.AutoSize = true;
+            this.checkBoxMPX.Location = new System.Drawing.Point(6, 226);
+            this.checkBoxMPX.Name = "checkBoxMPX";
+            this.checkBoxMPX.Size = new System.Drawing.Size(200, 17);
+            this.checkBoxMPX.TabIndex = 48;
+            this.checkBoxMPX.Text = "MPX (Memory Protection Extensions)";
+            this.checkBoxMPX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSGX
+            // 
+            this.checkBoxSGX.AutoSize = true;
+            this.checkBoxSGX.Location = new System.Drawing.Point(6, 249);
+            this.checkBoxSGX.Name = "checkBoxSGX";
+            this.checkBoxSGX.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxSGX.TabIndex = 49;
+            this.checkBoxSGX.Text = "SGX (Software Guard Extensions)";
+            this.checkBoxSGX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTDX
+            // 
+            this.checkBoxTDX.AutoSize = true;
+            this.checkBoxTDX.Location = new System.Drawing.Point(6, 272);
+            this.checkBoxTDX.Name = "checkBoxTDX";
+            this.checkBoxTDX.Size = new System.Drawing.Size(174, 17);
+            this.checkBoxTDX.TabIndex = 50;
+            this.checkBoxTDX.Text = "TDX (Trust Domain Extensions)";
+            this.checkBoxTDX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAMDV
+            // 
+            this.checkBoxAMDV.AutoSize = true;
+            this.checkBoxAMDV.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxAMDV.Name = "checkBoxAMDV";
+            this.checkBoxAMDV.Size = new System.Drawing.Size(251, 17);
+            this.checkBoxAMDV.TabIndex = 31;
+            this.checkBoxAMDV.Text = "AMD-V (Advanced Micro Devices Virtualization)";
+            this.checkBoxAMDV.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxIntelVTX
+            // 
+            this.checkBoxIntelVTX.AutoSize = true;
+            this.checkBoxIntelVTX.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxIntelVTX.Name = "checkBoxIntelVTX";
+            this.checkBoxIntelVTX.Size = new System.Drawing.Size(241, 17);
+            this.checkBoxIntelVTX.TabIndex = 32;
+            this.checkBoxIntelVTX.Text = "Intel VT-x (VMX / Virtual Machine Extensions)";
+            this.checkBoxIntelVTX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVIAVT
+            // 
+            this.checkBoxVIAVT.AutoSize = true;
+            this.checkBoxVIAVT.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxVIAVT.Name = "checkBoxVIAVT";
+            this.checkBoxVIAVT.Size = new System.Drawing.Size(147, 17);
+            this.checkBoxVIAVT.TabIndex = 33;
+            this.checkBoxVIAVT.Text = "VIA virtualization (VIA VT)";
+            this.checkBoxVIAVT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxV8086M
+            // 
+            this.checkBoxV8086M.AutoSize = true;
+            this.checkBoxV8086M.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxV8086M.Name = "checkBoxV8086M";
+            this.checkBoxV8086M.Size = new System.Drawing.Size(111, 17);
+            this.checkBoxV8086M.TabIndex = 34;
+            this.checkBoxV8086M.Text = "Virtual 8086 mode";
+            this.checkBoxV8086M.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTSX
+            // 
+            this.checkBoxTSX.AutoSize = true;
+            this.checkBoxTSX.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxTSX.Name = "checkBoxTSX";
+            this.checkBoxTSX.Size = new System.Drawing.Size(412, 17);
+            this.checkBoxTSX.TabIndex = 41;
+            this.checkBoxTSX.Text = "TSX / TSX-NI (Transactional Synchronization Extensions / TSX New Instructions)";
+            this.checkBoxTSX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxASF
+            // 
+            this.checkBoxASF.AutoSize = true;
+            this.checkBoxASF.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxASF.Name = "checkBoxASF";
+            this.checkBoxASF.Size = new System.Drawing.Size(217, 17);
+            this.checkBoxASF.TabIndex = 42;
+            this.checkBoxASF.Text = "ASF (Advanced Synchronization Facility)";
+            this.checkBoxASF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxADX
+            // 
+            this.checkBoxADX.AutoSize = true;
+            this.checkBoxADX.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxADX.Name = "checkBoxADX";
+            this.checkBoxADX.Size = new System.Drawing.Size(303, 17);
+            this.checkBoxADX.TabIndex = 51;
+            this.checkBoxADX.Text = "Intel ADX (Multi-Precision Add-Carry Instruction Extensions)";
+            this.checkBoxADX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBMI1
+            // 
+            this.checkBoxBMI1.AutoSize = true;
+            this.checkBoxBMI1.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxBMI1.Name = "checkBoxBMI1";
+            this.checkBoxBMI1.Size = new System.Drawing.Size(215, 17);
+            this.checkBoxBMI1.TabIndex = 52;
+            this.checkBoxBMI1.Text = "BMI1 (Bit Manipulation Instruction Set 1)";
+            this.checkBoxBMI1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBMI2
+            // 
+            this.checkBoxBMI2.AutoSize = true;
+            this.checkBoxBMI2.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxBMI2.Name = "checkBoxBMI2";
+            this.checkBoxBMI2.Size = new System.Drawing.Size(215, 17);
+            this.checkBoxBMI2.TabIndex = 53;
+            this.checkBoxBMI2.Text = "BMI2 (Bit Manipulation Instruction Set 2)";
+            this.checkBoxBMI2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTBM
+            // 
+            this.checkBoxTBM.AutoSize = true;
+            this.checkBoxTBM.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxTBM.Name = "checkBoxTBM";
+            this.checkBoxTBM.Size = new System.Drawing.Size(227, 17);
+            this.checkBoxTBM.TabIndex = 54;
+            this.checkBoxTBM.Text = "TBM (Trailing Bit Manipulation Instructions)";
+            this.checkBoxTBM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxABM
+            // 
+            this.checkBoxABM.AutoSize = true;
+            this.checkBoxABM.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxABM.Name = "checkBoxABM";
+            this.checkBoxABM.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxABM.TabIndex = 55;
+            this.checkBoxABM.Text = "ABM (Advanced Bit Manipulation)";
+            this.checkBoxABM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxI386
+            // 
+            this.checkBoxI386.AutoSize = true;
+            this.checkBoxI386.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxI386.Name = "checkBoxI386";
+            this.checkBoxI386.Size = new System.Drawing.Size(46, 17);
+            this.checkBoxI386.TabIndex = 0;
+            this.checkBoxI386.Text = "i386";
+            this.checkBoxI386.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxItanium
+            // 
+            this.checkBoxItanium.AutoSize = true;
+            this.checkBoxItanium.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxItanium.Name = "checkBoxItanium";
+            this.checkBoxItanium.Size = new System.Drawing.Size(60, 17);
+            this.checkBoxItanium.TabIndex = 1;
+            this.checkBoxItanium.Text = "Itanium";
+            this.checkBoxItanium.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHLE
+            // 
+            this.checkBoxHLE.AutoSize = true;
+            this.checkBoxHLE.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxHLE.Name = "checkBoxHLE";
+            this.checkBoxHLE.Size = new System.Drawing.Size(228, 17);
+            this.checkBoxHLE.TabIndex = 2;
+            this.checkBoxHLE.Text = "HLE (Hardware Lock Elision) (TSX feature)";
+            this.checkBoxHLE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKNC
+            // 
+            this.checkBoxKNC.AutoSize = true;
+            this.checkBoxKNC.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxKNC.Name = "checkBoxKNC";
+            this.checkBoxKNC.Size = new System.Drawing.Size(182, 17);
+            this.checkBoxKNC.TabIndex = 3;
+            this.checkBoxKNC.Text = "KNC (Knights Corner instructions)";
+            this.checkBoxKNC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKLKM
+            // 
+            this.checkBoxKLKM.AutoSize = true;
+            this.checkBoxKLKM.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxKLKM.Name = "checkBoxKLKM";
+            this.checkBoxKLKM.Size = new System.Drawing.Size(235, 17);
+            this.checkBoxKLKM.TabIndex = 4;
+            this.checkBoxKLKM.Text = "Knights Landing and Knights Mill instructions";
+            this.checkBoxKLKM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAM386SMM
+            // 
+            this.checkBoxAM386SMM.AutoSize = true;
+            this.checkBoxAM386SMM.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxAM386SMM.Name = "checkBoxAM386SMM";
+            this.checkBoxAM386SMM.Size = new System.Drawing.Size(282, 17);
+            this.checkBoxAM386SMM.TabIndex = 0;
+            this.checkBoxAM386SMM.Text = "Am386 SMM (System Management Mode Instructions)";
+            this.checkBoxAM386SMM.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3DNow
+            // 
+            this.checkBox3DNow.AutoSize = true;
+            this.checkBox3DNow.Location = new System.Drawing.Point(6, 42);
+            this.checkBox3DNow.Name = "checkBox3DNow";
+            this.checkBox3DNow.Size = new System.Drawing.Size(121, 17);
+            this.checkBox3DNow.TabIndex = 1;
+            this.checkBox3DNow.Text = "3DNow! instructions";
+            this.checkBox3DNow.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3DNowPlus
+            // 
+            this.checkBox3DNowPlus.AutoSize = true;
+            this.checkBox3DNowPlus.Location = new System.Drawing.Point(6, 65);
+            this.checkBox3DNowPlus.Name = "checkBox3DNowPlus";
+            this.checkBox3DNowPlus.Size = new System.Drawing.Size(324, 17);
+            this.checkBox3DNowPlus.TabIndex = 2;
+            this.checkBox3DNowPlus.Text = "3DNow+ / Extended 3DNow! / Enhanced 3DNow! instructions";
+            this.checkBox3DNowPlus.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSE5
+            // 
+            this.checkBoxSSE5.AutoSize = true;
+            this.checkBoxSSE5.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxSSE5.Name = "checkBoxSSE5";
+            this.checkBoxSSE5.Size = new System.Drawing.Size(296, 17);
+            this.checkBoxSSE5.TabIndex = 3;
+            this.checkBoxSSE5.Text = "SSE5 derived instructions (Streaming SIMD Extensions 5)";
+            this.checkBoxSSE5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxXOP
+            // 
+            this.checkBoxXOP.AutoSize = true;
+            this.checkBoxXOP.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxXOP.Name = "checkBoxXOP";
+            this.checkBoxXOP.Size = new System.Drawing.Size(214, 17);
+            this.checkBoxXOP.TabIndex = 4;
+            this.checkBoxXOP.Text = "XOP (eXtended Operations Instructions)";
+            this.checkBoxXOP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFMA4
+            // 
+            this.checkBoxFMA4.AutoSize = true;
+            this.checkBoxFMA4.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxFMA4.Name = "checkBoxFMA4";
+            this.checkBoxFMA4.Size = new System.Drawing.Size(161, 17);
+            this.checkBoxFMA4.TabIndex = 5;
+            this.checkBoxFMA4.Text = "FMA4 (Fused Multiply-Add 4)";
+            this.checkBoxFMA4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxLWP
+            // 
+            this.checkBoxLWP.AutoSize = true;
+            this.checkBoxLWP.Location = new System.Drawing.Point(6, 157);
+            this.checkBoxLWP.Name = "checkBoxLWP";
+            this.checkBoxLWP.Size = new System.Drawing.Size(209, 17);
+            this.checkBoxLWP.TabIndex = 6;
+            this.checkBoxLWP.Text = "LWP (Lightweight Profiling instructions)";
+            this.checkBoxLWP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxNECV
+            // 
+            this.checkBoxNECV.AutoSize = true;
+            this.checkBoxNECV.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxNECV.Name = "checkBoxNECV";
+            this.checkBoxNECV.Size = new System.Drawing.Size(250, 17);
+            this.checkBoxNECV.TabIndex = 0;
+            this.checkBoxNECV.Text = "Instructions specific to NEC V-series processors";
+            this.checkBoxNECV.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCyrixGeode
+            // 
+            this.checkBoxCyrixGeode.AutoSize = true;
+            this.checkBoxCyrixGeode.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxCyrixGeode.Name = "checkBoxCyrixGeode";
+            this.checkBoxCyrixGeode.Size = new System.Drawing.Size(242, 17);
+            this.checkBoxCyrixGeode.TabIndex = 1;
+            this.checkBoxCyrixGeode.Text = "Instructions specific to Cyrix and Geode CPUs";
+            this.checkBoxCyrixGeode.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCyrixEMMi
+            // 
+            this.checkBoxCyrixEMMi.AutoSize = true;
+            this.checkBoxCyrixEMMi.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxCyrixEMMi.Name = "checkBoxCyrixEMMi";
+            this.checkBoxCyrixEMMi.Size = new System.Drawing.Size(247, 17);
+            this.checkBoxCyrixEMMi.TabIndex = 2;
+            this.checkBoxCyrixEMMi.Text = "Cyrix EMMI (Extended Multi-Media Instructions)";
+            this.checkBoxCyrixEMMi.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVIAAIS
+            // 
+            this.checkBoxVIAAIS.AutoSize = true;
+            this.checkBoxVIAAIS.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxVIAAIS.Name = "checkBoxVIAAIS";
+            this.checkBoxVIAAIS.Size = new System.Drawing.Size(416, 17);
+            this.checkBoxVIAAIS.TabIndex = 3;
+            this.checkBoxVIAAIS.Text = "Instructions specific to VIA Technologies CPUs (VIA AIS) (Alternate Instruction S" +
+    "et)";
+            this.checkBoxVIAAIS.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCAndT
+            // 
+            this.checkBoxCAndT.AutoSize = true;
+            this.checkBoxCAndT.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxCAndT.Name = "checkBoxCAndT";
+            this.checkBoxCAndT.Size = new System.Drawing.Size(278, 17);
+            this.checkBoxCAndT.TabIndex = 4;
+            this.checkBoxCAndT.Text = "Instructions specific to Chips and Technologies CPUs";
+            this.checkBoxCAndT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAliNvidiaDMP
+            // 
+            this.checkBoxAliNvidiaDMP.AutoSize = true;
+            this.checkBoxAliNvidiaDMP.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxAliNvidiaDMP.Name = "checkBoxAliNvidiaDMP";
+            this.checkBoxAliNvidiaDMP.Size = new System.Drawing.Size(305, 17);
+            this.checkBoxAliNvidiaDMP.TabIndex = 5;
+            this.checkBoxAliNvidiaDMP.Text = "Instructions specific to ALi/Nvidia/DM and P M6117 MCUs";
+            this.checkBoxAliNvidiaDMP.UseVisualStyleBackColor = true;
+            // 
+            // checkBox387Clones
+            // 
+            this.checkBox387Clones.AutoSize = true;
+            this.checkBox387Clones.Location = new System.Drawing.Point(6, 157);
+            this.checkBox387Clones.Name = "checkBox387Clones";
+            this.checkBox387Clones.Size = new System.Drawing.Size(235, 17);
+            this.checkBox387Clones.TabIndex = 6;
+            this.checkBox387Clones.Text = "Instructions present in specific 80387 clones";
+            this.checkBox387Clones.UseVisualStyleBackColor = true;
+            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3455,96 +3119,12 @@
         private System.Windows.Forms.GroupBox groupBoxX86CryptographicInstructions;
         private System.Windows.Forms.GroupBox groupBoxX86VirtualizationInstructions;
         private System.Windows.Forms.GroupBox groupBoxIntelX86DiscontinuedInstructions;
-        private System.Windows.Forms.Label labelCLMUL;
-        private System.Windows.Forms.Label labelAES;
-        private System.Windows.Forms.TextBox textBoxCLMUL;
-        private System.Windows.Forms.TextBox textBoxAES;
-        private System.Windows.Forms.Label labelRDRAND;
-        private System.Windows.Forms.TextBox textBoxRDRAND;
-        private System.Windows.Forms.Label labelSHA;
-        private System.Windows.Forms.TextBox textBoxSHA;
-        private System.Windows.Forms.Label labelKL;
-        private System.Windows.Forms.TextBox textBoxKL;
-        private System.Windows.Forms.Label labelPadLock;
-        private System.Windows.Forms.TextBox textBoxPadLock;
-        private System.Windows.Forms.Label labelIntelVTX;
-        private System.Windows.Forms.TextBox textBoxIntelVTX;
-        private System.Windows.Forms.Label labelAMDV;
-        private System.Windows.Forms.TextBox textBoxAMDV;
-        private System.Windows.Forms.Label labelItanium;
-        private System.Windows.Forms.TextBox textBoxItanium;
-        private System.Windows.Forms.Label labelI386;
-        private System.Windows.Forms.TextBox textBoxI386;
-        private System.Windows.Forms.Label labelHLE;
-        private System.Windows.Forms.TextBox textBoxHLE;
-        private System.Windows.Forms.Label labelKNC;
-        private System.Windows.Forms.TextBox textBoxKNC;
-        private System.Windows.Forms.Label labelKLKM;
-        private System.Windows.Forms.TextBox textBoxKNKM;
         private System.Windows.Forms.GroupBox groupBoxAMDX86DiscontinuedInstructions;
-        private System.Windows.Forms.Label labelAm386SMM;
-        private System.Windows.Forms.TextBox textBoxAm386SMM;
-        private System.Windows.Forms.Label label3DNow;
-        private System.Windows.Forms.TextBox textBox3DNow;
-        private System.Windows.Forms.Label labelXOP;
-        private System.Windows.Forms.TextBox textBoxXOP;
-        private System.Windows.Forms.Label labelSSE5Derived;
-        private System.Windows.Forms.TextBox textBoxSSE5Derived;
-        private System.Windows.Forms.Label label3DNowPlus;
-        private System.Windows.Forms.TextBox textBox3DNowPlus;
-        private System.Windows.Forms.Label labelLWP;
-        private System.Windows.Forms.TextBox textBoxLWP;
-        private System.Windows.Forms.Label labelFMA4;
-        private System.Windows.Forms.TextBox textBoxFMA4;
         private System.Windows.Forms.GroupBox groupBoxOtherX86DiscontinuedInstructions;
-        private System.Windows.Forms.Label labelCyrixGeode;
-        private System.Windows.Forms.TextBox textBoxCyrixGeode;
-        private System.Windows.Forms.Label labelNECV;
-        private System.Windows.Forms.TextBox textBoxNECV;
-        private System.Windows.Forms.Label labelVIAAIS;
-        private System.Windows.Forms.TextBox textBoxVIAAIS;
-        private System.Windows.Forms.Label labelCyrixEMMi;
-        private System.Windows.Forms.TextBox textBoxCyrixEMMi;
-        private System.Windows.Forms.Label label387Clones;
-        private System.Windows.Forms.TextBox textBox387Clones;
-        private System.Windows.Forms.Label labelAliNvidiaDMP;
-        private System.Windows.Forms.TextBox textBoxAliNvidiaDMP;
-        private System.Windows.Forms.Label labelCAndT;
-        private System.Windows.Forms.TextBox textBoxCAndT;
-        private System.Windows.Forms.Label labelVIAVT;
-        private System.Windows.Forms.TextBox textBoxVIAVT;
-        private System.Windows.Forms.Label labelV8086M;
-        private System.Windows.Forms.TextBox textBoxV8086M;
-        private System.Windows.Forms.Label labelRDSEED;
-        private System.Windows.Forms.TextBox textBoxRDSEED;
-        private System.Windows.Forms.Label labelSM3;
-        private System.Windows.Forms.TextBox textBoxSM3;
-        private System.Windows.Forms.Label labelSM4;
-        private System.Windows.Forms.TextBox textBoxSM4;
-        private System.Windows.Forms.Label labelTDX;
-        private System.Windows.Forms.TextBox textBoxTDX;
-        private System.Windows.Forms.Label labelSGX;
-        private System.Windows.Forms.TextBox textBoxSGX;
-        private System.Windows.Forms.Label labelMPX;
-        private System.Windows.Forms.TextBox textBoxMPX;
         private System.Windows.Forms.TabPage tabPageX86TransactionalMemoryInstructions;
         private System.Windows.Forms.GroupBox groupBoxx86TransactionalMemoryInstructions;
-        private System.Windows.Forms.Label labelTSX;
-        private System.Windows.Forms.TextBox textBoxTSX;
-        private System.Windows.Forms.Label labelASF;
-        private System.Windows.Forms.TextBox textBoxASF;
         private System.Windows.Forms.TabPage tabPageX86BitManipulation;
         private System.Windows.Forms.GroupBox groupBoxX86BitManipulationInstructions;
-        private System.Windows.Forms.Label labelBMI1;
-        private System.Windows.Forms.TextBox textBoxBMI1;
-        private System.Windows.Forms.Label labelADX;
-        private System.Windows.Forms.TextBox textBoxADX;
-        private System.Windows.Forms.Label labelABM;
-        private System.Windows.Forms.TextBox textBoxABM;
-        private System.Windows.Forms.Label labelBMI2;
-        private System.Windows.Forms.TextBox textBoxBMI2;
-        private System.Windows.Forms.Label labelTBM;
-        private System.Windows.Forms.TextBox textBoxTBM;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
@@ -3632,6 +3212,48 @@
         private System.Windows.Forms.CheckBox checkBoxAVX512BITALG;
         private System.Windows.Forms.CheckBox checkBoxAVX512VBMI2;
         private System.Windows.Forms.CheckBox checkBoxAVX512VPOPCNTDQ;
+        private System.Windows.Forms.CheckBox checkBoxTDX;
+        private System.Windows.Forms.CheckBox checkBoxSGX;
+        private System.Windows.Forms.CheckBox checkBoxMPX;
+        private System.Windows.Forms.CheckBox checkBoxPadLock;
+        private System.Windows.Forms.CheckBox checkBoxKL;
+        private System.Windows.Forms.CheckBox checkBoxSM4;
+        private System.Windows.Forms.CheckBox checkBoxSM3;
+        private System.Windows.Forms.CheckBox checkBoxSHA;
+        private System.Windows.Forms.CheckBox checkBoxRDRAND;
+        private System.Windows.Forms.CheckBox checkBoxRDSEED;
+        private System.Windows.Forms.CheckBox checkBoxCLMUL;
+        private System.Windows.Forms.CheckBox checkBoxAES;
+        private System.Windows.Forms.CheckBox checkBoxV8086M;
+        private System.Windows.Forms.CheckBox checkBoxVIAVT;
+        private System.Windows.Forms.CheckBox checkBoxIntelVTX;
+        private System.Windows.Forms.CheckBox checkBoxAMDV;
+        private System.Windows.Forms.CheckBox checkBoxASF;
+        private System.Windows.Forms.CheckBox checkBoxTSX;
+        private System.Windows.Forms.CheckBox checkBoxABM;
+        private System.Windows.Forms.CheckBox checkBoxTBM;
+        private System.Windows.Forms.CheckBox checkBoxBMI2;
+        private System.Windows.Forms.CheckBox checkBoxBMI1;
+        private System.Windows.Forms.CheckBox checkBoxADX;
+        private System.Windows.Forms.CheckBox checkBoxHLE;
+        private System.Windows.Forms.CheckBox checkBoxItanium;
+        private System.Windows.Forms.CheckBox checkBoxI386;
+        private System.Windows.Forms.CheckBox checkBoxKNC;
+        private System.Windows.Forms.CheckBox checkBoxKLKM;
+        private System.Windows.Forms.CheckBox checkBoxXOP;
+        private System.Windows.Forms.CheckBox checkBoxSSE5;
+        private System.Windows.Forms.CheckBox checkBox3DNowPlus;
+        private System.Windows.Forms.CheckBox checkBox3DNow;
+        private System.Windows.Forms.CheckBox checkBoxAM386SMM;
+        private System.Windows.Forms.CheckBox checkBoxLWP;
+        private System.Windows.Forms.CheckBox checkBoxFMA4;
+        private System.Windows.Forms.CheckBox checkBoxCyrixEMMi;
+        private System.Windows.Forms.CheckBox checkBoxCyrixGeode;
+        private System.Windows.Forms.CheckBox checkBoxNECV;
+        private System.Windows.Forms.CheckBox checkBox387Clones;
+        private System.Windows.Forms.CheckBox checkBoxAliNvidiaDMP;
+        private System.Windows.Forms.CheckBox checkBoxCAndT;
+        private System.Windows.Forms.CheckBox checkBoxVIAAIS;
     }
 }
 
