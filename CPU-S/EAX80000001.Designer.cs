@@ -54,56 +54,56 @@
             this.checkBoxEAX80000001EDX11_SYSCALL = new System.Windows.Forms.CheckBox();
             this.checkBoxEAX80000001_EDX12_MTRR = new System.Windows.Forms.CheckBox();
             this.checkBoxEAX80000001_EDX13_PGE = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.checkBox29 = new System.Windows.Forms.CheckBox();
-            this.checkBox30 = new System.Windows.Forms.CheckBox();
-            this.checkBox31 = new System.Windows.Forms.CheckBox();
-            this.checkBox32 = new System.Windows.Forms.CheckBox();
-            this.checkBox33 = new System.Windows.Forms.CheckBox();
-            this.checkBox34 = new System.Windows.Forms.CheckBox();
-            this.checkBox35 = new System.Windows.Forms.CheckBox();
-            this.checkBox36 = new System.Windows.Forms.CheckBox();
-            this.checkBox37 = new System.Windows.Forms.CheckBox();
-            this.checkBox38 = new System.Windows.Forms.CheckBox();
-            this.checkBox39 = new System.Windows.Forms.CheckBox();
-            this.checkBox40 = new System.Windows.Forms.CheckBox();
-            this.checkBox41 = new System.Windows.Forms.CheckBox();
-            this.checkBox42 = new System.Windows.Forms.CheckBox();
-            this.checkBox43 = new System.Windows.Forms.CheckBox();
-            this.checkBox44 = new System.Windows.Forms.CheckBox();
-            this.checkBox45 = new System.Windows.Forms.CheckBox();
-            this.checkBox46 = new System.Windows.Forms.CheckBox();
-            this.checkBox47 = new System.Windows.Forms.CheckBox();
-            this.checkBox48 = new System.Windows.Forms.CheckBox();
-            this.checkBox49 = new System.Windows.Forms.CheckBox();
-            this.checkBox50 = new System.Windows.Forms.CheckBox();
-            this.checkBox51 = new System.Windows.Forms.CheckBox();
-            this.checkBox52 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX14_MCA = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX15_CMOV = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX16_PAT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX21_SEM = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX20_NX = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX19_ECC = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX18_ECC_K7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX17_PSE36 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX31_3DNOW = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX29_LM = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX28_REX32 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX27_RDTSCP = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX26_PDPE1GB = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX24_FXSR = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX23_MMX = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001_EDX22_MMXEXT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX19_NODEID_MSR = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX18_CVT16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX17_TCE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX16_FMA4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX15_LWP = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX14_TBM0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX13_WDT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX12_SKINIT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX11_XOP = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX10_IBS = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX9_OSVW = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX6_SSE4A = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX3_EXTAPIC = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX2_SVM = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX0_LAHF_LM = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX31_Reserved = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX29_MONITORX = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX27_PERFTSC = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX26_DBX = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX25_STREAPERFMON = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX22_TOPOEXT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX21_TBM = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX80000001ECX20_Reserved = new System.Windows.Forms.CheckBox();
             this.groupBoxEBXBits = new System.Windows.Forms.GroupBox();
             this.textBoxEAX80000001EBX0_7_BrandIndex = new System.Windows.Forms.TextBox();
             this.labelEAX80000001EBX0_7_BrandIndex = new System.Windows.Forms.Label();
@@ -134,8 +134,8 @@
             this.labelEAX80000001EAX_CalculatedProcessorModel = new System.Windows.Forms.Label();
             this.labelEAX80000001EAX20_27_ExtendedFamilyId = new System.Windows.Forms.Label();
             this.textBoxEAX80000001EAX20_27_ExtendedFamilyId = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelEAX80000001ECX18_CVT16 = new System.Windows.Forms.Label();
+            this.labelEAX80000001ECX28_PCX_L2_PCX_L3 = new System.Windows.Forms.Label();
             this.groupBoxEAX80000001.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEDXBits.SuspendLayout();
@@ -240,24 +240,24 @@
             // 
             // groupBoxEDXBits
             // 
-            this.groupBoxEDXBits.Controls.Add(this.checkBox11);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox12);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox13);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox14);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox15);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox16);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox17);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox18);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox19);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox20);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox6);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox7);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox8);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox9);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox10);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox5);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox4);
-            this.groupBoxEDXBits.Controls.Add(this.checkBox3);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX31_3DNOW);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX30_3DNOWEXT);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX29_LM);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX28_REX32);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX27_RDTSCP);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX26_PDPE1GB);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX25_FXSR_OPT);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX24_FXSR);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX23_MMX);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX22_MMXEXT);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX21_SEM);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX20_NX);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX19_ECC);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX18_ECC_K7);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX17_PSE36);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX16_PAT);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX15_CMOV);
+            this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX14_MCA);
             this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX13_PGE);
             this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001_EDX12_MTRR);
             this.groupBoxEDXBits.Controls.Add(this.checkBoxEAX80000001EDX11_SYSCALL);
@@ -391,40 +391,40 @@
             // 
             // groupBoxECXBits
             // 
-            this.groupBoxECXBits.Controls.Add(this.label2);
-            this.groupBoxECXBits.Controls.Add(this.label1);
-            this.groupBoxECXBits.Controls.Add(this.checkBox41);
-            this.groupBoxECXBits.Controls.Add(this.checkBox42);
-            this.groupBoxECXBits.Controls.Add(this.checkBox43);
-            this.groupBoxECXBits.Controls.Add(this.checkBox44);
-            this.groupBoxECXBits.Controls.Add(this.checkBox45);
-            this.groupBoxECXBits.Controls.Add(this.checkBox46);
-            this.groupBoxECXBits.Controls.Add(this.checkBox47);
-            this.groupBoxECXBits.Controls.Add(this.checkBox48);
-            this.groupBoxECXBits.Controls.Add(this.checkBox49);
-            this.groupBoxECXBits.Controls.Add(this.checkBox50);
-            this.groupBoxECXBits.Controls.Add(this.checkBox51);
-            this.groupBoxECXBits.Controls.Add(this.checkBox52);
-            this.groupBoxECXBits.Controls.Add(this.checkBox21);
-            this.groupBoxECXBits.Controls.Add(this.checkBox22);
-            this.groupBoxECXBits.Controls.Add(this.checkBox23);
-            this.groupBoxECXBits.Controls.Add(this.checkBox24);
-            this.groupBoxECXBits.Controls.Add(this.checkBox25);
-            this.groupBoxECXBits.Controls.Add(this.checkBox26);
-            this.groupBoxECXBits.Controls.Add(this.checkBox27);
-            this.groupBoxECXBits.Controls.Add(this.checkBox28);
-            this.groupBoxECXBits.Controls.Add(this.checkBox29);
-            this.groupBoxECXBits.Controls.Add(this.checkBox30);
-            this.groupBoxECXBits.Controls.Add(this.checkBox31);
-            this.groupBoxECXBits.Controls.Add(this.checkBox32);
-            this.groupBoxECXBits.Controls.Add(this.checkBox33);
-            this.groupBoxECXBits.Controls.Add(this.checkBox34);
-            this.groupBoxECXBits.Controls.Add(this.checkBox35);
-            this.groupBoxECXBits.Controls.Add(this.checkBox36);
-            this.groupBoxECXBits.Controls.Add(this.checkBox37);
-            this.groupBoxECXBits.Controls.Add(this.checkBox38);
-            this.groupBoxECXBits.Controls.Add(this.checkBox39);
-            this.groupBoxECXBits.Controls.Add(this.checkBox40);
+            this.groupBoxECXBits.Controls.Add(this.labelEAX80000001ECX28_PCX_L2_PCX_L3);
+            this.groupBoxECXBits.Controls.Add(this.labelEAX80000001ECX18_CVT16);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX31_Reserved);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX29_MONITORX);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX27_PERFTSC);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX26_DBX);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX25_STREAPERFMON);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX24_PERFCTR_NB);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX23_PERFCTR_CORE);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX22_TOPOEXT);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX21_TBM);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX20_Reserved);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX19_NODEID_MSR);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX18_CVT16);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX17_TCE);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX16_FMA4);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX15_LWP);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX14_TBM0);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX13_WDT);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX12_SKINIT);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX11_XOP);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX10_IBS);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX9_OSVW);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX8_3DNOWPREFETCH);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX7_MISALIGNSSE);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX6_SSE4A);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX5_ABM_LXCNT);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX4_CR8_LEGACY);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX3_EXTAPIC);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX2_SVM);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX1_CMP_LEGACY);
+            this.groupBoxECXBits.Controls.Add(this.checkBoxEAX80000001ECX0_LAHF_LM);
             this.groupBoxECXBits.Location = new System.Drawing.Point(428, 158);
             this.groupBoxECXBits.Name = "groupBoxECXBits";
             this.groupBoxECXBits.Size = new System.Drawing.Size(400, 797);
@@ -462,505 +462,505 @@
             this.checkBoxEAX80000001_EDX13_PGE.Text = "PGE - Page Global Enable bit in CR4 [13]";
             this.checkBoxEAX80000001_EDX13_PGE.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 341);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 17);
-            this.checkBox3.TabIndex = 45;
-            this.checkBox3.Text = "MCA - Machine check architecture [14]";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 364);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(285, 17);
-            this.checkBox4.TabIndex = 46;
-            this.checkBox4.Text = "CMOV - Conditional move and FCMOV instructions [15]";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(6, 387);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(174, 17);
-            this.checkBox5.TabIndex = 47;
-            this.checkBox5.Text = "PAT - Page Attribute Table [16]";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 502);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(193, 17);
-            this.checkBox6.TabIndex = 52;
-            this.checkBox6.Text = "SEM - Secure Execution Mode [21]";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(6, 479);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(229, 17);
-            this.checkBox7.TabIndex = 51;
-            this.checkBox7.Text = "NX - NX bit (page-table no-execute bit) [20]";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(6, 456);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(316, 17);
-            this.checkBox8.TabIndex = 50;
-            this.checkBox8.Text = "ECC - \"Athlon MP\" / \"Sempron\" CPU brand identification [19]";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(6, 433);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(232, 17);
-            this.checkBox9.TabIndex = 49;
-            this.checkBox9.Text = "ECC - Processor supports ECC; K7 only [18]";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(6, 410);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(211, 17);
-            this.checkBox10.TabIndex = 48;
-            this.checkBox10.Text = "PSE36 - 36-bit page size extension [17]";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(6, 732);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(136, 17);
-            this.checkBox11.TabIndex = 62;
-            this.checkBox11.Text = "3DNOW - 3DNow! [31]";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(6, 709);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(205, 17);
-            this.checkBox12.TabIndex = 61;
-            this.checkBox12.Text = "3DNOWEXT - Extended 3DNow! [30]";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(6, 686);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(165, 17);
-            this.checkBox13.TabIndex = 60;
-            this.checkBox13.Text = "LM - Long mode (x86-64) [29]";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(6, 663);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(320, 17);
-            this.checkBox14.TabIndex = 59;
-            this.checkBox14.Text = "REX32 - REX prefix available in 32-bit mode; early K8 only [28]";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(6, 640);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(195, 17);
-            this.checkBox15.TabIndex = 58;
-            this.checkBox15.Text = "RDTSCP - RDTSCP instruction [27]";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(6, 617);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(176, 17);
-            this.checkBox16.TabIndex = 57;
-            this.checkBox16.Text = "PDPE1GB - Gibibyte pages [26]";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(6, 594);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(272, 17);
-            this.checkBox17.TabIndex = 56;
-            this.checkBox17.Text = "FXSR_OPT - FXSAVE/FXRSTOR optimizations [25]";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(6, 571);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(288, 17);
-            this.checkBox18.TabIndex = 55;
-            this.checkBox18.Text = "FXSR - FXSAVE, FXRSTOR instructions, CR4 bit 9 [24]";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(6, 548);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(162, 17);
-            this.checkBox19.TabIndex = 54;
-            this.checkBox19.Text = "MMX - MMX instructions [23]";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(6, 525);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(306, 17);
-            this.checkBox20.TabIndex = 53;
-            this.checkBox20.Text = "MMXEXT - Extended MMX (non-XMM subset of SSE1) [22]";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(6, 469);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(257, 17);
-            this.checkBox21.TabIndex = 82;
-            this.checkBox21.Text = "NODEID_MSR - NodeID MSR (C001_100C) [19]";
-            this.checkBox21.UseVisualStyleBackColor = true;
-            // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(6, 433);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(351, 17);
-            this.checkBox22.TabIndex = 81;
-            this.checkBox22.Text = "CVT16 - XOP-prefix forms of the FP16↔FP32 conversion instructions";
-            this.checkBox22.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(6, 410);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(212, 17);
-            this.checkBox23.TabIndex = 80;
-            this.checkBox23.Text = "TCE - Translation Cache Extension [17]";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(6, 387);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(275, 17);
-            this.checkBox24.TabIndex = 79;
-            this.checkBox24.Text = "FMA4 - 4-operand fused multiply-add instructions [16]";
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox25
-            // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(6, 364);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(174, 17);
-            this.checkBox25.TabIndex = 78;
-            this.checkBox25.Text = "LWP - Lightweight Profiling [15]";
-            this.checkBox25.UseVisualStyleBackColor = true;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(6, 341);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(203, 17);
-            this.checkBox26.TabIndex = 77;
-            this.checkBox26.Text = "TBM0 - TBM0 instruction support [14]";
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // checkBox27
-            // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(6, 318);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(157, 17);
-            this.checkBox27.TabIndex = 76;
-            this.checkBox27.Text = "WDT - Watchdog timer [13]";
-            this.checkBox27.UseVisualStyleBackColor = true;
-            // 
-            // checkBox28
-            // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(6, 295);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(231, 17);
-            this.checkBox28.TabIndex = 75;
-            this.checkBox28.Text = "SKINIT - SKINIT and STGI instructions [12]";
-            this.checkBox28.UseVisualStyleBackColor = true;
-            // 
-            // checkBox29
-            // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(6, 272);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(168, 17);
-            this.checkBox29.TabIndex = 74;
-            this.checkBox29.Text = "XOP - XOP instruction set [11]";
-            this.checkBox29.UseVisualStyleBackColor = true;
-            // 
-            // checkBox30
-            // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.Location = new System.Drawing.Point(6, 249);
-            this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(201, 17);
-            this.checkBox30.TabIndex = 73;
-            this.checkBox30.Text = "IBS - Instruction Based Sampling [10]";
-            this.checkBox30.UseVisualStyleBackColor = true;
-            // 
-            // checkBox31
-            // 
-            this.checkBox31.AutoSize = true;
-            this.checkBox31.Location = new System.Drawing.Point(6, 226);
-            this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(193, 17);
-            this.checkBox31.TabIndex = 72;
-            this.checkBox31.Text = "OSVW - OS Visible Workaround [9]";
-            this.checkBox31.UseVisualStyleBackColor = true;
-            // 
-            // checkBox32
-            // 
-            this.checkBox32.AutoSize = true;
-            this.checkBox32.Location = new System.Drawing.Point(6, 203);
-            this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(353, 17);
-            this.checkBox32.TabIndex = 71;
-            this.checkBox32.Text = "3DNOWPREFETCH - PREFETCH and PREFETCHW instructions [8]";
-            this.checkBox32.UseVisualStyleBackColor = true;
-            // 
-            // checkBox33
-            // 
-            this.checkBox33.AutoSize = true;
-            this.checkBox33.Location = new System.Drawing.Point(6, 180);
-            this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(225, 17);
-            this.checkBox33.TabIndex = 70;
-            this.checkBox33.Text = "MISALIGNSSE - Misaligned SSE mode [7]";
-            this.checkBox33.UseVisualStyleBackColor = true;
-            // 
-            // checkBox34
-            // 
-            this.checkBox34.AutoSize = true;
-            this.checkBox34.Location = new System.Drawing.Point(6, 157);
-            this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(117, 17);
-            this.checkBox34.TabIndex = 69;
-            this.checkBox34.Text = "SSE4A - SSE4a [6]";
-            this.checkBox34.UseVisualStyleBackColor = true;
-            // 
-            // checkBox35
-            // 
-            this.checkBox35.AutoSize = true;
-            this.checkBox35.Location = new System.Drawing.Point(6, 134);
-            this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(350, 17);
-            this.checkBox35.TabIndex = 68;
-            this.checkBox35.Text = "ABM/LZCNT - Advanced bit manipulation (LZCNT and POPCNT) [5]";
-            this.checkBox35.UseVisualStyleBackColor = true;
-            // 
-            // checkBox36
-            // 
-            this.checkBox36.AutoSize = true;
-            this.checkBox36.Location = new System.Drawing.Point(6, 111);
-            this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(209, 17);
-            this.checkBox36.TabIndex = 67;
-            this.checkBox36.Text = "CR8_LEGACY - CR8 in 32-bit mode [4]";
-            this.checkBox36.UseVisualStyleBackColor = true;
-            // 
-            // checkBox37
-            // 
-            this.checkBox37.AutoSize = true;
-            this.checkBox37.Location = new System.Drawing.Point(6, 88);
-            this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(199, 17);
-            this.checkBox37.TabIndex = 66;
-            this.checkBox37.Text = "EXTAPIC - Extended APIC space [3]";
-            this.checkBox37.UseVisualStyleBackColor = true;
-            // 
-            // checkBox38
-            // 
-            this.checkBox38.AutoSize = true;
-            this.checkBox38.Location = new System.Drawing.Point(6, 65);
-            this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(183, 17);
-            this.checkBox38.TabIndex = 65;
-            this.checkBox38.Text = "SVM - Secure Virtual Machine [2]";
-            this.checkBox38.UseVisualStyleBackColor = true;
-            // 
-            // checkBox39
-            // 
-            this.checkBox39.AutoSize = true;
-            this.checkBox39.Location = new System.Drawing.Point(6, 42);
-            this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(236, 17);
-            this.checkBox39.TabIndex = 64;
-            this.checkBox39.Text = "CMP_LEGACY - Hyperthreading not valid [1]";
-            this.checkBox39.UseVisualStyleBackColor = true;
-            // 
-            // checkBox40
-            // 
-            this.checkBox40.AutoSize = true;
-            this.checkBox40.Location = new System.Drawing.Point(6, 19);
-            this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(221, 17);
-            this.checkBox40.TabIndex = 63;
-            this.checkBox40.Text = "LAHF_LM - LAHF/SAHF in long mode [0]";
-            this.checkBox40.UseVisualStyleBackColor = true;
-            // 
-            // checkBox41
-            // 
-            this.checkBox41.AutoSize = true;
-            this.checkBox41.Location = new System.Drawing.Point(6, 758);
-            this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(93, 17);
-            this.checkBox41.TabIndex = 94;
-            this.checkBox41.Text = "Reserved [31]";
-            this.checkBox41.UseVisualStyleBackColor = true;
-            // 
-            // checkBox42
-            // 
-            this.checkBox42.AutoSize = true;
-            this.checkBox42.Location = new System.Drawing.Point(6, 735);
-            this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(387, 17);
-            this.checkBox42.TabIndex = 93;
-            this.checkBox42.Text = "ADDR_MASK_EXT - Addr mask ext to 32 bits for instruction breakpoints [30]";
-            this.checkBox42.UseVisualStyleBackColor = true;
-            // 
-            // checkBox43
-            // 
-            this.checkBox43.AutoSize = true;
-            this.checkBox43.Location = new System.Drawing.Point(6, 712);
-            this.checkBox43.Name = "checkBox43";
-            this.checkBox43.Size = new System.Drawing.Size(296, 17);
-            this.checkBox43.TabIndex = 92;
-            this.checkBox43.Text = "MONITORX - MONITORX and MWAITX instructions [29]";
-            this.checkBox43.UseVisualStyleBackColor = true;
-            // 
-            // checkBox44
-            // 
-            this.checkBox44.AutoSize = true;
-            this.checkBox44.Location = new System.Drawing.Point(6, 676);
-            this.checkBox44.Name = "checkBox44";
-            this.checkBox44.Size = new System.Drawing.Size(366, 17);
-            this.checkBox44.TabIndex = 91;
-            this.checkBox44.Text = "PCX_L2I/PCX_L3 - AMD Fam 15h/16h (Jaguar/Puma): L2I perf counter";
-            this.checkBox44.UseVisualStyleBackColor = true;
-            // 
-            // checkBox45
-            // 
-            this.checkBox45.AutoSize = true;
-            this.checkBox45.Location = new System.Drawing.Point(6, 653);
-            this.checkBox45.Name = "checkBox45";
-            this.checkBox45.Size = new System.Drawing.Size(291, 17);
-            this.checkBox45.TabIndex = 90;
-            this.checkBox45.Text = "PERFTSC - Performance timestamp counter (PTSC) [27]";
-            this.checkBox45.UseVisualStyleBackColor = true;
-            // 
-            // checkBox46
-            // 
-            this.checkBox46.AutoSize = true;
-            this.checkBox46.Location = new System.Drawing.Point(6, 630);
-            this.checkBox46.Name = "checkBox46";
-            this.checkBox46.Size = new System.Drawing.Size(207, 17);
-            this.checkBox46.TabIndex = 89;
-            this.checkBox46.Text = "DBX - Data breakpoint extensions [26]";
-            this.checkBox46.UseVisualStyleBackColor = true;
-            // 
-            // checkBox47
-            // 
-            this.checkBox47.AutoSize = true;
-            this.checkBox47.Location = new System.Drawing.Point(6, 607);
-            this.checkBox47.Name = "checkBox47";
-            this.checkBox47.Size = new System.Drawing.Size(350, 17);
-            this.checkBox47.TabIndex = 88;
-            this.checkBox47.Text = "STREAPERFMON - Streaming performance monitor architecture [25]";
-            this.checkBox47.UseVisualStyleBackColor = true;
-            // 
-            // checkBox48
-            // 
-            this.checkBox48.AutoSize = true;
-            this.checkBox48.Location = new System.Drawing.Point(6, 584);
-            this.checkBox48.Name = "checkBox48";
-            this.checkBox48.Size = new System.Drawing.Size(336, 17);
-            this.checkBox48.TabIndex = 87;
-            this.checkBox48.Text = "PERFCTR_NB - Northbridge performance counter extensions [24]";
-            this.checkBox48.UseVisualStyleBackColor = true;
-            // 
-            // checkBox49
-            // 
-            this.checkBox49.AutoSize = true;
-            this.checkBox49.Location = new System.Drawing.Point(6, 561);
-            this.checkBox49.Name = "checkBox49";
-            this.checkBox49.Size = new System.Drawing.Size(318, 17);
-            this.checkBox49.TabIndex = 86;
-            this.checkBox49.Text = "PERFCTR_CORE - Core performance counter extensions [23]";
-            this.checkBox49.UseVisualStyleBackColor = true;
-            // 
-            // checkBox50
-            // 
-            this.checkBox50.AutoSize = true;
-            this.checkBox50.Location = new System.Drawing.Point(6, 538);
-            this.checkBox50.Name = "checkBox50";
-            this.checkBox50.Size = new System.Drawing.Size(374, 17);
-            this.checkBox50.TabIndex = 85;
-            this.checkBox50.Text = "TOPOEXT - Topology Extensions (CPUID leaves 80000001D and 1E [22]";
-            this.checkBox50.UseVisualStyleBackColor = true;
-            // 
-            // checkBox51
-            // 
-            this.checkBox51.AutoSize = true;
-            this.checkBox51.Location = new System.Drawing.Point(6, 515);
-            this.checkBox51.Name = "checkBox51";
-            this.checkBox51.Size = new System.Drawing.Size(191, 17);
-            this.checkBox51.TabIndex = 84;
-            this.checkBox51.Text = "TBM - Trailing Bit Manipulation [21]";
-            this.checkBox51.UseVisualStyleBackColor = true;
-            // 
-            // checkBox52
-            // 
-            this.checkBox52.AutoSize = true;
-            this.checkBox52.Location = new System.Drawing.Point(6, 492);
-            this.checkBox52.Name = "checkBox52";
-            this.checkBox52.Size = new System.Drawing.Size(93, 17);
-            this.checkBox52.TabIndex = 83;
-            this.checkBox52.Text = "Reserved [20]";
-            this.checkBox52.UseVisualStyleBackColor = true;
+            // checkBoxEAX80000001_EDX14_MCA
+            // 
+            this.checkBoxEAX80000001_EDX14_MCA.AutoSize = true;
+            this.checkBoxEAX80000001_EDX14_MCA.Location = new System.Drawing.Point(6, 341);
+            this.checkBoxEAX80000001_EDX14_MCA.Name = "checkBoxEAX80000001_EDX14_MCA";
+            this.checkBoxEAX80000001_EDX14_MCA.Size = new System.Drawing.Size(212, 17);
+            this.checkBoxEAX80000001_EDX14_MCA.TabIndex = 45;
+            this.checkBoxEAX80000001_EDX14_MCA.Text = "MCA - Machine check architecture [14]";
+            this.checkBoxEAX80000001_EDX14_MCA.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX15_CMOV
+            // 
+            this.checkBoxEAX80000001_EDX15_CMOV.AutoSize = true;
+            this.checkBoxEAX80000001_EDX15_CMOV.Location = new System.Drawing.Point(6, 364);
+            this.checkBoxEAX80000001_EDX15_CMOV.Name = "checkBoxEAX80000001_EDX15_CMOV";
+            this.checkBoxEAX80000001_EDX15_CMOV.Size = new System.Drawing.Size(285, 17);
+            this.checkBoxEAX80000001_EDX15_CMOV.TabIndex = 46;
+            this.checkBoxEAX80000001_EDX15_CMOV.Text = "CMOV - Conditional move and FCMOV instructions [15]";
+            this.checkBoxEAX80000001_EDX15_CMOV.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX16_PAT
+            // 
+            this.checkBoxEAX80000001_EDX16_PAT.AutoSize = true;
+            this.checkBoxEAX80000001_EDX16_PAT.Location = new System.Drawing.Point(6, 387);
+            this.checkBoxEAX80000001_EDX16_PAT.Name = "checkBoxEAX80000001_EDX16_PAT";
+            this.checkBoxEAX80000001_EDX16_PAT.Size = new System.Drawing.Size(174, 17);
+            this.checkBoxEAX80000001_EDX16_PAT.TabIndex = 47;
+            this.checkBoxEAX80000001_EDX16_PAT.Text = "PAT - Page Attribute Table [16]";
+            this.checkBoxEAX80000001_EDX16_PAT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX21_SEM
+            // 
+            this.checkBoxEAX80000001_EDX21_SEM.AutoSize = true;
+            this.checkBoxEAX80000001_EDX21_SEM.Location = new System.Drawing.Point(6, 502);
+            this.checkBoxEAX80000001_EDX21_SEM.Name = "checkBoxEAX80000001_EDX21_SEM";
+            this.checkBoxEAX80000001_EDX21_SEM.Size = new System.Drawing.Size(193, 17);
+            this.checkBoxEAX80000001_EDX21_SEM.TabIndex = 52;
+            this.checkBoxEAX80000001_EDX21_SEM.Text = "SEM - Secure Execution Mode [21]";
+            this.checkBoxEAX80000001_EDX21_SEM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX20_NX
+            // 
+            this.checkBoxEAX80000001_EDX20_NX.AutoSize = true;
+            this.checkBoxEAX80000001_EDX20_NX.Location = new System.Drawing.Point(6, 479);
+            this.checkBoxEAX80000001_EDX20_NX.Name = "checkBoxEAX80000001_EDX20_NX";
+            this.checkBoxEAX80000001_EDX20_NX.Size = new System.Drawing.Size(229, 17);
+            this.checkBoxEAX80000001_EDX20_NX.TabIndex = 51;
+            this.checkBoxEAX80000001_EDX20_NX.Text = "NX - NX bit (page-table no-execute bit) [20]";
+            this.checkBoxEAX80000001_EDX20_NX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX19_ECC
+            // 
+            this.checkBoxEAX80000001_EDX19_ECC.AutoSize = true;
+            this.checkBoxEAX80000001_EDX19_ECC.Location = new System.Drawing.Point(6, 456);
+            this.checkBoxEAX80000001_EDX19_ECC.Name = "checkBoxEAX80000001_EDX19_ECC";
+            this.checkBoxEAX80000001_EDX19_ECC.Size = new System.Drawing.Size(316, 17);
+            this.checkBoxEAX80000001_EDX19_ECC.TabIndex = 50;
+            this.checkBoxEAX80000001_EDX19_ECC.Text = "ECC - \"Athlon MP\" / \"Sempron\" CPU brand identification [19]";
+            this.checkBoxEAX80000001_EDX19_ECC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX18_ECC_K7
+            // 
+            this.checkBoxEAX80000001_EDX18_ECC_K7.AutoSize = true;
+            this.checkBoxEAX80000001_EDX18_ECC_K7.Location = new System.Drawing.Point(6, 433);
+            this.checkBoxEAX80000001_EDX18_ECC_K7.Name = "checkBoxEAX80000001_EDX18_ECC_K7";
+            this.checkBoxEAX80000001_EDX18_ECC_K7.Size = new System.Drawing.Size(232, 17);
+            this.checkBoxEAX80000001_EDX18_ECC_K7.TabIndex = 49;
+            this.checkBoxEAX80000001_EDX18_ECC_K7.Text = "ECC - Processor supports ECC; K7 only [18]";
+            this.checkBoxEAX80000001_EDX18_ECC_K7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX17_PSE36
+            // 
+            this.checkBoxEAX80000001_EDX17_PSE36.AutoSize = true;
+            this.checkBoxEAX80000001_EDX17_PSE36.Location = new System.Drawing.Point(6, 410);
+            this.checkBoxEAX80000001_EDX17_PSE36.Name = "checkBoxEAX80000001_EDX17_PSE36";
+            this.checkBoxEAX80000001_EDX17_PSE36.Size = new System.Drawing.Size(211, 17);
+            this.checkBoxEAX80000001_EDX17_PSE36.TabIndex = 48;
+            this.checkBoxEAX80000001_EDX17_PSE36.Text = "PSE36 - 36-bit page size extension [17]";
+            this.checkBoxEAX80000001_EDX17_PSE36.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX31_3DNOW
+            // 
+            this.checkBoxEAX80000001_EDX31_3DNOW.AutoSize = true;
+            this.checkBoxEAX80000001_EDX31_3DNOW.Location = new System.Drawing.Point(6, 732);
+            this.checkBoxEAX80000001_EDX31_3DNOW.Name = "checkBoxEAX80000001_EDX31_3DNOW";
+            this.checkBoxEAX80000001_EDX31_3DNOW.Size = new System.Drawing.Size(136, 17);
+            this.checkBoxEAX80000001_EDX31_3DNOW.TabIndex = 62;
+            this.checkBoxEAX80000001_EDX31_3DNOW.Text = "3DNOW - 3DNow! [31]";
+            this.checkBoxEAX80000001_EDX31_3DNOW.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX30_3DNOWEXT
+            // 
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT.AutoSize = true;
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT.Location = new System.Drawing.Point(6, 709);
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT.Name = "checkBoxEAX80000001_EDX30_3DNOWEXT";
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT.Size = new System.Drawing.Size(205, 17);
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT.TabIndex = 61;
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT.Text = "3DNOWEXT - Extended 3DNow! [30]";
+            this.checkBoxEAX80000001_EDX30_3DNOWEXT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX29_LM
+            // 
+            this.checkBoxEAX80000001_EDX29_LM.AutoSize = true;
+            this.checkBoxEAX80000001_EDX29_LM.Location = new System.Drawing.Point(6, 686);
+            this.checkBoxEAX80000001_EDX29_LM.Name = "checkBoxEAX80000001_EDX29_LM";
+            this.checkBoxEAX80000001_EDX29_LM.Size = new System.Drawing.Size(165, 17);
+            this.checkBoxEAX80000001_EDX29_LM.TabIndex = 60;
+            this.checkBoxEAX80000001_EDX29_LM.Text = "LM - Long mode (x86-64) [29]";
+            this.checkBoxEAX80000001_EDX29_LM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX28_REX32
+            // 
+            this.checkBoxEAX80000001_EDX28_REX32.AutoSize = true;
+            this.checkBoxEAX80000001_EDX28_REX32.Location = new System.Drawing.Point(6, 663);
+            this.checkBoxEAX80000001_EDX28_REX32.Name = "checkBoxEAX80000001_EDX28_REX32";
+            this.checkBoxEAX80000001_EDX28_REX32.Size = new System.Drawing.Size(320, 17);
+            this.checkBoxEAX80000001_EDX28_REX32.TabIndex = 59;
+            this.checkBoxEAX80000001_EDX28_REX32.Text = "REX32 - REX prefix available in 32-bit mode; early K8 only [28]";
+            this.checkBoxEAX80000001_EDX28_REX32.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX27_RDTSCP
+            // 
+            this.checkBoxEAX80000001_EDX27_RDTSCP.AutoSize = true;
+            this.checkBoxEAX80000001_EDX27_RDTSCP.Location = new System.Drawing.Point(6, 640);
+            this.checkBoxEAX80000001_EDX27_RDTSCP.Name = "checkBoxEAX80000001_EDX27_RDTSCP";
+            this.checkBoxEAX80000001_EDX27_RDTSCP.Size = new System.Drawing.Size(195, 17);
+            this.checkBoxEAX80000001_EDX27_RDTSCP.TabIndex = 58;
+            this.checkBoxEAX80000001_EDX27_RDTSCP.Text = "RDTSCP - RDTSCP instruction [27]";
+            this.checkBoxEAX80000001_EDX27_RDTSCP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX26_PDPE1GB
+            // 
+            this.checkBoxEAX80000001_EDX26_PDPE1GB.AutoSize = true;
+            this.checkBoxEAX80000001_EDX26_PDPE1GB.Location = new System.Drawing.Point(6, 617);
+            this.checkBoxEAX80000001_EDX26_PDPE1GB.Name = "checkBoxEAX80000001_EDX26_PDPE1GB";
+            this.checkBoxEAX80000001_EDX26_PDPE1GB.Size = new System.Drawing.Size(176, 17);
+            this.checkBoxEAX80000001_EDX26_PDPE1GB.TabIndex = 57;
+            this.checkBoxEAX80000001_EDX26_PDPE1GB.Text = "PDPE1GB - Gibibyte pages [26]";
+            this.checkBoxEAX80000001_EDX26_PDPE1GB.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX25_FXSR_OPT
+            // 
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT.AutoSize = true;
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT.Location = new System.Drawing.Point(6, 594);
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT.Name = "checkBoxEAX80000001_EDX25_FXSR_OPT";
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT.Size = new System.Drawing.Size(272, 17);
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT.TabIndex = 56;
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT.Text = "FXSR_OPT - FXSAVE/FXRSTOR optimizations [25]";
+            this.checkBoxEAX80000001_EDX25_FXSR_OPT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX24_FXSR
+            // 
+            this.checkBoxEAX80000001_EDX24_FXSR.AutoSize = true;
+            this.checkBoxEAX80000001_EDX24_FXSR.Location = new System.Drawing.Point(6, 571);
+            this.checkBoxEAX80000001_EDX24_FXSR.Name = "checkBoxEAX80000001_EDX24_FXSR";
+            this.checkBoxEAX80000001_EDX24_FXSR.Size = new System.Drawing.Size(288, 17);
+            this.checkBoxEAX80000001_EDX24_FXSR.TabIndex = 55;
+            this.checkBoxEAX80000001_EDX24_FXSR.Text = "FXSR - FXSAVE, FXRSTOR instructions, CR4 bit 9 [24]";
+            this.checkBoxEAX80000001_EDX24_FXSR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX23_MMX
+            // 
+            this.checkBoxEAX80000001_EDX23_MMX.AutoSize = true;
+            this.checkBoxEAX80000001_EDX23_MMX.Location = new System.Drawing.Point(6, 548);
+            this.checkBoxEAX80000001_EDX23_MMX.Name = "checkBoxEAX80000001_EDX23_MMX";
+            this.checkBoxEAX80000001_EDX23_MMX.Size = new System.Drawing.Size(162, 17);
+            this.checkBoxEAX80000001_EDX23_MMX.TabIndex = 54;
+            this.checkBoxEAX80000001_EDX23_MMX.Text = "MMX - MMX instructions [23]";
+            this.checkBoxEAX80000001_EDX23_MMX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001_EDX22_MMXEXT
+            // 
+            this.checkBoxEAX80000001_EDX22_MMXEXT.AutoSize = true;
+            this.checkBoxEAX80000001_EDX22_MMXEXT.Location = new System.Drawing.Point(6, 525);
+            this.checkBoxEAX80000001_EDX22_MMXEXT.Name = "checkBoxEAX80000001_EDX22_MMXEXT";
+            this.checkBoxEAX80000001_EDX22_MMXEXT.Size = new System.Drawing.Size(306, 17);
+            this.checkBoxEAX80000001_EDX22_MMXEXT.TabIndex = 53;
+            this.checkBoxEAX80000001_EDX22_MMXEXT.Text = "MMXEXT - Extended MMX (non-XMM subset of SSE1) [22]";
+            this.checkBoxEAX80000001_EDX22_MMXEXT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX19_NODEID_MSR
+            // 
+            this.checkBoxEAX80000001ECX19_NODEID_MSR.AutoSize = true;
+            this.checkBoxEAX80000001ECX19_NODEID_MSR.Location = new System.Drawing.Point(6, 473);
+            this.checkBoxEAX80000001ECX19_NODEID_MSR.Name = "checkBoxEAX80000001ECX19_NODEID_MSR";
+            this.checkBoxEAX80000001ECX19_NODEID_MSR.Size = new System.Drawing.Size(257, 17);
+            this.checkBoxEAX80000001ECX19_NODEID_MSR.TabIndex = 82;
+            this.checkBoxEAX80000001ECX19_NODEID_MSR.Text = "NODEID_MSR - NodeID MSR (C001_100C) [19]";
+            this.checkBoxEAX80000001ECX19_NODEID_MSR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX18_CVT16
+            // 
+            this.checkBoxEAX80000001ECX18_CVT16.AutoSize = true;
+            this.checkBoxEAX80000001ECX18_CVT16.Location = new System.Drawing.Point(6, 433);
+            this.checkBoxEAX80000001ECX18_CVT16.Name = "checkBoxEAX80000001ECX18_CVT16";
+            this.checkBoxEAX80000001ECX18_CVT16.Size = new System.Drawing.Size(351, 17);
+            this.checkBoxEAX80000001ECX18_CVT16.TabIndex = 81;
+            this.checkBoxEAX80000001ECX18_CVT16.Text = "CVT16 - XOP-prefix forms of the FP16↔FP32 conversion instructions";
+            this.checkBoxEAX80000001ECX18_CVT16.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX17_TCE
+            // 
+            this.checkBoxEAX80000001ECX17_TCE.AutoSize = true;
+            this.checkBoxEAX80000001ECX17_TCE.Location = new System.Drawing.Point(6, 410);
+            this.checkBoxEAX80000001ECX17_TCE.Name = "checkBoxEAX80000001ECX17_TCE";
+            this.checkBoxEAX80000001ECX17_TCE.Size = new System.Drawing.Size(212, 17);
+            this.checkBoxEAX80000001ECX17_TCE.TabIndex = 80;
+            this.checkBoxEAX80000001ECX17_TCE.Text = "TCE - Translation Cache Extension [17]";
+            this.checkBoxEAX80000001ECX17_TCE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX16_FMA4
+            // 
+            this.checkBoxEAX80000001ECX16_FMA4.AutoSize = true;
+            this.checkBoxEAX80000001ECX16_FMA4.Location = new System.Drawing.Point(6, 387);
+            this.checkBoxEAX80000001ECX16_FMA4.Name = "checkBoxEAX80000001ECX16_FMA4";
+            this.checkBoxEAX80000001ECX16_FMA4.Size = new System.Drawing.Size(275, 17);
+            this.checkBoxEAX80000001ECX16_FMA4.TabIndex = 79;
+            this.checkBoxEAX80000001ECX16_FMA4.Text = "FMA4 - 4-operand fused multiply-add instructions [16]";
+            this.checkBoxEAX80000001ECX16_FMA4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX15_LWP
+            // 
+            this.checkBoxEAX80000001ECX15_LWP.AutoSize = true;
+            this.checkBoxEAX80000001ECX15_LWP.Location = new System.Drawing.Point(6, 364);
+            this.checkBoxEAX80000001ECX15_LWP.Name = "checkBoxEAX80000001ECX15_LWP";
+            this.checkBoxEAX80000001ECX15_LWP.Size = new System.Drawing.Size(174, 17);
+            this.checkBoxEAX80000001ECX15_LWP.TabIndex = 78;
+            this.checkBoxEAX80000001ECX15_LWP.Text = "LWP - Lightweight Profiling [15]";
+            this.checkBoxEAX80000001ECX15_LWP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX14_TBM0
+            // 
+            this.checkBoxEAX80000001ECX14_TBM0.AutoSize = true;
+            this.checkBoxEAX80000001ECX14_TBM0.Location = new System.Drawing.Point(6, 341);
+            this.checkBoxEAX80000001ECX14_TBM0.Name = "checkBoxEAX80000001ECX14_TBM0";
+            this.checkBoxEAX80000001ECX14_TBM0.Size = new System.Drawing.Size(203, 17);
+            this.checkBoxEAX80000001ECX14_TBM0.TabIndex = 77;
+            this.checkBoxEAX80000001ECX14_TBM0.Text = "TBM0 - TBM0 instruction support [14]";
+            this.checkBoxEAX80000001ECX14_TBM0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX13_WDT
+            // 
+            this.checkBoxEAX80000001ECX13_WDT.AutoSize = true;
+            this.checkBoxEAX80000001ECX13_WDT.Location = new System.Drawing.Point(6, 318);
+            this.checkBoxEAX80000001ECX13_WDT.Name = "checkBoxEAX80000001ECX13_WDT";
+            this.checkBoxEAX80000001ECX13_WDT.Size = new System.Drawing.Size(157, 17);
+            this.checkBoxEAX80000001ECX13_WDT.TabIndex = 76;
+            this.checkBoxEAX80000001ECX13_WDT.Text = "WDT - Watchdog timer [13]";
+            this.checkBoxEAX80000001ECX13_WDT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX12_SKINIT
+            // 
+            this.checkBoxEAX80000001ECX12_SKINIT.AutoSize = true;
+            this.checkBoxEAX80000001ECX12_SKINIT.Location = new System.Drawing.Point(6, 295);
+            this.checkBoxEAX80000001ECX12_SKINIT.Name = "checkBoxEAX80000001ECX12_SKINIT";
+            this.checkBoxEAX80000001ECX12_SKINIT.Size = new System.Drawing.Size(231, 17);
+            this.checkBoxEAX80000001ECX12_SKINIT.TabIndex = 75;
+            this.checkBoxEAX80000001ECX12_SKINIT.Text = "SKINIT - SKINIT and STGI instructions [12]";
+            this.checkBoxEAX80000001ECX12_SKINIT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX11_XOP
+            // 
+            this.checkBoxEAX80000001ECX11_XOP.AutoSize = true;
+            this.checkBoxEAX80000001ECX11_XOP.Location = new System.Drawing.Point(6, 272);
+            this.checkBoxEAX80000001ECX11_XOP.Name = "checkBoxEAX80000001ECX11_XOP";
+            this.checkBoxEAX80000001ECX11_XOP.Size = new System.Drawing.Size(168, 17);
+            this.checkBoxEAX80000001ECX11_XOP.TabIndex = 74;
+            this.checkBoxEAX80000001ECX11_XOP.Text = "XOP - XOP instruction set [11]";
+            this.checkBoxEAX80000001ECX11_XOP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX10_IBS
+            // 
+            this.checkBoxEAX80000001ECX10_IBS.AutoSize = true;
+            this.checkBoxEAX80000001ECX10_IBS.Location = new System.Drawing.Point(6, 249);
+            this.checkBoxEAX80000001ECX10_IBS.Name = "checkBoxEAX80000001ECX10_IBS";
+            this.checkBoxEAX80000001ECX10_IBS.Size = new System.Drawing.Size(201, 17);
+            this.checkBoxEAX80000001ECX10_IBS.TabIndex = 73;
+            this.checkBoxEAX80000001ECX10_IBS.Text = "IBS - Instruction Based Sampling [10]";
+            this.checkBoxEAX80000001ECX10_IBS.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX9_OSVW
+            // 
+            this.checkBoxEAX80000001ECX9_OSVW.AutoSize = true;
+            this.checkBoxEAX80000001ECX9_OSVW.Location = new System.Drawing.Point(6, 226);
+            this.checkBoxEAX80000001ECX9_OSVW.Name = "checkBoxEAX80000001ECX9_OSVW";
+            this.checkBoxEAX80000001ECX9_OSVW.Size = new System.Drawing.Size(193, 17);
+            this.checkBoxEAX80000001ECX9_OSVW.TabIndex = 72;
+            this.checkBoxEAX80000001ECX9_OSVW.Text = "OSVW - OS Visible Workaround [9]";
+            this.checkBoxEAX80000001ECX9_OSVW.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX8_3DNOWPREFETCH
+            // 
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH.AutoSize = true;
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH.Location = new System.Drawing.Point(6, 203);
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH.Name = "checkBoxEAX80000001ECX8_3DNOWPREFETCH";
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH.Size = new System.Drawing.Size(353, 17);
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH.TabIndex = 71;
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH.Text = "3DNOWPREFETCH - PREFETCH and PREFETCHW instructions [8]";
+            this.checkBoxEAX80000001ECX8_3DNOWPREFETCH.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX7_MISALIGNSSE
+            // 
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE.AutoSize = true;
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE.Location = new System.Drawing.Point(6, 180);
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE.Name = "checkBoxEAX80000001ECX7_MISALIGNSSE";
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE.Size = new System.Drawing.Size(225, 17);
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE.TabIndex = 70;
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE.Text = "MISALIGNSSE - Misaligned SSE mode [7]";
+            this.checkBoxEAX80000001ECX7_MISALIGNSSE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX6_SSE4A
+            // 
+            this.checkBoxEAX80000001ECX6_SSE4A.AutoSize = true;
+            this.checkBoxEAX80000001ECX6_SSE4A.Location = new System.Drawing.Point(6, 157);
+            this.checkBoxEAX80000001ECX6_SSE4A.Name = "checkBoxEAX80000001ECX6_SSE4A";
+            this.checkBoxEAX80000001ECX6_SSE4A.Size = new System.Drawing.Size(117, 17);
+            this.checkBoxEAX80000001ECX6_SSE4A.TabIndex = 69;
+            this.checkBoxEAX80000001ECX6_SSE4A.Text = "SSE4A - SSE4a [6]";
+            this.checkBoxEAX80000001ECX6_SSE4A.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX5_ABM_LXCNT
+            // 
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT.AutoSize = true;
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT.Name = "checkBoxEAX80000001ECX5_ABM_LXCNT";
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT.Size = new System.Drawing.Size(350, 17);
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT.TabIndex = 68;
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT.Text = "ABM/LZCNT - Advanced bit manipulation (LZCNT and POPCNT) [5]";
+            this.checkBoxEAX80000001ECX5_ABM_LXCNT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX4_CR8_LEGACY
+            // 
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY.AutoSize = true;
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY.Name = "checkBoxEAX80000001ECX4_CR8_LEGACY";
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY.Size = new System.Drawing.Size(209, 17);
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY.TabIndex = 67;
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY.Text = "CR8_LEGACY - CR8 in 32-bit mode [4]";
+            this.checkBoxEAX80000001ECX4_CR8_LEGACY.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX3_EXTAPIC
+            // 
+            this.checkBoxEAX80000001ECX3_EXTAPIC.AutoSize = true;
+            this.checkBoxEAX80000001ECX3_EXTAPIC.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxEAX80000001ECX3_EXTAPIC.Name = "checkBoxEAX80000001ECX3_EXTAPIC";
+            this.checkBoxEAX80000001ECX3_EXTAPIC.Size = new System.Drawing.Size(199, 17);
+            this.checkBoxEAX80000001ECX3_EXTAPIC.TabIndex = 66;
+            this.checkBoxEAX80000001ECX3_EXTAPIC.Text = "EXTAPIC - Extended APIC space [3]";
+            this.checkBoxEAX80000001ECX3_EXTAPIC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX2_SVM
+            // 
+            this.checkBoxEAX80000001ECX2_SVM.AutoSize = true;
+            this.checkBoxEAX80000001ECX2_SVM.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxEAX80000001ECX2_SVM.Name = "checkBoxEAX80000001ECX2_SVM";
+            this.checkBoxEAX80000001ECX2_SVM.Size = new System.Drawing.Size(183, 17);
+            this.checkBoxEAX80000001ECX2_SVM.TabIndex = 65;
+            this.checkBoxEAX80000001ECX2_SVM.Text = "SVM - Secure Virtual Machine [2]";
+            this.checkBoxEAX80000001ECX2_SVM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX1_CMP_LEGACY
+            // 
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY.AutoSize = true;
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY.Name = "checkBoxEAX80000001ECX1_CMP_LEGACY";
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY.Size = new System.Drawing.Size(236, 17);
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY.TabIndex = 64;
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY.Text = "CMP_LEGACY - Hyperthreading not valid [1]";
+            this.checkBoxEAX80000001ECX1_CMP_LEGACY.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX0_LAHF_LM
+            // 
+            this.checkBoxEAX80000001ECX0_LAHF_LM.AutoSize = true;
+            this.checkBoxEAX80000001ECX0_LAHF_LM.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxEAX80000001ECX0_LAHF_LM.Name = "checkBoxEAX80000001ECX0_LAHF_LM";
+            this.checkBoxEAX80000001ECX0_LAHF_LM.Size = new System.Drawing.Size(221, 17);
+            this.checkBoxEAX80000001ECX0_LAHF_LM.TabIndex = 63;
+            this.checkBoxEAX80000001ECX0_LAHF_LM.Text = "LAHF_LM - LAHF/SAHF in long mode [0]";
+            this.checkBoxEAX80000001ECX0_LAHF_LM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX31_Reserved
+            // 
+            this.checkBoxEAX80000001ECX31_Reserved.AutoSize = true;
+            this.checkBoxEAX80000001ECX31_Reserved.Location = new System.Drawing.Point(6, 766);
+            this.checkBoxEAX80000001ECX31_Reserved.Name = "checkBoxEAX80000001ECX31_Reserved";
+            this.checkBoxEAX80000001ECX31_Reserved.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAX80000001ECX31_Reserved.TabIndex = 94;
+            this.checkBoxEAX80000001ECX31_Reserved.Text = "Reserved [31]";
+            this.checkBoxEAX80000001ECX31_Reserved.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX30_ADDR_MASK_EXT
+            // 
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT.AutoSize = true;
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT.Location = new System.Drawing.Point(6, 743);
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT.Name = "checkBoxEAX80000001ECX30_ADDR_MASK_EXT";
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT.Size = new System.Drawing.Size(387, 17);
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT.TabIndex = 93;
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT.Text = "ADDR_MASK_EXT - Addr mask ext to 32 bits for instruction breakpoints [30]";
+            this.checkBoxEAX80000001ECX30_ADDR_MASK_EXT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX29_MONITORX
+            // 
+            this.checkBoxEAX80000001ECX29_MONITORX.AutoSize = true;
+            this.checkBoxEAX80000001ECX29_MONITORX.Location = new System.Drawing.Point(6, 720);
+            this.checkBoxEAX80000001ECX29_MONITORX.Name = "checkBoxEAX80000001ECX29_MONITORX";
+            this.checkBoxEAX80000001ECX29_MONITORX.Size = new System.Drawing.Size(296, 17);
+            this.checkBoxEAX80000001ECX29_MONITORX.TabIndex = 92;
+            this.checkBoxEAX80000001ECX29_MONITORX.Text = "MONITORX - MONITORX and MWAITX instructions [29]";
+            this.checkBoxEAX80000001ECX29_MONITORX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX28_PCX_L2_PCX_L3
+            // 
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3.AutoSize = true;
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3.Location = new System.Drawing.Point(6, 680);
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3.Name = "checkBoxEAX80000001ECX28_PCX_L2_PCX_L3";
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3.Size = new System.Drawing.Size(366, 17);
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3.TabIndex = 91;
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3.Text = "PCX_L2I/PCX_L3 - AMD Fam 15h/16h (Jaguar/Puma): L2I perf counter";
+            this.checkBoxEAX80000001ECX28_PCX_L2_PCX_L3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX27_PERFTSC
+            // 
+            this.checkBoxEAX80000001ECX27_PERFTSC.AutoSize = true;
+            this.checkBoxEAX80000001ECX27_PERFTSC.Location = new System.Drawing.Point(6, 657);
+            this.checkBoxEAX80000001ECX27_PERFTSC.Name = "checkBoxEAX80000001ECX27_PERFTSC";
+            this.checkBoxEAX80000001ECX27_PERFTSC.Size = new System.Drawing.Size(291, 17);
+            this.checkBoxEAX80000001ECX27_PERFTSC.TabIndex = 90;
+            this.checkBoxEAX80000001ECX27_PERFTSC.Text = "PERFTSC - Performance timestamp counter (PTSC) [27]";
+            this.checkBoxEAX80000001ECX27_PERFTSC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX26_DBX
+            // 
+            this.checkBoxEAX80000001ECX26_DBX.AutoSize = true;
+            this.checkBoxEAX80000001ECX26_DBX.Location = new System.Drawing.Point(6, 634);
+            this.checkBoxEAX80000001ECX26_DBX.Name = "checkBoxEAX80000001ECX26_DBX";
+            this.checkBoxEAX80000001ECX26_DBX.Size = new System.Drawing.Size(207, 17);
+            this.checkBoxEAX80000001ECX26_DBX.TabIndex = 89;
+            this.checkBoxEAX80000001ECX26_DBX.Text = "DBX - Data breakpoint extensions [26]";
+            this.checkBoxEAX80000001ECX26_DBX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX25_STREAPERFMON
+            // 
+            this.checkBoxEAX80000001ECX25_STREAPERFMON.AutoSize = true;
+            this.checkBoxEAX80000001ECX25_STREAPERFMON.Location = new System.Drawing.Point(6, 611);
+            this.checkBoxEAX80000001ECX25_STREAPERFMON.Name = "checkBoxEAX80000001ECX25_STREAPERFMON";
+            this.checkBoxEAX80000001ECX25_STREAPERFMON.Size = new System.Drawing.Size(350, 17);
+            this.checkBoxEAX80000001ECX25_STREAPERFMON.TabIndex = 88;
+            this.checkBoxEAX80000001ECX25_STREAPERFMON.Text = "STREAPERFMON - Streaming performance monitor architecture [25]";
+            this.checkBoxEAX80000001ECX25_STREAPERFMON.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX24_PERFCTR_NB
+            // 
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB.AutoSize = true;
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB.Location = new System.Drawing.Point(6, 588);
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB.Name = "checkBoxEAX80000001ECX24_PERFCTR_NB";
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB.Size = new System.Drawing.Size(336, 17);
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB.TabIndex = 87;
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB.Text = "PERFCTR_NB - Northbridge performance counter extensions [24]";
+            this.checkBoxEAX80000001ECX24_PERFCTR_NB.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX23_PERFCTR_CORE
+            // 
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE.AutoSize = true;
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE.Location = new System.Drawing.Point(6, 565);
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE.Name = "checkBoxEAX80000001ECX23_PERFCTR_CORE";
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE.Size = new System.Drawing.Size(318, 17);
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE.TabIndex = 86;
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE.Text = "PERFCTR_CORE - Core performance counter extensions [23]";
+            this.checkBoxEAX80000001ECX23_PERFCTR_CORE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX22_TOPOEXT
+            // 
+            this.checkBoxEAX80000001ECX22_TOPOEXT.AutoSize = true;
+            this.checkBoxEAX80000001ECX22_TOPOEXT.Location = new System.Drawing.Point(6, 542);
+            this.checkBoxEAX80000001ECX22_TOPOEXT.Name = "checkBoxEAX80000001ECX22_TOPOEXT";
+            this.checkBoxEAX80000001ECX22_TOPOEXT.Size = new System.Drawing.Size(374, 17);
+            this.checkBoxEAX80000001ECX22_TOPOEXT.TabIndex = 85;
+            this.checkBoxEAX80000001ECX22_TOPOEXT.Text = "TOPOEXT - Topology Extensions (CPUID leaves 80000001D and 1E [22]";
+            this.checkBoxEAX80000001ECX22_TOPOEXT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX21_TBM
+            // 
+            this.checkBoxEAX80000001ECX21_TBM.AutoSize = true;
+            this.checkBoxEAX80000001ECX21_TBM.Location = new System.Drawing.Point(6, 519);
+            this.checkBoxEAX80000001ECX21_TBM.Name = "checkBoxEAX80000001ECX21_TBM";
+            this.checkBoxEAX80000001ECX21_TBM.Size = new System.Drawing.Size(191, 17);
+            this.checkBoxEAX80000001ECX21_TBM.TabIndex = 84;
+            this.checkBoxEAX80000001ECX21_TBM.Text = "TBM - Trailing Bit Manipulation [21]";
+            this.checkBoxEAX80000001ECX21_TBM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX80000001ECX20_Reserved
+            // 
+            this.checkBoxEAX80000001ECX20_Reserved.AutoSize = true;
+            this.checkBoxEAX80000001ECX20_Reserved.Location = new System.Drawing.Point(6, 496);
+            this.checkBoxEAX80000001ECX20_Reserved.Name = "checkBoxEAX80000001ECX20_Reserved";
+            this.checkBoxEAX80000001ECX20_Reserved.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAX80000001ECX20_Reserved.TabIndex = 83;
+            this.checkBoxEAX80000001ECX20_Reserved.Text = "Reserved [20]";
+            this.checkBoxEAX80000001ECX20_Reserved.UseVisualStyleBackColor = true;
             // 
             // groupBoxEBXBits
             // 
@@ -1232,23 +1232,23 @@
             this.textBoxEAX80000001EAX20_27_ExtendedFamilyId.Size = new System.Drawing.Size(200, 20);
             this.textBoxEAX80000001EAX20_27_ExtendedFamilyId.TabIndex = 26;
             // 
-            // label1
+            // labelEAX80000001ECX18_CVT16
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 453);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 13);
-            this.label1.TabIndex = 95;
-            this.label1.Text = " VCVTPS2PH and VCVTPH2PS [18]";
+            this.labelEAX80000001ECX18_CVT16.AutoSize = true;
+            this.labelEAX80000001ECX18_CVT16.Location = new System.Drawing.Point(19, 453);
+            this.labelEAX80000001ECX18_CVT16.Name = "labelEAX80000001ECX18_CVT16";
+            this.labelEAX80000001ECX18_CVT16.Size = new System.Drawing.Size(181, 13);
+            this.labelEAX80000001ECX18_CVT16.TabIndex = 95;
+            this.labelEAX80000001ECX18_CVT16.Text = " VCVTPS2PH and VCVTPH2PS [18]";
             // 
-            // label2
+            // labelEAX80000001ECX28_PCX_L2_PCX_L3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 696);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(317, 13);
-            this.label2.TabIndex = 96;
-            this.label2.Text = "extensions, AMD Fam ≥17h (Zen): L3 perf counter extensions [28]";
+            this.labelEAX80000001ECX28_PCX_L2_PCX_L3.AutoSize = true;
+            this.labelEAX80000001ECX28_PCX_L2_PCX_L3.Location = new System.Drawing.Point(23, 700);
+            this.labelEAX80000001ECX28_PCX_L2_PCX_L3.Name = "labelEAX80000001ECX28_PCX_L2_PCX_L3";
+            this.labelEAX80000001ECX28_PCX_L2_PCX_L3.Size = new System.Drawing.Size(317, 13);
+            this.labelEAX80000001ECX28_PCX_L2_PCX_L3.TabIndex = 96;
+            this.labelEAX80000001ECX28_PCX_L2_PCX_L3.Text = "extensions, AMD Fam ≥17h (Zen): L3 perf counter extensions [28]";
             // 
             // EAX80000001
             // 
@@ -1301,58 +1301,58 @@
         private System.Windows.Forms.CheckBox checkBoxEAX80000001EDX0_FPU;
         private System.Windows.Forms.GroupBox groupBoxECXBits;
         private System.Windows.Forms.CheckBox checkBoxEAX80000001EDX11_SYSCALL;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX31_3DNOW;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX30_3DNOWEXT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX29_LM;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX28_REX32;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX27_RDTSCP;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX26_PDPE1GB;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX25_FXSR_OPT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX24_FXSR;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX23_MMX;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX22_MMXEXT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX21_SEM;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX20_NX;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX19_ECC;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX18_ECC_K7;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX17_PSE36;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX16_PAT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX15_CMOV;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX14_MCA;
         private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX13_PGE;
         private System.Windows.Forms.CheckBox checkBoxEAX80000001_EDX12_MTRR;
-        private System.Windows.Forms.CheckBox checkBox41;
-        private System.Windows.Forms.CheckBox checkBox42;
-        private System.Windows.Forms.CheckBox checkBox43;
-        private System.Windows.Forms.CheckBox checkBox44;
-        private System.Windows.Forms.CheckBox checkBox45;
-        private System.Windows.Forms.CheckBox checkBox46;
-        private System.Windows.Forms.CheckBox checkBox47;
-        private System.Windows.Forms.CheckBox checkBox48;
-        private System.Windows.Forms.CheckBox checkBox49;
-        private System.Windows.Forms.CheckBox checkBox50;
-        private System.Windows.Forms.CheckBox checkBox51;
-        private System.Windows.Forms.CheckBox checkBox52;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.CheckBox checkBox24;
-        private System.Windows.Forms.CheckBox checkBox25;
-        private System.Windows.Forms.CheckBox checkBox26;
-        private System.Windows.Forms.CheckBox checkBox27;
-        private System.Windows.Forms.CheckBox checkBox28;
-        private System.Windows.Forms.CheckBox checkBox29;
-        private System.Windows.Forms.CheckBox checkBox30;
-        private System.Windows.Forms.CheckBox checkBox31;
-        private System.Windows.Forms.CheckBox checkBox32;
-        private System.Windows.Forms.CheckBox checkBox33;
-        private System.Windows.Forms.CheckBox checkBox34;
-        private System.Windows.Forms.CheckBox checkBox35;
-        private System.Windows.Forms.CheckBox checkBox36;
-        private System.Windows.Forms.CheckBox checkBox37;
-        private System.Windows.Forms.CheckBox checkBox38;
-        private System.Windows.Forms.CheckBox checkBox39;
-        private System.Windows.Forms.CheckBox checkBox40;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX31_Reserved;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX30_ADDR_MASK_EXT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX29_MONITORX;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX28_PCX_L2_PCX_L3;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX27_PERFTSC;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX26_DBX;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX25_STREAPERFMON;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX24_PERFCTR_NB;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX23_PERFCTR_CORE;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX22_TOPOEXT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX21_TBM;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX20_Reserved;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX19_NODEID_MSR;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX18_CVT16;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX17_TCE;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX16_FMA4;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX15_LWP;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX14_TBM0;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX13_WDT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX12_SKINIT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX11_XOP;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX10_IBS;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX9_OSVW;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX8_3DNOWPREFETCH;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX7_MISALIGNSSE;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX6_SSE4A;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX5_ABM_LXCNT;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX4_CR8_LEGACY;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX3_EXTAPIC;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX2_SVM;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX1_CMP_LEGACY;
+        private System.Windows.Forms.CheckBox checkBoxEAX80000001ECX0_LAHF_LM;
         private System.Windows.Forms.GroupBox groupBoxEBXBits;
         private System.Windows.Forms.TextBox textBoxEAX80000001EBX0_7_BrandIndex;
         private System.Windows.Forms.Label labelEAX80000001EBX0_7_BrandIndex;
@@ -1383,7 +1383,7 @@
         private System.Windows.Forms.Label labelEAX80000001EAX_CalculatedProcessorModel;
         private System.Windows.Forms.Label labelEAX80000001EAX20_27_ExtendedFamilyId;
         private System.Windows.Forms.TextBox textBoxEAX80000001EAX20_27_ExtendedFamilyId;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelEAX80000001ECX18_CVT16;
+        private System.Windows.Forms.Label labelEAX80000001ECX28_PCX_L2_PCX_L3;
     }
 }

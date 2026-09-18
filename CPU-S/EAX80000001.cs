@@ -34,6 +34,9 @@ namespace CPU_S
             string cpuIdEAX80000001EDX = cpuHelper.GetEAX80000001EDXX();
             textBoxEAX80000001EDX.Text = cpuIdEAX80000001EDX;
 
+            //string cpuIdEAX80000001EAX0_3_SteppingId = cpuHelper.GetEAX80000001EAX0_3_SteppingIdX();
+            //textBoxEAX80000001EAX0_3_SteppingId.Text = cpuIdEAX80000001EAX0_3_SteppingId;
+
             #endregion
         }
     }
