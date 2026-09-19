@@ -866,65 +866,65 @@ namespace CPU_S
             checkBoxSSE2.Checked = cpuHelper.GetEAX1EDX26_SSE2IsSupportedX();
             checkBoxSSE3.Checked = cpuHelper.GetEAX1ECX0_SSE3IsSupportedX();
             checkBoxSSSE3.Checked = cpuHelper.GetEAX1ECX9_SSSE3IsSupportedX();
-            // checkBoxSSE4a.Checked = cpuHelper.   // 800000001h, ECX bit 6
+            checkBoxSSE4a.Checked = cpuHelper.GetEAX80000001ECX6_SSE4AIsSupportedX();
             checkBoxSSE41.Checked = cpuHelper.GetEAX1ECX19_SSE41IsSupportedX();
             checkBoxSSE42.Checked = cpuHelper.GetEAX1ECX20_SSE42IsSupportedX();
             checkBoxAVX.Checked = cpuHelper.GetEAX1ECX28_AVXIsSupportedX();
             checkBoxFMA3.Checked = cpuHelper.GetEAX1ECX12_FMAIsSupportedX();
-            //checkBoxAVX2.Checked = cpuHelper.GetEAX7EBX5_AVX2IsSupportedX();
-            //checkBoxAVX512F.Checked = cpuHelper.GetEAX7EBX16_AVX512FIsSupportedX();
-            //checkBoxAVX512CD.Checked = cpuHelper.GetEAX7EBX28_AVX512CDIsSupportedX();
-            //checkBoxAVX512ER.Checked = cpuHelper.GetEAX7EBX27_AVX512ERIsSupportedX();
-            //checkBoxAVX512PF.Checked = cpuHelper.GetEAX7EBX26_AVX512PFIsSupportedX();
-            //checkBoxAVX5124VNNIW.Checked = cpuHelper.GetEAX7EBX2_AVX5124VNNIWIsSupportedX();
-            //checkBoxAVX5124FMAPS.Checked = cpuHelper.GetEAX7EBX16_AVX5124FMAPSIsSupportedX();
-            //checkBoxAVX512VL.Checked = cpuHelper.GetEAX7EBX31_AVX512VLIsSupportedX();
-            //checkBoxAVX512DQ.Checked = cpuHelper.GetEAX7EBX17_AVX512DQIsSupportedX();
-            //checkBoxAVX512BW.Checked = cpuHelper.GetEAX7EBX30_AVX512BWIsSupportedX();
-            //checkBoxAVX512IFMA.Checked = cpuHelper.GetEAX7EBX21_AVX512IFMAIsSupportedX();
-            //checkBoxAVX512VBMI.Checked = cpuHelper.GetEAX7ECX1_AVX512VBMIIsSupportedX();
-            //checkBoxAVX512VNNI.Checked = cpuHelper.GetEAX7ECX11_AVX512VNNIIsSupportedX();
-            //checkBoxAVX512VPOPCNTDQ.Checked = cpuHelper.GetEAX7ECX14_AVX512VPOPCNTDQIsSupportedX();
-            //checkBoxAVX512VBMI2.Checked = cpuHelper.GetEAX7ECX6_AVX512VBMI2IsSupportedX();
-            //checkBoxAVX512BITALG.Checked = cpuHelper.GetEAX7ECX5_AVX512BITALGIsSupportedX();
-            //checkBoxAVX512VP2INTERSECT.Checked = cpuHelper.GetEAX7ECX8_AVX512VP2INTERSECTIsSupportedX();
-            //checkBoxAVX512BMM.Checked = cpuHelper.GetEAX7EDX1_AVX512BMMIsSupportedX();
-            //checkBoxAMX.Checked = cpuHelper.GetEAX7EDX22_AMXIsSupportedX();
-            //checkBoxAVX101.Checked = cpuHelper.GetEAX7EBX10_AVX101IsSupportedX();
-            //checkBoxAVX102.Checked = cpuHelper.GetEAX7EBX11_AVX102IsSupportedX();
+            checkBoxAVX2.Checked = cpuHelper.GetEAX7ECX0_EBX5_AVX2IsSupportedX();
+            checkBoxAVX512F.Checked = cpuHelper.GetEAX7ECX0_EBX16_AVX512FIsSupportedX();
+            checkBoxAVX512CD.Checked = cpuHelper.GetEAX7ECX0_EBX28_AVX512CDIsSupportedX();
+            checkBoxAVX512ER.Checked = cpuHelper.GetEAX7ECX0_EBX27_AVX512ERIsSupportedX();
+            checkBoxAVX512PF.Checked = cpuHelper.GetEAX7ECX0_EBX26_AVX512PFIsSupportedX();
+            checkBoxAVX5124VNNIW.Checked = cpuHelper.GetEAX7ECX0_EDX2_AVX5124VNNIIsSupportedX();
+            checkBoxAVX5124FMAPS.Checked = cpuHelper.GetEAX7ECX0_EDX3_AVX5124FMAPSIsSupportedX();
+            checkBoxAVX512VL.Checked = cpuHelper.GetEAX7ECX0_EBX31_AVX512VLIsSupportedX();
+            checkBoxAVX512DQ.Checked = cpuHelper.GetEAX7ECX0_EBX17_AVX512DQIsSupportedX();
+            checkBoxAVX512BW.Checked = cpuHelper.GetEAX7ECX0_EBX30_AVX512BWIsSupportedX();
+            checkBoxAVX512IFMA.Checked = cpuHelper.GetEAX7ECX0_EBX21_AVX512IFMAIsSupportedX();
+            checkBoxAVX512VBMI.Checked = cpuHelper.GetEAX7ECX0_ECX1_AVX512VBMIIsSupportedX();
+            checkBoxAVX512VNNI.Checked = cpuHelper.GetEAX7ECX0_ECX11_AVX512VNNIIsSupportedX();
+            checkBoxAVX512VPOPCNTDQ.Checked = cpuHelper.GetEAX7ECX0_ECX14_AVX512VPOPCNTDQIsSupportedX();
+            checkBoxAVX512VBMI2.Checked = cpuHelper.GetEAX7ECX0_ECX6_AVX512VBMI2IsSupportedX();
+            checkBoxAVX512BITALG.Checked = cpuHelper.GetEAX7ECX0_ECX12_AVX512BITALGIsSupportedX();
+            checkBoxAVX512VP2INTERSECT.Checked = cpuHelper.GetEAX7ECX0_EDX8_AVX512VP2INTERSECTIsSupportedX();
+            //checkBoxAVX512BMM.Checked = cpuHelper. //80000021 EAX 23 AVX512_BMM
+            //checkBoxAMX.Checked = cpuHelper. // Several different AMX features, check the specific CPUID bits for each
+            //checkBoxAVX101.Checked = cpuHelper. // Several different AVX10 features, check the specific CPUID bits for each (EAX24, ECX0)
+            //checkBoxAVX102.Checked = cpuHelper. // Several different AVX10 features, check the specific CPUID bits for each (EAX24, ECX1)
 
             #endregion
 
             #region x86 Cryptographic Instructions
 
-            //checkBoxAES.Checked = cpuHelper.GetEAX1ECX25_AESIsSupportedX();
+            checkBoxAES.Checked = cpuHelper.GetEAX1ECX25_AESNIIsSupportedX();
             checkBoxCLMUL.Checked = cpuHelper.GetEAX1ECX1_PCLMULQDQIsSupportedX();
-            //checkBoxRDSEED.Checked = cpuHelper.GetEAX7EBX18_RDSEEDIsSupportedX();
+            checkBoxRDSEED.Checked = cpuHelper.GetEAX7ECX0_EBX18_RDSEEDIsSupportedX();
             checkBoxRDRAND.Checked = cpuHelper.GetEAX1ECX30_RDRANDIsSupportedX();
-            //checkBoxSHA.Checked = cpuHelper.GetEAX7EBX29_SHAIsSupportedX();
-            //checkBoxSM3.Checked = cpuHelper.GetEAX7ECX2_SM3IsSupportedX();
-            //checkBoxSM4.Checked = cpuHelper.GetEAX7ECX3_SM4IsSupportedX();
-            //checkBoxKL.Checked = cpuHelper.GetEAX7EBX22_KLIsSupportedX();
-            //checkBoxPadLock.Checked = cpuHelper.GetEAX7EBX6_PADLOCKIsSupportedX();
-            //checkBoxMPX.Checked = cpuHelper.GetEAX7EBX1_MPXIsSupportedX();
-            //checkBoxSGX.Checked = cpuHelper.GetEAX7EBX2_SGXIsSupportedX();
-            //checkBoxTDX.Checked = cpuHelper.GetEAX7EBX13_TDXIsSupportedX();
+            checkBoxSHA.Checked = cpuHelper.GetEAX7ECX0_EBX29_SHAIsSupportedX();
+            checkBoxSM3.Checked = cpuHelper.GetEAX7ECX1_EAX1_SM3IsSupportedX();
+            checkBoxSM4.Checked = cpuHelper.GetEAX7ECX1_EAX2_SM4IsSupportedX();
+            checkBoxKL.Checked = cpuHelper.GetEAX7ECX0_ECX23_KLIsSupportedX();
+            //checkBoxPadLock.Checked = cpuHelper. //EAX=C0000001, various
+            checkBoxMPX.Checked = cpuHelper.GetEAX7ECX0_EBX14_MPXIsSupportedX();
+            checkBoxSGX.Checked = cpuHelper.GetEAX7ECX0_EBX2_SGXIsSupportedX();
+            //checkBoxTDX.Checked = cpuHelper. //EAX=21h ?
 
             #endregion
 
             #region x86 Virtualization Instructions
 
-            //checkBoxAMDV.Checked = cpuHelper.GetEAX80000001ECX2_SVMIsSupportedX();
-            //checkBoxIntelVTX.Checked = 
-            //checkBoxVIAVT.Checked = 
-            //checkBoxV8086M.Checked = cpuHelper.GetEAX1EDX0_V8086MIsSupportedX();
+            //checkBoxAMDV.Checked = cpuHelper. // EAX=40000000h-4FFFFFFFh
+            //checkBoxIntelVTX.Checked = cpuHelper. // EAX=40000000h-4FFFFFFFh
+            //checkBoxVIAVT.Checked = cpuHelper. // ?
+            checkBoxV8086M.Checked = cpuHelper.GetEAX1EDX1_VMEIsSupportedX();
 
             #endregion
 
             #region Transactional Memory Instructions
 
-            //checkBoxTSX.Checked = cpuHelper.GetEAX7EBX11_TSXIsSupportedX();
-            //checkBoxASF.Checked = cpuHelper.GetEAX1EDX22_ASFIsSupportedX();
+            checkBoxTSX.Checked = cpuHelper.GetEAX7ECX0_EBX11_RTMIsSupportedX(); // RTM - TSX Restricted Transactional Memory ???
+            //checkBoxASF.Checked = cpuHelper.; // Advanced Sycnhronization Facility (ASF) - Intel only, AMD has no ASF support
 
             #endregion
 
