@@ -930,37 +930,35 @@ namespace CPU_S
 
             #region Bit Manipulation Instructions
 
-            //checkBoxADX.Checked = cpuHelper.GetEAX7EBX19_ADXIsSupportedX();
-            //checkBoxBMI1.Checked = cpuHelper.GetEAX7EBX3_BMI1IsSupportedX();
-            //checkBoxBMI2.Checked = cpuHelper.GetEAX7EBX8_BMI2IsSupportedX();
-            //checkBoxTBM.Checked = cpuHelper.GetEAX80000001ECX21_TBMIsSupportedX();
-            //checkBoxABM.Checked = cpuHelper.GetEAX80000001ECX5_ABMIsSupportedX();
+            checkBoxADX.Checked = cpuHelper.GetEAX7ECX0_EBX19_ADXIsSupportedX();
+            checkBoxBMI1.Checked = cpuHelper.GetEAX7ECX0_EBX3_BMI1IsSupportedX();
+            checkBoxBMI2.Checked = cpuHelper.GetEAX7ECX0_EBX8_BMI2IsSupportedX();
+            checkBoxTBM.Checked = cpuHelper.GetEAX80000001ECX21_TBMIsSupportedX();
+            checkBoxABM.Checked = cpuHelper.GetEAX80000001ECX5_ABMIsSupportedX();
 
             #endregion
 
             #region x86 Instructions
 
-            //checkBoxI386.Checked = cpuHelper.GetEAX1EDX0_I386IsSupportedX();
-            //checkBoxItanium.Checked = cpuHelper.GetEAX1EDX30_ItaniumIsSupportedX();
-            //checkBoxHLE.Checked = cpuHelper.GetEAX7EBX4_HLEIsSupportedX();
-            //checkBoxKNC.Checked = cpuHelper.GetEAX1EDX31_KNCIsSupportedX();
-            //checkBoxKLKM.Checked = cpuHelper.GetEAX7EBX22_KLIsSupportedX();
+            //checkBoxI386.Checked = cpuHelper. //?
+            //checkBoxItanium.Checked = cpuHelper. //?
+            checkBoxHLE.Checked = cpuHelper.GetEAX7ECX0_EBX4_HLEIsSupportedX();
+            //checkBoxKNC.Checked = cpuHelper. //? Knights Corner
+            //checkBoxKLKM.Checked = cpuHelper. //? Knights Landing & Knights Mill
 
-            //checkBoxAM386SMM.Checked = cpuHelper.GetEAX1EDX1_AM386SMMIsSupportedX();
-            //checkBox3DNow.Checked = cpuHelper.GetEAX80000001EDX31_3DNowIsSupportedX();
-            //checkBox3DNowPlus.Checked = cpuHelper.GetEAX80000001EDX30_3DNowPlusIsSupportedX();
-            //checkBoxSSE5.Checked = cpuHelper.GetEAX80000001ECX11_SSE5IsSupportedX();
-            //checkBoxXOP.Checked = cpuHelper.GetEAX80000001ECX2_XOPIsSupportedX();
-            //checkBoxFMA4.Checked = cpuHelper.GetEAX1ECX16_FMA4IsSupportedX();
-            //checkBoxLWP.Checked = cpuHelper.GetEAX80000001ECX15_LWPIsSupportedX();
+            //checkBoxAM386SMM.Checked = cpuHelper. //? Am386 SMM (System Management Mode Instructions)
+            checkBox3DNow.Checked = cpuHelper.GetEAX80000001EDX31_3DNOWIsSupportedX();
+            checkBox3DNowPlus.Checked = cpuHelper.GetEAX80000001EDX30_3DNOWEXTIsSupportedX();
+            checkBoxXOP.Checked = cpuHelper.GetEAX80000001ECX11_XOPIsSupportedX(); // SSE5 is not a standard name, but it refers to AMD's XOP (eXtended Operations) instruction set
+            checkBoxFMA4.Checked = cpuHelper.GetEAX80000001ECX16_FMA4IsSupportedX();
+            checkBoxLWP.Checked = cpuHelper.GetEAX80000001ECX15_LWPIsSupportedX();
 
-            //checkBoxNECV.Checked = cpuHelper.GetEAX80000001EDX5_NECVIsSupportedX();
-            //checkBoxCyrixGeode.Checked = cpuHelper.GetEAX80000001EDX6_CyrixGeodeIsSupportedX();
-            //checkBoxCyrixEMMi.Checked = cpuHelper.GetEAX80000001EDX7_CyrixEMMiIsSupportedX();
-            //checkBoxVIAAIS.Checked = cpuHelper.GetEAX80000001EDX22_VIAAISIsSupportedX();
-            //checkBoxCAndT.Checked = cpuHelper.GetEAX80000001EDX23_CAndTIsSupportedX();
-            //checkBoxAliNvidiaDMP.Checked = cpuHelper.GetEAX80000001EDX24_AliNvidiaDMPIsSupportedX();
-            //checkBox387Clones.Checked = cpuHelper.GetEAX1EDX6_387ClonesIsSupportedX();
+            //checkBoxNECV.Checked = cpuHelper. //? NEC V-series
+            //checkBoxCyrixGeode.Checked = cpuHelper. //? Cyrix Geode
+            //checkBoxCyrixEMMi.Checked = cpuHelper. //? Cyrix EMMI (Extended Multi-Media Instructions)
+            //checkBoxVIAAIS.Checked = cpuHelper. //? VIA Advanced Intelligent Instruction Set (AIIS)
+            //checkBoxCAndT.Checked = cpuHelper. //? C&T (Cyrix & Texas Instruments) - C&T 486SLC, 486DLC, 5x86, 6x86, M1, M2
+            //checkBox387Clones.Checked = cpuHelper. //? 387 Clones - Cyrix 387S, UMC 387S, IIT 387S, Chips & Technologies 387S, Weitek 387S, etc.
 
             #endregion
 

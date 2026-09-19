@@ -153,18 +153,90 @@
             this.textBoxCPUProcessorId = new System.Windows.Forms.TextBox();
             this.tabPageX86SIMDInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxX86SIMDInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxAVX102 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX101 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAMX = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512BMM = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VP2INTERSECT = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512BITALG = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VBMI2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VPOPCNTDQ = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VNNI = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VBMI = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512IFMA = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512BW = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512DQ = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512VL = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX5124FMAPS = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX5124VNNIW = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512PF = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512ER = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512CD = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512F = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxFMA3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSE42 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSE41 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSE4a = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSSE3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSE3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSE2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSSE = new System.Windows.Forms.CheckBox();
+            this.checkBoxMMX = new System.Windows.Forms.CheckBox();
             this.tabPageX86CryptographicInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxX86CryptographicInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxTDX = new System.Windows.Forms.CheckBox();
+            this.checkBoxSGX = new System.Windows.Forms.CheckBox();
+            this.checkBoxMPX = new System.Windows.Forms.CheckBox();
+            this.checkBoxPadLock = new System.Windows.Forms.CheckBox();
+            this.checkBoxKL = new System.Windows.Forms.CheckBox();
+            this.checkBoxSM4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSM3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSHA = new System.Windows.Forms.CheckBox();
+            this.checkBoxRDRAND = new System.Windows.Forms.CheckBox();
+            this.checkBoxRDSEED = new System.Windows.Forms.CheckBox();
+            this.checkBoxCLMUL = new System.Windows.Forms.CheckBox();
+            this.checkBoxAES = new System.Windows.Forms.CheckBox();
             this.tabPageX86VirtualizationInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxX86VirtualizationInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxV8086M = new System.Windows.Forms.CheckBox();
+            this.checkBoxVIAVT = new System.Windows.Forms.CheckBox();
+            this.checkBoxIntelVTX = new System.Windows.Forms.CheckBox();
+            this.checkBoxAMDV = new System.Windows.Forms.CheckBox();
             this.tabPageX86TransactionalMemoryInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxx86TransactionalMemoryInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxASF = new System.Windows.Forms.CheckBox();
+            this.checkBoxTSX = new System.Windows.Forms.CheckBox();
             this.tabPageX86BitManipulation = new System.Windows.Forms.TabPage();
             this.groupBoxX86BitManipulationInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxABM = new System.Windows.Forms.CheckBox();
+            this.checkBoxTBM = new System.Windows.Forms.CheckBox();
+            this.checkBoxBMI2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBMI1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxADX = new System.Windows.Forms.CheckBox();
             this.tabPageX86Instructions = new System.Windows.Forms.TabPage();
             this.groupBoxOtherX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBox387Clones = new System.Windows.Forms.CheckBox();
+            this.checkBoxAliNvidiaDMP = new System.Windows.Forms.CheckBox();
+            this.checkBoxCAndT = new System.Windows.Forms.CheckBox();
+            this.checkBoxVIAAIS = new System.Windows.Forms.CheckBox();
+            this.checkBoxCyrixEMMi = new System.Windows.Forms.CheckBox();
+            this.checkBoxCyrixGeode = new System.Windows.Forms.CheckBox();
+            this.checkBoxNECV = new System.Windows.Forms.CheckBox();
             this.groupBoxAMDX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxLWP = new System.Windows.Forms.CheckBox();
+            this.checkBoxFMA4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxXOP = new System.Windows.Forms.CheckBox();
+            this.checkBox3DNowPlus = new System.Windows.Forms.CheckBox();
+            this.checkBox3DNow = new System.Windows.Forms.CheckBox();
+            this.checkBoxAM386SMM = new System.Windows.Forms.CheckBox();
             this.groupBoxIntelX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxKLKM = new System.Windows.Forms.CheckBox();
+            this.checkBoxKNC = new System.Windows.Forms.CheckBox();
+            this.checkBoxHLE = new System.Windows.Forms.CheckBox();
+            this.checkBoxItanium = new System.Windows.Forms.CheckBox();
+            this.checkBoxI386 = new System.Windows.Forms.CheckBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -221,79 +293,6 @@
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkBoxMMX = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSE = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSE2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSE3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSSE3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSE4a = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSE41 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSE42 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX = new System.Windows.Forms.CheckBox();
-            this.checkBoxFMA3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512F = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512CD = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512ER = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512PF = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX5124VNNIW = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX5124FMAPS = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512VL = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512DQ = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512BW = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512IFMA = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512VBMI = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512VNNI = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512VPOPCNTDQ = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512VBMI2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512BITALG = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512VP2INTERSECT = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX512BMM = new System.Windows.Forms.CheckBox();
-            this.checkBoxAMX = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX101 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAVX102 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAES = new System.Windows.Forms.CheckBox();
-            this.checkBoxCLMUL = new System.Windows.Forms.CheckBox();
-            this.checkBoxRDSEED = new System.Windows.Forms.CheckBox();
-            this.checkBoxRDRAND = new System.Windows.Forms.CheckBox();
-            this.checkBoxSHA = new System.Windows.Forms.CheckBox();
-            this.checkBoxSM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSM4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKL = new System.Windows.Forms.CheckBox();
-            this.checkBoxPadLock = new System.Windows.Forms.CheckBox();
-            this.checkBoxMPX = new System.Windows.Forms.CheckBox();
-            this.checkBoxSGX = new System.Windows.Forms.CheckBox();
-            this.checkBoxTDX = new System.Windows.Forms.CheckBox();
-            this.checkBoxAMDV = new System.Windows.Forms.CheckBox();
-            this.checkBoxIntelVTX = new System.Windows.Forms.CheckBox();
-            this.checkBoxVIAVT = new System.Windows.Forms.CheckBox();
-            this.checkBoxV8086M = new System.Windows.Forms.CheckBox();
-            this.checkBoxTSX = new System.Windows.Forms.CheckBox();
-            this.checkBoxASF = new System.Windows.Forms.CheckBox();
-            this.checkBoxADX = new System.Windows.Forms.CheckBox();
-            this.checkBoxBMI1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBMI2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxTBM = new System.Windows.Forms.CheckBox();
-            this.checkBoxABM = new System.Windows.Forms.CheckBox();
-            this.checkBoxI386 = new System.Windows.Forms.CheckBox();
-            this.checkBoxItanium = new System.Windows.Forms.CheckBox();
-            this.checkBoxHLE = new System.Windows.Forms.CheckBox();
-            this.checkBoxKNC = new System.Windows.Forms.CheckBox();
-            this.checkBoxKLKM = new System.Windows.Forms.CheckBox();
-            this.checkBoxAM386SMM = new System.Windows.Forms.CheckBox();
-            this.checkBox3DNow = new System.Windows.Forms.CheckBox();
-            this.checkBox3DNowPlus = new System.Windows.Forms.CheckBox();
-            this.checkBoxSSE5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxXOP = new System.Windows.Forms.CheckBox();
-            this.checkBoxFMA4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxLWP = new System.Windows.Forms.CheckBox();
-            this.checkBoxNECV = new System.Windows.Forms.CheckBox();
-            this.checkBoxCyrixGeode = new System.Windows.Forms.CheckBox();
-            this.checkBoxCyrixEMMi = new System.Windows.Forms.CheckBox();
-            this.checkBoxVIAAIS = new System.Windows.Forms.CheckBox();
-            this.checkBoxCAndT = new System.Windows.Forms.CheckBox();
-            this.checkBoxAliNvidiaDMP = new System.Windows.Forms.CheckBox();
-            this.checkBox387Clones = new System.Windows.Forms.CheckBox();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -1602,6 +1601,320 @@
             this.groupBoxX86SIMDInstructions.TabIndex = 0;
             this.groupBoxX86SIMDInstructions.TabStop = false;
             // 
+            // checkBoxAVX102
+            // 
+            this.checkBoxAVX102.AutoSize = true;
+            this.checkBoxAVX102.Location = new System.Drawing.Point(9, 708);
+            this.checkBoxAVX102.Name = "checkBoxAVX102";
+            this.checkBoxAVX102.Size = new System.Drawing.Size(271, 17);
+            this.checkBoxAVX102.TabIndex = 92;
+            this.checkBoxAVX102.Text = "AVX10.2 (Advanced Vector Extensions 10.2) (2026)";
+            this.checkBoxAVX102.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX101
+            // 
+            this.checkBoxAVX101.AutoSize = true;
+            this.checkBoxAVX101.Location = new System.Drawing.Point(9, 685);
+            this.checkBoxAVX101.Name = "checkBoxAVX101";
+            this.checkBoxAVX101.Size = new System.Drawing.Size(271, 17);
+            this.checkBoxAVX101.TabIndex = 91;
+            this.checkBoxAVX101.Text = "AVX10.1 (Advanced Vector Extensions 10.1) (2024)";
+            this.checkBoxAVX101.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAMX
+            // 
+            this.checkBoxAMX.AutoSize = true;
+            this.checkBoxAMX.Location = new System.Drawing.Point(9, 662);
+            this.checkBoxAMX.Name = "checkBoxAMX";
+            this.checkBoxAMX.Size = new System.Drawing.Size(225, 17);
+            this.checkBoxAMX.TabIndex = 90;
+            this.checkBoxAMX.Text = "AMX (Advanced Matrix Extensions) (2023)";
+            this.checkBoxAMX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512BMM
+            // 
+            this.checkBoxAVX512BMM.AutoSize = true;
+            this.checkBoxAVX512BMM.Location = new System.Drawing.Point(9, 639);
+            this.checkBoxAVX512BMM.Name = "checkBoxAVX512BMM";
+            this.checkBoxAVX512BMM.Size = new System.Drawing.Size(372, 17);
+            this.checkBoxAVX512BMM.TabIndex = 89;
+            this.checkBoxAVX512BMM.Text = "AVX-512 BMM (Advanced Vector Extension Bit Manipulation Instructions)";
+            this.checkBoxAVX512BMM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VP2INTERSECT
+            // 
+            this.checkBoxAVX512VP2INTERSECT.AutoSize = true;
+            this.checkBoxAVX512VP2INTERSECT.Location = new System.Drawing.Point(9, 616);
+            this.checkBoxAVX512VP2INTERSECT.Name = "checkBoxAVX512VP2INTERSECT";
+            this.checkBoxAVX512VP2INTERSECT.Size = new System.Drawing.Size(536, 17);
+            this.checkBoxAVX512VP2INTERSECT.TabIndex = 88;
+            this.checkBoxAVX512VP2INTERSECT.Text = "AVX-512 VP2INTERSECT (Advanced Vector Extension Vector Pair Intersection to a Pai" +
+    "r of Mask Registers)";
+            this.checkBoxAVX512VP2INTERSECT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512BITALG
+            // 
+            this.checkBoxAVX512BITALG.AutoSize = true;
+            this.checkBoxAVX512BITALG.Location = new System.Drawing.Point(9, 593);
+            this.checkBoxAVX512BITALG.Name = "checkBoxAVX512BITALG";
+            this.checkBoxAVX512BITALG.Size = new System.Drawing.Size(316, 17);
+            this.checkBoxAVX512BITALG.TabIndex = 87;
+            this.checkBoxAVX512BITALG.Text = "AVX-512 BITALG (Advanced Vector Extension Bit Algorithms)";
+            this.checkBoxAVX512BITALG.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VBMI2
+            // 
+            this.checkBoxAVX512VBMI2.AutoSize = true;
+            this.checkBoxAVX512VBMI2.Location = new System.Drawing.Point(9, 570);
+            this.checkBoxAVX512VBMI2.Name = "checkBoxAVX512VBMI2";
+            this.checkBoxAVX512VBMI2.Size = new System.Drawing.Size(422, 17);
+            this.checkBoxAVX512VBMI2.TabIndex = 86;
+            this.checkBoxAVX512VBMI2.Text = "AVX-512 VBMI2 (Advanced Vector Extension Vector Bit Manipulation Instructions 2)";
+            this.checkBoxAVX512VBMI2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VPOPCNTDQ
+            // 
+            this.checkBoxAVX512VPOPCNTDQ.AutoSize = true;
+            this.checkBoxAVX512VPOPCNTDQ.Location = new System.Drawing.Point(9, 547);
+            this.checkBoxAVX512VPOPCNTDQ.Name = "checkBoxAVX512VPOPCNTDQ";
+            this.checkBoxAVX512VPOPCNTDQ.Size = new System.Drawing.Size(446, 17);
+            this.checkBoxAVX512VPOPCNTDQ.TabIndex = 85;
+            this.checkBoxAVX512VPOPCNTDQ.Text = "AVX-512 VPOPCNTDQ (Advanced Vector Extension Vector population count instruction)" +
+    "";
+            this.checkBoxAVX512VPOPCNTDQ.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VNNI
+            // 
+            this.checkBoxAVX512VNNI.AutoSize = true;
+            this.checkBoxAVX512VNNI.Location = new System.Drawing.Point(9, 524);
+            this.checkBoxAVX512VNNI.Name = "checkBoxAVX512VNNI";
+            this.checkBoxAVX512VNNI.Size = new System.Drawing.Size(406, 17);
+            this.checkBoxAVX512VNNI.TabIndex = 84;
+            this.checkBoxAVX512VNNI.Text = "AVX-512 VNNI (Advanced Vector Extension Vector Neural Network Instructions)";
+            this.checkBoxAVX512VNNI.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VBMI
+            // 
+            this.checkBoxAVX512VBMI.AutoSize = true;
+            this.checkBoxAVX512VBMI.Location = new System.Drawing.Point(9, 501);
+            this.checkBoxAVX512VBMI.Name = "checkBoxAVX512VBMI";
+            this.checkBoxAVX512VBMI.Size = new System.Drawing.Size(407, 17);
+            this.checkBoxAVX512VBMI.TabIndex = 83;
+            this.checkBoxAVX512VBMI.Text = "AVX-512 VBMI (Advanced Vector Extension Vector Bit Manipulation Instructions)";
+            this.checkBoxAVX512VBMI.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512IFMA
+            // 
+            this.checkBoxAVX512IFMA.AutoSize = true;
+            this.checkBoxAVX512IFMA.Location = new System.Drawing.Point(9, 478);
+            this.checkBoxAVX512IFMA.Name = "checkBoxAVX512IFMA";
+            this.checkBoxAVX512IFMA.Size = new System.Drawing.Size(365, 17);
+            this.checkBoxAVX512IFMA.TabIndex = 82;
+            this.checkBoxAVX512IFMA.Text = "AVX-512 IFMA (Advanced Vector Extension Integer Fused Multiply Add)";
+            this.checkBoxAVX512IFMA.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512BW
+            // 
+            this.checkBoxAVX512BW.AutoSize = true;
+            this.checkBoxAVX512BW.Location = new System.Drawing.Point(9, 455);
+            this.checkBoxAVX512BW.Name = "checkBoxAVX512BW";
+            this.checkBoxAVX512BW.Size = new System.Drawing.Size(361, 17);
+            this.checkBoxAVX512BW.TabIndex = 81;
+            this.checkBoxAVX512BW.Text = "AVX-512 BW (Advanced Vector Extension Byte and Word Instructions)";
+            this.checkBoxAVX512BW.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512DQ
+            // 
+            this.checkBoxAVX512DQ.AutoSize = true;
+            this.checkBoxAVX512DQ.Location = new System.Drawing.Point(9, 432);
+            this.checkBoxAVX512DQ.Name = "checkBoxAVX512DQ";
+            this.checkBoxAVX512DQ.Size = new System.Drawing.Size(418, 17);
+            this.checkBoxAVX512DQ.TabIndex = 80;
+            this.checkBoxAVX512DQ.Text = "AVX-512 DQ (Advanced Vector Extension Doubleword and Quadword Instructions)";
+            this.checkBoxAVX512DQ.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512VL
+            // 
+            this.checkBoxAVX512VL.AutoSize = true;
+            this.checkBoxAVX512VL.Location = new System.Drawing.Point(9, 409);
+            this.checkBoxAVX512VL.Name = "checkBoxAVX512VL";
+            this.checkBoxAVX512VL.Size = new System.Drawing.Size(349, 17);
+            this.checkBoxAVX512VL.TabIndex = 79;
+            this.checkBoxAVX512VL.Text = "AVX-512 VL (Advanced Vector Extension Vector Length Extensions)";
+            this.checkBoxAVX512VL.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX5124FMAPS
+            // 
+            this.checkBoxAVX5124FMAPS.AutoSize = true;
+            this.checkBoxAVX5124FMAPS.Location = new System.Drawing.Point(9, 386);
+            this.checkBoxAVX5124FMAPS.Name = "checkBoxAVX5124FMAPS";
+            this.checkBoxAVX5124FMAPS.Size = new System.Drawing.Size(508, 17);
+            this.checkBoxAVX5124FMAPS.TabIndex = 78;
+            this.checkBoxAVX5124FMAPS.Text = "AVX-512 4FMAPS (Advanced Vector Extension Fused Multiply Accumulation Packed Sing" +
+    "le precision)";
+            this.checkBoxAVX5124FMAPS.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX5124VNNIW
+            // 
+            this.checkBoxAVX5124VNNIW.AutoSize = true;
+            this.checkBoxAVX5124VNNIW.Location = new System.Drawing.Point(9, 363);
+            this.checkBoxAVX5124VNNIW.Name = "checkBoxAVX5124VNNIW";
+            this.checkBoxAVX5124VNNIW.Size = new System.Drawing.Size(537, 17);
+            this.checkBoxAVX5124VNNIW.TabIndex = 77;
+            this.checkBoxAVX5124VNNIW.Text = "AVX-512 4VNNIW (Advanced Vector Extension Vector Neural Network Instructions Word" +
+    " variable precision)";
+            this.checkBoxAVX5124VNNIW.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512PF
+            // 
+            this.checkBoxAVX512PF.AutoSize = true;
+            this.checkBoxAVX512PF.Location = new System.Drawing.Point(9, 340);
+            this.checkBoxAVX512PF.Name = "checkBoxAVX512PF";
+            this.checkBoxAVX512PF.Size = new System.Drawing.Size(325, 17);
+            this.checkBoxAVX512PF.TabIndex = 76;
+            this.checkBoxAVX512PF.Text = "AVX-512 PF (Advanced Vector Extension Prefetch Instructions)";
+            this.checkBoxAVX512PF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512ER
+            // 
+            this.checkBoxAVX512ER.AutoSize = true;
+            this.checkBoxAVX512ER.Location = new System.Drawing.Point(9, 317);
+            this.checkBoxAVX512ER.Name = "checkBoxAVX512ER";
+            this.checkBoxAVX512ER.Size = new System.Drawing.Size(417, 17);
+            this.checkBoxAVX512ER.TabIndex = 75;
+            this.checkBoxAVX512ER.Text = "AVX-512 ER (Advanced Vector Extension Exponential and Reciprocal Instructions)";
+            this.checkBoxAVX512ER.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512CD
+            // 
+            this.checkBoxAVX512CD.AutoSize = true;
+            this.checkBoxAVX512CD.Location = new System.Drawing.Point(9, 294);
+            this.checkBoxAVX512CD.Name = "checkBoxAVX512CD";
+            this.checkBoxAVX512CD.Size = new System.Drawing.Size(371, 17);
+            this.checkBoxAVX512CD.TabIndex = 74;
+            this.checkBoxAVX512CD.Text = "AVX-512 CD (Advanced Vector Extension Conflict Detection Instructions)";
+            this.checkBoxAVX512CD.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX512F
+            // 
+            this.checkBoxAVX512F.AutoSize = true;
+            this.checkBoxAVX512F.Location = new System.Drawing.Point(9, 271);
+            this.checkBoxAVX512F.Name = "checkBoxAVX512F";
+            this.checkBoxAVX512F.Size = new System.Drawing.Size(274, 17);
+            this.checkBoxAVX512F.TabIndex = 73;
+            this.checkBoxAVX512F.Text = "AVX-512 F (Advanced Vector Extension Foundation)";
+            this.checkBoxAVX512F.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX2
+            // 
+            this.checkBoxAVX2.AutoSize = true;
+            this.checkBoxAVX2.Location = new System.Drawing.Point(9, 248);
+            this.checkBoxAVX2.Name = "checkBoxAVX2";
+            this.checkBoxAVX2.Size = new System.Drawing.Size(241, 17);
+            this.checkBoxAVX2.TabIndex = 72;
+            this.checkBoxAVX2.Text = "AVX2 (Advanced Vector Extensions 2) (2013)";
+            this.checkBoxAVX2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFMA3
+            // 
+            this.checkBoxFMA3.AutoSize = true;
+            this.checkBoxFMA3.Location = new System.Drawing.Point(9, 225);
+            this.checkBoxFMA3.Name = "checkBoxFMA3";
+            this.checkBoxFMA3.Size = new System.Drawing.Size(194, 17);
+            this.checkBoxFMA3.TabIndex = 71;
+            this.checkBoxFMA3.Text = "FMA3 (Fused Multiply-Add 3) (2013)";
+            this.checkBoxFMA3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAVX
+            // 
+            this.checkBoxAVX.AutoSize = true;
+            this.checkBoxAVX.Location = new System.Drawing.Point(9, 202);
+            this.checkBoxAVX.Name = "checkBoxAVX";
+            this.checkBoxAVX.Size = new System.Drawing.Size(226, 17);
+            this.checkBoxAVX.TabIndex = 70;
+            this.checkBoxAVX.Text = "AVX (Advanced Vector Extensions) (2011)";
+            this.checkBoxAVX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSE42
+            // 
+            this.checkBoxSSE42.AutoSize = true;
+            this.checkBoxSSE42.Location = new System.Drawing.Point(9, 179);
+            this.checkBoxSSE42.Name = "checkBoxSSE42";
+            this.checkBoxSSE42.Size = new System.Drawing.Size(253, 17);
+            this.checkBoxSSE42.TabIndex = 69;
+            this.checkBoxSSE42.Text = "SSE4.2 (Streaming SIMD Extensions 4.2) (2008)";
+            this.checkBoxSSE42.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSE41
+            // 
+            this.checkBoxSSE41.AutoSize = true;
+            this.checkBoxSSE41.Location = new System.Drawing.Point(9, 156);
+            this.checkBoxSSE41.Name = "checkBoxSSE41";
+            this.checkBoxSSE41.Size = new System.Drawing.Size(253, 17);
+            this.checkBoxSSE41.TabIndex = 68;
+            this.checkBoxSSE41.Text = "SSE4.1 (Streaming SIMD Extensions 4.1) (2007)";
+            this.checkBoxSSE41.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSE4a
+            // 
+            this.checkBoxSSE4a.AutoSize = true;
+            this.checkBoxSSE4a.Location = new System.Drawing.Point(9, 133);
+            this.checkBoxSSE4a.Name = "checkBoxSSE4a";
+            this.checkBoxSSE4a.Size = new System.Drawing.Size(304, 17);
+            this.checkBoxSSE4a.TabIndex = 67;
+            this.checkBoxSSE4a.Text = "SSE4a (Streaming SIMD Extensions 4a) (AMD Only) (2007)";
+            this.checkBoxSSE4a.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSSE3
+            // 
+            this.checkBoxSSSE3.AutoSize = true;
+            this.checkBoxSSSE3.Location = new System.Drawing.Point(9, 110);
+            this.checkBoxSSSE3.Name = "checkBoxSSSE3";
+            this.checkBoxSSSE3.Size = new System.Drawing.Size(196, 17);
+            this.checkBoxSSSE3.TabIndex = 66;
+            this.checkBoxSSSE3.Text = "SSSE3 (Supplemental SSE3) (2006)";
+            this.checkBoxSSSE3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSE3
+            // 
+            this.checkBoxSSE3.AutoSize = true;
+            this.checkBoxSSE3.Location = new System.Drawing.Point(9, 87);
+            this.checkBoxSSE3.Name = "checkBoxSSE3";
+            this.checkBoxSSE3.Size = new System.Drawing.Size(235, 17);
+            this.checkBoxSSE3.TabIndex = 65;
+            this.checkBoxSSE3.Text = "SSE3 (Streaming SIMD Extensions 3) (2004)";
+            this.checkBoxSSE3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSE2
+            // 
+            this.checkBoxSSE2.AutoSize = true;
+            this.checkBoxSSE2.Location = new System.Drawing.Point(9, 64);
+            this.checkBoxSSE2.Name = "checkBoxSSE2";
+            this.checkBoxSSE2.Size = new System.Drawing.Size(235, 17);
+            this.checkBoxSSE2.TabIndex = 64;
+            this.checkBoxSSE2.Text = "SSE2 (Streaming SIMD Extensions 2) (2000)";
+            this.checkBoxSSE2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSSE
+            // 
+            this.checkBoxSSE.AutoSize = true;
+            this.checkBoxSSE.Location = new System.Drawing.Point(9, 41);
+            this.checkBoxSSE.Name = "checkBoxSSE";
+            this.checkBoxSSE.Size = new System.Drawing.Size(220, 17);
+            this.checkBoxSSE.TabIndex = 63;
+            this.checkBoxSSE.Text = "SSE (Streaming SIMD Extensions) (1999)";
+            this.checkBoxSSE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMMX
+            // 
+            this.checkBoxMMX.AutoSize = true;
+            this.checkBoxMMX.Location = new System.Drawing.Point(9, 18);
+            this.checkBoxMMX.Name = "checkBoxMMX";
+            this.checkBoxMMX.Size = new System.Drawing.Size(313, 17);
+            this.checkBoxMMX.TabIndex = 62;
+            this.checkBoxMMX.Text = "MMX (MultiMedia eXtension / Matrix Math eXtension) (1997):";
+            this.checkBoxMMX.UseVisualStyleBackColor = true;
+            // 
             // tabPageX86CryptographicInstructions
             // 
             this.tabPageX86CryptographicInstructions.Controls.Add(this.groupBoxX86CryptographicInstructions);
@@ -1632,6 +1945,126 @@
             this.groupBoxX86CryptographicInstructions.TabIndex = 0;
             this.groupBoxX86CryptographicInstructions.TabStop = false;
             // 
+            // checkBoxTDX
+            // 
+            this.checkBoxTDX.AutoSize = true;
+            this.checkBoxTDX.Location = new System.Drawing.Point(6, 272);
+            this.checkBoxTDX.Name = "checkBoxTDX";
+            this.checkBoxTDX.Size = new System.Drawing.Size(174, 17);
+            this.checkBoxTDX.TabIndex = 50;
+            this.checkBoxTDX.Text = "TDX (Trust Domain Extensions)";
+            this.checkBoxTDX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSGX
+            // 
+            this.checkBoxSGX.AutoSize = true;
+            this.checkBoxSGX.Location = new System.Drawing.Point(6, 249);
+            this.checkBoxSGX.Name = "checkBoxSGX";
+            this.checkBoxSGX.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxSGX.TabIndex = 49;
+            this.checkBoxSGX.Text = "SGX (Software Guard Extensions)";
+            this.checkBoxSGX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMPX
+            // 
+            this.checkBoxMPX.AutoSize = true;
+            this.checkBoxMPX.Location = new System.Drawing.Point(6, 226);
+            this.checkBoxMPX.Name = "checkBoxMPX";
+            this.checkBoxMPX.Size = new System.Drawing.Size(200, 17);
+            this.checkBoxMPX.TabIndex = 48;
+            this.checkBoxMPX.Text = "MPX (Memory Protection Extensions)";
+            this.checkBoxMPX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPadLock
+            // 
+            this.checkBoxPadLock.AutoSize = true;
+            this.checkBoxPadLock.Location = new System.Drawing.Point(6, 203);
+            this.checkBoxPadLock.Name = "checkBoxPadLock";
+            this.checkBoxPadLock.Size = new System.Drawing.Size(228, 17);
+            this.checkBoxPadLock.TabIndex = 47;
+            this.checkBoxPadLock.Text = "PadLock Instructions (VIA/Zhaoxin) (2003)";
+            this.checkBoxPadLock.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKL
+            // 
+            this.checkBoxKL.AutoSize = true;
+            this.checkBoxKL.Location = new System.Drawing.Point(6, 180);
+            this.checkBoxKL.Name = "checkBoxKL";
+            this.checkBoxKL.Size = new System.Drawing.Size(188, 17);
+            this.checkBoxKL.TabIndex = 46;
+            this.checkBoxKL.Text = "KL (Key Locker Instructions) (Intel)";
+            this.checkBoxKL.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSM4
+            // 
+            this.checkBoxSM4.AutoSize = true;
+            this.checkBoxSM4.Location = new System.Drawing.Point(6, 157);
+            this.checkBoxSM4.Name = "checkBoxSM4";
+            this.checkBoxSM4.Size = new System.Drawing.Size(164, 17);
+            this.checkBoxSM4.TabIndex = 45;
+            this.checkBoxSM4.Text = "Hygon CIS instructions (SM4)";
+            this.checkBoxSM4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSM3
+            // 
+            this.checkBoxSM3.AutoSize = true;
+            this.checkBoxSM3.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxSM3.Name = "checkBoxSM3";
+            this.checkBoxSM3.Size = new System.Drawing.Size(164, 17);
+            this.checkBoxSM3.TabIndex = 44;
+            this.checkBoxSM3.Text = "Hygon CIS instructions (SM3)";
+            this.checkBoxSM3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSHA
+            // 
+            this.checkBoxSHA.AutoSize = true;
+            this.checkBoxSHA.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxSHA.Name = "checkBoxSHA";
+            this.checkBoxSHA.Size = new System.Drawing.Size(252, 17);
+            this.checkBoxSHA.TabIndex = 43;
+            this.checkBoxSHA.Text = "SHA (Secure Hash Algorithm Extensions) (2013)";
+            this.checkBoxSHA.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRDRAND
+            // 
+            this.checkBoxRDRAND.AutoSize = true;
+            this.checkBoxRDRAND.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxRDRAND.Name = "checkBoxRDRAND";
+            this.checkBoxRDRAND.Size = new System.Drawing.Size(349, 17);
+            this.checkBoxRDRAND.TabIndex = 42;
+            this.checkBoxRDRAND.Text = "RDRAND (Read Random Instruction,  Intel Secure Key Technology)";
+            this.checkBoxRDRAND.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRDSEED
+            // 
+            this.checkBoxRDSEED.AutoSize = true;
+            this.checkBoxRDSEED.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxRDSEED.Name = "checkBoxRDSEED";
+            this.checkBoxRDSEED.Size = new System.Drawing.Size(332, 17);
+            this.checkBoxRDSEED.TabIndex = 41;
+            this.checkBoxRDSEED.Text = "RDSEED (Read Seed Instruction,  Intel Secure Key Technology)";
+            this.checkBoxRDSEED.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCLMUL
+            // 
+            this.checkBoxCLMUL.AutoSize = true;
+            this.checkBoxCLMUL.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxCLMUL.Name = "checkBoxCLMUL";
+            this.checkBoxCLMUL.Size = new System.Drawing.Size(312, 17);
+            this.checkBoxCLMUL.TabIndex = 40;
+            this.checkBoxCLMUL.Text = "CLMUL / PCLMULQDQ (Carry-less Multiplication Extensions)";
+            this.checkBoxCLMUL.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAES
+            // 
+            this.checkBoxAES.AutoSize = true;
+            this.checkBoxAES.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxAES.Name = "checkBoxAES";
+            this.checkBoxAES.Size = new System.Drawing.Size(389, 17);
+            this.checkBoxAES.TabIndex = 39;
+            this.checkBoxAES.Text = "AES / AES-NI (Advanced Encryption Standard New Instructions Extensions))";
+            this.checkBoxAES.UseVisualStyleBackColor = true;
+            // 
             // tabPageX86VirtualizationInstructions
             // 
             this.tabPageX86VirtualizationInstructions.Controls.Add(this.groupBoxX86VirtualizationInstructions);
@@ -1654,6 +2087,46 @@
             this.groupBoxX86VirtualizationInstructions.TabIndex = 0;
             this.groupBoxX86VirtualizationInstructions.TabStop = false;
             // 
+            // checkBoxV8086M
+            // 
+            this.checkBoxV8086M.AutoSize = true;
+            this.checkBoxV8086M.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxV8086M.Name = "checkBoxV8086M";
+            this.checkBoxV8086M.Size = new System.Drawing.Size(111, 17);
+            this.checkBoxV8086M.TabIndex = 34;
+            this.checkBoxV8086M.Text = "Virtual 8086 mode";
+            this.checkBoxV8086M.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVIAVT
+            // 
+            this.checkBoxVIAVT.AutoSize = true;
+            this.checkBoxVIAVT.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxVIAVT.Name = "checkBoxVIAVT";
+            this.checkBoxVIAVT.Size = new System.Drawing.Size(147, 17);
+            this.checkBoxVIAVT.TabIndex = 33;
+            this.checkBoxVIAVT.Text = "VIA virtualization (VIA VT)";
+            this.checkBoxVIAVT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxIntelVTX
+            // 
+            this.checkBoxIntelVTX.AutoSize = true;
+            this.checkBoxIntelVTX.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxIntelVTX.Name = "checkBoxIntelVTX";
+            this.checkBoxIntelVTX.Size = new System.Drawing.Size(241, 17);
+            this.checkBoxIntelVTX.TabIndex = 32;
+            this.checkBoxIntelVTX.Text = "Intel VT-x (VMX / Virtual Machine Extensions)";
+            this.checkBoxIntelVTX.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAMDV
+            // 
+            this.checkBoxAMDV.AutoSize = true;
+            this.checkBoxAMDV.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxAMDV.Name = "checkBoxAMDV";
+            this.checkBoxAMDV.Size = new System.Drawing.Size(251, 17);
+            this.checkBoxAMDV.TabIndex = 31;
+            this.checkBoxAMDV.Text = "AMD-V (Advanced Micro Devices Virtualization)";
+            this.checkBoxAMDV.UseVisualStyleBackColor = true;
+            // 
             // tabPageX86TransactionalMemoryInstructions
             // 
             this.tabPageX86TransactionalMemoryInstructions.Controls.Add(this.groupBoxx86TransactionalMemoryInstructions);
@@ -1673,6 +2146,26 @@
             this.groupBoxx86TransactionalMemoryInstructions.Size = new System.Drawing.Size(970, 754);
             this.groupBoxx86TransactionalMemoryInstructions.TabIndex = 0;
             this.groupBoxx86TransactionalMemoryInstructions.TabStop = false;
+            // 
+            // checkBoxASF
+            // 
+            this.checkBoxASF.AutoSize = true;
+            this.checkBoxASF.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxASF.Name = "checkBoxASF";
+            this.checkBoxASF.Size = new System.Drawing.Size(217, 17);
+            this.checkBoxASF.TabIndex = 42;
+            this.checkBoxASF.Text = "ASF (Advanced Synchronization Facility)";
+            this.checkBoxASF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTSX
+            // 
+            this.checkBoxTSX.AutoSize = true;
+            this.checkBoxTSX.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxTSX.Name = "checkBoxTSX";
+            this.checkBoxTSX.Size = new System.Drawing.Size(412, 17);
+            this.checkBoxTSX.TabIndex = 41;
+            this.checkBoxTSX.Text = "TSX / TSX-NI (Transactional Synchronization Extensions / TSX New Instructions)";
+            this.checkBoxTSX.UseVisualStyleBackColor = true;
             // 
             // tabPageX86BitManipulation
             // 
@@ -1696,6 +2189,56 @@
             this.groupBoxX86BitManipulationInstructions.Size = new System.Drawing.Size(970, 754);
             this.groupBoxX86BitManipulationInstructions.TabIndex = 0;
             this.groupBoxX86BitManipulationInstructions.TabStop = false;
+            // 
+            // checkBoxABM
+            // 
+            this.checkBoxABM.AutoSize = true;
+            this.checkBoxABM.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxABM.Name = "checkBoxABM";
+            this.checkBoxABM.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxABM.TabIndex = 55;
+            this.checkBoxABM.Text = "ABM (Advanced Bit Manipulation)";
+            this.checkBoxABM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTBM
+            // 
+            this.checkBoxTBM.AutoSize = true;
+            this.checkBoxTBM.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxTBM.Name = "checkBoxTBM";
+            this.checkBoxTBM.Size = new System.Drawing.Size(227, 17);
+            this.checkBoxTBM.TabIndex = 54;
+            this.checkBoxTBM.Text = "TBM (Trailing Bit Manipulation Instructions)";
+            this.checkBoxTBM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBMI2
+            // 
+            this.checkBoxBMI2.AutoSize = true;
+            this.checkBoxBMI2.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxBMI2.Name = "checkBoxBMI2";
+            this.checkBoxBMI2.Size = new System.Drawing.Size(215, 17);
+            this.checkBoxBMI2.TabIndex = 53;
+            this.checkBoxBMI2.Text = "BMI2 (Bit Manipulation Instruction Set 2)";
+            this.checkBoxBMI2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBMI1
+            // 
+            this.checkBoxBMI1.AutoSize = true;
+            this.checkBoxBMI1.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxBMI1.Name = "checkBoxBMI1";
+            this.checkBoxBMI1.Size = new System.Drawing.Size(215, 17);
+            this.checkBoxBMI1.TabIndex = 52;
+            this.checkBoxBMI1.Text = "BMI1 (Bit Manipulation Instruction Set 1)";
+            this.checkBoxBMI1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxADX
+            // 
+            this.checkBoxADX.AutoSize = true;
+            this.checkBoxADX.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxADX.Name = "checkBoxADX";
+            this.checkBoxADX.Size = new System.Drawing.Size(303, 17);
+            this.checkBoxADX.TabIndex = 51;
+            this.checkBoxADX.Text = "Intel ADX (Multi-Precision Add-Carry Instruction Extensions)";
+            this.checkBoxADX.UseVisualStyleBackColor = true;
             // 
             // tabPageX86Instructions
             // 
@@ -1725,12 +2268,82 @@
             this.groupBoxOtherX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxOtherX86DiscontinuedInstructions.Text = "Other";
             // 
+            // checkBox387Clones
+            // 
+            this.checkBox387Clones.AutoSize = true;
+            this.checkBox387Clones.Location = new System.Drawing.Point(6, 157);
+            this.checkBox387Clones.Name = "checkBox387Clones";
+            this.checkBox387Clones.Size = new System.Drawing.Size(235, 17);
+            this.checkBox387Clones.TabIndex = 6;
+            this.checkBox387Clones.Text = "Instructions present in specific 80387 clones";
+            this.checkBox387Clones.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAliNvidiaDMP
+            // 
+            this.checkBoxAliNvidiaDMP.AutoSize = true;
+            this.checkBoxAliNvidiaDMP.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxAliNvidiaDMP.Name = "checkBoxAliNvidiaDMP";
+            this.checkBoxAliNvidiaDMP.Size = new System.Drawing.Size(305, 17);
+            this.checkBoxAliNvidiaDMP.TabIndex = 5;
+            this.checkBoxAliNvidiaDMP.Text = "Instructions specific to ALi/Nvidia/DM and P M6117 MCUs";
+            this.checkBoxAliNvidiaDMP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCAndT
+            // 
+            this.checkBoxCAndT.AutoSize = true;
+            this.checkBoxCAndT.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxCAndT.Name = "checkBoxCAndT";
+            this.checkBoxCAndT.Size = new System.Drawing.Size(278, 17);
+            this.checkBoxCAndT.TabIndex = 4;
+            this.checkBoxCAndT.Text = "Instructions specific to Chips and Technologies CPUs";
+            this.checkBoxCAndT.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVIAAIS
+            // 
+            this.checkBoxVIAAIS.AutoSize = true;
+            this.checkBoxVIAAIS.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxVIAAIS.Name = "checkBoxVIAAIS";
+            this.checkBoxVIAAIS.Size = new System.Drawing.Size(416, 17);
+            this.checkBoxVIAAIS.TabIndex = 3;
+            this.checkBoxVIAAIS.Text = "Instructions specific to VIA Technologies CPUs (VIA AIS) (Alternate Instruction S" +
+    "et)";
+            this.checkBoxVIAAIS.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCyrixEMMi
+            // 
+            this.checkBoxCyrixEMMi.AutoSize = true;
+            this.checkBoxCyrixEMMi.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxCyrixEMMi.Name = "checkBoxCyrixEMMi";
+            this.checkBoxCyrixEMMi.Size = new System.Drawing.Size(247, 17);
+            this.checkBoxCyrixEMMi.TabIndex = 2;
+            this.checkBoxCyrixEMMi.Text = "Cyrix EMMI (Extended Multi-Media Instructions)";
+            this.checkBoxCyrixEMMi.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCyrixGeode
+            // 
+            this.checkBoxCyrixGeode.AutoSize = true;
+            this.checkBoxCyrixGeode.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxCyrixGeode.Name = "checkBoxCyrixGeode";
+            this.checkBoxCyrixGeode.Size = new System.Drawing.Size(242, 17);
+            this.checkBoxCyrixGeode.TabIndex = 1;
+            this.checkBoxCyrixGeode.Text = "Instructions specific to Cyrix and Geode CPUs";
+            this.checkBoxCyrixGeode.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxNECV
+            // 
+            this.checkBoxNECV.AutoSize = true;
+            this.checkBoxNECV.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxNECV.Name = "checkBoxNECV";
+            this.checkBoxNECV.Size = new System.Drawing.Size(250, 17);
+            this.checkBoxNECV.TabIndex = 0;
+            this.checkBoxNECV.Text = "Instructions specific to NEC V-series processors";
+            this.checkBoxNECV.UseVisualStyleBackColor = true;
+            // 
             // groupBoxAMDX86DiscontinuedInstructions
             // 
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxLWP);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxFMA4);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxXOP);
-            this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxSSE5);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBox3DNowPlus);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBox3DNow);
             this.groupBoxAMDX86DiscontinuedInstructions.Controls.Add(this.checkBoxAM386SMM);
@@ -1740,6 +2353,66 @@
             this.groupBoxAMDX86DiscontinuedInstructions.TabIndex = 1;
             this.groupBoxAMDX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxAMDX86DiscontinuedInstructions.Text = "AMD";
+            // 
+            // checkBoxLWP
+            // 
+            this.checkBoxLWP.AutoSize = true;
+            this.checkBoxLWP.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxLWP.Name = "checkBoxLWP";
+            this.checkBoxLWP.Size = new System.Drawing.Size(209, 17);
+            this.checkBoxLWP.TabIndex = 6;
+            this.checkBoxLWP.Text = "LWP (Lightweight Profiling instructions)";
+            this.checkBoxLWP.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFMA4
+            // 
+            this.checkBoxFMA4.AutoSize = true;
+            this.checkBoxFMA4.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxFMA4.Name = "checkBoxFMA4";
+            this.checkBoxFMA4.Size = new System.Drawing.Size(161, 17);
+            this.checkBoxFMA4.TabIndex = 5;
+            this.checkBoxFMA4.Text = "FMA4 (Fused Multiply-Add 4)";
+            this.checkBoxFMA4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxXOP
+            // 
+            this.checkBoxXOP.AutoSize = true;
+            this.checkBoxXOP.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxXOP.Name = "checkBoxXOP";
+            this.checkBoxXOP.Size = new System.Drawing.Size(252, 17);
+            this.checkBoxXOP.TabIndex = 4;
+            this.checkBoxXOP.Text = "XOP (eXtended Operations Instructions) / SSE5";
+            this.checkBoxXOP.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3DNowPlus
+            // 
+            this.checkBox3DNowPlus.AutoSize = true;
+            this.checkBox3DNowPlus.Location = new System.Drawing.Point(6, 65);
+            this.checkBox3DNowPlus.Name = "checkBox3DNowPlus";
+            this.checkBox3DNowPlus.Size = new System.Drawing.Size(324, 17);
+            this.checkBox3DNowPlus.TabIndex = 2;
+            this.checkBox3DNowPlus.Text = "3DNow+ / Extended 3DNow! / Enhanced 3DNow! instructions";
+            this.checkBox3DNowPlus.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3DNow
+            // 
+            this.checkBox3DNow.AutoSize = true;
+            this.checkBox3DNow.Location = new System.Drawing.Point(6, 42);
+            this.checkBox3DNow.Name = "checkBox3DNow";
+            this.checkBox3DNow.Size = new System.Drawing.Size(121, 17);
+            this.checkBox3DNow.TabIndex = 1;
+            this.checkBox3DNow.Text = "3DNow! instructions";
+            this.checkBox3DNow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAM386SMM
+            // 
+            this.checkBoxAM386SMM.AutoSize = true;
+            this.checkBoxAM386SMM.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxAM386SMM.Name = "checkBoxAM386SMM";
+            this.checkBoxAM386SMM.Size = new System.Drawing.Size(282, 17);
+            this.checkBoxAM386SMM.TabIndex = 0;
+            this.checkBoxAM386SMM.Text = "Am386 SMM (System Management Mode Instructions)";
+            this.checkBoxAM386SMM.UseVisualStyleBackColor = true;
             // 
             // groupBoxIntelX86DiscontinuedInstructions
             // 
@@ -1754,6 +2427,56 @@
             this.groupBoxIntelX86DiscontinuedInstructions.TabIndex = 0;
             this.groupBoxIntelX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxIntelX86DiscontinuedInstructions.Text = "Intel";
+            // 
+            // checkBoxKLKM
+            // 
+            this.checkBoxKLKM.AutoSize = true;
+            this.checkBoxKLKM.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxKLKM.Name = "checkBoxKLKM";
+            this.checkBoxKLKM.Size = new System.Drawing.Size(235, 17);
+            this.checkBoxKLKM.TabIndex = 4;
+            this.checkBoxKLKM.Text = "Knights Landing and Knights Mill instructions";
+            this.checkBoxKLKM.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKNC
+            // 
+            this.checkBoxKNC.AutoSize = true;
+            this.checkBoxKNC.Location = new System.Drawing.Point(6, 88);
+            this.checkBoxKNC.Name = "checkBoxKNC";
+            this.checkBoxKNC.Size = new System.Drawing.Size(182, 17);
+            this.checkBoxKNC.TabIndex = 3;
+            this.checkBoxKNC.Text = "KNC (Knights Corner instructions)";
+            this.checkBoxKNC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHLE
+            // 
+            this.checkBoxHLE.AutoSize = true;
+            this.checkBoxHLE.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxHLE.Name = "checkBoxHLE";
+            this.checkBoxHLE.Size = new System.Drawing.Size(228, 17);
+            this.checkBoxHLE.TabIndex = 2;
+            this.checkBoxHLE.Text = "HLE (Hardware Lock Elision) (TSX feature)";
+            this.checkBoxHLE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxItanium
+            // 
+            this.checkBoxItanium.AutoSize = true;
+            this.checkBoxItanium.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxItanium.Name = "checkBoxItanium";
+            this.checkBoxItanium.Size = new System.Drawing.Size(60, 17);
+            this.checkBoxItanium.TabIndex = 1;
+            this.checkBoxItanium.Text = "Itanium";
+            this.checkBoxItanium.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxI386
+            // 
+            this.checkBoxI386.AutoSize = true;
+            this.checkBoxI386.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxI386.Name = "checkBoxI386";
+            this.checkBoxI386.Size = new System.Drawing.Size(46, 17);
+            this.checkBoxI386.TabIndex = 0;
+            this.checkBoxI386.Text = "i386";
+            this.checkBoxI386.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -2204,741 +2927,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             // 
-            // checkBoxMMX
-            // 
-            this.checkBoxMMX.AutoSize = true;
-            this.checkBoxMMX.Location = new System.Drawing.Point(9, 18);
-            this.checkBoxMMX.Name = "checkBoxMMX";
-            this.checkBoxMMX.Size = new System.Drawing.Size(313, 17);
-            this.checkBoxMMX.TabIndex = 62;
-            this.checkBoxMMX.Text = "MMX (MultiMedia eXtension / Matrix Math eXtension) (1997):";
-            this.checkBoxMMX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSE
-            // 
-            this.checkBoxSSE.AutoSize = true;
-            this.checkBoxSSE.Location = new System.Drawing.Point(9, 41);
-            this.checkBoxSSE.Name = "checkBoxSSE";
-            this.checkBoxSSE.Size = new System.Drawing.Size(220, 17);
-            this.checkBoxSSE.TabIndex = 63;
-            this.checkBoxSSE.Text = "SSE (Streaming SIMD Extensions) (1999)";
-            this.checkBoxSSE.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSE2
-            // 
-            this.checkBoxSSE2.AutoSize = true;
-            this.checkBoxSSE2.Location = new System.Drawing.Point(9, 64);
-            this.checkBoxSSE2.Name = "checkBoxSSE2";
-            this.checkBoxSSE2.Size = new System.Drawing.Size(235, 17);
-            this.checkBoxSSE2.TabIndex = 64;
-            this.checkBoxSSE2.Text = "SSE2 (Streaming SIMD Extensions 2) (2000)";
-            this.checkBoxSSE2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSE3
-            // 
-            this.checkBoxSSE3.AutoSize = true;
-            this.checkBoxSSE3.Location = new System.Drawing.Point(9, 87);
-            this.checkBoxSSE3.Name = "checkBoxSSE3";
-            this.checkBoxSSE3.Size = new System.Drawing.Size(235, 17);
-            this.checkBoxSSE3.TabIndex = 65;
-            this.checkBoxSSE3.Text = "SSE3 (Streaming SIMD Extensions 3) (2004)";
-            this.checkBoxSSE3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSSE3
-            // 
-            this.checkBoxSSSE3.AutoSize = true;
-            this.checkBoxSSSE3.Location = new System.Drawing.Point(9, 110);
-            this.checkBoxSSSE3.Name = "checkBoxSSSE3";
-            this.checkBoxSSSE3.Size = new System.Drawing.Size(196, 17);
-            this.checkBoxSSSE3.TabIndex = 66;
-            this.checkBoxSSSE3.Text = "SSSE3 (Supplemental SSE3) (2006)";
-            this.checkBoxSSSE3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSE4a
-            // 
-            this.checkBoxSSE4a.AutoSize = true;
-            this.checkBoxSSE4a.Location = new System.Drawing.Point(9, 133);
-            this.checkBoxSSE4a.Name = "checkBoxSSE4a";
-            this.checkBoxSSE4a.Size = new System.Drawing.Size(304, 17);
-            this.checkBoxSSE4a.TabIndex = 67;
-            this.checkBoxSSE4a.Text = "SSE4a (Streaming SIMD Extensions 4a) (AMD Only) (2007)";
-            this.checkBoxSSE4a.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSE41
-            // 
-            this.checkBoxSSE41.AutoSize = true;
-            this.checkBoxSSE41.Location = new System.Drawing.Point(9, 156);
-            this.checkBoxSSE41.Name = "checkBoxSSE41";
-            this.checkBoxSSE41.Size = new System.Drawing.Size(253, 17);
-            this.checkBoxSSE41.TabIndex = 68;
-            this.checkBoxSSE41.Text = "SSE4.1 (Streaming SIMD Extensions 4.1) (2007)";
-            this.checkBoxSSE41.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSE42
-            // 
-            this.checkBoxSSE42.AutoSize = true;
-            this.checkBoxSSE42.Location = new System.Drawing.Point(9, 179);
-            this.checkBoxSSE42.Name = "checkBoxSSE42";
-            this.checkBoxSSE42.Size = new System.Drawing.Size(253, 17);
-            this.checkBoxSSE42.TabIndex = 69;
-            this.checkBoxSSE42.Text = "SSE4.2 (Streaming SIMD Extensions 4.2) (2008)";
-            this.checkBoxSSE42.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX
-            // 
-            this.checkBoxAVX.AutoSize = true;
-            this.checkBoxAVX.Location = new System.Drawing.Point(9, 202);
-            this.checkBoxAVX.Name = "checkBoxAVX";
-            this.checkBoxAVX.Size = new System.Drawing.Size(226, 17);
-            this.checkBoxAVX.TabIndex = 70;
-            this.checkBoxAVX.Text = "AVX (Advanced Vector Extensions) (2011)";
-            this.checkBoxAVX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFMA3
-            // 
-            this.checkBoxFMA3.AutoSize = true;
-            this.checkBoxFMA3.Location = new System.Drawing.Point(9, 225);
-            this.checkBoxFMA3.Name = "checkBoxFMA3";
-            this.checkBoxFMA3.Size = new System.Drawing.Size(194, 17);
-            this.checkBoxFMA3.TabIndex = 71;
-            this.checkBoxFMA3.Text = "FMA3 (Fused Multiply-Add 3) (2013)";
-            this.checkBoxFMA3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX2
-            // 
-            this.checkBoxAVX2.AutoSize = true;
-            this.checkBoxAVX2.Location = new System.Drawing.Point(9, 248);
-            this.checkBoxAVX2.Name = "checkBoxAVX2";
-            this.checkBoxAVX2.Size = new System.Drawing.Size(241, 17);
-            this.checkBoxAVX2.TabIndex = 72;
-            this.checkBoxAVX2.Text = "AVX2 (Advanced Vector Extensions 2) (2013)";
-            this.checkBoxAVX2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512F
-            // 
-            this.checkBoxAVX512F.AutoSize = true;
-            this.checkBoxAVX512F.Location = new System.Drawing.Point(9, 271);
-            this.checkBoxAVX512F.Name = "checkBoxAVX512F";
-            this.checkBoxAVX512F.Size = new System.Drawing.Size(274, 17);
-            this.checkBoxAVX512F.TabIndex = 73;
-            this.checkBoxAVX512F.Text = "AVX-512 F (Advanced Vector Extension Foundation)";
-            this.checkBoxAVX512F.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512CD
-            // 
-            this.checkBoxAVX512CD.AutoSize = true;
-            this.checkBoxAVX512CD.Location = new System.Drawing.Point(9, 294);
-            this.checkBoxAVX512CD.Name = "checkBoxAVX512CD";
-            this.checkBoxAVX512CD.Size = new System.Drawing.Size(371, 17);
-            this.checkBoxAVX512CD.TabIndex = 74;
-            this.checkBoxAVX512CD.Text = "AVX-512 CD (Advanced Vector Extension Conflict Detection Instructions)";
-            this.checkBoxAVX512CD.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512ER
-            // 
-            this.checkBoxAVX512ER.AutoSize = true;
-            this.checkBoxAVX512ER.Location = new System.Drawing.Point(9, 317);
-            this.checkBoxAVX512ER.Name = "checkBoxAVX512ER";
-            this.checkBoxAVX512ER.Size = new System.Drawing.Size(417, 17);
-            this.checkBoxAVX512ER.TabIndex = 75;
-            this.checkBoxAVX512ER.Text = "AVX-512 ER (Advanced Vector Extension Exponential and Reciprocal Instructions)";
-            this.checkBoxAVX512ER.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512PF
-            // 
-            this.checkBoxAVX512PF.AutoSize = true;
-            this.checkBoxAVX512PF.Location = new System.Drawing.Point(9, 340);
-            this.checkBoxAVX512PF.Name = "checkBoxAVX512PF";
-            this.checkBoxAVX512PF.Size = new System.Drawing.Size(325, 17);
-            this.checkBoxAVX512PF.TabIndex = 76;
-            this.checkBoxAVX512PF.Text = "AVX-512 PF (Advanced Vector Extension Prefetch Instructions)";
-            this.checkBoxAVX512PF.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX5124VNNIW
-            // 
-            this.checkBoxAVX5124VNNIW.AutoSize = true;
-            this.checkBoxAVX5124VNNIW.Location = new System.Drawing.Point(9, 363);
-            this.checkBoxAVX5124VNNIW.Name = "checkBoxAVX5124VNNIW";
-            this.checkBoxAVX5124VNNIW.Size = new System.Drawing.Size(537, 17);
-            this.checkBoxAVX5124VNNIW.TabIndex = 77;
-            this.checkBoxAVX5124VNNIW.Text = "AVX-512 4VNNIW (Advanced Vector Extension Vector Neural Network Instructions Word" +
-    " variable precision)";
-            this.checkBoxAVX5124VNNIW.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX5124FMAPS
-            // 
-            this.checkBoxAVX5124FMAPS.AutoSize = true;
-            this.checkBoxAVX5124FMAPS.Location = new System.Drawing.Point(9, 386);
-            this.checkBoxAVX5124FMAPS.Name = "checkBoxAVX5124FMAPS";
-            this.checkBoxAVX5124FMAPS.Size = new System.Drawing.Size(508, 17);
-            this.checkBoxAVX5124FMAPS.TabIndex = 78;
-            this.checkBoxAVX5124FMAPS.Text = "AVX-512 4FMAPS (Advanced Vector Extension Fused Multiply Accumulation Packed Sing" +
-    "le precision)";
-            this.checkBoxAVX5124FMAPS.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512VL
-            // 
-            this.checkBoxAVX512VL.AutoSize = true;
-            this.checkBoxAVX512VL.Location = new System.Drawing.Point(9, 409);
-            this.checkBoxAVX512VL.Name = "checkBoxAVX512VL";
-            this.checkBoxAVX512VL.Size = new System.Drawing.Size(349, 17);
-            this.checkBoxAVX512VL.TabIndex = 79;
-            this.checkBoxAVX512VL.Text = "AVX-512 VL (Advanced Vector Extension Vector Length Extensions)";
-            this.checkBoxAVX512VL.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512DQ
-            // 
-            this.checkBoxAVX512DQ.AutoSize = true;
-            this.checkBoxAVX512DQ.Location = new System.Drawing.Point(9, 432);
-            this.checkBoxAVX512DQ.Name = "checkBoxAVX512DQ";
-            this.checkBoxAVX512DQ.Size = new System.Drawing.Size(418, 17);
-            this.checkBoxAVX512DQ.TabIndex = 80;
-            this.checkBoxAVX512DQ.Text = "AVX-512 DQ (Advanced Vector Extension Doubleword and Quadword Instructions)";
-            this.checkBoxAVX512DQ.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512BW
-            // 
-            this.checkBoxAVX512BW.AutoSize = true;
-            this.checkBoxAVX512BW.Location = new System.Drawing.Point(9, 455);
-            this.checkBoxAVX512BW.Name = "checkBoxAVX512BW";
-            this.checkBoxAVX512BW.Size = new System.Drawing.Size(361, 17);
-            this.checkBoxAVX512BW.TabIndex = 81;
-            this.checkBoxAVX512BW.Text = "AVX-512 BW (Advanced Vector Extension Byte and Word Instructions)";
-            this.checkBoxAVX512BW.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512IFMA
-            // 
-            this.checkBoxAVX512IFMA.AutoSize = true;
-            this.checkBoxAVX512IFMA.Location = new System.Drawing.Point(9, 478);
-            this.checkBoxAVX512IFMA.Name = "checkBoxAVX512IFMA";
-            this.checkBoxAVX512IFMA.Size = new System.Drawing.Size(365, 17);
-            this.checkBoxAVX512IFMA.TabIndex = 82;
-            this.checkBoxAVX512IFMA.Text = "AVX-512 IFMA (Advanced Vector Extension Integer Fused Multiply Add)";
-            this.checkBoxAVX512IFMA.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512VBMI
-            // 
-            this.checkBoxAVX512VBMI.AutoSize = true;
-            this.checkBoxAVX512VBMI.Location = new System.Drawing.Point(9, 501);
-            this.checkBoxAVX512VBMI.Name = "checkBoxAVX512VBMI";
-            this.checkBoxAVX512VBMI.Size = new System.Drawing.Size(407, 17);
-            this.checkBoxAVX512VBMI.TabIndex = 83;
-            this.checkBoxAVX512VBMI.Text = "AVX-512 VBMI (Advanced Vector Extension Vector Bit Manipulation Instructions)";
-            this.checkBoxAVX512VBMI.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512VNNI
-            // 
-            this.checkBoxAVX512VNNI.AutoSize = true;
-            this.checkBoxAVX512VNNI.Location = new System.Drawing.Point(9, 524);
-            this.checkBoxAVX512VNNI.Name = "checkBoxAVX512VNNI";
-            this.checkBoxAVX512VNNI.Size = new System.Drawing.Size(406, 17);
-            this.checkBoxAVX512VNNI.TabIndex = 84;
-            this.checkBoxAVX512VNNI.Text = "AVX-512 VNNI (Advanced Vector Extension Vector Neural Network Instructions)";
-            this.checkBoxAVX512VNNI.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512VPOPCNTDQ
-            // 
-            this.checkBoxAVX512VPOPCNTDQ.AutoSize = true;
-            this.checkBoxAVX512VPOPCNTDQ.Location = new System.Drawing.Point(9, 547);
-            this.checkBoxAVX512VPOPCNTDQ.Name = "checkBoxAVX512VPOPCNTDQ";
-            this.checkBoxAVX512VPOPCNTDQ.Size = new System.Drawing.Size(446, 17);
-            this.checkBoxAVX512VPOPCNTDQ.TabIndex = 85;
-            this.checkBoxAVX512VPOPCNTDQ.Text = "AVX-512 VPOPCNTDQ (Advanced Vector Extension Vector population count instruction)" +
-    "";
-            this.checkBoxAVX512VPOPCNTDQ.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512VBMI2
-            // 
-            this.checkBoxAVX512VBMI2.AutoSize = true;
-            this.checkBoxAVX512VBMI2.Location = new System.Drawing.Point(9, 570);
-            this.checkBoxAVX512VBMI2.Name = "checkBoxAVX512VBMI2";
-            this.checkBoxAVX512VBMI2.Size = new System.Drawing.Size(422, 17);
-            this.checkBoxAVX512VBMI2.TabIndex = 86;
-            this.checkBoxAVX512VBMI2.Text = "AVX-512 VBMI2 (Advanced Vector Extension Vector Bit Manipulation Instructions 2)";
-            this.checkBoxAVX512VBMI2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512BITALG
-            // 
-            this.checkBoxAVX512BITALG.AutoSize = true;
-            this.checkBoxAVX512BITALG.Location = new System.Drawing.Point(9, 593);
-            this.checkBoxAVX512BITALG.Name = "checkBoxAVX512BITALG";
-            this.checkBoxAVX512BITALG.Size = new System.Drawing.Size(316, 17);
-            this.checkBoxAVX512BITALG.TabIndex = 87;
-            this.checkBoxAVX512BITALG.Text = "AVX-512 BITALG (Advanced Vector Extension Bit Algorithms)";
-            this.checkBoxAVX512BITALG.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512VP2INTERSECT
-            // 
-            this.checkBoxAVX512VP2INTERSECT.AutoSize = true;
-            this.checkBoxAVX512VP2INTERSECT.Location = new System.Drawing.Point(9, 616);
-            this.checkBoxAVX512VP2INTERSECT.Name = "checkBoxAVX512VP2INTERSECT";
-            this.checkBoxAVX512VP2INTERSECT.Size = new System.Drawing.Size(536, 17);
-            this.checkBoxAVX512VP2INTERSECT.TabIndex = 88;
-            this.checkBoxAVX512VP2INTERSECT.Text = "AVX-512 VP2INTERSECT (Advanced Vector Extension Vector Pair Intersection to a Pai" +
-    "r of Mask Registers)";
-            this.checkBoxAVX512VP2INTERSECT.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX512BMM
-            // 
-            this.checkBoxAVX512BMM.AutoSize = true;
-            this.checkBoxAVX512BMM.Location = new System.Drawing.Point(9, 639);
-            this.checkBoxAVX512BMM.Name = "checkBoxAVX512BMM";
-            this.checkBoxAVX512BMM.Size = new System.Drawing.Size(372, 17);
-            this.checkBoxAVX512BMM.TabIndex = 89;
-            this.checkBoxAVX512BMM.Text = "AVX-512 BMM (Advanced Vector Extension Bit Manipulation Instructions)";
-            this.checkBoxAVX512BMM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAMX
-            // 
-            this.checkBoxAMX.AutoSize = true;
-            this.checkBoxAMX.Location = new System.Drawing.Point(9, 662);
-            this.checkBoxAMX.Name = "checkBoxAMX";
-            this.checkBoxAMX.Size = new System.Drawing.Size(225, 17);
-            this.checkBoxAMX.TabIndex = 90;
-            this.checkBoxAMX.Text = "AMX (Advanced Matrix Extensions) (2023)";
-            this.checkBoxAMX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX101
-            // 
-            this.checkBoxAVX101.AutoSize = true;
-            this.checkBoxAVX101.Location = new System.Drawing.Point(9, 685);
-            this.checkBoxAVX101.Name = "checkBoxAVX101";
-            this.checkBoxAVX101.Size = new System.Drawing.Size(271, 17);
-            this.checkBoxAVX101.TabIndex = 91;
-            this.checkBoxAVX101.Text = "AVX10.1 (Advanced Vector Extensions 10.1) (2024)";
-            this.checkBoxAVX101.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAVX102
-            // 
-            this.checkBoxAVX102.AutoSize = true;
-            this.checkBoxAVX102.Location = new System.Drawing.Point(9, 708);
-            this.checkBoxAVX102.Name = "checkBoxAVX102";
-            this.checkBoxAVX102.Size = new System.Drawing.Size(271, 17);
-            this.checkBoxAVX102.TabIndex = 92;
-            this.checkBoxAVX102.Text = "AVX10.2 (Advanced Vector Extensions 10.2) (2026)";
-            this.checkBoxAVX102.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAES
-            // 
-            this.checkBoxAES.AutoSize = true;
-            this.checkBoxAES.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxAES.Name = "checkBoxAES";
-            this.checkBoxAES.Size = new System.Drawing.Size(389, 17);
-            this.checkBoxAES.TabIndex = 39;
-            this.checkBoxAES.Text = "AES / AES-NI (Advanced Encryption Standard New Instructions Extensions))";
-            this.checkBoxAES.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCLMUL
-            // 
-            this.checkBoxCLMUL.AutoSize = true;
-            this.checkBoxCLMUL.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxCLMUL.Name = "checkBoxCLMUL";
-            this.checkBoxCLMUL.Size = new System.Drawing.Size(312, 17);
-            this.checkBoxCLMUL.TabIndex = 40;
-            this.checkBoxCLMUL.Text = "CLMUL / PCLMULQDQ (Carry-less Multiplication Extensions)";
-            this.checkBoxCLMUL.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxRDSEED
-            // 
-            this.checkBoxRDSEED.AutoSize = true;
-            this.checkBoxRDSEED.Location = new System.Drawing.Point(6, 65);
-            this.checkBoxRDSEED.Name = "checkBoxRDSEED";
-            this.checkBoxRDSEED.Size = new System.Drawing.Size(332, 17);
-            this.checkBoxRDSEED.TabIndex = 41;
-            this.checkBoxRDSEED.Text = "RDSEED (Read Seed Instruction,  Intel Secure Key Technology)";
-            this.checkBoxRDSEED.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxRDRAND
-            // 
-            this.checkBoxRDRAND.AutoSize = true;
-            this.checkBoxRDRAND.Location = new System.Drawing.Point(6, 88);
-            this.checkBoxRDRAND.Name = "checkBoxRDRAND";
-            this.checkBoxRDRAND.Size = new System.Drawing.Size(349, 17);
-            this.checkBoxRDRAND.TabIndex = 42;
-            this.checkBoxRDRAND.Text = "RDRAND (Read Random Instruction,  Intel Secure Key Technology)";
-            this.checkBoxRDRAND.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSHA
-            // 
-            this.checkBoxSHA.AutoSize = true;
-            this.checkBoxSHA.Location = new System.Drawing.Point(6, 111);
-            this.checkBoxSHA.Name = "checkBoxSHA";
-            this.checkBoxSHA.Size = new System.Drawing.Size(252, 17);
-            this.checkBoxSHA.TabIndex = 43;
-            this.checkBoxSHA.Text = "SHA (Secure Hash Algorithm Extensions) (2013)";
-            this.checkBoxSHA.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSM3
-            // 
-            this.checkBoxSM3.AutoSize = true;
-            this.checkBoxSM3.Location = new System.Drawing.Point(6, 134);
-            this.checkBoxSM3.Name = "checkBoxSM3";
-            this.checkBoxSM3.Size = new System.Drawing.Size(164, 17);
-            this.checkBoxSM3.TabIndex = 44;
-            this.checkBoxSM3.Text = "Hygon CIS instructions (SM3)";
-            this.checkBoxSM3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSM4
-            // 
-            this.checkBoxSM4.AutoSize = true;
-            this.checkBoxSM4.Location = new System.Drawing.Point(6, 157);
-            this.checkBoxSM4.Name = "checkBoxSM4";
-            this.checkBoxSM4.Size = new System.Drawing.Size(164, 17);
-            this.checkBoxSM4.TabIndex = 45;
-            this.checkBoxSM4.Text = "Hygon CIS instructions (SM4)";
-            this.checkBoxSM4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKL
-            // 
-            this.checkBoxKL.AutoSize = true;
-            this.checkBoxKL.Location = new System.Drawing.Point(6, 180);
-            this.checkBoxKL.Name = "checkBoxKL";
-            this.checkBoxKL.Size = new System.Drawing.Size(188, 17);
-            this.checkBoxKL.TabIndex = 46;
-            this.checkBoxKL.Text = "KL (Key Locker Instructions) (Intel)";
-            this.checkBoxKL.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPadLock
-            // 
-            this.checkBoxPadLock.AutoSize = true;
-            this.checkBoxPadLock.Location = new System.Drawing.Point(6, 203);
-            this.checkBoxPadLock.Name = "checkBoxPadLock";
-            this.checkBoxPadLock.Size = new System.Drawing.Size(228, 17);
-            this.checkBoxPadLock.TabIndex = 47;
-            this.checkBoxPadLock.Text = "PadLock Instructions (VIA/Zhaoxin) (2003)";
-            this.checkBoxPadLock.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMPX
-            // 
-            this.checkBoxMPX.AutoSize = true;
-            this.checkBoxMPX.Location = new System.Drawing.Point(6, 226);
-            this.checkBoxMPX.Name = "checkBoxMPX";
-            this.checkBoxMPX.Size = new System.Drawing.Size(200, 17);
-            this.checkBoxMPX.TabIndex = 48;
-            this.checkBoxMPX.Text = "MPX (Memory Protection Extensions)";
-            this.checkBoxMPX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSGX
-            // 
-            this.checkBoxSGX.AutoSize = true;
-            this.checkBoxSGX.Location = new System.Drawing.Point(6, 249);
-            this.checkBoxSGX.Name = "checkBoxSGX";
-            this.checkBoxSGX.Size = new System.Drawing.Size(185, 17);
-            this.checkBoxSGX.TabIndex = 49;
-            this.checkBoxSGX.Text = "SGX (Software Guard Extensions)";
-            this.checkBoxSGX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxTDX
-            // 
-            this.checkBoxTDX.AutoSize = true;
-            this.checkBoxTDX.Location = new System.Drawing.Point(6, 272);
-            this.checkBoxTDX.Name = "checkBoxTDX";
-            this.checkBoxTDX.Size = new System.Drawing.Size(174, 17);
-            this.checkBoxTDX.TabIndex = 50;
-            this.checkBoxTDX.Text = "TDX (Trust Domain Extensions)";
-            this.checkBoxTDX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAMDV
-            // 
-            this.checkBoxAMDV.AutoSize = true;
-            this.checkBoxAMDV.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxAMDV.Name = "checkBoxAMDV";
-            this.checkBoxAMDV.Size = new System.Drawing.Size(251, 17);
-            this.checkBoxAMDV.TabIndex = 31;
-            this.checkBoxAMDV.Text = "AMD-V (Advanced Micro Devices Virtualization)";
-            this.checkBoxAMDV.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxIntelVTX
-            // 
-            this.checkBoxIntelVTX.AutoSize = true;
-            this.checkBoxIntelVTX.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxIntelVTX.Name = "checkBoxIntelVTX";
-            this.checkBoxIntelVTX.Size = new System.Drawing.Size(241, 17);
-            this.checkBoxIntelVTX.TabIndex = 32;
-            this.checkBoxIntelVTX.Text = "Intel VT-x (VMX / Virtual Machine Extensions)";
-            this.checkBoxIntelVTX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxVIAVT
-            // 
-            this.checkBoxVIAVT.AutoSize = true;
-            this.checkBoxVIAVT.Location = new System.Drawing.Point(6, 65);
-            this.checkBoxVIAVT.Name = "checkBoxVIAVT";
-            this.checkBoxVIAVT.Size = new System.Drawing.Size(147, 17);
-            this.checkBoxVIAVT.TabIndex = 33;
-            this.checkBoxVIAVT.Text = "VIA virtualization (VIA VT)";
-            this.checkBoxVIAVT.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxV8086M
-            // 
-            this.checkBoxV8086M.AutoSize = true;
-            this.checkBoxV8086M.Location = new System.Drawing.Point(6, 88);
-            this.checkBoxV8086M.Name = "checkBoxV8086M";
-            this.checkBoxV8086M.Size = new System.Drawing.Size(111, 17);
-            this.checkBoxV8086M.TabIndex = 34;
-            this.checkBoxV8086M.Text = "Virtual 8086 mode";
-            this.checkBoxV8086M.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxTSX
-            // 
-            this.checkBoxTSX.AutoSize = true;
-            this.checkBoxTSX.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxTSX.Name = "checkBoxTSX";
-            this.checkBoxTSX.Size = new System.Drawing.Size(412, 17);
-            this.checkBoxTSX.TabIndex = 41;
-            this.checkBoxTSX.Text = "TSX / TSX-NI (Transactional Synchronization Extensions / TSX New Instructions)";
-            this.checkBoxTSX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxASF
-            // 
-            this.checkBoxASF.AutoSize = true;
-            this.checkBoxASF.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxASF.Name = "checkBoxASF";
-            this.checkBoxASF.Size = new System.Drawing.Size(217, 17);
-            this.checkBoxASF.TabIndex = 42;
-            this.checkBoxASF.Text = "ASF (Advanced Synchronization Facility)";
-            this.checkBoxASF.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxADX
-            // 
-            this.checkBoxADX.AutoSize = true;
-            this.checkBoxADX.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxADX.Name = "checkBoxADX";
-            this.checkBoxADX.Size = new System.Drawing.Size(303, 17);
-            this.checkBoxADX.TabIndex = 51;
-            this.checkBoxADX.Text = "Intel ADX (Multi-Precision Add-Carry Instruction Extensions)";
-            this.checkBoxADX.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBMI1
-            // 
-            this.checkBoxBMI1.AutoSize = true;
-            this.checkBoxBMI1.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxBMI1.Name = "checkBoxBMI1";
-            this.checkBoxBMI1.Size = new System.Drawing.Size(215, 17);
-            this.checkBoxBMI1.TabIndex = 52;
-            this.checkBoxBMI1.Text = "BMI1 (Bit Manipulation Instruction Set 1)";
-            this.checkBoxBMI1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBMI2
-            // 
-            this.checkBoxBMI2.AutoSize = true;
-            this.checkBoxBMI2.Location = new System.Drawing.Point(6, 65);
-            this.checkBoxBMI2.Name = "checkBoxBMI2";
-            this.checkBoxBMI2.Size = new System.Drawing.Size(215, 17);
-            this.checkBoxBMI2.TabIndex = 53;
-            this.checkBoxBMI2.Text = "BMI2 (Bit Manipulation Instruction Set 2)";
-            this.checkBoxBMI2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxTBM
-            // 
-            this.checkBoxTBM.AutoSize = true;
-            this.checkBoxTBM.Location = new System.Drawing.Point(6, 88);
-            this.checkBoxTBM.Name = "checkBoxTBM";
-            this.checkBoxTBM.Size = new System.Drawing.Size(227, 17);
-            this.checkBoxTBM.TabIndex = 54;
-            this.checkBoxTBM.Text = "TBM (Trailing Bit Manipulation Instructions)";
-            this.checkBoxTBM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxABM
-            // 
-            this.checkBoxABM.AutoSize = true;
-            this.checkBoxABM.Location = new System.Drawing.Point(6, 111);
-            this.checkBoxABM.Name = "checkBoxABM";
-            this.checkBoxABM.Size = new System.Drawing.Size(185, 17);
-            this.checkBoxABM.TabIndex = 55;
-            this.checkBoxABM.Text = "ABM (Advanced Bit Manipulation)";
-            this.checkBoxABM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxI386
-            // 
-            this.checkBoxI386.AutoSize = true;
-            this.checkBoxI386.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxI386.Name = "checkBoxI386";
-            this.checkBoxI386.Size = new System.Drawing.Size(46, 17);
-            this.checkBoxI386.TabIndex = 0;
-            this.checkBoxI386.Text = "i386";
-            this.checkBoxI386.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxItanium
-            // 
-            this.checkBoxItanium.AutoSize = true;
-            this.checkBoxItanium.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxItanium.Name = "checkBoxItanium";
-            this.checkBoxItanium.Size = new System.Drawing.Size(60, 17);
-            this.checkBoxItanium.TabIndex = 1;
-            this.checkBoxItanium.Text = "Itanium";
-            this.checkBoxItanium.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHLE
-            // 
-            this.checkBoxHLE.AutoSize = true;
-            this.checkBoxHLE.Location = new System.Drawing.Point(6, 65);
-            this.checkBoxHLE.Name = "checkBoxHLE";
-            this.checkBoxHLE.Size = new System.Drawing.Size(228, 17);
-            this.checkBoxHLE.TabIndex = 2;
-            this.checkBoxHLE.Text = "HLE (Hardware Lock Elision) (TSX feature)";
-            this.checkBoxHLE.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKNC
-            // 
-            this.checkBoxKNC.AutoSize = true;
-            this.checkBoxKNC.Location = new System.Drawing.Point(6, 88);
-            this.checkBoxKNC.Name = "checkBoxKNC";
-            this.checkBoxKNC.Size = new System.Drawing.Size(182, 17);
-            this.checkBoxKNC.TabIndex = 3;
-            this.checkBoxKNC.Text = "KNC (Knights Corner instructions)";
-            this.checkBoxKNC.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKLKM
-            // 
-            this.checkBoxKLKM.AutoSize = true;
-            this.checkBoxKLKM.Location = new System.Drawing.Point(6, 111);
-            this.checkBoxKLKM.Name = "checkBoxKLKM";
-            this.checkBoxKLKM.Size = new System.Drawing.Size(235, 17);
-            this.checkBoxKLKM.TabIndex = 4;
-            this.checkBoxKLKM.Text = "Knights Landing and Knights Mill instructions";
-            this.checkBoxKLKM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAM386SMM
-            // 
-            this.checkBoxAM386SMM.AutoSize = true;
-            this.checkBoxAM386SMM.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxAM386SMM.Name = "checkBoxAM386SMM";
-            this.checkBoxAM386SMM.Size = new System.Drawing.Size(282, 17);
-            this.checkBoxAM386SMM.TabIndex = 0;
-            this.checkBoxAM386SMM.Text = "Am386 SMM (System Management Mode Instructions)";
-            this.checkBoxAM386SMM.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3DNow
-            // 
-            this.checkBox3DNow.AutoSize = true;
-            this.checkBox3DNow.Location = new System.Drawing.Point(6, 42);
-            this.checkBox3DNow.Name = "checkBox3DNow";
-            this.checkBox3DNow.Size = new System.Drawing.Size(121, 17);
-            this.checkBox3DNow.TabIndex = 1;
-            this.checkBox3DNow.Text = "3DNow! instructions";
-            this.checkBox3DNow.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3DNowPlus
-            // 
-            this.checkBox3DNowPlus.AutoSize = true;
-            this.checkBox3DNowPlus.Location = new System.Drawing.Point(6, 65);
-            this.checkBox3DNowPlus.Name = "checkBox3DNowPlus";
-            this.checkBox3DNowPlus.Size = new System.Drawing.Size(324, 17);
-            this.checkBox3DNowPlus.TabIndex = 2;
-            this.checkBox3DNowPlus.Text = "3DNow+ / Extended 3DNow! / Enhanced 3DNow! instructions";
-            this.checkBox3DNowPlus.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSSE5
-            // 
-            this.checkBoxSSE5.AutoSize = true;
-            this.checkBoxSSE5.Location = new System.Drawing.Point(6, 88);
-            this.checkBoxSSE5.Name = "checkBoxSSE5";
-            this.checkBoxSSE5.Size = new System.Drawing.Size(296, 17);
-            this.checkBoxSSE5.TabIndex = 3;
-            this.checkBoxSSE5.Text = "SSE5 derived instructions (Streaming SIMD Extensions 5)";
-            this.checkBoxSSE5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxXOP
-            // 
-            this.checkBoxXOP.AutoSize = true;
-            this.checkBoxXOP.Location = new System.Drawing.Point(6, 111);
-            this.checkBoxXOP.Name = "checkBoxXOP";
-            this.checkBoxXOP.Size = new System.Drawing.Size(214, 17);
-            this.checkBoxXOP.TabIndex = 4;
-            this.checkBoxXOP.Text = "XOP (eXtended Operations Instructions)";
-            this.checkBoxXOP.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFMA4
-            // 
-            this.checkBoxFMA4.AutoSize = true;
-            this.checkBoxFMA4.Location = new System.Drawing.Point(6, 134);
-            this.checkBoxFMA4.Name = "checkBoxFMA4";
-            this.checkBoxFMA4.Size = new System.Drawing.Size(161, 17);
-            this.checkBoxFMA4.TabIndex = 5;
-            this.checkBoxFMA4.Text = "FMA4 (Fused Multiply-Add 4)";
-            this.checkBoxFMA4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxLWP
-            // 
-            this.checkBoxLWP.AutoSize = true;
-            this.checkBoxLWP.Location = new System.Drawing.Point(6, 157);
-            this.checkBoxLWP.Name = "checkBoxLWP";
-            this.checkBoxLWP.Size = new System.Drawing.Size(209, 17);
-            this.checkBoxLWP.TabIndex = 6;
-            this.checkBoxLWP.Text = "LWP (Lightweight Profiling instructions)";
-            this.checkBoxLWP.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxNECV
-            // 
-            this.checkBoxNECV.AutoSize = true;
-            this.checkBoxNECV.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxNECV.Name = "checkBoxNECV";
-            this.checkBoxNECV.Size = new System.Drawing.Size(250, 17);
-            this.checkBoxNECV.TabIndex = 0;
-            this.checkBoxNECV.Text = "Instructions specific to NEC V-series processors";
-            this.checkBoxNECV.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCyrixGeode
-            // 
-            this.checkBoxCyrixGeode.AutoSize = true;
-            this.checkBoxCyrixGeode.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxCyrixGeode.Name = "checkBoxCyrixGeode";
-            this.checkBoxCyrixGeode.Size = new System.Drawing.Size(242, 17);
-            this.checkBoxCyrixGeode.TabIndex = 1;
-            this.checkBoxCyrixGeode.Text = "Instructions specific to Cyrix and Geode CPUs";
-            this.checkBoxCyrixGeode.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCyrixEMMi
-            // 
-            this.checkBoxCyrixEMMi.AutoSize = true;
-            this.checkBoxCyrixEMMi.Location = new System.Drawing.Point(6, 65);
-            this.checkBoxCyrixEMMi.Name = "checkBoxCyrixEMMi";
-            this.checkBoxCyrixEMMi.Size = new System.Drawing.Size(247, 17);
-            this.checkBoxCyrixEMMi.TabIndex = 2;
-            this.checkBoxCyrixEMMi.Text = "Cyrix EMMI (Extended Multi-Media Instructions)";
-            this.checkBoxCyrixEMMi.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxVIAAIS
-            // 
-            this.checkBoxVIAAIS.AutoSize = true;
-            this.checkBoxVIAAIS.Location = new System.Drawing.Point(6, 88);
-            this.checkBoxVIAAIS.Name = "checkBoxVIAAIS";
-            this.checkBoxVIAAIS.Size = new System.Drawing.Size(416, 17);
-            this.checkBoxVIAAIS.TabIndex = 3;
-            this.checkBoxVIAAIS.Text = "Instructions specific to VIA Technologies CPUs (VIA AIS) (Alternate Instruction S" +
-    "et)";
-            this.checkBoxVIAAIS.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCAndT
-            // 
-            this.checkBoxCAndT.AutoSize = true;
-            this.checkBoxCAndT.Location = new System.Drawing.Point(6, 111);
-            this.checkBoxCAndT.Name = "checkBoxCAndT";
-            this.checkBoxCAndT.Size = new System.Drawing.Size(278, 17);
-            this.checkBoxCAndT.TabIndex = 4;
-            this.checkBoxCAndT.Text = "Instructions specific to Chips and Technologies CPUs";
-            this.checkBoxCAndT.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAliNvidiaDMP
-            // 
-            this.checkBoxAliNvidiaDMP.AutoSize = true;
-            this.checkBoxAliNvidiaDMP.Location = new System.Drawing.Point(6, 134);
-            this.checkBoxAliNvidiaDMP.Name = "checkBoxAliNvidiaDMP";
-            this.checkBoxAliNvidiaDMP.Size = new System.Drawing.Size(305, 17);
-            this.checkBoxAliNvidiaDMP.TabIndex = 5;
-            this.checkBoxAliNvidiaDMP.Text = "Instructions specific to ALi/Nvidia/DM and P M6117 MCUs";
-            this.checkBoxAliNvidiaDMP.UseVisualStyleBackColor = true;
-            // 
-            // checkBox387Clones
-            // 
-            this.checkBox387Clones.AutoSize = true;
-            this.checkBox387Clones.Location = new System.Drawing.Point(6, 157);
-            this.checkBox387Clones.Name = "checkBox387Clones";
-            this.checkBox387Clones.Size = new System.Drawing.Size(235, 17);
-            this.checkBox387Clones.TabIndex = 6;
-            this.checkBox387Clones.Text = "Instructions present in specific 80387 clones";
-            this.checkBox387Clones.UseVisualStyleBackColor = true;
-            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3241,7 +3229,6 @@
         private System.Windows.Forms.CheckBox checkBoxKNC;
         private System.Windows.Forms.CheckBox checkBoxKLKM;
         private System.Windows.Forms.CheckBox checkBoxXOP;
-        private System.Windows.Forms.CheckBox checkBoxSSE5;
         private System.Windows.Forms.CheckBox checkBox3DNowPlus;
         private System.Windows.Forms.CheckBox checkBox3DNow;
         private System.Windows.Forms.CheckBox checkBoxAM386SMM;
