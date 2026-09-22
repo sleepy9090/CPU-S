@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+    File           EAX4000000C.cs
+    Brief          Form for displaying EAX=0x4000000C CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           09/22/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
