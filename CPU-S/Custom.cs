@@ -39,12 +39,12 @@ namespace CPU_S
                 "0x40000080", "0x40000081", "0x40000082", "0x40000083", "0x40000084", "0x40000085", "0x40000086", "0x40000087"
             };
 
-            string[] hypervisorLeavesVM = {
+            string[] hypervisorLeavesVMWare = {
                 "0x40000010", "0x40000011", "0x40000012", "0x40000013", "0x40000014", "0x40000015", "0x40000016", "0x40000017"
             };
 
             string[] supervisorLeavesLinux = {
-                "0x4C780010", "0x4C780011", "0x4C780012", "0x4C780013", "0x4C780014", "0x4C780015", "0x4C780016", "0x4C780017"
+                "0x4C780001", "0x4C780002", "0x4C780003", "0x4C780004", "0x4C780005", "0x4C780006", "0x4C780007"
             };
 
             string[] extendedLeaves = {
@@ -82,6 +82,9 @@ namespace CPU_S
             comboBoxLeaf.Items.AddRange(standardLeaves);
             comboBoxLeaf.Items.AddRange(optionalLeaves);
             comboBoxLeaf.Items.AddRange(extendedLeaves);
+            comboBoxLeaf.Items.AddRange(hypervisorLeavesMS);
+            comboBoxLeaf.Items.AddRange(hypervisorLeavesVMWare);
+            comboBoxLeaf.Items.AddRange(supervisorLeavesLinux);
             comboBoxLeaf.Items.AddRange(vendorLeavesTransmeta);
             comboBoxLeaf.Items.AddRange(vendorLeavesHygon);
             comboBoxLeaf.Items.AddRange(vendorLeavesCentaurAndZhaoxin);

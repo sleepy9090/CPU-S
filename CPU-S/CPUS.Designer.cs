@@ -272,7 +272,7 @@
             this.eAX0x24ECX0x1DiscreteAVX10FeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x20000000HighestXeonPhiFunctionImplementedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -293,6 +293,7 @@
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2544,7 +2545,8 @@
             this.eAX0x24ECX0x1DiscreteAVX10FeaturesToolStripMenuItem,
             this.eAX0x20000000HighestXeonPhiFunctionImplementedToolStripMenuItem,
             this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem,
-            this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem,
+            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem,
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem,
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem,
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem,
             this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem,
@@ -2779,12 +2781,12 @@
             this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem.Text = "EAX=0x20000001: Xeon Phi Feature Bits";
             this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem_Click);
             // 
-            // eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem
+            // eAX0x400000000ReservedForHypervisorsToolStripMenuItem
             // 
-            this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem.Name = "eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem";
-            this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000000-0x4FFFFFFF: Reserved for Hypervisors";
-            this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem_Click);
+            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Name = "eAX0x400000000ReservedForHypervisorsToolStripMenuItem";
+            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000000: Reserved for Hypervisors";
+            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem_Click);
             // 
             // eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem
             // 
@@ -2926,6 +2928,13 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
+            // 
+            // eAX0x400000001ReservedForHypervisorsToolStripMenuItem
+            // 
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Name = "eAX0x400000001ReservedForHypervisorsToolStripMenuItem";
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000001: Reserved for Hypervisors";
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3146,7 +3155,7 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x24ECX0x1DiscreteAVX10FeaturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x20000000HighestXeonPhiFunctionImplementedToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x400000000ReservedForHypervisorsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem;
@@ -3241,6 +3250,7 @@
         private System.Windows.Forms.CheckBox checkBoxAliNvidiaDMP;
         private System.Windows.Forms.CheckBox checkBoxCAndT;
         private System.Windows.Forms.CheckBox checkBoxVIAAIS;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x400000001ReservedForHypervisorsToolStripMenuItem;
     }
 }
 

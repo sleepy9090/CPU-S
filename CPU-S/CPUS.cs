@@ -3818,8 +3818,8 @@ namespace CPU_S
 
         private void eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX40000000_4FFFFFFF eAX40000000_4FFFFFFF = new EAX40000000_4FFFFFFF();
-            eAX40000000_4FFFFFFF.ShowDialog();
+            EAX40000000 eAX40000000 = new EAX40000000();
+            eAX40000000.ShowDialog();
         }
 
         private void eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3948,5 +3948,10 @@ namespace CPU_S
             custom.ShowDialog();
         }
 
+        private void eAX0x400000001ReservedForHypervisorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000001 eAX40000001 = new EAX40000001();
+            eAX40000001.ShowDialog();
+        }
     }
 }
