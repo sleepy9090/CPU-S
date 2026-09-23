@@ -20,7 +20,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x40000000: Reserved for Hypervisors
+            #region EAX=0x40000000: Reserved for Hypervisors - vendor information
 
             string cpuIdEAX40000000_EAX = cpuHelper.GetEAX40000000EAXX();
             textBoxEAX40000000_EAX.Text = cpuIdEAX40000000_EAX;

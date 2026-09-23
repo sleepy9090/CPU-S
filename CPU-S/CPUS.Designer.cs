@@ -273,6 +273,7 @@
             this.eAX0x20000000HighestXeonPhiFunctionImplementedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -293,7 +294,7 @@
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x400000002ReservedForHypervisorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2547,6 +2548,7 @@
             this.eAX0x20000001XeonPhiFeatureBitsToolStripMenuItem,
             this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem,
             this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem,
+            this.eAX0x400000002ReservedForHypervisorsToolStripMenuItem,
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem,
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem,
             this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem,
@@ -2785,8 +2787,15 @@
             // 
             this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Name = "eAX0x400000000ReservedForHypervisorsToolStripMenuItem";
             this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000000: Reserved for Hypervisors";
+            this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000000: Reserved for Hypervisors - Vendor";
             this.eAX0x400000000ReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000000x4FFFFFFFReservedForHypervisorsToolStripMenuItem_Click);
+            // 
+            // eAX0x400000001ReservedForHypervisorsToolStripMenuItem
+            // 
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Name = "eAX0x400000001ReservedForHypervisorsToolStripMenuItem";
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000001: Reserved for Hypervisors - Interface";
+            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem_Click);
             // 
             // eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem
             // 
@@ -2929,12 +2938,12 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             // 
-            // eAX0x400000001ReservedForHypervisorsToolStripMenuItem
+            // eAX0x400000002ReservedForHypervisorsToolStripMenuItem
             // 
-            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Name = "eAX0x400000001ReservedForHypervisorsToolStripMenuItem";
-            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000001: Reserved for Hypervisors";
-            this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000001ReservedForHypervisorsToolStripMenuItem_Click);
+            this.eAX0x400000002ReservedForHypervisorsToolStripMenuItem.Name = "eAX0x400000002ReservedForHypervisorsToolStripMenuItem";
+            this.eAX0x400000002ReservedForHypervisorsToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
+            this.eAX0x400000002ReservedForHypervisorsToolStripMenuItem.Text = "EAX=0x40000002: Reserved for Hypervisors - Version";
+            this.eAX0x400000002ReservedForHypervisorsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x400000002ReservedForHypervisorsToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -3251,6 +3260,7 @@
         private System.Windows.Forms.CheckBox checkBoxCAndT;
         private System.Windows.Forms.CheckBox checkBoxVIAAIS;
         private System.Windows.Forms.ToolStripMenuItem eAX0x400000001ReservedForHypervisorsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x400000002ReservedForHypervisorsToolStripMenuItem;
     }
 }
 

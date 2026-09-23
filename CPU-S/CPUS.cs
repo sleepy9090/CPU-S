@@ -3953,5 +3953,11 @@ namespace CPU_S
             EAX40000001 eAX40000001 = new EAX40000001();
             eAX40000001.ShowDialog();
         }
+
+        private void eAX0x400000002ReservedForHypervisorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000002 eAX40000002 = new EAX40000002();
+            eAX40000002.ShowDialog();
+        }
     }
 }

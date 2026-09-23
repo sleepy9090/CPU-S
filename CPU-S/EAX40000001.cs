@@ -28,7 +28,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x40000001: Reserved for Hypervisors
+            #region EAX=0x40000001: Reserved for Hypervisors - interface information
 
             string cpuIdEAX40000001_EAX = cpuHelper.GetEAX40000001EAXX();
             textBoxEAX40000001EAX.Text = cpuIdEAX40000001_EAX;
