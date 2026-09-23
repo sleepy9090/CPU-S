@@ -81,10 +81,10 @@ namespace CPU_S
             // TODO: Break out.
             comboBoxLeaf.Items.AddRange(standardLeaves);
             comboBoxLeaf.Items.AddRange(optionalLeaves);
-            comboBoxLeaf.Items.AddRange(extendedLeaves);
             comboBoxLeaf.Items.AddRange(hypervisorLeavesMS);
             comboBoxLeaf.Items.AddRange(hypervisorLeavesVMWare);
             comboBoxLeaf.Items.AddRange(supervisorLeavesLinux);
+            comboBoxLeaf.Items.AddRange(extendedLeaves);
             comboBoxLeaf.Items.AddRange(vendorLeavesTransmeta);
             comboBoxLeaf.Items.AddRange(vendorLeavesHygon);
             comboBoxLeaf.Items.AddRange(vendorLeavesCentaurAndZhaoxin);
@@ -133,6 +133,8 @@ namespace CPU_S
         private void buttonQuery_Click(object sender, System.EventArgs e)
         {
             textBoxResult.Clear();
+            textBoxResultDec.Clear();
+            textBoxResultHex.Clear();
             cpuHelper = new CPUHelper();
             uint leaf = 0;
             uint subleaf = 0;
@@ -220,6 +222,8 @@ namespace CPU_S
                             // if start position is bit 2, and numberOfBits is 2, we want to get bits 2 and 1;
                             registerValue = registerValue.Substring(0, numberOfBits);
                             textBoxResult.Text = registerValue;
+                            textBoxResultHex.Text = "0x" + cpuHelper.BinaryStringToHexString(registerValue);
+                            textBoxResultDec.Text = cpuHelper.BinaryStringToDecimalString(registerValue);
                         }
                     }
                     else if ((checkBoxUseStartPosition.Checked) && (!checkBoxUseNumberOfBits.Checked))
@@ -230,7 +234,8 @@ namespace CPU_S
                         // if start position is bit 2, we want to get bits 2, 1, and 0;
                         registerValue = registerValue.Remove(0, 32 - (startPosition + 1));
                         textBoxResult.Text = registerValue;
-
+                        textBoxResultHex.Text = "0x" + cpuHelper.BinaryStringToHexString(registerValue);
+                        textBoxResultDec.Text = cpuHelper.BinaryStringToDecimalString(registerValue);
                     }
                     else if ((!checkBoxUseStartPosition.Checked) && (checkBoxUseNumberOfBits.Checked))
                     {
@@ -240,11 +245,15 @@ namespace CPU_S
                         // Assumes start position is 31, so if number of bits is 2, we want to get bits 31 and 30;
                         registerValue = registerValue.Substring(0, numberOfBits);
                         textBoxResult.Text = registerValue;
+                        textBoxResultHex.Text = "0x" + cpuHelper.BinaryStringToHexString(registerValue);
+                        textBoxResultDec.Text = cpuHelper.BinaryStringToDecimalString(registerValue);
                     }
                     else
                     {
                         string registerValue = cpuHelper.GetCustomX(leaf, subleaf, registerIndex);
                         textBoxResult.Text = registerValue;
+                        textBoxResultHex.Text = "0x" + cpuHelper.BinaryStringToHexString(registerValue);
+                        textBoxResultDec.Text = cpuHelper.BinaryStringToDecimalString(registerValue);
                     }
                 }
                 catch (Exception ex)

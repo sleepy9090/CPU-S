@@ -47,6 +47,8 @@ namespace CPU_S
             string cpuIdEAX40000001EAX_InterfaceSignature = cpuHelper.BinaryStringToHexString(cpuIdEAX40000001_EAX);
             textBoxEAX40000001InterfaceSignatureHex.Text = "0x" + cpuIdEAX40000001EAX_InterfaceSignature;
 
+            textBoxEAX40000001InterfaceSignatureString.Text = cpuHelper.GetEAX40000001EAX_InterfaceSignatureStringX();
+
             #endregion
         }
     }

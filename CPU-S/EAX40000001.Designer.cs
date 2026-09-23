@@ -42,6 +42,7 @@
             this.labelEAX40000001EBX = new System.Windows.Forms.Label();
             this.labelEAX40000001ECX = new System.Windows.Forms.Label();
             this.labelEAX40000001EDX = new System.Windows.Forms.Label();
+            this.textBoxEAX40000001InterfaceSignatureString = new System.Windows.Forms.TextBox();
             this.groupBoxEAX40000000_4FFFFFFF.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // groupBoxEAX
             // 
+            this.groupBoxEAX.Controls.Add(this.textBoxEAX40000001InterfaceSignatureString);
             this.groupBoxEAX.Controls.Add(this.textBoxEAX40000001InterfaceSignatureHex);
             this.groupBoxEAX.Controls.Add(this.labelEAX40000001InterfaceSignature);
             this.groupBoxEAX.Controls.Add(this.textBoxEAX40000001InterfaceSignature);
@@ -173,6 +175,13 @@
             this.labelEAX40000001EDX.TabIndex = 9;
             this.labelEAX40000001EDX.Text = "EDX:";
             // 
+            // textBoxEAX40000001InterfaceSignatureString
+            // 
+            this.textBoxEAX40000001InterfaceSignatureString.Location = new System.Drawing.Point(219, 71);
+            this.textBoxEAX40000001InterfaceSignatureString.Name = "textBoxEAX40000001InterfaceSignatureString";
+            this.textBoxEAX40000001InterfaceSignatureString.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX40000001InterfaceSignatureString.TabIndex = 35;
+            // 
             // EAX40000001
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,5 +217,6 @@
         private System.Windows.Forms.Label labelEAX40000001EBX;
         private System.Windows.Forms.Label labelEAX40000001ECX;
         private System.Windows.Forms.Label labelEAX40000001EDX;
+        private System.Windows.Forms.TextBox textBoxEAX40000001InterfaceSignatureString;
     }
 }

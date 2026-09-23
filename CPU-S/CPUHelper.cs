@@ -17446,6 +17446,30 @@ namespace CPU_S
             }
         }
 
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000001EAX_InterfaceSignatureString();
+
+        public string GetEAX40000001EAX_InterfaceSignatureStringX()
+        {
+            try
+            {
+                IntPtr eAX40000001EAX_InterfaceSignatureStringPtr = GetEAX40000001EAX_InterfaceSignatureString();
+                string eAX40000001EAX_InterfaceSignatureStringString = Marshal.PtrToStringAnsi(eAX40000001EAX_InterfaceSignatureStringPtr);
+
+                return eAX40000001EAX_InterfaceSignatureStringString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
         #endregion
 
         #region EAX=0x80000000: Highest Extended Function Implemented

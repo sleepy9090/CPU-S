@@ -29,32 +29,36 @@
         private void InitializeComponent()
         {
             this.groupBoxCustom = new System.Windows.Forms.GroupBox();
-            this.labelLeaf = new System.Windows.Forms.Label();
-            this.labelSubleaf = new System.Windows.Forms.Label();
-            this.labelRegisterIndex = new System.Windows.Forms.Label();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
-            this.labelResult = new System.Windows.Forms.Label();
-            this.buttonQuery = new System.Windows.Forms.Button();
-            this.comboBoxRegisterIndex = new System.Windows.Forms.ComboBox();
-            this.comboBoxSubleaf = new System.Windows.Forms.ComboBox();
-            this.comboBoxLeaf = new System.Windows.Forms.ComboBox();
-            this.checkBoxOverrideLeaf = new System.Windows.Forms.CheckBox();
-            this.checkBoxOverrideSubleaf = new System.Windows.Forms.CheckBox();
-            this.checkBoxOverrideRegisterIndex = new System.Windows.Forms.CheckBox();
-            this.textBoxOverrideLeaf = new System.Windows.Forms.TextBox();
-            this.textBoxOverrideSubleaf = new System.Windows.Forms.TextBox();
-            this.textBoxOverrideRegisterIndex = new System.Windows.Forms.TextBox();
-            this.comboBoxStartPosition = new System.Windows.Forms.ComboBox();
-            this.comboBoxNumberOfBits = new System.Windows.Forms.ComboBox();
-            this.labelStartPosition = new System.Windows.Forms.Label();
-            this.labelNumberOfBits = new System.Windows.Forms.Label();
-            this.checkBoxUseStartPosition = new System.Windows.Forms.CheckBox();
             this.checkBoxUseNumberOfBits = new System.Windows.Forms.CheckBox();
+            this.checkBoxUseStartPosition = new System.Windows.Forms.CheckBox();
+            this.labelLeaf = new System.Windows.Forms.Label();
+            this.labelNumberOfBits = new System.Windows.Forms.Label();
+            this.labelSubleaf = new System.Windows.Forms.Label();
+            this.labelStartPosition = new System.Windows.Forms.Label();
+            this.labelRegisterIndex = new System.Windows.Forms.Label();
+            this.comboBoxNumberOfBits = new System.Windows.Forms.ComboBox();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.comboBoxStartPosition = new System.Windows.Forms.ComboBox();
+            this.labelResult = new System.Windows.Forms.Label();
+            this.textBoxOverrideRegisterIndex = new System.Windows.Forms.TextBox();
+            this.buttonQuery = new System.Windows.Forms.Button();
+            this.textBoxOverrideSubleaf = new System.Windows.Forms.TextBox();
+            this.comboBoxRegisterIndex = new System.Windows.Forms.ComboBox();
+            this.textBoxOverrideLeaf = new System.Windows.Forms.TextBox();
+            this.comboBoxSubleaf = new System.Windows.Forms.ComboBox();
+            this.checkBoxOverrideRegisterIndex = new System.Windows.Forms.CheckBox();
+            this.comboBoxLeaf = new System.Windows.Forms.ComboBox();
+            this.checkBoxOverrideSubleaf = new System.Windows.Forms.CheckBox();
+            this.checkBoxOverrideLeaf = new System.Windows.Forms.CheckBox();
+            this.textBoxResultHex = new System.Windows.Forms.TextBox();
+            this.textBoxResultDec = new System.Windows.Forms.TextBox();
             this.groupBoxCustom.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxCustom
             // 
+            this.groupBoxCustom.Controls.Add(this.textBoxResultDec);
+            this.groupBoxCustom.Controls.Add(this.textBoxResultHex);
             this.groupBoxCustom.Controls.Add(this.checkBoxUseNumberOfBits);
             this.groupBoxCustom.Controls.Add(this.checkBoxUseStartPosition);
             this.groupBoxCustom.Controls.Add(this.labelLeaf);
@@ -82,167 +86,16 @@
             this.groupBoxCustom.TabIndex = 0;
             this.groupBoxCustom.TabStop = false;
             // 
-            // labelLeaf
+            // checkBoxUseNumberOfBits
             // 
-            this.labelLeaf.AutoSize = true;
-            this.labelLeaf.Location = new System.Drawing.Point(6, 16);
-            this.labelLeaf.Name = "labelLeaf";
-            this.labelLeaf.Size = new System.Drawing.Size(31, 13);
-            this.labelLeaf.TabIndex = 3;
-            this.labelLeaf.Text = "Leaf:";
-            // 
-            // labelSubleaf
-            // 
-            this.labelSubleaf.AutoSize = true;
-            this.labelSubleaf.Location = new System.Drawing.Point(6, 42);
-            this.labelSubleaf.Name = "labelSubleaf";
-            this.labelSubleaf.Size = new System.Drawing.Size(46, 13);
-            this.labelSubleaf.TabIndex = 4;
-            this.labelSubleaf.Text = "Subleaf:";
-            // 
-            // labelRegisterIndex
-            // 
-            this.labelRegisterIndex.AutoSize = true;
-            this.labelRegisterIndex.Location = new System.Drawing.Point(6, 68);
-            this.labelRegisterIndex.Name = "labelRegisterIndex";
-            this.labelRegisterIndex.Size = new System.Drawing.Size(78, 13);
-            this.labelRegisterIndex.TabIndex = 5;
-            this.labelRegisterIndex.Text = "Register Index:";
-            // 
-            // textBoxResult
-            // 
-            this.textBoxResult.Location = new System.Drawing.Point(520, 119);
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.Size = new System.Drawing.Size(200, 20);
-            this.textBoxResult.TabIndex = 6;
-            // 
-            // labelResult
-            // 
-            this.labelResult.AutoSize = true;
-            this.labelResult.Location = new System.Drawing.Point(474, 122);
-            this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(40, 13);
-            this.labelResult.TabIndex = 7;
-            this.labelResult.Text = "Result:";
-            // 
-            // buttonQuery
-            // 
-            this.buttonQuery.Location = new System.Drawing.Point(393, 117);
-            this.buttonQuery.Name = "buttonQuery";
-            this.buttonQuery.Size = new System.Drawing.Size(75, 23);
-            this.buttonQuery.TabIndex = 8;
-            this.buttonQuery.Text = "&Query";
-            this.buttonQuery.UseVisualStyleBackColor = true;
-            this.buttonQuery.Click += new System.EventHandler(this.buttonQuery_Click);
-            // 
-            // comboBoxRegisterIndex
-            // 
-            this.comboBoxRegisterIndex.FormattingEnabled = true;
-            this.comboBoxRegisterIndex.Location = new System.Drawing.Point(90, 65);
-            this.comboBoxRegisterIndex.Name = "comboBoxRegisterIndex";
-            this.comboBoxRegisterIndex.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxRegisterIndex.TabIndex = 9;
-            // 
-            // comboBoxSubleaf
-            // 
-            this.comboBoxSubleaf.FormattingEnabled = true;
-            this.comboBoxSubleaf.Location = new System.Drawing.Point(90, 39);
-            this.comboBoxSubleaf.Name = "comboBoxSubleaf";
-            this.comboBoxSubleaf.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSubleaf.TabIndex = 10;
-            // 
-            // comboBoxLeaf
-            // 
-            this.comboBoxLeaf.FormattingEnabled = true;
-            this.comboBoxLeaf.Location = new System.Drawing.Point(90, 13);
-            this.comboBoxLeaf.Name = "comboBoxLeaf";
-            this.comboBoxLeaf.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxLeaf.TabIndex = 11;
-            // 
-            // checkBoxOverrideLeaf
-            // 
-            this.checkBoxOverrideLeaf.AutoSize = true;
-            this.checkBoxOverrideLeaf.Location = new System.Drawing.Point(217, 15);
-            this.checkBoxOverrideLeaf.Name = "checkBoxOverrideLeaf";
-            this.checkBoxOverrideLeaf.Size = new System.Drawing.Size(123, 17);
-            this.checkBoxOverrideLeaf.TabIndex = 12;
-            this.checkBoxOverrideLeaf.Text = "Override Leaf Value:";
-            this.checkBoxOverrideLeaf.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxOverrideSubleaf
-            // 
-            this.checkBoxOverrideSubleaf.AutoSize = true;
-            this.checkBoxOverrideSubleaf.Location = new System.Drawing.Point(217, 41);
-            this.checkBoxOverrideSubleaf.Name = "checkBoxOverrideSubleaf";
-            this.checkBoxOverrideSubleaf.Size = new System.Drawing.Size(138, 17);
-            this.checkBoxOverrideSubleaf.TabIndex = 13;
-            this.checkBoxOverrideSubleaf.Text = "Override Subleaf Value:";
-            this.checkBoxOverrideSubleaf.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxOverrideRegisterIndex
-            // 
-            this.checkBoxOverrideRegisterIndex.AutoSize = true;
-            this.checkBoxOverrideRegisterIndex.Location = new System.Drawing.Point(217, 67);
-            this.checkBoxOverrideRegisterIndex.Name = "checkBoxOverrideRegisterIndex";
-            this.checkBoxOverrideRegisterIndex.Size = new System.Drawing.Size(170, 17);
-            this.checkBoxOverrideRegisterIndex.TabIndex = 14;
-            this.checkBoxOverrideRegisterIndex.Text = "Override Register Index Value:";
-            this.checkBoxOverrideRegisterIndex.UseVisualStyleBackColor = true;
-            // 
-            // textBoxOverrideLeaf
-            // 
-            this.textBoxOverrideLeaf.Location = new System.Drawing.Point(393, 13);
-            this.textBoxOverrideLeaf.Name = "textBoxOverrideLeaf";
-            this.textBoxOverrideLeaf.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOverrideLeaf.TabIndex = 15;
-            // 
-            // textBoxOverrideSubleaf
-            // 
-            this.textBoxOverrideSubleaf.Location = new System.Drawing.Point(393, 40);
-            this.textBoxOverrideSubleaf.Name = "textBoxOverrideSubleaf";
-            this.textBoxOverrideSubleaf.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOverrideSubleaf.TabIndex = 16;
-            // 
-            // textBoxOverrideRegisterIndex
-            // 
-            this.textBoxOverrideRegisterIndex.Location = new System.Drawing.Point(393, 66);
-            this.textBoxOverrideRegisterIndex.Name = "textBoxOverrideRegisterIndex";
-            this.textBoxOverrideRegisterIndex.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOverrideRegisterIndex.TabIndex = 17;
-            // 
-            // comboBoxStartPosition
-            // 
-            this.comboBoxStartPosition.FormattingEnabled = true;
-            this.comboBoxStartPosition.Location = new System.Drawing.Point(139, 92);
-            this.comboBoxStartPosition.Name = "comboBoxStartPosition";
-            this.comboBoxStartPosition.Size = new System.Drawing.Size(72, 21);
-            this.comboBoxStartPosition.TabIndex = 18;
-            // 
-            // comboBoxNumberOfBits
-            // 
-            this.comboBoxNumberOfBits.FormattingEnabled = true;
-            this.comboBoxNumberOfBits.Location = new System.Drawing.Point(139, 119);
-            this.comboBoxNumberOfBits.Name = "comboBoxNumberOfBits";
-            this.comboBoxNumberOfBits.Size = new System.Drawing.Size(72, 21);
-            this.comboBoxNumberOfBits.TabIndex = 19;
-            // 
-            // labelStartPosition
-            // 
-            this.labelStartPosition.AutoSize = true;
-            this.labelStartPosition.Location = new System.Drawing.Point(6, 95);
-            this.labelStartPosition.Name = "labelStartPosition";
-            this.labelStartPosition.Size = new System.Drawing.Size(72, 13);
-            this.labelStartPosition.TabIndex = 20;
-            this.labelStartPosition.Text = "Start Position:";
-            // 
-            // labelNumberOfBits
-            // 
-            this.labelNumberOfBits.AutoSize = true;
-            this.labelNumberOfBits.Location = new System.Drawing.Point(6, 122);
-            this.labelNumberOfBits.Name = "labelNumberOfBits";
-            this.labelNumberOfBits.Size = new System.Drawing.Size(127, 13);
-            this.labelNumberOfBits.TabIndex = 21;
-            this.labelNumberOfBits.Text = "Number of Bits to Extract:";
+            this.checkBoxUseNumberOfBits.AutoSize = true;
+            this.checkBoxUseNumberOfBits.Location = new System.Drawing.Point(217, 123);
+            this.checkBoxUseNumberOfBits.Name = "checkBoxUseNumberOfBits";
+            this.checkBoxUseNumberOfBits.Size = new System.Drawing.Size(65, 17);
+            this.checkBoxUseNumberOfBits.TabIndex = 23;
+            this.checkBoxUseNumberOfBits.Text = "Optional";
+            this.checkBoxUseNumberOfBits.UseVisualStyleBackColor = true;
+            this.checkBoxUseNumberOfBits.CheckedChanged += new System.EventHandler(this.checkBoxUseNumberOfBits_CheckedChanged);
             // 
             // checkBoxUseStartPosition
             // 
@@ -255,16 +108,181 @@
             this.checkBoxUseStartPosition.UseVisualStyleBackColor = true;
             this.checkBoxUseStartPosition.CheckedChanged += new System.EventHandler(this.checkBoxUseStartPosition_CheckedChanged);
             // 
-            // checkBoxUseNumberOfBits
+            // labelLeaf
             // 
-            this.checkBoxUseNumberOfBits.AutoSize = true;
-            this.checkBoxUseNumberOfBits.Location = new System.Drawing.Point(217, 123);
-            this.checkBoxUseNumberOfBits.Name = "checkBoxUseNumberOfBits";
-            this.checkBoxUseNumberOfBits.Size = new System.Drawing.Size(65, 17);
-            this.checkBoxUseNumberOfBits.TabIndex = 23;
-            this.checkBoxUseNumberOfBits.Text = "Optional";
-            this.checkBoxUseNumberOfBits.UseVisualStyleBackColor = true;
-            this.checkBoxUseNumberOfBits.CheckedChanged += new System.EventHandler(this.checkBoxUseNumberOfBits_CheckedChanged);
+            this.labelLeaf.AutoSize = true;
+            this.labelLeaf.Location = new System.Drawing.Point(6, 16);
+            this.labelLeaf.Name = "labelLeaf";
+            this.labelLeaf.Size = new System.Drawing.Size(31, 13);
+            this.labelLeaf.TabIndex = 3;
+            this.labelLeaf.Text = "Leaf:";
+            // 
+            // labelNumberOfBits
+            // 
+            this.labelNumberOfBits.AutoSize = true;
+            this.labelNumberOfBits.Location = new System.Drawing.Point(6, 122);
+            this.labelNumberOfBits.Name = "labelNumberOfBits";
+            this.labelNumberOfBits.Size = new System.Drawing.Size(127, 13);
+            this.labelNumberOfBits.TabIndex = 21;
+            this.labelNumberOfBits.Text = "Number of Bits to Extract:";
+            // 
+            // labelSubleaf
+            // 
+            this.labelSubleaf.AutoSize = true;
+            this.labelSubleaf.Location = new System.Drawing.Point(6, 42);
+            this.labelSubleaf.Name = "labelSubleaf";
+            this.labelSubleaf.Size = new System.Drawing.Size(46, 13);
+            this.labelSubleaf.TabIndex = 4;
+            this.labelSubleaf.Text = "Subleaf:";
+            // 
+            // labelStartPosition
+            // 
+            this.labelStartPosition.AutoSize = true;
+            this.labelStartPosition.Location = new System.Drawing.Point(6, 95);
+            this.labelStartPosition.Name = "labelStartPosition";
+            this.labelStartPosition.Size = new System.Drawing.Size(72, 13);
+            this.labelStartPosition.TabIndex = 20;
+            this.labelStartPosition.Text = "Start Position:";
+            // 
+            // labelRegisterIndex
+            // 
+            this.labelRegisterIndex.AutoSize = true;
+            this.labelRegisterIndex.Location = new System.Drawing.Point(6, 68);
+            this.labelRegisterIndex.Name = "labelRegisterIndex";
+            this.labelRegisterIndex.Size = new System.Drawing.Size(78, 13);
+            this.labelRegisterIndex.TabIndex = 5;
+            this.labelRegisterIndex.Text = "Register Index:";
+            // 
+            // comboBoxNumberOfBits
+            // 
+            this.comboBoxNumberOfBits.FormattingEnabled = true;
+            this.comboBoxNumberOfBits.Location = new System.Drawing.Point(139, 119);
+            this.comboBoxNumberOfBits.Name = "comboBoxNumberOfBits";
+            this.comboBoxNumberOfBits.Size = new System.Drawing.Size(72, 21);
+            this.comboBoxNumberOfBits.TabIndex = 19;
+            // 
+            // textBoxResult
+            // 
+            this.textBoxResult.Location = new System.Drawing.Point(520, 98);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.Size = new System.Drawing.Size(200, 20);
+            this.textBoxResult.TabIndex = 6;
+            // 
+            // comboBoxStartPosition
+            // 
+            this.comboBoxStartPosition.FormattingEnabled = true;
+            this.comboBoxStartPosition.Location = new System.Drawing.Point(139, 92);
+            this.comboBoxStartPosition.Name = "comboBoxStartPosition";
+            this.comboBoxStartPosition.Size = new System.Drawing.Size(72, 21);
+            this.comboBoxStartPosition.TabIndex = 18;
+            // 
+            // labelResult
+            // 
+            this.labelResult.AutoSize = true;
+            this.labelResult.Location = new System.Drawing.Point(474, 101);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(40, 13);
+            this.labelResult.TabIndex = 7;
+            this.labelResult.Text = "Result:";
+            // 
+            // textBoxOverrideRegisterIndex
+            // 
+            this.textBoxOverrideRegisterIndex.Location = new System.Drawing.Point(393, 66);
+            this.textBoxOverrideRegisterIndex.Name = "textBoxOverrideRegisterIndex";
+            this.textBoxOverrideRegisterIndex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOverrideRegisterIndex.TabIndex = 17;
+            // 
+            // buttonQuery
+            // 
+            this.buttonQuery.Location = new System.Drawing.Point(393, 96);
+            this.buttonQuery.Name = "buttonQuery";
+            this.buttonQuery.Size = new System.Drawing.Size(75, 23);
+            this.buttonQuery.TabIndex = 8;
+            this.buttonQuery.Text = "&Query";
+            this.buttonQuery.UseVisualStyleBackColor = true;
+            this.buttonQuery.Click += new System.EventHandler(this.buttonQuery_Click);
+            // 
+            // textBoxOverrideSubleaf
+            // 
+            this.textBoxOverrideSubleaf.Location = new System.Drawing.Point(393, 40);
+            this.textBoxOverrideSubleaf.Name = "textBoxOverrideSubleaf";
+            this.textBoxOverrideSubleaf.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOverrideSubleaf.TabIndex = 16;
+            // 
+            // comboBoxRegisterIndex
+            // 
+            this.comboBoxRegisterIndex.FormattingEnabled = true;
+            this.comboBoxRegisterIndex.Location = new System.Drawing.Point(90, 65);
+            this.comboBoxRegisterIndex.Name = "comboBoxRegisterIndex";
+            this.comboBoxRegisterIndex.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxRegisterIndex.TabIndex = 9;
+            // 
+            // textBoxOverrideLeaf
+            // 
+            this.textBoxOverrideLeaf.Location = new System.Drawing.Point(393, 13);
+            this.textBoxOverrideLeaf.Name = "textBoxOverrideLeaf";
+            this.textBoxOverrideLeaf.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOverrideLeaf.TabIndex = 15;
+            // 
+            // comboBoxSubleaf
+            // 
+            this.comboBoxSubleaf.FormattingEnabled = true;
+            this.comboBoxSubleaf.Location = new System.Drawing.Point(90, 39);
+            this.comboBoxSubleaf.Name = "comboBoxSubleaf";
+            this.comboBoxSubleaf.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSubleaf.TabIndex = 10;
+            // 
+            // checkBoxOverrideRegisterIndex
+            // 
+            this.checkBoxOverrideRegisterIndex.AutoSize = true;
+            this.checkBoxOverrideRegisterIndex.Location = new System.Drawing.Point(217, 67);
+            this.checkBoxOverrideRegisterIndex.Name = "checkBoxOverrideRegisterIndex";
+            this.checkBoxOverrideRegisterIndex.Size = new System.Drawing.Size(170, 17);
+            this.checkBoxOverrideRegisterIndex.TabIndex = 14;
+            this.checkBoxOverrideRegisterIndex.Text = "Override Register Index Value:";
+            this.checkBoxOverrideRegisterIndex.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxLeaf
+            // 
+            this.comboBoxLeaf.FormattingEnabled = true;
+            this.comboBoxLeaf.Location = new System.Drawing.Point(90, 13);
+            this.comboBoxLeaf.Name = "comboBoxLeaf";
+            this.comboBoxLeaf.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxLeaf.TabIndex = 11;
+            // 
+            // checkBoxOverrideSubleaf
+            // 
+            this.checkBoxOverrideSubleaf.AutoSize = true;
+            this.checkBoxOverrideSubleaf.Location = new System.Drawing.Point(217, 41);
+            this.checkBoxOverrideSubleaf.Name = "checkBoxOverrideSubleaf";
+            this.checkBoxOverrideSubleaf.Size = new System.Drawing.Size(138, 17);
+            this.checkBoxOverrideSubleaf.TabIndex = 13;
+            this.checkBoxOverrideSubleaf.Text = "Override Subleaf Value:";
+            this.checkBoxOverrideSubleaf.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOverrideLeaf
+            // 
+            this.checkBoxOverrideLeaf.AutoSize = true;
+            this.checkBoxOverrideLeaf.Location = new System.Drawing.Point(217, 15);
+            this.checkBoxOverrideLeaf.Name = "checkBoxOverrideLeaf";
+            this.checkBoxOverrideLeaf.Size = new System.Drawing.Size(123, 17);
+            this.checkBoxOverrideLeaf.TabIndex = 12;
+            this.checkBoxOverrideLeaf.Text = "Override Leaf Value:";
+            this.checkBoxOverrideLeaf.UseVisualStyleBackColor = true;
+            // 
+            // textBoxResultHex
+            // 
+            this.textBoxResultHex.Location = new System.Drawing.Point(520, 124);
+            this.textBoxResultHex.Name = "textBoxResultHex";
+            this.textBoxResultHex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxResultHex.TabIndex = 24;
+            // 
+            // textBoxResultDec
+            // 
+            this.textBoxResultDec.Location = new System.Drawing.Point(626, 123);
+            this.textBoxResultDec.Name = "textBoxResultDec";
+            this.textBoxResultDec.Size = new System.Drawing.Size(100, 20);
+            this.textBoxResultDec.TabIndex = 25;
             // 
             // Custom
             // 
@@ -306,5 +324,7 @@
         private System.Windows.Forms.CheckBox checkBoxUseStartPosition;
         private System.Windows.Forms.Label labelNumberOfBits;
         private System.Windows.Forms.Label labelStartPosition;
+        private System.Windows.Forms.TextBox textBoxResultHex;
+        private System.Windows.Forms.TextBox textBoxResultDec;
     }
 }
