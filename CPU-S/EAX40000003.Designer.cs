@@ -99,13 +99,13 @@
             this.checkBox55 = new System.Windows.Forms.CheckBox();
             this.checkBox56 = new System.Windows.Forms.CheckBox();
             this.checkBox57 = new System.Windows.Forms.CheckBox();
-            this.checkBox58 = new System.Windows.Forms.CheckBox();
-            this.checkBox59 = new System.Windows.Forms.CheckBox();
-            this.checkBox60 = new System.Windows.Forms.CheckBox();
-            this.checkBox61 = new System.Windows.Forms.CheckBox();
-            this.checkBox62 = new System.Windows.Forms.CheckBox();
-            this.checkBox63 = new System.Windows.Forms.CheckBox();
-            this.checkBox64 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCreatePort = new System.Windows.Forms.CheckBox();
+            this.checkBoxSignalEvents = new System.Windows.Forms.CheckBox();
+            this.checkBoxPostMessages = new System.Windows.Forms.CheckBox();
+            this.checkBoxAdjustMessageBuffers = new System.Windows.Forms.CheckBox();
+            this.checkBoxAccessMemoryPool = new System.Windows.Forms.CheckBox();
+            this.checkBoxAccessPartitionId = new System.Windows.Forms.CheckBox();
+            this.checkBoxCreatePartition = new System.Windows.Forms.CheckBox();
             this.checkBox65 = new System.Windows.Forms.CheckBox();
             this.checkBox66 = new System.Windows.Forms.CheckBox();
             this.checkBox67 = new System.Windows.Forms.CheckBox();
@@ -340,13 +340,13 @@
             this.groupBoxEBX.Controls.Add(this.checkBox55);
             this.groupBoxEBX.Controls.Add(this.checkBox56);
             this.groupBoxEBX.Controls.Add(this.checkBox57);
-            this.groupBoxEBX.Controls.Add(this.checkBox58);
-            this.groupBoxEBX.Controls.Add(this.checkBox59);
-            this.groupBoxEBX.Controls.Add(this.checkBox60);
-            this.groupBoxEBX.Controls.Add(this.checkBox61);
-            this.groupBoxEBX.Controls.Add(this.checkBox62);
-            this.groupBoxEBX.Controls.Add(this.checkBox63);
-            this.groupBoxEBX.Controls.Add(this.checkBox64);
+            this.groupBoxEBX.Controls.Add(this.checkBoxCreatePort);
+            this.groupBoxEBX.Controls.Add(this.checkBoxSignalEvents);
+            this.groupBoxEBX.Controls.Add(this.checkBoxPostMessages);
+            this.groupBoxEBX.Controls.Add(this.checkBoxAdjustMessageBuffers);
+            this.groupBoxEBX.Controls.Add(this.checkBoxAccessMemoryPool);
+            this.groupBoxEBX.Controls.Add(this.checkBoxAccessPartitionId);
+            this.groupBoxEBX.Controls.Add(this.checkBoxCreatePartition);
             this.groupBoxEBX.Location = new System.Drawing.Point(375, 163);
             this.groupBoxEBX.Name = "groupBoxEBX";
             this.groupBoxEBX.Size = new System.Drawing.Size(324, 754);
@@ -1006,75 +1006,75 @@
             this.checkBox57.Text = "checkBox57";
             this.checkBox57.UseVisualStyleBackColor = true;
             // 
-            // checkBox58
+            // checkBoxCreatePort
             // 
-            this.checkBox58.AutoSize = true;
-            this.checkBox58.Location = new System.Drawing.Point(6, 152);
-            this.checkBox58.Name = "checkBox58";
-            this.checkBox58.Size = new System.Drawing.Size(86, 17);
-            this.checkBox58.TabIndex = 38;
-            this.checkBox58.Text = "checkBox58";
-            this.checkBox58.UseVisualStyleBackColor = true;
+            this.checkBoxCreatePort.AutoSize = true;
+            this.checkBoxCreatePort.Location = new System.Drawing.Point(6, 152);
+            this.checkBoxCreatePort.Name = "checkBoxCreatePort";
+            this.checkBoxCreatePort.Size = new System.Drawing.Size(91, 17);
+            this.checkBoxCreatePort.TabIndex = 38;
+            this.checkBoxCreatePort.Text = "CreatePort [6]";
+            this.checkBoxCreatePort.UseVisualStyleBackColor = true;
             // 
-            // checkBox59
+            // checkBoxSignalEvents
             // 
-            this.checkBox59.AutoSize = true;
-            this.checkBox59.Location = new System.Drawing.Point(6, 129);
-            this.checkBox59.Name = "checkBox59";
-            this.checkBox59.Size = new System.Drawing.Size(86, 17);
-            this.checkBox59.TabIndex = 37;
-            this.checkBox59.Text = "checkBox59";
-            this.checkBox59.UseVisualStyleBackColor = true;
+            this.checkBoxSignalEvents.AutoSize = true;
+            this.checkBoxSignalEvents.Location = new System.Drawing.Point(6, 129);
+            this.checkBoxSignalEvents.Name = "checkBoxSignalEvents";
+            this.checkBoxSignalEvents.Size = new System.Drawing.Size(103, 17);
+            this.checkBoxSignalEvents.TabIndex = 37;
+            this.checkBoxSignalEvents.Text = "SignalEvents [5]";
+            this.checkBoxSignalEvents.UseVisualStyleBackColor = true;
             // 
-            // checkBox60
+            // checkBoxPostMessages
             // 
-            this.checkBox60.AutoSize = true;
-            this.checkBox60.Location = new System.Drawing.Point(6, 106);
-            this.checkBox60.Name = "checkBox60";
-            this.checkBox60.Size = new System.Drawing.Size(86, 17);
-            this.checkBox60.TabIndex = 36;
-            this.checkBox60.Text = "checkBox60";
-            this.checkBox60.UseVisualStyleBackColor = true;
+            this.checkBoxPostMessages.AutoSize = true;
+            this.checkBoxPostMessages.Location = new System.Drawing.Point(6, 106);
+            this.checkBoxPostMessages.Name = "checkBoxPostMessages";
+            this.checkBoxPostMessages.Size = new System.Drawing.Size(110, 17);
+            this.checkBoxPostMessages.TabIndex = 36;
+            this.checkBoxPostMessages.Text = "PostMessages [4]";
+            this.checkBoxPostMessages.UseVisualStyleBackColor = true;
             // 
-            // checkBox61
+            // checkBoxAdjustMessageBuffers
             // 
-            this.checkBox61.AutoSize = true;
-            this.checkBox61.Location = new System.Drawing.Point(6, 83);
-            this.checkBox61.Name = "checkBox61";
-            this.checkBox61.Size = new System.Drawing.Size(86, 17);
-            this.checkBox61.TabIndex = 35;
-            this.checkBox61.Text = "checkBox61";
-            this.checkBox61.UseVisualStyleBackColor = true;
+            this.checkBoxAdjustMessageBuffers.AutoSize = true;
+            this.checkBoxAdjustMessageBuffers.Location = new System.Drawing.Point(6, 83);
+            this.checkBoxAdjustMessageBuffers.Name = "checkBoxAdjustMessageBuffers";
+            this.checkBoxAdjustMessageBuffers.Size = new System.Drawing.Size(146, 17);
+            this.checkBoxAdjustMessageBuffers.TabIndex = 35;
+            this.checkBoxAdjustMessageBuffers.Text = "AdjustMessageBuffers [3]";
+            this.checkBoxAdjustMessageBuffers.UseVisualStyleBackColor = true;
             // 
-            // checkBox62
+            // checkBoxAccessMemoryPool
             // 
-            this.checkBox62.AutoSize = true;
-            this.checkBox62.Location = new System.Drawing.Point(6, 60);
-            this.checkBox62.Name = "checkBox62";
-            this.checkBox62.Size = new System.Drawing.Size(86, 17);
-            this.checkBox62.TabIndex = 34;
-            this.checkBox62.Text = "checkBox62";
-            this.checkBox62.UseVisualStyleBackColor = true;
+            this.checkBoxAccessMemoryPool.AutoSize = true;
+            this.checkBoxAccessMemoryPool.Location = new System.Drawing.Point(6, 60);
+            this.checkBoxAccessMemoryPool.Name = "checkBoxAccessMemoryPool";
+            this.checkBoxAccessMemoryPool.Size = new System.Drawing.Size(134, 17);
+            this.checkBoxAccessMemoryPool.TabIndex = 34;
+            this.checkBoxAccessMemoryPool.Text = "AccessMemoryPool [2]";
+            this.checkBoxAccessMemoryPool.UseVisualStyleBackColor = true;
             // 
-            // checkBox63
+            // checkBoxAccessPartitionId
             // 
-            this.checkBox63.AutoSize = true;
-            this.checkBox63.Location = new System.Drawing.Point(6, 37);
-            this.checkBox63.Name = "checkBox63";
-            this.checkBox63.Size = new System.Drawing.Size(86, 17);
-            this.checkBox63.TabIndex = 33;
-            this.checkBox63.Text = "checkBox63";
-            this.checkBox63.UseVisualStyleBackColor = true;
+            this.checkBoxAccessPartitionId.AutoSize = true;
+            this.checkBoxAccessPartitionId.Location = new System.Drawing.Point(6, 37);
+            this.checkBoxAccessPartitionId.Name = "checkBoxAccessPartitionId";
+            this.checkBoxAccessPartitionId.Size = new System.Drawing.Size(123, 17);
+            this.checkBoxAccessPartitionId.TabIndex = 33;
+            this.checkBoxAccessPartitionId.Text = "AccessPartitionId [1]";
+            this.checkBoxAccessPartitionId.UseVisualStyleBackColor = true;
             // 
-            // checkBox64
+            // checkBoxCreatePartition
             // 
-            this.checkBox64.AutoSize = true;
-            this.checkBox64.Location = new System.Drawing.Point(6, 14);
-            this.checkBox64.Name = "checkBox64";
-            this.checkBox64.Size = new System.Drawing.Size(86, 17);
-            this.checkBox64.TabIndex = 32;
-            this.checkBox64.Text = "checkBox64";
-            this.checkBox64.UseVisualStyleBackColor = true;
+            this.checkBoxCreatePartition.AutoSize = true;
+            this.checkBoxCreatePartition.Location = new System.Drawing.Point(6, 14);
+            this.checkBoxCreatePartition.Name = "checkBoxCreatePartition";
+            this.checkBoxCreatePartition.Size = new System.Drawing.Size(110, 17);
+            this.checkBoxCreatePartition.TabIndex = 32;
+            this.checkBoxCreatePartition.Text = "CreatePartition [0]";
+            this.checkBoxCreatePartition.UseVisualStyleBackColor = true;
             // 
             // checkBox65
             // 
@@ -1845,13 +1845,13 @@
         private System.Windows.Forms.CheckBox checkBox55;
         private System.Windows.Forms.CheckBox checkBox56;
         private System.Windows.Forms.CheckBox checkBox57;
-        private System.Windows.Forms.CheckBox checkBox58;
-        private System.Windows.Forms.CheckBox checkBox59;
-        private System.Windows.Forms.CheckBox checkBox60;
-        private System.Windows.Forms.CheckBox checkBox61;
-        private System.Windows.Forms.CheckBox checkBox62;
-        private System.Windows.Forms.CheckBox checkBox63;
-        private System.Windows.Forms.CheckBox checkBox64;
+        private System.Windows.Forms.CheckBox checkBoxCreatePort;
+        private System.Windows.Forms.CheckBox checkBoxSignalEvents;
+        private System.Windows.Forms.CheckBox checkBoxPostMessages;
+        private System.Windows.Forms.CheckBox checkBoxAdjustMessageBuffers;
+        private System.Windows.Forms.CheckBox checkBoxAccessMemoryPool;
+        private System.Windows.Forms.CheckBox checkBoxAccessPartitionId;
+        private System.Windows.Forms.CheckBox checkBoxCreatePartition;
         private System.Windows.Forms.CheckBox checkBoxReservedEAX31;
         private System.Windows.Forms.CheckBox checkBoxReservedEAX30;
         private System.Windows.Forms.CheckBox checkBoxReservedEAX29;
