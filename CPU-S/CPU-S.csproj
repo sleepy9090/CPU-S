@@ -588,6 +588,9 @@
     <EmbeddedResource Include="EAX40000002.resx">
       <DependentUpon>EAX40000002.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000003.resx">
+      <DependentUpon>EAX40000003.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EAX4i.resx">
       <DependentUpon>EAX4i.cs</DependentUpon>
     </EmbeddedResource>

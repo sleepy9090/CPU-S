@@ -47,15 +47,15 @@ namespace CPU_S
 
             string cpuIdEAX0EBXCpuVendor = cpuHelper.GetEAX0EBXCpuVendorX();
             textBoxEAX0ID1.Text = cpuIdEAX0EBXCpuVendor;
+            textBoxEAX0ID1Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEAX0EBX);
 
             string cpuIdEAX0ECXCpuVendor = cpuHelper.GetEAX0ECXCpuVendorX();
             textBoxEAX0ID2.Text = cpuIdEAX0ECXCpuVendor;
+            textBoxEAX0ID2Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEAX0ECX);
 
             string cpuIdEAX0EDXCpuVendor = cpuHelper.GetEAX0EDXCpuVendorX();
             textBoxEAX0ID3.Text = cpuIdEAX0EDXCpuVendor;
-
-
-            textBoxEAX0Vendor.Text = cpuIdEAX0EBXEDXECXCpuVendor;
+            textBoxEAX0ID3Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEAX0EDX);
 
             #endregion
         }

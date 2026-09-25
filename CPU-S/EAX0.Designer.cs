@@ -37,8 +37,6 @@
             this.labelEAX0ID1 = new System.Windows.Forms.Label();
             this.labelEAX0HightestFunctionParameterDec = new System.Windows.Forms.Label();
             this.labelEAX0Hex = new System.Windows.Forms.Label();
-            this.labelEAX0Vendor = new System.Windows.Forms.Label();
-            this.textBoxEAX0Vendor = new System.Windows.Forms.TextBox();
             this.textBoxEAX0HightestFunctionParameterDec = new System.Windows.Forms.TextBox();
             this.textBoxEAX0HightestFunctionParameterHex = new System.Windows.Forms.TextBox();
             this.labelEAX0EBXEDXECXCpuVendorId = new System.Windows.Forms.Label();
@@ -53,11 +51,23 @@
             this.textBoxEAX0EBX = new System.Windows.Forms.TextBox();
             this.textBoxEAX0EAX = new System.Windows.Forms.TextBox();
             this.labelEAX0EAX = new System.Windows.Forms.Label();
+            this.textBoxEAX0ID1Hex = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0ID2Hex = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0ID3Hex = new System.Windows.Forms.TextBox();
+            this.labelEAX0ID1Hex = new System.Windows.Forms.Label();
+            this.labelEAX0ID2Hex = new System.Windows.Forms.Label();
+            this.labelEAX0ID3Hex = new System.Windows.Forms.Label();
             this.groupBoxEAX0.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX0
             // 
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0ID3Hex);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0ID2Hex);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0ID1Hex);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID3Hex);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID2Hex);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID1Hex);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID3);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID2);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ID1);
@@ -66,8 +76,6 @@
             this.groupBoxEAX0.Controls.Add(this.labelEAX0ID1);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0HightestFunctionParameterDec);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0Hex);
-            this.groupBoxEAX0.Controls.Add(this.labelEAX0Vendor);
-            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Vendor);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0HightestFunctionParameterDec);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0HightestFunctionParameterHex);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0EBXEDXECXCpuVendorId);
@@ -84,7 +92,7 @@
             this.groupBoxEAX0.Controls.Add(this.labelEAX0EAX);
             this.groupBoxEAX0.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX0.Name = "groupBoxEAX0";
-            this.groupBoxEAX0.Size = new System.Drawing.Size(688, 210);
+            this.groupBoxEAX0.Size = new System.Drawing.Size(688, 183);
             this.groupBoxEAX0.TabIndex = 0;
             this.groupBoxEAX0.TabStop = false;
             this.groupBoxEAX0.Text = "EAX=0x0";
@@ -140,7 +148,7 @@
             // labelEAX0HightestFunctionParameterDec
             // 
             this.labelEAX0HightestFunctionParameterDec.AutoSize = true;
-            this.labelEAX0HightestFunctionParameterDec.Location = new System.Drawing.Point(546, 126);
+            this.labelEAX0HightestFunctionParameterDec.Location = new System.Drawing.Point(383, 126);
             this.labelEAX0HightestFunctionParameterDec.Name = "labelEAX0HightestFunctionParameterDec";
             this.labelEAX0HightestFunctionParameterDec.Size = new System.Drawing.Size(30, 13);
             this.labelEAX0HightestFunctionParameterDec.TabIndex = 17;
@@ -149,38 +157,22 @@
             // labelEAX0Hex
             // 
             this.labelEAX0Hex.AutoSize = true;
-            this.labelEAX0Hex.Location = new System.Drawing.Point(383, 126);
+            this.labelEAX0Hex.Location = new System.Drawing.Point(536, 126);
             this.labelEAX0Hex.Name = "labelEAX0Hex";
             this.labelEAX0Hex.Size = new System.Drawing.Size(29, 13);
             this.labelEAX0Hex.TabIndex = 16;
             this.labelEAX0Hex.Text = "Hex:";
             // 
-            // labelEAX0Vendor
-            // 
-            this.labelEAX0Vendor.AutoSize = true;
-            this.labelEAX0Vendor.Location = new System.Drawing.Point(6, 152);
-            this.labelEAX0Vendor.Name = "labelEAX0Vendor";
-            this.labelEAX0Vendor.Size = new System.Drawing.Size(44, 13);
-            this.labelEAX0Vendor.TabIndex = 15;
-            this.labelEAX0Vendor.Text = "Vendor:";
-            // 
-            // textBoxEAX0Vendor
-            // 
-            this.textBoxEAX0Vendor.Location = new System.Drawing.Point(177, 149);
-            this.textBoxEAX0Vendor.Name = "textBoxEAX0Vendor";
-            this.textBoxEAX0Vendor.Size = new System.Drawing.Size(500, 20);
-            this.textBoxEAX0Vendor.TabIndex = 14;
-            // 
             // textBoxEAX0HightestFunctionParameterDec
             // 
-            this.textBoxEAX0HightestFunctionParameterDec.Location = new System.Drawing.Point(577, 123);
+            this.textBoxEAX0HightestFunctionParameterDec.Location = new System.Drawing.Point(425, 123);
             this.textBoxEAX0HightestFunctionParameterDec.Name = "textBoxEAX0HightestFunctionParameterDec";
             this.textBoxEAX0HightestFunctionParameterDec.Size = new System.Drawing.Size(100, 20);
             this.textBoxEAX0HightestFunctionParameterDec.TabIndex = 13;
             // 
             // textBoxEAX0HightestFunctionParameterHex
             // 
-            this.textBoxEAX0HightestFunctionParameterHex.Location = new System.Drawing.Point(425, 123);
+            this.textBoxEAX0HightestFunctionParameterHex.Location = new System.Drawing.Point(577, 123);
             this.textBoxEAX0HightestFunctionParameterHex.Name = "textBoxEAX0HightestFunctionParameterHex";
             this.textBoxEAX0HightestFunctionParameterHex.Size = new System.Drawing.Size(100, 20);
             this.textBoxEAX0HightestFunctionParameterHex.TabIndex = 12;
@@ -188,7 +180,7 @@
             // labelEAX0EBXEDXECXCpuVendorId
             // 
             this.labelEAX0EBXEDXECXCpuVendorId.AutoSize = true;
-            this.labelEAX0EBXEDXECXCpuVendorId.Location = new System.Drawing.Point(6, 178);
+            this.labelEAX0EBXEDXECXCpuVendorId.Location = new System.Drawing.Point(6, 152);
             this.labelEAX0EBXEDXECXCpuVendorId.Name = "labelEAX0EBXEDXECXCpuVendorId";
             this.labelEAX0EBXEDXECXCpuVendorId.Size = new System.Drawing.Size(83, 13);
             this.labelEAX0EBXEDXECXCpuVendorId.TabIndex = 11;
@@ -232,7 +224,7 @@
             // 
             // textBoxEAX0EBXEDXECXCpuVendorId
             // 
-            this.textBoxEAX0EBXEDXECXCpuVendorId.Location = new System.Drawing.Point(177, 175);
+            this.textBoxEAX0EBXEDXECXCpuVendorId.Location = new System.Drawing.Point(177, 149);
             this.textBoxEAX0EBXEDXECXCpuVendorId.Name = "textBoxEAX0EBXEDXECXCpuVendorId";
             this.textBoxEAX0EBXEDXECXCpuVendorId.Size = new System.Drawing.Size(500, 20);
             this.textBoxEAX0EBXEDXECXCpuVendorId.TabIndex = 6;
@@ -281,11 +273,59 @@
             this.labelEAX0EAX.TabIndex = 0;
             this.labelEAX0EAX.Text = "EAX:";
             // 
+            // textBoxEAX0ID1Hex
+            // 
+            this.textBoxEAX0ID1Hex.Location = new System.Drawing.Point(577, 45);
+            this.textBoxEAX0ID1Hex.Name = "textBoxEAX0ID1Hex";
+            this.textBoxEAX0ID1Hex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0ID1Hex.TabIndex = 24;
+            // 
+            // textBoxEAX0ID2Hex
+            // 
+            this.textBoxEAX0ID2Hex.Location = new System.Drawing.Point(577, 71);
+            this.textBoxEAX0ID2Hex.Name = "textBoxEAX0ID2Hex";
+            this.textBoxEAX0ID2Hex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0ID2Hex.TabIndex = 25;
+            // 
+            // textBoxEAX0ID3Hex
+            // 
+            this.textBoxEAX0ID3Hex.Location = new System.Drawing.Point(577, 97);
+            this.textBoxEAX0ID3Hex.Name = "textBoxEAX0ID3Hex";
+            this.textBoxEAX0ID3Hex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0ID3Hex.TabIndex = 26;
+            // 
+            // labelEAX0ID1Hex
+            // 
+            this.labelEAX0ID1Hex.AutoSize = true;
+            this.labelEAX0ID1Hex.Location = new System.Drawing.Point(536, 48);
+            this.labelEAX0ID1Hex.Name = "labelEAX0ID1Hex";
+            this.labelEAX0ID1Hex.Size = new System.Drawing.Size(29, 13);
+            this.labelEAX0ID1Hex.TabIndex = 27;
+            this.labelEAX0ID1Hex.Text = "Hex:";
+            // 
+            // labelEAX0ID2Hex
+            // 
+            this.labelEAX0ID2Hex.AutoSize = true;
+            this.labelEAX0ID2Hex.Location = new System.Drawing.Point(536, 74);
+            this.labelEAX0ID2Hex.Name = "labelEAX0ID2Hex";
+            this.labelEAX0ID2Hex.Size = new System.Drawing.Size(29, 13);
+            this.labelEAX0ID2Hex.TabIndex = 28;
+            this.labelEAX0ID2Hex.Text = "Hex:";
+            // 
+            // labelEAX0ID3Hex
+            // 
+            this.labelEAX0ID3Hex.AutoSize = true;
+            this.labelEAX0ID3Hex.Location = new System.Drawing.Point(536, 100);
+            this.labelEAX0ID3Hex.Name = "labelEAX0ID3Hex";
+            this.labelEAX0ID3Hex.Size = new System.Drawing.Size(29, 13);
+            this.labelEAX0ID3Hex.TabIndex = 29;
+            this.labelEAX0ID3Hex.Text = "Hex:";
+            // 
             // EAX0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 233);
+            this.ClientSize = new System.Drawing.Size(713, 201);
             this.Controls.Add(this.groupBoxEAX0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
@@ -312,17 +352,21 @@
         private System.Windows.Forms.Label labelEAX0EDX;
         private System.Windows.Forms.Label labelEAX0HighestFunctionParam;
         private System.Windows.Forms.Label labelEAX0EBXEDXECXCpuVendorId;
-        private System.Windows.Forms.TextBox textBoxEAX0Vendor;
         private System.Windows.Forms.TextBox textBoxEAX0HightestFunctionParameterDec;
         private System.Windows.Forms.TextBox textBoxEAX0HightestFunctionParameterHex;
         private System.Windows.Forms.Label labelEAX0HightestFunctionParameterDec;
         private System.Windows.Forms.Label labelEAX0Hex;
-        private System.Windows.Forms.Label labelEAX0Vendor;
         private System.Windows.Forms.Label labelEAX0ID3;
         private System.Windows.Forms.Label labelEAX0ID2;
         private System.Windows.Forms.Label labelEAX0ID1;
         private System.Windows.Forms.TextBox textBoxEAX0ID3;
         private System.Windows.Forms.TextBox textBoxEAX0ID2;
         private System.Windows.Forms.TextBox textBoxEAX0ID1;
+        private System.Windows.Forms.Label labelEAX0ID3Hex;
+        private System.Windows.Forms.Label labelEAX0ID2Hex;
+        private System.Windows.Forms.Label labelEAX0ID1Hex;
+        private System.Windows.Forms.TextBox textBoxEAX0ID3Hex;
+        private System.Windows.Forms.TextBox textBoxEAX0ID2Hex;
+        private System.Windows.Forms.TextBox textBoxEAX0ID1Hex;
     }
 }
