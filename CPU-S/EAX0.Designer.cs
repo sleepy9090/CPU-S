@@ -35,18 +35,18 @@
             this.labelEAX0ID3 = new System.Windows.Forms.Label();
             this.labelEAX0ID2 = new System.Windows.Forms.Label();
             this.labelEAX0ID1 = new System.Windows.Forms.Label();
-            this.labelEAX0Extended = new System.Windows.Forms.Label();
-            this.labelEAX0Basic = new System.Windows.Forms.Label();
-            this.labelEAX0Processors = new System.Windows.Forms.Label();
-            this.textBoxEAX0Processors = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0Extended = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0Basic = new System.Windows.Forms.TextBox();
-            this.labelEAX0EBXEDXECXCpuVendor = new System.Windows.Forms.Label();
+            this.labelEAX0HightestFunctionParameterDec = new System.Windows.Forms.Label();
+            this.labelEAX0Hex = new System.Windows.Forms.Label();
+            this.labelEAX0Vendor = new System.Windows.Forms.Label();
+            this.textBoxEAX0Vendor = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0HightestFunctionParameterDec = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0HightestFunctionParameterHex = new System.Windows.Forms.TextBox();
+            this.labelEAX0EBXEDXECXCpuVendorId = new System.Windows.Forms.Label();
             this.labelEAX0HighestFunctionParam = new System.Windows.Forms.Label();
             this.labelEAX0EDX = new System.Windows.Forms.Label();
             this.labelEAX0ECX = new System.Windows.Forms.Label();
             this.labelEAX0EBX = new System.Windows.Forms.Label();
-            this.textBoxEAX0EBXEDXECXCpuVendor = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0EBXEDXECXCpuVendorId = new System.Windows.Forms.TextBox();
             this.textBoxEAX0EAXHightestFunctionParameter = new System.Windows.Forms.TextBox();
             this.textBoxEAX0EDX = new System.Windows.Forms.TextBox();
             this.textBoxEAX0ECX = new System.Windows.Forms.TextBox();
@@ -64,18 +64,18 @@
             this.groupBoxEAX0.Controls.Add(this.labelEAX0ID3);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0ID2);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0ID1);
-            this.groupBoxEAX0.Controls.Add(this.labelEAX0Extended);
-            this.groupBoxEAX0.Controls.Add(this.labelEAX0Basic);
-            this.groupBoxEAX0.Controls.Add(this.labelEAX0Processors);
-            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Processors);
-            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Extended);
-            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Basic);
-            this.groupBoxEAX0.Controls.Add(this.labelEAX0EBXEDXECXCpuVendor);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0HightestFunctionParameterDec);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0Hex);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0Vendor);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0Vendor);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0HightestFunctionParameterDec);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0HightestFunctionParameterHex);
+            this.groupBoxEAX0.Controls.Add(this.labelEAX0EBXEDXECXCpuVendorId);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0HighestFunctionParam);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0EDX);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0ECX);
             this.groupBoxEAX0.Controls.Add(this.labelEAX0EBX);
-            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EBXEDXECXCpuVendor);
+            this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EBXEDXECXCpuVendorId);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EAXHightestFunctionParameter);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0EDX);
             this.groupBoxEAX0.Controls.Add(this.textBoxEAX0ECX);
@@ -137,62 +137,62 @@
             this.labelEAX0ID1.TabIndex = 18;
             this.labelEAX0ID1.Text = "ID 1:";
             // 
-            // labelEAX0Extended
+            // labelEAX0HightestFunctionParameterDec
             // 
-            this.labelEAX0Extended.AutoSize = true;
-            this.labelEAX0Extended.Location = new System.Drawing.Point(546, 126);
-            this.labelEAX0Extended.Name = "labelEAX0Extended";
-            this.labelEAX0Extended.Size = new System.Drawing.Size(25, 13);
-            this.labelEAX0Extended.TabIndex = 17;
-            this.labelEAX0Extended.Text = "Ext:";
+            this.labelEAX0HightestFunctionParameterDec.AutoSize = true;
+            this.labelEAX0HightestFunctionParameterDec.Location = new System.Drawing.Point(546, 126);
+            this.labelEAX0HightestFunctionParameterDec.Name = "labelEAX0HightestFunctionParameterDec";
+            this.labelEAX0HightestFunctionParameterDec.Size = new System.Drawing.Size(30, 13);
+            this.labelEAX0HightestFunctionParameterDec.TabIndex = 17;
+            this.labelEAX0HightestFunctionParameterDec.Text = "Dec:";
             // 
-            // labelEAX0Basic
+            // labelEAX0Hex
             // 
-            this.labelEAX0Basic.AutoSize = true;
-            this.labelEAX0Basic.Location = new System.Drawing.Point(383, 126);
-            this.labelEAX0Basic.Name = "labelEAX0Basic";
-            this.labelEAX0Basic.Size = new System.Drawing.Size(36, 13);
-            this.labelEAX0Basic.TabIndex = 16;
-            this.labelEAX0Basic.Text = "Basic:";
+            this.labelEAX0Hex.AutoSize = true;
+            this.labelEAX0Hex.Location = new System.Drawing.Point(383, 126);
+            this.labelEAX0Hex.Name = "labelEAX0Hex";
+            this.labelEAX0Hex.Size = new System.Drawing.Size(29, 13);
+            this.labelEAX0Hex.TabIndex = 16;
+            this.labelEAX0Hex.Text = "Hex:";
             // 
-            // labelEAX0Processors
+            // labelEAX0Vendor
             // 
-            this.labelEAX0Processors.AutoSize = true;
-            this.labelEAX0Processors.Location = new System.Drawing.Point(6, 152);
-            this.labelEAX0Processors.Name = "labelEAX0Processors";
-            this.labelEAX0Processors.Size = new System.Drawing.Size(62, 13);
-            this.labelEAX0Processors.TabIndex = 15;
-            this.labelEAX0Processors.Text = "Processors:";
+            this.labelEAX0Vendor.AutoSize = true;
+            this.labelEAX0Vendor.Location = new System.Drawing.Point(6, 152);
+            this.labelEAX0Vendor.Name = "labelEAX0Vendor";
+            this.labelEAX0Vendor.Size = new System.Drawing.Size(44, 13);
+            this.labelEAX0Vendor.TabIndex = 15;
+            this.labelEAX0Vendor.Text = "Vendor:";
             // 
-            // textBoxEAX0Processors
+            // textBoxEAX0Vendor
             // 
-            this.textBoxEAX0Processors.Location = new System.Drawing.Point(177, 149);
-            this.textBoxEAX0Processors.Name = "textBoxEAX0Processors";
-            this.textBoxEAX0Processors.Size = new System.Drawing.Size(500, 20);
-            this.textBoxEAX0Processors.TabIndex = 14;
+            this.textBoxEAX0Vendor.Location = new System.Drawing.Point(177, 149);
+            this.textBoxEAX0Vendor.Name = "textBoxEAX0Vendor";
+            this.textBoxEAX0Vendor.Size = new System.Drawing.Size(500, 20);
+            this.textBoxEAX0Vendor.TabIndex = 14;
             // 
-            // textBoxEAX0Extended
+            // textBoxEAX0HightestFunctionParameterDec
             // 
-            this.textBoxEAX0Extended.Location = new System.Drawing.Point(577, 123);
-            this.textBoxEAX0Extended.Name = "textBoxEAX0Extended";
-            this.textBoxEAX0Extended.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0Extended.TabIndex = 13;
+            this.textBoxEAX0HightestFunctionParameterDec.Location = new System.Drawing.Point(577, 123);
+            this.textBoxEAX0HightestFunctionParameterDec.Name = "textBoxEAX0HightestFunctionParameterDec";
+            this.textBoxEAX0HightestFunctionParameterDec.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0HightestFunctionParameterDec.TabIndex = 13;
             // 
-            // textBoxEAX0Basic
+            // textBoxEAX0HightestFunctionParameterHex
             // 
-            this.textBoxEAX0Basic.Location = new System.Drawing.Point(425, 123);
-            this.textBoxEAX0Basic.Name = "textBoxEAX0Basic";
-            this.textBoxEAX0Basic.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0Basic.TabIndex = 12;
+            this.textBoxEAX0HightestFunctionParameterHex.Location = new System.Drawing.Point(425, 123);
+            this.textBoxEAX0HightestFunctionParameterHex.Name = "textBoxEAX0HightestFunctionParameterHex";
+            this.textBoxEAX0HightestFunctionParameterHex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0HightestFunctionParameterHex.TabIndex = 12;
             // 
-            // labelEAX0EBXEDXECXCpuVendor
+            // labelEAX0EBXEDXECXCpuVendorId
             // 
-            this.labelEAX0EBXEDXECXCpuVendor.AutoSize = true;
-            this.labelEAX0EBXEDXECXCpuVendor.Location = new System.Drawing.Point(6, 178);
-            this.labelEAX0EBXEDXECXCpuVendor.Name = "labelEAX0EBXEDXECXCpuVendor";
-            this.labelEAX0EBXEDXECXCpuVendor.Size = new System.Drawing.Size(69, 13);
-            this.labelEAX0EBXEDXECXCpuVendor.TabIndex = 11;
-            this.labelEAX0EBXEDXECXCpuVendor.Text = "CPU Vendor:";
+            this.labelEAX0EBXEDXECXCpuVendorId.AutoSize = true;
+            this.labelEAX0EBXEDXECXCpuVendorId.Location = new System.Drawing.Point(6, 178);
+            this.labelEAX0EBXEDXECXCpuVendorId.Name = "labelEAX0EBXEDXECXCpuVendorId";
+            this.labelEAX0EBXEDXECXCpuVendorId.Size = new System.Drawing.Size(83, 13);
+            this.labelEAX0EBXEDXECXCpuVendorId.TabIndex = 11;
+            this.labelEAX0EBXEDXECXCpuVendorId.Text = "CPU Vendor ID:";
             // 
             // labelEAX0HighestFunctionParam
             // 
@@ -230,12 +230,12 @@
             this.labelEAX0EBX.TabIndex = 7;
             this.labelEAX0EBX.Text = "EBX:";
             // 
-            // textBoxEAX0EBXEDXECXCpuVendor
+            // textBoxEAX0EBXEDXECXCpuVendorId
             // 
-            this.textBoxEAX0EBXEDXECXCpuVendor.Location = new System.Drawing.Point(177, 175);
-            this.textBoxEAX0EBXEDXECXCpuVendor.Name = "textBoxEAX0EBXEDXECXCpuVendor";
-            this.textBoxEAX0EBXEDXECXCpuVendor.Size = new System.Drawing.Size(500, 20);
-            this.textBoxEAX0EBXEDXECXCpuVendor.TabIndex = 6;
+            this.textBoxEAX0EBXEDXECXCpuVendorId.Location = new System.Drawing.Point(177, 175);
+            this.textBoxEAX0EBXEDXECXCpuVendorId.Name = "textBoxEAX0EBXEDXECXCpuVendorId";
+            this.textBoxEAX0EBXEDXECXCpuVendorId.Size = new System.Drawing.Size(500, 20);
+            this.textBoxEAX0EBXEDXECXCpuVendorId.TabIndex = 6;
             // 
             // textBoxEAX0EAXHightestFunctionParameter
             // 
@@ -305,19 +305,19 @@
         private System.Windows.Forms.TextBox textBoxEAX0EBX;
         private System.Windows.Forms.TextBox textBoxEAX0EAX;
         private System.Windows.Forms.Label labelEAX0EAX;
-        private System.Windows.Forms.TextBox textBoxEAX0EBXEDXECXCpuVendor;
+        private System.Windows.Forms.TextBox textBoxEAX0EBXEDXECXCpuVendorId;
         private System.Windows.Forms.TextBox textBoxEAX0EAXHightestFunctionParameter;
         private System.Windows.Forms.Label labelEAX0EBX;
         private System.Windows.Forms.Label labelEAX0ECX;
         private System.Windows.Forms.Label labelEAX0EDX;
         private System.Windows.Forms.Label labelEAX0HighestFunctionParam;
-        private System.Windows.Forms.Label labelEAX0EBXEDXECXCpuVendor;
-        private System.Windows.Forms.TextBox textBoxEAX0Processors;
-        private System.Windows.Forms.TextBox textBoxEAX0Extended;
-        private System.Windows.Forms.TextBox textBoxEAX0Basic;
-        private System.Windows.Forms.Label labelEAX0Extended;
-        private System.Windows.Forms.Label labelEAX0Basic;
-        private System.Windows.Forms.Label labelEAX0Processors;
+        private System.Windows.Forms.Label labelEAX0EBXEDXECXCpuVendorId;
+        private System.Windows.Forms.TextBox textBoxEAX0Vendor;
+        private System.Windows.Forms.TextBox textBoxEAX0HightestFunctionParameterDec;
+        private System.Windows.Forms.TextBox textBoxEAX0HightestFunctionParameterHex;
+        private System.Windows.Forms.Label labelEAX0HightestFunctionParameterDec;
+        private System.Windows.Forms.Label labelEAX0Hex;
+        private System.Windows.Forms.Label labelEAX0Vendor;
         private System.Windows.Forms.Label labelEAX0ID3;
         private System.Windows.Forms.Label labelEAX0ID2;
         private System.Windows.Forms.Label labelEAX0ID1;
