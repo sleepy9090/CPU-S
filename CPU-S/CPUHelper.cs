@@ -19344,6 +19344,27 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX40000003ECX11_ReservedIsSupported();
+
+        public bool GetEAX40000003ECX11_ReservedIsSupportedX()
+        {
+            try
+            {
+                return GetEAX40000003ECX11_ReservedIsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         private static extern int GetEAX40000003ECX12_ReservedIsSupported();
 
         public bool GetEAX40000003ECX12_ReservedIsSupportedX()
