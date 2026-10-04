@@ -1,0 +1,63 @@
+﻿/*
+    File           EAX0.cs
+    Brief          Form for displaying EAX=0x0 CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           08/XX/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
+using System.Windows.Forms;
+
+namespace CPU_S
+{
+    public partial class EAX00000000 : Form
+    {
+
+        private CPUHelper cpuHelper;
+
+        public EAX00000000()
+        {
+            InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX = 0x0: Highest Function Parameter and Manufacturer ID
+
+            string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();
+            textBoxEAX0EAX.Text = cpuIdEAX0EAX;
+
+            string cpuIdEAX0EBX = cpuHelper.GetEAX0EBXX();
+            textBoxEAX0EBX.Text = cpuIdEAX0EBX;
+
+            string cpuIdEAX0ECX = cpuHelper.GetEAX0ECXX();
+            textBoxEAX0ECX.Text = cpuIdEAX0ECX;
+
+            string cpuIdEAX0EDX = cpuHelper.GetEAX0EDXX();
+            textBoxEAX0EDX.Text = cpuIdEAX0EDX;
+
+            string cpuIdEAX0EAXHightestFunctionParameter = cpuHelper.GetEAX0EAXHightestFunctionParameterX();
+            textBoxEAX0EAXHightestFunctionParameter.Text = cpuIdEAX0EAXHightestFunctionParameter;
+
+            string cpuIdEAX0EBXEDXECXCpuVendor = cpuHelper.GetEAX0EBXEDXECXCpuVendorX();
+            textBoxEAX0EBXEDXECXCpuVendorId.Text = cpuIdEAX0EBXEDXECXCpuVendor;
+
+            string cpuIdHexEAX0EAXHightestFunctionParameter = cpuHelper.BinaryStringToHexString(cpuIdEAX0EAXHightestFunctionParameter);
+            textBoxEAX0HightestFunctionParameterHex.Text = "0x" + cpuIdHexEAX0EAXHightestFunctionParameter;
+
+            textBoxEAX0HightestFunctionParameterDec.Text = cpuHelper.BinaryStringToDecimalString(cpuIdEAX0EAXHightestFunctionParameter);
+
+            string cpuIdEAX0EBXCpuVendor = cpuHelper.GetEAX0EBXCpuVendorX();
+            textBoxEAX0ID1.Text = cpuIdEAX0EBXCpuVendor;
+            textBoxEAX0ID1Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEAX0EBX);
+
+            string cpuIdEAX0ECXCpuVendor = cpuHelper.GetEAX0ECXCpuVendorX();
+            textBoxEAX0ID2.Text = cpuIdEAX0ECXCpuVendor;
+            textBoxEAX0ID2Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEAX0ECX);
+
+            string cpuIdEAX0EDXCpuVendor = cpuHelper.GetEAX0EDXCpuVendorX();
+            textBoxEAX0ID3.Text = cpuIdEAX0EDXCpuVendor;
+            textBoxEAX0ID3Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEAX0EDX);
+
+            #endregion
+        }
+    }
+}

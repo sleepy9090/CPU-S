@@ -3630,25 +3630,25 @@ namespace CPU_S
 
         private void eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0 eax0Form = new EAX0();
+            EAX00000000 eax0Form = new EAX00000000();
             eax0Form.ShowDialog();
         }
 
         private void eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX1 eax1Form = new EAX1();
+            EAX00000001 eax1Form = new EAX00000001();
             eax1Form.ShowDialog();
         }
 
         private void eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX2 eax2Form = new EAX2();
+            EAX00000002 eax2Form = new EAX00000002();
             eax2Form.ShowDialog();
         }
 
         private void eAX0x3ProcessorSerialNumberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX3 eax3Form = new EAX3();
+            EAX00000003 eax3Form = new EAX00000003();
             eax3Form.ShowDialog();
         }
 
@@ -3664,7 +3664,7 @@ namespace CPU_S
             {
                 while (int.Parse(cpuHelper.GetEAX4EAX0_4_CacheTypeX(i)) != 0)
                 {
-                    EAX4 eax4Form = new EAX4(i);
+                    EAX00000004 eax4Form = new EAX00000004(i);
                     eax4Form.Show();
                     i++;
                 }
@@ -3692,115 +3692,115 @@ namespace CPU_S
 
         private void eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX4i eax4iForm = new EAX4i();
+            EAX00000004i eax4iForm = new EAX00000004i();
             eax4iForm.ShowDialog();
         }
 
         private void eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAXB eaxB = new EAXB();
+            EAX0000000B eaxB = new EAX0000000B();
             eaxB.ShowDialog();
         }
 
         private void eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX5 eax5Form = new EAX5();
+            EAX00000005 eax5Form = new EAX00000005();
             eax5Form.ShowDialog();
         }
 
         private void eAX0x6ThermalAndPowerManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX6 eax6Form = new EAX6();
+            EAX00000006 eax6Form = new EAX00000006();
             eax6Form.ShowDialog();
         }
 
         private void eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX7ECX0 eax7ECX0Form = new EAX7ECX0();
+            EAX00000007ECX0 eax7ECX0Form = new EAX00000007ECX0();
             eax7ECX0Form.ShowDialog();
         }
 
         private void eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAXD eaxDForm = new EAXD();
+            EAX0000000D eaxDForm = new EAX0000000D();
             eaxDForm.ShowDialog();
         }
 
         private void eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX14ECX0 eax14ECX0Form = new EAX14ECX0();
+            EAX00000014ECX0 eax14ECX0Form = new EAX00000014ECX0();
             eax14ECX0Form.ShowDialog();
         }
 
         private void eAX0x12SGXCapabilitiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX12 eax12Form = new EAX12();
+            EAX00000012 eax12Form = new EAX00000012();
             eax12Form.ShowDialog();
         }
 
         private void eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX14ECX1 eax14ECX1 = new EAX14ECX1();
+            EAX00000014ECX1 eax14ECX1 = new EAX00000014ECX1();
             eax14ECX1.ShowDialog();
         }
 
         private void eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX15 eax15 = new EAX15();
+            EAX00000015 eax15 = new EAX00000015();
             eax15.ShowDialog();
         }
 
         private void eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX16 eax16 = new EAX16();
+            EAX00000016 eax16 = new EAX00000016();
             eax16.ShowDialog();
         }
 
         private void eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX17 eax17 = new EAX17();
+            EAX00000017 eax17 = new EAX00000017();
             eax17.ShowDialog();
         }
 
         private void eAX0x18TLBHierarchyAndTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX18 eax18 = new EAX18();
+            EAX00000018 eax18 = new EAX00000018();
             eax18.ShowDialog();
         }
 
         private void eAX0x19IntelKeyLockerFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX19 eax19 = new EAX19();
+            EAX00000019 eax19 = new EAX00000019();
             eax19.ShowDialog();
         }
 
         private void eAX0x1DIntelAMXTileInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX1D eax1D = new EAX1D();
+            EAX0000001D eax1D = new EAX0000001D();
             eax1D.ShowDialog();
         }
 
         private void eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX1E eax1E = new EAX1E();
+            EAX0000001E eax1E = new EAX0000001E();
             eax1E.ShowDialog();
         }
 
         private void eAX0x21ReservedForTDXEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX21 eax21 = new EAX21();
+            EAX00000021 eax21 = new EAX00000021();
             eax21.ShowDialog();
         }
 
         private void eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX24ECX0 eAX24ECX0 = new EAX24ECX0();
+            EAX00000024ECX0 eAX24ECX0 = new EAX00000024ECX0();
             eAX24ECX0.ShowDialog();
         }
 
         private void eAX0x24ECX0x1DiscreteAVX10FeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX24ECX1 eAX24ECX1 = new EAX24ECX1();
+            EAX00000024ECX1 eAX24ECX1 = new EAX00000024ECX1();
             eAX24ECX1.ShowDialog();
         }
 
@@ -3932,13 +3932,13 @@ namespace CPU_S
 
         private void eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX7ECX1 eAX7ECX1 = new EAX7ECX1();
+            EAX00000007ECX1 eAX7ECX1 = new EAX00000007ECX1();
             eAX7ECX1.ShowDialog();
         }
 
         private void eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX7ECX2 eAX7ECX2 = new EAX7ECX2();
+            EAX00000007ECX2 eAX7ECX2 = new EAX00000007ECX2();
             eAX7ECX2.ShowDialog();
         }
 
