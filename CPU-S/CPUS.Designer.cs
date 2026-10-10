@@ -237,7 +237,7 @@
             this.checkBoxHLE = new System.Windows.Forms.CheckBox();
             this.checkBoxItanium = new System.Windows.Forms.CheckBox();
             this.checkBoxI386 = new System.Windows.Forms.CheckBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cpuSMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -326,7 +326,7 @@
             this.groupBoxOtherX86DiscontinuedInstructions.SuspendLayout();
             this.groupBoxAMDX86DiscontinuedInstructions.SuspendLayout();
             this.groupBoxIntelX86DiscontinuedInstructions.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.cpuSMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlCPUS
@@ -501,7 +501,7 @@
             this.textBoxCPUCharacteristicsMeaning.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUCharacteristicsMeaning.Multiline = true;
             this.textBoxCPUCharacteristicsMeaning.Name = "textBoxCPUCharacteristicsMeaning";
-            this.textBoxCPUCharacteristicsMeaning.Size = new System.Drawing.Size(153, 165);
+            this.textBoxCPUCharacteristicsMeaning.Size = new System.Drawing.Size(153, 164);
             this.textBoxCPUCharacteristicsMeaning.TabIndex = 117;
             // 
             // labelCPULoadPercentageLogicalProcThread
@@ -520,7 +520,7 @@
             this.textBoxCPULoadPercentageLogicalProcThread.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPULoadPercentageLogicalProcThread.Multiline = true;
             this.textBoxCPULoadPercentageLogicalProcThread.Name = "textBoxCPULoadPercentageLogicalProcThread";
-            this.textBoxCPULoadPercentageLogicalProcThread.Size = new System.Drawing.Size(146, 184);
+            this.textBoxCPULoadPercentageLogicalProcThread.Size = new System.Drawing.Size(146, 188);
             this.textBoxCPULoadPercentageLogicalProcThread.TabIndex = 115;
             // 
             // labelCPU
@@ -537,7 +537,7 @@
             this.comboBoxCPU.FormattingEnabled = true;
             this.comboBoxCPU.Location = new System.Drawing.Point(156, 16);
             this.comboBoxCPU.Name = "comboBoxCPU";
-            this.comboBoxCPU.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCPU.Size = new System.Drawing.Size(135, 21);
             this.comboBoxCPU.TabIndex = 3;
             this.comboBoxCPU.SelectedIndexChanged += new System.EventHandler(this.comboBoxCPU_SelectedIndexChanged);
             // 
@@ -1294,7 +1294,7 @@
             this.textBoxCPUCaption.Location = new System.Drawing.Point(156, 137);
             this.textBoxCPUCaption.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUCaption.Name = "textBoxCPUCaption";
-            this.textBoxCPUCaption.Size = new System.Drawing.Size(235, 20);
+            this.textBoxCPUCaption.Size = new System.Drawing.Size(292, 20);
             this.textBoxCPUCaption.TabIndex = 8;
             // 
             // labelCPUAvailability
@@ -1548,7 +1548,7 @@
             this.textBoxCPUName.Location = new System.Drawing.Point(640, 40);
             this.textBoxCPUName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCPUName.Name = "textBoxCPUName";
-            this.textBoxCPUName.Size = new System.Drawing.Size(295, 20);
+            this.textBoxCPUName.Size = new System.Drawing.Size(322, 20);
             this.textBoxCPUName.TabIndex = 33;
             // 
             // textBoxCPUSocketDesignation
@@ -2494,18 +2494,18 @@
             this.checkBoxI386.Text = "i386";
             this.checkBoxI386.UseVisualStyleBackColor = true;
             // 
-            // menuStrip1
+            // cpuSMenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cpuSMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1009, 24);
-            this.menuStrip1.TabIndex = 120;
-            this.menuStrip1.Text = "menuStrip1";
+            this.cpuSMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.cpuSMenuStrip.Name = "cpuSMenuStrip";
+            this.cpuSMenuStrip.Size = new System.Drawing.Size(1009, 24);
+            this.cpuSMenuStrip.TabIndex = 120;
+            this.cpuSMenuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -2518,7 +2518,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -3071,9 +3071,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 823);
             this.Controls.Add(this.tabControlCPUS);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.cpuSMenuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.cpuSMenuStrip;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormCPUS";
@@ -3105,8 +3105,8 @@
             this.groupBoxAMDX86DiscontinuedInstructions.PerformLayout();
             this.groupBoxIntelX86DiscontinuedInstructions.ResumeLayout(false);
             this.groupBoxIntelX86DiscontinuedInstructions.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.cpuSMenuStrip.ResumeLayout(false);
+            this.cpuSMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3251,7 +3251,7 @@
         private System.Windows.Forms.GroupBox groupBoxx86TransactionalMemoryInstructions;
         private System.Windows.Forms.TabPage tabPageX86BitManipulation;
         private System.Windows.Forms.GroupBox groupBoxX86BitManipulationInstructions;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip cpuSMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
