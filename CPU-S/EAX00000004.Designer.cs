@@ -774,7 +774,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX00000004";
-            this.Text = "EAX=0x00000004: : Cache Hierarchy and Topology (Intel)";
+            this.Text = "EAX=0x00000004: : Cache Hierarchy and Topology (Intel) / Cache Configuration Desc" +
+    "riptors";
             this.groupBoxEAX4.ResumeLayout(false);
             this.groupBoxTotalCacheSize.ResumeLayout(false);
             this.groupBoxTotalCacheSize.PerformLayout();

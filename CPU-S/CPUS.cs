@@ -3690,12 +3690,6 @@ namespace CPU_S
             }
         }
 
-        private void eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            EAX00000004i eax4iForm = new EAX00000004i();
-            eax4iForm.ShowDialog();
-        }
-
         private void eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EAX0000000B eaxB = new EAX0000000B();

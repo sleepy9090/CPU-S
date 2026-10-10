@@ -248,7 +248,6 @@
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -2564,7 +2563,6 @@
             this.eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem,
             this.eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem,
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem,
-            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem,
             this.eAX0x4CacheHierarchyAndTopologyToolStripMenuItem,
             this.eAX0x5MONITORMWAITFeaturesToolStripMenuItem,
             this.eAX0x6ThermalAndPowerManagementToolStripMenuItem,
@@ -2617,13 +2615,6 @@
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Text = "EAX=0x3: Processor Serial Number";
             this.eAX0x3ProcessorSerialNumberToolStripMenuItem.Click += new System.EventHandler(this.eAX0x3ProcessorSerialNumberToolStripMenuItem_Click);
-            // 
-            // eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem
-            // 
-            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Name = "eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem";
-            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Size = new System.Drawing.Size(540, 22);
-            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Text = "EAX=0x4: Intel Thread/Core and Cache Topology";
-            this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem.Click += new System.EventHandler(this.eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem_Click);
             // 
             // eAX0x4CacheHierarchyAndTopologyToolStripMenuItem
             // 
@@ -3352,7 +3343,6 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x6ThermalAndPowerManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x5MONITORMWAITFeaturesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eAX0x4IntelThreadCoreAndCacheTopologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem optionalLeaves0x20000000_0x20000007ToolStripMenuItem;
