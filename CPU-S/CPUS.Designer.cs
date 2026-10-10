@@ -287,6 +287,7 @@
             this.extendedLeavesAMDDefined0x80000000_0x8000002FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000005L1CacheAndTLBIdentifiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000006ExtendedL2CacheFeaturesIntelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -295,7 +296,6 @@
             this.eAX0x8000000ASVMFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x8000001DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x80000025EncryptedMemoryCapabilities2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.venderLeavesTransmeta0x80860000_0x8086000FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -2906,6 +2906,13 @@
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem.Text = "EAX=0x80000001: Extended Processor Info and Feature Bits";
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem_Click);
             // 
+            // eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem
+            // 
+            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Name = "eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem";
+            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Size = new System.Drawing.Size(506, 22);
+            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Text = "EAX=0x80000002, 0x80000003, 0x80000004: Processor Brand String";
+            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Click += new System.EventHandler(this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem_Click);
+            // 
             // eAX0x80000005L1CacheAndTLBIdentifiersToolStripMenuItem
             // 
             this.eAX0x80000005L1CacheAndTLBIdentifiersToolStripMenuItem.Name = "eAX0x80000005L1CacheAndTLBIdentifiersToolStripMenuItem";
@@ -2962,13 +2969,6 @@
             this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem.Size = new System.Drawing.Size(506, 22);
             this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem.Text = "EAX=0x8000001F: Encrypted Memory Capabilities";
             this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x8000001FEncryptedMemoryCapabilitiesToolStripMenuItem_Click);
-            // 
-            // eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem
-            // 
-            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Name = "eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem";
-            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Size = new System.Drawing.Size(506, 22);
-            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Text = "EAX=0x80000002, 0x80000003, 0x80000004: Processor Brand String";
-            this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem.Click += new System.EventHandler(this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem_Click);
             // 
             // eAX0x80000021ExtendedFeatureIdentificationToolStripMenuItem
             // 
@@ -3070,8 +3070,9 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 

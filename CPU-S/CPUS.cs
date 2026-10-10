@@ -3965,5 +3965,13 @@ namespace CPU_S
             EAX40000003 eAX40000003 = new EAX40000003();
             eAX40000003.ShowDialog();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("CPU-S v1.0b\n\nCopyright © 2024 Shawn M. Crawford\n\nAll rights reserved.\n\nThis software is provided \"as-is\", without any express or implied warranty.",
+                "About CPU-S",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
     }
 }
