@@ -3967,5 +3967,11 @@ namespace CPU_S
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
+
+        private void eax0x00000009DCAParametersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000009 eAX00000009 = new EAX00000009();
+            eAX00000009.ShowDialog();
+        }
     }
 }

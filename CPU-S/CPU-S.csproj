@@ -76,6 +76,12 @@
     <Compile Include="Custom.Designer.cs">
       <DependentUpon>Custom.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX00000009.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX00000009.Designer.cs">
+      <DependentUpon>EAX00000009.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX40000001.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -509,6 +515,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Custom.resx">
       <DependentUpon>Custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX00000009.resx">
+      <DependentUpon>EAX00000009.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX00000014ECX1.resx">
       <DependentUpon>EAX00000014ECX1.cs</DependentUpon>

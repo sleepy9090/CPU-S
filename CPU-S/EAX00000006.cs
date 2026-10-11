@@ -20,7 +20,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x6: Thermal and Power Management
+            #region EAX=0x00000006: Thermal and Power Management
 
             string cpuIdEAX6EAX = cpuHelper.GetEAX6EAXX();
             textBoxEAX6EAX.Text = cpuIdEAX6EAX;
