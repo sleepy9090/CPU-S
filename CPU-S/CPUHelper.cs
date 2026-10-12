@@ -1599,7 +1599,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x0: Highest Function Parameter and Manufacturer ID
+        #region EAX=0x00000000: Highest Function Parameter and Manufacturer ID
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX0EAX();
@@ -1819,7 +1819,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x1: Processor Info and Feature Bits
+        #region EAX=0x00000001: Processor Info and Feature Bits
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX1EAX();
@@ -3583,7 +3583,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x2: Cache and TLB Descriptor Information
+        #region EAX=0x00000002: Cache and TLB Descriptor Information
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX2EAX();
@@ -4079,7 +4079,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x3: Processor Serial Number
+        #region EAX=0x00000003: Processor Serial Number
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX3EAX();
@@ -4227,7 +4227,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x4 and EAX=0x8000001D: Cache Hierarchy and Topology
+        #region EAX=0x00000004 and EAX=0x8000001D: Cache Hierarchy and Topology
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX4EAX(int ecxSubLeaf);
@@ -5766,7 +5766,7 @@ namespace CPU_S
         }
         #endregion
 
-        #region EAX=0x4 and EAX=0xB: Intel Thread/Core and Cache Topology
+        #region EAX=0x00000004 and EAX=0x0000000B: Intel Thread/Core and Cache Topology
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAXBEAX();
@@ -5866,7 +5866,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x5: MONITOR/MWAIT Features
+        #region EAX=0x00000005: MONITOR/MWAIT Features
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX5EAX();
@@ -6374,7 +6374,7 @@ namespace CPU_S
 
         #endregion
 
-        #region region EAX=0x6: Thermal and Power Management
+        #region EAX=0x00000006: Thermal and Power Management
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX6EAX();
@@ -7491,7 +7491,7 @@ namespace CPU_S
         #endregion
         #endregion
 
-        #region region EAX=0x7, ECX=0x0: Extended Features
+        #region EAX=0x00000007, ECX=0x0: Extended Features
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX7ECX0EAX();
@@ -13280,7 +13280,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x0D: XSAVE Features and State Components
+        #region EAX=0x0000000D: XSAVE Features and State Components
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAXDEAX();
@@ -13380,7 +13380,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x12: SGX Capabilities
+        #region EAX=0x00000012: SGX Capabilities
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX12EAX();
@@ -13480,7 +13480,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX
+        #region EAX=0x00000014, ECX=0x00000000: Processor Trace feature bits in EBX and ECX
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX14ECX0EAX();
@@ -14924,7 +14924,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x14, ECX=0x1: Processor Trace packet generation information in EAX, EBX and ECX
+        #region EAX=0x00000014, ECX=0x00000001: Processor Trace packet generation information in EAX, EBX and ECX
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX14ECX1EAX();
@@ -15408,7 +15408,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x15: TSC and Core Crystal frequency information
+        #region EAX=0x00000015: TSC and Core Crystal frequency information
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX15EAX();
@@ -15604,7 +15604,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x16: Processor and Bus specification frequencies
+        #region EAX=0x00000016: Processor and Bus specification frequencies
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX16EAX();
@@ -15872,7 +15872,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x17: SoC Vendor Attribute Enumeration
+        #region EAX=0x00000017: SoC Vendor Attribute Enumeration
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX17EAX();
@@ -15972,7 +15972,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x18: TLB Hierarchy and Topology
+        #region EAX=0x00000018: TLB Hierarchy and Topology
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX18EAX();
@@ -16072,7 +16072,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x19: Intel Key Locker Features
+        #region EAX=0x00000019: Intel Key Locker Features
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX19EAX();
@@ -16172,7 +16172,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x1D: Intel AMX Tile Information
+        #region EAX=0x0000001D: Intel AMX Tile Information
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX1DEAX();
@@ -16392,7 +16392,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x1E: Intel AMX Tile Multiplier (TMUL) Information
+        #region EAX=0x0000001E: Intel AMX Tile Multiplier (TMUL) Information
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX1EEAX();
@@ -16729,7 +16729,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x21: Reserved for TDX enumeration
+        #region EAX=0x00000021: Reserved for TDX enumeration
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX21EAX();
@@ -16829,7 +16829,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x24, ECX=0x0: AVX10 Converged Vector ISA
+        #region EAX=0x00000024, ECX=0x00000000: AVX10 Converged Vector ISA
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX24ECX0EAX();
@@ -16929,7 +16929,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x24, ECX=0x1: Discrete AVX10 Features
+        #region EAX=0x00000024, ECX=0x00000001: Discrete AVX10 Features
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX24ECX1EAX();
