@@ -2576,17 +2576,17 @@ namespace CPU_S
 
                 #region EAX=0x0D: XSAVE Features and State Components
 
-                string cpuIdEAXDEAX = cpuHelper.GetEAXDEAXX();
-                Console.WriteLine($"EAXDEAX: {cpuIdEAXDEAX}");
+                string cpuIdEAX0000000DEAX = cpuHelper.GetEAX0000000DEAXX();
+                Console.WriteLine($"EAX0000000DEAX: {cpuIdEAX0000000DEAX}");
 
-                string cpuIdEAXDEBX = cpuHelper.GetEAXDEBXX();
-                Console.WriteLine($"EAXDEBX: {cpuIdEAXDEBX}");
+                string cpuIdEAX0000000DEBX = cpuHelper.GetEAX0000000DEBXX();
+                Console.WriteLine($"EAX0000000DEBX: {cpuIdEAX0000000DEBX}");
 
-                string cpuIdEAXDECX = cpuHelper.GetEAXDECXX();
-                Console.WriteLine($"EAXDECX: {cpuIdEAXDECX}");
+                string cpuIdEAX0000000DECX = cpuHelper.GetEAX0000000DECXX();
+                Console.WriteLine($"EAX0000000DECX: {cpuIdEAX0000000DECX}");
 
-                string cpuIdEAXDEDX = cpuHelper.GetEAXDEDXX();
-                Console.WriteLine($"EAXDEDX: {cpuIdEAXDEDX}");
+                string cpuIdEAX0000000DEDX = cpuHelper.GetEAX0000000DEDXX();
+                Console.WriteLine($"EAX0000000DEDX: {cpuIdEAX0000000DEDX}");
 
                 #endregion
 

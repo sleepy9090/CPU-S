@@ -13283,13 +13283,13 @@ namespace CPU_S
         #region EAX=0x0000000D: XSAVE Features and State Components
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAXDEAX();
+        public static extern IntPtr GetEAX0000000DEAX();
 
-        public string GetEAXDEAXX()
+        public string GetEAX0000000DEAXX()
         {
             try
             {
-                IntPtr eAXDEAXPtr = GetEAXDEAX();
+                IntPtr eAXDEAXPtr = GetEAX0000000DEAX();
                 string eAXDEAXString = Marshal.PtrToStringAnsi(eAXDEAXPtr);
 
                 return eAXDEAXString;
@@ -13307,13 +13307,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAXDEBX();
+        public static extern IntPtr GetEAX0000000DEBX();
 
-        public string GetEAXDEBXX()
+        public string GetEAX0000000DEBXX()
         {
             try
             {
-                IntPtr eAXDEBXPtr = GetEAXDEBX();
+                IntPtr eAXDEBXPtr = GetEAX0000000DEBX();
                 string eAXDEBXString = Marshal.PtrToStringAnsi(eAXDEBXPtr);
 
                 return eAXDEBXString;
@@ -13331,13 +13331,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAXDECX();
+        public static extern IntPtr GetEAX0000000DECX();
 
-        public string GetEAXDECXX()
+        public string GetEAX0000000DECXX()
         {
             try
             {
-                IntPtr eAXDECXPtr = GetEAXDECX();
+                IntPtr eAXDECXPtr = GetEAX0000000DECX();
                 string eAXDECXString = Marshal.PtrToStringAnsi(eAXDECXPtr);
 
                 return eAXDECXString;
@@ -13355,13 +13355,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAXDEDX();
+        public static extern IntPtr GetEAX0000000DEDX();
 
-        public string GetEAXDEDXX()
+        public string GetEAX0000000DEDXX()
         {
             try
             {
-                IntPtr eAXDEDXPtr = GetEAXDEDX();
+                IntPtr eAXDEDXPtr = GetEAX0000000DEDX();
                 string eAXDEDXString = Marshal.PtrToStringAnsi(eAXDEDXPtr);
 
                 return eAXDEDXString;
