@@ -13579,6 +13579,28 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000014EAX_0_31_MaxSubleaf();
+
+        public string GetEAX00000014EAX_0_31_MaxSubleafX()
+        {
+            try
+            {
+                int eAX00000014EAX_0_31_MaxSubleafValue = GetEAX00000014EAX_0_31_MaxSubleaf();
+                return eAX00000014EAX_0_31_MaxSubleafValue.ToString();
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         private static extern int GetEAX14ECX0_EBX0_Cr3FilterIsSupported();
 
         public bool GetEAX14ECX0_EBX0_Cr3FilterIsSupportedX()
@@ -14922,6 +14944,28 @@ namespace CPU_S
             }
         }
 
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000014EDX_0_31_Reserved();
+
+        public string GetEAX00000014EDX_0_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000014EDX_0_31_Reserved = GetEAX00000014EDX_0_31_Reserved();
+                return eAX00000014EDX_0_31_Reserved.ToString();
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
         #endregion
 
         #region EAX=0x00000014, ECX=0x00000001: Processor Trace packet generation information in EAX, EBX and ECX
@@ -15393,6 +15437,28 @@ namespace CPU_S
                 string eAX14ECX1ECX16_31_ReservedValueString = eAX14ECX1ECX16_31_ReservedValue.ToString();
 
                 return eAX14ECX1ECX16_31_ReservedValueString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000014_ECX1_EDX_0_31_Reserved();
+
+        public string GetEAX00000014_ECX1_EDX_0_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000014_ECX1_EDX_0_31_Reserved = GetEAX00000014_ECX1_EDX_0_31_Reserved();
+                return eAX00000014_ECX1_EDX_0_31_Reserved.ToString();
             }
             catch (DllNotFoundException ex)
             {
