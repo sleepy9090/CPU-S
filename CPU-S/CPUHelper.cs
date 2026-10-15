@@ -13586,6 +13586,7 @@ namespace CPU_S
             try
             {
                 int eAX00000014EAX_0_31_MaxSubleafValue = GetEAX00000014EAX_0_31_MaxSubleaf();
+                Console.WriteLine("eAX00000014EAX_0_31_MaxSubleafValue: " + eAX00000014EAX_0_31_MaxSubleafValue);
                 return eAX00000014EAX_0_31_MaxSubleafValue.ToString();
             }
             catch (DllNotFoundException ex)
