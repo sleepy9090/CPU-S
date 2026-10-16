@@ -1528,16 +1528,16 @@ namespace CPU_S
 
                 #region EAX=0x4 and EAX=0xB: Intel Thread/Core and Cache Topology
 
-                string cpuIdEAXBEAX = cpuHelper.GetEAXBEAXX();
+                string cpuIdEAXBEAX = cpuHelper.GetEAX0000000BEAXX(0);
                 Console.WriteLine($"EAXBEAX: {cpuIdEAXBEAX}");
 
-                string cpuIdEAXBEBX = cpuHelper.GetEAXBEBXX();
+                string cpuIdEAXBEBX = cpuHelper.GetEAX0000000BEBXX(0);
                 Console.WriteLine($"EAXBEBX: {cpuIdEAXBEBX}");
 
-                string cpuIdEAXBEECX = cpuHelper.GetEAXBECXX();
+                string cpuIdEAXBEECX = cpuHelper.GetEAX0000000BECXX(0);
                 Console.WriteLine($"EAXBECX: {cpuIdEAXBEECX}");
 
-                string cpuIdEAXBEDX = cpuHelper.GetEAXBEDXX();
+                string cpuIdEAXBEDX = cpuHelper.GetEAX0000000BEDXX(0);
                 Console.WriteLine($"EAXBEDX: {cpuIdEAXBEDX}");
 
                 #endregion
