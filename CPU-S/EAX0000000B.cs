@@ -20,19 +20,9 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x4: Intel Thread/Core and Cache Topology
+            #region EAX=0x0000000B: Topology enumeration information
 
-            string cpuIdEAXBEAX = cpuHelper.GetEAXBEAXX();
-            textBoxEAXBEAX.Text = cpuIdEAXBEAX;
 
-            string cpuIdEAXBEBX = cpuHelper.GetEAXBEBXX();
-            textBoxEAXBEBX.Text = cpuIdEAXBEBX;
-
-            string cpuIdEAXBECX = cpuHelper.GetEAXBECXX();
-            textBoxEAXBECX.Text = cpuIdEAXBECX;
-
-            string cpuIdEAXBEDX = cpuHelper.GetEAXBEDXX();
-            textBoxEAXBEDX.Text = cpuIdEAXBEDX;
 
             #endregion
         }
