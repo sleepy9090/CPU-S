@@ -34,7 +34,24 @@ namespace CPU_S
             textBoxEAX0000000BEBX16_31_Reserved.Text = cpuHelper.GetEAX0000000BEBX16_31_ReservedX(subLeafIndex);
 
             textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Text = cpuHelper.GetEAX0000000BECX0_7_InputECXSubLeafIndexX(subLeafIndex);
-            textBoxEAX0000000BECX8_15_DomainType.Text = cpuHelper.GetEAX0000000BECX8_15_DomainTypeX(subLeafIndex);
+            string domainType = cpuHelper.GetEAX0000000BECX8_15_DomainTypeX(subLeafIndex);
+            textBoxEAX0000000BECX8_15_DomainType.Text = domainType;
+            switch (domainType)
+            {
+                case "0":
+                    textBoxDomainType.Text = "Invalid";
+                    break;
+                case "1":
+                    textBoxDomainType.Text = "Thread";
+                    break;
+                case "2":
+                    textBoxDomainType.Text = "Core, implied=package/socket";
+                    break;
+                default:
+                    textBoxDomainType.Text = "Reserved";
+                    break;
+            }
+
             textBoxEAX0000000BECX16_31_Reserved.Text = cpuHelper.GetEAX0000000BECX16_31_ReservedX(subLeafIndex);
 
             textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Text = cpuHelper.GetEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndexX(subLeafIndex);

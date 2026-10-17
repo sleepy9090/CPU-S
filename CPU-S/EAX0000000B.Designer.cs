@@ -58,6 +58,7 @@
             this.labelEAX0000000BECX8_15_DomainType = new System.Windows.Forms.Label();
             this.labelEAX0000000BECX16_31_Reserved = new System.Windows.Forms.Label();
             this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex = new System.Windows.Forms.Label();
+            this.textBoxDomainType = new System.Windows.Forms.TextBox();
             this.groupBoxEAX0000000B.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
@@ -221,6 +222,7 @@
             // 
             // groupBoxECX
             // 
+            this.groupBoxECX.Controls.Add(this.textBoxDomainType);
             this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX16_31_Reserved);
             this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX8_15_DomainType);
             this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX0_7_InputECXSubLeafIndex);
@@ -341,6 +343,13 @@
             this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.TabIndex = 1;
             this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Text = "x2APIC ID – always valid – does not vary with sub-leaf index [0-31]:";
             // 
+            // textBoxDomainType
+            // 
+            this.textBoxDomainType.Location = new System.Drawing.Point(194, 45);
+            this.textBoxDomainType.Name = "textBoxDomainType";
+            this.textBoxDomainType.Size = new System.Drawing.Size(200, 20);
+            this.textBoxDomainType.TabIndex = 6;
+            // 
             // EAX0000000B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,5 +407,6 @@
         private System.Windows.Forms.Label labelEAX0000000BEBX16_31_Reserved;
         private System.Windows.Forms.Label labelEAX0000000BEBX0_15_NumberOfLogicalProcessors;
         private System.Windows.Forms.TextBox textBoxEAX0000000BEBX16_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxDomainType;
     }
 }
