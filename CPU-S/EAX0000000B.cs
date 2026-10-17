@@ -14,7 +14,7 @@ namespace CPU_S
 
         private CPUHelper cpuHelper;
 
-        public EAX0000000B()
+        public EAX0000000B(int subLeafIndex)
         {
             InitializeComponent();
 
@@ -22,7 +22,22 @@ namespace CPU_S
 
             #region EAX=0x0000000B: Topology enumeration information
 
+            textBoxEAX0000000BEAX.Text = cpuHelper.GetEAX0000000BEAXX(subLeafIndex);
+            textBoxEAX0000000BEBX.Text = cpuHelper.GetEAX0000000BEBXX(subLeafIndex);
+            textBoxEAX0000000BECX.Text = cpuHelper.GetEAX0000000BECXX(subLeafIndex);
+            textBoxEAX0000000BEDX.Text = cpuHelper.GetEAX0000000BEDXX(subLeafIndex);
 
+            textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Text = cpuHelper.GetEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomainX(subLeafIndex);
+            textBoxEAX0000000BEAX5_31_Reserved.Text = cpuHelper.GetEAX0000000BEAX5_31_ReservedX(subLeafIndex);
+
+            textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.Text = cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(subLeafIndex);
+            textBoxEAX0000000BEBX16_31_Reserved.Text = cpuHelper.GetEAX0000000BEBX16_31_ReservedX(subLeafIndex);
+
+            textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Text = cpuHelper.GetEAX0000000BECX0_7_InputECXSubLeafIndexX(subLeafIndex);
+            textBoxEAX0000000BECX8_15_DomainType.Text = cpuHelper.GetEAX0000000BECX8_15_DomainTypeX(subLeafIndex);
+            textBoxEAX0000000BECX16_31_Reserved.Text = cpuHelper.GetEAX0000000BECX16_31_ReservedX(subLeafIndex);
+
+            textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Text = cpuHelper.GetEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndexX(subLeafIndex);
 
             #endregion
         }

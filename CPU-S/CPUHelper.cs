@@ -5766,8 +5766,6 @@ namespace CPU_S
         }
         #endregion
 
-        
-
         #region EAX=0x00000005: MONITOR/MWAIT Features
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
@@ -16226,6 +16224,198 @@ namespace CPU_S
                 string eAX0000000BEDXString = Marshal.PtrToStringAnsi(eAX0000000BEDXPtr);
 
                 return eAX0000000BEDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain(int subLeafIndex);
+
+        public string GetEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomainX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomainValue = GetEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain(subLeafIndex);
+                string eAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomainString = eAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomainValue.ToString();
+
+                return eAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomainString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BEAX5_31_Reserved(int subLeafIndex);
+
+        public string GetEAX0000000BEAX5_31_ReservedX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BEAX5_31_ReservedValue = GetEAX0000000BEAX5_31_Reserved(subLeafIndex);
+                string eAX0000000BEAX5_31_ReservedString = eAX0000000BEAX5_31_ReservedValue.ToString();
+
+                return eAX0000000BEAX5_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BEBX0_15_NumberOfLogicalProcessors(int subLeafIndex);
+
+        public string GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BEBX0_15_NumberOfLogicalProcessorsValue = GetEAX0000000BEBX0_15_NumberOfLogicalProcessors(subLeafIndex);
+                string eAX0000000BEBX0_15_NumberOfLogicalProcessorsString = eAX0000000BEBX0_15_NumberOfLogicalProcessorsValue.ToString();
+
+                return eAX0000000BEBX0_15_NumberOfLogicalProcessorsString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BEBX16_31_Reserved(int subLeafIndex);
+
+        public string GetEAX0000000BEBX16_31_ReservedX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BEBX16_31_ReservedValue = GetEAX0000000BEBX16_31_Reserved(subLeafIndex);
+                string eAX0000000BEBX16_31_ReservedString = eAX0000000BEBX16_31_ReservedValue.ToString();
+
+                return eAX0000000BEBX16_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BECX0_7_InputECXSubLeafIndex(int subLeafIndex);
+
+        public string GetEAX0000000BECX0_7_InputECXSubLeafIndexX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BECX0_7_InputECXSubLeafIndexValue = GetEAX0000000BECX0_7_InputECXSubLeafIndex(subLeafIndex);
+                string eAX0000000BECX0_7_InputECXSubLeafIndexString = eAX0000000BECX0_7_InputECXSubLeafIndexValue.ToString();
+
+                return eAX0000000BECX0_7_InputECXSubLeafIndexString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BECX8_15_DomainType(int subLeafIndex);
+
+        public string GetEAX0000000BECX8_15_DomainTypeX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BECX8_15_DomainTypeValue = GetEAX0000000BECX8_15_DomainType(subLeafIndex);
+                string eAX0000000BECX8_15_DomainTypeString = eAX0000000BECX8_15_DomainTypeValue.ToString();
+
+                return eAX0000000BECX8_15_DomainTypeString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BECX16_31_Reserved(int subLeafIndex);
+
+        public string GetEAX0000000BECX16_31_ReservedX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BECX16_31_ReservedValue = GetEAX0000000BECX16_31_Reserved(subLeafIndex);
+                string eAX0000000BECX16_31_ReservedString = eAX0000000BECX16_31_ReservedValue.ToString();
+
+                return eAX0000000BECX16_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex(int subLeafIndex);
+
+        public string GetEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndexX(int subLeafIndex)
+        {
+            try
+            {
+                int eAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndexValue = GetEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex(subLeafIndex);
+                string eAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndexString = eAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndexValue.ToString();
+
+                return eAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndexString;
             }
             catch (DllNotFoundException ex)
             {

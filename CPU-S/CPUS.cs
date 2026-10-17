@@ -3692,8 +3692,14 @@ namespace CPU_S
 
         private void eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000000B eaxB = new EAX0000000B();
-            eaxB.ShowDialog();
+            // Sub-leaf to query (0...n until EBX[15...0] = 0).
+            int i = 0;
+            while (int.Parse(cpuHelper.GetEAX0000000BEBXX(i)) != 0)
+            {
+                EAX0000000B eaxBForm = new EAX0000000B(i);
+                eaxBForm.Show();
+                i++;
+            }
         }
 
         private void eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
