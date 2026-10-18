@@ -44,7 +44,7 @@ namespace CPU_S
             };
 
             string[] supervisorLeavesLinux = {
-                "0x4C780001", "0x4C780002", "0x4C780003", "0x4C780004", "0x4C780005", "0x4C780006", "0x4C780007"
+                "0x4C780000", "0x4C780001", "0x4C780002", "0x4C780003", "0x4C780004", "0x4C780005", "0x4C780006", "0x4C780007"
             };
 
             string[] extendedLeaves = {
