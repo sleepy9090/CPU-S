@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAXB.cs
-    Brief          Form for displaying EAX=0xB CPU information.
+    File           EAX0000000B.cs
+    Brief          Form for displaying EAX=0x0000000B CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           10/17/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
