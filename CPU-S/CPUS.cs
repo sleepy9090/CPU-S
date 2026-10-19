@@ -3979,5 +3979,11 @@ namespace CPU_S
             EAX00000009 eAX00000009 = new EAX00000009();
             eAX00000009.ShowDialog();
         }
+
+        private void eax0x0000000AArchitecturalPerfMonInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000000A eAX0000000A = new EAX0000000A();
+            eAX0000000A.ShowDialog();
+        }
     }
 }
