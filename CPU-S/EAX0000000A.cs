@@ -44,7 +44,36 @@ namespace CPU_S
             // EBX
             checkBoxCoreCyclesEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX0_CoreCyclesEventUnavailableX();
             checkBoxInstructionsRetiredEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX1_InstructionsRetiredEventUnavailableX();
-
+            checkBoxReferenceCyclesEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX2_ReferenceCyclesEventUnavailableX();
+            checkBoxLastLevelCacheReferencesEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX3_LastLevelCacheReferencesEventUnavailableX();
+            checkBoxLastLevelCacheMissesEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX4_LastLevelCacheMissesEventUnavailableX();
+            checkBoxBranchInstructionsRetiredEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX5_BranchInstructionsRetiredEventUnavailableX();
+            checkBoxBranchMispredictsRetiredEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX6_BranchMispredictsRetiredEventUnavailableX();
+            checkBoxTopdownSlotsEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX7_TopdownSlotsEventUnavailableX();
+            checkBoxTopdownBackendBoundUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX8_TopdownBackendBoundUnavailableX();
+            checkBoxTopdownBadSpeculationUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX9_TopdownBadSpeculationUnavailableX();
+            checkBoxTopdownFrontendBoundUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX10_TopdownFrontendBoundUnavailableX();
+            checkBoxTopdownRetiringUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX11_TopdownRetiringUnavailableX();
+            checkBoxLBRInsertsUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX12_LBRInsertsUnavailableX();
+            checkBoxEBX13_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX13_ReservedX();
+            checkBoxEBX14_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX14_ReservedX();
+            checkBoxEBX15_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX15_ReservedX();
+            checkBoxEBX16_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX16_ReservedX();
+            checkBoxEBX17_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX17_ReservedX();
+            checkBoxEBX18_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX18_ReservedX();
+            checkBoxEBX19_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX19_ReservedX();
+            checkBoxEBX20_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX20_ReservedX();
+            checkBoxEBX21_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX21_ReservedX();
+            checkBoxEBX22_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX22_ReservedX();
+            checkBoxEBX23_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX23_ReservedX();
+            checkBoxEBX24_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX24_ReservedX();
+            checkBoxEBX25_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX25_ReservedX();
+            checkBoxEBX26_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX26_ReservedX();
+            checkBoxEBX27_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX27_ReservedX();
+            checkBoxEBX28_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX28_ReservedX();
+            checkBoxEBX29_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX29_ReservedX();
+            checkBoxEBX30_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX30_ReservedX();
+            checkBoxEBX31_Reserved.Checked = cpuHelper.GetEAX0000000A_EBX31_ReservedX();
 
             // ECX
             textBoxFixedCountersBitMask.Text = cpuHelper.GetEAX0000000AECX0_31_FixedCountersBitMaskX();

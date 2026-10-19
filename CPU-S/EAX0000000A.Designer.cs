@@ -130,7 +130,7 @@
             this.groupBoxAll.Controls.Add(this.labelEAX0000000AEDX);
             this.groupBoxAll.Location = new System.Drawing.Point(6, 19);
             this.groupBoxAll.Name = "groupBoxAll";
-            this.groupBoxAll.Size = new System.Drawing.Size(252, 133);
+            this.groupBoxAll.Size = new System.Drawing.Size(271, 133);
             this.groupBoxAll.TabIndex = 43;
             this.groupBoxAll.TabStop = false;
             // 
@@ -208,9 +208,9 @@
             this.groupBoxEAX.Controls.Add(this.textBoxBitWidthOfPerfMonCounter);
             this.groupBoxEAX.Controls.Add(this.textBoxNumberOfPerfMonCountersPerLogicalProcessor);
             this.groupBoxEAX.Controls.Add(this.textBoxRevision);
-            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
+            this.groupBoxEAX.Location = new System.Drawing.Point(284, 19);
             this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(506, 133);
+            this.groupBoxEAX.Size = new System.Drawing.Size(486, 133);
             this.groupBoxEAX.TabIndex = 44;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
@@ -249,9 +249,9 @@
             this.groupBoxEBX.Controls.Add(this.checkBoxReferenceCyclesEventUnavailable);
             this.groupBoxEBX.Controls.Add(this.checkBoxInstructionsRetiredEventUnavailable);
             this.groupBoxEBX.Controls.Add(this.checkBoxCoreCyclesEventUnavailable);
-            this.groupBoxEBX.Location = new System.Drawing.Point(12, 411);
+            this.groupBoxEBX.Location = new System.Drawing.Point(12, 158);
             this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(758, 284);
+            this.groupBoxEBX.Size = new System.Drawing.Size(266, 543);
             this.groupBoxEBX.TabIndex = 45;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
@@ -260,9 +260,9 @@
             // 
             this.groupBoxECX.Controls.Add(this.labelFixedCountersBitMask);
             this.groupBoxECX.Controls.Add(this.textBoxFixedCountersBitMask);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 158);
+            this.groupBoxECX.Location = new System.Drawing.Point(284, 158);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(506, 56);
+            this.groupBoxECX.Size = new System.Drawing.Size(486, 56);
             this.groupBoxECX.TabIndex = 46;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
@@ -281,37 +281,37 @@
             this.groupBoxEDX.Controls.Add(this.textBoxEDX13_14_Reserved);
             this.groupBoxEDX.Controls.Add(this.textBoxBitWidthOfFixedFunctionPerfMonCounters);
             this.groupBoxEDX.Controls.Add(this.textBoxNumberOfFixedFunctionPerfMonCounters);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 220);
+            this.groupBoxEDX.Location = new System.Drawing.Point(284, 220);
             this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(506, 185);
+            this.groupBoxEDX.Size = new System.Drawing.Size(486, 185);
             this.groupBoxEDX.TabIndex = 47;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
             // textBoxRevision
             // 
-            this.textBoxRevision.Location = new System.Drawing.Point(400, 19);
+            this.textBoxRevision.Location = new System.Drawing.Point(380, 19);
             this.textBoxRevision.Name = "textBoxRevision";
             this.textBoxRevision.Size = new System.Drawing.Size(100, 20);
             this.textBoxRevision.TabIndex = 0;
             // 
             // textBoxNumberOfPerfMonCountersPerLogicalProcessor
             // 
-            this.textBoxNumberOfPerfMonCountersPerLogicalProcessor.Location = new System.Drawing.Point(400, 45);
+            this.textBoxNumberOfPerfMonCountersPerLogicalProcessor.Location = new System.Drawing.Point(380, 45);
             this.textBoxNumberOfPerfMonCountersPerLogicalProcessor.Name = "textBoxNumberOfPerfMonCountersPerLogicalProcessor";
             this.textBoxNumberOfPerfMonCountersPerLogicalProcessor.Size = new System.Drawing.Size(100, 20);
             this.textBoxNumberOfPerfMonCountersPerLogicalProcessor.TabIndex = 1;
             // 
             // textBoxBitWidthOfPerfMonCounter
             // 
-            this.textBoxBitWidthOfPerfMonCounter.Location = new System.Drawing.Point(400, 71);
+            this.textBoxBitWidthOfPerfMonCounter.Location = new System.Drawing.Point(380, 71);
             this.textBoxBitWidthOfPerfMonCounter.Name = "textBoxBitWidthOfPerfMonCounter";
             this.textBoxBitWidthOfPerfMonCounter.Size = new System.Drawing.Size(100, 20);
             this.textBoxBitWidthOfPerfMonCounter.TabIndex = 2;
             // 
             // textBoxLengthOfEBXBitVector
             // 
-            this.textBoxLengthOfEBXBitVector.Location = new System.Drawing.Point(400, 97);
+            this.textBoxLengthOfEBXBitVector.Location = new System.Drawing.Point(380, 97);
             this.textBoxLengthOfEBXBitVector.Name = "textBoxLengthOfEBXBitVector";
             this.textBoxLengthOfEBXBitVector.Size = new System.Drawing.Size(100, 20);
             this.textBoxLengthOfEBXBitVector.TabIndex = 3;
@@ -354,7 +354,7 @@
             // 
             // textBoxFixedCountersBitMask
             // 
-            this.textBoxFixedCountersBitMask.Location = new System.Drawing.Point(400, 19);
+            this.textBoxFixedCountersBitMask.Location = new System.Drawing.Point(380, 19);
             this.textBoxFixedCountersBitMask.Name = "textBoxFixedCountersBitMask";
             this.textBoxFixedCountersBitMask.Size = new System.Drawing.Size(100, 20);
             this.textBoxFixedCountersBitMask.TabIndex = 0;
@@ -370,42 +370,42 @@
             // 
             // textBoxNumberOfFixedFunctionPerfMonCounters
             // 
-            this.textBoxNumberOfFixedFunctionPerfMonCounters.Location = new System.Drawing.Point(400, 19);
+            this.textBoxNumberOfFixedFunctionPerfMonCounters.Location = new System.Drawing.Point(380, 19);
             this.textBoxNumberOfFixedFunctionPerfMonCounters.Name = "textBoxNumberOfFixedFunctionPerfMonCounters";
             this.textBoxNumberOfFixedFunctionPerfMonCounters.Size = new System.Drawing.Size(100, 20);
             this.textBoxNumberOfFixedFunctionPerfMonCounters.TabIndex = 0;
             // 
             // textBoxBitWidthOfFixedFunctionPerfMonCounters
             // 
-            this.textBoxBitWidthOfFixedFunctionPerfMonCounters.Location = new System.Drawing.Point(400, 45);
+            this.textBoxBitWidthOfFixedFunctionPerfMonCounters.Location = new System.Drawing.Point(380, 45);
             this.textBoxBitWidthOfFixedFunctionPerfMonCounters.Name = "textBoxBitWidthOfFixedFunctionPerfMonCounters";
             this.textBoxBitWidthOfFixedFunctionPerfMonCounters.Size = new System.Drawing.Size(100, 20);
             this.textBoxBitWidthOfFixedFunctionPerfMonCounters.TabIndex = 1;
             // 
             // textBoxEDX13_14_Reserved
             // 
-            this.textBoxEDX13_14_Reserved.Location = new System.Drawing.Point(400, 71);
+            this.textBoxEDX13_14_Reserved.Location = new System.Drawing.Point(380, 71);
             this.textBoxEDX13_14_Reserved.Name = "textBoxEDX13_14_Reserved";
             this.textBoxEDX13_14_Reserved.Size = new System.Drawing.Size(100, 20);
             this.textBoxEDX13_14_Reserved.TabIndex = 2;
             // 
             // textBoxAnyThreadModeDeprecation
             // 
-            this.textBoxAnyThreadModeDeprecation.Location = new System.Drawing.Point(400, 97);
+            this.textBoxAnyThreadModeDeprecation.Location = new System.Drawing.Point(380, 97);
             this.textBoxAnyThreadModeDeprecation.Name = "textBoxAnyThreadModeDeprecation";
             this.textBoxAnyThreadModeDeprecation.Size = new System.Drawing.Size(100, 20);
             this.textBoxAnyThreadModeDeprecation.TabIndex = 3;
             // 
             // textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle
             // 
-            this.textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle.Location = new System.Drawing.Point(400, 123);
+            this.textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle.Location = new System.Drawing.Point(380, 123);
             this.textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle.Name = "textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle";
             this.textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle.Size = new System.Drawing.Size(100, 20);
             this.textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle.TabIndex = 4;
             // 
             // textBoxEDX20_31_Reserved
             // 
-            this.textBoxEDX20_31_Reserved.Location = new System.Drawing.Point(400, 149);
+            this.textBoxEDX20_31_Reserved.Location = new System.Drawing.Point(380, 149);
             this.textBoxEDX20_31_Reserved.Name = "textBoxEDX20_31_Reserved";
             this.textBoxEDX20_31_Reserved.Size = new System.Drawing.Size(100, 20);
             this.textBoxEDX20_31_Reserved.TabIndex = 5;
@@ -577,7 +577,7 @@
             // checkBoxTopdownRetiringUnavailable
             // 
             this.checkBoxTopdownRetiringUnavailable.AutoSize = true;
-            this.checkBoxTopdownRetiringUnavailable.Location = new System.Drawing.Point(285, 19);
+            this.checkBoxTopdownRetiringUnavailable.Location = new System.Drawing.Point(6, 272);
             this.checkBoxTopdownRetiringUnavailable.Name = "checkBoxTopdownRetiringUnavailable";
             this.checkBoxTopdownRetiringUnavailable.Size = new System.Drawing.Size(183, 17);
             this.checkBoxTopdownRetiringUnavailable.TabIndex = 11;
@@ -587,7 +587,7 @@
             // checkBoxLBRInsertsUnavailable
             // 
             this.checkBoxLBRInsertsUnavailable.AutoSize = true;
-            this.checkBoxLBRInsertsUnavailable.Location = new System.Drawing.Point(285, 42);
+            this.checkBoxLBRInsertsUnavailable.Location = new System.Drawing.Point(6, 295);
             this.checkBoxLBRInsertsUnavailable.Name = "checkBoxLBRInsertsUnavailable";
             this.checkBoxLBRInsertsUnavailable.Size = new System.Drawing.Size(158, 17);
             this.checkBoxLBRInsertsUnavailable.TabIndex = 12;
@@ -597,7 +597,7 @@
             // checkBoxEBX13_Reserved
             // 
             this.checkBoxEBX13_Reserved.AutoSize = true;
-            this.checkBoxEBX13_Reserved.Location = new System.Drawing.Point(285, 65);
+            this.checkBoxEBX13_Reserved.Location = new System.Drawing.Point(6, 318);
             this.checkBoxEBX13_Reserved.Name = "checkBoxEBX13_Reserved";
             this.checkBoxEBX13_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX13_Reserved.TabIndex = 13;
@@ -607,7 +607,7 @@
             // checkBoxEBX14_Reserved
             // 
             this.checkBoxEBX14_Reserved.AutoSize = true;
-            this.checkBoxEBX14_Reserved.Location = new System.Drawing.Point(285, 88);
+            this.checkBoxEBX14_Reserved.Location = new System.Drawing.Point(6, 341);
             this.checkBoxEBX14_Reserved.Name = "checkBoxEBX14_Reserved";
             this.checkBoxEBX14_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX14_Reserved.TabIndex = 14;
@@ -617,7 +617,7 @@
             // checkBoxEBX15_Reserved
             // 
             this.checkBoxEBX15_Reserved.AutoSize = true;
-            this.checkBoxEBX15_Reserved.Location = new System.Drawing.Point(285, 111);
+            this.checkBoxEBX15_Reserved.Location = new System.Drawing.Point(6, 364);
             this.checkBoxEBX15_Reserved.Name = "checkBoxEBX15_Reserved";
             this.checkBoxEBX15_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX15_Reserved.TabIndex = 15;
@@ -627,7 +627,7 @@
             // checkBoxEBX16_Reserved
             // 
             this.checkBoxEBX16_Reserved.AutoSize = true;
-            this.checkBoxEBX16_Reserved.Location = new System.Drawing.Point(285, 134);
+            this.checkBoxEBX16_Reserved.Location = new System.Drawing.Point(6, 387);
             this.checkBoxEBX16_Reserved.Name = "checkBoxEBX16_Reserved";
             this.checkBoxEBX16_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX16_Reserved.TabIndex = 16;
@@ -637,7 +637,7 @@
             // checkBoxEBX17_Reserved
             // 
             this.checkBoxEBX17_Reserved.AutoSize = true;
-            this.checkBoxEBX17_Reserved.Location = new System.Drawing.Point(285, 157);
+            this.checkBoxEBX17_Reserved.Location = new System.Drawing.Point(6, 410);
             this.checkBoxEBX17_Reserved.Name = "checkBoxEBX17_Reserved";
             this.checkBoxEBX17_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX17_Reserved.TabIndex = 17;
@@ -647,7 +647,7 @@
             // checkBoxEBX18_Reserved
             // 
             this.checkBoxEBX18_Reserved.AutoSize = true;
-            this.checkBoxEBX18_Reserved.Location = new System.Drawing.Point(285, 180);
+            this.checkBoxEBX18_Reserved.Location = new System.Drawing.Point(6, 433);
             this.checkBoxEBX18_Reserved.Name = "checkBoxEBX18_Reserved";
             this.checkBoxEBX18_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX18_Reserved.TabIndex = 18;
@@ -657,7 +657,7 @@
             // checkBoxEBX19_Reserved
             // 
             this.checkBoxEBX19_Reserved.AutoSize = true;
-            this.checkBoxEBX19_Reserved.Location = new System.Drawing.Point(285, 203);
+            this.checkBoxEBX19_Reserved.Location = new System.Drawing.Point(6, 456);
             this.checkBoxEBX19_Reserved.Name = "checkBoxEBX19_Reserved";
             this.checkBoxEBX19_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX19_Reserved.TabIndex = 19;
@@ -667,7 +667,7 @@
             // checkBoxEBX20_Reserved
             // 
             this.checkBoxEBX20_Reserved.AutoSize = true;
-            this.checkBoxEBX20_Reserved.Location = new System.Drawing.Point(285, 226);
+            this.checkBoxEBX20_Reserved.Location = new System.Drawing.Point(6, 479);
             this.checkBoxEBX20_Reserved.Name = "checkBoxEBX20_Reserved";
             this.checkBoxEBX20_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX20_Reserved.TabIndex = 20;
@@ -677,7 +677,7 @@
             // checkBoxEBX21_Reserved
             // 
             this.checkBoxEBX21_Reserved.AutoSize = true;
-            this.checkBoxEBX21_Reserved.Location = new System.Drawing.Point(285, 249);
+            this.checkBoxEBX21_Reserved.Location = new System.Drawing.Point(6, 502);
             this.checkBoxEBX21_Reserved.Name = "checkBoxEBX21_Reserved";
             this.checkBoxEBX21_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX21_Reserved.TabIndex = 21;
@@ -687,7 +687,7 @@
             // checkBoxEBX22_Reserved
             // 
             this.checkBoxEBX22_Reserved.AutoSize = true;
-            this.checkBoxEBX22_Reserved.Location = new System.Drawing.Point(482, 19);
+            this.checkBoxEBX22_Reserved.Location = new System.Drawing.Point(6, 526);
             this.checkBoxEBX22_Reserved.Name = "checkBoxEBX22_Reserved";
             this.checkBoxEBX22_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX22_Reserved.TabIndex = 22;
@@ -697,7 +697,7 @@
             // checkBoxEBX23_Reserved
             // 
             this.checkBoxEBX23_Reserved.AutoSize = true;
-            this.checkBoxEBX23_Reserved.Location = new System.Drawing.Point(482, 42);
+            this.checkBoxEBX23_Reserved.Location = new System.Drawing.Point(110, 318);
             this.checkBoxEBX23_Reserved.Name = "checkBoxEBX23_Reserved";
             this.checkBoxEBX23_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX23_Reserved.TabIndex = 23;
@@ -707,7 +707,7 @@
             // checkBoxEBX24_Reserved
             // 
             this.checkBoxEBX24_Reserved.AutoSize = true;
-            this.checkBoxEBX24_Reserved.Location = new System.Drawing.Point(482, 65);
+            this.checkBoxEBX24_Reserved.Location = new System.Drawing.Point(110, 341);
             this.checkBoxEBX24_Reserved.Name = "checkBoxEBX24_Reserved";
             this.checkBoxEBX24_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX24_Reserved.TabIndex = 24;
@@ -717,7 +717,7 @@
             // checkBoxEBX25_Reserved
             // 
             this.checkBoxEBX25_Reserved.AutoSize = true;
-            this.checkBoxEBX25_Reserved.Location = new System.Drawing.Point(482, 88);
+            this.checkBoxEBX25_Reserved.Location = new System.Drawing.Point(110, 364);
             this.checkBoxEBX25_Reserved.Name = "checkBoxEBX25_Reserved";
             this.checkBoxEBX25_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX25_Reserved.TabIndex = 25;
@@ -727,7 +727,7 @@
             // checkBoxEBX26_Reserved
             // 
             this.checkBoxEBX26_Reserved.AutoSize = true;
-            this.checkBoxEBX26_Reserved.Location = new System.Drawing.Point(482, 111);
+            this.checkBoxEBX26_Reserved.Location = new System.Drawing.Point(110, 387);
             this.checkBoxEBX26_Reserved.Name = "checkBoxEBX26_Reserved";
             this.checkBoxEBX26_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX26_Reserved.TabIndex = 26;
@@ -737,7 +737,7 @@
             // checkBoxEBX27_Reserved
             // 
             this.checkBoxEBX27_Reserved.AutoSize = true;
-            this.checkBoxEBX27_Reserved.Location = new System.Drawing.Point(482, 134);
+            this.checkBoxEBX27_Reserved.Location = new System.Drawing.Point(110, 410);
             this.checkBoxEBX27_Reserved.Name = "checkBoxEBX27_Reserved";
             this.checkBoxEBX27_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX27_Reserved.TabIndex = 27;
@@ -747,7 +747,7 @@
             // checkBoxEBX28_Reserved
             // 
             this.checkBoxEBX28_Reserved.AutoSize = true;
-            this.checkBoxEBX28_Reserved.Location = new System.Drawing.Point(482, 157);
+            this.checkBoxEBX28_Reserved.Location = new System.Drawing.Point(110, 433);
             this.checkBoxEBX28_Reserved.Name = "checkBoxEBX28_Reserved";
             this.checkBoxEBX28_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX28_Reserved.TabIndex = 28;
@@ -757,7 +757,7 @@
             // checkBoxEBX29_Reserved
             // 
             this.checkBoxEBX29_Reserved.AutoSize = true;
-            this.checkBoxEBX29_Reserved.Location = new System.Drawing.Point(482, 180);
+            this.checkBoxEBX29_Reserved.Location = new System.Drawing.Point(110, 456);
             this.checkBoxEBX29_Reserved.Name = "checkBoxEBX29_Reserved";
             this.checkBoxEBX29_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX29_Reserved.TabIndex = 29;
@@ -767,7 +767,7 @@
             // checkBoxEBX30_Reserved
             // 
             this.checkBoxEBX30_Reserved.AutoSize = true;
-            this.checkBoxEBX30_Reserved.Location = new System.Drawing.Point(482, 203);
+            this.checkBoxEBX30_Reserved.Location = new System.Drawing.Point(110, 479);
             this.checkBoxEBX30_Reserved.Name = "checkBoxEBX30_Reserved";
             this.checkBoxEBX30_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX30_Reserved.TabIndex = 30;
@@ -777,7 +777,7 @@
             // checkBoxEBX31_Reserved
             // 
             this.checkBoxEBX31_Reserved.AutoSize = true;
-            this.checkBoxEBX31_Reserved.Location = new System.Drawing.Point(482, 226);
+            this.checkBoxEBX31_Reserved.Location = new System.Drawing.Point(110, 502);
             this.checkBoxEBX31_Reserved.Name = "checkBoxEBX31_Reserved";
             this.checkBoxEBX31_Reserved.Size = new System.Drawing.Size(93, 17);
             this.checkBoxEBX31_Reserved.TabIndex = 31;
