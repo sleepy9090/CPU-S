@@ -35,6 +35,29 @@ namespace CPU_S
             textBoxEAX0000000AECX.Text = cpuHelper.GetEAX0000000AECXX();
             textBoxEAX0000000AEDX.Text = cpuHelper.GetEAX0000000AEDXX();
 
+            // EAX
+            textBoxRevision.Text = cpuHelper.GetEAX0000000AEAX0_7_RevisionX();
+            textBoxNumberOfPerfMonCountersPerLogicalProcessor.Text = cpuHelper.GetEAX0000000AEAX8_15_NumberOfPerfMonCountersPerLogicalProcessorX();
+            textBoxBitWidthOfPerfMonCounter.Text = cpuHelper.GetEAX0000000AEAX16_23_BitWidthOfPerfMonCounterX();
+            textBoxLengthOfEBXBitVector.Text = cpuHelper.GetEAX0000000AEAX24_31_LengthOfEBXBitVectorX();
+
+            // EBX
+            checkBoxCoreCyclesEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX0_CoreCyclesEventUnavailableX();
+            checkBoxInstructionsRetiredEventUnavailable.Checked = cpuHelper.GetEAX0000000A_EBX1_InstructionsRetiredEventUnavailableX();
+
+
+            // ECX
+            textBoxFixedCountersBitMask.Text = cpuHelper.GetEAX0000000AECX0_31_FixedCountersBitMaskX();
+
+            // EDX
+            textBoxNumberOfFixedFunctionPerfMonCounters.Text = cpuHelper.GetEAX0000000AEDX0_4_NumberOfFixedFunctionPerfMonCountersX();
+            textBoxBitWidthOfFixedFunctionPerfMonCounters.Text = cpuHelper.GetEAX0000000AEDX5_12_BitWidthOfFixedFunctionPerfMonCountersX();
+            textBoxEDX13_14_Reserved.Text = cpuHelper.GetEAX0000000AEDX13_14_ReservedX();
+            textBoxAnyThreadModeDeprecation.Text = cpuHelper.GetEAX0000000AEDX15_AnyThreadModeDeprecationX();
+            textBoxNumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycle.Text = cpuHelper.GetEAX0000000AEDX16_19_NumberOfTopdownMicroarchitectureAnalysisTMASlotsPerCycleX();
+            textBoxEDX20_31_Reserved.Text = cpuHelper.GetEAX0000000AEDX20_31_ReservedX();
+
+
             #endregion
         }
     }
