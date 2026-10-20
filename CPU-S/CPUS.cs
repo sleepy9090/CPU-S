@@ -3985,5 +3985,17 @@ namespace CPU_S
             EAX0000000A eAX0000000A = new EAX0000000A();
             eAX0000000A.ShowDialog();
         }
+
+        private void eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000000FECX0 eAX0000000FECX0 = new EAX0000000FECX0();
+            eAX0000000FECX0.ShowDialog();
+        }
+
+        private void eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000000FECXN eAX0000000FECXN = new EAX0000000FECXN();
+            eAX0000000FECXN.ShowDialog();
+        }
     }
 }

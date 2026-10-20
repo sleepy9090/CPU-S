@@ -255,8 +255,11 @@
             this.eAX0x00000007ECX0x1ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000007ECX0x2ExtendedFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000009DCAParametersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x0000000BIntelThreadCoreAndCacheTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x0000000DXSAVEFeaturesAndStateComponentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000012SGXCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000014ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000014ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -310,7 +313,6 @@
             this.eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2575,6 +2577,8 @@
             this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem,
             this.eAX0x0000000BIntelThreadCoreAndCacheTopologyToolStripMenuItem,
             this.eAX0x0000000DXSAVEFeaturesAndStateComponentsToolStripMenuItem,
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem,
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem,
             this.eAX0x00000012SGXCapabilitiesToolStripMenuItem,
             this.eAX0x00000014ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem,
             this.eAX0x00000014ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem,
@@ -2669,6 +2673,13 @@
             this.eAX0x00000009DCAParametersToolStripMenuItem.Text = "EAX=0x00000009: DCA Parameters";
             this.eAX0x00000009DCAParametersToolStripMenuItem.Click += new System.EventHandler(this.eax0x00000009DCAParametersToolStripMenuItem_Click);
             // 
+            // eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem
+            // 
+            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Name = "eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem";
+            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Size = new System.Drawing.Size(618, 22);
+            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Text = "EAX=0x0000000A: Architectural Perf Mon Information";
+            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Click += new System.EventHandler(this.eax0x0000000AArchitecturalPerfMonInformationToolStripMenuItem_Click);
+            // 
             // eAX0x0000000BIntelThreadCoreAndCacheTopologyToolStripMenuItem
             // 
             this.eAX0x0000000BIntelThreadCoreAndCacheTopologyToolStripMenuItem.Name = "eAX0x0000000BIntelThreadCoreAndCacheTopologyToolStripMenuItem";
@@ -2682,6 +2693,20 @@
             this.eAX0x0000000DXSAVEFeaturesAndStateComponentsToolStripMenuItem.Size = new System.Drawing.Size(618, 22);
             this.eAX0x0000000DXSAVEFeaturesAndStateComponentsToolStripMenuItem.Text = "EAX=0x0000000D: XSAVE Features and State Components";
             this.eAX0x0000000DXSAVEFeaturesAndStateComponentsToolStripMenuItem.Click += new System.EventHandler(this.eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click);
+            // 
+            // eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem
+            // 
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem.Name = "eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem";
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem.Size = new System.Drawing.Size(618, 22);
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem.Text = "EAX=0x0000000F: RDT-M (QoS monitoring) enumeration, ECX=0 - resources: 0=main";
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem.Click += new System.EventHandler(this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem_Click);
+            // 
+            // eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem
+            // 
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem.Name = "eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem";
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem.Size = new System.Drawing.Size(618, 22);
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem.Text = "EAX=0x0000000F: RDT-M (QoS monitoring) enumeration, ECX=1..n - 1=L3";
+            this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem.Click += new System.EventHandler(this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem_Click);
             // 
             // eAX0x00000012SGXCapabilitiesToolStripMenuItem
             // 
@@ -3076,13 +3101,6 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem
-            // 
-            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Name = "eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem";
-            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Size = new System.Drawing.Size(618, 22);
-            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Text = "EAX=0x0000000A: Architectural Perf Mon Information";
-            this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem.Click += new System.EventHandler(this.eax0x0000000AArchitecturalPerfMonInformationToolStripMenuItem_Click);
-            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3415,6 +3433,8 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x80000006ExtendedL2CacheFeaturesIntelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000009DCAParametersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem;
     }
 }
 
