@@ -1,10 +1,10 @@
 
-CPU-S
+# CPU-S
 
-Displays CPU info using CPUID with a C++ dll pulled into a C# application. Tested on x64 machines.
+## Displays CPU info using CPUID with a C++ dll pulled into a C# application. Tested on x64 machines.
 
-See: https://en.wikipedia.org/wiki/CPUID
-https://www.sandpile.org/x86/cpuid.htm
+[CPUID](https://en.wikipedia.org/wiki/CPUID)
+[Sandpile](https://www.sandpile.org/x86/cpuid.htm)
 
 <img width="1110" height="1098" alt="Screenshot 2026-09-15 061720" src="https://github.com/user-attachments/assets/acc80439-553e-4c2a-bdaf-f357d3608f62" />
 <img width="1252" height="1011" alt="Screenshot 2026-09-15 061641" src="https://github.com/user-attachments/assets/ffbf020c-94c5-4d20-ac5b-abdb2ea92207" />
