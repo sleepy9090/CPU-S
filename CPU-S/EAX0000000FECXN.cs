@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+    File           EAX0000000F.cs
+    Brief          Form for displaying EAX=0x0000000F CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           10/21/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
