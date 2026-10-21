@@ -523,11 +523,11 @@
     <Compile Include="EAXC0000006ECX0.Designer.cs">
       <DependentUpon>EAXC0000006ECX0.cs</DependentUpon>
     </Compile>
-    <Compile Include="EAX0000000D.cs">
+    <Compile Include="EAX0000000DEAX0.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EAX0000000D.Designer.cs">
-      <DependentUpon>EAX0000000D.cs</DependentUpon>
+    <Compile Include="EAX0000000DEAX0.Designer.cs">
+      <DependentUpon>EAX0000000DEAX0.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -696,8 +696,8 @@
     <EmbeddedResource Include="EAXC0000006ECX0.resx">
       <DependentUpon>EAXC0000006ECX0.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EAX0000000D.resx">
-      <DependentUpon>EAX0000000D.cs</DependentUpon>
+    <EmbeddedResource Include="EAX0000000DEAX0.resx">
+      <DependentUpon>EAX0000000DEAX0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
