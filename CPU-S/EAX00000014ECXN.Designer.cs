@@ -1,6 +1,6 @@
 ﻿namespace CPU_S
 {
-    partial class EAX00000014ECX1
+    partial class EAX00000014ECXN
     {
         /// <summary>
         /// Required designer variable.
@@ -73,15 +73,20 @@
             this.labelEAX14ECX1EBX = new System.Windows.Forms.Label();
             this.labelEAX14ECX1ECX = new System.Windows.Forms.Label();
             this.labelEAX14ECX1EDX = new System.Windows.Forms.Label();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEDX0_31Reserved = new System.Windows.Forms.Label();
+            this.textBoxEDX0_31Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000014ECX1.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX00000014ECX1
             // 
+            this.groupBoxEAX00000014ECX1.Controls.Add(this.groupBoxEDX);
             this.groupBoxEAX00000014ECX1.Controls.Add(this.groupBoxECX);
             this.groupBoxEAX00000014ECX1.Controls.Add(this.groupBoxEBX);
             this.groupBoxEAX00000014ECX1.Controls.Add(this.groupBoxEAX);
@@ -91,7 +96,7 @@
             this.groupBoxEAX00000014ECX1.Size = new System.Drawing.Size(980, 701);
             this.groupBoxEAX00000014ECX1.TabIndex = 4;
             this.groupBoxEAX00000014ECX1.TabStop = false;
-            this.groupBoxEAX00000014ECX1.Text = "EAX=0x00000014 ECX=0x1";
+            this.groupBoxEAX00000014ECX1.Text = "EAX=0x00000014 ECX=0x1..N";
             // 
             // groupBoxECX
             // 
@@ -489,7 +494,34 @@
             this.labelEAX14ECX1EDX.TabIndex = 9;
             this.labelEAX14ECX1EDX.Text = "EDX:";
             // 
-            // EAX00000014ECX1
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelEDX0_31Reserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDX0_31Reserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 19);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(252, 54);
+            this.groupBoxEDX.TabIndex = 45;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelEDX0_31Reserved
+            // 
+            this.labelEDX0_31Reserved.AutoSize = true;
+            this.labelEDX0_31Reserved.Location = new System.Drawing.Point(3, 22);
+            this.labelEDX0_31Reserved.Name = "labelEDX0_31Reserved";
+            this.labelEDX0_31Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDX0_31Reserved.TabIndex = 1;
+            this.labelEDX0_31Reserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxEDX0_31Reserved
+            // 
+            this.textBoxEDX0_31Reserved.Location = new System.Drawing.Point(111, 19);
+            this.textBoxEDX0_31Reserved.Name = "textBoxEDX0_31Reserved";
+            this.textBoxEDX0_31Reserved.Size = new System.Drawing.Size(129, 20);
+            this.textBoxEDX0_31Reserved.TabIndex = 0;
+            // 
+            // EAX00000014ECXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -497,9 +529,9 @@
             this.Controls.Add(this.groupBoxEAX00000014ECX1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "EAX00000014ECX1";
-            this.Text = "EAX=0x00000014, ECX=0x1: Processor Trace packet generation information in EAX, EB" +
-    "X and ECX";
+            this.Name = "EAX00000014ECXN";
+            this.Text = "EAX=0x00000014, ECX=0x1..N: Processor Trace packet generation information in EAX," +
+    " EBX, and ECX - Details";
             this.groupBoxEAX00000014ECX1.ResumeLayout(false);
             this.groupBoxECX.ResumeLayout(false);
             this.groupBoxECX.PerformLayout();
@@ -509,6 +541,8 @@
             this.groupBoxEAX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -560,5 +594,8 @@
         private System.Windows.Forms.TextBox textBoxTriggerDrMatch;
         private System.Windows.Forms.Label labelReservedECX16_31;
         private System.Windows.Forms.TextBox textBoxReservedECX16_31;
+        private System.Windows.Forms.GroupBox groupBoxEDX;
+        private System.Windows.Forms.Label labelEDX0_31Reserved;
+        private System.Windows.Forms.TextBox textBoxEDX0_31Reserved;
     }
 }

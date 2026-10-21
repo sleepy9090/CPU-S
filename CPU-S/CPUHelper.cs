@@ -16787,16 +16787,16 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x00000014, ECX=0x00000001: Processor Trace packet generation information in EAX, EBX and ECX
+        #region EAX=0x00000014, ECX=0x00000001..N: Processor Trace packet generation information in EAX, EBX and ECX - Details
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX14ECX1EAX();
+        public static extern IntPtr GetEAX14ECX1EAX(int subLeafIndex);
 
-        public string GetEAX14ECX1EAXX()
+        public string GetEAX14ECX1EAXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX14ECX1EAXPtr = GetEAX14ECX1EAX();
+                IntPtr eAX14ECX1EAXPtr = GetEAX14ECX1EAX(subLeafIndex);
                 string eAX14ECX1EAXString = Marshal.PtrToStringAnsi(eAX14ECX1EAXPtr);
 
                 return eAX14ECX1EAXString;
@@ -16814,13 +16814,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX14ECX1EBX();
+        public static extern IntPtr GetEAX14ECX1EBX(int subLeafIndex);
 
-        public string GetEAX14ECX1EBXX()
+        public string GetEAX14ECX1EBXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX14ECX1EBXPtr = GetEAX14ECX1EBX();
+                IntPtr eAX14ECX1EBXPtr = GetEAX14ECX1EBX(subLeafIndex);
                 string eAX14ECX1EBXString = Marshal.PtrToStringAnsi(eAX14ECX1EBXPtr);
 
                 return eAX14ECX1EBXString;
@@ -16838,13 +16838,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX14ECX1ECX();
+        public static extern IntPtr GetEAX14ECX1ECX(int subLeafIndex);
 
-        public string GetEAX14ECX1ECXX()
+        public string GetEAX14ECX1ECXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX14ECX1ECXPtr = GetEAX14ECX1ECX();
+                IntPtr eAX14ECX1ECXPtr = GetEAX14ECX1ECX(subLeafIndex);
                 string eAX14ECX1ECXString = Marshal.PtrToStringAnsi(eAX14ECX1ECXPtr);
 
                 return eAX14ECX1ECXString;
@@ -16862,13 +16862,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX14ECX1EDX();
+        public static extern IntPtr GetEAX14ECX1EDX(int subLeafIndex);
 
-        public string GetEAX14ECX1EDXX()
+        public string GetEAX14ECX1EDXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX14ECX1EDXPtr = GetEAX14ECX1EDX();
+                IntPtr eAX14ECX1EDXPtr = GetEAX14ECX1EDX(subLeafIndex);
                 string eAX14ECX1EDXString = Marshal.PtrToStringAnsi(eAX14ECX1EDXPtr);
 
                 return eAX14ECX1EDXString;
@@ -16886,13 +16886,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EAX0_2_Rangecnt();
+        public static extern int GetEAX14ECX1EAX0_2_Rangecnt(int subLeafIndex);
 
-        public string GetEAX14ECX1EAX0_2_RangecntX()
+        public string GetEAX14ECX1EAX0_2_RangecntX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EAX0_2_RangecntValue = GetEAX14ECX1EAX0_2_Rangecnt();
+                int eAX14ECX1EAX0_2_RangecntValue = GetEAX14ECX1EAX0_2_Rangecnt(subLeafIndex);
                 string eAX14ECX1EAX0_2_RangecntString = eAX14ECX1EAX0_2_RangecntValue.ToString();
 
                 return eAX14ECX1EAX0_2_RangecntString;
@@ -16910,13 +16910,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EAX3_7_Reserved();
+        public static extern int GetEAX14ECX1EAX3_7_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1EAX3_7_ReservedX()
+        public string GetEAX14ECX1EAX3_7_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EAX3_7_ReservedValue = GetEAX14ECX1EAX3_7_Reserved();
+                int eAX14ECX1EAX3_7_ReservedValue = GetEAX14ECX1EAX3_7_Reserved(subLeafIndex);
                 string eAX14ECX1EAX3_7_ReservedString = eAX14ECX1EAX3_7_ReservedValue.ToString();
 
                 return eAX14ECX1EAX3_7_ReservedString;
@@ -16934,13 +16934,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EAX8_10_TriggerConfigCount();
+        public static extern int GetEAX14ECX1EAX8_10_TriggerConfigCount(int subLeafIndex);
 
-        public string GetEAX14ECX1EAX8_10_TriggerConfigCountX()
+        public string GetEAX14ECX1EAX8_10_TriggerConfigCountX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EAX8_10_TriggerConfigCountValue = GetEAX14ECX1EAX8_10_TriggerConfigCount();
+                int eAX14ECX1EAX8_10_TriggerConfigCountValue = GetEAX14ECX1EAX8_10_TriggerConfigCount(subLeafIndex);
                 string eAX14ECX1EAX8_10_TriggerConfigCountString = eAX14ECX1EAX8_10_TriggerConfigCountValue.ToString();
 
                 return eAX14ECX1EAX8_10_TriggerConfigCountString;
@@ -16958,13 +16958,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EAX11_14_Reserved();
+        public static extern int GetEAX14ECX1EAX11_14_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1EAX11_14_ReservedX()
+        public string GetEAX14ECX1EAX11_14_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EAX11_14_ReservedValue = GetEAX14ECX1EAX11_14_Reserved();
+                int eAX14ECX1EAX11_14_ReservedValue = GetEAX14ECX1EAX11_14_Reserved(subLeafIndex);
                 string eAX14ECX1EAX11_14_ReservedString = eAX14ECX1EAX11_14_ReservedValue.ToString();
 
                 return eAX14ECX1EAX11_14_ReservedString;
@@ -16982,13 +16982,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EAX15_Reserved();
+        public static extern int GetEAX14ECX1EAX15_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1EAX15_ReservedX()
+        public string GetEAX14ECX1EAX15_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EAX15_ReservedValue = GetEAX14ECX1EAX15_Reserved();
+                int eAX14ECX1EAX15_ReservedValue = GetEAX14ECX1EAX15_Reserved(subLeafIndex);
                 string eAX14ECX1EAX15_ReservedString = eAX14ECX1EAX15_ReservedValue.ToString();
 
                 return eAX14ECX1EAX15_ReservedString;
@@ -17006,13 +17006,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EAX16_31_MtcRate();
+        public static extern int GetEAX14ECX1EAX16_31_MtcRate(int subLeafIndex);
 
-        public string GetEAX14ECX1EAX16_31_MtcRateX()
+        public string GetEAX14ECX1EAX16_31_MtcRateX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EAX16_31_MtcRateValue = GetEAX14ECX1EAX16_31_MtcRate();
+                int eAX14ECX1EAX16_31_MtcRateValue = GetEAX14ECX1EAX16_31_MtcRate(subLeafIndex);
                 string eAX14ECX1EAX16_31_MtcRateString = eAX14ECX1EAX16_31_MtcRateValue.ToString();
 
                 return eAX14ECX1EAX16_31_MtcRateString;
@@ -17030,13 +17030,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EBX0_15_CycThresholds();
+        public static extern int GetEAX14ECX1EBX0_15_CycThresholds(int subLeafIndex);
 
-        public string GetEAX14ECX1EBX0_15_CycThresholdsX()
+        public string GetEAX14ECX1EBX0_15_CycThresholdsX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EBX0_15_CycThresholdsValue = GetEAX14ECX1EBX0_15_CycThresholds();
+                int eAX14ECX1EBX0_15_CycThresholdsValue = GetEAX14ECX1EBX0_15_CycThresholds(subLeafIndex);
                 string eAX14ECX1EBX0_15_CycThresholdsString = eAX14ECX1EBX0_15_CycThresholdsValue.ToString();
 
                 return eAX14ECX1EBX0_15_CycThresholdsString;
@@ -17054,13 +17054,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1EBX16_31_PsbRate();
+        public static extern int GetEAX14ECX1EBX16_31_PsbRate(int subLeafIndex);
 
-        public string GetEAX14ECX1EBX16_31_PsbRateX()
+        public string GetEAX14ECX1EBX16_31_PsbRateX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1EBX16_31_PsbRateValue = GetEAX14ECX1EBX16_31_PsbRate();
+                int eAX14ECX1EBX16_31_PsbRateValue = GetEAX14ECX1EBX16_31_PsbRate(subLeafIndex);
                 string eAX14ECX1EBX16_31_PsbRateString = eAX14ECX1EBX16_31_PsbRateValue.ToString();
 
                 return eAX14ECX1EBX16_31_PsbRateString;
@@ -17078,13 +17078,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX0_Icnt();
+        public static extern int GetEAX14ECX1ECX0_Icnt(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX0_IcntX()
+        public string GetEAX14ECX1ECX0_IcntX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX0_IcntValue = GetEAX14ECX1ECX0_Icnt();
+                int eAX14ECX1ECX0_IcntValue = GetEAX14ECX1ECX0_Icnt(subLeafIndex);
                 string eAX14ECX1ECX0_IcntString = eAX14ECX1ECX0_IcntValue.ToString();
 
                 return eAX14ECX1ECX0_IcntString;
@@ -17102,13 +17102,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX1_TriggerPause();
+        public static extern int GetEAX14ECX1ECX1_TriggerPause(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX1_TriggerPauseX()
+        public string GetEAX14ECX1ECX1_TriggerPauseX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX1_TriggerPauseValue = GetEAX14ECX1ECX1_TriggerPause();
+                int eAX14ECX1ECX1_TriggerPauseValue = GetEAX14ECX1ECX1_TriggerPause(subLeafIndex);
                 string eAX14ECX1ECX1_TriggerPauseString = eAX14ECX1ECX1_TriggerPauseValue.ToString();
 
                 return eAX14ECX1ECX1_TriggerPauseString;
@@ -17126,13 +17126,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX2_Reserved();
+        public static extern int GetEAX14ECX1ECX2_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX2_ReservedX()
+        public string GetEAX14ECX1ECX2_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX2_ReservedValue = GetEAX14ECX1ECX2_Reserved();
+                int eAX14ECX1ECX2_ReservedValue = GetEAX14ECX1ECX2_Reserved(subLeafIndex);
                 string eAX14ECX1ECX2_ReservedString = eAX14ECX1ECX2_ReservedValue.ToString();
 
                 return eAX14ECX1ECX2_ReservedString;
@@ -17150,13 +17150,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX3_7_Reserved();
+        public static extern int GetEAX14ECX1ECX3_7_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX3_7_ReservedX()
+        public string GetEAX14ECX1ECX3_7_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX3_7_ReservedValue = GetEAX14ECX1ECX3_7_Reserved();
+                int eAX14ECX1ECX3_7_ReservedValue = GetEAX14ECX1ECX3_7_Reserved(subLeafIndex);
                 string eAX14ECX1ECX3_7_ReservedString = eAX14ECX1ECX3_7_ReservedValue.ToString();
 
                 return eAX14ECX1ECX3_7_ReservedString;
@@ -17174,13 +17174,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX8_10_Reserved();
+        public static extern int GetEAX14ECX1ECX8_10_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX8_10_ReservedX()
+        public string GetEAX14ECX1ECX8_10_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX8_10_ReservedValue = GetEAX14ECX1ECX8_10_Reserved();
+                int eAX14ECX1ECX8_10_ReservedValue = GetEAX14ECX1ECX8_10_Reserved(subLeafIndex);
                 string eAX14ECX1ECX8_10_ReservedValueString = eAX14ECX1ECX8_10_ReservedValue.ToString();
 
                 return eAX14ECX1ECX8_10_ReservedValueString;
@@ -17198,13 +17198,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX11_14_Reserved();
+        public static extern int GetEAX14ECX1ECX11_14_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX11_14_ReservedX()
+        public string GetEAX14ECX1ECX11_14_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX11_14_ReservedValue = GetEAX14ECX1ECX11_14_Reserved();
+                int eAX14ECX1ECX11_14_ReservedValue = GetEAX14ECX1ECX11_14_Reserved(subLeafIndex);
                 string eAX14ECX1ECX11_14_ReservedValueString = eAX14ECX1ECX11_14_ReservedValue.ToString();
 
                 return eAX14ECX1ECX11_14_ReservedValueString;
@@ -17222,13 +17222,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX15_TriggerDrMatch();
+        public static extern int GetEAX14ECX1ECX15_TriggerDrMatch(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX15_TriggerDrMatchX()
+        public string GetEAX14ECX1ECX15_TriggerDrMatchX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX15_TriggerDrMatchValue = GetEAX14ECX1ECX15_TriggerDrMatch();
+                int eAX14ECX1ECX15_TriggerDrMatchValue = GetEAX14ECX1ECX15_TriggerDrMatch(subLeafIndex);
                 string eAX14ECX1ECX15_TriggerDrMatchValueString = eAX14ECX1ECX15_TriggerDrMatchValue.ToString();
 
                 return eAX14ECX1ECX15_TriggerDrMatchValueString;
@@ -17246,13 +17246,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX14ECX1ECX16_31_Reserved();
+        public static extern int GetEAX14ECX1ECX16_31_Reserved(int subLeafIndex);
 
-        public string GetEAX14ECX1ECX16_31_ReservedX()
+        public string GetEAX14ECX1ECX16_31_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX14ECX1ECX16_31_ReservedValue = GetEAX14ECX1ECX16_31_Reserved();
+                int eAX14ECX1ECX16_31_ReservedValue = GetEAX14ECX1ECX16_31_Reserved(subLeafIndex);
                 string eAX14ECX1ECX16_31_ReservedValueString = eAX14ECX1ECX16_31_ReservedValue.ToString();
 
                 return eAX14ECX1ECX16_31_ReservedValueString;
@@ -17270,13 +17270,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX00000014_ECX1_EDX_0_31_Reserved();
+        public static extern int GetEAX00000014_ECX1_EDX_0_31_Reserved(int subLeafIndex);
 
-        public string GetEAX00000014_ECX1_EDX_0_31_ReservedX()
+        public string GetEAX00000014_ECX1_EDX_0_31_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX00000014_ECX1_EDX_0_31_Reserved = GetEAX00000014_ECX1_EDX_0_31_Reserved();
+                int eAX00000014_ECX1_EDX_0_31_Reserved = GetEAX00000014_ECX1_EDX_0_31_Reserved(subLeafIndex);
                 return eAX00000014_ECX1_EDX_0_31_Reserved.ToString();
             }
             catch (DllNotFoundException ex)

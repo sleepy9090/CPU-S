@@ -2814,64 +2814,64 @@ namespace CPU_S
 
                 #region EAX=0x14, ECX=0x1: Processor Trace packet generation information in EAX, EBX and ECX
 
-                string cpuIdEAX14ECX1EAX = cpuHelper.GetEAX14ECX1EAXX();
+                string cpuIdEAX14ECX1EAX = cpuHelper.GetEAX14ECX1EAXX(1);
                 Console.WriteLine($"EAX14ECX1EAX: {cpuIdEAX14ECX1EAX}");
 
-                string cpuIdEAX14ECX1EBX = cpuHelper.GetEAX14ECX1EBXX();
+                string cpuIdEAX14ECX1EBX = cpuHelper.GetEAX14ECX1EBXX(1);
                 Console.WriteLine($"EAX14ECX1EBX: {cpuIdEAX14ECX1EBX}");
 
-                string cpuIdEAX14ECX1ECX = cpuHelper.GetEAX14ECX1ECXX();
+                string cpuIdEAX14ECX1ECX = cpuHelper.GetEAX14ECX1ECXX(1);
                 Console.WriteLine($"EAX14ECX1ECX: {cpuIdEAX14ECX1ECX}");
 
-                string cpuIdEAX14ECX1EDX = cpuHelper.GetEAX14ECX1EDXX();
+                string cpuIdEAX14ECX1EDX = cpuHelper.GetEAX14ECX1EDXX(1);
                 Console.WriteLine($"EAX14ECX1EDX: {cpuIdEAX14ECX1EDX}");
 
-                string cpuIdEAX14ECX1EAX0_2_Rangecnt = cpuHelper.GetEAX14ECX1EAX0_2_RangecntX();
+                string cpuIdEAX14ECX1EAX0_2_Rangecnt = cpuHelper.GetEAX14ECX1EAX0_2_RangecntX(1);
                 Console.WriteLine($"EAX14ECX1EAX0_2_Rangecnt: {cpuIdEAX14ECX1EAX0_2_Rangecnt}");
 
-                string cpuIdEAX14ECX1EAX3_7_Reserved = cpuHelper.GetEAX14ECX1EAX3_7_ReservedX();
+                string cpuIdEAX14ECX1EAX3_7_Reserved = cpuHelper.GetEAX14ECX1EAX3_7_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1EAX3_7_Reserved: {cpuIdEAX14ECX1EAX3_7_Reserved}");
 
-                string cpuIdEAX14ECX1EAX8_10_TriggerConfigCount = cpuHelper.GetEAX14ECX1EAX8_10_TriggerConfigCountX();
+                string cpuIdEAX14ECX1EAX8_10_TriggerConfigCount = cpuHelper.GetEAX14ECX1EAX8_10_TriggerConfigCountX(1);
                 Console.WriteLine($"EAX14ECX1EAX8_10_TriggerConfigCount: {cpuIdEAX14ECX1EAX8_10_TriggerConfigCount}");
 
-                string cpuIdEAX14ECX1EAX11_14_Reserved = cpuHelper.GetEAX14ECX1EAX11_14_ReservedX();
+                string cpuIdEAX14ECX1EAX11_14_Reserved = cpuHelper.GetEAX14ECX1EAX11_14_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1EAX11_14_Reserved: {cpuIdEAX14ECX1EAX11_14_Reserved}");
 
-                string cpuIdEAX14ECX1EAX15_Reserved = cpuHelper.GetEAX14ECX1EAX15_ReservedX();
+                string cpuIdEAX14ECX1EAX15_Reserved = cpuHelper.GetEAX14ECX1EAX15_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1EAX15_Reserved: {cpuIdEAX14ECX1EAX15_Reserved}");
 
-                string cpuIdEAX14ECX1EAX16_31_MtcRate = cpuHelper.GetEAX14ECX1EAX16_31_MtcRateX();
+                string cpuIdEAX14ECX1EAX16_31_MtcRate = cpuHelper.GetEAX14ECX1EAX16_31_MtcRateX(1);
                 Console.WriteLine($"EAX14ECX1EAX16_31_MtcRate: {cpuIdEAX14ECX1EAX16_31_MtcRate}");
 
-                string cpuIdEAX14ECX1EBX0_15_CycThresholds = cpuHelper.GetEAX14ECX1EBX0_15_CycThresholdsX();
+                string cpuIdEAX14ECX1EBX0_15_CycThresholds = cpuHelper.GetEAX14ECX1EBX0_15_CycThresholdsX(1);
                 Console.WriteLine($"EAX14ECX1EBX0_15_CycThresholds: {cpuIdEAX14ECX1EBX0_15_CycThresholds}");
 
-                string cpuIdEAX14ECX1EBX16_31_PsbRate = cpuHelper.GetEAX14ECX1EBX16_31_PsbRateX();
+                string cpuIdEAX14ECX1EBX16_31_PsbRate = cpuHelper.GetEAX14ECX1EBX16_31_PsbRateX(1);
                 Console.WriteLine($"EAX14ECX1EBX16_31_PsbRate: {cpuIdEAX14ECX1EBX16_31_PsbRate}");
 
-                string cpuIdEAX14ECX1ECX0_Icnt = cpuHelper.GetEAX14ECX1ECX0_IcntX();
+                string cpuIdEAX14ECX1ECX0_Icnt = cpuHelper.GetEAX14ECX1ECX0_IcntX(1);
                 Console.WriteLine($"EAX14ECX1ECX0_Icnt: {cpuIdEAX14ECX1ECX0_Icnt}");
 
-                string cpuIdEAX14ECX1ECX1_TriggerPause = cpuHelper.GetEAX14ECX1ECX1_TriggerPauseX();
+                string cpuIdEAX14ECX1ECX1_TriggerPause = cpuHelper.GetEAX14ECX1ECX1_TriggerPauseX(1);
                 Console.WriteLine($"EAX14ECX1ECX1_TriggerPause: {cpuIdEAX14ECX1ECX1_TriggerPause}");
 
-                string cpuIdEAX14ECX1ECX2_Reserved = cpuHelper.GetEAX14ECX1ECX2_ReservedX();
+                string cpuIdEAX14ECX1ECX2_Reserved = cpuHelper.GetEAX14ECX1ECX2_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1ECX2_Reserved: {cpuIdEAX14ECX1ECX2_Reserved}");
 
-                string cpuIdEAX14ECX1ECX3_7_Reserved = cpuHelper.GetEAX14ECX1ECX3_7_ReservedX();
+                string cpuIdEAX14ECX1ECX3_7_Reserved = cpuHelper.GetEAX14ECX1ECX3_7_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1ECX3_7_Reserved: {cpuIdEAX14ECX1ECX3_7_Reserved}");
 
-                string cpuIdEAX14ECX1ECX8_10_Reserved = cpuHelper.GetEAX14ECX1ECX8_10_ReservedX();
+                string cpuIdEAX14ECX1ECX8_10_Reserved = cpuHelper.GetEAX14ECX1ECX8_10_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1ECX8_10_Reserved: {cpuIdEAX14ECX1ECX8_10_Reserved}");
 
-                string cpuIdEAX14ECX1ECX11_14_Reserved = cpuHelper.GetEAX14ECX1ECX11_14_ReservedX();
+                string cpuIdEAX14ECX1ECX11_14_Reserved = cpuHelper.GetEAX14ECX1ECX11_14_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1ECX11_14_Reserved: {cpuIdEAX14ECX1ECX11_14_Reserved}");
 
-                string cpuIdEAX14ECX1ECX15_TriggerDrMatch = cpuHelper.GetEAX14ECX1ECX15_TriggerDrMatchX();
+                string cpuIdEAX14ECX1ECX15_TriggerDrMatch = cpuHelper.GetEAX14ECX1ECX15_TriggerDrMatchX(1);
                 Console.WriteLine($"EAX14ECX1ECX15_TriggerDrMatch: {cpuIdEAX14ECX1ECX15_TriggerDrMatch}");
 
-                string cpuIdEAX14ECX1ECX16_31_Reserved = cpuHelper.GetEAX14ECX1ECX16_31_ReservedX();
+                string cpuIdEAX14ECX1ECX16_31_Reserved = cpuHelper.GetEAX14ECX1ECX16_31_ReservedX(1);
                 Console.WriteLine($"EAX14ECX1ECX16_31_Reserved: {cpuIdEAX14ECX1ECX16_31_Reserved}");
 
                 #endregion
@@ -3631,26 +3631,26 @@ namespace CPU_S
 
         private void eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000000 eax0Form = new EAX00000000();
-            eax0Form.ShowDialog();
+            EAX00000000 eAX00000000 = new EAX00000000();
+            eAX00000000.ShowDialog();
         }
 
         private void eAX0x1ProcessorInfoAndFeatureBitsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000001 eax1Form = new EAX00000001();
-            eax1Form.ShowDialog();
+            EAX00000001 eAX00000001 = new EAX00000001();
+            eAX00000001.ShowDialog();
         }
 
         private void eAX0x2CacheAndTLBDescriptorInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000002 eax2Form = new EAX00000002();
-            eax2Form.ShowDialog();
+            EAX00000002 eAX00000002 = new EAX00000002();
+            eAX00000002.ShowDialog();
         }
 
         private void eAX0x3ProcessorSerialNumberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000003 eax3Form = new EAX00000003();
-            eax3Form.ShowDialog();
+            EAX00000003 eAX00000003 = new EAX00000003();
+            eAX00000003.ShowDialog();
         }
 
         private void eAX0x4CacheHierarchyAndTopologyToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3665,8 +3665,8 @@ namespace CPU_S
             {
                 while (int.Parse(cpuHelper.GetEAX4EAX0_4_CacheTypeX(i)) != 0)
                 {
-                    EAX00000004 eax4Form = new EAX00000004(i);
-                    eax4Form.Show();
+                    EAX00000004 eAX00000004 = new EAX00000004(i);
+                    eAX00000004.Show();
                     i++;
                 }
             }
@@ -3697,112 +3697,127 @@ namespace CPU_S
             int i = 0;
             while (int.Parse(cpuHelper.GetEAX0000000BEBXX(i)) != 0)
             {
-                EAX0000000B eaxBForm = new EAX0000000B(i);
-                eaxBForm.Show();
+                EAX0000000B eAX0000000B = new EAX0000000B(i);
+                eAX0000000B.Show();
                 i++;
             }
         }
 
         private void eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000005 eax5Form = new EAX00000005();
-            eax5Form.ShowDialog();
+            EAX00000005 eAX00000005 = new EAX00000005();
+            eAX00000005.ShowDialog();
         }
 
         private void eAX0x6ThermalAndPowerManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000006 eax6Form = new EAX00000006();
-            eax6Form.ShowDialog();
+            EAX00000006 eAX00000006 = new EAX00000006();
+            eAX00000006.ShowDialog();
         }
 
         private void eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000007ECX0 eax7ECX0Form = new EAX00000007ECX0();
-            eax7ECX0Form.ShowDialog();
+            EAX00000007ECX0 eAX00000007ECX0 = new EAX00000007ECX0();
+            eAX00000007ECX0.ShowDialog();
         }
 
         private void eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000000D eaxDForm = new EAX0000000D();
-            eaxDForm.ShowDialog();
-        }
-
-        private void eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            EAX00000014ECX0 eax14ECX0Form = new EAX00000014ECX0();
-            eax14ECX0Form.ShowDialog();
+            EAX0000000D eAX0000000D = new EAX0000000D();
+            eAX0000000D.ShowDialog();
         }
 
         private void eAX0x12SGXCapabilitiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000012 eax12Form = new EAX00000012();
-            eax12Form.ShowDialog();
+            EAX00000012 eAX00000012 = new EAX00000012();
+            eAX00000012.ShowDialog();
+        }
+
+        private void eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000014ECX0 eAX00000014ECX0 = new EAX00000014ECX0();
+            eAX00000014ECX0.ShowDialog();
         }
 
         private void eAX0x14ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000014ECX1 eax14ECX1 = new EAX00000014ECX1();
-            eax14ECX1.ShowDialog();
+            //ECX = 0000_00xxh sub-leaf to query(0 = resources, 1...31 as per EAX reported by sub-leaf 0)
+            int i = 0;
+            int j = int.Parse(cpuHelper.GetEAX00000014EAX_0_31_MaxSubleafX());
+            if (j == 0)
+            {
+                MessageBox.Show("No sub-leaf available for this CPU at EAX=0x00000014 - Processor Trace (details).", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                while (j > i)
+                {
+                    EAX00000014ECXN eAX00000014ECXN = new EAX00000014ECXN(i);
+                    eAX00000014ECXN.Show();
+                    i++;
+                }
+            }
         }
 
         private void eAX0x15TSCAndCoreCrystalFrequencyInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000015 eax15 = new EAX00000015();
-            eax15.ShowDialog();
+            EAX00000015 eAX00000015 = new EAX00000015();
+            eAX00000015.ShowDialog();
         }
 
         private void eAX0x16ProcessorAndBusSpecificationFrequenciesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000016 eax16 = new EAX00000016();
-            eax16.ShowDialog();
+            EAX00000016 eAX00000016 = new EAX00000016();
+            eAX00000016.ShowDialog();
         }
 
         private void eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000017 eax17 = new EAX00000017();
-            eax17.ShowDialog();
+            EAX00000017 eAX00000017 = new EAX00000017();
+            eAX00000017.ShowDialog();
         }
 
         private void eAX0x18TLBHierarchyAndTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000018 eax18 = new EAX00000018();
-            eax18.ShowDialog();
+            EAX00000018 eAX00000018 = new EAX00000018();
+            eAX00000018.ShowDialog();
         }
 
         private void eAX0x19IntelKeyLockerFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000019 eax19 = new EAX00000019();
-            eax19.ShowDialog();
+            EAX00000019 eAX00000019 = new EAX00000019();
+            eAX00000019.ShowDialog();
         }
 
         private void eAX0x1DIntelAMXTileInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000001D eax1D = new EAX0000001D();
-            eax1D.ShowDialog();
+            EAX0000001D eAX0000001D = new EAX0000001D();
+            eAX0000001D.ShowDialog();
         }
 
         private void eAX0x1EIntelAMXTileMultiplierTMULInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000001E eax1E = new EAX0000001E();
-            eax1E.ShowDialog();
+            EAX0000001E eAX0000001E = new EAX0000001E();
+            eAX0000001E.ShowDialog();
         }
 
         private void eAX0x21ReservedForTDXEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000021 eax21 = new EAX00000021();
-            eax21.ShowDialog();
+            EAX00000021 eAX00000021 = new EAX00000021();
+            eAX00000021.ShowDialog();
         }
 
         private void eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000024ECX0 eAX24ECX0 = new EAX00000024ECX0();
-            eAX24ECX0.ShowDialog();
+            EAX00000024ECX0 eAX00000024ECX0 = new EAX00000024ECX0();
+            eAX00000024ECX0.ShowDialog();
         }
 
         private void eAX0x24ECX0x1DiscreteAVX10FeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000024ECX1 eAX24ECX1 = new EAX00000024ECX1();
-            eAX24ECX1.ShowDialog();
+            EAX00000024ECX1 eAX00000024ECX1 = new EAX00000024ECX1();
+            eAX00000024ECX1.ShowDialog();
         }
 
         private void eAX0x20000000HighestXeonPhiFunctionImplementedToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3933,14 +3948,14 @@ namespace CPU_S
 
         private void eAX0x7ECX0x1ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000007ECX1 eAX7ECX1 = new EAX00000007ECX1();
-            eAX7ECX1.ShowDialog();
+            EAX00000007ECX1 eAX00000007ECX1 = new EAX00000007ECX1();
+            eAX00000007ECX1.ShowDialog();
         }
 
         private void eAX0x7ECX0x2ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000007ECX2 eAX7ECX2 = new EAX00000007ECX2();
-            eAX7ECX2.ShowDialog();
+            EAX00000007ECX2 eAX00000007ECX2 = new EAX00000007ECX2();
+            eAX00000007ECX2.ShowDialog();
         }
 
         private void CustomRegisterCallToolStripMenuItem_Click(object sender, EventArgs e)

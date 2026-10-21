@@ -265,11 +265,11 @@
     <Compile Include="CPU.cs" />
     <Compile Include="CPUConstants.cs" />
     <Compile Include="CPUHelper.cs" />
-    <Compile Include="EAX00000014ECX1.cs">
+    <Compile Include="EAX00000014ECXN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EAX00000014ECX1.Designer.cs">
-      <DependentUpon>EAX00000014ECX1.cs</DependentUpon>
+    <Compile Include="EAX00000014ECXN.Designer.cs">
+      <DependentUpon>EAX00000014ECXN.cs</DependentUpon>
     </Compile>
     <Compile Include="EAX00000000.cs">
       <SubType>Form</SubType>
@@ -546,8 +546,8 @@
     <EmbeddedResource Include="EAX0000000FECXN.resx">
       <DependentUpon>EAX0000000FECXN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EAX00000014ECX1.resx">
-      <DependentUpon>EAX00000014ECX1.cs</DependentUpon>
+    <EmbeddedResource Include="EAX00000014ECXN.resx">
+      <DependentUpon>EAX00000014ECXN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX00000000.resx">
       <DependentUpon>EAX00000000.cs</DependentUpon>

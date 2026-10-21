@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBoxEAX14ECX0 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelReserved = new System.Windows.Forms.Label();
+            this.textBoxReserved = new System.Windows.Forms.TextBox();
+            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelMaxSubleaf = new System.Windows.Forms.Label();
+            this.textBoxMaxSubleaf = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
             this.checkBoxReservedECX9 = new System.Windows.Forms.CheckBox();
             this.checkBoxReservedECX8 = new System.Windows.Forms.CheckBox();
@@ -104,18 +110,12 @@
             this.labelEAX14ECX0EBX = new System.Windows.Forms.Label();
             this.labelEAX14ECX0ECX = new System.Windows.Forms.Label();
             this.labelEAX14ECX0EDX = new System.Windows.Forms.Label();
-            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.textBoxMaxSubleaf = new System.Windows.Forms.TextBox();
-            this.labelMaxSubleaf = new System.Windows.Forms.Label();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.labelReserved = new System.Windows.Forms.Label();
-            this.textBoxReserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX14ECX0.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
+            this.groupBoxEAX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
-            this.groupBoxEAX.SuspendLayout();
-            this.groupBoxEDX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX14ECX0
@@ -130,7 +130,61 @@
             this.groupBoxEAX14ECX0.Size = new System.Drawing.Size(980, 701);
             this.groupBoxEAX14ECX0.TabIndex = 3;
             this.groupBoxEAX14ECX0.TabStop = false;
-            this.groupBoxEAX14ECX0.Text = "EAX=0x00000014 ECX=0x0";
+            this.groupBoxEAX14ECX0.Text = "EAX=0x00000014";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelReserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(6, 222);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(252, 54);
+            this.groupBoxEDX.TabIndex = 44;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelReserved
+            // 
+            this.labelReserved.AutoSize = true;
+            this.labelReserved.Location = new System.Drawing.Point(3, 22);
+            this.labelReserved.Name = "labelReserved";
+            this.labelReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelReserved.TabIndex = 1;
+            this.labelReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxReserved
+            // 
+            this.textBoxReserved.Location = new System.Drawing.Point(111, 19);
+            this.textBoxReserved.Name = "textBoxReserved";
+            this.textBoxReserved.Size = new System.Drawing.Size(129, 20);
+            this.textBoxReserved.TabIndex = 0;
+            // 
+            // groupBoxEAX
+            // 
+            this.groupBoxEAX.Controls.Add(this.labelMaxSubleaf);
+            this.groupBoxEAX.Controls.Add(this.textBoxMaxSubleaf);
+            this.groupBoxEAX.Location = new System.Drawing.Point(6, 162);
+            this.groupBoxEAX.Name = "groupBoxEAX";
+            this.groupBoxEAX.Size = new System.Drawing.Size(252, 54);
+            this.groupBoxEAX.TabIndex = 43;
+            this.groupBoxEAX.TabStop = false;
+            this.groupBoxEAX.Text = "EAX";
+            // 
+            // labelMaxSubleaf
+            // 
+            this.labelMaxSubleaf.AutoSize = true;
+            this.labelMaxSubleaf.Location = new System.Drawing.Point(3, 22);
+            this.labelMaxSubleaf.Name = "labelMaxSubleaf";
+            this.labelMaxSubleaf.Size = new System.Drawing.Size(102, 13);
+            this.labelMaxSubleaf.TabIndex = 1;
+            this.labelMaxSubleaf.Text = "Max Sub-leaf [0-31]:";
+            // 
+            // textBoxMaxSubleaf
+            // 
+            this.textBoxMaxSubleaf.Location = new System.Drawing.Point(111, 19);
+            this.textBoxMaxSubleaf.Name = "textBoxMaxSubleaf";
+            this.textBoxMaxSubleaf.Size = new System.Drawing.Size(129, 20);
+            this.textBoxMaxSubleaf.TabIndex = 0;
             // 
             // groupBoxECX
             // 
@@ -941,60 +995,6 @@
             this.labelEAX14ECX0EDX.TabIndex = 9;
             this.labelEAX14ECX0EDX.Text = "EDX:";
             // 
-            // groupBoxEAX
-            // 
-            this.groupBoxEAX.Controls.Add(this.labelMaxSubleaf);
-            this.groupBoxEAX.Controls.Add(this.textBoxMaxSubleaf);
-            this.groupBoxEAX.Location = new System.Drawing.Point(6, 162);
-            this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(252, 54);
-            this.groupBoxEAX.TabIndex = 43;
-            this.groupBoxEAX.TabStop = false;
-            this.groupBoxEAX.Text = "EAX";
-            // 
-            // textBoxMaxSubleaf
-            // 
-            this.textBoxMaxSubleaf.Location = new System.Drawing.Point(111, 19);
-            this.textBoxMaxSubleaf.Name = "textBoxMaxSubleaf";
-            this.textBoxMaxSubleaf.Size = new System.Drawing.Size(129, 20);
-            this.textBoxMaxSubleaf.TabIndex = 0;
-            // 
-            // labelMaxSubleaf
-            // 
-            this.labelMaxSubleaf.AutoSize = true;
-            this.labelMaxSubleaf.Location = new System.Drawing.Point(3, 22);
-            this.labelMaxSubleaf.Name = "labelMaxSubleaf";
-            this.labelMaxSubleaf.Size = new System.Drawing.Size(102, 13);
-            this.labelMaxSubleaf.TabIndex = 1;
-            this.labelMaxSubleaf.Text = "Max Sub-leaf [0-31]:";
-            // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Controls.Add(this.labelReserved);
-            this.groupBoxEDX.Controls.Add(this.textBoxReserved);
-            this.groupBoxEDX.Location = new System.Drawing.Point(6, 222);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(252, 54);
-            this.groupBoxEDX.TabIndex = 44;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // labelReserved
-            // 
-            this.labelReserved.AutoSize = true;
-            this.labelReserved.Location = new System.Drawing.Point(3, 22);
-            this.labelReserved.Name = "labelReserved";
-            this.labelReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelReserved.TabIndex = 1;
-            this.labelReserved.Text = "Reserved [0-31]:";
-            // 
-            // textBoxReserved
-            // 
-            this.textBoxReserved.Location = new System.Drawing.Point(111, 19);
-            this.textBoxReserved.Name = "textBoxReserved";
-            this.textBoxReserved.Size = new System.Drawing.Size(129, 20);
-            this.textBoxReserved.TabIndex = 0;
-            // 
             // EAX00000014ECX0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1004,18 +1004,19 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX00000014ECX0";
-            this.Text = "EAX=0x00000014, ECX=0x0: Processor Trace feature bits in EBX and ECX";
+            this.Text = "EAX=0x00000014, ECX=0x0: Processor Trace feature bits in EBX and ECX / Processor " +
+    "Trace (PT) Capability Enumeration - Capabilities";
             this.groupBoxEAX14ECX0.ResumeLayout(false);
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
+            this.groupBoxEAX.ResumeLayout(false);
+            this.groupBoxEAX.PerformLayout();
             this.groupBoxECX.ResumeLayout(false);
             this.groupBoxECX.PerformLayout();
             this.groupBoxEBX.ResumeLayout(false);
             this.groupBoxEBX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
-            this.groupBoxEAX.ResumeLayout(false);
-            this.groupBoxEAX.PerformLayout();
-            this.groupBoxEDX.ResumeLayout(false);
-            this.groupBoxEDX.PerformLayout();
             this.ResumeLayout(false);
 
         }

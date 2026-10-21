@@ -34,7 +34,7 @@ namespace CPU_S
             string cpuIdEAX14ECX0EDX = cpuHelper.GetEAX14ECX0EDXX();
             textBoxEAX14ECX0EDX.Text = cpuIdEAX14ECX0EDX;
 
-            textBoxMaxSubleaf.Text = cpuHelper.GetEAX00000014EAX_0_31_MaxSubleafX().ToString();
+            textBoxMaxSubleaf.Text = cpuHelper.GetEAX00000014EAX_0_31_MaxSubleafX();
 
             bool cpuIdEAX14ECX0_EBX0_Cr3FilterIsSupported = cpuHelper.GetEAX14ECX0_EBX0_Cr3FilterIsSupportedX();
             checkBoxCR3Filter.Checked = cpuIdEAX14ECX0_EBX0_Cr3FilterIsSupported;
