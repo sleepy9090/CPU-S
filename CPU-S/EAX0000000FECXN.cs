@@ -28,6 +28,21 @@ namespace CPU_S
             textBoxEAX0000000FECX.Text = cpuHelper.GetEAX0000000FECX_ECXX(subLeafIndex);
             textBoxEAX0000000FEDX.Text = cpuHelper.GetEAX0000000FEDX_ECXX(subLeafIndex);
 
+            textBoxCounterWidth.Text = cpuHelper.GetEAX0000000F_ECX_EAX_0_7_CounterWidthX(subLeafIndex);
+            checkBoxCounterBit61IsOverflowBit.Checked = cpuHelper.GetEAX0000000F_ECX_EAX_8_CounterBit61IsOverflowBitX(subLeafIndex);
+            checkBoxNonCPUAgentPresentSupportingIntelRDTCMT.Checked = cpuHelper.GetEAX0000000F_ECX_EAX_9_NonCPUAgentPresentSupportingIntelRDTCMTX(subLeafIndex);
+            checkBoxNonCPUAgentPresentSupportingIntelRDTMBM.Checked = cpuHelper.GetEAX0000000F_ECX_EAX_10_NonCPUAgentPresentSupportingIntelRDTMBMX(subLeafIndex);
+            textBoxReservedEAX.Text = cpuHelper.GetEAX0000000F_ECX_EAX_11_31_ReservedX(subLeafIndex);
+
+            textBoxConversionFactorFromQM_CTRValueToOccupancyMetricBytes.Text = cpuHelper.GetEAX0000000F_ECX_EBX_0_31_ConversionFactorFromQM_CTRValueToOccupancyMetricBytesX(subLeafIndex);
+
+            textBoxMaxRangeOfRMIDWithinThisResourceType.Text = cpuHelper.GetEAX0000000F_ECX_ECX_0_31_MaxRangeOfRMIDWithinThisResourceTypeX(subLeafIndex);
+
+            checkBoxL3OccupancyMonitoring.Checked = cpuHelper.GetEAX0000000F_ECX_EDX_0_L3OccupancyMonitoringX(subLeafIndex);
+            checkBoxL3TotalExternalBandwidthMonitoring.Checked = cpuHelper.GetEAX0000000F_ECX_EDX_1_L3TotalExternalBandwidthMonitoringX(subLeafIndex);
+            checkBoxL3LocalExternalBandwidthMonitoring.Checked = cpuHelper.GetEAX0000000F_ECX_EDX_2_L3LocalExternalBandwidthMonitoringX(subLeafIndex);
+            textBoxReservedEDX.Text = cpuHelper.GetEAX0000000F_ECX_EDX_3_31_ReservedX(subLeafIndex);
+
             #endregion
         }
     }

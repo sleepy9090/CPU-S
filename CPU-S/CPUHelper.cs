@@ -15173,16 +15173,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX0000000F_ECX_EDX_0_31_Reserved(int subLeafIndex);
+        public static extern int GetEAX0000000F_ECX_EDX_3_31_Reserved(int subLeafIndex);
 
-        public string GetEAX0000000F_ECX_EDX_0_31_ReservedX(int subLeafIndex)
+        public string GetEAX0000000F_ECX_EDX_3_31_ReservedX(int subLeafIndex)
         {
             try
             {
-                int eAX0000000F_ECX_EDX_0_31_Reserved = GetEAX0000000F_ECX_EDX_0_31_Reserved(subLeafIndex);
-                string eAX0000000F_ECX_EDX_0_31_ReservedString = eAX0000000F_ECX_EDX_0_31_Reserved.ToString();
+                int eAX0000000F_ECX_EDX_3_31_Reserved = GetEAX0000000F_ECX_EDX_3_31_Reserved(subLeafIndex);
+                string eAX0000000F_ECX_EDX_3_31_ReservedString = eAX0000000F_ECX_EDX_3_31_Reserved.ToString();
 
-                return eAX0000000F_ECX_EDX_0_31_ReservedString;
+                return eAX0000000F_ECX_EDX_3_31_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
