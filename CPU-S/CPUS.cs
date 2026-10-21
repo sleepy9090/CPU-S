@@ -5,6 +5,7 @@
     Date           05/29/2026
     Author         Shawn M. Crawford [sleepy]
 */
+using CPU_S.Properties;
 using System;
 using System.Data;
 using System.Linq;
@@ -3994,8 +3995,24 @@ namespace CPU_S
 
         private void eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000000FECXN eAX0000000FECXN = new EAX0000000FECXN();
-            eAX0000000FECXN.ShowDialog();
+            //ECX = 0000_00xxh sub-leaf to query(0 = resources, 1...n as per EDX reported by sub-leaf 0)
+            int i = 0;
+            int j = int.Parse(cpuHelper.GetEAX0000000FEDXX());
+            if (j == 0)
+            {
+                MessageBox.Show("No sub-leaf available for this CPU at EAX=0x0000000F - RDT-M (QoS monitoring) (Resources).", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                while (j > i)
+                {
+                    EAX0000000FECXN eAX0000000FECXN = new EAX0000000FECXN(i);
+                    eAX0000000FECXN.Show();
+                    i++;
+                }
+            }
+
         }
     }
 }

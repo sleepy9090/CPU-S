@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAXD.cs
-    Brief          Form for displaying EAX=0xD CPU information.
+    File           EAX0000000D.cs
+    Brief          Form for displaying EAX=0x0000000D CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           10/21/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -20,7 +20,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0xD: XSAVE Features and State Components
+            #region EAX=0x0000000D: XSAVE Features and State Components
 
             string cpuIdEAX0000000DEAX = cpuHelper.GetEAX0000000DEAXX();
             textBoxEAX0000000DEAX.Text = cpuIdEAX0000000DEAX;

@@ -14852,16 +14852,16 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX = 0x0000000F: RDT-M(QoS monitoring) enumeration, ECX=1..n - 1=L3
+        #region EAX=0x0000000F: RDT-M(QoS monitoring) enumeration, ECX=1..n - 1=L3
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX0000000FEAX(int subLeafIndex);
+        public static extern IntPtr GetEAX0000000FEAX_ECX(int subLeafIndex);
 
-        public string GetEAX0000000FEAXX(int subLeafIndex)
+        public string GetEAX0000000FEAX_ECXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX0000000FEAXPtr = GetEAX0000000FEAX(subLeafIndex);
+                IntPtr eAX0000000FEAXPtr = GetEAX0000000FEAX_ECX(subLeafIndex);
                 string eAX0000000FEAXString = Marshal.PtrToStringAnsi(eAX0000000FEAXPtr);
 
                 return eAX0000000FEAXString;
@@ -14879,13 +14879,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX0000000FEBX(int subLeafIndex);
+        public static extern IntPtr GetEAX0000000FEBX_ECX(int subLeafIndex);
 
-        public string GetEAX0000000FEBXX(int subLeafIndex)
+        public string GetEAX0000000FEBX_ECXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX0000000FEBXPtr = GetEAX0000000FEBX(subLeafIndex);
+                IntPtr eAX0000000FEBXPtr = GetEAX0000000FEBX_ECX(subLeafIndex);
                 string eAX0000000FEBXString = Marshal.PtrToStringAnsi(eAX0000000FEBXPtr);
 
                 return eAX0000000FEBXString;
@@ -14903,13 +14903,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX0000000FECX(int subLeafIndex);
+        public static extern IntPtr GetEAX0000000FECX_ECX(int subLeafIndex);
 
-        public string GetEAX0000000FECXX(int subLeafIndex)
+        public string GetEAX0000000FECX_ECXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX0000000FECXPtr = GetEAX0000000FECX(subLeafIndex);
+                IntPtr eAX0000000FECXPtr = GetEAX0000000FECX_ECX(subLeafIndex);
                 string eAX0000000FECXString = Marshal.PtrToStringAnsi(eAX0000000FECXPtr);
 
                 return eAX0000000FECXString;
@@ -14927,13 +14927,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX0000000FEDX(int subLeafIndex);
+        public static extern IntPtr GetEAX0000000FEDX_ECX(int subLeafIndex);
 
-        public string GetEAX0000000FEDXX(int subLeafIndex)
+        public string GetEAX0000000FEDX_ECXX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX0000000FEDXPtr = GetEAX0000000FEDX(subLeafIndex);
+                IntPtr eAX0000000FEDXPtr = GetEAX0000000FEDX_ECX(subLeafIndex);
                 string eAX0000000FEDXString = Marshal.PtrToStringAnsi(eAX0000000FEDXPtr);
 
                 return eAX0000000FEDXString;
