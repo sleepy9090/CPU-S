@@ -14908,16 +14908,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX0000000D_ECX1_EBX0_31_CurrentSizeInBytesOfXSAVE_XRSTORAreaAsPerCurrentXCR0_XSS();
+        public static extern int GetEAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSS();
 
-        public string GetEAX0000000D_ECX1_EBX0_31_CurrentSizeInBytesOfXSAVE_XRSTORAreaAsPerCurrentXCR0_XSSX()
+        public string GetEAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSSX()
         {
             try
             {
-                int eAX0000000D_ECX1_EBX0_31_CurrentSizeInBytesOfXSAVE_XRSTORAreaAsPerCurrentXCR0_XSSValue = GetEAX0000000D_ECX1_EBX0_31_CurrentSizeInBytesOfXSAVE_XRSTORAreaAsPerCurrentXCR0_XSS();
-                string eAX0000000D_ECX1_EBX0_31_CurrentSizeInBytesOfXSAVE_XRSTORAreaAsPerCurrentXCR0_XSSString = eAX0000000D_ECX1_EBX0_31_CurrentSizeInBytesOfXSAVE_XRSTORAreaAsPerCurrentXCR0_XSSValue.ToString();
+                int eAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSS = GetEAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSS();
+                string eAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSSString = eAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSS.ToString();
 
-                return eAX0000000D_ECX1_EBX0_31_CurrentSizeInBytesOfXSAVE_XRSTORAreaAsPerCurrentXCR0_XSSString;
+                return eAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSSString;
             }
             catch (DllNotFoundException ex)
             {

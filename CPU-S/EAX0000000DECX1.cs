@@ -35,6 +35,18 @@ namespace CPU_S
             textBoxEAX0000000DECX.Text = cpuHelper.GetEAX0000000DECX_ECX1X();
             textBoxEAX0000000DEDX.Text = cpuHelper.GetEAX0000000DEDX_ECX1X();
 
+            checkBoxXSAVEOPT.Checked = cpuHelper.GetEAX0000000D_ECX1_EAX0_XSAVEOPTX();
+            checkBoxXSAVECAndCompactedFormOfXRSTOR.Checked = cpuHelper.GetEAX0000000D_ECX1_EAX1_XSAVECAndCompactedFormOfXRSTORX();
+            checkBoxXGETBVWithECX1.Checked = cpuHelper.GetEAX0000000D_ECX1_EAX2_XGETBVWithECX1X();
+            checkBoxXSAVES_XRSTORSAndXSS.Checked = cpuHelper.GetEAX0000000D_ECX1_EAX3_XSAVES_XRSTORSAndXSSX();
+            checkBoxXFDAndXFD_ERR.Checked = cpuHelper.GetEAX0000000D_ECX1_EAX4_XFDAndXFD_ERRX();
+
+            textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.Text = cpuHelper.GetEAX0000000D_ECX1_EBX0_31_SizeInBytesInXSAVEAreaForXCR0_XSSX();
+
+            textBox0_31_ValidXSSBits.Text = cpuHelper.GetEAX0000000D_ECX1_ECX0_31_ValidXSSBitsX();
+
+            textBox32_63_ValidXSSBits.Text = cpuHelper.GetEAX0000000D_ECX1_EDX32_63_ValidXSSBitsX();
+
             #endregion
         }
     }
