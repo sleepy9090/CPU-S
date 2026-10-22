@@ -14508,7 +14508,7 @@ namespace CPU_S
 
         #endregion
 
-        #region EAX=0x0000000D: XSAVE Features and State Components (ECX=0), (Sub 0) (main) (XCR0)
+        #region EAX=0x0000000D: XSAVE Features and State Components (ECX=0x00000000), (Sub 0) (main) (XCR0)
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX0000000DEAX();

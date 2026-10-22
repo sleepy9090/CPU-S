@@ -4029,5 +4029,17 @@ namespace CPU_S
             }
 
         }
+
+        private void eAX0x0000000DXSAVEFeaturesAndStateComponentsSub1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000000DECX1 eAX0000000DECX1 = new EAX0000000DECX1();
+            eAX0000000DECX1.ShowDialog();
+        }
+
+        private void eAX0x0000000DXSAVEFeaturesAndStateComponentsSub2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000000DECXN eAX0000000DECXN = new EAX0000000DECXN(2);
+            eAX0000000DECXN.ShowDialog();
+        }
     }
 }

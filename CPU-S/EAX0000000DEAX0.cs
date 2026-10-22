@@ -20,7 +20,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x0000000D: XSAVE Features and State Components - ECX=0x00000000 = Main/XCR0
+            #region EAX=0x0000000D: XSAVE Features and State Components (ECX=0x00000000), (Sub 0) (main) (XCR0)
 
             textBoxEAX0000000DEAX.Text = cpuHelper.GetEAX0000000DEAXX();
             textBoxEAX0000000DEBX.Text = cpuHelper.GetEAX0000000DEBXX();

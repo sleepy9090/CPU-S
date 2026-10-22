@@ -1,6 +1,6 @@
 ﻿/*
-    File           EAX14ECX1.cs
-    Brief          Form for displaying EAX=0x14, ECX=0x1 CPU information.
+    File           EAX00000014ECX1.cs
+    Brief          Form for displaying EAX=0x00000014, ECX=0x00000001 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
     Date           08/XX/2026
     Author         Shawn M. Crawford [sleepy]
