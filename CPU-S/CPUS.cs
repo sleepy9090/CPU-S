@@ -3942,7 +3942,7 @@ namespace CPU_S
 
         private void eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAXC0000006ECX0 eAXC0000006ECX0 = new EAXC0000006ECX0();
+            EAXC0000006 eAXC0000006ECX0 = new EAXC0000006();
             eAXC0000006ECX0.ShowDialog();
         }
 

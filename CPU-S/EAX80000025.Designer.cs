@@ -141,7 +141,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX80000025";
-            this.Text = "EAX80000025";
+            this.Text = "EAX=0x80000025 - RMP Information";
             this.groupBoxEAX80000025.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
