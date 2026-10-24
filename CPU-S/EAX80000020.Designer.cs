@@ -182,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX80000020);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX80000020";
             this.Text = "EAX=0x80000020 - Platform QoS Enumeration";
             this.groupBoxEAX80000020.ResumeLayout(false);

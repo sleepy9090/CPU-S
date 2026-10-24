@@ -182,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX80860000);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX80860000";
             this.Text = "EAX=0x80860000 - Maximum Supported Leaf and Vendor ID String";
             this.groupBoxEAX80860000.ResumeLayout(false);

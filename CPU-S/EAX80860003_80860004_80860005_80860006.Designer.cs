@@ -182,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX80860003_4_5_6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX80860003_80860004_80860005_80860006";
             this.Text = "EAX=0x80860003, 0x80860004, 0x80860005, 0x80860006 - Information String";
             this.groupBoxEAX80860003_4_5_6.ResumeLayout(false);

@@ -182,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX63634523);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX6363452A";
             this.Text = "EAX=0x6363452A - Rise mP6 Config Leaves";
             this.groupBoxEAX63634523.ResumeLayout(false);

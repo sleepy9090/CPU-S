@@ -723,6 +723,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TEMPLATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TEMPLATE.Designer.cs">
+      <DependentUpon>TEMPLATE.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Custom.resx">
       <DependentUpon>Custom.cs</DependentUpon>
     </EmbeddedResource>
@@ -870,8 +876,32 @@
     <EmbeddedResource Include="EAX00000007ECX2.resx">
       <DependentUpon>EAX00000007ECX2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000004.resx">
+      <DependentUpon>EAX40000004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000005.resx">
+      <DependentUpon>EAX40000005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000006.resx">
+      <DependentUpon>EAX40000006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000007.resx">
+      <DependentUpon>EAX40000007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000008.resx">
+      <DependentUpon>EAX40000008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX40000009.resx">
+      <DependentUpon>EAX40000009.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX4000000A.resx">
+      <DependentUpon>EAX4000000A.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EAX4000000B.resx">
       <DependentUpon>EAX4000000B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX4000000C.resx">
+      <DependentUpon>EAX4000000C.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX40000010.resx">
       <DependentUpon>EAX40000010.cs</DependentUpon>
@@ -996,6 +1026,9 @@
     <EmbeddedResource Include="EAX0000000B.resx">
       <DependentUpon>EAX0000000B.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EAX8FFFFFFF.resx">
+      <DependentUpon>EAX8FFFFFFF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EAXC0000000.resx">
       <DependentUpon>EAXC0000000.cs</DependentUpon>
     </EmbeddedResource>
@@ -1029,6 +1062,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TEMPLATE.resx">
+      <DependentUpon>TEMPLATE.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

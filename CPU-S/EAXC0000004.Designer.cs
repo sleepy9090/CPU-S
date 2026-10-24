@@ -182,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAXC0000004);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAXC0000004";
             this.Text = "EAX=0xC0000004 - Centaur CN (Isaiah) and Zhaoxin ZX - Performance Information";
             this.groupBoxEAXC0000004.ResumeLayout(false);

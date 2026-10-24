@@ -182,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX00000028);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX00000028";
             this.Text = "EAX=0x00000028 - Asymmetric RDT-A (QoS allocation) Enumeration";
             this.groupBoxEAX00000028.ResumeLayout(false);

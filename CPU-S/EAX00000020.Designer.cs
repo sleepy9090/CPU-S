@@ -62,7 +62,7 @@
             // 
             // groupBoxEAX
             // 
-            this.groupBoxEAX.Location = new System.Drawing.Point(358, 19);
+            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
             this.groupBoxEAX.Name = "groupBoxEAX";
             this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
             this.groupBoxEAX.TabIndex = 52;
@@ -71,7 +71,7 @@
             // 
             // groupBoxEDX
             // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(564, 125);
+            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
             this.groupBoxEDX.Name = "groupBoxEDX";
             this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
             this.groupBoxEDX.TabIndex = 51;
@@ -80,7 +80,7 @@
             // 
             // groupBoxECX
             // 
-            this.groupBoxECX.Location = new System.Drawing.Point(358, 125);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
             this.groupBoxECX.Name = "groupBoxECX";
             this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
             this.groupBoxECX.TabIndex = 50;
@@ -89,7 +89,7 @@
             // 
             // groupBoxEBX
             // 
-            this.groupBoxEBX.Location = new System.Drawing.Point(564, 19);
+            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
             this.groupBoxEBX.Name = "groupBoxEBX";
             this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
             this.groupBoxEBX.TabIndex = 49;
@@ -182,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX00000020);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX00000020";
             this.Text = "EAX=0x00000020 - HRESET Information";
             this.groupBoxEAX00000020.ResumeLayout(false);
