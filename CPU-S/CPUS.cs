@@ -3684,7 +3684,7 @@ namespace CPU_S
             {
                 while (int.Parse(cpuHelper.GetEAX8000001DEAX0_4_CacheTypeX(i)) != 0)
                 {
-                    EAX8000001D eax8000001DForm = new EAX8000001D(i);
+                    EAX8000001D_AMD eax8000001DForm = new EAX8000001D_AMD(i);
                     eax8000001DForm.Show();
                     i++;
                 }
@@ -3918,8 +3918,8 @@ namespace CPU_S
 
         private void eAX0x8FFFFFFE0x8FFFFFFFAMDEasterEggsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX8FFFFFFE_8FFFFFFF eAX8FFFFFFE_8FFFFFFF = new EAX8FFFFFFE_8FFFFFFF();
-            eAX8FFFFFFE_8FFFFFFF.ShowDialog();
+            EAX8FFFFFFE eAX8FFFFFFE = new EAX8FFFFFFE();
+            eAX8FFFFFFE.ShowDialog();
         }
 
         private void eAX0xC0000000HighestCentaurExtendedFunctionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3940,7 +3940,7 @@ namespace CPU_S
             eAXC0000002.ShowDialog();
         }
 
-        private void eAX0xC0000006ECX0ZhaoxinFeatureInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void eAX0xC0000006ZhaoxinFeatureInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EAXC0000006 eAXC0000006ECX0 = new EAXC0000006();
             eAXC0000006ECX0.ShowDialog();
@@ -4040,6 +4040,306 @@ namespace CPU_S
         {
             EAX0000000DECXN eAX0000000DECXN = new EAX0000000DECXN(2);
             eAX0000000DECXN.ShowDialog();
+        }
+
+        private void eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000010 eAX00000010 = new EAX00000010();
+            eAX00000010.ShowDialog();
+        }
+
+        private void eAX0x0000001ACoreModelInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000001A eAX0000001A = new EAX0000001A();
+            eAX0000001A.ShowDialog();
+        }
+
+        private void eAX0x0000001BPCONFIGInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000001B eAX0000001B = new EAX0000001B();
+            eAX0000001B.ShowDialog();
+        }
+
+        private void eAX0x0000001CLBRInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000001C eAX0000001C = new EAX0000001C();
+            eAX0000001C.ShowDialog();
+        }
+
+        private void eAX0x0000001FTopologyEnumerationInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000001F eAX0000001F = new EAX0000001F();
+            eAX0000001F.ShowDialog();
+        }
+
+        private void eAX0x00000020HRESETInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000020 eAX00000020 = new EAX00000020();
+            eAX00000020.ShowDialog();
+        }
+
+        private void eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000023 eAX00000023 = new EAX00000023();
+            eAX00000023.ShowDialog();
+        }
+
+        private void eAX0x00000027AsymmetricRDTMQoSMonitoringEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000027 eAX00000027 = new EAX00000027();
+            eAX00000027.ShowDialog();
+        }
+
+        private void eAX0x00000028AsymmetricRDTAQoSAllocationEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000028 eAX00000028 = new EAX00000028();
+            eAX00000028.ShowDialog();
+        }
+
+        private void eAX0x00000029APXInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000029 eAX00000029 = new EAX00000029();
+            eAX00000029.ShowDialog();
+        }
+
+        private void eAX0x00005A4ERiseMP6PrankLeafToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00005A4E eAX00005A4E = new EAX00005A4E();
+            eAX00005A4E.ShowDialog();
+        }
+
+        private void eAX0x40000004ReservedForHypervisorsRecommendationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000004 eAX40000004 = new EAX40000004();
+            eAX40000004.ShowDialog();
+        }
+
+        private void eAX0x40000005ReservedForHypervisorsLimitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000005 eAX40000005 = new EAX40000005();
+            eAX40000005.ShowDialog();
+        }
+
+        private void eAX0x40000006ReservedForHypervisorsHardwareFeaturesDetectedAndInUseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000006 eAX40000006 = new EAX40000006();
+            eAX40000006.ShowDialog();
+        }
+
+        private void eAX0x40000008ReservedForHypervisorsHypervisorSVMFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000008 eAX40000008 = new EAX40000008();
+            eAX40000008.ShowDialog();
+        }
+
+        private void eAX0x40000007ReservedForHypervisorsHypervisorCPUManagementFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000007 eAX40000007 = new EAX40000007();
+            eAX40000007.ShowDialog();
+        }
+
+        private void eAX0x40000009ReservedForHypervisorsNestedHypervisorFeatureIdentificationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000009 eAX40000009 = new EAX40000009();
+            eAX40000009.ShowDialog();
+        }
+
+        private void eAX0x4000000AReservedForHypervisorsHypervisorNestedVirtualizationFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX4000000A eAX4000000A = new EAX4000000A();
+            eAX4000000A.ShowDialog();
+        }
+
+        private void eAX0x4000000BReservedForHypervisorsUnknownUndocumentedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX4000000B eAX4000000B = new EAX4000000B();
+            eAX4000000B.ShowDialog();
+        }
+
+        private void eAX0x4000000CReservedForHypervisorsIsolationConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX4000000C eAX4000000C = new EAX4000000C();
+            eAX4000000C.ShowDialog();
+        }
+
+        private void eAX0x4C780001GetSupervisorInformationLinuxFlagsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX4C780001 eAX4C780001 = new EAX4C780001();
+            eAX4C780001.ShowDialog();
+        }
+
+        private void eAX0x4C780002GetSupervisorInformationLinuxBugsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX4C780002 eAX4C780002 = new EAX4C780002();
+            eAX4C780002.ShowDialog();
+        }
+
+        private void eAX0x40000010ReservedForHypervisorsFrequencyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000010 eAX40000010 = new EAX40000010();
+            eAX40000010.ShowDialog();
+        }
+
+        private void eAX0x40000080SYNDBGVendorPlusMaxdeprecatedUnknownundocumentedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000080 eAX40000080 = new EAX40000080();
+            eAX40000080.ShowDialog();
+        }
+
+        private void eAX0x40000081SYNDBGInterfacedeprecatedUndocumentedVirtualStackInterfaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000081 eAX40000081 = new EAX40000081();
+            eAX40000081.ShowDialog();
+        }
+
+        private void eAX0x40000082SYNDBGPlatformCapabilitiesdeprecatedUndocumentedVirtualStackPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX40000082 eAX40000082 = new EAX40000082();
+            eAX40000082.ShowDialog();
+        }
+
+        private void eAX0x63634523ConfigLeavesRiseMP6ConfigToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX63634523 eAX63634523 = new EAX63634523();
+            eAX63634523.ShowDialog();
+        }
+
+        private void eAX0x6363452AConfigLeavesRiseMP6ConfigToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX6363452A eAX6363452A = new EAX6363452A();
+            eAX6363452A.ShowDialog();
+        }
+
+        private void eAX0x80000019TLBConfigurationDescriptorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000019 eAX80000019 = new EAX80000019();
+            eAX80000019.ShowDialog();
+        }
+
+        private void eAX0x8000001APerformanceOptimizationIdentifiersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000001A eAX8000001A = new EAX8000001A();
+            eAX8000001A.ShowDialog();
+        }
+
+        private void eAX0x8000001BIBSInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000001B eAX8000001B = new EAX8000001B();
+            eAX8000001B.ShowDialog();
+        }
+
+        private void eAX0x8000001CLWPInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000001C eAX8000001C = new EAX8000001C();
+            eAX8000001C.ShowDialog();
+        }
+
+        private void eAX0x8000001DCacheConfigurationDescriptorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000001D eAX8000001D = new EAX8000001D();
+            eAX8000001D.ShowDialog();
+        }
+
+        private void eAX0x8000001EAPICUnitNodeInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8000001E eAX8000001E = new EAX8000001E();
+            eAX8000001E.ShowDialog();
+        }
+
+        private void eAX0x80000020PlatformQoSEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000020 eAX80000020 = new EAX80000020();
+            eAX80000020.ShowDialog();
+        }
+
+        private void eAX0x80000022ExtendedPerformanceMonitoringAndDebugInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000022 eAX80000022 = new EAX80000022();
+            eAX80000022.ShowDialog();
+        }
+
+        private void eAX0x80000023SecureHostMultikeyMemoryEncryptionInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000023 eAX80000023 = new EAX80000023();
+            eAX80000023.ShowDialog();
+        }
+
+        private void eAX0x80000026TopologyEnumerationInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000026 eAX80000026 = new EAX80000026();
+            eAX80000026.ShowDialog();
+        }
+
+        private void eAX0x80000027WorkloadClassInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000027 eAX80000027 = new EAX80000027();
+            eAX80000027.ShowDialog();
+        }
+
+        private void eAX0x80860000VendorLeavesTransmetaMaximumSupportedLeafAndVendorIDStringToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80860000 eAX80860000 = new EAX80860000();
+            eAX80860000.ShowDialog();
+        }
+
+        private void eAX0x80860001VendorLeavesTransmetaProcessorInformationFMSFlagsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80860001 eAX80860001 = new EAX80860001();
+            eAX80860001.ShowDialog();
+        }
+
+        private void eAX0x80860002VendorLeavesTransmetaProcessorInformationHWSWRevisionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80860002 eAX80860002 = new EAX80860002();
+            eAX80860002.ShowDialog();
+        }
+
+        private void eAX0x80860003EAX0x80860006VendorLeavesTransmetaCMSInfoStringToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80860003_80860004_80860005_80860006 eAX80860003_80860004_80860005_80860006 = new EAX80860003_80860004_80860005_80860006();
+            eAX80860003_80860004_80860005_80860006.ShowDialog();
+        }
+
+        private void eAX0x80860007VendorLeavesTransmetaProcessorInformationMHzMVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80860007 eAX80860007 = new EAX80860007();
+            eAX80860007.ShowDialog();
+        }
+
+        private void eAX0x80860008VendorLeavesTransmetaHypervisorInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80860008 eAX80860008 = new EAX80860008();
+            eAX80860008.ShowDialog();
+        }
+
+        private void eAX0x8FFFFFFEAMDEasterEggsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8FFFFFFE eAX8FFFFFFE = new EAX8FFFFFFE();
+            eAX8FFFFFFE.ShowDialog();
+        }
+
+        private void eAX0x8FFFFFFFAMDEasterEggsAMDPrankLeafToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX8FFFFFFF eAX8FFFFFFF = new EAX8FFFFFFF();
+            eAX8FFFFFFF.ShowDialog();
+        }
+
+        private void eAX0xC0000003CentaurProcessorSerialNumberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXC0000003 eAXC0000003 = new EAXC0000003();
+            eAXC0000003.ShowDialog();
+        }
+
+        private void eAX0xC0000004CentaurAndZhaoxinPerformanceInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXC0000004 eAXC0000004 = new EAXC0000004();
+            eAXC0000004.ShowDialog();
+        }
+
+        private void eAX0xC0000005ZhaoxinIsolationInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAXC0000005 eAXC0000005 = new EAXC0000005();
+            eAXC0000005.ShowDialog();
         }
     }
 }
