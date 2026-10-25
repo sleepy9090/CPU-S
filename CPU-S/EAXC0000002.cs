@@ -2,7 +2,7 @@
     File           EAXC0000002.cs
     Brief          Form for displaying EAX=0xC0000002 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           10/25/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -20,19 +20,12 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0xC0000002: Centaur Extended CPUID Performance Data
+            #region EAX=0xC0000002: Centaur - Performance Information - Centaur C5J (Esther)
 
-            string cpuIdEAXC0000002EAX = cpuHelper.GetEAXC0000002EAXX();
-            textBoxEAXC0000002EAX.Text = cpuIdEAXC0000002EAX;
-
-            string cpuIdEAXC0000002EBX = cpuHelper.GetEAXC0000002EBXX();
-            textBoxEAXC0000002EBX.Text = cpuIdEAXC0000002EBX;
-
-            string cpuIdEAXC0000002ECX = cpuHelper.GetEAXC0000002ECXX();
-            textBoxEAXC0000002ECX.Text = cpuIdEAXC0000002ECX;
-
-            string cpuIdEAXC0000002EDX = cpuHelper.GetEAXC0000002EDXX();
-            textBoxEAXC0000002EDX.Text = cpuIdEAXC0000002EDX;
+            textBoxEAXC0000002EAX.Text = cpuHelper.GetEAXC0000002EAXX();
+            textBoxEAXC0000002EBX.Text = cpuHelper.GetEAXC0000002EBXX();
+            textBoxEAXC0000002ECX.Text = cpuHelper.GetEAXC0000002ECXX();
+            textBoxEAXC0000002EDX.Text = cpuHelper.GetEAXC0000002EDXX();
 
             #endregion
         }

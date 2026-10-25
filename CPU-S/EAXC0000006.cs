@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAXC0000006ECX0.cs
-    Brief          Form for displaying EAX=0xC0000006, ECX=0 CPU information.
+    File           EAXC0000006.cs
+    Brief          Form for displaying EAX=0xC0000006 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           10/25/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -20,19 +20,12 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0xC0000006, ECX=0: Zhaoxin Feature Information
+            #region EAX=0xC0000006: Zhaoxin - Processor Information
 
-            string cpuIdEAXC0000006ECX0EAX = cpuHelper.GetEAXC0000006ECX0EAXX();
-            textBoxEAXC0000006ECX0EAX.Text = cpuIdEAXC0000006ECX0EAX;
-
-            string cpuIdEAXC0000006ECX0EBX = cpuHelper.GetEAXC0000006ECX0EBXX();
-            textBoxEAXC0000006ECX0EBX.Text = cpuIdEAXC0000006ECX0EBX;
-
-            string cpuIdEAXC0000006ECX0ECX = cpuHelper.GetEAXC0000006ECX0ECXX();
-            textBoxEAXC0000006ECX0ECX.Text = cpuIdEAXC0000006ECX0ECX;
-
-            string cpuIdEAXC0000006ECX0EDX = cpuHelper.GetEAXC0000006ECX0EDXX();
-            textBoxEAXC0000006ECX0EDX.Text = cpuIdEAXC0000006ECX0EDX;
+            textBoxEAX.Text = cpuHelper.GetEAXC0000006EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAXC0000006EBXX();
+            textBoxECX.Text = cpuHelper.GetEAXC0000006ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAXC0000006EDXX();
 
             #endregion
         }

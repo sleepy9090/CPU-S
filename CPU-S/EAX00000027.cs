@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+    File           EAX00000027.cs
+    Brief          Form for displaying EAX=0x00000027 CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           10/25/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +19,22 @@ namespace CPU_S
 {
     public partial class EAX00000027 : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX00000027()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x00000027: Asymmetric RDT-M (QoS monitoring) enumeration
+
+            textBoxEAX.Text = cpuHelper.GetEAX00000027EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX00000027EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX00000027ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX00000027EDXX();
+
+            #endregion
         }
     }
 }

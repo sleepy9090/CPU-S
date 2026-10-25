@@ -20,7 +20,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0xC0000000: Highest Centaur Extended Function
+            #region EAX=0xC0000000: Centaur and Zhaoxin - Highest Extended Function / Maximum Supported Leaf
 
             string cpuIdEAXC0000000EAX = cpuHelper.GetEAXC0000000EAXX();
             textBoxEAXC0000000EAX.Text = cpuIdEAXC0000000EAX;

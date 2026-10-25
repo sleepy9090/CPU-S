@@ -34,14 +34,14 @@
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
-            this.textBoxEAXC0000002EAX = new System.Windows.Forms.TextBox();
-            this.labelEAXC0000002EAX = new System.Windows.Forms.Label();
-            this.textBoxEAXC0000002EBX = new System.Windows.Forms.TextBox();
-            this.textBoxEAXC0000002ECX = new System.Windows.Forms.TextBox();
-            this.textBoxEAXC0000002EDX = new System.Windows.Forms.TextBox();
-            this.labelEAXC0000002EBX = new System.Windows.Forms.Label();
-            this.labelEAXC0000002ECX = new System.Windows.Forms.Label();
-            this.labelEAXC0000002EDX = new System.Windows.Forms.Label();
+            this.textBoxEAX = new System.Windows.Forms.TextBox();
+            this.labelEAX = new System.Windows.Forms.Label();
+            this.textBoxEBX = new System.Windows.Forms.TextBox();
+            this.textBoxECX = new System.Windows.Forms.TextBox();
+            this.textBoxEDX = new System.Windows.Forms.TextBox();
+            this.labelEBX = new System.Windows.Forms.Label();
+            this.labelECX = new System.Windows.Forms.Label();
+            this.labelEDX = new System.Windows.Forms.Label();
             this.groupBoxEAXC0000003.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
@@ -98,83 +98,83 @@
             // 
             // groupBoxAll
             // 
-            this.groupBoxAll.Controls.Add(this.textBoxEAXC0000002EAX);
-            this.groupBoxAll.Controls.Add(this.labelEAXC0000002EAX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAXC0000002EBX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAXC0000002ECX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAXC0000002EDX);
-            this.groupBoxAll.Controls.Add(this.labelEAXC0000002EBX);
-            this.groupBoxAll.Controls.Add(this.labelEAXC0000002ECX);
-            this.groupBoxAll.Controls.Add(this.labelEAXC0000002EDX);
+            this.groupBoxAll.Controls.Add(this.textBoxEAX);
+            this.groupBoxAll.Controls.Add(this.labelEAX);
+            this.groupBoxAll.Controls.Add(this.textBoxEBX);
+            this.groupBoxAll.Controls.Add(this.textBoxECX);
+            this.groupBoxAll.Controls.Add(this.textBoxEDX);
+            this.groupBoxAll.Controls.Add(this.labelEBX);
+            this.groupBoxAll.Controls.Add(this.labelECX);
+            this.groupBoxAll.Controls.Add(this.labelEDX);
             this.groupBoxAll.Location = new System.Drawing.Point(6, 19);
             this.groupBoxAll.Name = "groupBoxAll";
             this.groupBoxAll.Size = new System.Drawing.Size(252, 133);
             this.groupBoxAll.TabIndex = 40;
             this.groupBoxAll.TabStop = false;
             // 
-            // textBoxEAXC0000002EAX
+            // textBoxEAX
             // 
-            this.textBoxEAXC0000002EAX.Location = new System.Drawing.Point(40, 19);
-            this.textBoxEAXC0000002EAX.Name = "textBoxEAXC0000002EAX";
-            this.textBoxEAXC0000002EAX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAXC0000002EAX.TabIndex = 1;
+            this.textBoxEAX.Location = new System.Drawing.Point(40, 19);
+            this.textBoxEAX.Name = "textBoxEAX";
+            this.textBoxEAX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEAX.TabIndex = 1;
             // 
-            // labelEAXC0000002EAX
+            // labelEAX
             // 
-            this.labelEAXC0000002EAX.AutoSize = true;
-            this.labelEAXC0000002EAX.Location = new System.Drawing.Point(3, 22);
-            this.labelEAXC0000002EAX.Name = "labelEAXC0000002EAX";
-            this.labelEAXC0000002EAX.Size = new System.Drawing.Size(31, 13);
-            this.labelEAXC0000002EAX.TabIndex = 0;
-            this.labelEAXC0000002EAX.Text = "EAX:";
+            this.labelEAX.AutoSize = true;
+            this.labelEAX.Location = new System.Drawing.Point(3, 22);
+            this.labelEAX.Name = "labelEAX";
+            this.labelEAX.Size = new System.Drawing.Size(31, 13);
+            this.labelEAX.TabIndex = 0;
+            this.labelEAX.Text = "EAX:";
             // 
-            // textBoxEAXC0000002EBX
+            // textBoxEBX
             // 
-            this.textBoxEAXC0000002EBX.Location = new System.Drawing.Point(40, 45);
-            this.textBoxEAXC0000002EBX.Name = "textBoxEAXC0000002EBX";
-            this.textBoxEAXC0000002EBX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAXC0000002EBX.TabIndex = 2;
+            this.textBoxEBX.Location = new System.Drawing.Point(40, 45);
+            this.textBoxEBX.Name = "textBoxEBX";
+            this.textBoxEBX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEBX.TabIndex = 2;
             // 
-            // textBoxEAXC0000002ECX
+            // textBoxECX
             // 
-            this.textBoxEAXC0000002ECX.Location = new System.Drawing.Point(40, 71);
-            this.textBoxEAXC0000002ECX.Name = "textBoxEAXC0000002ECX";
-            this.textBoxEAXC0000002ECX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAXC0000002ECX.TabIndex = 3;
+            this.textBoxECX.Location = new System.Drawing.Point(40, 71);
+            this.textBoxECX.Name = "textBoxECX";
+            this.textBoxECX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxECX.TabIndex = 3;
             // 
-            // textBoxEAXC0000002EDX
+            // textBoxEDX
             // 
-            this.textBoxEAXC0000002EDX.Location = new System.Drawing.Point(40, 97);
-            this.textBoxEAXC0000002EDX.Name = "textBoxEAXC0000002EDX";
-            this.textBoxEAXC0000002EDX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAXC0000002EDX.TabIndex = 4;
+            this.textBoxEDX.Location = new System.Drawing.Point(40, 97);
+            this.textBoxEDX.Name = "textBoxEDX";
+            this.textBoxEDX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEDX.TabIndex = 4;
             // 
-            // labelEAXC0000002EBX
+            // labelEBX
             // 
-            this.labelEAXC0000002EBX.AutoSize = true;
-            this.labelEAXC0000002EBX.Location = new System.Drawing.Point(3, 48);
-            this.labelEAXC0000002EBX.Name = "labelEAXC0000002EBX";
-            this.labelEAXC0000002EBX.Size = new System.Drawing.Size(31, 13);
-            this.labelEAXC0000002EBX.TabIndex = 7;
-            this.labelEAXC0000002EBX.Text = "EBX:";
+            this.labelEBX.AutoSize = true;
+            this.labelEBX.Location = new System.Drawing.Point(3, 48);
+            this.labelEBX.Name = "labelEBX";
+            this.labelEBX.Size = new System.Drawing.Size(31, 13);
+            this.labelEBX.TabIndex = 7;
+            this.labelEBX.Text = "EBX:";
             // 
-            // labelEAXC0000002ECX
+            // labelECX
             // 
-            this.labelEAXC0000002ECX.AutoSize = true;
-            this.labelEAXC0000002ECX.Location = new System.Drawing.Point(3, 74);
-            this.labelEAXC0000002ECX.Name = "labelEAXC0000002ECX";
-            this.labelEAXC0000002ECX.Size = new System.Drawing.Size(31, 13);
-            this.labelEAXC0000002ECX.TabIndex = 8;
-            this.labelEAXC0000002ECX.Text = "ECX:";
+            this.labelECX.AutoSize = true;
+            this.labelECX.Location = new System.Drawing.Point(3, 74);
+            this.labelECX.Name = "labelECX";
+            this.labelECX.Size = new System.Drawing.Size(31, 13);
+            this.labelECX.TabIndex = 8;
+            this.labelECX.Text = "ECX:";
             // 
-            // labelEAXC0000002EDX
+            // labelEDX
             // 
-            this.labelEAXC0000002EDX.AutoSize = true;
-            this.labelEAXC0000002EDX.Location = new System.Drawing.Point(3, 100);
-            this.labelEAXC0000002EDX.Name = "labelEAXC0000002EDX";
-            this.labelEAXC0000002EDX.Size = new System.Drawing.Size(32, 13);
-            this.labelEAXC0000002EDX.TabIndex = 9;
-            this.labelEAXC0000002EDX.Text = "EDX:";
+            this.labelEDX.AutoSize = true;
+            this.labelEDX.Location = new System.Drawing.Point(3, 100);
+            this.labelEDX.Name = "labelEDX";
+            this.labelEDX.Size = new System.Drawing.Size(32, 13);
+            this.labelEDX.TabIndex = 9;
+            this.labelEDX.Text = "EDX:";
             // 
             // EAXC0000003
             // 
@@ -202,13 +202,13 @@
         private System.Windows.Forms.GroupBox groupBoxECX;
         private System.Windows.Forms.GroupBox groupBoxEBX;
         private System.Windows.Forms.GroupBox groupBoxAll;
-        private System.Windows.Forms.TextBox textBoxEAXC0000002EAX;
-        private System.Windows.Forms.Label labelEAXC0000002EAX;
-        private System.Windows.Forms.TextBox textBoxEAXC0000002EBX;
-        private System.Windows.Forms.TextBox textBoxEAXC0000002ECX;
-        private System.Windows.Forms.TextBox textBoxEAXC0000002EDX;
-        private System.Windows.Forms.Label labelEAXC0000002EBX;
-        private System.Windows.Forms.Label labelEAXC0000002ECX;
-        private System.Windows.Forms.Label labelEAXC0000002EDX;
+        private System.Windows.Forms.TextBox textBoxEAX;
+        private System.Windows.Forms.Label labelEAX;
+        private System.Windows.Forms.TextBox textBoxEBX;
+        private System.Windows.Forms.TextBox textBoxECX;
+        private System.Windows.Forms.TextBox textBoxEDX;
+        private System.Windows.Forms.Label labelEBX;
+        private System.Windows.Forms.Label labelECX;
+        private System.Windows.Forms.Label labelEDX;
     }
 }
