@@ -119,7 +119,7 @@
             this.groupBoxEAX4.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX4.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX4.Name = "groupBoxEAX4";
-            this.groupBoxEAX4.Size = new System.Drawing.Size(980, 701);
+            this.groupBoxEAX4.Size = new System.Drawing.Size(980, 655);
             this.groupBoxEAX4.TabIndex = 0;
             this.groupBoxEAX4.TabStop = false;
             this.groupBoxEAX4.Text = "EAX=0x00000004";
@@ -658,9 +658,9 @@
             this.labelCacheLevel.AutoSize = true;
             this.labelCacheLevel.Location = new System.Drawing.Point(8, 42);
             this.labelCacheLevel.Name = "labelCacheLevel";
-            this.labelCacheLevel.Size = new System.Drawing.Size(175, 13);
+            this.labelCacheLevel.Size = new System.Drawing.Size(169, 13);
             this.labelCacheLevel.TabIndex = 3;
-            this.labelCacheLevel.Text = "Cache Level (starting from 1) [5-11]:";
+            this.labelCacheLevel.Text = "Cache Level (starting from 1) [5-7]:";
             // 
             // textBoxCacheTypeHuman
             // 
@@ -769,7 +769,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 725);
+            this.ClientSize = new System.Drawing.Size(1004, 672);
             this.Controls.Add(this.groupBoxEAX4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
