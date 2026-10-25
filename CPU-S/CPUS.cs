@@ -1046,12 +1046,20 @@ namespace CPU_S
         private void eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Sub-leaf to query (0...n until EBX[15...0] = 0).
-            int i = 0;
-            while (int.Parse(cpuHelper.GetEAX0000000BEBXX(i)) != 0)
+            if (int.Parse(cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(0)) == 0)
             {
-                EAX0000000B eAX0000000B = new EAX0000000B(i);
-                eAX0000000B.Show();
-                i++;
+                MessageBox.Show("No Discrete AVX10 Features information available for this CPU at EAX=0x00000024.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                int i = 0;
+                while (int.Parse(cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(i)) != 0)
+                {
+                    //Console.WriteLine($"EAX0000000B - Sub-leaf {i} - EBX[15:0] = {cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(i)}");
+                    EAX0000000B eAX0000000B = new EAX0000000B(i);
+                    eAX0000000B.Show();
+                    i++;
+                }
             }
         }
 
@@ -1166,10 +1174,23 @@ namespace CPU_S
             eAX00000024ECX0.ShowDialog();
         }
 
-        private void eAX0x24ECX0x1DiscreteAVX10FeaturesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void eAX0x24ECX0xNDiscreteAVX10FeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000024ECX1 eAX00000024ECX1 = new EAX00000024ECX1();
-            eAX00000024ECX1.ShowDialog();
+            // Sub-leaf to query (0...n as per EAX reported by sub-leaf 0).
+            if (int.Parse(cpuHelper.GetEAX00000024EAXX()) == 0)
+            {
+                MessageBox.Show("No Discrete AVX10 Features information available for this CPU at EAX=0x00000024.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                int i = 0;
+                while (int.Parse(cpuHelper.GetEAX0000000BEBXX(i)) != 0)
+                {
+                    EAX00000024ECXN eAX00000024ECXN = new EAX00000024ECXN(i);
+                    eAX00000024ECXN.Show();
+                    i++;
+                }
+            }
         }
 
         private void eAX0x20000000HighestXeonPhiFunctionImplementedToolStripMenuItem_Click(object sender, EventArgs e)

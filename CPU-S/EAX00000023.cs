@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+    File           EAX00000023.cs
+    Brief          Form for displaying EAX=0x00000023 CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           10/25/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +19,23 @@ namespace CPU_S
 {
     public partial class EAX00000023 : Form
     {
+
+        private CPUHelper cpuHelper;
+
         public EAX00000023()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x00000023: Architectural perf mon extended information
+
+            textBoxEAX.Text = cpuHelper.GetEAX00000023EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX00000023EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX00000023ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX00000023EDXX();
+
+            #endregion
         }
     }
 }

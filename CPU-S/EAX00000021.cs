@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAX21.cs
-    Brief          Form for displaying EAX=0x21 CPU information.
+    File           EAX00000021.cs
+    Brief          Form for displaying EAX=0x00000021 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           10/25/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -20,19 +20,12 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x21: Reserved for TDX enumeration
+            #region EAX=0x00000021: Reserved for TDX enumeration
 
-            string cpuIdEAX21EAX = cpuHelper.GetEAX21EAXX();
-            textBoxEAX21EAX.Text = cpuIdEAX21EAX;
-
-            string cpuIdEAX21EBX = cpuHelper.GetEAX21EBXX();
-            textBoxEAX21EBX.Text = cpuIdEAX21EBX;
-
-            string cpuIdEAX21ECX = cpuHelper.GetEAX21ECXX();
-            textBoxEAX21ECX.Text = cpuIdEAX21ECX;
-
-            string cpuIdEAX21EDX = cpuHelper.GetEAX21EDXX();
-            textBoxEAX21EDX.Text = cpuIdEAX21EDX;
+            textBoxEAX.Text = cpuHelper.GetEAX00000021EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX00000021EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX00000021ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX00000021EDXX();
 
             #endregion
         }

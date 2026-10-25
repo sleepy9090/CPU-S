@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAX24ECX0.cs
-    Brief          Form for displaying EAX=0x24, ECX=0x0 CPU information.
+    File           EAX00000024ECX0.cs
+    Brief          Form for displaying EAX=0x00000024, ECX=0x00000000 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           10/25/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -20,19 +20,12 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX=0x24, ECX=0x0: AVX10 Converged Vector ISA
+            #region EAX=0x00000024, ECX=0x00000000: AVX10 Converged Vector ISA
 
-            string cpuIdEAX24ECX0EAX = cpuHelper.GetEAX24ECX0EAXX();
-            textBoxEAX24ECX0EAX.Text = cpuIdEAX24ECX0EAX;
-
-            string cpuIdEAX24ECX0EBX = cpuHelper.GetEAX24ECX0EBXX();
-            textBoxEAX24ECX0EBX.Text = cpuIdEAX24ECX0EBX;
-
-            string cpuIdEAX24ECX0ECX = cpuHelper.GetEAX24ECX0ECXX();
-            textBoxEAX24ECX0ECX.Text = cpuIdEAX24ECX0ECX;
-
-            string cpuIdEAX24ECX0EDX = cpuHelper.GetEAX24ECX0EDXX();
-            textBoxEAX24ECX0EDX.Text = cpuIdEAX24ECX0EDX;
+            textBoxEAX24ECX0EAX.Text = cpuHelper.GetEAX00000024EAXX();
+            textBoxEAX24ECX0EBX.Text = cpuHelper.GetEAX00000024EBXX();
+            textBoxEAX24ECX0ECX.Text = cpuHelper.GetEAX00000024ECXX();
+            textBoxEAX24ECX0EDX.Text = cpuHelper.GetEAX00000024EDXX();
 
             #endregion
         }

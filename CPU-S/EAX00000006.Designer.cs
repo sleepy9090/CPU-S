@@ -115,7 +115,7 @@
             this.groupBoxEAX6.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX6.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX6.Name = "groupBoxEAX6";
-            this.groupBoxEAX6.Size = new System.Drawing.Size(1236, 1213);
+            this.groupBoxEAX6.Size = new System.Drawing.Size(1236, 1003);
             this.groupBoxEAX6.TabIndex = 0;
             this.groupBoxEAX6.TabStop = false;
             this.groupBoxEAX6.Text = "EAX=0x00000006";
@@ -132,9 +132,9 @@
             this.groupBoxEDX.Controls.Add(this.labelEAX6EDX2_7_Reserved);
             this.groupBoxEDX.Controls.Add(this.checkBoxEfficiencyReportingSupported1);
             this.groupBoxEDX.Controls.Add(this.checkBoxPerformanceCapabilitySupported0);
-            this.groupBoxEDX.Location = new System.Drawing.Point(503, 928);
+            this.groupBoxEDX.Location = new System.Drawing.Point(507, 789);
             this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(530, 179);
+            this.groupBoxEDX.Size = new System.Drawing.Size(530, 199);
             this.groupBoxEDX.TabIndex = 44;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
@@ -239,9 +239,9 @@
             this.groupBoxECX.Controls.Add(this.checkBoxReserved2);
             this.groupBoxECX.Controls.Add(this.checkBoxACNT21);
             this.groupBoxECX.Controls.Add(this.checkBoxEffectiveFrequencyInterface0);
-            this.groupBoxECX.Location = new System.Drawing.Point(6, 1008);
+            this.groupBoxECX.Location = new System.Drawing.Point(6, 789);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(491, 199);
+            this.groupBoxECX.Size = new System.Drawing.Size(495, 199);
             this.groupBoxECX.TabIndex = 43;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
@@ -341,7 +341,7 @@
             this.groupBoxEBX.Controls.Add(this.labelEAX6_EBX4_31_Reserved);
             this.groupBoxEBX.Controls.Add(this.textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor);
             this.groupBoxEBX.Controls.Add(this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor);
-            this.groupBoxEBX.Location = new System.Drawing.Point(6, 928);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 19);
             this.groupBoxEBX.Name = "groupBoxEBX";
             this.groupBoxEBX.Size = new System.Drawing.Size(491, 74);
             this.groupBoxEBX.TabIndex = 42;
@@ -416,7 +416,7 @@
             this.groupBoxEAX.Controls.Add(this.checkBoxDTS0);
             this.groupBoxEAX.Location = new System.Drawing.Point(6, 158);
             this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(1027, 761);
+            this.groupBoxEAX.Size = new System.Drawing.Size(1031, 625);
             this.groupBoxEAX.TabIndex = 41;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "Thermal/power management feature bits in EAX";
@@ -424,7 +424,7 @@
             // checkBoxReserved31
             // 
             this.checkBoxReserved31.AutoSize = true;
-            this.checkBoxReserved31.Location = new System.Drawing.Point(6, 732);
+            this.checkBoxReserved31.Location = new System.Drawing.Point(600, 594);
             this.checkBoxReserved31.Name = "checkBoxReserved31";
             this.checkBoxReserved31.Size = new System.Drawing.Size(93, 17);
             this.checkBoxReserved31.TabIndex = 31;
@@ -434,7 +434,7 @@
             // checkBoxReserved30
             // 
             this.checkBoxReserved30.AutoSize = true;
-            this.checkBoxReserved30.Location = new System.Drawing.Point(6, 709);
+            this.checkBoxReserved30.Location = new System.Drawing.Point(501, 594);
             this.checkBoxReserved30.Name = "checkBoxReserved30";
             this.checkBoxReserved30.Size = new System.Drawing.Size(93, 17);
             this.checkBoxReserved30.TabIndex = 30;
@@ -444,7 +444,7 @@
             // checkBoxReserved29
             // 
             this.checkBoxReserved29.AutoSize = true;
-            this.checkBoxReserved29.Location = new System.Drawing.Point(6, 686);
+            this.checkBoxReserved29.Location = new System.Drawing.Point(402, 594);
             this.checkBoxReserved29.Name = "checkBoxReserved29";
             this.checkBoxReserved29.Size = new System.Drawing.Size(93, 17);
             this.checkBoxReserved29.TabIndex = 29;
@@ -454,7 +454,7 @@
             // checkBoxReserved28
             // 
             this.checkBoxReserved28.AutoSize = true;
-            this.checkBoxReserved28.Location = new System.Drawing.Point(6, 663);
+            this.checkBoxReserved28.Location = new System.Drawing.Point(303, 594);
             this.checkBoxReserved28.Name = "checkBoxReserved28";
             this.checkBoxReserved28.Size = new System.Drawing.Size(93, 17);
             this.checkBoxReserved28.TabIndex = 28;
@@ -464,7 +464,7 @@
             // checkBoxReserved27
             // 
             this.checkBoxReserved27.AutoSize = true;
-            this.checkBoxReserved27.Location = new System.Drawing.Point(6, 640);
+            this.checkBoxReserved27.Location = new System.Drawing.Point(204, 594);
             this.checkBoxReserved27.Name = "checkBoxReserved27";
             this.checkBoxReserved27.Size = new System.Drawing.Size(93, 17);
             this.checkBoxReserved27.TabIndex = 27;
@@ -474,7 +474,7 @@
             // checkBoxReserved26
             // 
             this.checkBoxReserved26.AutoSize = true;
-            this.checkBoxReserved26.Location = new System.Drawing.Point(6, 617);
+            this.checkBoxReserved26.Location = new System.Drawing.Point(105, 594);
             this.checkBoxReserved26.Name = "checkBoxReserved26";
             this.checkBoxReserved26.Size = new System.Drawing.Size(93, 17);
             this.checkBoxReserved26.TabIndex = 26;
@@ -839,7 +839,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 1234);
+            this.ClientSize = new System.Drawing.Size(1260, 1028);
             this.Controls.Add(this.groupBoxEAX6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;

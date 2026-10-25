@@ -1,6 +1,6 @@
 ﻿namespace CPU_S
 {
-    partial class EAX00000024
+    partial class EAX00000024ECXN
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxEAX00000024 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEAX00000024ECXN = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
@@ -42,30 +42,30 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
-            this.groupBoxEAX00000024.SuspendLayout();
+            this.groupBoxEAX00000024ECXN.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBoxEAX00000024
+            // groupBoxEAX00000024ECXN
             // 
-            this.groupBoxEAX00000024.Controls.Add(this.groupBoxEAX);
-            this.groupBoxEAX00000024.Controls.Add(this.groupBoxEDX);
-            this.groupBoxEAX00000024.Controls.Add(this.groupBoxECX);
-            this.groupBoxEAX00000024.Controls.Add(this.groupBoxEBX);
-            this.groupBoxEAX00000024.Controls.Add(this.groupBoxAll);
-            this.groupBoxEAX00000024.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxEAX00000024.Name = "groupBoxEAX00000024";
-            this.groupBoxEAX00000024.Size = new System.Drawing.Size(776, 426);
-            this.groupBoxEAX00000024.TabIndex = 10;
-            this.groupBoxEAX00000024.TabStop = false;
-            this.groupBoxEAX00000024.Text = "EAX=0x00000024";
+            this.groupBoxEAX00000024ECXN.Controls.Add(this.groupBoxEAX);
+            this.groupBoxEAX00000024ECXN.Controls.Add(this.groupBoxEDX);
+            this.groupBoxEAX00000024ECXN.Controls.Add(this.groupBoxECX);
+            this.groupBoxEAX00000024ECXN.Controls.Add(this.groupBoxEBX);
+            this.groupBoxEAX00000024ECXN.Controls.Add(this.groupBoxAll);
+            this.groupBoxEAX00000024ECXN.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxEAX00000024ECXN.Name = "groupBoxEAX00000024ECXN";
+            this.groupBoxEAX00000024ECXN.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX00000024ECXN.TabIndex = 12;
+            this.groupBoxEAX00000024ECXN.TabStop = false;
+            this.groupBoxEAX00000024ECXN.Text = "EAX=0x00000024, ECX=0x00000001..n";
             // 
             // groupBoxEAX
             // 
             this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
             this.groupBoxEAX.Name = "groupBoxEAX";
             this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEAX.TabIndex = 52;
+            this.groupBoxEAX.TabIndex = 56;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
@@ -74,7 +74,7 @@
             this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
             this.groupBoxEDX.Name = "groupBoxEDX";
             this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEDX.TabIndex = 51;
+            this.groupBoxEDX.TabIndex = 55;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
@@ -83,7 +83,7 @@
             this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
             this.groupBoxECX.Name = "groupBoxECX";
             this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxECX.TabIndex = 50;
+            this.groupBoxECX.TabIndex = 54;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
@@ -92,7 +92,7 @@
             this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
             this.groupBoxEBX.Name = "groupBoxEBX";
             this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEBX.TabIndex = 49;
+            this.groupBoxEBX.TabIndex = 53;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
             // 
@@ -176,17 +176,17 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
-            // EAX00000024
+            // EAX00000024ECXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBoxEAX00000024);
+            this.Controls.Add(this.groupBoxEAX00000024ECXN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "EAX00000024";
-            this.Text = "EAX=0x00000024 - AVX10 Information";
-            this.groupBoxEAX00000024.ResumeLayout(false);
+            this.Name = "EAX00000024ECXN";
+            this.Text = "EAX=0x00000024, ECX=0x1: Discrete AVX10 Features";
+            this.groupBoxEAX00000024ECXN.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
@@ -195,11 +195,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxEAX00000024;
-        private System.Windows.Forms.GroupBox groupBoxEAX;
-        private System.Windows.Forms.GroupBox groupBoxEDX;
-        private System.Windows.Forms.GroupBox groupBoxECX;
-        private System.Windows.Forms.GroupBox groupBoxEBX;
+        private System.Windows.Forms.GroupBox groupBoxEAX00000024ECXN;
         private System.Windows.Forms.GroupBox groupBoxAll;
         private System.Windows.Forms.TextBox textBoxEAX;
         private System.Windows.Forms.Label labelEAX;
@@ -209,5 +205,9 @@
         private System.Windows.Forms.Label labelEBX;
         private System.Windows.Forms.Label labelECX;
         private System.Windows.Forms.Label labelEDX;
+        private System.Windows.Forms.GroupBox groupBoxEAX;
+        private System.Windows.Forms.GroupBox groupBoxEDX;
+        private System.Windows.Forms.GroupBox groupBoxECX;
+        private System.Windows.Forms.GroupBox groupBoxEBX;
     }
 }
