@@ -19,9 +19,22 @@ namespace CPU_S
 {
     public partial class EAX40000010 : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX40000010()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x40000010: Reserved for Hypervisors - Frequency
+
+            textBoxEAX.Text = cpuHelper.GetEAX40000010EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX40000010EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX40000010ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX40000010EDXX();
+
+            #endregion
         }
     }
 }

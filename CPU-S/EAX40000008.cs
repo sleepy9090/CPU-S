@@ -19,9 +19,22 @@ namespace CPU_S
 {
     public partial class EAX40000008 : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX40000008()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x40000008: Reserved for Hypervisors - Hypervisor SVM features
+
+            textBoxEAX.Text = cpuHelper.GetEAX40000008EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX40000008EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX40000008ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX40000008EDXX();
+
+            #endregion
         }
     }
 }

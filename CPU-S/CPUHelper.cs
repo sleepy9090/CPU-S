@@ -19336,6 +19336,106 @@ namespace CPU_S
 
         #endregion
 
+        #region EAX=0x00005A4E: Rise mP6 prank leaf
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00005A4EEAX();
+
+        public string GetEAX00005A4EEAXX()
+        {
+            try
+            {
+                IntPtr eAX00005A4EEAXPtr = GetEAX00005A4EEAX();
+                string eAX00005A4EEAXString = Marshal.PtrToStringAnsi(eAX00005A4EEAXPtr);
+
+                return eAX00005A4EEAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00005A4EEBX();
+
+        public string GetEAX00005A4EEBXX()
+        {
+            try
+            {
+                IntPtr eAX00005A4EEBXPtr = GetEAX00005A4EEBX();
+                string eAX00005A4EEBXString = Marshal.PtrToStringAnsi(eAX00005A4EEBXPtr);
+
+                return eAX00005A4EEBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00005A4EECX();
+
+        public string GetEAX00005A4EECXX()
+        {
+            try
+            {
+                IntPtr eAX00005A4EECXPtr = GetEAX00005A4EECX();
+                string eAX00005A4EECXString = Marshal.PtrToStringAnsi(eAX00005A4EECXPtr);
+
+                return eAX00005A4EECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00005A4EEDX();
+
+        public string GetEAX00005A4EEDXX()
+        {
+            try
+            {
+                IntPtr eAX00005A4EEDXPtr = GetEAX00005A4EEDX();
+                string eAX00005A4EEDXString = Marshal.PtrToStringAnsi(eAX00005A4EEDXPtr);
+
+                return eAX00005A4EEDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        #endregion
+
         #region EAX=0x20000000: Highest Xeon Phi Function Implemented
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
@@ -24145,7 +24245,7 @@ namespace CPU_S
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr GetEAX40000010ECX();
 
-        public string GetEAX40000010ECCXX()
+        public string GetEAX40000010ECXX()
         {
             try
             {
@@ -24167,16 +24267,506 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX40000010EEDX();
+        public static extern IntPtr GetEAX40000010EDX();
 
-        public string GetEAX40000010EEDXX()
+        public string GetEAX40000010EDXX()
         {
             try
             {
-                IntPtr eAX40000010EEDXPtr = GetEAX40000010EEDX();
-                string eAX40000010EEDXString = Marshal.PtrToStringAnsi(eAX40000010EEDXPtr);
+                IntPtr eAX40000010EDXPtr = GetEAX40000010EDX();
+                string eAX40000010EDXString = Marshal.PtrToStringAnsi(eAX40000010EDXPtr);
 
-                return eAX40000010EEDXString;
+                return eAX40000010EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        #endregion
+
+        #region EAX=0x40000080: SYNDBG vendor plus max (deprecated) / unknown/undocumented
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000080EAX();
+        public string GetEAX40000080EAXX()
+        {
+            try
+            {
+                IntPtr eAX40000080EAXPtr = GetEAX40000080EAX();
+                string eAX40000080EAXString = Marshal.PtrToStringAnsi(eAX40000080EAXPtr);
+
+                return eAX40000080EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000080EBX();
+        public string GetEAX40000080EBXX()
+        {
+            try
+            {
+                IntPtr eAX40000080EBXPtr = GetEAX40000080EBX();
+                string eAX40000080EBXString = Marshal.PtrToStringAnsi(eAX40000080EBXPtr);
+
+                return eAX40000080EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000080ECX();
+
+        public string GetEAX40000080ECXX()
+        {
+            try
+            {
+                IntPtr eAX40000080ECXPtr = GetEAX40000080ECX();
+                string eAX40000080ECXString = Marshal.PtrToStringAnsi(eAX40000080ECXPtr);
+
+                return eAX40000080ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000080EDX();
+
+        public string GetEAX40000080EDXX()
+        {
+            try
+            {
+                IntPtr eAX40000080EDXPtr = GetEAX40000080EDX();
+                string eAX40000080EDXString = Marshal.PtrToStringAnsi(eAX40000080EDXPtr);
+
+                return eAX40000080EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        #endregion
+
+        #region EAX=0x40000081: SYNDBG interface (deprecated) / undocumented/Virtual Stack Interface
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000081EAX();
+        public string GetEAX40000081EAXX()
+        {
+            try
+            {
+                IntPtr eAX40000081EAXPtr = GetEAX40000081EAX();
+                string eAX40000081EAXString = Marshal.PtrToStringAnsi(eAX40000081EAXPtr);
+
+                return eAX40000081EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000081EBX();
+        public string GetEAX40000081EBXX()
+        {
+            try
+            {
+                IntPtr eAX40000081EBXPtr = GetEAX40000081EBX();
+                string eAX40000081EBXString = Marshal.PtrToStringAnsi(eAX40000081EBXPtr);
+
+                return eAX40000081EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000081ECX();
+
+        public string GetEAX40000081ECXX()
+        {
+            try
+            {
+                IntPtr eAX40000081ECXPtr = GetEAX40000081ECX();
+                string eAX40000081ECXString = Marshal.PtrToStringAnsi(eAX40000081ECXPtr);
+
+                return eAX40000081ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000081EDX();
+
+        public string GetEAX40000081EDXX()
+        {
+            try
+            {
+                IntPtr eAX40000081EDXPtr = GetEAX40000081EDX();
+                string eAX40000081EDXString = Marshal.PtrToStringAnsi(eAX40000081EDXPtr);
+
+                return eAX40000081EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        #endregion
+
+        #region EAX=0x40000082: SYNDBG platform capabilities (deprecated) / undocumented/Virtual Stack Properties
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000082EAX();
+        public string GetEAX40000082EAXX()
+        {
+            try
+            {
+                IntPtr eAX40000082EAXPtr = GetEAX40000082EAX();
+                string eAX40000082EAXString = Marshal.PtrToStringAnsi(eAX40000082EAXPtr);
+
+                return eAX40000082EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000082EBX();
+        public string GetEAX40000082EBXX()
+        {
+            try
+            {
+                IntPtr eAX40000082EBXPtr = GetEAX40000082EBX();
+                string eAX40000082EBXString = Marshal.PtrToStringAnsi(eAX40000082EBXPtr);
+
+                return eAX40000082EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000082ECX();
+
+        public string GetEAX40000082ECXX()
+        {
+            try
+            {
+                IntPtr eAX40000082ECXPtr = GetEAX40000082ECX();
+                string eAX40000082ECXString = Marshal.PtrToStringAnsi(eAX40000082ECXPtr);
+
+                return eAX40000082ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX40000082EDX();
+
+        public string GetEAX40000082EDXX()
+        {
+            try
+            {
+                IntPtr eAX40000082EDXPtr = GetEAX40000082EDX();
+                string eAX40000082EDXString = Marshal.PtrToStringAnsi(eAX40000082EDXPtr);
+
+                return eAX40000082EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        #endregion
+
+        #region EAX=0x4C780001: Get supervisor information - Linux flags
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780001EAX();
+        public string GetEAX4C780001EAXX()
+        {
+            try
+            {
+                IntPtr eAX4C780001EAXPtr = GetEAX4C780001EAX();
+                string eAX4C780001EAXString = Marshal.PtrToStringAnsi(eAX4C780001EAXPtr);
+
+                return eAX4C780001EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780001EBX();
+        public string GetEAX4C780001EBXX()
+        {
+            try
+            {
+                IntPtr eAX4C780001EBXPtr = GetEAX4C780001EBX();
+                string eAX4C780001EBXString = Marshal.PtrToStringAnsi(eAX4C780001EBXPtr);
+
+                return eAX4C780001EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780001ECX();
+
+        public string GetEAX4C780001ECXX()
+        {
+            try
+            {
+                IntPtr eAX4C780001ECXPtr = GetEAX4C780001ECX();
+                string eAX4C780001ECXString = Marshal.PtrToStringAnsi(eAX4C780001ECXPtr);
+
+                return eAX4C780001ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780001EDX();
+
+        public string GetEAX4C780001EDXX()
+        {
+            try
+            {
+                IntPtr eAX4C780001EDXPtr = GetEAX4C780001EDX();
+                string eAX4C780001EDXString = Marshal.PtrToStringAnsi(eAX4C780001EDXPtr);
+
+                return eAX4C780001EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        #endregion
+
+        #region EAX=0x4C780002: Get supervisor information - Linux bugs
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780002EAX();
+        public string GetEAX4C780002EAXX()
+        {
+            try
+            {
+                IntPtr eAX4C780002EAXPtr = GetEAX4C780002EAX();
+                string eAX4C780002EAXString = Marshal.PtrToStringAnsi(eAX4C780002EAXPtr);
+
+                return eAX4C780002EAXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780002EBX();
+        public string GetEAX4C780002EBXX()
+        {
+            try
+            {
+                IntPtr eAX4C780002EBXPtr = GetEAX4C780002EBX();
+                string eAX4C780002EBXString = Marshal.PtrToStringAnsi(eAX4C780002EBXPtr);
+
+                return eAX4C780002EBXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780002ECX();
+
+        public string GetEAX4C780002ECXX()
+        {
+            try
+            {
+                IntPtr eAX4C780002ECXPtr = GetEAX4C780002ECX();
+                string eAX4C780002ECXString = Marshal.PtrToStringAnsi(eAX4C780002ECXPtr);
+
+                return eAX4C780002ECXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX4C780002EDX();
+
+        public string GetEAX4C780002EDXX()
+        {
+            try
+            {
+                IntPtr eAX4C780002EDXPtr = GetEAX4C780002EDX();
+                string eAX4C780002EDXString = Marshal.PtrToStringAnsi(eAX4C780002EDXPtr);
+
+                return eAX4C780002EDXString;
             }
             catch (DllNotFoundException ex)
             {

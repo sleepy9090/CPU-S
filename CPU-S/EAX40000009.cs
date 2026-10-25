@@ -19,9 +19,22 @@ namespace CPU_S
 {
     public partial class EAX40000009 : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX40000009()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x40000009: Reserved for Hypervisors - Nested hypervisor feature identification
+
+            textBoxEAX.Text = cpuHelper.GetEAX40000009EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX40000009EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX40000009ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX40000009EDXX();
+
+            #endregion
         }
     }
 }

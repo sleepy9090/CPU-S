@@ -19,9 +19,22 @@ namespace CPU_S
 {
     public partial class EAX40000082 : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX40000082()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x40000082: SYNDBG platform capabilities (deprecated) / undocumented/Virtual Stack Properties
+
+            textBoxEAX.Text = cpuHelper.GetEAX40000082EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX40000082EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX40000082ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX40000082EDXX();
+
+            #endregion
         }
     }
 }

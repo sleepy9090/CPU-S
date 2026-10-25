@@ -19,9 +19,24 @@ namespace CPU_S
 {
     public partial class EAX4000000B : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX4000000B()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x4000000B: Reserved for Hypervisors - Unknown/Undocumented
+
+            textBoxEAX.Text = cpuHelper.GetEAX4000000BEAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX4000000BEBXX();
+            textBoxECX.Text = cpuHelper.GetEAX4000000BECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX4000000BEDXX();
+
+            #endregion
         }
     }
 }

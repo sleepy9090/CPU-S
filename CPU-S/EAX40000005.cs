@@ -19,9 +19,22 @@ namespace CPU_S
 {
     public partial class EAX40000005 : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX40000005()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
+
+            #region EAX=0x40000005: Reserved for Hypervisors - Limits
+
+            textBoxEAX.Text = cpuHelper.GetEAX40000005EAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX40000005EBXX();
+            textBoxECX.Text = cpuHelper.GetEAX40000005ECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX40000005EDXX();
+
+            #endregion
         }
     }
 }
