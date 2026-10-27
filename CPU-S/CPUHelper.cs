@@ -23384,6 +23384,102 @@ namespace CPU_S
             }
         }
 
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX40000005EAX0_31_MaximumSupportedVirtualProcessors();
+
+        public string GetEAX40000005EAX0_31_MaximumSupportedVirtualProcessorsX()
+        {
+            try
+            {
+                int eAX40000005EAX0_31_MaximumSupportedVirtualProcessorsValue = GetEAX40000005EAX0_31_MaximumSupportedVirtualProcessors();
+                string eAX40000005EAX0_31_MaximumSupportedVirtualProcessorsString = eAX40000005EAX0_31_MaximumSupportedVirtualProcessorsValue.ToString();
+
+                return eAX40000005EAX0_31_MaximumSupportedVirtualProcessorsString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX40000005EBX0_31_MaximumSupportedLogicalProcessors();
+
+        public string GetEAX40000005EBX0_31_MaximumSupportedLogicalProcessorsX()
+        {
+            try
+            {
+                int eAX40000005EBX0_31_MaximumSupportedLogicalProcessorValue = GetEAX40000005EBX0_31_MaximumSupportedLogicalProcessors();
+                string eAX40000005EBX0_31_MaximumSupportedLogicalProcessorString = eAX40000005EBX0_31_MaximumSupportedLogicalProcessorValue.ToString();
+
+                return eAX40000005EBX0_31_MaximumSupportedLogicalProcessorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemapping();
+
+        public string GetEAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemappingX()
+        {
+            try
+            {
+                int eAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemappingValue = GetEAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemapping();
+                string eAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemappingString = eAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemappingValue.ToString();
+
+                return eAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemappingString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX40000005EDX0_31_Reserved();
+
+        public string GetEAX40000005EDX0_31_ReservedX()
+        {
+            try
+            {
+                int eAX40000005EDX0_31_ReservedValue = GetEAX40000005EDX0_31_Reserved();
+                string eAX40000005EDX0_31_ReservedString = eAX40000005EDX0_31_ReservedValue.ToString();
+
+                return eAX40000005EDX0_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
         #endregion
 
         #region EAX=0x40000006: Reserved for Hypervisors - Hardware Features detected and in use

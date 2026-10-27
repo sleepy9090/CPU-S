@@ -34,6 +34,11 @@ namespace CPU_S
             textBoxECX.Text = cpuHelper.GetEAX40000005ECXX();
             textBoxEDX.Text = cpuHelper.GetEAX40000005EDXX();
 
+            textBoxMaximumSupportedVirtualProcessors.Text = cpuHelper.GetEAX40000005EAX0_31_MaximumSupportedVirtualProcessorsX();
+            textBoxMaximumSupportedLogicalProcessors.Text = cpuHelper.GetEAX40000005EBX0_31_MaximumSupportedLogicalProcessorsX();
+            textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.Text = cpuHelper.GetEAX40000005ECX0_31_MaximumSupportedPhysicalInterruptVectorsForRemappingX();
+            textBoxReserved.Text = cpuHelper.GetEAX40000005EDX0_31_ReservedX();
+
             #endregion
         }
     }
