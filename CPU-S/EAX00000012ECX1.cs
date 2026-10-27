@@ -21,10 +21,10 @@ namespace CPU_S
 
             #region EAX=0x00000012, ECX=0x00000001: SGX Capabilities (1=SECS)
 
-            //textBoxEAX00000012EAX.Text = cpuHelper.GetEAX00000012ECX1EAXX();
-            //textBoxEAX00000012EBX.Text = cpuHelper.GetEAX00000012ECX1EBXX();
-            //textBoxEAX00000012ECX.Text = cpuHelper.GetEAX00000012ECX1ECXX();
-            //textBoxEAX00000012EDX.Text = cpuHelper.GetEAX00000012ECX1EDXX();
+            textBoxEAX00000012EAX.Text = cpuHelper.GetEAX00000012ECX1EAXX();
+            textBoxEAX00000012EBX.Text = cpuHelper.GetEAX00000012ECX1EBXX();
+            textBoxEAX00000012ECX.Text = cpuHelper.GetEAX00000012ECX1ECXX();
+            textBoxEAX00000012EDX.Text = cpuHelper.GetEAX00000012ECX1EDXX();
 
             #endregion
         }

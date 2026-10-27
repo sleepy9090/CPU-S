@@ -42,12 +42,19 @@
             this.labelEAX12EBX = new System.Windows.Forms.Label();
             this.labelEAX12ECX = new System.Windows.Forms.Label();
             this.labelEAX12EDX = new System.Windows.Forms.Label();
+            this.buttonNext = new System.Windows.Forms.Button();
+            this.groupBoxCurrent = new System.Windows.Forms.GroupBox();
+            this.labelCurrentN = new System.Windows.Forms.Label();
+            this.textBoxCurrentN = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000012.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
+            this.groupBoxCurrent.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX00000012
             // 
+            this.groupBoxEAX00000012.Controls.Add(this.groupBoxCurrent);
+            this.groupBoxEAX00000012.Controls.Add(this.buttonNext);
             this.groupBoxEAX00000012.Controls.Add(this.groupBoxEAX);
             this.groupBoxEAX00000012.Controls.Add(this.groupBoxEDX);
             this.groupBoxEAX00000012.Controls.Add(this.groupBoxECX);
@@ -176,17 +183,58 @@
             this.labelEAX12EDX.TabIndex = 9;
             this.labelEAX12EDX.Text = "EDX:";
             // 
+            // buttonNext
+            // 
+            this.buttonNext.Location = new System.Drawing.Point(695, 397);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(75, 23);
+            this.buttonNext.TabIndex = 57;
+            this.buttonNext.Text = "&Next";
+            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+            // 
+            // groupBoxCurrent
+            // 
+            this.groupBoxCurrent.Controls.Add(this.labelCurrentN);
+            this.groupBoxCurrent.Controls.Add(this.textBoxCurrentN);
+            this.groupBoxCurrent.Location = new System.Drawing.Point(6, 158);
+            this.groupBoxCurrent.Name = "groupBoxCurrent";
+            this.groupBoxCurrent.Size = new System.Drawing.Size(93, 54);
+            this.groupBoxCurrent.TabIndex = 58;
+            this.groupBoxCurrent.TabStop = false;
+            this.groupBoxCurrent.Text = "Current";
+            // 
+            // labelCurrentN
+            // 
+            this.labelCurrentN.AutoSize = true;
+            this.labelCurrentN.Location = new System.Drawing.Point(6, 22);
+            this.labelCurrentN.Name = "labelCurrentN";
+            this.labelCurrentN.Size = new System.Drawing.Size(21, 13);
+            this.labelCurrentN.TabIndex = 1;
+            this.labelCurrentN.Text = "N=";
+            // 
+            // textBoxCurrentN
+            // 
+            this.textBoxCurrentN.Location = new System.Drawing.Point(30, 19);
+            this.textBoxCurrentN.Name = "textBoxCurrentN";
+            this.textBoxCurrentN.Size = new System.Drawing.Size(50, 20);
+            this.textBoxCurrentN.TabIndex = 0;
+            // 
             // EAX00000012ECXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX00000012);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "EAX00000012ECXN";
-            this.Text = "EAX00000012ECXN";
+            this.Text = "EAX=0x00000012, ECX=0x00000002 to n: SGX Resources (2...n=EPC)";
             this.groupBoxEAX00000012.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
+            this.groupBoxCurrent.ResumeLayout(false);
+            this.groupBoxCurrent.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -207,5 +255,9 @@
         private System.Windows.Forms.Label labelEAX12EBX;
         private System.Windows.Forms.Label labelEAX12ECX;
         private System.Windows.Forms.Label labelEAX12EDX;
+        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.GroupBox groupBoxCurrent;
+        private System.Windows.Forms.Label labelCurrentN;
+        private System.Windows.Forms.TextBox textBoxCurrentN;
     }
 }
