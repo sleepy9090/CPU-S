@@ -1083,7 +1083,7 @@ namespace CPU_S
 
         private void eAX0xDXSAVEFeaturesAndStateComponentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000000DEAX0 eAX0000000D = new EAX0000000DEAX0();
+            EAX0000000D eAX0000000D = new EAX0000000D();
             eAX0000000D.ShowDialog();
         }
 

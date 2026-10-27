@@ -15117,16 +15117,16 @@ namespace CPU_S
         #region EAX=0x00000012: SGX Capabilities
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX12EAX();
+        public static extern IntPtr GetEAX00000012EAX();
 
-        public string GetEAX12EAXX()
+        public string GetEAX00000012EAXX()
         {
             try
             {
-                IntPtr eAX12EAXPtr = GetEAX12EAX();
-                string eAX12EAXString = Marshal.PtrToStringAnsi(eAX12EAXPtr);
+                IntPtr eAX00000012EAXPtr = GetEAX00000012EAX();
+                string eAX00000012EAXString = Marshal.PtrToStringAnsi(eAX00000012EAXPtr);
 
-                return eAX12EAXString;
+                return eAX00000012EAXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -15141,16 +15141,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX12EBX();
+        public static extern IntPtr GetEAX00000012EBX();
 
-        public string GetEAX12EBXX()
+        public string GetEAX00000012EBXX()
         {
             try
             {
-                IntPtr eAX12EBXPtr = GetEAX12EBX();
-                string eAX12EBXString = Marshal.PtrToStringAnsi(eAX12EBXPtr);
+                IntPtr eAX00000012EBXPtr = GetEAX00000012EBX();
+                string eAX00000012EBXString = Marshal.PtrToStringAnsi(eAX00000012EBXPtr);
 
-                return eAX12EBXString;
+                return eAX00000012EBXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -15165,16 +15165,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX12ECX();
+        public static extern IntPtr GetEAX00000012ECX();
 
-        public string GetEAX12ECXX()
+        public string GetEAX00000012ECXX()
         {
             try
             {
-                IntPtr eAX12ECXPtr = GetEAX12ECX();
-                string eAX12ECXString = Marshal.PtrToStringAnsi(eAX12ECXPtr);
+                IntPtr eAX00000012ECXPtr = GetEAX00000012ECX();
+                string eAX00000012ECXString = Marshal.PtrToStringAnsi(eAX00000012ECXPtr);
 
-                return eAX12ECXString;
+                return eAX00000012ECXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -15189,16 +15189,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX12EDX();
+        public static extern IntPtr GetEAX00000012EDX();
 
-        public string GetEAX12EDXX()
+        public string GetEAX00000012EDXX()
         {
             try
             {
-                IntPtr eAX12EDXPtr = GetEAX12EDX();
-                string eAX12EDXString = Marshal.PtrToStringAnsi(eAX12EDXPtr);
+                IntPtr eAX00000012EDXPtr = GetEAX00000012EDX();
+                string eAX00000012EDXString = Marshal.PtrToStringAnsi(eAX00000012EDXPtr);
 
-                return eAX12EDXString;
+                return eAX00000012EDXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -32568,8 +32568,6 @@ namespace CPU_S
         }
 
         #endregion
-
-
 
     }
 }
