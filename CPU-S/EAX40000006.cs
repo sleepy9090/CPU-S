@@ -35,6 +35,10 @@ namespace CPU_S
             textBoxECX.Text = cpuHelper.GetEAX40000006ECXX();
             textBoxEDX.Text = cpuHelper.GetEAX40000006EDXX();
 
+            checkBoxAPICOverlayAssist.Checked = cpuHelper.GetEAX40000006EAX0_APICOverlayAssistIsSupportedX();
+            checkBoxMSRBitmaps.Checked = cpuHelper.GetEAX40000006EAX1_MSRBitmapsIsSupportedX();
+
+
             #endregion
         }
     }

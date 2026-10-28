@@ -25,10 +25,7 @@ namespace CPU_S
 
         ManagementObjectCollection cpus;
 
-        ManagementObjectSearcher searcher2;
-
-        /* If true, outputs to console for debugging purposes. */
-        bool isDebug = false;
+        ManagementObjectSearcher managementObjectSearcher;
 
         int counter = 0;
 
@@ -49,7 +46,7 @@ namespace CPU_S
             }
             comboBoxCPU.SelectedIndex = 0;
 
-            searcher2 = new ManagementObjectSearcher("SELECT * FROM Win32_PerfFormattedData_PerfOS_Processor");
+            managementObjectSearcher = new ManagementObjectSearcher("SELECT * FROM Win32_PerfFormattedData_PerfOS_Processor");
 
             cpu = new ManagementObjectSearcher("SELECT * FROM Win32_Processor")
                                                .Get()
@@ -244,7 +241,7 @@ namespace CPU_S
             }
             
 
-            foreach (ManagementObject managementObject in searcher2.Get())
+            foreach (ManagementObject managementObject in managementObjectSearcher.Get())
             {
                 try
                 {
