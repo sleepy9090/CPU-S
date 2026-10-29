@@ -29064,6 +29064,682 @@ namespace CPU_S
             }
         }
 
+        //EAX
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX80000007EAX0_7_NumberOfMonitors();
+
+        public string GetEAX80000007EAX0_7_NumberOfMonitorsX()
+        {
+            try
+            {
+                int eAX80000007EAX0_7_NumberOfMonitorsValue = GetEAX80000007EAX0_7_NumberOfMonitors();
+                string eAX80000007EAX0_7_NumberOfMonitorsString = eAX80000007EAX0_7_NumberOfMonitorsValue.ToString();
+
+                return eAX80000007EAX0_7_NumberOfMonitorsString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX80000007EAX8_15_Version();
+
+        public string GetEAX80000007EAX8_15_VersionX()
+        {
+            try
+            {
+                int eAX80000007EAX8_15_VersionValue = GetEAX80000007EAX8_15_Version();
+                string eAX80000007EAX8_15_VersionString = eAX80000007EAX8_15_VersionValue.ToString();
+
+                return eAX80000007EAX8_15_VersionString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX80000007EAX16_31_MaximumWrapTimeInMs();
+
+        public string GetEAX80000007EAX16_31_MaximumWrapTimeInMsX()
+        {
+            try
+            {
+                int eAX80000007EAX16_31_MaximumWrapTimeInMsValue = GetEAX80000007EAX16_31_MaximumWrapTimeInMs();
+                string eAX80000007EAX16_31_MaximumWrapTimeInMsString = eAX80000007EAX16_31_MaximumWrapTimeInMsValue.ToString();
+
+                return eAX80000007EAX16_31_MaximumWrapTimeInMsString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        //EBX
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EBX0_MCAOVR_IsSupported();
+
+        public bool GetEAX80000007EBX0_MCAOVR_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EBX0_MCAOVR_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EBX0_SUCCOR_IsSupported();
+
+        public bool GetEAX80000007EBX0_SUCCOR_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EBX0_SUCCOR_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EBX0_HWA_IsSupported();
+
+        public bool GetEAX80000007EBX0_HWA_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EBX0_HWA_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EBX0_SCMCA_IsSupported();
+
+        public bool GetEAX80000007EBX0_SCMCA_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EBX0_SCMCA_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EBX0_PFEH_IsSupported();
+
+        public bool GetEAX80000007EBX0_PFEH_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EBX0_PFEH_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EBX0_LWSMI_IsSupported();
+
+        public bool GetEAX80000007EBX0_LWSMI_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EBX0_LWSMI_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX80000007EBX6_14_Reserved();
+
+        public string GetEAX80000007EBX6_14_ReservedX()
+        {
+            try
+            {
+                int eAX80000007EBX6_14_ReservedValue = GetEAX80000007EBX6_14_Reserved();
+                string eAX80000007EBX6_14_ReservedString = eAX80000007EBX6_14_ReservedValue.ToString();
+
+                return eAX80000007EBX6_14_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EBX0_MCA_Q_IsSupported();
+
+        public bool GetEAX80000007EBX0_MCA_Q_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EBX0_MCA_Q_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX80000007EBX16_31_Reserved();
+
+        public string GetEAX80000007EBX16_31_ReservedX()
+        {
+            try
+            {
+                int eAX80000007EBX16_31_ReservedValue = GetEAX80000007EBX16_31_Reserved();
+                string eAX80000007EBX16_31_ReservedString = eAX80000007EBX16_31_ReservedValue.ToString();
+
+                return eAX80000007EBX16_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        //ECX
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriod();
+
+        public string GetEAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriodX()
+        {
+            try
+            {
+                int eAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriodValue = GetEAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriod();
+                string eAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriodString = eAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriodValue.ToString();
+
+                return eAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriodString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        //EDX
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX0_TS_IsSupported();
+
+        public bool GetEAX80000007EDX0_TS_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX0_TS_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX1_FID_IsSupported();
+
+        public bool GetEAX80000007EDX1_FID_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX1_FID_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX2_VID_IsSupported();
+
+        public bool GetEAX80000007EDX2_VID_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX2_VID_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX3_TTP_IsSupported();
+
+        public bool GetEAX80000007EDX3_TTP_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX3_TTP_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX4_TM_IsSupported();
+
+        public bool GetEAX80000007EDX4_TM_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX4_TM_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX5_STC_IsSupported();
+
+        public bool GetEAX80000007EDX5_STC_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX5_STC_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX6_MUL100_IsSupported();
+
+        public bool GetEAX80000007EDX6_MUL100_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX6_MUL100_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX7_HWPS_IsSupported();
+
+        public bool GetEAX80000007EDX7_HWPS_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX7_HWPS_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX8_ITSC_IsSupported();
+
+        public bool GetEAX80000007EDX8_ITSC_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX8_ITSC_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX9_CPB_IsSupported();
+
+        public bool GetEAX80000007EDX9_CPB_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX9_CPB_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX10_EFRO_IsSupported();
+
+        public bool GetEAX80000007EDX10_EFRO_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX10_EFRO_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX11_PFI_IsSupported();
+
+        public bool GetEAX80000007EDX11_PFI_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX11_PFI_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX12_PA_IsSupported();
+
+        public bool GetEAX80000007EDX12_PA_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX12_PA_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX13_CSB_IsSupported();
+
+        public bool GetEAX80000007EDX13_CSB_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX13_CSB_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX14_RAPL_IsSupported();
+
+        public bool GetEAX80000007EDX14_RAPL_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX14_RAPL_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX15_CPPC_FAST_IsSupported();
+
+        public bool GetEAX80000007EDX15_CPPC_FAST_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX15_CPPC_FAST_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX80000007EDX16_CPPC_PRIO_IsSupported();
+
+        public bool GetEAX80000007EDX16_CPPC_PRIO_IsSupportedX()
+        {
+            try
+            {
+                return GetEAX80000007EDX16_CPPC_PRIO_IsSupported() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. SSE3 support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for SSE3 support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX80000007EDX17_31_Reserved();
+
+        public string GetEAX80000007EDX17_31_ReservedX()
+        {
+            try
+            {
+                int eAX80000007EDX17_31_ReservedValue = GetEAX80000007EDX17_31_Reserved();
+                string eAX80000007EDX17_31_ReservedString = eAX80000007EDX17_31_ReservedValue.ToString();
+
+                return eAX80000007EDX17_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
         #endregion
 
         #region EAX=0x80000008: Virtual and Physical Address Sizes
