@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAX0.cs
-    Brief          Form for displaying EAX=0x0 CPU information.
+    File           EAX00000000.cs
+    Brief          Form for displaying EAX=0x00000000 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           10/29/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -20,7 +20,7 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
-            #region EAX = 0x0: Highest Function Parameter and Manufacturer ID
+            #region EAX = 0x00000000: Highest Function Parameter and Manufacturer ID
 
             string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();
             textBoxEAX0EAX.Text = cpuIdEAX0EAX;
@@ -37,8 +37,7 @@ namespace CPU_S
             string cpuIdEAX0EAXHightestFunctionParameter = cpuHelper.GetEAX0EAXHightestFunctionParameterX();
             textBoxEAX0EAXHightestFunctionParameter.Text = cpuIdEAX0EAXHightestFunctionParameter;
 
-            string cpuIdEAX0EBXEDXECXCpuVendor = cpuHelper.GetEAX0EBXEDXECXCpuVendorX();
-            textBoxEAX0EBXEDXECXCpuVendorId.Text = cpuIdEAX0EBXEDXECXCpuVendor;
+            textBoxEAX0EBXEDXECXCpuVendorId.Text = cpuHelper.GetEAX0EBXEDXECXCpuVendorX();
 
             string cpuIdHexEAX0EAXHightestFunctionParameter = cpuHelper.BinaryStringToHexString(cpuIdEAX0EAXHightestFunctionParameter);
             textBoxEAX0HightestFunctionParameterHex.Text = "0x" + cpuIdHexEAX0EAXHightestFunctionParameter;

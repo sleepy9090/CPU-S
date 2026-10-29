@@ -265,6 +265,8 @@
             this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000012SGXCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000012SGXSECSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000012SGXEPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000014ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000014ECX0x1ProcessorTracePacketGenerationInformationInEAXEBXAndECXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000015TSCAndCoreCrystalFrequencyInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -363,8 +365,6 @@
             this.eAX0xC0000006ZhaoxinProcessorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000012SGXEPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000012SGXSECSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2805,6 +2805,20 @@
             this.eAX0x00000012SGXCapabilitiesToolStripMenuItem.Text = "EAX=0x00000012, ECX=0x00000000: SGX Resources (0=capabilities)";
             this.eAX0x00000012SGXCapabilitiesToolStripMenuItem.Click += new System.EventHandler(this.eAX0x12SGXCapabilitiesToolStripMenuItem_Click);
             // 
+            // eAX0x00000012SGXSECSToolStripMenuItem
+            // 
+            this.eAX0x00000012SGXSECSToolStripMenuItem.Name = "eAX0x00000012SGXSECSToolStripMenuItem";
+            this.eAX0x00000012SGXSECSToolStripMenuItem.Size = new System.Drawing.Size(631, 22);
+            this.eAX0x00000012SGXSECSToolStripMenuItem.Text = "EAX=0x00000012, ECX=0x00000001: SGX Resources (1=SECS)";
+            this.eAX0x00000012SGXSECSToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000012SGXSECSToolStripMenuItem_Click);
+            // 
+            // eAX0x00000012SGXEPCToolStripMenuItem
+            // 
+            this.eAX0x00000012SGXEPCToolStripMenuItem.Name = "eAX0x00000012SGXEPCToolStripMenuItem";
+            this.eAX0x00000012SGXEPCToolStripMenuItem.Size = new System.Drawing.Size(631, 22);
+            this.eAX0x00000012SGXEPCToolStripMenuItem.Text = "EAX=0x00000012, ECX=0x00000002..n: SGX Resources (2...n=EPC)";
+            this.eAX0x00000012SGXEPCToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000012SGXEPCToolStripMenuItem_Click);
+            // 
             // eAX0x00000014ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem
             // 
             this.eAX0x00000014ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem.Name = "eAX0x00000014ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem";
@@ -3239,7 +3253,7 @@
             // 
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem.Name = "eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem";
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem.Size = new System.Drawing.Size(506, 22);
-            this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem.Text = "EAX=0x80000000: Highest Extended Function Implemented";
+            this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem.Text = "EAX=0x80000000: Highest Extended Function Implemented and Vendor ID";
             this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000000HighestExtendedFunctionImplementedToolStripMenuItem_Click);
             // 
             // eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem
@@ -3574,20 +3588,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // eAX0x00000012SGXEPCToolStripMenuItem
-            // 
-            this.eAX0x00000012SGXEPCToolStripMenuItem.Name = "eAX0x00000012SGXEPCToolStripMenuItem";
-            this.eAX0x00000012SGXEPCToolStripMenuItem.Size = new System.Drawing.Size(631, 22);
-            this.eAX0x00000012SGXEPCToolStripMenuItem.Text = "EAX=0x00000012, ECX=0x00000002..n: SGX Resources (2...n=EPC)";
-            this.eAX0x00000012SGXEPCToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000012SGXEPCToolStripMenuItem_Click);
-            // 
-            // eAX0x00000012SGXSECSToolStripMenuItem
-            // 
-            this.eAX0x00000012SGXSECSToolStripMenuItem.Name = "eAX0x00000012SGXSECSToolStripMenuItem";
-            this.eAX0x00000012SGXSECSToolStripMenuItem.Size = new System.Drawing.Size(631, 22);
-            this.eAX0x00000012SGXSECSToolStripMenuItem.Text = "EAX=0x00000012, ECX=0x00000001: SGX Resources (1=SECS)";
-            this.eAX0x00000012SGXSECSToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000012SGXSECSToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 

@@ -22,20 +22,35 @@ namespace CPU_S
 
             #region EAX=0x80000000: Highest Extended Function Implemented
 
-            string cpuIdEAX80000000EAX = cpuHelper.GetEAX80000000EAXX();
-            textBoxEAX80000000EAX.Text = cpuIdEAX80000000EAX;
+            textBoxEAX.Text = cpuHelper.GetEAX80000000EAXX();
+            string cpuIdEBX = cpuHelper.GetEAX80000000EBXX();
+            textBoxEBX.Text = cpuIdEBX;
+            string cpuIdECX = cpuHelper.GetEAX80000000ECXX();
+            textBoxECX.Text = cpuIdECX;
+            string cpuIdEDX = cpuHelper.GetEAX80000000EDXX();
+            textBoxEDX.Text = cpuIdEDX;
 
-            string cpuIdEAX80000000EBX = cpuHelper.GetEAX80000000EBXX();
-            textBoxEAX80000000EBX.Text = cpuIdEAX80000000EBX;
+            string cpuIdHightestFunctionParameter = cpuHelper.GetEAX80000000EAXHightestFunctionParameterX();
+            textBoxHightestFunctionParameter.Text = cpuIdHightestFunctionParameter;
 
-            string cpuIdEAX80000000ECX = cpuHelper.GetEAX80000000ECXX();
-            textBoxEAX80000000ECX.Text = cpuIdEAX80000000ECX;
+            textBoxCpuVendorId.Text = cpuHelper.GetEAX80000000EBXEDXECXCpuVendorX();
 
-            string cpuIdEAX80000000EDX = cpuHelper.GetEAX80000000EDXX();
-            textBoxEAX80000000EDX.Text = cpuIdEAX80000000EDX;
+            string cpuIdHexEAX0EAXHightestFunctionParameter = cpuHelper.BinaryStringToHexString(cpuIdHightestFunctionParameter);
+            textBoxHightestFunctionParameterHex.Text = "0x" + cpuIdHexEAX0EAXHightestFunctionParameter;
 
-            string cpuIdEAX80000000EAX_HighestExtendedFunctionImplemented = cpuHelper.GetEAX80000000EAX_HighestExtendedFunctionImplementedX();
-            textBoxEAX80000000EAX_HighestExtendedFunctionImplemented.Text = cpuIdEAX80000000EAX_HighestExtendedFunctionImplemented;
+            textBoxHightestFunctionParameterDec.Text = cpuHelper.BinaryStringToDecimalString(cpuIdHightestFunctionParameter);
+
+            string cpuIdEBXCpuVendor = cpuHelper.GetEAX80000000EBXCpuVendorX();
+            textBoxID1.Text = cpuIdEBXCpuVendor;
+            textBoxID1Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEBX);
+
+            string cpuIdECXCpuVendor = cpuHelper.GetEAX80000000ECXCpuVendorX();
+            textBoxID2.Text = cpuIdECXCpuVendor;
+            textBoxID2Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdECX);
+
+            string cpuIdEDXCpuVendor = cpuHelper.GetEAX80000000EDXCpuVendorX();
+            textBoxID3.Text = cpuIdEDXCpuVendor;
+            textBoxID3Hex.Text = "0x" + cpuHelper.BinaryStringToHexString(cpuIdEDX);
 
             #endregion
         }
