@@ -449,9 +449,9 @@
             this.checkBoxMCA_Q.AutoSize = true;
             this.checkBoxMCA_Q.Location = new System.Drawing.Point(9, 176);
             this.checkBoxMCA_Q.Name = "checkBoxMCA_Q";
-            this.checkBoxMCA_Q.Size = new System.Drawing.Size(259, 17);
+            this.checkBoxMCA_Q.Size = new System.Drawing.Size(403, 17);
             this.checkBoxMCA_Q.TabIndex = 8;
-            this.checkBoxMCA_Q.Text = "MCA_Q - MCA Query (MSR C000_042[0-3]h) [15]";
+            this.checkBoxMCA_Q.Text = "MCA_Q - MCA (Machine Check Architecture) Query (MSR C000_042[0-3]h) [15]";
             this.checkBoxMCA_Q.UseVisualStyleBackColor = true;
             // 
             // textBoxEBX6_14Reserved
