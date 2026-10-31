@@ -29160,13 +29160,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX80000007EBX0_SUCCOR_IsSupported();
+        private static extern int GetEAX80000007EBX1_SUCCOR_IsSupported();
 
-        public bool GetEAX80000007EBX0_SUCCOR_IsSupportedX()
+        public bool GetEAX80000007EBX1_SUCCOR_IsSupportedX()
         {
             try
             {
-                return GetEAX80000007EBX0_SUCCOR_IsSupported() != 0;
+                return GetEAX80000007EBX1_SUCCOR_IsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -29181,13 +29181,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX80000007EBX0_HWA_IsSupported();
+        private static extern int GetEAX80000007EBX2_HWA_IsSupported();
 
-        public bool GetEAX80000007EBX0_HWA_IsSupportedX()
+        public bool GetEAX80000007EBX2_HWA_IsSupportedX()
         {
             try
             {
-                return GetEAX80000007EBX0_HWA_IsSupported() != 0;
+                return GetEAX80000007EBX2_HWA_IsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -29202,13 +29202,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX80000007EBX0_SCMCA_IsSupported();
+        private static extern int GetEAX80000007EBX3_SCMCA_IsSupported();
 
-        public bool GetEAX80000007EBX0_SCMCA_IsSupportedX()
+        public bool GetEAX80000007EBX3_SCMCA_IsSupportedX()
         {
             try
             {
-                return GetEAX80000007EBX0_SCMCA_IsSupported() != 0;
+                return GetEAX80000007EBX3_SCMCA_IsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -29223,13 +29223,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX80000007EBX0_PFEH_IsSupported();
+        private static extern int GetEAX80000007EBX4_PFEH_IsSupported();
 
-        public bool GetEAX80000007EBX0_PFEH_IsSupportedX()
+        public bool GetEAX80000007EBX4_PFEH_IsSupportedX()
         {
             try
             {
-                return GetEAX80000007EBX0_PFEH_IsSupported() != 0;
+                return GetEAX80000007EBX4_PFEH_IsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -29244,13 +29244,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX80000007EBX0_LWSMI_IsSupported();
+        private static extern int GetEAX80000007EBX5_LWSMI_IsSupported();
 
-        public bool GetEAX80000007EBX0_LWSMI_IsSupportedX()
+        public bool GetEAX80000007EBX5_LWSMI_IsSupportedX()
         {
             try
             {
-                return GetEAX80000007EBX0_LWSMI_IsSupported() != 0;
+                return GetEAX80000007EBX5_LWSMI_IsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -29289,13 +29289,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX80000007EBX0_MCA_Q_IsSupported();
+        private static extern int GetEAX80000007EBX15_MCA_Q_IsSupported();
 
-        public bool GetEAX80000007EBX0_MCA_Q_IsSupportedX()
+        public bool GetEAX80000007EBX15_MCA_Q_IsSupportedX()
         {
             try
             {
-                return GetEAX80000007EBX0_MCA_Q_IsSupported() != 0;
+                return GetEAX80000007EBX15_MCA_Q_IsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {

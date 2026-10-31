@@ -34,6 +34,45 @@ namespace CPU_S
             string cpuIdEAX80000007EDX = cpuHelper.GetEAX80000007EDXX();
             textBoxEAX80000007EDX.Text = cpuIdEAX80000007EDX;
 
+            //EAX
+            textBoxNumberOfMonitors.Text = cpuHelper.GetEAX80000007EAX0_7_NumberOfMonitorsX();
+            textBoxVersion.Text = cpuHelper.GetEAX80000007EAX8_15_VersionX();
+            textBoxMaximumWrapTimeInMs.Text = cpuHelper.GetEAX80000007EAX16_31_MaximumWrapTimeInMsX();
+
+            //EBC
+            checkBoxMCAOVR.Checked = cpuHelper.GetEAX80000007EBX0_MCAOVR_IsSupportedX();
+            checkBoxSUCCOR.Checked = cpuHelper.GetEAX80000007EBX1_SUCCOR_IsSupportedX();
+            checkBoxHWA.Checked = cpuHelper.GetEAX80000007EBX2_HWA_IsSupportedX();
+            checkBoxSCMCA.Checked = cpuHelper.GetEAX80000007EBX3_SCMCA_IsSupportedX();
+            checkBoxPFEH.Checked = cpuHelper.GetEAX80000007EBX4_PFEH_IsSupportedX();
+            checkBoxLWSMI.Checked = cpuHelper.GetEAX80000007EBX5_LWSMI_IsSupportedX();
+            textBoxEBX6_14Reserved.Text = cpuHelper.GetEAX80000007EBX6_14_ReservedX();
+            checkBoxMCA_Q.Checked = cpuHelper.GetEAX80000007EBX15_MCA_Q_IsSupportedX();
+            textBoxEBX16_31Reserved.Text = cpuHelper.GetEAX80000007EBX16_31_ReservedX();
+
+            //ECX
+            textBoxRatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriod.Text = cpuHelper.GetEAX80000007ECX0_31_RatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriodX();
+
+            //EDX
+            checkBoxTS.Checked = cpuHelper.GetEAX80000007EDX0_TS_IsSupportedX();
+            checkBoxFID.Checked = cpuHelper.GetEAX80000007EDX1_FID_IsSupportedX();
+            checkBoxVID.Checked = cpuHelper.GetEAX80000007EDX2_VID_IsSupportedX();
+            checkBoxTTP.Checked = cpuHelper.GetEAX80000007EDX3_TTP_IsSupportedX();
+            checkBoxTM.Checked = cpuHelper.GetEAX80000007EDX4_TM_IsSupportedX();
+            checkBoxSTC.Checked = cpuHelper.GetEAX80000007EDX5_STC_IsSupportedX();
+            checkBoxMUL100.Checked = cpuHelper.GetEAX80000007EDX6_MUL100_IsSupportedX();
+            checkBoxHWPS.Checked = cpuHelper.GetEAX80000007EDX7_HWPS_IsSupportedX();
+            checkBoxITSC.Checked = cpuHelper.GetEAX80000007EDX8_ITSC_IsSupportedX();
+            checkBoxCPB.Checked = cpuHelper.GetEAX80000007EDX9_CPB_IsSupportedX();
+            checkBoxEFRO.Checked = cpuHelper.GetEAX80000007EDX10_EFRO_IsSupportedX();
+            checkBoxPFI.Checked = cpuHelper.GetEAX80000007EDX11_PFI_IsSupportedX();
+            checkBoxPA.Checked = cpuHelper.GetEAX80000007EDX12_PA_IsSupportedX();
+            checkBoxCSB.Checked = cpuHelper.GetEAX80000007EDX13_CSB_IsSupportedX();
+            checkBoxRAPL.Checked = cpuHelper.GetEAX80000007EDX14_RAPL_IsSupportedX();
+            checkBoxCPPCFAST.Checked = cpuHelper.GetEAX80000007EDX15_CPPC_FAST_IsSupportedX();
+            checkBoxCPPCPRIO.Checked = cpuHelper.GetEAX80000007EDX16_CPPC_PRIO_IsSupportedX();
+            textBoxEDXReserved.Text = cpuHelper.GetEAX80000007EDX17_31_ReservedX();
+
             #endregion
         }
     }

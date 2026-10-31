@@ -63,21 +63,21 @@
             this.labelRatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriod = new System.Windows.Forms.Label();
             this.checkBoxTS = new System.Windows.Forms.CheckBox();
             this.checkBoxFID = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBoxVID = new System.Windows.Forms.CheckBox();
+            this.checkBoxTTP = new System.Windows.Forms.CheckBox();
+            this.checkBoxTM = new System.Windows.Forms.CheckBox();
+            this.checkBoxSTC = new System.Windows.Forms.CheckBox();
+            this.checkBoxMUL100 = new System.Windows.Forms.CheckBox();
+            this.checkBoxHWPS = new System.Windows.Forms.CheckBox();
+            this.checkBoxITSC = new System.Windows.Forms.CheckBox();
+            this.checkBoxCPB = new System.Windows.Forms.CheckBox();
+            this.checkBoxEFRO = new System.Windows.Forms.CheckBox();
+            this.checkBoxPFI = new System.Windows.Forms.CheckBox();
+            this.checkBoxPA = new System.Windows.Forms.CheckBox();
+            this.checkBoxCSB = new System.Windows.Forms.CheckBox();
+            this.checkBoxRAPL = new System.Windows.Forms.CheckBox();
+            this.checkBoxCPPCFAST = new System.Windows.Forms.CheckBox();
+            this.checkBoxCPPCPRIO = new System.Windows.Forms.CheckBox();
             this.labelEDXReserved = new System.Windows.Forms.Label();
             this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX80000007.SuspendLayout();
@@ -121,21 +121,21 @@
             // 
             this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
             this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
-            this.groupBoxEDX.Controls.Add(this.checkBox17);
-            this.groupBoxEDX.Controls.Add(this.checkBox16);
-            this.groupBoxEDX.Controls.Add(this.checkBox15);
-            this.groupBoxEDX.Controls.Add(this.checkBox14);
-            this.groupBoxEDX.Controls.Add(this.checkBox13);
-            this.groupBoxEDX.Controls.Add(this.checkBox12);
-            this.groupBoxEDX.Controls.Add(this.checkBox11);
-            this.groupBoxEDX.Controls.Add(this.checkBox10);
-            this.groupBoxEDX.Controls.Add(this.checkBox9);
-            this.groupBoxEDX.Controls.Add(this.checkBox8);
-            this.groupBoxEDX.Controls.Add(this.checkBox7);
-            this.groupBoxEDX.Controls.Add(this.checkBox6);
-            this.groupBoxEDX.Controls.Add(this.checkBox5);
-            this.groupBoxEDX.Controls.Add(this.checkBox4);
-            this.groupBoxEDX.Controls.Add(this.checkBox3);
+            this.groupBoxEDX.Controls.Add(this.checkBoxCPPCPRIO);
+            this.groupBoxEDX.Controls.Add(this.checkBoxCPPCFAST);
+            this.groupBoxEDX.Controls.Add(this.checkBoxRAPL);
+            this.groupBoxEDX.Controls.Add(this.checkBoxCSB);
+            this.groupBoxEDX.Controls.Add(this.checkBoxPA);
+            this.groupBoxEDX.Controls.Add(this.checkBoxPFI);
+            this.groupBoxEDX.Controls.Add(this.checkBoxEFRO);
+            this.groupBoxEDX.Controls.Add(this.checkBoxCPB);
+            this.groupBoxEDX.Controls.Add(this.checkBoxITSC);
+            this.groupBoxEDX.Controls.Add(this.checkBoxHWPS);
+            this.groupBoxEDX.Controls.Add(this.checkBoxMUL100);
+            this.groupBoxEDX.Controls.Add(this.checkBoxSTC);
+            this.groupBoxEDX.Controls.Add(this.checkBoxTM);
+            this.groupBoxEDX.Controls.Add(this.checkBoxTTP);
+            this.groupBoxEDX.Controls.Add(this.checkBoxVID);
             this.groupBoxEDX.Controls.Add(this.checkBoxFID);
             this.groupBoxEDX.Controls.Add(this.checkBoxTS);
             this.groupBoxEDX.Location = new System.Drawing.Point(264, 414);
@@ -427,9 +427,9 @@
             this.checkBoxTS.AutoSize = true;
             this.checkBoxTS.Location = new System.Drawing.Point(9, 19);
             this.checkBoxTS.Name = "checkBoxTS";
-            this.checkBoxTS.Size = new System.Drawing.Size(145, 17);
+            this.checkBoxTS.Size = new System.Drawing.Size(160, 17);
             this.checkBoxTS.TabIndex = 0;
-            this.checkBoxTS.Text = "TS - Temperature Sensor";
+            this.checkBoxTS.Text = "TS - Temperature Sensor [0]";
             this.checkBoxTS.UseVisualStyleBackColor = true;
             // 
             // checkBoxFID
@@ -437,160 +437,160 @@
             this.checkBoxFID.AutoSize = true;
             this.checkBoxFID.Location = new System.Drawing.Point(9, 42);
             this.checkBoxFID.Name = "checkBoxFID";
-            this.checkBoxFID.Size = new System.Drawing.Size(152, 17);
+            this.checkBoxFID.Size = new System.Drawing.Size(167, 17);
             this.checkBoxFID.TabIndex = 1;
-            this.checkBoxFID.Text = "FID - Frequency ID Control";
+            this.checkBoxFID.Text = "FID - Frequency ID Control [1]";
             this.checkBoxFID.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBoxVID
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(9, 65);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxVID.AutoSize = true;
+            this.checkBoxVID.Location = new System.Drawing.Point(9, 65);
+            this.checkBoxVID.Name = "checkBoxVID";
+            this.checkBoxVID.Size = new System.Drawing.Size(154, 17);
+            this.checkBoxVID.TabIndex = 2;
+            this.checkBoxVID.Text = "VID - Voltage ID Control [2]";
+            this.checkBoxVID.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkBoxTTP
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(9, 88);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxTTP.AutoSize = true;
+            this.checkBoxTTP.Location = new System.Drawing.Point(9, 88);
+            this.checkBoxTTP.Name = "checkBoxTTP";
+            this.checkBoxTTP.Size = new System.Drawing.Size(130, 17);
+            this.checkBoxTTP.TabIndex = 3;
+            this.checkBoxTTP.Text = "TTP - Thermal Trip [3]";
+            this.checkBoxTTP.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkBoxTM
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(9, 111);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(80, 17);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxTM.AutoSize = true;
+            this.checkBoxTM.Location = new System.Drawing.Point(9, 111);
+            this.checkBoxTM.Name = "checkBoxTM";
+            this.checkBoxTM.Size = new System.Drawing.Size(156, 17);
+            this.checkBoxTM.TabIndex = 4;
+            this.checkBoxTM.Text = "TM - Thermal Monitoring [4]";
+            this.checkBoxTM.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // checkBoxSTC
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(9, 134);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(80, 17);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxSTC.AutoSize = true;
+            this.checkBoxSTC.Location = new System.Drawing.Point(9, 134);
+            this.checkBoxSTC.Name = "checkBoxSTC";
+            this.checkBoxSTC.Size = new System.Drawing.Size(190, 17);
+            this.checkBoxSTC.TabIndex = 5;
+            this.checkBoxSTC.Text = "STC - Software Thermal Control [5]";
+            this.checkBoxSTC.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkBoxMUL100
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(9, 157);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(80, 17);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "checkBox7";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBoxMUL100.AutoSize = true;
+            this.checkBoxMUL100.Location = new System.Drawing.Point(9, 157);
+            this.checkBoxMUL100.Name = "checkBoxMUL100";
+            this.checkBoxMUL100.Size = new System.Drawing.Size(208, 17);
+            this.checkBoxMUL100.TabIndex = 6;
+            this.checkBoxMUL100.Text = "MUL100 - 100 MHz Multiplier Steps [6]";
+            this.checkBoxMUL100.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkBoxHWPS
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(9, 180);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(80, 17);
-            this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "checkBox8";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBoxHWPS.AutoSize = true;
+            this.checkBoxHWPS.Location = new System.Drawing.Point(9, 180);
+            this.checkBoxHWPS.Name = "checkBoxHWPS";
+            this.checkBoxHWPS.Size = new System.Drawing.Size(207, 17);
+            this.checkBoxHWPS.TabIndex = 7;
+            this.checkBoxHWPS.Text = "HWPS - Hardware P-State Support [7]";
+            this.checkBoxHWPS.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // checkBoxITSC
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(9, 203);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(80, 17);
-            this.checkBox9.TabIndex = 8;
-            this.checkBox9.Text = "checkBox9";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBoxITSC.AutoSize = true;
+            this.checkBoxITSC.Location = new System.Drawing.Point(9, 203);
+            this.checkBoxITSC.Name = "checkBoxITSC";
+            this.checkBoxITSC.Size = new System.Drawing.Size(139, 17);
+            this.checkBoxITSC.TabIndex = 8;
+            this.checkBoxITSC.Text = "ITSC - Invariant TSC [8]";
+            this.checkBoxITSC.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // checkBoxCPB
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(9, 226);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(86, 17);
-            this.checkBox10.TabIndex = 9;
-            this.checkBox10.Text = "checkBox10";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBoxCPB.AutoSize = true;
+            this.checkBoxCPB.Location = new System.Drawing.Point(9, 226);
+            this.checkBoxCPB.Name = "checkBoxCPB";
+            this.checkBoxCPB.Size = new System.Drawing.Size(186, 17);
+            this.checkBoxCPB.TabIndex = 9;
+            this.checkBoxCPB.Text = "CPB - Core Performance Boost [9]";
+            this.checkBoxCPB.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // checkBoxEFRO
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(9, 249);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(86, 17);
-            this.checkBox11.TabIndex = 10;
-            this.checkBox11.Text = "checkBox11";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBoxEFRO.AutoSize = true;
+            this.checkBoxEFRO.Location = new System.Drawing.Point(9, 249);
+            this.checkBoxEFRO.Name = "checkBoxEFRO";
+            this.checkBoxEFRO.Size = new System.Drawing.Size(323, 17);
+            this.checkBoxEFRO.TabIndex = 10;
+            this.checkBoxEFRO.Text = "EFRO - Read-only MPERF/APERF (MSR C000_00E[78]h) [10]";
+            this.checkBoxEFRO.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // checkBoxPFI
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(9, 272);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(86, 17);
-            this.checkBox12.TabIndex = 11;
-            this.checkBox12.Text = "checkBox12";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBoxPFI.AutoSize = true;
+            this.checkBoxPFI.Location = new System.Drawing.Point(9, 272);
+            this.checkBoxPFI.Name = "checkBoxPFI";
+            this.checkBoxPFI.Size = new System.Drawing.Size(265, 17);
+            this.checkBoxPFI.TabIndex = 11;
+            this.checkBoxPFI.Text = "PFI - Processor Feedback Interface (see EAX) [11]";
+            this.checkBoxPFI.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // checkBoxPA
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(9, 295);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(86, 17);
-            this.checkBox13.TabIndex = 12;
-            this.checkBox13.Text = "checkBox13";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBoxPA.AutoSize = true;
+            this.checkBoxPA.Location = new System.Drawing.Point(9, 295);
+            this.checkBoxPA.Name = "checkBoxPA";
+            this.checkBoxPA.Size = new System.Drawing.Size(277, 17);
+            this.checkBoxPA.TabIndex = 12;
+            this.checkBoxPA.Text = "PA - Processor Accumulator (MSR C001_007Ah) [12]";
+            this.checkBoxPA.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // checkBoxCSB
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(9, 318);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(86, 17);
-            this.checkBox14.TabIndex = 13;
-            this.checkBox14.Text = "checkBox14";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkBoxCSB.AutoSize = true;
+            this.checkBoxCSB.Location = new System.Drawing.Point(9, 318);
+            this.checkBoxCSB.Name = "checkBoxCSB";
+            this.checkBoxCSB.Size = new System.Drawing.Size(171, 17);
+            this.checkBoxCSB.TabIndex = 13;
+            this.checkBoxCSB.Text = "CSB - Connected Standby [13]";
+            this.checkBoxCSB.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // checkBoxRAPL
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(9, 341);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(86, 17);
-            this.checkBox15.TabIndex = 14;
-            this.checkBox15.Text = "checkBox15";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.checkBoxRAPL.AutoSize = true;
+            this.checkBoxRAPL.Location = new System.Drawing.Point(9, 341);
+            this.checkBoxRAPL.Name = "checkBoxRAPL";
+            this.checkBoxRAPL.Size = new System.Drawing.Size(224, 17);
+            this.checkBoxRAPL.TabIndex = 14;
+            this.checkBoxRAPL.Text = "RAPL - Running Average Power Limit [14]";
+            this.checkBoxRAPL.UseVisualStyleBackColor = true;
             // 
-            // checkBox16
+            // checkBoxCPPCFAST
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(9, 364);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(86, 17);
-            this.checkBox16.TabIndex = 15;
-            this.checkBox16.Text = "checkBox16";
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.checkBoxCPPCFAST.AutoSize = true;
+            this.checkBoxCPPCFAST.Location = new System.Drawing.Point(9, 364);
+            this.checkBoxCPPCFAST.Name = "checkBoxCPPCFAST";
+            this.checkBoxCPPCFAST.Size = new System.Drawing.Size(168, 17);
+            this.checkBoxCPPCFAST.TabIndex = 15;
+            this.checkBoxCPPCFAST.Text = "CPPC_FAST - CPPC Fast [15]";
+            this.checkBoxCPPCFAST.UseVisualStyleBackColor = true;
             // 
-            // checkBox17
+            // checkBoxCPPCPRIO
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(9, 387);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(86, 17);
-            this.checkBox17.TabIndex = 16;
-            this.checkBox17.Text = "checkBox17";
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.checkBoxCPPCPRIO.AutoSize = true;
+            this.checkBoxCPPCPRIO.Location = new System.Drawing.Point(9, 387);
+            this.checkBoxCPPCPRIO.Name = "checkBoxCPPCPRIO";
+            this.checkBoxCPPCPRIO.Size = new System.Drawing.Size(220, 17);
+            this.checkBoxCPPCPRIO.TabIndex = 16;
+            this.checkBoxCPPCPRIO.Text = "CPPC_PRIO - CPPC Performance Priority";
+            this.checkBoxCPPCPRIO.UseVisualStyleBackColor = true;
             // 
             // labelEDXReserved
             // 
@@ -670,21 +670,21 @@
         private System.Windows.Forms.TextBox textBoxRatioOfPowerAccumulatorSamplePeriodToGTSCCounterPeriod;
         private System.Windows.Forms.TextBox textBoxEDXReserved;
         private System.Windows.Forms.Label labelEDXReserved;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBoxCPPCPRIO;
+        private System.Windows.Forms.CheckBox checkBoxCPPCFAST;
+        private System.Windows.Forms.CheckBox checkBoxRAPL;
+        private System.Windows.Forms.CheckBox checkBoxCSB;
+        private System.Windows.Forms.CheckBox checkBoxPA;
+        private System.Windows.Forms.CheckBox checkBoxPFI;
+        private System.Windows.Forms.CheckBox checkBoxEFRO;
+        private System.Windows.Forms.CheckBox checkBoxCPB;
+        private System.Windows.Forms.CheckBox checkBoxITSC;
+        private System.Windows.Forms.CheckBox checkBoxHWPS;
+        private System.Windows.Forms.CheckBox checkBoxMUL100;
+        private System.Windows.Forms.CheckBox checkBoxSTC;
+        private System.Windows.Forms.CheckBox checkBoxTM;
+        private System.Windows.Forms.CheckBox checkBoxTTP;
+        private System.Windows.Forms.CheckBox checkBoxVID;
         private System.Windows.Forms.CheckBox checkBoxFID;
         private System.Windows.Forms.CheckBox checkBoxTS;
     }
