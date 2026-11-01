@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxEAX6 = new System.Windows.Forms.GroupBox();
+            this.groupBoxeAX00000006 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure = new System.Windows.Forms.TextBox();
-            this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure = new System.Windows.Forms.Label();
-            this.textBoxEAX6EDX12_15_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEAX6EDX12_15_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure = new System.Windows.Forms.TextBox();
-            this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure = new System.Windows.Forms.Label();
-            this.textBoxEAX6EDX2_7_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEAX6EDX2_7_Reserved = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006EDX12_15_Reserved = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006EDX12_15_Reserved = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006EDX2_7_Reserved = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006EDX2_7_Reserved = new System.Windows.Forms.Label();
             this.checkBoxEfficiencyReportingSupported1 = new System.Windows.Forms.CheckBox();
             this.checkBoxPerformanceCapabilitySupported0 = new System.Windows.Forms.CheckBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.textBoxEAX6ECX16_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEAX6ECX16_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses = new System.Windows.Forms.TextBox();
-            this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses = new System.Windows.Forms.Label();
-            this.textBoxEAX6ECX4_7_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxeAX00000006ECX16_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006ECX16_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006ECX4_7_Reserved = new System.Windows.Forms.TextBox();
             this.labelReserved47 = new System.Windows.Forms.Label();
             this.checkBoxPerformanceEnergyBiasCapability3 = new System.Windows.Forms.CheckBox();
             this.checkBoxReserved2 = new System.Windows.Forms.CheckBox();
             this.checkBoxACNT21 = new System.Windows.Forms.CheckBox();
             this.checkBoxEffectiveFrequencyInterface0 = new System.Windows.Forms.CheckBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.textBoxEAX6_EBX4_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEAX6_EBX4_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor = new System.Windows.Forms.TextBox();
-            this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006_EBX4_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006_EBX4_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor = new System.Windows.Forms.Label();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
             this.checkBoxReserved31 = new System.Windows.Forms.CheckBox();
             this.checkBoxReserved30 = new System.Windows.Forms.CheckBox();
@@ -90,15 +90,15 @@
             this.checkBoxTurboBoost1 = new System.Windows.Forms.CheckBox();
             this.checkBoxDTS0 = new System.Windows.Forms.CheckBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
-            this.textBoxEAX6EAX = new System.Windows.Forms.TextBox();
-            this.labelEAX6EAX = new System.Windows.Forms.Label();
-            this.textBoxEAX6EBX = new System.Windows.Forms.TextBox();
-            this.textBoxEAX6ECX = new System.Windows.Forms.TextBox();
-            this.textBoxEAX6EDX = new System.Windows.Forms.TextBox();
-            this.labelEAX6EBX = new System.Windows.Forms.Label();
-            this.labelEAX6ECX = new System.Windows.Forms.Label();
-            this.labelEAX6EDX = new System.Windows.Forms.Label();
-            this.groupBoxEAX6.SuspendLayout();
+            this.textBoxeAX00000006EAX = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006EAX = new System.Windows.Forms.Label();
+            this.textBoxeAX00000006EBX = new System.Windows.Forms.TextBox();
+            this.textBoxeAX00000006ECX = new System.Windows.Forms.TextBox();
+            this.textBoxeAX00000006EDX = new System.Windows.Forms.TextBox();
+            this.labeleAX00000006EBX = new System.Windows.Forms.Label();
+            this.labeleAX00000006ECX = new System.Windows.Forms.Label();
+            this.labeleAX00000006EDX = new System.Windows.Forms.Label();
+            this.groupBoxeAX00000006.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
@@ -106,30 +106,30 @@
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBoxEAX6
+            // groupBoxeAX00000006
             // 
-            this.groupBoxEAX6.Controls.Add(this.groupBoxEDX);
-            this.groupBoxEAX6.Controls.Add(this.groupBoxECX);
-            this.groupBoxEAX6.Controls.Add(this.groupBoxEBX);
-            this.groupBoxEAX6.Controls.Add(this.groupBoxEAX);
-            this.groupBoxEAX6.Controls.Add(this.groupBoxAll);
-            this.groupBoxEAX6.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxEAX6.Name = "groupBoxEAX6";
-            this.groupBoxEAX6.Size = new System.Drawing.Size(1236, 1003);
-            this.groupBoxEAX6.TabIndex = 0;
-            this.groupBoxEAX6.TabStop = false;
-            this.groupBoxEAX6.Text = "EAX=0x00000006";
+            this.groupBoxeAX00000006.Controls.Add(this.groupBoxEDX);
+            this.groupBoxeAX00000006.Controls.Add(this.groupBoxECX);
+            this.groupBoxeAX00000006.Controls.Add(this.groupBoxEBX);
+            this.groupBoxeAX00000006.Controls.Add(this.groupBoxEAX);
+            this.groupBoxeAX00000006.Controls.Add(this.groupBoxAll);
+            this.groupBoxeAX00000006.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxeAX00000006.Name = "groupBoxeAX00000006";
+            this.groupBoxeAX00000006.Size = new System.Drawing.Size(1236, 1003);
+            this.groupBoxeAX00000006.TabIndex = 0;
+            this.groupBoxeAX00000006.TabStop = false;
+            this.groupBoxeAX00000006.Text = "EAX=0x00000006";
             // 
             // groupBoxEDX
             // 
-            this.groupBoxEDX.Controls.Add(this.textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure);
-            this.groupBoxEDX.Controls.Add(this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure);
-            this.groupBoxEDX.Controls.Add(this.textBoxEAX6EDX12_15_Reserved);
-            this.groupBoxEDX.Controls.Add(this.labelEAX6EDX12_15_Reserved);
-            this.groupBoxEDX.Controls.Add(this.textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure);
-            this.groupBoxEDX.Controls.Add(this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure);
-            this.groupBoxEDX.Controls.Add(this.textBoxEAX6EDX2_7_Reserved);
-            this.groupBoxEDX.Controls.Add(this.labelEAX6EDX2_7_Reserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure);
+            this.groupBoxEDX.Controls.Add(this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure);
+            this.groupBoxEDX.Controls.Add(this.textBoxeAX00000006EDX12_15_Reserved);
+            this.groupBoxEDX.Controls.Add(this.labeleAX00000006EDX12_15_Reserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure);
+            this.groupBoxEDX.Controls.Add(this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure);
+            this.groupBoxEDX.Controls.Add(this.textBoxeAX00000006EDX2_7_Reserved);
+            this.groupBoxEDX.Controls.Add(this.labeleAX00000006EDX2_7_Reserved);
             this.groupBoxEDX.Controls.Add(this.checkBoxEfficiencyReportingSupported1);
             this.groupBoxEDX.Controls.Add(this.checkBoxPerformanceCapabilitySupported0);
             this.groupBoxEDX.Location = new System.Drawing.Point(507, 789);
@@ -139,73 +139,73 @@
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
-            // textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure
+            // textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure
             // 
-            this.textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(418, 145);
-            this.textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStr" +
+            this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(418, 145);
+            this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStr" +
     "ucture";
-            this.textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.TabIndex = 13;
+            this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.TabIndex = 13;
             // 
-            // labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure
+            // labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure
             // 
-            this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.AutoSize = true;
-            this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(6, 148);
-            this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStruc" +
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.AutoSize = true;
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(6, 148);
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStruc" +
     "ture";
-            this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(406, 13);
-            this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.TabIndex = 12;
-            this.labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Text = "Index of this logical processor\'s row in hardware feedback interface structure [1" +
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(406, 13);
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.TabIndex = 12;
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Text = "Index of this logical processor\'s row in hardware feedback interface structure [1" +
     "6-31]:";
             // 
-            // textBoxEAX6EDX12_15_Reserved
+            // textBoxeAX00000006EDX12_15_Reserved
             // 
-            this.textBoxEAX6EDX12_15_Reserved.Location = new System.Drawing.Point(418, 119);
-            this.textBoxEAX6EDX12_15_Reserved.Name = "textBoxEAX6EDX12_15_Reserved";
-            this.textBoxEAX6EDX12_15_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6EDX12_15_Reserved.TabIndex = 11;
+            this.textBoxeAX00000006EDX12_15_Reserved.Location = new System.Drawing.Point(418, 119);
+            this.textBoxeAX00000006EDX12_15_Reserved.Name = "textBoxeAX00000006EDX12_15_Reserved";
+            this.textBoxeAX00000006EDX12_15_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006EDX12_15_Reserved.TabIndex = 11;
             // 
-            // labelEAX6EDX12_15_Reserved
+            // labeleAX00000006EDX12_15_Reserved
             // 
-            this.labelEAX6EDX12_15_Reserved.AutoSize = true;
-            this.labelEAX6EDX12_15_Reserved.Location = new System.Drawing.Point(6, 122);
-            this.labelEAX6EDX12_15_Reserved.Name = "labelEAX6EDX12_15_Reserved";
-            this.labelEAX6EDX12_15_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEAX6EDX12_15_Reserved.TabIndex = 10;
-            this.labelEAX6EDX12_15_Reserved.Text = "Reserved [12-15]:";
+            this.labeleAX00000006EDX12_15_Reserved.AutoSize = true;
+            this.labeleAX00000006EDX12_15_Reserved.Location = new System.Drawing.Point(6, 122);
+            this.labeleAX00000006EDX12_15_Reserved.Name = "labeleAX00000006EDX12_15_Reserved";
+            this.labeleAX00000006EDX12_15_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labeleAX00000006EDX12_15_Reserved.TabIndex = 10;
+            this.labeleAX00000006EDX12_15_Reserved.Text = "Reserved [12-15]:";
             // 
-            // textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure
+            // textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure
             // 
-            this.textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(418, 93);
-            this.textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Name = "textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure";
-            this.textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.TabIndex = 9;
+            this.textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(418, 93);
+            this.textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Name = "textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure";
+            this.textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.TabIndex = 9;
             // 
-            // labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure
+            // labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure
             // 
-            this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.AutoSize = true;
-            this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(6, 96);
-            this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Name = "labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure";
-            this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(381, 13);
-            this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.TabIndex = 8;
-            this.labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Text = "Size of Hardware Feedback interface structure (in units of 4 KiB) minus 1 [8-11]:" +
+            this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.AutoSize = true;
+            this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(6, 96);
+            this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Name = "labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure";
+            this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(381, 13);
+            this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.TabIndex = 8;
+            this.labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure.Text = "Size of Hardware Feedback interface structure (in units of 4 KiB) minus 1 [8-11]:" +
     "";
             // 
-            // textBoxEAX6EDX2_7_Reserved
+            // textBoxeAX00000006EDX2_7_Reserved
             // 
-            this.textBoxEAX6EDX2_7_Reserved.Location = new System.Drawing.Point(418, 68);
-            this.textBoxEAX6EDX2_7_Reserved.Name = "textBoxEAX6EDX2_7_Reserved";
-            this.textBoxEAX6EDX2_7_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6EDX2_7_Reserved.TabIndex = 7;
+            this.textBoxeAX00000006EDX2_7_Reserved.Location = new System.Drawing.Point(418, 68);
+            this.textBoxeAX00000006EDX2_7_Reserved.Name = "textBoxeAX00000006EDX2_7_Reserved";
+            this.textBoxeAX00000006EDX2_7_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006EDX2_7_Reserved.TabIndex = 7;
             // 
-            // labelEAX6EDX2_7_Reserved
+            // labeleAX00000006EDX2_7_Reserved
             // 
-            this.labelEAX6EDX2_7_Reserved.AutoSize = true;
-            this.labelEAX6EDX2_7_Reserved.Location = new System.Drawing.Point(6, 71);
-            this.labelEAX6EDX2_7_Reserved.Name = "labelEAX6EDX2_7_Reserved";
-            this.labelEAX6EDX2_7_Reserved.Size = new System.Drawing.Size(80, 13);
-            this.labelEAX6EDX2_7_Reserved.TabIndex = 6;
-            this.labelEAX6EDX2_7_Reserved.Text = "Reserved [2-7]:";
+            this.labeleAX00000006EDX2_7_Reserved.AutoSize = true;
+            this.labeleAX00000006EDX2_7_Reserved.Location = new System.Drawing.Point(6, 71);
+            this.labeleAX00000006EDX2_7_Reserved.Name = "labeleAX00000006EDX2_7_Reserved";
+            this.labeleAX00000006EDX2_7_Reserved.Size = new System.Drawing.Size(80, 13);
+            this.labeleAX00000006EDX2_7_Reserved.TabIndex = 6;
+            this.labeleAX00000006EDX2_7_Reserved.Text = "Reserved [2-7]:";
             // 
             // checkBoxEfficiencyReportingSupported1
             // 
@@ -229,11 +229,11 @@
             // 
             // groupBoxECX
             // 
-            this.groupBoxECX.Controls.Add(this.textBoxEAX6ECX16_31_Reserved);
-            this.groupBoxECX.Controls.Add(this.labelEAX6ECX16_31_Reserved);
-            this.groupBoxECX.Controls.Add(this.textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses);
-            this.groupBoxECX.Controls.Add(this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses);
-            this.groupBoxECX.Controls.Add(this.textBoxEAX6ECX4_7_Reserved);
+            this.groupBoxECX.Controls.Add(this.textBoxeAX00000006ECX16_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.labeleAX00000006ECX16_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses);
+            this.groupBoxECX.Controls.Add(this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses);
+            this.groupBoxECX.Controls.Add(this.textBoxeAX00000006ECX4_7_Reserved);
             this.groupBoxECX.Controls.Add(this.labelReserved47);
             this.groupBoxECX.Controls.Add(this.checkBoxPerformanceEnergyBiasCapability3);
             this.groupBoxECX.Controls.Add(this.checkBoxReserved2);
@@ -246,44 +246,44 @@
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
-            // textBoxEAX6ECX16_31_Reserved
+            // textBoxeAX00000006ECX16_31_Reserved
             // 
-            this.textBoxEAX6ECX16_31_Reserved.Location = new System.Drawing.Point(350, 166);
-            this.textBoxEAX6ECX16_31_Reserved.Name = "textBoxEAX6ECX16_31_Reserved";
-            this.textBoxEAX6ECX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6ECX16_31_Reserved.TabIndex = 9;
+            this.textBoxeAX00000006ECX16_31_Reserved.Location = new System.Drawing.Point(350, 166);
+            this.textBoxeAX00000006ECX16_31_Reserved.Name = "textBoxeAX00000006ECX16_31_Reserved";
+            this.textBoxeAX00000006ECX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006ECX16_31_Reserved.TabIndex = 9;
             // 
-            // labelEAX6ECX16_31_Reserved
+            // labeleAX00000006ECX16_31_Reserved
             // 
-            this.labelEAX6ECX16_31_Reserved.AutoSize = true;
-            this.labelEAX6ECX16_31_Reserved.Location = new System.Drawing.Point(3, 169);
-            this.labelEAX6ECX16_31_Reserved.Name = "labelEAX6ECX16_31_Reserved";
-            this.labelEAX6ECX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEAX6ECX16_31_Reserved.TabIndex = 8;
-            this.labelEAX6ECX16_31_Reserved.Text = "Reserved [16-31]:";
+            this.labeleAX00000006ECX16_31_Reserved.AutoSize = true;
+            this.labeleAX00000006ECX16_31_Reserved.Location = new System.Drawing.Point(3, 169);
+            this.labeleAX00000006ECX16_31_Reserved.Name = "labeleAX00000006ECX16_31_Reserved";
+            this.labeleAX00000006ECX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labeleAX00000006ECX16_31_Reserved.TabIndex = 8;
+            this.labeleAX00000006ECX16_31_Reserved.Text = "Reserved [16-31]:";
             // 
-            // textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses
+            // textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses
             // 
-            this.textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.Location = new System.Drawing.Point(350, 140);
-            this.textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.Name = "textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses";
-            this.textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.TabIndex = 7;
+            this.textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.Location = new System.Drawing.Point(350, 140);
+            this.textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.Name = "textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses";
+            this.textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.TabIndex = 7;
             // 
-            // labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses
+            // labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses
             // 
-            this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.AutoSize = true;
-            this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.Location = new System.Drawing.Point(3, 143);
-            this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.Name = "labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses";
-            this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.Size = new System.Drawing.Size(338, 13);
-            this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.TabIndex = 6;
-            this.labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses.Text = "Number of Intel Thread Director classes supported by hardware [8-15]:";
+            this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.AutoSize = true;
+            this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.Location = new System.Drawing.Point(3, 143);
+            this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.Name = "labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses";
+            this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.Size = new System.Drawing.Size(338, 13);
+            this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.TabIndex = 6;
+            this.labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses.Text = "Number of Intel Thread Director classes supported by hardware [8-15]:";
             // 
-            // textBoxEAX6ECX4_7_Reserved
+            // textBoxeAX00000006ECX4_7_Reserved
             // 
-            this.textBoxEAX6ECX4_7_Reserved.Location = new System.Drawing.Point(350, 114);
-            this.textBoxEAX6ECX4_7_Reserved.Name = "textBoxEAX6ECX4_7_Reserved";
-            this.textBoxEAX6ECX4_7_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6ECX4_7_Reserved.TabIndex = 5;
+            this.textBoxeAX00000006ECX4_7_Reserved.Location = new System.Drawing.Point(350, 114);
+            this.textBoxeAX00000006ECX4_7_Reserved.Name = "textBoxeAX00000006ECX4_7_Reserved";
+            this.textBoxeAX00000006ECX4_7_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006ECX4_7_Reserved.TabIndex = 5;
             // 
             // labelReserved47
             // 
@@ -337,10 +337,10 @@
             // 
             // groupBoxEBX
             // 
-            this.groupBoxEBX.Controls.Add(this.textBoxEAX6_EBX4_31_Reserved);
-            this.groupBoxEBX.Controls.Add(this.labelEAX6_EBX4_31_Reserved);
-            this.groupBoxEBX.Controls.Add(this.textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor);
-            this.groupBoxEBX.Controls.Add(this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor);
+            this.groupBoxEBX.Controls.Add(this.textBoxeAX00000006_EBX4_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.labeleAX00000006_EBX4_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor);
+            this.groupBoxEBX.Controls.Add(this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor);
             this.groupBoxEBX.Location = new System.Drawing.Point(264, 19);
             this.groupBoxEBX.Name = "groupBoxEBX";
             this.groupBoxEBX.Size = new System.Drawing.Size(491, 74);
@@ -348,37 +348,37 @@
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
             // 
-            // textBoxEAX6_EBX4_31_Reserved
+            // textBoxeAX00000006_EBX4_31_Reserved
             // 
-            this.textBoxEAX6_EBX4_31_Reserved.Location = new System.Drawing.Point(312, 45);
-            this.textBoxEAX6_EBX4_31_Reserved.Name = "textBoxEAX6_EBX4_31_Reserved";
-            this.textBoxEAX6_EBX4_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6_EBX4_31_Reserved.TabIndex = 3;
+            this.textBoxeAX00000006_EBX4_31_Reserved.Location = new System.Drawing.Point(312, 45);
+            this.textBoxeAX00000006_EBX4_31_Reserved.Name = "textBoxeAX00000006_EBX4_31_Reserved";
+            this.textBoxeAX00000006_EBX4_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006_EBX4_31_Reserved.TabIndex = 3;
             // 
-            // labelEAX6_EBX4_31_Reserved
+            // labeleAX00000006_EBX4_31_Reserved
             // 
-            this.labelEAX6_EBX4_31_Reserved.AutoSize = true;
-            this.labelEAX6_EBX4_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelEAX6_EBX4_31_Reserved.Name = "labelEAX6_EBX4_31_Reserved";
-            this.labelEAX6_EBX4_31_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEAX6_EBX4_31_Reserved.TabIndex = 2;
-            this.labelEAX6_EBX4_31_Reserved.Text = "Reserved [4-31]:";
+            this.labeleAX00000006_EBX4_31_Reserved.AutoSize = true;
+            this.labeleAX00000006_EBX4_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labeleAX00000006_EBX4_31_Reserved.Name = "labeleAX00000006_EBX4_31_Reserved";
+            this.labeleAX00000006_EBX4_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labeleAX00000006_EBX4_31_Reserved.TabIndex = 2;
+            this.labeleAX00000006_EBX4_31_Reserved.Text = "Reserved [4-31]:";
             // 
-            // textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor
+            // textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor
             // 
-            this.textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Location = new System.Drawing.Point(312, 19);
-            this.textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Name = "textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor";
-            this.textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.TabIndex = 1;
+            this.textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Location = new System.Drawing.Point(312, 19);
+            this.textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Name = "textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor";
+            this.textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Size = new System.Drawing.Size(100, 20);
+            this.textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.TabIndex = 1;
             // 
-            // labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor
+            // labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor
             // 
-            this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.AutoSize = true;
-            this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Location = new System.Drawing.Point(6, 22);
-            this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Name = "labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor";
-            this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Size = new System.Drawing.Size(300, 13);
-            this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.TabIndex = 0;
-            this.labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Text = "Number of Interrupt Thresholds in Digital Thermal Sensor [0-3]:";
+            this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.AutoSize = true;
+            this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Location = new System.Drawing.Point(6, 22);
+            this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Name = "labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor";
+            this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Size = new System.Drawing.Size(300, 13);
+            this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.TabIndex = 0;
+            this.labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor.Text = "Number of Interrupt Thresholds in Digital Thermal Sensor [0-3]:";
             // 
             // groupBoxEAX
             // 
@@ -757,95 +757,95 @@
             // 
             // groupBoxAll
             // 
-            this.groupBoxAll.Controls.Add(this.textBoxEAX6EAX);
-            this.groupBoxAll.Controls.Add(this.labelEAX6EAX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAX6EBX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAX6ECX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAX6EDX);
-            this.groupBoxAll.Controls.Add(this.labelEAX6EBX);
-            this.groupBoxAll.Controls.Add(this.labelEAX6ECX);
-            this.groupBoxAll.Controls.Add(this.labelEAX6EDX);
+            this.groupBoxAll.Controls.Add(this.textBoxeAX00000006EAX);
+            this.groupBoxAll.Controls.Add(this.labeleAX00000006EAX);
+            this.groupBoxAll.Controls.Add(this.textBoxeAX00000006EBX);
+            this.groupBoxAll.Controls.Add(this.textBoxeAX00000006ECX);
+            this.groupBoxAll.Controls.Add(this.textBoxeAX00000006EDX);
+            this.groupBoxAll.Controls.Add(this.labeleAX00000006EBX);
+            this.groupBoxAll.Controls.Add(this.labeleAX00000006ECX);
+            this.groupBoxAll.Controls.Add(this.labeleAX00000006EDX);
             this.groupBoxAll.Location = new System.Drawing.Point(6, 19);
             this.groupBoxAll.Name = "groupBoxAll";
             this.groupBoxAll.Size = new System.Drawing.Size(252, 133);
             this.groupBoxAll.TabIndex = 40;
             this.groupBoxAll.TabStop = false;
             // 
-            // textBoxEAX6EAX
+            // textBoxeAX00000006EAX
             // 
-            this.textBoxEAX6EAX.Location = new System.Drawing.Point(40, 19);
-            this.textBoxEAX6EAX.Name = "textBoxEAX6EAX";
-            this.textBoxEAX6EAX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX6EAX.TabIndex = 1;
+            this.textBoxeAX00000006EAX.Location = new System.Drawing.Point(40, 19);
+            this.textBoxeAX00000006EAX.Name = "textBoxeAX00000006EAX";
+            this.textBoxeAX00000006EAX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxeAX00000006EAX.TabIndex = 1;
             // 
-            // labelEAX6EAX
+            // labeleAX00000006EAX
             // 
-            this.labelEAX6EAX.AutoSize = true;
-            this.labelEAX6EAX.Location = new System.Drawing.Point(3, 22);
-            this.labelEAX6EAX.Name = "labelEAX6EAX";
-            this.labelEAX6EAX.Size = new System.Drawing.Size(31, 13);
-            this.labelEAX6EAX.TabIndex = 0;
-            this.labelEAX6EAX.Text = "EAX:";
+            this.labeleAX00000006EAX.AutoSize = true;
+            this.labeleAX00000006EAX.Location = new System.Drawing.Point(3, 22);
+            this.labeleAX00000006EAX.Name = "labeleAX00000006EAX";
+            this.labeleAX00000006EAX.Size = new System.Drawing.Size(31, 13);
+            this.labeleAX00000006EAX.TabIndex = 0;
+            this.labeleAX00000006EAX.Text = "EAX:";
             // 
-            // textBoxEAX6EBX
+            // textBoxeAX00000006EBX
             // 
-            this.textBoxEAX6EBX.Location = new System.Drawing.Point(40, 45);
-            this.textBoxEAX6EBX.Name = "textBoxEAX6EBX";
-            this.textBoxEAX6EBX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX6EBX.TabIndex = 2;
+            this.textBoxeAX00000006EBX.Location = new System.Drawing.Point(40, 45);
+            this.textBoxeAX00000006EBX.Name = "textBoxeAX00000006EBX";
+            this.textBoxeAX00000006EBX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxeAX00000006EBX.TabIndex = 2;
             // 
-            // textBoxEAX6ECX
+            // textBoxeAX00000006ECX
             // 
-            this.textBoxEAX6ECX.Location = new System.Drawing.Point(40, 71);
-            this.textBoxEAX6ECX.Name = "textBoxEAX6ECX";
-            this.textBoxEAX6ECX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX6ECX.TabIndex = 3;
+            this.textBoxeAX00000006ECX.Location = new System.Drawing.Point(40, 71);
+            this.textBoxeAX00000006ECX.Name = "textBoxeAX00000006ECX";
+            this.textBoxeAX00000006ECX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxeAX00000006ECX.TabIndex = 3;
             // 
-            // textBoxEAX6EDX
+            // textBoxeAX00000006EDX
             // 
-            this.textBoxEAX6EDX.Location = new System.Drawing.Point(40, 97);
-            this.textBoxEAX6EDX.Name = "textBoxEAX6EDX";
-            this.textBoxEAX6EDX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX6EDX.TabIndex = 4;
+            this.textBoxeAX00000006EDX.Location = new System.Drawing.Point(40, 97);
+            this.textBoxeAX00000006EDX.Name = "textBoxeAX00000006EDX";
+            this.textBoxeAX00000006EDX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxeAX00000006EDX.TabIndex = 4;
             // 
-            // labelEAX6EBX
+            // labeleAX00000006EBX
             // 
-            this.labelEAX6EBX.AutoSize = true;
-            this.labelEAX6EBX.Location = new System.Drawing.Point(3, 48);
-            this.labelEAX6EBX.Name = "labelEAX6EBX";
-            this.labelEAX6EBX.Size = new System.Drawing.Size(31, 13);
-            this.labelEAX6EBX.TabIndex = 7;
-            this.labelEAX6EBX.Text = "EBX:";
+            this.labeleAX00000006EBX.AutoSize = true;
+            this.labeleAX00000006EBX.Location = new System.Drawing.Point(3, 48);
+            this.labeleAX00000006EBX.Name = "labeleAX00000006EBX";
+            this.labeleAX00000006EBX.Size = new System.Drawing.Size(31, 13);
+            this.labeleAX00000006EBX.TabIndex = 7;
+            this.labeleAX00000006EBX.Text = "EBX:";
             // 
-            // labelEAX6ECX
+            // labeleAX00000006ECX
             // 
-            this.labelEAX6ECX.AutoSize = true;
-            this.labelEAX6ECX.Location = new System.Drawing.Point(3, 74);
-            this.labelEAX6ECX.Name = "labelEAX6ECX";
-            this.labelEAX6ECX.Size = new System.Drawing.Size(31, 13);
-            this.labelEAX6ECX.TabIndex = 8;
-            this.labelEAX6ECX.Text = "ECX:";
+            this.labeleAX00000006ECX.AutoSize = true;
+            this.labeleAX00000006ECX.Location = new System.Drawing.Point(3, 74);
+            this.labeleAX00000006ECX.Name = "labeleAX00000006ECX";
+            this.labeleAX00000006ECX.Size = new System.Drawing.Size(31, 13);
+            this.labeleAX00000006ECX.TabIndex = 8;
+            this.labeleAX00000006ECX.Text = "ECX:";
             // 
-            // labelEAX6EDX
+            // labeleAX00000006EDX
             // 
-            this.labelEAX6EDX.AutoSize = true;
-            this.labelEAX6EDX.Location = new System.Drawing.Point(3, 100);
-            this.labelEAX6EDX.Name = "labelEAX6EDX";
-            this.labelEAX6EDX.Size = new System.Drawing.Size(32, 13);
-            this.labelEAX6EDX.TabIndex = 9;
-            this.labelEAX6EDX.Text = "EDX:";
+            this.labeleAX00000006EDX.AutoSize = true;
+            this.labeleAX00000006EDX.Location = new System.Drawing.Point(3, 100);
+            this.labeleAX00000006EDX.Name = "labeleAX00000006EDX";
+            this.labeleAX00000006EDX.Size = new System.Drawing.Size(32, 13);
+            this.labeleAX00000006EDX.TabIndex = 9;
+            this.labeleAX00000006EDX.Text = "EDX:";
             // 
             // EAX00000006
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 1028);
-            this.Controls.Add(this.groupBoxEAX6);
+            this.Controls.Add(this.groupBoxeAX00000006);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX00000006";
             this.Text = "EAX=0x00000006: Thermal and Power Management";
-            this.groupBoxEAX6.ResumeLayout(false);
+            this.groupBoxeAX00000006.ResumeLayout(false);
             this.groupBoxEDX.ResumeLayout(false);
             this.groupBoxEDX.PerformLayout();
             this.groupBoxECX.ResumeLayout(false);
@@ -862,16 +862,16 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxEAX6;
+        private System.Windows.Forms.GroupBox groupBoxeAX00000006;
         private System.Windows.Forms.GroupBox groupBoxAll;
-        private System.Windows.Forms.TextBox textBoxEAX6EAX;
-        private System.Windows.Forms.Label labelEAX6EAX;
-        private System.Windows.Forms.TextBox textBoxEAX6EBX;
-        private System.Windows.Forms.TextBox textBoxEAX6ECX;
-        private System.Windows.Forms.TextBox textBoxEAX6EDX;
-        private System.Windows.Forms.Label labelEAX6EBX;
-        private System.Windows.Forms.Label labelEAX6ECX;
-        private System.Windows.Forms.Label labelEAX6EDX;
+        private System.Windows.Forms.TextBox textBoxeAX00000006EAX;
+        private System.Windows.Forms.Label labeleAX00000006EAX;
+        private System.Windows.Forms.TextBox textBoxeAX00000006EBX;
+        private System.Windows.Forms.TextBox textBoxeAX00000006ECX;
+        private System.Windows.Forms.TextBox textBoxeAX00000006EDX;
+        private System.Windows.Forms.Label labeleAX00000006EBX;
+        private System.Windows.Forms.Label labeleAX00000006ECX;
+        private System.Windows.Forms.Label labeleAX00000006EDX;
         private System.Windows.Forms.GroupBox groupBoxEAX;
         private System.Windows.Forms.CheckBox checkBoxDTS0;
         private System.Windows.Forms.CheckBox checkBoxTurboBoost1;
@@ -906,31 +906,31 @@
         private System.Windows.Forms.CheckBox checkBoxReserved28;
         private System.Windows.Forms.CheckBox checkBoxReserved27;
         private System.Windows.Forms.GroupBox groupBoxEBX;
-        private System.Windows.Forms.TextBox textBoxEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor;
-        private System.Windows.Forms.Label labelEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor;
-        private System.Windows.Forms.TextBox textBoxEAX6_EBX4_31_Reserved;
-        private System.Windows.Forms.Label labelEAX6_EBX4_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxeAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor;
+        private System.Windows.Forms.Label labeleAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor;
+        private System.Windows.Forms.TextBox textBoxeAX00000006_EBX4_31_Reserved;
+        private System.Windows.Forms.Label labeleAX00000006_EBX4_31_Reserved;
         private System.Windows.Forms.GroupBox groupBoxECX;
         private System.Windows.Forms.CheckBox checkBoxEffectiveFrequencyInterface0;
         private System.Windows.Forms.CheckBox checkBoxACNT21;
         private System.Windows.Forms.CheckBox checkBoxReserved2;
         private System.Windows.Forms.CheckBox checkBoxPerformanceEnergyBiasCapability3;
-        private System.Windows.Forms.TextBox textBoxEAX6ECX4_7_Reserved;
+        private System.Windows.Forms.TextBox textBoxeAX00000006ECX4_7_Reserved;
         private System.Windows.Forms.Label labelReserved47;
-        private System.Windows.Forms.TextBox textBoxEAX6ECX8_15_NumberOfIntelThreadDirectorClasses;
-        private System.Windows.Forms.Label labelEAX6ECX8_15_NumberOfIntelThreadDirectorClasses;
-        private System.Windows.Forms.TextBox textBoxEAX6ECX16_31_Reserved;
-        private System.Windows.Forms.Label labelEAX6ECX16_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxeAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses;
+        private System.Windows.Forms.Label labeleAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses;
+        private System.Windows.Forms.TextBox textBoxeAX00000006ECX16_31_Reserved;
+        private System.Windows.Forms.Label labeleAX00000006ECX16_31_Reserved;
         private System.Windows.Forms.GroupBox groupBoxEDX;
         private System.Windows.Forms.CheckBox checkBoxPerformanceCapabilitySupported0;
         private System.Windows.Forms.CheckBox checkBoxEfficiencyReportingSupported1;
-        private System.Windows.Forms.TextBox textBoxEAX6EDX2_7_Reserved;
-        private System.Windows.Forms.Label labelEAX6EDX2_7_Reserved;
-        private System.Windows.Forms.TextBox textBoxEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure;
-        private System.Windows.Forms.Label labelEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure;
-        private System.Windows.Forms.TextBox textBoxEAX6EDX12_15_Reserved;
-        private System.Windows.Forms.Label labelEAX6EDX12_15_Reserved;
-        private System.Windows.Forms.TextBox textBoxEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure;
-        private System.Windows.Forms.Label labelEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure;
+        private System.Windows.Forms.TextBox textBoxeAX00000006EDX2_7_Reserved;
+        private System.Windows.Forms.Label labeleAX00000006EDX2_7_Reserved;
+        private System.Windows.Forms.TextBox textBoxeAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure;
+        private System.Windows.Forms.Label labeleAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure;
+        private System.Windows.Forms.TextBox textBoxeAX00000006EDX12_15_Reserved;
+        private System.Windows.Forms.Label labeleAX00000006EDX12_15_Reserved;
+        private System.Windows.Forms.TextBox textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure;
+        private System.Windows.Forms.Label labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure;
     }
 }

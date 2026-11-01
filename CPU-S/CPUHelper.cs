@@ -5504,16 +5504,16 @@ namespace CPU_S
         #region EAX=0x00000006: Thermal and Power Management
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX6EAX();
+        public static extern IntPtr GetEAX00000006EAX();
 
-        public string GetEAX6EAXX()
+        public string GetEAX00000006EAXX()
         {
             try
             {
-                IntPtr eAX6EAXPtr = GetEAX6EAX();
-                string eAX6EAXString = Marshal.PtrToStringAnsi(eAX6EAXPtr);
+                IntPtr eAX00000006EAXPtr = GetEAX00000006EAX();
+                string eAX00000006EAXString = Marshal.PtrToStringAnsi(eAX00000006EAXPtr);
 
-                return eAX6EAXString;
+                return eAX00000006EAXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -5528,16 +5528,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX6EBX();
+        public static extern IntPtr GetEAX00000006EBX();
 
-        public string GetEAX6EBXX()
+        public string GetEAX00000006EBXX()
         {
             try
             {
-                IntPtr eAX6EBXPtr = GetEAX6EBX();
-                string eAX6EBXString = Marshal.PtrToStringAnsi(eAX6EBXPtr);
+                IntPtr eAX00000006EBXPtr = GetEAX00000006EBX();
+                string eAX00000006EBXString = Marshal.PtrToStringAnsi(eAX00000006EBXPtr);
 
-                return eAX6EBXString;
+                return eAX00000006EBXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -5552,16 +5552,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX6ECX();
+        public static extern IntPtr GetEAX00000006ECX();
 
-        public string GetEAX6ECXX()
+        public string GetEAX00000006ECXX()
         {
             try
             {
-                IntPtr eAX6ECXPtr = GetEAX6ECX();
-                string eAX6ECXString = Marshal.PtrToStringAnsi(eAX6ECXPtr);
+                IntPtr eAX00000006ECXPtr = GetEAX00000006ECX();
+                string eAX00000006ECXString = Marshal.PtrToStringAnsi(eAX00000006ECXPtr);
 
-                return eAX6ECXString;
+                return eAX00000006ECXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -5576,16 +5576,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX6EDX();
+        public static extern IntPtr GetEAX00000006EDX();
 
-        public string GetEAX6EDXX()
+        public string GetEAX00000006EDXX()
         {
             try
             {
-                IntPtr eAX6EDXPtr = GetEAX6EDX();
-                string eAX6EDXString = Marshal.PtrToStringAnsi(eAX6EDXPtr);
+                IntPtr eAX00000006EDXPtr = GetEAX00000006EDX();
+                string eAX00000006EDXString = Marshal.PtrToStringAnsi(eAX00000006EDXPtr);
 
-                return eAX6EDXString;
+                return eAX00000006EDXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -5600,13 +5600,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX0_DTSIsSupported();
+        private static extern int GetEAX00000006EAX0_DTSIsSupported();
 
-        public bool GetEAX6EAX0_DTSIsSupportedX()
+        public bool GetEAX00000006EAX0_DTSIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX0_DTSIsSupported() != 0;
+                return GetEAX00000006EAX0_DTSIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5621,13 +5621,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX1_TURBO_BOOSTIsSupported();
+        private static extern int GetEAX00000006EAX1_TURBO_BOOSTIsSupported();
 
-        public bool GetEAX6EAX1_TURBO_BOOSTIsSupportedX()
+        public bool GetEAX00000006EAX1_TURBO_BOOSTIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX1_TURBO_BOOSTIsSupported() != 0;
+                return GetEAX00000006EAX1_TURBO_BOOSTIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5642,13 +5642,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX2_ARATIsSupported();
+        private static extern int GetEAX00000006EAX2_ARATIsSupported();
 
-        public bool GetEAX6EAX2_ARATIsSupportedX()
+        public bool GetEAX00000006EAX2_ARATIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX2_ARATIsSupported() != 0;
+                return GetEAX00000006EAX2_ARATIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5663,13 +5663,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX3_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX3_ReservedIsSupported();
 
-        public bool GetEAX6EAX3_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX3_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX3_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX3_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5684,13 +5684,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupported();
+        private static extern int GetEAX00000006EAX4_PowerLimitNotificationCapability_PLNIsSupported();
 
-        public bool GetEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupportedX()
+        public bool GetEAX00000006EAX4_PowerLimitNotificationCapability_PLNIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX4_PowerLimitNotificationCapability_PLNIsSupported() != 0;
+                return GetEAX00000006EAX4_PowerLimitNotificationCapability_PLNIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5705,13 +5705,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported();
+        private static extern int GetEAX00000006EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported();
 
-        public bool GetEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupportedX()
+        public bool GetEAX00000006EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported() != 0;
+                return GetEAX00000006EAX5_ExtendedClockModulationDutyCapability_ECMDIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5726,13 +5726,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX6_PackageThermalManagementCapability_PTMIsSupported();
+        private static extern int GetEAX00000006eAX00000006_PackageThermalManagementCapability_PTMIsSupported();
 
-        public bool GetEAX6EAX6_PackageThermalManagementCapability_PTMIsSupportedX()
+        public bool GetEAX00000006eAX00000006_PackageThermalManagementCapability_PTMIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX6_PackageThermalManagementCapability_PTMIsSupported() != 0;
+                return GetEAX00000006eAX00000006_PackageThermalManagementCapability_PTMIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5747,13 +5747,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported();
+        private static extern int GetEAX00000006EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported();
 
-        public bool GetEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupportedX()
+        public bool GetEAX00000006EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported() != 0;
+                return GetEAX00000006EAX7_HardwareControlledPerformanceStatesCapability_HWPIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5768,13 +5768,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupported();
+        private static extern int GetEAX00000006EAX8_HWPNotificationCapability_HWP_NotificationIsSupported();
 
-        public bool GetEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupportedX()
+        public bool GetEAX00000006EAX8_HWPNotificationCapability_HWP_NotificationIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX8_HWPNotificationCapability_HWP_NotificationIsSupported() != 0;
+                return GetEAX00000006EAX8_HWPNotificationCapability_HWP_NotificationIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5789,13 +5789,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported();
+        private static extern int GetEAX00000006EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported();
 
-        public bool GetEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupportedX()
+        public bool GetEAX00000006EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported() != 0;
+                return GetEAX00000006EAX9_HWPActivityWindowCapability_HWP_Activity_WindowIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5810,13 +5810,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported();
+        private static extern int GetEAX00000006EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported();
 
-        public bool GetEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupportedX()
+        public bool GetEAX00000006EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported() != 0;
+                return GetEAX00000006EAX10_HWPEnergyPerformancePreferenceCapability_HWP_Energy_Performance_PreferenceIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5831,13 +5831,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported();
+        private static extern int GetEAX00000006EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported();
 
-        public bool GetEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupportedX()
+        public bool GetEAX00000006EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported() != 0;
+                return GetEAX00000006EAX11_HWPPackageLevelRequestCapability_HWP_Package_Level_RequestIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5852,13 +5852,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX12_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX12_ReservedIsSupported();
 
-        public bool GetEAX6EAX12_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX12_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX12_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX12_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5873,13 +5873,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupported();
+        private static extern int GetEAX00000006EAX13_HardwareDutyCyclingCapability_HDCIsSupported();
 
-        public bool GetEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupportedX()
+        public bool GetEAX00000006EAX13_HardwareDutyCyclingCapability_HDCIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX13_HardwareDutyCyclingCapability_HDCIsSupported() != 0;
+                return GetEAX00000006EAX13_HardwareDutyCyclingCapability_HDCIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5894,13 +5894,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported();
+        private static extern int GetEAX00000006EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported();
 
-        public bool GetEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupportedX()
+        public bool GetEAX00000006EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported() != 0;
+                return GetEAX00000006EAX14_IntelTurboBoostMaxTechnology30Availability_TURBO_BOOST_MAXIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5915,13 +5915,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX15_HWP_CAPIsSupported();
+        private static extern int GetEAX00000006EAX15_HWP_CAPIsSupported();
 
-        public bool GetEAX6EAX15_HWP_CAPIsSupportedX()
+        public bool GetEAX00000006EAX15_HWP_CAPIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX15_HWP_CAPIsSupported() != 0;
+                return GetEAX00000006EAX15_HWP_CAPIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5936,13 +5936,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX16_HWP_PECI_OVERRIDEIsSupported();
+        private static extern int GetEAX00000006EAX16_HWP_PECI_OVERRIDEIsSupported();
 
-        public bool GetEAX6EAX16_HWP_PECI_OVERRIDEIsSupportedX()
+        public bool GetEAX00000006EAX16_HWP_PECI_OVERRIDEIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX16_HWP_PECI_OVERRIDEIsSupported() != 0;
+                return GetEAX00000006EAX16_HWP_PECI_OVERRIDEIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5957,13 +5957,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX17_FlexibleHWPIsSupported();
+        private static extern int GetEAX00000006EAX17_FlexibleHWPIsSupported();
 
-        public bool GetEAX6EAX17_FlexibleHWPIsSupportedX()
+        public bool GetEAX00000006EAX17_FlexibleHWPIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX17_FlexibleHWPIsSupported() != 0;
+                return GetEAX00000006EAX17_FlexibleHWPIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5978,13 +5978,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupported();
+        private static extern int GetEAX00000006EAX18_HWP_REQUEST_FAST_ACCESSIsSupported();
 
-        public bool GetEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupportedX()
+        public bool GetEAX00000006EAX18_HWP_REQUEST_FAST_ACCESSIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX18_HWP_REQUEST_FAST_ACCESSIsSupported() != 0;
+                return GetEAX00000006EAX18_HWP_REQUEST_FAST_ACCESSIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -5999,13 +5999,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX19_HW_FEEDBACKIsSupported();
+        private static extern int GetEAX00000006EAX19_HW_FEEDBACKIsSupported();
 
-        public bool GetEAX6EAX19_HW_FEEDBACKIsSupportedX()
+        public bool GetEAX00000006EAX19_HW_FEEDBACKIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX19_HW_FEEDBACKIsSupported() != 0;
+                return GetEAX00000006EAX19_HW_FEEDBACKIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6020,13 +6020,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported();
+        private static extern int GetEAX00000006EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported();
 
-        public bool GetEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupportedX()
+        public bool GetEAX00000006EAX20_HWP_REQUEST_IGNORE_IDLEIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported() != 0;
+                return GetEAX00000006EAX20_HWP_REQUEST_IGNORE_IDLEIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6041,13 +6041,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX21_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX21_ReservedIsSupported();
 
-        public bool GetEAX6EAX21_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX21_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX21_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX21_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6062,13 +6062,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX22_HWP_CTLIsSupported();
+        private static extern int GetEAX00000006EAX22_HWP_CTLIsSupported();
 
-        public bool GetEAX6EAX22_HWP_CTLIsSupportedX()
+        public bool GetEAX00000006EAX22_HWP_CTLIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX22_HWP_CTLIsSupported() != 0;
+                return GetEAX00000006EAX22_HWP_CTLIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6083,13 +6083,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX23_THREAD_DIRECTORIsSupported();
+        private static extern int GetEAX00000006EAX23_THREAD_DIRECTORIsSupported();
 
-        public bool GetEAX6EAX23_THREAD_DIRECTORIsSupportedX()
+        public bool GetEAX00000006EAX23_THREAD_DIRECTORIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX23_THREAD_DIRECTORIsSupported() != 0;
+                return GetEAX00000006EAX23_THREAD_DIRECTORIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6104,13 +6104,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX24_IA32_THERM_INTERRUPTIsSupported();
+        private static extern int GetEAX00000006EAX24_IA32_THERM_INTERRUPTIsSupported();
 
-        public bool GetEAX6EAX24_IA32_THERM_INTERRUPTIsSupportedX()
+        public bool GetEAX00000006EAX24_IA32_THERM_INTERRUPTIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX24_IA32_THERM_INTERRUPTIsSupported() != 0;
+                return GetEAX00000006EAX24_IA32_THERM_INTERRUPTIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6125,13 +6125,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX25_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX25_ReservedIsSupported();
 
-        public bool GetEAX6EAX25_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX25_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX25_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX25_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6146,13 +6146,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX26_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX26_ReservedIsSupported();
 
-        public bool GetEAX6EAX26_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX26_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX26_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX26_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6167,13 +6167,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX27_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX27_ReservedIsSupported();
 
-        public bool GetEAX6EAX27_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX27_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX27_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX27_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6188,13 +6188,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX28_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX28_ReservedIsSupported();
 
-        public bool GetEAX6EAX28_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX28_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX28_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX28_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6209,13 +6209,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX29_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX29_ReservedIsSupported();
 
-        public bool GetEAX6EAX29_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX29_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX29_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX29_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6230,13 +6230,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX30_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX30_ReservedIsSupported();
 
-        public bool GetEAX6EAX30_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX30_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX30_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX30_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6251,13 +6251,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EAX31_ReservedIsSupported();
+        private static extern int GetEAX00000006EAX31_ReservedIsSupported();
 
-        public bool GetEAX6EAX31_ReservedIsSupportedX()
+        public bool GetEAX00000006EAX31_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6EAX31_ReservedIsSupported() != 0;
+                return GetEAX00000006EAX31_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6274,16 +6274,16 @@ namespace CPU_S
         #region Thermal / power management feature fields in EBX, ECX and EDX.
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor();
+        public static extern int GetEAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor();
 
-        public string GetEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorX()
+        public string GetEAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorX()
         {
             try
             {
-                int eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorValue = GetEAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor();
-                string eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString = eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorValue.ToString();
+                int eAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorValue = GetEAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensor();
+                string eAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString = eAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorValue.ToString();
 
-                return eAX6_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString;
+                return eAX00000006_EBX0_3_NumberOfInterruptThresholdsInDigitalThermalSensorString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6298,16 +6298,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6_EBX4_31_Reserved();
+        public static extern int GetEAX00000006_EBX4_31_Reserved();
 
-        public string GetEAX6_EBX4_31_ReservedX()
+        public string GetEAX00000006_EBX4_31_ReservedX()
         {
             try
             {
-                int eAX6_EBX4_31_ReservedValue = GetEAX6_EBX4_31_Reserved();
-                string eAX6_EBX4_31_ReservedString = eAX6_EBX4_31_ReservedValue.ToString();
+                int eAX00000006_EBX4_31_ReservedValue = GetEAX00000006_EBX4_31_Reserved();
+                string eAX00000006_EBX4_31_ReservedString = eAX00000006_EBX4_31_ReservedValue.ToString();
 
-                return eAX6_EBX4_31_ReservedString;
+                return eAX00000006_EBX4_31_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6322,13 +6322,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6ECX0_EffectiveFrequencyInterfaceIsSupported();
+        private static extern int GetEAX00000006ECX0_EffectiveFrequencyInterfaceIsSupported();
 
-        public bool GetEAX6ECX0_EffectiveFrequencyInterfaceIsSupportedX()
+        public bool GetEAX00000006ECX0_EffectiveFrequencyInterfaceIsSupportedX()
         {
             try
             {
-                return GetEAX6ECX0_EffectiveFrequencyInterfaceIsSupported() != 0;
+                return GetEAX00000006ECX0_EffectiveFrequencyInterfaceIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6343,13 +6343,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6ECX1_ACNT2CapabilityIsSupported();
+        private static extern int GetEAX00000006ECX1_ACNT2CapabilityIsSupported();
 
-        public bool GetEAX6ECX1_ACNT2CapabilityIsSupportedX()
+        public bool GetEAX00000006ECX1_ACNT2CapabilityIsSupportedX()
         {
             try
             {
-                return GetEAX6ECX1_ACNT2CapabilityIsSupported() != 0;
+                return GetEAX00000006ECX1_ACNT2CapabilityIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6364,13 +6364,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6ECX2_ReservedIsSupported();
+        private static extern int GetEAX00000006ECX2_ReservedIsSupported();
 
-        public bool GetEAX6ECX2_ReservedIsSupportedX()
+        public bool GetEAX00000006ECX2_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX6ECX2_ReservedIsSupported() != 0;
+                return GetEAX00000006ECX2_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6385,13 +6385,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupported();
+        private static extern int GetEAX00000006ECX3_PerformanceEnergyBiasCapabilityMSRIsSupported();
 
-        public bool GetEAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupportedX()
+        public bool GetEAX00000006ECX3_PerformanceEnergyBiasCapabilityMSRIsSupportedX()
         {
             try
             {
-                return GetEAX6ECX3_PerformanceEnergyBiasCapabilityMSRIsSupported() != 0;
+                return GetEAX00000006ECX3_PerformanceEnergyBiasCapabilityMSRIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6406,16 +6406,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6ECX4_7_Reserved();
+        public static extern int GetEAX00000006ECX4_7_Reserved();
 
-        public string GetEAX6ECX4_7_ReservedX()
+        public string GetEAX00000006ECX4_7_ReservedX()
         {
             try
             {
-                int eAX6ECX4_7_ReservedValue = GetEAX6ECX4_7_Reserved();
-                string eAX6ECX4_7_ReservedString = eAX6ECX4_7_ReservedValue.ToString();
+                int eAX00000006ECX4_7_ReservedValue = GetEAX00000006ECX4_7_Reserved();
+                string eAX00000006ECX4_7_ReservedString = eAX00000006ECX4_7_ReservedValue.ToString();
 
-                return eAX6ECX4_7_ReservedString;
+                return eAX00000006ECX4_7_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6430,16 +6430,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6ECX8_15_NumberOfIntelThreadDirectorClasses();
+        public static extern int GetEAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses();
 
-        public string GetEAX6ECX8_15_NumberOfIntelThreadDirectorClassesX()
+        public string GetEAX00000006ECX8_15_NumberOfIntelThreadDirectorClassesX()
         {
             try
             {
-                int eAX6ECX8_15_NumberOfIntelThreadDirectorClassesValue = GetEAX6ECX8_15_NumberOfIntelThreadDirectorClasses();
-                string eAX6ECX8_15_NumberOfIntelThreadDirectorClassesString = eAX6ECX8_15_NumberOfIntelThreadDirectorClassesValue.ToString();
+                int eAX00000006ECX8_15_NumberOfIntelThreadDirectorClassesValue = GetEAX00000006ECX8_15_NumberOfIntelThreadDirectorClasses();
+                string eAX00000006ECX8_15_NumberOfIntelThreadDirectorClassesString = eAX00000006ECX8_15_NumberOfIntelThreadDirectorClassesValue.ToString();
 
-                return eAX6ECX8_15_NumberOfIntelThreadDirectorClassesString;
+                return eAX00000006ECX8_15_NumberOfIntelThreadDirectorClassesString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6454,16 +6454,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6ECX16_31_Reserved();
+        public static extern int GetEAX00000006ECX16_31_Reserved();
 
-        public string GetEAX6ECX16_31_ReservedX()
+        public string GetEAX00000006ECX16_31_ReservedX()
         {
             try
             {
-                int eAX6ECX16_31_ReservedValue = GetEAX6ECX16_31_Reserved();
-                string eAX6ECX16_31_ReservedString = eAX6ECX16_31_ReservedValue.ToString();
+                int eAX00000006ECX16_31_ReservedValue = GetEAX00000006ECX16_31_Reserved();
+                string eAX00000006ECX16_31_ReservedString = eAX00000006ECX16_31_ReservedValue.ToString();
 
-                return eAX6ECX16_31_ReservedString;
+                return eAX00000006ECX16_31_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6478,13 +6478,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupported();
+        private static extern int GetEAX00000006EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupported();
 
-        public bool GetEAX6EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupportedX()
+        public bool GetEAX00000006EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupportedX()
         {
             try
             {
-                return GetEAX6EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupported() != 0;
+                return GetEAX00000006EDX0_HardwareFeedbackReportingPerformanceCapabilityReportingIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6499,13 +6499,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX6EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupported();
+        private static extern int GetEAX00000006EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupported();
 
-        public bool GetEAX6EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupportedX()
+        public bool GetEAX00000006EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupportedX()
         {
             try
             {
-                return GetEAX6EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupported() != 0;
+                return GetEAX00000006EDX1_HardwareFeedbackReportingEfficiencyCapabilityReportingIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -6520,16 +6520,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6EDX2_7_Reserved();
+        public static extern int GetEAX00000006EDX2_7_Reserved();
 
-        public string GetEAX6EDX2_7_ReservedX()
+        public string GetEAX00000006EDX2_7_ReservedX()
         {
             try
             {
-                int eAX6EDX2_7_ReservedValue = GetEAX6EDX2_7_Reserved();
-                string eAX6EDX2_7_ReservedString = eAX6EDX2_7_ReservedValue.ToString();
+                int eAX00000006EDX2_7_ReservedValue = GetEAX00000006EDX2_7_Reserved();
+                string eAX00000006EDX2_7_ReservedString = eAX00000006EDX2_7_ReservedValue.ToString();
 
-                return eAX6EDX2_7_ReservedString;
+                return eAX00000006EDX2_7_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6544,16 +6544,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure();
+        public static extern int GetEAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure();
 
-        public string GetEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureX()
+        public string GetEAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructureX()
         {
             try
             {
-                int eAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureValue = GetEAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructure();
-                string eAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureString = eAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureValue.ToString();
+                int eAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructureValue = GetEAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructure();
+                string eAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructureString = eAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructureValue.ToString();
 
-                return eAX6EDX8_11_SizeOfHardwareFeedbackInterfaceStructureString;
+                return eAX00000006EDX8_11_SizeOfHardwareFeedbackInterfaceStructureString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6568,16 +6568,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6EDX12_15_Reserved();
+        public static extern int GetEAX00000006EDX12_15_Reserved();
 
-        public string GetEAX6EDX12_15_ReservedX()
+        public string GetEAX00000006EDX12_15_ReservedX()
         {
             try
             {
-                int eAX6EDX12_15_ReservedValue = GetEAX6EDX12_15_Reserved();
-                string eAX6EDX12_15_ReservedString = eAX6EDX12_15_ReservedValue.ToString();
+                int eAX00000006EDX12_15_ReservedValue = GetEAX00000006EDX12_15_Reserved();
+                string eAX00000006EDX12_15_ReservedString = eAX00000006EDX12_15_ReservedValue.ToString();
 
-                return eAX6EDX12_15_ReservedString;
+                return eAX00000006EDX12_15_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
@@ -6592,16 +6592,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure();
+        public static extern int GetEAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure();
 
-        public string GetEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureX()
+        public string GetEAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureX()
         {
             try
             {
-                int eAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureValue = GetEAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure();
-                string eAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureString = eAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureValue.ToString();
+                int eAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureValue = GetEAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure();
+                string eAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureString = eAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureValue.ToString();
 
-                return eAX6EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureString;
+                return eAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructureString;
             }
             catch (DllNotFoundException ex)
             {
