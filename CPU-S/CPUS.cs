@@ -890,8 +890,18 @@ namespace CPU_S
             checkBoxAVX512VBMI2.Checked = cpuHelper.GetEAX7ECX0_ECX6_AVX512VBMI2IsSupportedX();
             checkBoxAVX512BITALG.Checked = cpuHelper.GetEAX7ECX0_ECX12_AVX512BITALGIsSupportedX();
             checkBoxAVX512VP2INTERSECT.Checked = cpuHelper.GetEAX7ECX0_EDX8_AVX512VP2INTERSECTIsSupportedX();
+
             //checkBoxAVX512BMM.Checked = cpuHelper. //80000021 EAX 23 AVX512_BMM
-            //checkBoxAMX.Checked = cpuHelper. // Several different AMX features, check the specific CPUID bits for each
+
+            // AMX (Advanced Matrix Extensions) support is indicated by the following CPUID bits:
+            // CPUID.07H.00H:EDX[22] indicates AMX-BF16 support.
+            // CPUID.07H.00H: EDX[24] indicates AMX-TILE support.
+            // CPUID.07H.00H: EDX[25] indicates AMX-INT8 support.
+            bool cpuIdEAX7ECX0_EDX22_AMXBF16IsSupported = cpuHelper.GetEAX7ECX0_EDX22_AMXBF16IsSupportedX();
+            bool cpuIdEAX7ECX0_EDX24_AMXTILEIsSupported = cpuHelper.GetEAX7ECX0_EDX24_AMXTILEIsSupportedX();
+            bool cpuIdEAX7ECX0_EDX25_AMXINT8IsSupported = cpuHelper.GetEAX7ECX0_EDX25_AMXINT8IsSupportedX();
+            checkBoxAMX.Checked = (cpuIdEAX7ECX0_EDX22_AMXBF16IsSupported && cpuIdEAX7ECX0_EDX24_AMXTILEIsSupported && cpuIdEAX7ECX0_EDX25_AMXINT8IsSupported);
+
             //checkBoxAVX101.Checked = cpuHelper. // Several different AVX10 features, check the specific CPUID bits for each (EAX24, ECX0)
             //checkBoxAVX102.Checked = cpuHelper. // Several different AVX10 features, check the specific CPUID bits for each (EAX24, ECX1)
 
