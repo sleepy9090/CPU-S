@@ -15673,86 +15673,98 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE();
+        public static extern int GetEAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE();
 
-        public bool GetEAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATEX()
+        public string GetEAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATEX()
         {
             try
             {
-                return GetEAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE() != 0;
+                int eAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE = GetEAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE();
+                string eAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATEString = eAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.ToString();
+
+                return eAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATEString;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. SECS.ATTRIBUTES.31...0 that can be set with ENCLS[ECREATE] support cannot be determined. " + ex.Message);
-                return false;
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for SECS.ATTRIBUTES.31...0 that can be set with ENCLS[ECREATE] support: " + ex.Message);
-                return false;
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE();
+        public static extern int GetEAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE();
 
-        public bool GetEAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATEX()
+        public string GetEAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATEX()
         {
             try
             {
-                return GetEAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE() != 0;
+                int eAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE = GetEAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE();
+                string eAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATEString = eAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.ToString();
+
+                return eAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATEString;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. SECS.ATTRIBUTES.63...32 that can be set with ENCLS[ECREATE] support cannot be determined. " + ex.Message);
-                return false;
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for SECS.ATTRIBUTES.63...32 that can be set with ENCLS[ECREATE] support: " + ex.Message);
-                return false;
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE();
+        public static extern int GetEAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE();
 
-        public bool GetEAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATEX()
+        public string GetEAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATEX()
         {
             try
             {
-                return GetEAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE() != 0;
+                int eAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE = GetEAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE();
+                string eAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATEString = eAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.ToString();
+
+                return eAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATEString;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. SECS.ATTRIBUTES.95...64 that can be set with ENCLS[ECREATE] support cannot be determined. " + ex.Message);
-                return false;
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for SECS.ATTRIBUTES.95...64 that can be set with ENCLS[ECREATE] support: " + ex.Message);
-                return false;
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE();
+        public static extern int GetEAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE();
 
-        public bool GetEAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATEX()
+        public string GetEAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATEX()
         {
             try
             {
-                return GetEAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE() != 0;
+                int eAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE = GetEAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE();
+                string eAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATEString = eAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE.ToString();
+
+                return eAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATEString;
             }
             catch (DllNotFoundException ex)
             {
-                Console.WriteLine("Error: CPUIDBE.dll not found. SECS.ATTRIBUTES.127...96 that can be set with ENCLS[ECREATE] support cannot be determined. " + ex.Message);
-                return false;
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while checking for SECS.ATTRIBUTES.127...96 that can be set with ENCLS[ECREATE] support: " + ex.Message);
-                return false;
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
 
@@ -15857,14 +15869,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_EAX0_3_LeafValid_NotValid_Reserved(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_EAX0_3_LeafValid_NotValid_Reserved(int subLeafIndex);
 
         public string GetEAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedPtr = GetEAX00000012ECXN_EAX0_3_LeafValid_NotValid_Reserved(subLeafIndex);
-                string eAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedString = Marshal.PtrToStringAnsi(eAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedPtr);
+                int eAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedValue = GetEAX00000012ECXN_EAX0_3_LeafValid_NotValid_Reserved(subLeafIndex);
+                string eAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedString = eAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedValue.ToString();
 
                 return eAX00000012ECXN_EAX0_3_LeafValid_NotValid_ReservedString;
             }
@@ -15881,14 +15893,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_EAX4_11_Reserved(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_EAX4_11_Reserved(int subLeafIndex);
 
         public string GetEAX00000012ECXN_EAX4_11_ReservedX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_EAX4_11_ReservedPtr = GetEAX00000012ECXN_EAX4_11_Reserved(subLeafIndex);
-                string eAX00000012ECXN_EAX4_11_ReservedString = Marshal.PtrToStringAnsi(eAX00000012ECXN_EAX4_11_ReservedPtr);
+                int eAX00000012ECXN_EAX4_11_ReservedValue = GetEAX00000012ECXN_EAX4_11_Reserved(subLeafIndex);
+                string eAX00000012ECXN_EAX4_11_ReservedString = eAX00000012ECXN_EAX4_11_ReservedValue.ToString();
 
                 return eAX00000012ECXN_EAX4_11_ReservedString;
             }
@@ -15905,14 +15917,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_EAX12_31_EPCBaseBits_31_12(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_EAX12_31_EPCBaseBits_31_12(int subLeafIndex);
 
         public string GetEAX00000012ECXN_EAX12_31_EPCBaseBits_31_12X(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_EAX12_31_EPCBaseBits_31_12Ptr = GetEAX00000012ECXN_EAX12_31_EPCBaseBits_31_12(subLeafIndex);
-                string eAX00000012ECXN_EAX12_31_EPCBaseBits_31_12String = Marshal.PtrToStringAnsi(eAX00000012ECXN_EAX12_31_EPCBaseBits_31_12Ptr);
+                int eAX00000012ECXN_EAX12_31_EPCBaseBits_31_12Value = GetEAX00000012ECXN_EAX12_31_EPCBaseBits_31_12(subLeafIndex);
+                string eAX00000012ECXN_EAX12_31_EPCBaseBits_31_12String = eAX00000012ECXN_EAX12_31_EPCBaseBits_31_12Value.ToString();
 
                 return eAX00000012ECXN_EAX12_31_EPCBaseBits_31_12String;
             }
@@ -15929,14 +15941,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_EBX0_19_EPCBaseBits_51_32(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_EBX0_19_EPCBaseBits_51_32(int subLeafIndex);
 
         public string GetEAX00000012ECXN_EBX0_19_EPCBaseBits_51_32X(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_EBX0_19_EPCBaseBits_51_32Ptr = GetEAX00000012ECXN_EBX0_19_EPCBaseBits_51_32(subLeafIndex);
-                string eAX00000012ECXN_EBX0_19_EPCBaseBits_51_32String = Marshal.PtrToStringAnsi(eAX00000012ECXN_EBX0_19_EPCBaseBits_51_32Ptr);
+                int eAX00000012ECXN_EBX0_19_EPCBaseBits_51_32Value = GetEAX00000012ECXN_EBX0_19_EPCBaseBits_51_32(subLeafIndex);
+                string eAX00000012ECXN_EBX0_19_EPCBaseBits_51_32String = eAX00000012ECXN_EBX0_19_EPCBaseBits_51_32Value.ToString();
 
                 return eAX00000012ECXN_EBX0_19_EPCBaseBits_51_32String;
             }
@@ -15953,14 +15965,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_EBX20_31_Reserved(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_EBX20_31_Reserved(int subLeafIndex);
 
         public string GetEAX00000012ECXN_EBX20_31_ReservedX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_EBX20_31_ReservedPtr = GetEAX00000012ECXN_EBX20_31_Reserved(subLeafIndex);
-                string eAX00000012ECXN_EBX20_31_ReservedString = Marshal.PtrToStringAnsi(eAX00000012ECXN_EBX20_31_ReservedPtr);
+                int eAX00000012ECXN_EBX20_31_ReservedValue = GetEAX00000012ECXN_EBX20_31_Reserved(subLeafIndex);
+                string eAX00000012ECXN_EBX20_31_ReservedString = eAX00000012ECXN_EBX20_31_ReservedValue.ToString();
 
                 return eAX00000012ECXN_EBX20_31_ReservedString;
             }
@@ -15977,14 +15989,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_ECX0_3_EPCSectionProtection(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_ECX0_3_EPCSectionProtection(int subLeafIndex);
 
         public string GetEAX00000012ECXN_ECX0_3_EPCSectionProtectionX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_ECX0_3_EPCSectionProtectionPtr = GetEAX00000012ECXN_ECX0_3_EPCSectionProtection(subLeafIndex);
-                string eAX00000012ECXN_ECX0_3_EPCSectionProtectionString = Marshal.PtrToStringAnsi(eAX00000012ECXN_ECX0_3_EPCSectionProtectionPtr);
+                int eAX00000012ECXN_ECX0_3_EPCSectionProtectionValue = GetEAX00000012ECXN_ECX0_3_EPCSectionProtection(subLeafIndex);
+                string eAX00000012ECXN_ECX0_3_EPCSectionProtectionString = eAX00000012ECXN_ECX0_3_EPCSectionProtectionValue.ToString();
 
                 return eAX00000012ECXN_ECX0_3_EPCSectionProtectionString;
             }
@@ -16001,14 +16013,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_ECX4_11_Reserved(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_ECX4_11_Reserved(int subLeafIndex);
 
         public string GetEAX00000012ECXN_ECX4_11_ReservedX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_ECX4_11_ReservedPtr = GetEAX00000012ECXN_ECX4_11_Reserved(subLeafIndex);
-                string eAX00000012ECXN_ECX4_11_ReservedString = Marshal.PtrToStringAnsi(eAX00000012ECXN_ECX4_11_ReservedPtr);
+                int eAX00000012ECXN_ECX4_11_ReservedValue = GetEAX00000012ECXN_ECX4_11_Reserved(subLeafIndex);
+                string eAX00000012ECXN_ECX4_11_ReservedString = eAX00000012ECXN_ECX4_11_ReservedValue.ToString();
 
                 return eAX00000012ECXN_ECX4_11_ReservedString;
             }
@@ -16025,14 +16037,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_ECX12_31_EPCSizeBits_31_12(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_ECX12_31_EPCSizeBits_31_12(int subLeafIndex);
 
         public string GetEAX00000012ECXN_ECX12_31_EPCSizeBits_31_12X(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_ECX12_31_EPCSizeBits_31_12Ptr = GetEAX00000012ECXN_ECX12_31_EPCSizeBits_31_12(subLeafIndex);
-                string eAX00000012ECXN_ECX12_31_EPCSizeBits_31_12String = Marshal.PtrToStringAnsi(eAX00000012ECXN_ECX12_31_EPCSizeBits_31_12Ptr);
+                int eAX00000012ECXN_ECX12_31_EPCSizeBits_31_12Value = GetEAX00000012ECXN_ECX12_31_EPCSizeBits_31_12(subLeafIndex);
+                string eAX00000012ECXN_ECX12_31_EPCSizeBits_31_12String = eAX00000012ECXN_ECX12_31_EPCSizeBits_31_12Value.ToString();
 
                 return eAX00000012ECXN_ECX12_31_EPCSizeBits_31_12String;
             }
@@ -16049,14 +16061,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_EDX0_19_EPCSizeBits_51_32(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_EDX0_19_EPCSizeBits_51_32(int subLeafIndex);
 
         public string GetEAX00000012ECXN_EDX0_19_EPCSizeBits_51_32X(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_EDX0_19_EPCSizeBits_51_32Ptr = GetEAX00000012ECXN_EDX0_19_EPCSizeBits_51_32(subLeafIndex);
-                string eAX00000012ECXN_EDX0_19_EPCSizeBits_51_32String = Marshal.PtrToStringAnsi(eAX00000012ECXN_EDX0_19_EPCSizeBits_51_32Ptr);
+                int eAX00000012ECXN_EDX0_19_EPCSizeBits_51_32Value = GetEAX00000012ECXN_EDX0_19_EPCSizeBits_51_32(subLeafIndex);
+                string eAX00000012ECXN_EDX0_19_EPCSizeBits_51_32String = eAX00000012ECXN_EDX0_19_EPCSizeBits_51_32Value.ToString();
 
                 return eAX00000012ECXN_EDX0_19_EPCSizeBits_51_32String;
             }
@@ -16073,14 +16085,14 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX00000012ECXN_EDX20_31_Reserved(int subLeafIndex);
+        public static extern int GetEAX00000012ECXN_EDX20_31_Reserved(int subLeafIndex);
 
         public string GetEAX00000012ECXN_EDX20_31_ReservedX(int subLeafIndex)
         {
             try
             {
-                IntPtr eAX00000012ECXN_EDX20_31_ReservedPtr = GetEAX00000012ECXN_EDX20_31_Reserved(subLeafIndex);
-                string eAX00000012ECXN_EDX20_31_ReservedString = Marshal.PtrToStringAnsi(eAX00000012ECXN_EDX20_31_ReservedPtr);
+                int eAX00000012ECXN_EDX20_31_ReservedValue = GetEAX00000012ECXN_EDX20_31_Reserved(subLeafIndex);
+                string eAX00000012ECXN_EDX20_31_ReservedString = eAX00000012ECXN_EDX20_31_ReservedValue.ToString();
 
                 return eAX00000012ECXN_EDX20_31_ReservedString;
             }
@@ -19599,6 +19611,126 @@ namespace CPU_S
                 string eAX00000021EDXString = Marshal.PtrToStringAnsi(eAX00000021EDXPtr);
 
                 return eAX00000021EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00000021EAXHightestFunctionParameter();
+
+        public string GetEAX00000021EAXHightestFunctionParameterX()
+        {
+            try
+            {
+                IntPtr eAX00000021EAXHightestFunctionParameterPtr = GetEAX00000021EAXHightestFunctionParameter();
+                string eAX00000021EAXHightestFunctionParameterString = Marshal.PtrToStringAnsi(eAX00000021EAXHightestFunctionParameterPtr);
+
+                return eAX00000021EAXHightestFunctionParameterString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00000021EBXEDXECXCpuVendor();
+
+        public string GetEAX00000021EBXEDXECXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX00000021EBXEDXECXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00000021EBXCpuVendor();
+
+        public string GetEAX00000021EBXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX00000021EBXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00000021ECXCpuVendor();
+
+        public string GetEAX00000021ECXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX00000021ECXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX00000021EDXCpuVendor();
+
+        public string GetEAX00000021EDXCpuVendorX()
+        {
+            try
+            {
+                IntPtr vendorPtr = GetEAX00000021EDXCpuVendor();
+                string vendorString = Marshal.PtrToStringAnsi(vendorPtr);
+
+                return vendorString;
             }
             catch (DllNotFoundException ex)
             {

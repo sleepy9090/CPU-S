@@ -19,12 +19,22 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x00000012, ECX=0x00000001: SGX Capabilities (1=SECS)
 
             textBoxEAX00000012EAX.Text = cpuHelper.GetEAX00000012ECX1EAXX();
             textBoxEAX00000012EBX.Text = cpuHelper.GetEAX00000012ECX1EBXX();
             textBoxEAX00000012ECX.Text = cpuHelper.GetEAX00000012ECX1ECXX();
             textBoxEAX00000012EDX.Text = cpuHelper.GetEAX00000012ECX1EDXX();
+
+            textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Text = cpuHelper.GetEAX00000012ECX1_EAX_0_31_SECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATEX();
+            textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Text = cpuHelper.GetEAX00000012ECX1_EBX_0_31_SECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATEX();
+            textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Text = cpuHelper.GetEAX00000012ECX1_ECX_0_31_SECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATEX();
+            textBoxSECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE.Text = cpuHelper.GetEAX00000012ECX1_EDX_0_31_SECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATEX();
 
             #endregion
         }

@@ -20,19 +20,17 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x80000007: Processor Power Management Information and RAS Capabilities
 
-            string cpuIdEAX80000007EAX = cpuHelper.GetEAX80000007EAXX();
-            textBoxEAX80000007EAX.Text = cpuIdEAX80000007EAX;
-
-            string cpuIdEAX80000007EBX = cpuHelper.GetEAX80000007EBXX();
-            textBoxEAX80000007EBX.Text = cpuIdEAX80000007EBX;
-
-            string cpuIdEAX80000007ECX = cpuHelper.GetEAX80000007ECXX();
-            textBoxEAX80000007ECX.Text = cpuIdEAX80000007ECX;
-
-            string cpuIdEAX80000007EDX = cpuHelper.GetEAX80000007EDXX();
-            textBoxEAX80000007EDX.Text = cpuIdEAX80000007EDX;
+            textBoxEAX80000007EAX.Text = cpuHelper.GetEAX80000007EAXX();
+            textBoxEAX80000007EBX.Text = cpuHelper.GetEAX80000007EBXX();
+            textBoxEAX80000007ECX.Text = cpuHelper.GetEAX80000007ECXX();
+            textBoxEAX80000007EDX.Text = cpuHelper.GetEAX80000007EDXX();
 
             //EAX
             textBoxNumberOfMonitors.Text = cpuHelper.GetEAX80000007EAX0_7_NumberOfMonitorsX();

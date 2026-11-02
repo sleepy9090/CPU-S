@@ -7,10 +7,14 @@
 */
 using CPU_S.Properties;
 using System;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Management;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 using Timer = System.Threading.Timer;
 
 namespace CPU_S
@@ -912,17 +916,41 @@ namespace CPU_S
 
             #region x86 Virtualization Instructions
 
-            //checkBoxAMDV.Checked = cpuHelper. // EAX=40000000h-4FFFFFFFh
-            //checkBoxIntelVTX.Checked = cpuHelper. // EAX=40000000h-4FFFFFFFh
-            //checkBoxVIAVT.Checked = cpuHelper. // ?
+            // AMD-V (Secure Virtual Machine / SVM)
+            checkBoxAMDV.Checked = cpuHelper.GetEAX80000001ECX2_SVMIsSupportedX();
+
+            // Intel VT-x (Virtualization Technology)
+            checkBoxIntelVTX.Checked = cpuHelper.GetEAX1ECX5_VMXIsSupportedX();
+
+            // VIA-VT (Virtualization Technology)
+            checkBoxVIAVT.Checked = cpuHelper.GetEAX1ECX5_VMXIsSupportedX();
+
+            // VME - Virtual 8086 Mode Enhancements
             checkBoxV8086M.Checked = cpuHelper.GetEAX1EDX1_VMEIsSupportedX();
+
+            checkBoxHypervisorPresent.Checked = cpuHelper.GetEAX1ECX31_HypervisorIsSupportedX();
 
             #endregion
 
             #region Transactional Memory Instructions
 
-            checkBoxTSX.Checked = cpuHelper.GetEAX7ECX0_EBX11_RTMIsSupportedX(); // RTM - TSX Restricted Transactional Memory ???
-            //checkBoxASF.Checked = cpuHelper.; // Advanced Sycnhronization Facility (ASF) - Intel only, AMD has no ASF support
+            // RTM - TSX Restricted Transactional Memory
+            // CPUID Bits for Intel TSX
+            // Hardware Lock Elision(HLE) Support: CPUID.07H.0H.EBX[4]
+            // Restricted Transactional Memory(RTM) Support: CPUID.07H.0H.EBX[11]
+            // RTM Always Abort(Microcode / IPU update indication): CPUID.07H.0H.EDX[11](RTM_ALWAYS_ABORT)
+            //  – Set by updated microcode to indicate that RTM transactions are being forced to abort
+            bool hleIsSupported = cpuHelper.GetEAX7ECX0_EBX4_HLEIsSupportedX();
+            bool rtmIsSupported = cpuHelper.GetEAX7ECX0_EBX11_RTMIsSupportedX();
+            bool rtmAlwaysAbort = cpuHelper.GetEAX7ECX0_EDX11_RTMAlwaysAbortIsSupportedX();
+            checkBoxTSX.Checked = (hleIsSupported && rtmIsSupported && rtmAlwaysAbort);
+
+            // Advanced Sycnhronization Facility (ASF) - AMD has no ASF support, Intel's version is Transactional Synchronization
+            // Extensions (TSX), also called Transactional Synchronization Extensions New Instructions (TSX-NI) (checkBoxTSX).
+            // Advanced Synchronization Facility (ASF) is a proposed extension to the x86-64 instruction set architecture that
+            // adds hardware transactional memory support. It was introduced by AMD; the latest specification was dated March
+            // 2009. As of October 2013, it was still in the proposal stage. No released microprocessors implement the extension.
+            checkBoxASF.Checked = false; 
 
             #endregion
 
@@ -938,25 +966,83 @@ namespace CPU_S
 
             #region x86 Instructions
 
-            //checkBoxI386.Checked = cpuHelper. //?
-            //checkBoxItanium.Checked = cpuHelper. //?
-            checkBoxHLE.Checked = cpuHelper.GetEAX7ECX0_EBX4_HLEIsSupportedX();
-            //checkBoxKNC.Checked = cpuHelper. //? Knights Corner
-            //checkBoxKLKM.Checked = cpuHelper. //? Knights Landing & Knights Mill
+            // i386 instructions are supported on x86 and x64 processors
+            Architecture arch = RuntimeInformation.ProcessArchitecture;
+            bool supportsI386 = arch == Architecture.X86 || arch == Architecture.X64;
+            checkBoxI386.Checked = supportsI386;
 
-            //checkBoxAM386SMM.Checked = cpuHelper. //? Am386 SMM (System Management Mode Instructions)
+            bool supportsItanium = CheckIfItanium();
+            checkBoxItanium.Checked = supportsItanium;
+
+            checkBoxHLE.Checked = cpuHelper.GetEAX7ECX0_EBX4_HLEIsSupportedX();
+
+            // Note: Knights Corner (Xeon Phi x100 series) uses a specialized MIC instruction set 
+            // that is generally not present or queryable as a standard extension flag on typical 
+            // desktop or server x86_64 processors.
+            checkBoxKNC.Checked = false;
+
+            // Knights Landing & Knights Mill
+            bool AVX512FSupported = cpuHelper.GetEAX7ECX0_EBX16_AVX512FIsSupportedX();
+            bool AVX512CDSupported = cpuHelper.GetEAX7ECX0_EBX28_AVX512CDIsSupportedX();
+            bool AVX512ERSupported = cpuHelper.GetEAX7ECX0_EBX27_AVX512ERIsSupportedX();
+            bool AVX512PFSupported = cpuHelper.GetEAX7ECX0_EBX26_AVX512PFIsSupportedX();
+            bool AVX5124VNNISupported = cpuHelper.GetEAX7ECX0_EDX2_AVX5124VNNIIsSupportedX();
+            bool AVX5124FMAPSSupported = cpuHelper.GetEAX7ECX0_EDX3_AVX5124FMAPSIsSupportedX();
+            bool isKnightsLanding = AVX512FSupported && AVX512CDSupported && AVX512ERSupported && AVX512PFSupported;
+            bool isKnightsMill = isKnightsLanding && AVX5124VNNISupported && AVX5124FMAPSSupported;
+            checkBoxKnightsLanding.Checked = isKnightsLanding;
+            checkBoxKnightsMill.Checked = isKnightsMill;
+            //Console.WriteLine($"AVX-512 Foundation: {AVX512FSupported}");
+            //Console.WriteLine($"AVX-512 CD (Conflict Detection): {AVX512CDSupported}");
+            //Console.WriteLine($"AVX-512 ER (Exponential/Reciprocal - KNL/KNM): {AVX512ERSupported}");
+            //Console.WriteLine($"AVX-512 PF (Prefetch - KNL/KNM): {AVX512PFSupported}");
+            //Console.WriteLine($"AVX-512 4VNNI (Vector Neural Network Instructions - KNL/KNM): {AVX5124VNNISupported}");
+            //Console.WriteLine($"AVX-512 4FMAPS (4 Fused Multiply-Add Packed Single - KNL/KNM): {AVX5124FMAPSSupported}");
+            //Console.WriteLine($"-----------------------------------------");
+            //Console.WriteLine($"Is Knights Landing (KNL): {isKnightsLanding}");
+            //Console.WriteLine($"Is Knights Mill (KNM): {isKnightsMill}");
+
+            // "AM386SMM" is not a standard x86 instruction set extension, and modern processors do not support it.
+            // Instead, "SMM" historically stands for System Management Mode, which was introduced to x86 architectures
+            // in the early 1990s on processors like the AMD Am386SX/SXL/SXLV series to manage power states via a System
+            // Management Interrupt (SMI).
+            // Because SMM is a privileged hardware mode executed entirely by system firmware(BIOS / UEFI) rather than
+            // user applications, there is no direct CPUID instruction leaf or standard user-space API to check for it.
+            // Modern desktop or server applications cannot utilize or query it.
+            checkBoxAM386SMM.Checked = false;
+
             checkBox3DNow.Checked = cpuHelper.GetEAX80000001EDX31_3DNOWIsSupportedX();
             checkBox3DNowPlus.Checked = cpuHelper.GetEAX80000001EDX30_3DNOWEXTIsSupportedX();
             checkBoxXOP.Checked = cpuHelper.GetEAX80000001ECX11_XOPIsSupportedX(); // SSE5 is not a standard name, but it refers to AMD's XOP (eXtended Operations) instruction set
             checkBoxFMA4.Checked = cpuHelper.GetEAX80000001ECX16_FMA4IsSupportedX();
             checkBoxLWP.Checked = cpuHelper.GetEAX80000001ECX15_LWPIsSupportedX();
 
-            //checkBoxNECV.Checked = cpuHelper. //? NEC V-series
-            //checkBoxCyrixGeode.Checked = cpuHelper. //? Cyrix Geode
+            // NEC V-series
+            // Modern CPUs do not natively support "NECV" instructions.
+            checkBoxNECV.Checked = false;
+
+            // Cyrix Geode
+            // Modern CPUs do not natively support "Cyrix" or "Geode" instructions.
+            checkBoxCyrixGeode.Checked = false;
+
+            // 0x80000001 EAC=0x0, EDX bit 24
+            // 24(MMX+) - Cyrix specific: extended MMX
+            // 24(FXSR) - AMD K7: FXSAVE / FXRSTOR, CR4.OSFXSR
             //checkBoxCyrixEMMi.Checked = cpuHelper. //? Cyrix EMMI (Extended Multi-Media Instructions)
-            //checkBoxVIAAIS.Checked = cpuHelper. //? VIA Advanced Intelligent Instruction Set (AIIS)
-            //checkBoxCAndT.Checked = cpuHelper. //? C&T (Cyrix & Texas Instruments) - C&T 486SLC, 486DLC, 5x86, 6x86, M1, M2
-            //checkBox387Clones.Checked = cpuHelper. //? 387 Clones - Cyrix 387S, UMC 387S, IIT 387S, Chips & Technologies 387S, Weitek 387S, etc.
+
+            // The VIA Alternate Instruction Set (AIS) is a hidden, internal secondary instruction set found in legacy
+            // 32-bit VIA C3 processors (which exposed a Centaur-designed RISC co-processor core via the JMPAI 0F 3F opcode)
+            checkBoxVIAAIS.Checked = false;
+
+            // Chips and Technologies (C&T) did not make modern x86/x64 CPUs with unique, current application-level instruction
+            // sets (such as AVX or SSE); rather, historical C&T products like the Super386 DX were 386-compatible
+            // microprocessors and chipsets from the early 1990s. Modern processors (Intel, AMD, ARM) do not feature
+            // distinct "Chips and Technologies" instruction sets.
+            checkBoxCAndT.Checked = false;
+
+            // 387 Clones - Cyrix 387S, UMC 387S, IIT 387S, Chips & Technologies 387S, Weitek 387S, etc.
+            // Modern x86 processors do not feature a "387 Clones" instruction set.
+            checkBox387Clones.Checked = false;
 
             #endregion
 
@@ -976,6 +1062,32 @@ namespace CPU_S
         {
             timer.Dispose();
             Dispose();
+        }
+
+        private bool CheckIfItanium()
+        {
+            try
+            {
+                using (var searcher = new ManagementObjectSearcher("SELECT Architecture FROM Win32_Processor"))
+                {
+                    foreach (ManagementObject obj in searcher.Get())
+                    {
+                        // Architecture value '6' corresponds to ia64 (Itanium)
+                        // See: https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-processor
+                        ushort arch = Convert.ToUInt16(obj["Architecture"]);
+                        if (arch == 6)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error querying WMI: {ex.Message}");
+            }
+
+            return false;
         }
 
         private void eAX0x0HighestFunctionParameterAndManufacturerIDToolStripMenuItem_Click(object sender, EventArgs e)

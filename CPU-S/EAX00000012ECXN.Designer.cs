@@ -34,9 +34,29 @@
             this.textBoxCurrentN = new System.Windows.Forms.TextBox();
             this.buttonNext = new System.Windows.Forms.Button();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelEPCBaseBits_31_12 = new System.Windows.Forms.Label();
+            this.labelEAX4_11_Reserved = new System.Windows.Forms.Label();
+            this.labelLeafValid_NotValid_Reserved = new System.Windows.Forms.Label();
+            this.textBoxEPCBaseBits_31_12 = new System.Windows.Forms.TextBox();
+            this.textBoxEAX4_11_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxLeafValid_NotValid_Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.label20_31_Reserved = new System.Windows.Forms.Label();
+            this.textBox20_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labelEPCSizeBits_51_32 = new System.Windows.Forms.Label();
+            this.textBoxEPCSizeBits_51_32 = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelECX4_11_Reserved = new System.Windows.Forms.Label();
+            this.textBoxECX4_11_Reserved = new System.Windows.Forms.TextBox();
+            this.labelEPCSectionProtection = new System.Windows.Forms.Label();
+            this.textBoxEPCSectionProtection = new System.Windows.Forms.TextBox();
+            this.labelEPCSizeBits_31_12 = new System.Windows.Forms.Label();
+            this.textBoxEPCSizeBits_31_12 = new System.Windows.Forms.TextBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelEBX20_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxEBX20_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labelEPCBaseBits_51_32 = new System.Windows.Forms.Label();
+            this.textBoxEPCBaseBits_51_32 = new System.Windows.Forms.TextBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX00000012EAX = new System.Windows.Forms.TextBox();
             this.labelEAX12EAX = new System.Windows.Forms.Label();
@@ -46,26 +66,6 @@
             this.labelEAX12EBX = new System.Windows.Forms.Label();
             this.labelEAX12ECX = new System.Windows.Forms.Label();
             this.labelEAX12EDX = new System.Windows.Forms.Label();
-            this.textBoxLeafValid_NotValid_Reserved = new System.Windows.Forms.TextBox();
-            this.textBoxEAX4_11_Reserved = new System.Windows.Forms.TextBox();
-            this.textBoxEPCBaseBits_31_12 = new System.Windows.Forms.TextBox();
-            this.labelLeafValid_NotValid_Reserved = new System.Windows.Forms.Label();
-            this.labelEAX4_11_Reserved = new System.Windows.Forms.Label();
-            this.labelEPCBaseBits_31_12 = new System.Windows.Forms.Label();
-            this.labelEPCBaseBits_51_32 = new System.Windows.Forms.Label();
-            this.textBoxEPCBaseBits_51_32 = new System.Windows.Forms.TextBox();
-            this.labelEBX20_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEBX20_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEPCSizeBits_31_12 = new System.Windows.Forms.Label();
-            this.textBoxEPCSizeBits_31_12 = new System.Windows.Forms.TextBox();
-            this.labelEPCSectionProtection = new System.Windows.Forms.Label();
-            this.textBoxEPCSectionProtection = new System.Windows.Forms.TextBox();
-            this.labelECX4_11_Reserved = new System.Windows.Forms.Label();
-            this.textBoxECX4_11_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEPCSizeBits_51_32 = new System.Windows.Forms.Label();
-            this.textBoxEPCSizeBits_51_32 = new System.Windows.Forms.TextBox();
-            this.label20_31_Reserved = new System.Windows.Forms.Label();
-            this.textBox20_31_Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000012.SuspendLayout();
             this.groupBoxCurrent.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
@@ -143,6 +143,54 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
+            // labelEPCBaseBits_31_12
+            // 
+            this.labelEPCBaseBits_31_12.AutoSize = true;
+            this.labelEPCBaseBits_31_12.Location = new System.Drawing.Point(6, 74);
+            this.labelEPCBaseBits_31_12.Name = "labelEPCBaseBits_31_12";
+            this.labelEPCBaseBits_31_12.Size = new System.Drawing.Size(148, 13);
+            this.labelEPCBaseBits_31_12.TabIndex = 5;
+            this.labelEPCBaseBits_31_12.Text = "EPC base bits 31...12 [12-31]:";
+            // 
+            // labelEAX4_11_Reserved
+            // 
+            this.labelEAX4_11_Reserved.AutoSize = true;
+            this.labelEAX4_11_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelEAX4_11_Reserved.Name = "labelEAX4_11_Reserved";
+            this.labelEAX4_11_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEAX4_11_Reserved.TabIndex = 4;
+            this.labelEAX4_11_Reserved.Text = "Reserved [4-11]:";
+            // 
+            // labelLeafValid_NotValid_Reserved
+            // 
+            this.labelLeafValid_NotValid_Reserved.AutoSize = true;
+            this.labelLeafValid_NotValid_Reserved.Location = new System.Drawing.Point(6, 22);
+            this.labelLeafValid_NotValid_Reserved.Name = "labelLeafValid_NotValid_Reserved";
+            this.labelLeafValid_NotValid_Reserved.Size = new System.Drawing.Size(91, 13);
+            this.labelLeafValid_NotValid_Reserved.TabIndex = 3;
+            this.labelLeafValid_NotValid_Reserved.Text = "Leaf Validity [0-3]:";
+            // 
+            // textBoxEPCBaseBits_31_12
+            // 
+            this.textBoxEPCBaseBits_31_12.Location = new System.Drawing.Point(400, 71);
+            this.textBoxEPCBaseBits_31_12.Name = "textBoxEPCBaseBits_31_12";
+            this.textBoxEPCBaseBits_31_12.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEPCBaseBits_31_12.TabIndex = 2;
+            // 
+            // textBoxEAX4_11_Reserved
+            // 
+            this.textBoxEAX4_11_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxEAX4_11_Reserved.Name = "textBoxEAX4_11_Reserved";
+            this.textBoxEAX4_11_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX4_11_Reserved.TabIndex = 1;
+            // 
+            // textBoxLeafValid_NotValid_Reserved
+            // 
+            this.textBoxLeafValid_NotValid_Reserved.Location = new System.Drawing.Point(400, 19);
+            this.textBoxLeafValid_NotValid_Reserved.Name = "textBoxLeafValid_NotValid_Reserved";
+            this.textBoxLeafValid_NotValid_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLeafValid_NotValid_Reserved.TabIndex = 0;
+            // 
             // groupBoxEDX
             // 
             this.groupBoxEDX.Controls.Add(this.label20_31_Reserved);
@@ -155,6 +203,38 @@
             this.groupBoxEDX.TabIndex = 55;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
+            // 
+            // label20_31_Reserved
+            // 
+            this.label20_31_Reserved.AutoSize = true;
+            this.label20_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.label20_31_Reserved.Name = "label20_31_Reserved";
+            this.label20_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.label20_31_Reserved.TabIndex = 15;
+            this.label20_31_Reserved.Text = "Reserved [20-31]:";
+            // 
+            // textBox20_31_Reserved
+            // 
+            this.textBox20_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBox20_31_Reserved.Name = "textBox20_31_Reserved";
+            this.textBox20_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBox20_31_Reserved.TabIndex = 14;
+            // 
+            // labelEPCSizeBits_51_32
+            // 
+            this.labelEPCSizeBits_51_32.AutoSize = true;
+            this.labelEPCSizeBits_51_32.Location = new System.Drawing.Point(6, 22);
+            this.labelEPCSizeBits_51_32.Name = "labelEPCSizeBits_51_32";
+            this.labelEPCSizeBits_51_32.Size = new System.Drawing.Size(137, 13);
+            this.labelEPCSizeBits_51_32.TabIndex = 11;
+            this.labelEPCSizeBits_51_32.Text = "EPC size bits 51...32 [0-19]:";
+            // 
+            // textBoxEPCSizeBits_51_32
+            // 
+            this.textBoxEPCSizeBits_51_32.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEPCSizeBits_51_32.Name = "textBoxEPCSizeBits_51_32";
+            this.textBoxEPCSizeBits_51_32.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEPCSizeBits_51_32.TabIndex = 10;
             // 
             // groupBoxECX
             // 
@@ -171,6 +251,54 @@
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
+            // labelECX4_11_Reserved
+            // 
+            this.labelECX4_11_Reserved.AutoSize = true;
+            this.labelECX4_11_Reserved.Location = new System.Drawing.Point(6, 51);
+            this.labelECX4_11_Reserved.Name = "labelECX4_11_Reserved";
+            this.labelECX4_11_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECX4_11_Reserved.TabIndex = 13;
+            this.labelECX4_11_Reserved.Text = "Reserved [4-11]:";
+            // 
+            // textBoxECX4_11_Reserved
+            // 
+            this.textBoxECX4_11_Reserved.Location = new System.Drawing.Point(400, 48);
+            this.textBoxECX4_11_Reserved.Name = "textBoxECX4_11_Reserved";
+            this.textBoxECX4_11_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX4_11_Reserved.TabIndex = 12;
+            // 
+            // labelEPCSectionProtection
+            // 
+            this.labelEPCSectionProtection.AutoSize = true;
+            this.labelEPCSectionProtection.Location = new System.Drawing.Point(6, 22);
+            this.labelEPCSectionProtection.Name = "labelEPCSectionProtection";
+            this.labelEPCSectionProtection.Size = new System.Drawing.Size(142, 13);
+            this.labelEPCSectionProtection.TabIndex = 11;
+            this.labelEPCSectionProtection.Text = "EPC section protection [0-3]:";
+            // 
+            // textBoxEPCSectionProtection
+            // 
+            this.textBoxEPCSectionProtection.Location = new System.Drawing.Point(300, 19);
+            this.textBoxEPCSectionProtection.Name = "textBoxEPCSectionProtection";
+            this.textBoxEPCSectionProtection.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEPCSectionProtection.TabIndex = 10;
+            // 
+            // labelEPCSizeBits_31_12
+            // 
+            this.labelEPCSizeBits_31_12.AutoSize = true;
+            this.labelEPCSizeBits_31_12.Location = new System.Drawing.Point(6, 77);
+            this.labelEPCSizeBits_31_12.Name = "labelEPCSizeBits_31_12";
+            this.labelEPCSizeBits_31_12.Size = new System.Drawing.Size(143, 13);
+            this.labelEPCSizeBits_31_12.TabIndex = 9;
+            this.labelEPCSizeBits_31_12.Text = "EPC size bits 31...12 [12-31]:";
+            // 
+            // textBoxEPCSizeBits_31_12
+            // 
+            this.textBoxEPCSizeBits_31_12.Location = new System.Drawing.Point(400, 74);
+            this.textBoxEPCSizeBits_31_12.Name = "textBoxEPCSizeBits_31_12";
+            this.textBoxEPCSizeBits_31_12.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEPCSizeBits_31_12.TabIndex = 8;
+            // 
             // groupBoxEBX
             // 
             this.groupBoxEBX.Controls.Add(this.labelEBX20_31_Reserved);
@@ -183,6 +311,38 @@
             this.groupBoxEBX.TabIndex = 53;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
+            // 
+            // labelEBX20_31_Reserved
+            // 
+            this.labelEBX20_31_Reserved.AutoSize = true;
+            this.labelEBX20_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelEBX20_31_Reserved.Name = "labelEBX20_31_Reserved";
+            this.labelEBX20_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labelEBX20_31_Reserved.TabIndex = 9;
+            this.labelEBX20_31_Reserved.Text = "Reserved [20-31]:";
+            // 
+            // textBoxEBX20_31_Reserved
+            // 
+            this.textBoxEBX20_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxEBX20_31_Reserved.Name = "textBoxEBX20_31_Reserved";
+            this.textBoxEBX20_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX20_31_Reserved.TabIndex = 8;
+            // 
+            // labelEPCBaseBits_51_32
+            // 
+            this.labelEPCBaseBits_51_32.AutoSize = true;
+            this.labelEPCBaseBits_51_32.Location = new System.Drawing.Point(6, 22);
+            this.labelEPCBaseBits_51_32.Name = "labelEPCBaseBits_51_32";
+            this.labelEPCBaseBits_51_32.Size = new System.Drawing.Size(142, 13);
+            this.labelEPCBaseBits_51_32.TabIndex = 7;
+            this.labelEPCBaseBits_51_32.Text = "EPC base bits 51...32 [0-19]:";
+            // 
+            // textBoxEPCBaseBits_51_32
+            // 
+            this.textBoxEPCBaseBits_51_32.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEPCBaseBits_51_32.Name = "textBoxEPCBaseBits_51_32";
+            this.textBoxEPCBaseBits_51_32.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEPCBaseBits_51_32.TabIndex = 6;
             // 
             // groupBoxAll
             // 
@@ -264,166 +424,6 @@
             this.labelEAX12EDX.TabIndex = 9;
             this.labelEAX12EDX.Text = "EDX:";
             // 
-            // textBoxLeafValid_NotValid_Reserved
-            // 
-            this.textBoxLeafValid_NotValid_Reserved.Location = new System.Drawing.Point(400, 19);
-            this.textBoxLeafValid_NotValid_Reserved.Name = "textBoxLeafValid_NotValid_Reserved";
-            this.textBoxLeafValid_NotValid_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLeafValid_NotValid_Reserved.TabIndex = 0;
-            // 
-            // textBoxEAX4_11_Reserved
-            // 
-            this.textBoxEAX4_11_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBoxEAX4_11_Reserved.Name = "textBoxEAX4_11_Reserved";
-            this.textBoxEAX4_11_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX4_11_Reserved.TabIndex = 1;
-            // 
-            // textBoxEPCBaseBits_31_12
-            // 
-            this.textBoxEPCBaseBits_31_12.Location = new System.Drawing.Point(400, 71);
-            this.textBoxEPCBaseBits_31_12.Name = "textBoxEPCBaseBits_31_12";
-            this.textBoxEPCBaseBits_31_12.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEPCBaseBits_31_12.TabIndex = 2;
-            // 
-            // labelLeafValid_NotValid_Reserved
-            // 
-            this.labelLeafValid_NotValid_Reserved.AutoSize = true;
-            this.labelLeafValid_NotValid_Reserved.Location = new System.Drawing.Point(6, 22);
-            this.labelLeafValid_NotValid_Reserved.Name = "labelLeafValid_NotValid_Reserved";
-            this.labelLeafValid_NotValid_Reserved.Size = new System.Drawing.Size(299, 13);
-            this.labelLeafValid_NotValid_Reserved.TabIndex = 3;
-            this.labelLeafValid_NotValid_Reserved.Text = "0000b = not valid, 0001b = leaf is valid, other = reserved [0-3]:";
-            // 
-            // labelEAX4_11_Reserved
-            // 
-            this.labelEAX4_11_Reserved.AutoSize = true;
-            this.labelEAX4_11_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelEAX4_11_Reserved.Name = "labelEAX4_11_Reserved";
-            this.labelEAX4_11_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEAX4_11_Reserved.TabIndex = 4;
-            this.labelEAX4_11_Reserved.Text = "Reserved [4-11]:";
-            // 
-            // labelEPCBaseBits_31_12
-            // 
-            this.labelEPCBaseBits_31_12.AutoSize = true;
-            this.labelEPCBaseBits_31_12.Location = new System.Drawing.Point(6, 74);
-            this.labelEPCBaseBits_31_12.Name = "labelEPCBaseBits_31_12";
-            this.labelEPCBaseBits_31_12.Size = new System.Drawing.Size(148, 13);
-            this.labelEPCBaseBits_31_12.TabIndex = 5;
-            this.labelEPCBaseBits_31_12.Text = "EPC base bits 31...12 [12-31]:";
-            // 
-            // labelEPCBaseBits_51_32
-            // 
-            this.labelEPCBaseBits_51_32.AutoSize = true;
-            this.labelEPCBaseBits_51_32.Location = new System.Drawing.Point(6, 22);
-            this.labelEPCBaseBits_51_32.Name = "labelEPCBaseBits_51_32";
-            this.labelEPCBaseBits_51_32.Size = new System.Drawing.Size(142, 13);
-            this.labelEPCBaseBits_51_32.TabIndex = 7;
-            this.labelEPCBaseBits_51_32.Text = "EPC base bits 51...32 [0-19]:";
-            // 
-            // textBoxEPCBaseBits_51_32
-            // 
-            this.textBoxEPCBaseBits_51_32.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEPCBaseBits_51_32.Name = "textBoxEPCBaseBits_51_32";
-            this.textBoxEPCBaseBits_51_32.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEPCBaseBits_51_32.TabIndex = 6;
-            // 
-            // labelEBX20_31_Reserved
-            // 
-            this.labelEBX20_31_Reserved.AutoSize = true;
-            this.labelEBX20_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelEBX20_31_Reserved.Name = "labelEBX20_31_Reserved";
-            this.labelEBX20_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEBX20_31_Reserved.TabIndex = 9;
-            this.labelEBX20_31_Reserved.Text = "Reserved [20-31]:";
-            // 
-            // textBoxEBX20_31_Reserved
-            // 
-            this.textBoxEBX20_31_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBoxEBX20_31_Reserved.Name = "textBoxEBX20_31_Reserved";
-            this.textBoxEBX20_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBX20_31_Reserved.TabIndex = 8;
-            // 
-            // labelEPCSizeBits_31_12
-            // 
-            this.labelEPCSizeBits_31_12.AutoSize = true;
-            this.labelEPCSizeBits_31_12.Location = new System.Drawing.Point(6, 77);
-            this.labelEPCSizeBits_31_12.Name = "labelEPCSizeBits_31_12";
-            this.labelEPCSizeBits_31_12.Size = new System.Drawing.Size(143, 13);
-            this.labelEPCSizeBits_31_12.TabIndex = 9;
-            this.labelEPCSizeBits_31_12.Text = "EPC size bits 31...12 [12-31]:";
-            // 
-            // textBoxEPCSizeBits_31_12
-            // 
-            this.textBoxEPCSizeBits_31_12.Location = new System.Drawing.Point(400, 74);
-            this.textBoxEPCSizeBits_31_12.Name = "textBoxEPCSizeBits_31_12";
-            this.textBoxEPCSizeBits_31_12.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEPCSizeBits_31_12.TabIndex = 8;
-            // 
-            // labelEPCSectionProtection
-            // 
-            this.labelEPCSectionProtection.AutoSize = true;
-            this.labelEPCSectionProtection.Location = new System.Drawing.Point(6, 22);
-            this.labelEPCSectionProtection.Name = "labelEPCSectionProtection";
-            this.labelEPCSectionProtection.Size = new System.Drawing.Size(142, 13);
-            this.labelEPCSectionProtection.TabIndex = 11;
-            this.labelEPCSectionProtection.Text = "EPC section protection [0-3]:";
-            // 
-            // textBoxEPCSectionProtection
-            // 
-            this.textBoxEPCSectionProtection.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEPCSectionProtection.Name = "textBoxEPCSectionProtection";
-            this.textBoxEPCSectionProtection.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEPCSectionProtection.TabIndex = 10;
-            // 
-            // labelECX4_11_Reserved
-            // 
-            this.labelECX4_11_Reserved.AutoSize = true;
-            this.labelECX4_11_Reserved.Location = new System.Drawing.Point(6, 51);
-            this.labelECX4_11_Reserved.Name = "labelECX4_11_Reserved";
-            this.labelECX4_11_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelECX4_11_Reserved.TabIndex = 13;
-            this.labelECX4_11_Reserved.Text = "Reserved [4-11]:";
-            // 
-            // textBoxECX4_11_Reserved
-            // 
-            this.textBoxECX4_11_Reserved.Location = new System.Drawing.Point(400, 48);
-            this.textBoxECX4_11_Reserved.Name = "textBoxECX4_11_Reserved";
-            this.textBoxECX4_11_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECX4_11_Reserved.TabIndex = 12;
-            // 
-            // labelEPCSizeBits_51_32
-            // 
-            this.labelEPCSizeBits_51_32.AutoSize = true;
-            this.labelEPCSizeBits_51_32.Location = new System.Drawing.Point(6, 22);
-            this.labelEPCSizeBits_51_32.Name = "labelEPCSizeBits_51_32";
-            this.labelEPCSizeBits_51_32.Size = new System.Drawing.Size(137, 13);
-            this.labelEPCSizeBits_51_32.TabIndex = 11;
-            this.labelEPCSizeBits_51_32.Text = "EPC size bits 51...32 [0-19]:";
-            // 
-            // textBoxEPCSizeBits_51_32
-            // 
-            this.textBoxEPCSizeBits_51_32.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEPCSizeBits_51_32.Name = "textBoxEPCSizeBits_51_32";
-            this.textBoxEPCSizeBits_51_32.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEPCSizeBits_51_32.TabIndex = 10;
-            // 
-            // label20_31_Reserved
-            // 
-            this.label20_31_Reserved.AutoSize = true;
-            this.label20_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.label20_31_Reserved.Name = "label20_31_Reserved";
-            this.label20_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.label20_31_Reserved.TabIndex = 15;
-            this.label20_31_Reserved.Text = "Reserved [20-31]:";
-            // 
-            // textBox20_31_Reserved
-            // 
-            this.textBox20_31_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBox20_31_Reserved.Name = "textBox20_31_Reserved";
-            this.textBox20_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBox20_31_Reserved.TabIndex = 14;
-            // 
             // EAX00000012ECXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,7 +433,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX00000012ECXN";
-            this.Text = "EAX=0x00000012, ECX=0x00000002 to n: SGX Resources (2...n=EPC)";
+            this.Text = "EAX=0x00000012, ECX=0x00000002 to n: SGX Resources (Software Guard eXtensions) (2" +
+    "...n=EPC)";
             this.groupBoxEAX00000012.ResumeLayout(false);
             this.groupBoxCurrent.ResumeLayout(false);
             this.groupBoxCurrent.PerformLayout();

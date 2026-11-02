@@ -40,17 +40,17 @@
             this.labelEAX12ECX = new System.Windows.Forms.Label();
             this.labelEAX12EDX = new System.Windows.Forms.Label();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.TextBox();
             this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.Label();
-            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.Label();
-            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.TextBox();
-            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.Label();
-            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.TextBox();
+            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.TextBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelSECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.Label();
             this.textBoxSECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.TextBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.Label();
+            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.TextBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.Label();
+            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000012.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
@@ -164,6 +164,22 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
+            // labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE
+            // 
+            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.AutoSize = true;
+            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(6, 22);
+            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Name = "labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE";
+            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(359, 13);
+            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 1;
+            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Text = "SECS.ATTRIBUTES.31...0 that can be set with ENCLS[ECREATE] [0-31]:";
+            // 
+            // textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE
+            // 
+            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(400, 19);
+            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Name = "textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE";
+            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 0;
+            // 
             // groupBoxEDX
             // 
             this.groupBoxEDX.Controls.Add(this.labelSECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE);
@@ -174,76 +190,6 @@
             this.groupBoxEDX.TabIndex = 55;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Controls.Add(this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE);
-            this.groupBoxECX.Controls.Add(this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 131);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(506, 50);
-            this.groupBoxECX.TabIndex = 54;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Controls.Add(this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE);
-            this.groupBoxEBX.Controls.Add(this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE);
-            this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(506, 50);
-            this.groupBoxEBX.TabIndex = 53;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
-            // textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE
-            // 
-            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(400, 19);
-            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Name = "textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE";
-            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 0;
-            // 
-            // labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE
-            // 
-            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.AutoSize = true;
-            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(6, 22);
-            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Name = "labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE";
-            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(359, 13);
-            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 1;
-            this.labelSECS_ATTRIBUTES_31_0_ThatCanBeSetWithENCLS_ECREATE.Text = "SECS.ATTRIBUTES.31...0 that can be set with ENCLS[ECREATE] [0-31]:";
-            // 
-            // labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE
-            // 
-            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.AutoSize = true;
-            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(6, 22);
-            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Name = "labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE";
-            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(365, 13);
-            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 3;
-            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Text = "SECS.ATTRIBUTES.32...63 that can be set with ENCLS[ECREATE] [0-31]:";
-            // 
-            // textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE
-            // 
-            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(400, 19);
-            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Name = "textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE";
-            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 2;
-            // 
-            // labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE
-            // 
-            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.AutoSize = true;
-            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(6, 22);
-            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Name = "labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE";
-            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(365, 13);
-            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 5;
-            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Text = "SECS.ATTRIBUTES.95...64 that can be set with ENCLS[ECREATE] [0-31]:";
-            // 
-            // textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE
-            // 
-            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(400, 19);
-            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Name = "textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE";
-            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 4;
             // 
             // labelSECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE
             // 
@@ -261,6 +207,60 @@
             this.textBoxSECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(100, 20);
             this.textBoxSECS_ATTRIBUTES_127_96_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 4;
             // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE);
+            this.groupBoxECX.Controls.Add(this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 131);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 50);
+            this.groupBoxECX.TabIndex = 54;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE
+            // 
+            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.AutoSize = true;
+            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(6, 22);
+            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Name = "labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE";
+            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(365, 13);
+            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 5;
+            this.labelSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Text = "SECS.ATTRIBUTES.95...64 that can be set with ENCLS[ECREATE] [0-31]:";
+            // 
+            // textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE
+            // 
+            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(400, 19);
+            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Name = "textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE";
+            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSECS_ATTRIBUTES_95_64_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 4;
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE);
+            this.groupBoxEBX.Controls.Add(this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 50);
+            this.groupBoxEBX.TabIndex = 53;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE
+            // 
+            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.AutoSize = true;
+            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(6, 22);
+            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Name = "labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE";
+            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(365, 13);
+            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 3;
+            this.labelSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Text = "SECS.ATTRIBUTES.32...63 that can be set with ENCLS[ECREATE] [0-31]:";
+            // 
+            // textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE
+            // 
+            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Location = new System.Drawing.Point(400, 19);
+            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Name = "textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE";
+            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSECS_ATTRIBUTES_63_32_ThatCanBeSetWithENCLS_ECREATE.TabIndex = 2;
+            // 
             // EAX00000012ECX1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,7 +271,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000012ECX1";
-            this.Text = "EAX=0x00000012, ECX=0x00000001: SGX Resources (1=SECS)";
+            this.Text = "EAX=0x00000012, ECX=0x00000001: SGX (Software Guard eXtensions) Resources (1=SECS" +
+    ")";
             this.groupBoxEAX00000012.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();

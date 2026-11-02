@@ -233,7 +233,7 @@
             this.checkBox3DNow = new System.Windows.Forms.CheckBox();
             this.checkBoxAM386SMM = new System.Windows.Forms.CheckBox();
             this.groupBoxIntelX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
-            this.checkBoxKLKM = new System.Windows.Forms.CheckBox();
+            this.checkBoxKnightsLanding = new System.Windows.Forms.CheckBox();
             this.checkBoxKNC = new System.Windows.Forms.CheckBox();
             this.checkBoxHLE = new System.Windows.Forms.CheckBox();
             this.checkBoxItanium = new System.Windows.Forms.CheckBox();
@@ -365,6 +365,8 @@
             this.eAX0xC0000006ZhaoxinProcessorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBoxKnightsMill = new System.Windows.Forms.CheckBox();
+            this.checkBoxHypervisorPresent = new System.Windows.Forms.CheckBox();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2149,6 +2151,7 @@
             // 
             // groupBoxX86VirtualizationInstructions
             // 
+            this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxHypervisorPresent);
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxV8086M);
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxVIAVT);
             this.groupBoxX86VirtualizationInstructions.Controls.Add(this.checkBoxIntelVTX);
@@ -2194,9 +2197,9 @@
             this.checkBoxAMDV.AutoSize = true;
             this.checkBoxAMDV.Location = new System.Drawing.Point(6, 19);
             this.checkBoxAMDV.Name = "checkBoxAMDV";
-            this.checkBoxAMDV.Size = new System.Drawing.Size(251, 17);
+            this.checkBoxAMDV.Size = new System.Drawing.Size(256, 17);
             this.checkBoxAMDV.TabIndex = 31;
-            this.checkBoxAMDV.Text = "AMD-V (Advanced Micro Devices Virtualization)";
+            this.checkBoxAMDV.Text = "AMD-V (AMD-V (Secure Virtual Machine / SVM))";
             this.checkBoxAMDV.UseVisualStyleBackColor = true;
             // 
             // tabPageX86TransactionalMemoryInstructions
@@ -2488,7 +2491,8 @@
             // 
             // groupBoxIntelX86DiscontinuedInstructions
             // 
-            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxKLKM);
+            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxKnightsMill);
+            this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxKnightsLanding);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxKNC);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxHLE);
             this.groupBoxIntelX86DiscontinuedInstructions.Controls.Add(this.checkBoxItanium);
@@ -2500,15 +2504,15 @@
             this.groupBoxIntelX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxIntelX86DiscontinuedInstructions.Text = "Intel";
             // 
-            // checkBoxKLKM
+            // checkBoxKnightsLanding
             // 
-            this.checkBoxKLKM.AutoSize = true;
-            this.checkBoxKLKM.Location = new System.Drawing.Point(6, 111);
-            this.checkBoxKLKM.Name = "checkBoxKLKM";
-            this.checkBoxKLKM.Size = new System.Drawing.Size(235, 17);
-            this.checkBoxKLKM.TabIndex = 4;
-            this.checkBoxKLKM.Text = "Knights Landing and Knights Mill instructions";
-            this.checkBoxKLKM.UseVisualStyleBackColor = true;
+            this.checkBoxKnightsLanding.AutoSize = true;
+            this.checkBoxKnightsLanding.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxKnightsLanding.Name = "checkBoxKnightsLanding";
+            this.checkBoxKnightsLanding.Size = new System.Drawing.Size(158, 17);
+            this.checkBoxKnightsLanding.TabIndex = 4;
+            this.checkBoxKnightsLanding.Text = "Knights Landing instructions";
+            this.checkBoxKnightsLanding.UseVisualStyleBackColor = true;
             // 
             // checkBoxKNC
             // 
@@ -2535,9 +2539,9 @@
             this.checkBoxItanium.AutoSize = true;
             this.checkBoxItanium.Location = new System.Drawing.Point(6, 42);
             this.checkBoxItanium.Name = "checkBoxItanium";
-            this.checkBoxItanium.Size = new System.Drawing.Size(60, 17);
+            this.checkBoxItanium.Size = new System.Drawing.Size(116, 17);
             this.checkBoxItanium.TabIndex = 1;
-            this.checkBoxItanium.Text = "Itanium";
+            this.checkBoxItanium.Text = "Itanium instructions";
             this.checkBoxItanium.UseVisualStyleBackColor = true;
             // 
             // checkBoxI386
@@ -2545,9 +2549,9 @@
             this.checkBoxI386.AutoSize = true;
             this.checkBoxI386.Location = new System.Drawing.Point(6, 19);
             this.checkBoxI386.Name = "checkBoxI386";
-            this.checkBoxI386.Size = new System.Drawing.Size(46, 17);
+            this.checkBoxI386.Size = new System.Drawing.Size(136, 17);
             this.checkBoxI386.TabIndex = 0;
-            this.checkBoxI386.Text = "i386";
+            this.checkBoxI386.Text = "i386 (IA-32) instructions";
             this.checkBoxI386.UseVisualStyleBackColor = true;
             // 
             // cpuSMenuStrip
@@ -3589,6 +3593,26 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // checkBoxKnightsMill
+            // 
+            this.checkBoxKnightsMill.AutoSize = true;
+            this.checkBoxKnightsMill.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxKnightsMill.Name = "checkBoxKnightsMill";
+            this.checkBoxKnightsMill.Size = new System.Drawing.Size(135, 17);
+            this.checkBoxKnightsMill.TabIndex = 5;
+            this.checkBoxKnightsMill.Text = "Knights Mill instructions";
+            this.checkBoxKnightsMill.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHypervisorPresent
+            // 
+            this.checkBoxHypervisorPresent.AutoSize = true;
+            this.checkBoxHypervisorPresent.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxHypervisorPresent.Name = "checkBoxHypervisorPresent";
+            this.checkBoxHypervisorPresent.Size = new System.Drawing.Size(115, 17);
+            this.checkBoxHypervisorPresent.TabIndex = 35;
+            this.checkBoxHypervisorPresent.Text = "Hypervisor Present";
+            this.checkBoxHypervisorPresent.UseVisualStyleBackColor = true;
+            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3842,7 +3866,7 @@
         private System.Windows.Forms.CheckBox checkBoxItanium;
         private System.Windows.Forms.CheckBox checkBoxI386;
         private System.Windows.Forms.CheckBox checkBoxKNC;
-        private System.Windows.Forms.CheckBox checkBoxKLKM;
+        private System.Windows.Forms.CheckBox checkBoxKnightsLanding;
         private System.Windows.Forms.CheckBox checkBoxXOP;
         private System.Windows.Forms.CheckBox checkBox3DNowPlus;
         private System.Windows.Forms.CheckBox checkBox3DNow;
@@ -3975,6 +3999,8 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0xC0000005ZhaoxinIsolationInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000012SGXSECSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000012SGXEPCToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBoxKnightsMill;
+        private System.Windows.Forms.CheckBox checkBoxHypervisorPresent;
     }
 }
 
