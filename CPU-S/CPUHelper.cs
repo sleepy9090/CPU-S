@@ -29710,13 +29710,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX80000006ECX_LineSize();
+        public static extern int GetEAX80000006ECX0_7_LineSize();
 
-        public string GetEAX80000006ECX_LineSizeX()
+        public string GetEAX80000006ECX0_7_LineSizeX()
         {
             try
             {
-                int eAX80000006ECX_LineSize = GetEAX80000006ECX_LineSize();
+                int eAX80000006ECX_LineSize = GetEAX80000006ECX0_7_LineSize();
                 string eAX80000006ECX_LineSizeString = eAX80000006ECX_LineSize.ToString();
 
                 return eAX80000006ECX_LineSizeString;
@@ -29734,13 +29734,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX80000006ECX_Associativity();
+        public static extern int GetEAX80000006ECX12_15_Associativity();
 
-        public string GetEAX80000006ECX_AssociativityX()
+        public string GetEAX80000006ECX12_15_AssociativityX()
         {
             try
             {
-                int eAX80000006ECX_Associativity = GetEAX80000006ECX_Associativity();
+                int eAX80000006ECX_Associativity = GetEAX80000006ECX12_15_Associativity();
                 string eAX80000006ECX_AssociativityString = eAX80000006ECX_Associativity.ToString();
 
                 return eAX80000006ECX_AssociativityString;
@@ -29758,13 +29758,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX80000006ECX_CacheSize();
+        public static extern int GetEAX80000006ECX16_31_CacheSize();
 
-        public string GetEAX80000006ECX_CacheSizeX()
+        public string GetEAX80000006ECX16_31_CacheSizeX()
         {
             try
             {
-                int eAX80000006ECX_CacheSize = GetEAX80000006ECX_CacheSize();
+                int eAX80000006ECX_CacheSize = GetEAX80000006ECX16_31_CacheSize();
                 string eAX80000006ECX_CacheSizeString = eAX80000006ECX_CacheSize.ToString();
 
                 return eAX80000006ECX_CacheSizeString;

@@ -86,6 +86,7 @@
     <Compile Include="EAX00000012ECXN.Designer.cs">
       <DependentUpon>EAX00000012ECXN.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX80000006.cs" />
     <Compile Include="EAX8000001E.cs">
       <SubType>Form</SubType>
     </Compile>

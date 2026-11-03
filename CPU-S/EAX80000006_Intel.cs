@@ -34,10 +34,11 @@ namespace CPU_S
             string cpuIdEAX80000006EDX = cpuHelper.GetEAX80000006EDXX();
             textBoxEAX80000006EDX.Text = cpuIdEAX80000006EDX;
 
-            string cpuIdEAX80000006ECX_LineSize = cpuHelper.GetEAX80000006ECX_LineSizeX();
+
+            string cpuIdEAX80000006ECX_LineSize = cpuHelper.GetEAX80000006ECX0_7_LineSizeX();
             textBoxLineSize.Text = cpuIdEAX80000006ECX_LineSize;
 
-            string cpuIdEAX80000006ECX_Associativity = cpuHelper.GetEAX80000006ECX_AssociativityX();
+            string cpuIdEAX80000006ECX_Associativity = cpuHelper.GetEAX80000006ECX12_15_AssociativityX();
             textBoxAssociativityType.Text = cpuIdEAX80000006ECX_Associativity;
 
             int cpuIdEAX80000006ECX_AssociativityValue = int.TryParse(cpuIdEAX80000006ECX_Associativity, out int associativityValue) ? associativityValue : -1;
@@ -70,7 +71,7 @@ namespace CPU_S
                     break;
             }
 
-            string cpuIdEAX80000006ECX_CacheSize = cpuHelper.GetEAX80000006ECX_CacheSizeX();
+            string cpuIdEAX80000006ECX_CacheSize = cpuHelper.GetEAX80000006ECX16_31_CacheSizeX();
             textBoxCacheSize.Text = cpuIdEAX80000006ECX_CacheSize;
 
             #endregion
