@@ -68,7 +68,7 @@
             this.checkBoxUAIv2_EFER_UAI_S_U_E_CR3_LAM_U_57 = new System.Windows.Forms.CheckBox();
             this.checkBoxEAX25Reserved = new System.Windows.Forms.CheckBox();
             this.checkBoxERAPS = new System.Windows.Forms.CheckBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAVX512BMM = new System.Windows.Forms.CheckBox();
             this.checkBoxWorkload_Class_Extended_Leaf_8000_0027h = new System.Windows.Forms.CheckBox();
             this.checkBoxFP512_Downgraded_To_FP256_Via_HWCR34 = new System.Windows.Forms.CheckBox();
             this.checkBoxPREFETCHIT0_PREFETCHIT1 = new System.Windows.Forms.CheckBox();
@@ -127,7 +127,7 @@
             this.groupBoxEAX.Controls.Add(this.checkBoxUAIv2_EFER_UAI_S_U_E_CR3_LAM_U_57);
             this.groupBoxEAX.Controls.Add(this.checkBoxEAX25Reserved);
             this.groupBoxEAX.Controls.Add(this.checkBoxERAPS);
-            this.groupBoxEAX.Controls.Add(this.checkBox27);
+            this.groupBoxEAX.Controls.Add(this.checkBoxAVX512BMM);
             this.groupBoxEAX.Controls.Add(this.checkBoxWorkload_Class_Extended_Leaf_8000_0027h);
             this.groupBoxEAX.Controls.Add(this.checkBoxFP512_Downgraded_To_FP256_Via_HWCR34);
             this.groupBoxEAX.Controls.Add(this.checkBoxPREFETCHIT0_PREFETCHIT1);
@@ -546,15 +546,15 @@
             this.checkBoxERAPS.Text = "ERAPS [24]";
             this.checkBoxERAPS.UseVisualStyleBackColor = true;
             // 
-            // checkBox27
+            // checkBoxAVX512BMM
             // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(6, 548);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(316, 17);
-            this.checkBox27.TabIndex = 23;
-            this.checkBox27.Text = "AVX512BMM – VBMAC[OR,XOR]16X16X16, VBITREVB [23]";
-            this.checkBox27.UseVisualStyleBackColor = true;
+            this.checkBoxAVX512BMM.AutoSize = true;
+            this.checkBoxAVX512BMM.Location = new System.Drawing.Point(6, 548);
+            this.checkBoxAVX512BMM.Name = "checkBoxAVX512BMM";
+            this.checkBoxAVX512BMM.Size = new System.Drawing.Size(316, 17);
+            this.checkBoxAVX512BMM.TabIndex = 23;
+            this.checkBoxAVX512BMM.Text = "AVX512BMM – VBMAC[OR,XOR]16X16X16, VBITREVB [23]";
+            this.checkBoxAVX512BMM.UseVisualStyleBackColor = true;
             // 
             // checkBoxWorkload_Class_Extended_Leaf_8000_0027h
             // 
@@ -848,7 +848,7 @@
         private System.Windows.Forms.CheckBox checkBoxUAIv2_EFER_UAI_S_U_E_CR3_LAM_U_57;
         private System.Windows.Forms.CheckBox checkBoxEAX25Reserved;
         private System.Windows.Forms.CheckBox checkBoxERAPS;
-        private System.Windows.Forms.CheckBox checkBox27;
+        private System.Windows.Forms.CheckBox checkBoxAVX512BMM;
         private System.Windows.Forms.CheckBox checkBoxWorkload_Class_Extended_Leaf_8000_0027h;
         private System.Windows.Forms.CheckBox checkBoxFP512_Downgraded_To_FP256_Via_HWCR34;
         private System.Windows.Forms.CheckBox checkBoxPREFETCHIT0_PREFETCHIT1;
