@@ -1839,5 +1839,11 @@ namespace CPU_S
             EAX00000012ECXN eAX00000012ECXN = new EAX00000012ECXN(2);
             eAX00000012ECXN.ShowDialog();
         }
+
+        private void eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX80000006 eAX80000006 = new EAX80000006();
+            eAX80000006.ShowDialog();
+        }
     }
 }

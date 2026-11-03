@@ -201,6 +201,7 @@
             this.checkBoxAES = new System.Windows.Forms.CheckBox();
             this.tabPageX86VirtualizationInstructions = new System.Windows.Forms.TabPage();
             this.groupBoxX86VirtualizationInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxHypervisorPresent = new System.Windows.Forms.CheckBox();
             this.checkBoxV8086M = new System.Windows.Forms.CheckBox();
             this.checkBoxVIAVT = new System.Windows.Forms.CheckBox();
             this.checkBoxIntelVTX = new System.Windows.Forms.CheckBox();
@@ -233,6 +234,7 @@
             this.checkBox3DNow = new System.Windows.Forms.CheckBox();
             this.checkBoxAM386SMM = new System.Windows.Forms.CheckBox();
             this.groupBoxIntelX86DiscontinuedInstructions = new System.Windows.Forms.GroupBox();
+            this.checkBoxKnightsMill = new System.Windows.Forms.CheckBox();
             this.checkBoxKnightsLanding = new System.Windows.Forms.CheckBox();
             this.checkBoxKNC = new System.Windows.Forms.CheckBox();
             this.checkBoxHLE = new System.Windows.Forms.CheckBox();
@@ -365,8 +367,7 @@
             this.eAX0xC0000006ZhaoxinProcessorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkBoxKnightsMill = new System.Windows.Forms.CheckBox();
-            this.checkBoxHypervisorPresent = new System.Windows.Forms.CheckBox();
+            this.eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2162,6 +2163,16 @@
             this.groupBoxX86VirtualizationInstructions.TabIndex = 0;
             this.groupBoxX86VirtualizationInstructions.TabStop = false;
             // 
+            // checkBoxHypervisorPresent
+            // 
+            this.checkBoxHypervisorPresent.AutoSize = true;
+            this.checkBoxHypervisorPresent.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxHypervisorPresent.Name = "checkBoxHypervisorPresent";
+            this.checkBoxHypervisorPresent.Size = new System.Drawing.Size(115, 17);
+            this.checkBoxHypervisorPresent.TabIndex = 35;
+            this.checkBoxHypervisorPresent.Text = "Hypervisor Present";
+            this.checkBoxHypervisorPresent.UseVisualStyleBackColor = true;
+            // 
             // checkBoxV8086M
             // 
             this.checkBoxV8086M.AutoSize = true;
@@ -2503,6 +2514,16 @@
             this.groupBoxIntelX86DiscontinuedInstructions.TabIndex = 0;
             this.groupBoxIntelX86DiscontinuedInstructions.TabStop = false;
             this.groupBoxIntelX86DiscontinuedInstructions.Text = "Intel";
+            // 
+            // checkBoxKnightsMill
+            // 
+            this.checkBoxKnightsMill.AutoSize = true;
+            this.checkBoxKnightsMill.Location = new System.Drawing.Point(6, 134);
+            this.checkBoxKnightsMill.Name = "checkBoxKnightsMill";
+            this.checkBoxKnightsMill.Size = new System.Drawing.Size(135, 17);
+            this.checkBoxKnightsMill.TabIndex = 5;
+            this.checkBoxKnightsMill.Text = "Knights Mill instructions";
+            this.checkBoxKnightsMill.UseVisualStyleBackColor = true;
             // 
             // checkBoxKnightsLanding
             // 
@@ -3230,6 +3251,7 @@
             this.eAX0x80000001ExtendedProcessorInfoAndFeatureBitsToolStripMenuItem,
             this.eAX0x800000020x800000030x80000004ProcessorBrandStringToolStripMenuItem,
             this.eAX0x80000005L1CacheAndTLBIdentifiersToolStripMenuItem,
+            this.eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem,
             this.eAX0x80000006ExtendedL2CacheFeaturesAMDToolStripMenuItem,
             this.eAX0x80000006ExtendedL2CacheFeaturesIntelToolStripMenuItem,
             this.eAX0x80000007ProcessorPowerManagementInformationAndRASCapabilitiesToolStripMenuItem,
@@ -3593,25 +3615,12 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // checkBoxKnightsMill
+            // eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem
             // 
-            this.checkBoxKnightsMill.AutoSize = true;
-            this.checkBoxKnightsMill.Location = new System.Drawing.Point(6, 134);
-            this.checkBoxKnightsMill.Name = "checkBoxKnightsMill";
-            this.checkBoxKnightsMill.Size = new System.Drawing.Size(135, 17);
-            this.checkBoxKnightsMill.TabIndex = 5;
-            this.checkBoxKnightsMill.Text = "Knights Mill instructions";
-            this.checkBoxKnightsMill.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHypervisorPresent
-            // 
-            this.checkBoxHypervisorPresent.AutoSize = true;
-            this.checkBoxHypervisorPresent.Location = new System.Drawing.Point(6, 111);
-            this.checkBoxHypervisorPresent.Name = "checkBoxHypervisorPresent";
-            this.checkBoxHypervisorPresent.Size = new System.Drawing.Size(115, 17);
-            this.checkBoxHypervisorPresent.TabIndex = 35;
-            this.checkBoxHypervisorPresent.Text = "Hypervisor Present";
-            this.checkBoxHypervisorPresent.UseVisualStyleBackColor = true;
+            this.eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem.Name = "eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem";
+            this.eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem.Size = new System.Drawing.Size(506, 22);
+            this.eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem.Text = "EAX=0x80000006: L2/L3 cache and L2 TLB configuration descriptors";
+            this.eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem.Click += new System.EventHandler(this.eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -4001,6 +4010,7 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000012SGXEPCToolStripMenuItem;
         private System.Windows.Forms.CheckBox checkBoxKnightsMill;
         private System.Windows.Forms.CheckBox checkBoxHypervisorPresent;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x80000006L2L3CacheAndL2TLBConfigurationDescriptosToolStripMenuItem;
     }
 }
 
