@@ -113,7 +113,7 @@
             this.groupBoxEAX.Size = new System.Drawing.Size(506, 132);
             this.groupBoxEAX.TabIndex = 52;
             this.groupBoxEAX.TabStop = false;
-            this.groupBoxEAX.Text = "EAX";
+            this.groupBoxEAX.Text = "EAX - 4/2 MB L2 TLB configuration descriptor";
             // 
             // groupBoxEDX
             // 
@@ -132,7 +132,7 @@
             this.groupBoxEDX.Size = new System.Drawing.Size(506, 154);
             this.groupBoxEDX.TabIndex = 51;
             this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
+            this.groupBoxEDX.Text = "EDX - Unified L3 cache configuration descriptor";
             // 
             // groupBoxECX
             // 
@@ -149,7 +149,7 @@
             this.groupBoxECX.Size = new System.Drawing.Size(506, 132);
             this.groupBoxECX.TabIndex = 50;
             this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
+            this.groupBoxECX.Text = "ECX - Unified L2 cache configuration descriptor";
             // 
             // groupBoxEBX
             // 
@@ -166,7 +166,7 @@
             this.groupBoxEBX.Size = new System.Drawing.Size(506, 132);
             this.groupBoxEBX.TabIndex = 49;
             this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
+            this.groupBoxEBX.Text = "EBX - 4 KB L2 TLB configuration descriptor";
             // 
             // groupBoxAll
             // 
