@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+    File           EAX80000006_AMD.cs
+    Brief          Form for displaying EAX=0x80000006 AMD CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           11/04/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
 using System.Windows.Forms;
 
 namespace CPU_S

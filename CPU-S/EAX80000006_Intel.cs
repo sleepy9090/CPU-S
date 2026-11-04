@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAX80000006.cs
-    Brief          Form for displaying EAX=0x80000006 CPU information.
+    File           EAX80000006_Intel.cs
+    Brief          Form for displaying EAX=0x80000006 Intel CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           11/04/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
