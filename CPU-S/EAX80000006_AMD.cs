@@ -34,10 +34,23 @@ namespace CPU_S
             string cpuIdEAX80000006EDX = cpuHelper.GetEAX80000006EDXX();
             textBoxEAX80000006EDX.Text = cpuIdEAX80000006EDX;
 
+            textBoxEAXITE.Text = cpuHelper.GetEAX80000006EAX0_11_L2TableParameters2M4MPagesInstructionTableEntriesX();
+            textBoxEAXITA.Text = cpuHelper.GetEAX80000006EAX12_15_L2TableParameters2M4MPagesInstructionTableAssociativityX();
+            textBoxEAXDTE.Text = cpuHelper.GetEAX80000006EAX16_27_L2TableParameters2M4MPagesDataTableEntriesX();
+            textBoxEAXDTA.Text = cpuHelper.GetEAX80000006EAX28_31_L2TableParameters2M4MPagesDataTableAssociativityX();
 
+            textBoxEBXITE.Text = cpuHelper.GetEAX80000006EBX0_11_L2TableParameters4KPagesInstructionTableEntriesX();
+            textBoxEBXITA.Text = cpuHelper.GetEAX80000006EBX12_15_L2TableParameters4KPagesInstructionTableAssociativityX();
+            textBoxEBXDTE.Text = cpuHelper.GetEAX80000006EBX16_27_L2TableParameters4KPagesDataTableEntriesX();
+            textBoxEBXDTA.Text = cpuHelper.GetEAX80000006EBX28_31_L2TableParameters4KPagesDataTableAssociativityX();
 
-            /*
-            int cpuIdEAX80000006ECX_AssociativityValue = int.TryParse(cpuIdEAX80000006ECX_Associativity, out int associativityValue) ? associativityValue : -1;
+            textBoxLineSize.Text = cpuHelper.GetEAX80000006ECX0_7_CacheLineSizeX();
+            textBoxLinesPerTag.Text = cpuHelper.GetEAX80000006ECX8_11_LPTX();
+            string associativityType = cpuHelper.GetEAX80000006ECX12_15_L2AssociativityX();
+
+            textBoxAssociativityType.Text = associativityType;
+
+            int cpuIdEAX80000006ECX_AssociativityValue = int.TryParse(associativityType, out int associativityValue) ? associativityValue : -1;
 
             switch (cpuIdEAX80000006ECX_AssociativityValue)
             {
@@ -66,7 +79,10 @@ namespace CPU_S
                     textBoxAssociativityTypeHuman.Text = "Reserved/Unknown";
                     break;
             }
-            */
+
+            textBoxCacheSize.Text = cpuHelper.GetEAX80000006ECX16_31_CacheSizeX();
+
+            textBoxReservedEDX.Text = cpuHelper.GetEAX80000006EDX0_31_ReservedX();
 
             #endregion
         }

@@ -22,21 +22,16 @@ namespace CPU_S
 
             #region EAX=0x80000006: Extended L2 Cache Features (Intel)
 
-            string cpuIdEAX80000006EAX = cpuHelper.GetEAX80000006EAXX();
-            textBoxEAX80000006EAX.Text = cpuIdEAX80000006EAX;
+            textBoxEAX80000006EAX.Text = cpuHelper.GetEAX80000006EAXX();
+            textBoxEAX80000006EBX.Text = cpuHelper.GetEAX80000006EBXX();
+            textBoxEAX80000006ECX.Text = cpuHelper.GetEAX80000006ECXX();
+            textBoxEAX80000006EDX.Text = cpuHelper.GetEAX80000006EDXX();
 
-            string cpuIdEAX80000006EBX = cpuHelper.GetEAX80000006EBXX();
-            textBoxEAX80000006EBX.Text = cpuIdEAX80000006EBX;
+            textBoxReservedEAX.Text = cpuHelper.GetEAX80000006EAX0_31_ReservedX();
+            textBoxReservedEBX.Text = cpuHelper.GetEAX80000006EBX0_31_ReservedX();
 
-            string cpuIdEAX80000006ECX = cpuHelper.GetEAX80000006ECXX();
-            textBoxEAX80000006ECX.Text = cpuIdEAX80000006ECX;
-
-            string cpuIdEAX80000006EDX = cpuHelper.GetEAX80000006EDXX();
-            textBoxEAX80000006EDX.Text = cpuIdEAX80000006EDX;
-
-
-            string cpuIdEAX80000006ECX_LineSize = cpuHelper.GetEAX80000006ECX0_7_LineSizeX();
-            textBoxLineSize.Text = cpuIdEAX80000006ECX_LineSize;
+            textBoxLineSize.Text = cpuHelper.GetEAX80000006ECX0_7_LineSizeX();
+            textBoxReservedECX.Text = cpuHelper.GetEAX80000006ECX8_11_ReservedX();
 
             string cpuIdEAX80000006ECX_Associativity = cpuHelper.GetEAX80000006ECX12_15_AssociativityX();
             textBoxAssociativityType.Text = cpuIdEAX80000006ECX_Associativity;
@@ -71,8 +66,9 @@ namespace CPU_S
                     break;
             }
 
-            string cpuIdEAX80000006ECX_CacheSize = cpuHelper.GetEAX80000006ECX16_31_CacheSizeX();
-            textBoxCacheSize.Text = cpuIdEAX80000006ECX_CacheSize;
+            textBoxCacheSize.Text = cpuHelper.GetEAX80000006ECX16_31_CacheSizeX();
+
+            textBoxReservedEDX.Text = cpuHelper.GetEAX80000006EDX0_31_ReservedX();
 
             #endregion
         }

@@ -33,11 +33,27 @@
             this.labelReservedEDX = new System.Windows.Forms.Label();
             this.textBoxReservedEDX = new System.Windows.Forms.TextBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelEBXITA = new System.Windows.Forms.Label();
+            this.textBoxEBXITA = new System.Windows.Forms.TextBox();
+            this.labelEBXDTA = new System.Windows.Forms.Label();
+            this.labelEBXDTE = new System.Windows.Forms.Label();
+            this.labelEBXITE = new System.Windows.Forms.Label();
+            this.textBoxEBXDTA = new System.Windows.Forms.TextBox();
+            this.textBoxEBXDTE = new System.Windows.Forms.TextBox();
+            this.textBoxEBXITE = new System.Windows.Forms.TextBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelEAXITA = new System.Windows.Forms.Label();
+            this.textBoxEAXITA = new System.Windows.Forms.TextBox();
+            this.labelEAXDTA = new System.Windows.Forms.Label();
+            this.labelEAXDTE = new System.Windows.Forms.Label();
+            this.labelEAXITE = new System.Windows.Forms.Label();
+            this.textBoxEAXDTA = new System.Windows.Forms.TextBox();
+            this.textBoxEAXDTE = new System.Windows.Forms.TextBox();
+            this.textBoxEAXITE = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
             this.textBoxAssociativityTypeHuman = new System.Windows.Forms.TextBox();
             this.labelLinesPerTag = new System.Windows.Forms.Label();
-            this.textBoxReservedECX = new System.Windows.Forms.TextBox();
+            this.textBoxLinesPerTag = new System.Windows.Forms.TextBox();
             this.labelCacheSize = new System.Windows.Forms.Label();
             this.labelAssociativityType = new System.Windows.Forms.Label();
             this.labelLineSize = new System.Windows.Forms.Label();
@@ -53,22 +69,6 @@
             this.labelEAX80000006EBX = new System.Windows.Forms.Label();
             this.labelEAX80000006ECX = new System.Windows.Forms.Label();
             this.labelEAX80000006EDX = new System.Windows.Forms.Label();
-            this.labelEAXITA = new System.Windows.Forms.Label();
-            this.textBoxEAXITA = new System.Windows.Forms.TextBox();
-            this.labelEAXDTA = new System.Windows.Forms.Label();
-            this.labelEAXDTE = new System.Windows.Forms.Label();
-            this.labelEAXITE = new System.Windows.Forms.Label();
-            this.textBoxEAXDTA = new System.Windows.Forms.TextBox();
-            this.textBoxEAXDTE = new System.Windows.Forms.TextBox();
-            this.textBoxEAXITE = new System.Windows.Forms.TextBox();
-            this.labelEBXITA = new System.Windows.Forms.Label();
-            this.textBoxlabelEBXITA = new System.Windows.Forms.TextBox();
-            this.labelEBXDTA = new System.Windows.Forms.Label();
-            this.labelEBXDTE = new System.Windows.Forms.Label();
-            this.labelEBXITE = new System.Windows.Forms.Label();
-            this.textBoxEBXDTA = new System.Windows.Forms.TextBox();
-            this.textBoxEBXDTE = new System.Windows.Forms.TextBox();
-            this.textBoxEBXITE = new System.Windows.Forms.TextBox();
             this.groupBoxEAX80000006.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
@@ -121,7 +121,7 @@
             // groupBoxEBX
             // 
             this.groupBoxEBX.Controls.Add(this.labelEBXITA);
-            this.groupBoxEBX.Controls.Add(this.textBoxlabelEBXITA);
+            this.groupBoxEBX.Controls.Add(this.textBoxEBXITA);
             this.groupBoxEBX.Controls.Add(this.labelEBXDTA);
             this.groupBoxEBX.Controls.Add(this.labelEBXDTE);
             this.groupBoxEBX.Controls.Add(this.labelEBXITE);
@@ -134,6 +134,70 @@
             this.groupBoxEBX.TabIndex = 43;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX: L2 TLB parameters, 4K pages";
+            // 
+            // labelEBXITA
+            // 
+            this.labelEBXITA.AutoSize = true;
+            this.labelEBXITA.Location = new System.Drawing.Point(6, 48);
+            this.labelEBXITA.Name = "labelEBXITA";
+            this.labelEBXITA.Size = new System.Drawing.Size(186, 13);
+            this.labelEBXITA.TabIndex = 24;
+            this.labelEBXITA.Text = "Instruction Table Associativity [12-15]:";
+            // 
+            // textBoxEBXITA
+            // 
+            this.textBoxEBXITA.Location = new System.Drawing.Point(198, 45);
+            this.textBoxEBXITA.Name = "textBoxEBXITA";
+            this.textBoxEBXITA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXITA.TabIndex = 23;
+            // 
+            // labelEBXDTA
+            // 
+            this.labelEBXDTA.AutoSize = true;
+            this.labelEBXDTA.Location = new System.Drawing.Point(6, 100);
+            this.labelEBXDTA.Name = "labelEBXDTA";
+            this.labelEBXDTA.Size = new System.Drawing.Size(157, 13);
+            this.labelEBXDTA.TabIndex = 22;
+            this.labelEBXDTA.Text = "Data Table Associativity [28-31]";
+            // 
+            // labelEBXDTE
+            // 
+            this.labelEBXDTE.AutoSize = true;
+            this.labelEBXDTE.Location = new System.Drawing.Point(6, 74);
+            this.labelEBXDTE.Name = "labelEBXDTE";
+            this.labelEBXDTE.Size = new System.Drawing.Size(134, 13);
+            this.labelEBXDTE.TabIndex = 21;
+            this.labelEBXDTE.Text = "Data Table Entries [16-27]:";
+            // 
+            // labelEBXITE
+            // 
+            this.labelEBXITE.AutoSize = true;
+            this.labelEBXITE.Location = new System.Drawing.Point(6, 22);
+            this.labelEBXITE.Name = "labelEBXITE";
+            this.labelEBXITE.Size = new System.Drawing.Size(154, 13);
+            this.labelEBXITE.TabIndex = 20;
+            this.labelEBXITE.Text = "Instruction Table Entries [0-11]:";
+            // 
+            // textBoxEBXDTA
+            // 
+            this.textBoxEBXDTA.Location = new System.Drawing.Point(198, 97);
+            this.textBoxEBXDTA.Name = "textBoxEBXDTA";
+            this.textBoxEBXDTA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXDTA.TabIndex = 19;
+            // 
+            // textBoxEBXDTE
+            // 
+            this.textBoxEBXDTE.Location = new System.Drawing.Point(198, 71);
+            this.textBoxEBXDTE.Name = "textBoxEBXDTE";
+            this.textBoxEBXDTE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXDTE.TabIndex = 18;
+            // 
+            // textBoxEBXITE
+            // 
+            this.textBoxEBXITE.Location = new System.Drawing.Point(198, 19);
+            this.textBoxEBXITE.Name = "textBoxEBXITE";
+            this.textBoxEBXITE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXITE.TabIndex = 17;
             // 
             // groupBoxEAX
             // 
@@ -152,11 +216,75 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX: L2 TLB parameters, 2M/4M pages";
             // 
+            // labelEAXITA
+            // 
+            this.labelEAXITA.AutoSize = true;
+            this.labelEAXITA.Location = new System.Drawing.Point(6, 51);
+            this.labelEAXITA.Name = "labelEAXITA";
+            this.labelEAXITA.Size = new System.Drawing.Size(186, 13);
+            this.labelEAXITA.TabIndex = 16;
+            this.labelEAXITA.Text = "Instruction Table Associativity [12-15]:";
+            // 
+            // textBoxEAXITA
+            // 
+            this.textBoxEAXITA.Location = new System.Drawing.Point(198, 48);
+            this.textBoxEAXITA.Name = "textBoxEAXITA";
+            this.textBoxEAXITA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXITA.TabIndex = 15;
+            // 
+            // labelEAXDTA
+            // 
+            this.labelEAXDTA.AutoSize = true;
+            this.labelEAXDTA.Location = new System.Drawing.Point(6, 103);
+            this.labelEAXDTA.Name = "labelEAXDTA";
+            this.labelEAXDTA.Size = new System.Drawing.Size(157, 13);
+            this.labelEAXDTA.TabIndex = 14;
+            this.labelEAXDTA.Text = "Data Table Associativity [28-31]";
+            // 
+            // labelEAXDTE
+            // 
+            this.labelEAXDTE.AutoSize = true;
+            this.labelEAXDTE.Location = new System.Drawing.Point(6, 77);
+            this.labelEAXDTE.Name = "labelEAXDTE";
+            this.labelEAXDTE.Size = new System.Drawing.Size(134, 13);
+            this.labelEAXDTE.TabIndex = 13;
+            this.labelEAXDTE.Text = "Data Table Entries [16-27]:";
+            // 
+            // labelEAXITE
+            // 
+            this.labelEAXITE.AutoSize = true;
+            this.labelEAXITE.Location = new System.Drawing.Point(6, 25);
+            this.labelEAXITE.Name = "labelEAXITE";
+            this.labelEAXITE.Size = new System.Drawing.Size(154, 13);
+            this.labelEAXITE.TabIndex = 12;
+            this.labelEAXITE.Text = "Instruction Table Entries [0-11]:";
+            // 
+            // textBoxEAXDTA
+            // 
+            this.textBoxEAXDTA.Location = new System.Drawing.Point(198, 100);
+            this.textBoxEAXDTA.Name = "textBoxEAXDTA";
+            this.textBoxEAXDTA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXDTA.TabIndex = 11;
+            // 
+            // textBoxEAXDTE
+            // 
+            this.textBoxEAXDTE.Location = new System.Drawing.Point(198, 74);
+            this.textBoxEAXDTE.Name = "textBoxEAXDTE";
+            this.textBoxEAXDTE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXDTE.TabIndex = 10;
+            // 
+            // textBoxEAXITE
+            // 
+            this.textBoxEAXITE.Location = new System.Drawing.Point(198, 22);
+            this.textBoxEAXITE.Name = "textBoxEAXITE";
+            this.textBoxEAXITE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXITE.TabIndex = 9;
+            // 
             // groupBoxECX
             // 
             this.groupBoxECX.Controls.Add(this.textBoxAssociativityTypeHuman);
             this.groupBoxECX.Controls.Add(this.labelLinesPerTag);
-            this.groupBoxECX.Controls.Add(this.textBoxReservedECX);
+            this.groupBoxECX.Controls.Add(this.textBoxLinesPerTag);
             this.groupBoxECX.Controls.Add(this.labelCacheSize);
             this.groupBoxECX.Controls.Add(this.labelAssociativityType);
             this.groupBoxECX.Controls.Add(this.labelLineSize);
@@ -186,12 +314,12 @@
             this.labelLinesPerTag.TabIndex = 7;
             this.labelLinesPerTag.Text = "Lines Per Tag [8-11]:";
             // 
-            // textBoxReservedECX
+            // textBoxLinesPerTag
             // 
-            this.textBoxReservedECX.Location = new System.Drawing.Point(198, 45);
-            this.textBoxReservedECX.Name = "textBoxReservedECX";
-            this.textBoxReservedECX.Size = new System.Drawing.Size(100, 20);
-            this.textBoxReservedECX.TabIndex = 6;
+            this.textBoxLinesPerTag.Location = new System.Drawing.Point(198, 45);
+            this.textBoxLinesPerTag.Name = "textBoxLinesPerTag";
+            this.textBoxLinesPerTag.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLinesPerTag.TabIndex = 6;
             // 
             // labelCacheSize
             // 
@@ -321,134 +449,6 @@
             this.labelEAX80000006EDX.TabIndex = 9;
             this.labelEAX80000006EDX.Text = "EDX:";
             // 
-            // labelEAXITA
-            // 
-            this.labelEAXITA.AutoSize = true;
-            this.labelEAXITA.Location = new System.Drawing.Point(6, 51);
-            this.labelEAXITA.Name = "labelEAXITA";
-            this.labelEAXITA.Size = new System.Drawing.Size(186, 13);
-            this.labelEAXITA.TabIndex = 16;
-            this.labelEAXITA.Text = "Instruction Table Associativity [12-15]:";
-            // 
-            // textBoxEAXITA
-            // 
-            this.textBoxEAXITA.Location = new System.Drawing.Point(198, 48);
-            this.textBoxEAXITA.Name = "textBoxEAXITA";
-            this.textBoxEAXITA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAXITA.TabIndex = 15;
-            // 
-            // labelEAXDTA
-            // 
-            this.labelEAXDTA.AutoSize = true;
-            this.labelEAXDTA.Location = new System.Drawing.Point(6, 103);
-            this.labelEAXDTA.Name = "labelEAXDTA";
-            this.labelEAXDTA.Size = new System.Drawing.Size(157, 13);
-            this.labelEAXDTA.TabIndex = 14;
-            this.labelEAXDTA.Text = "Data Table Associativity [28-31]";
-            // 
-            // labelEAXDTE
-            // 
-            this.labelEAXDTE.AutoSize = true;
-            this.labelEAXDTE.Location = new System.Drawing.Point(6, 77);
-            this.labelEAXDTE.Name = "labelEAXDTE";
-            this.labelEAXDTE.Size = new System.Drawing.Size(134, 13);
-            this.labelEAXDTE.TabIndex = 13;
-            this.labelEAXDTE.Text = "Data Table Entries [16-27]:";
-            // 
-            // labelEAXITE
-            // 
-            this.labelEAXITE.AutoSize = true;
-            this.labelEAXITE.Location = new System.Drawing.Point(6, 25);
-            this.labelEAXITE.Name = "labelEAXITE";
-            this.labelEAXITE.Size = new System.Drawing.Size(154, 13);
-            this.labelEAXITE.TabIndex = 12;
-            this.labelEAXITE.Text = "Instruction Table Entries [0-11]:";
-            // 
-            // textBoxEAXDTA
-            // 
-            this.textBoxEAXDTA.Location = new System.Drawing.Point(198, 100);
-            this.textBoxEAXDTA.Name = "textBoxEAXDTA";
-            this.textBoxEAXDTA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAXDTA.TabIndex = 11;
-            // 
-            // textBoxEAXDTE
-            // 
-            this.textBoxEAXDTE.Location = new System.Drawing.Point(198, 74);
-            this.textBoxEAXDTE.Name = "textBoxEAXDTE";
-            this.textBoxEAXDTE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAXDTE.TabIndex = 10;
-            // 
-            // textBoxEAXITE
-            // 
-            this.textBoxEAXITE.Location = new System.Drawing.Point(198, 22);
-            this.textBoxEAXITE.Name = "textBoxEAXITE";
-            this.textBoxEAXITE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAXITE.TabIndex = 9;
-            // 
-            // labelEBXITA
-            // 
-            this.labelEBXITA.AutoSize = true;
-            this.labelEBXITA.Location = new System.Drawing.Point(6, 48);
-            this.labelEBXITA.Name = "labelEBXITA";
-            this.labelEBXITA.Size = new System.Drawing.Size(186, 13);
-            this.labelEBXITA.TabIndex = 24;
-            this.labelEBXITA.Text = "Instruction Table Associativity [12-15]:";
-            // 
-            // textBoxlabelEBXITA
-            // 
-            this.textBoxlabelEBXITA.Location = new System.Drawing.Point(198, 45);
-            this.textBoxlabelEBXITA.Name = "textBoxlabelEBXITA";
-            this.textBoxlabelEBXITA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxlabelEBXITA.TabIndex = 23;
-            // 
-            // labelEBXDTA
-            // 
-            this.labelEBXDTA.AutoSize = true;
-            this.labelEBXDTA.Location = new System.Drawing.Point(6, 100);
-            this.labelEBXDTA.Name = "labelEBXDTA";
-            this.labelEBXDTA.Size = new System.Drawing.Size(157, 13);
-            this.labelEBXDTA.TabIndex = 22;
-            this.labelEBXDTA.Text = "Data Table Associativity [28-31]";
-            // 
-            // labelEBXDTE
-            // 
-            this.labelEBXDTE.AutoSize = true;
-            this.labelEBXDTE.Location = new System.Drawing.Point(6, 74);
-            this.labelEBXDTE.Name = "labelEBXDTE";
-            this.labelEBXDTE.Size = new System.Drawing.Size(134, 13);
-            this.labelEBXDTE.TabIndex = 21;
-            this.labelEBXDTE.Text = "Data Table Entries [16-27]:";
-            // 
-            // labelEBXITE
-            // 
-            this.labelEBXITE.AutoSize = true;
-            this.labelEBXITE.Location = new System.Drawing.Point(6, 22);
-            this.labelEBXITE.Name = "labelEBXITE";
-            this.labelEBXITE.Size = new System.Drawing.Size(154, 13);
-            this.labelEBXITE.TabIndex = 20;
-            this.labelEBXITE.Text = "Instruction Table Entries [0-11]:";
-            // 
-            // textBoxEBXDTA
-            // 
-            this.textBoxEBXDTA.Location = new System.Drawing.Point(198, 97);
-            this.textBoxEBXDTA.Name = "textBoxEBXDTA";
-            this.textBoxEBXDTA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBXDTA.TabIndex = 19;
-            // 
-            // textBoxEBXDTE
-            // 
-            this.textBoxEBXDTE.Location = new System.Drawing.Point(198, 71);
-            this.textBoxEBXDTE.Name = "textBoxEBXDTE";
-            this.textBoxEBXDTE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBXDTE.TabIndex = 18;
-            // 
-            // textBoxEBXITE
-            // 
-            this.textBoxEBXITE.Location = new System.Drawing.Point(198, 19);
-            this.textBoxEBXITE.Name = "textBoxEBXITE";
-            this.textBoxEBXITE.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBXITE.TabIndex = 17;
-            // 
             // EAX80000006_AMD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,7 +483,7 @@
         private System.Windows.Forms.GroupBox groupBoxECX;
         private System.Windows.Forms.TextBox textBoxAssociativityTypeHuman;
         private System.Windows.Forms.Label labelLinesPerTag;
-        private System.Windows.Forms.TextBox textBoxReservedECX;
+        private System.Windows.Forms.TextBox textBoxLinesPerTag;
         private System.Windows.Forms.Label labelCacheSize;
         private System.Windows.Forms.Label labelAssociativityType;
         private System.Windows.Forms.Label labelLineSize;
@@ -508,7 +508,7 @@
         private System.Windows.Forms.TextBox textBoxEAXDTE;
         private System.Windows.Forms.TextBox textBoxEAXITE;
         private System.Windows.Forms.Label labelEBXITA;
-        private System.Windows.Forms.TextBox textBoxlabelEBXITA;
+        private System.Windows.Forms.TextBox textBoxEBXITA;
         private System.Windows.Forms.Label labelEBXDTA;
         private System.Windows.Forms.Label labelEBXDTE;
         private System.Windows.Forms.Label labelEBXITE;
