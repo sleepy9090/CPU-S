@@ -19,6 +19,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x80860007: Vendor leaves - Transmeta - Processor information - MHz + mV
 
             textBoxEAX.Text = cpuHelper.GetEAX80860007EAXX();

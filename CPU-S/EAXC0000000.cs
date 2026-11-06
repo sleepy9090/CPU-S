@@ -20,6 +20,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0xC0000000: Centaur and Zhaoxin - Highest Extended Function / Maximum Supported Leaf
 
             string cpuIdEAXC0000000EAX = cpuHelper.GetEAXC0000000EAXX();

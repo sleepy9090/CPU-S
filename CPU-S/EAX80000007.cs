@@ -25,6 +25,11 @@ namespace CPU_S
                 textBox.ReadOnly = true;
             }
 
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x80000007: Processor Power Management Information and RAS Capabilities
 
             textBoxEAX80000007EAX.Text = cpuHelper.GetEAX80000007EAXX();
