@@ -61,8 +61,6 @@
             this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall = new System.Windows.Forms.CheckBox();
             this.checkBoxEAX16Reserved = new System.Windows.Forms.CheckBox();
             this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias = new System.Windows.Forms.CheckBox();
-            this.textBoxEAX19_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEAX19_31_Reserved = new System.Windows.Forms.Label();
             this.textBoxRecommendedSpinlockFailureRetries = new System.Windows.Forms.TextBox();
             this.labelRecommendedSpinlockFailureRetries = new System.Windows.Forms.Label();
             this.textBoxImplementedPhysicalAddressBits = new System.Windows.Forms.TextBox();
@@ -71,6 +69,19 @@
             this.labelECX7_31_Reserved = new System.Windows.Forms.Label();
             this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
             this.labelEDXReserved = new System.Windows.Forms.Label();
+            this.checkBoxEAXReserved19 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved20 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved21 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved22 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved23 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved24 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved29 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved28 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved27 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved26 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved25 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved31 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved30 = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX40000004.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
@@ -175,8 +186,19 @@
             // 
             // groupBoxEAX
             // 
-            this.groupBoxEAX.Controls.Add(this.labelEAX19_31_Reserved);
-            this.groupBoxEAX.Controls.Add(this.textBoxEAX19_31_Reserved);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved31);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved30);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved29);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved28);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved27);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved26);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved25);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved24);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved23);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved22);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved21);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved20);
+            this.groupBoxEAX.Controls.Add(this.checkBoxEAXReserved19);
             this.groupBoxEAX.Controls.Add(this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead);
             this.groupBoxEAX.Controls.Add(this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall);
             this.groupBoxEAX.Controls.Add(this.checkBoxEAX16Reserved);
@@ -428,22 +450,6 @@
             this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Text = "UseSyncedTimeline – consume root QueryPerformanceCounter bias [15]";
             this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.UseVisualStyleBackColor = true;
             // 
-            // textBoxEAX19_31_Reserved
-            // 
-            this.textBoxEAX19_31_Reserved.Location = new System.Drawing.Point(400, 455);
-            this.textBoxEAX19_31_Reserved.Name = "textBoxEAX19_31_Reserved";
-            this.textBoxEAX19_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX19_31_Reserved.TabIndex = 19;
-            // 
-            // labelEAX19_31_Reserved
-            // 
-            this.labelEAX19_31_Reserved.AutoSize = true;
-            this.labelEAX19_31_Reserved.Location = new System.Drawing.Point(3, 458);
-            this.labelEAX19_31_Reserved.Name = "labelEAX19_31_Reserved";
-            this.labelEAX19_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEAX19_31_Reserved.TabIndex = 20;
-            this.labelEAX19_31_Reserved.Text = "Reserved [19-31]:";
-            // 
             // textBoxRecommendedSpinlockFailureRetries
             // 
             this.textBoxRecommendedSpinlockFailureRetries.Location = new System.Drawing.Point(400, 19);
@@ -508,6 +514,136 @@
             this.labelEDXReserved.TabIndex = 1;
             this.labelEDXReserved.Text = "Reserved [0-31]:";
             // 
+            // checkBoxEAXReserved19
+            // 
+            this.checkBoxEAXReserved19.AutoSize = true;
+            this.checkBoxEAXReserved19.Location = new System.Drawing.Point(6, 455);
+            this.checkBoxEAXReserved19.Name = "checkBoxEAXReserved19";
+            this.checkBoxEAXReserved19.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved19.TabIndex = 19;
+            this.checkBoxEAXReserved19.Text = "Reserved [19]";
+            this.checkBoxEAXReserved19.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved20
+            // 
+            this.checkBoxEAXReserved20.AutoSize = true;
+            this.checkBoxEAXReserved20.Location = new System.Drawing.Point(400, 18);
+            this.checkBoxEAXReserved20.Name = "checkBoxEAXReserved20";
+            this.checkBoxEAXReserved20.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved20.TabIndex = 20;
+            this.checkBoxEAXReserved20.Text = "Reserved [20]";
+            this.checkBoxEAXReserved20.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved21
+            // 
+            this.checkBoxEAXReserved21.AutoSize = true;
+            this.checkBoxEAXReserved21.Location = new System.Drawing.Point(400, 41);
+            this.checkBoxEAXReserved21.Name = "checkBoxEAXReserved21";
+            this.checkBoxEAXReserved21.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved21.TabIndex = 21;
+            this.checkBoxEAXReserved21.Text = "Reserved [21]";
+            this.checkBoxEAXReserved21.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved22
+            // 
+            this.checkBoxEAXReserved22.AutoSize = true;
+            this.checkBoxEAXReserved22.Location = new System.Drawing.Point(400, 64);
+            this.checkBoxEAXReserved22.Name = "checkBoxEAXReserved22";
+            this.checkBoxEAXReserved22.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved22.TabIndex = 22;
+            this.checkBoxEAXReserved22.Text = "Reserved [22]";
+            this.checkBoxEAXReserved22.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved23
+            // 
+            this.checkBoxEAXReserved23.AutoSize = true;
+            this.checkBoxEAXReserved23.Location = new System.Drawing.Point(400, 87);
+            this.checkBoxEAXReserved23.Name = "checkBoxEAXReserved23";
+            this.checkBoxEAXReserved23.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved23.TabIndex = 23;
+            this.checkBoxEAXReserved23.Text = "Reserved [23]";
+            this.checkBoxEAXReserved23.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved24
+            // 
+            this.checkBoxEAXReserved24.AutoSize = true;
+            this.checkBoxEAXReserved24.Location = new System.Drawing.Point(400, 110);
+            this.checkBoxEAXReserved24.Name = "checkBoxEAXReserved24";
+            this.checkBoxEAXReserved24.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved24.TabIndex = 24;
+            this.checkBoxEAXReserved24.Text = "Reserved [24]";
+            this.checkBoxEAXReserved24.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved29
+            // 
+            this.checkBoxEAXReserved29.AutoSize = true;
+            this.checkBoxEAXReserved29.Location = new System.Drawing.Point(400, 225);
+            this.checkBoxEAXReserved29.Name = "checkBoxEAXReserved29";
+            this.checkBoxEAXReserved29.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved29.TabIndex = 29;
+            this.checkBoxEAXReserved29.Text = "Reserved [29]";
+            this.checkBoxEAXReserved29.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved28
+            // 
+            this.checkBoxEAXReserved28.AutoSize = true;
+            this.checkBoxEAXReserved28.Location = new System.Drawing.Point(400, 202);
+            this.checkBoxEAXReserved28.Name = "checkBoxEAXReserved28";
+            this.checkBoxEAXReserved28.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved28.TabIndex = 28;
+            this.checkBoxEAXReserved28.Text = "Reserved [28]";
+            this.checkBoxEAXReserved28.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved27
+            // 
+            this.checkBoxEAXReserved27.AutoSize = true;
+            this.checkBoxEAXReserved27.Location = new System.Drawing.Point(400, 179);
+            this.checkBoxEAXReserved27.Name = "checkBoxEAXReserved27";
+            this.checkBoxEAXReserved27.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved27.TabIndex = 27;
+            this.checkBoxEAXReserved27.Text = "Reserved [27]";
+            this.checkBoxEAXReserved27.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved26
+            // 
+            this.checkBoxEAXReserved26.AutoSize = true;
+            this.checkBoxEAXReserved26.Location = new System.Drawing.Point(400, 156);
+            this.checkBoxEAXReserved26.Name = "checkBoxEAXReserved26";
+            this.checkBoxEAXReserved26.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved26.TabIndex = 26;
+            this.checkBoxEAXReserved26.Text = "Reserved [26]";
+            this.checkBoxEAXReserved26.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved25
+            // 
+            this.checkBoxEAXReserved25.AutoSize = true;
+            this.checkBoxEAXReserved25.Location = new System.Drawing.Point(400, 133);
+            this.checkBoxEAXReserved25.Name = "checkBoxEAXReserved25";
+            this.checkBoxEAXReserved25.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved25.TabIndex = 25;
+            this.checkBoxEAXReserved25.Text = "Reserved [25]";
+            this.checkBoxEAXReserved25.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved31
+            // 
+            this.checkBoxEAXReserved31.AutoSize = true;
+            this.checkBoxEAXReserved31.Location = new System.Drawing.Point(400, 271);
+            this.checkBoxEAXReserved31.Name = "checkBoxEAXReserved31";
+            this.checkBoxEAXReserved31.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved31.TabIndex = 31;
+            this.checkBoxEAXReserved31.Text = "Reserved [31]";
+            this.checkBoxEAXReserved31.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved30
+            // 
+            this.checkBoxEAXReserved30.AutoSize = true;
+            this.checkBoxEAXReserved30.Location = new System.Drawing.Point(400, 248);
+            this.checkBoxEAXReserved30.Name = "checkBoxEAXReserved30";
+            this.checkBoxEAXReserved30.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved30.TabIndex = 30;
+            this.checkBoxEAXReserved30.Text = "Reserved [30]";
+            this.checkBoxEAXReserved30.UseVisualStyleBackColor = true;
+            // 
             // EAX40000004
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,8 +704,6 @@
         private System.Windows.Forms.CheckBox checkBoxHypercallForRemoteTLBFlush;
         private System.Windows.Forms.CheckBox checkBoxHypercallForLocalTLBFlush;
         private System.Windows.Forms.CheckBox checkBoxHypercallForAddressSpaceSwitch;
-        private System.Windows.Forms.Label labelEAX19_31_Reserved;
-        private System.Windows.Forms.TextBox textBoxEAX19_31_Reserved;
         private System.Windows.Forms.TextBox textBoxRecommendedSpinlockFailureRetries;
         private System.Windows.Forms.Label labelRecommendedSpinlockFailureRetries;
         private System.Windows.Forms.Label labelEDXReserved;
@@ -578,5 +712,18 @@
         private System.Windows.Forms.Label labelImplementedPhysicalAddressBits;
         private System.Windows.Forms.TextBox textBoxECX7_31_Reserved;
         private System.Windows.Forms.TextBox textBoxImplementedPhysicalAddressBits;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved31;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved30;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved29;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved28;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved27;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved26;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved25;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved24;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved23;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved22;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved21;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved20;
+        private System.Windows.Forms.CheckBox checkBoxEAXReserved19;
     }
 }
