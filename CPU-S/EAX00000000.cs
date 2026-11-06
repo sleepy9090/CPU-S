@@ -20,6 +20,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX = 0x00000000: Highest Function Parameter and Manufacturer ID
 
             string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();

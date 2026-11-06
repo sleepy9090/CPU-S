@@ -28,6 +28,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x0000000F: RDT-M (QoS monitoring) enumeration, ECX=1..n - 1=L3
 
             textBoxEAX0000000FEAX.Text = cpuHelper.GetEAX0000000FEAX_ECXX(subLeafIndex);

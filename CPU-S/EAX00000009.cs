@@ -27,6 +27,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x00000009: DCA Parameters
 
             textBoxEAX00000009EAX.Text = cpuHelper.GetEAX00000009EAXX();

@@ -28,6 +28,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x00000023: Architectural perf mon extended information
 
             textBoxEAX.Text = cpuHelper.GetEAX00000023EAXX();

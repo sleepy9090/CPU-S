@@ -19,6 +19,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x2: Cache and TLB Descriptor Information
 
             string cpuIdEAX2EAX = cpuHelper.GetEAX2EAXX();

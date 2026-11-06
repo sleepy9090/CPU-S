@@ -20,6 +20,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x0000000D: XSAVE Features and State Components (ECX=0x00000000), (Sub 0) (main) (XCR0)
 
             textBoxEAX0000000DEAX.Text = cpuHelper.GetEAX0000000DEAXX();

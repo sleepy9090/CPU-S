@@ -19,6 +19,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x3: Processor Serial Number
 
             string cpuIdEAX3EAX = cpuHelper.GetEAX3EAXX();

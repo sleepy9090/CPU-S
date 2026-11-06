@@ -20,6 +20,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x000000014, ECX=0x1..n: Processor Trace packet generation information in EAX, EBX and ECX
 
             textBoxEAX14ECX1EAX.Text = cpuHelper.GetEAX14ECX1EAXX(subLeafIndex);

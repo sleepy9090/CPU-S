@@ -20,6 +20,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x0000000B: Topology enumeration information
 
             textBoxEAX0000000BEAX.Text = cpuHelper.GetEAX0000000BEAXX(subLeafIndex);

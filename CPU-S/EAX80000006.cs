@@ -19,6 +19,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region L2/L3 cache and L2 TLB configuration descriptors
 
             string cpuIdEAX80000006EAX = cpuHelper.GetEAX80000006EAXX();

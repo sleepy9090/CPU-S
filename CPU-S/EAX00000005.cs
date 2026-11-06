@@ -20,6 +20,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x5: MONITOR/MWAIT Features
 
             string cpuIdEAX5EAX = cpuHelper.GetEAX5EAXX();

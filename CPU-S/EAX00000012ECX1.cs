@@ -24,6 +24,11 @@ namespace CPU_S
                 textBox.ReadOnly = true;
             }
 
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x00000012, ECX=0x00000001: SGX Capabilities (1=SECS)
 
             textBoxEAX00000012EAX.Text = cpuHelper.GetEAX00000012ECX1EAXX();

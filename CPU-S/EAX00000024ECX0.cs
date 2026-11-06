@@ -20,6 +20,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x00000024, ECX=0x00000000: AVX10 Converged Vector ISA
 
             textBoxEAX24ECX0EAX.Text = cpuHelper.GetEAX00000024EAXX();

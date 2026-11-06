@@ -21,6 +21,10 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            textBoxResult.ReadOnly = true;
+            textBoxResultDec.ReadOnly = true;
+            textBoxResultHex.ReadOnly = true;
+
             comboBoxLeaf.Items.Clear();
 
             string[] standardLeaves = {

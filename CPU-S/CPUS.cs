@@ -39,6 +39,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             comboBoxCPU.Items.Clear();
             
 
@@ -1476,7 +1486,7 @@ namespace CPU_S
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("CPU-S v1.0b\n\nCopyright © 2024 Shawn M. Crawford\n\nAll rights reserved.\n\nThis software is provided \"as-is\", without any express or implied warranty.",
+            MessageBox.Show("CPU-S v1.1b\n\nCopyright © 2026+ Shawn M. Crawford\n\nAll rights reserved.\n\nThis software is provided \"as-is\", without any express or implied warranty.",
                 "About CPU-S",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);

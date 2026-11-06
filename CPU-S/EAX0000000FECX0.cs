@@ -28,6 +28,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x0000000F: RDT-M (QoS monitoring) enumeration, ECX=0 - resources: 0=main
 
             textBoxEAX0000000FEAX.Text = cpuHelper.GetEAX0000000FEAXX();

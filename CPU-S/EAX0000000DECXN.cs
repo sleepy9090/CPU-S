@@ -31,6 +31,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x0000000D: XSAVE Features and State Components (ECX=2 to 62), (Sub n) (2 to 62) (comp)
 
             textBoxEAX0000000DEAX.Text = cpuHelper.GetEAX0000000DEAX_ECXNX(subLeafIndex);

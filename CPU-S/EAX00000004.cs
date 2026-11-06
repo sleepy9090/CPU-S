@@ -20,6 +20,11 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
             #region EAX=0x4: Cache Hierarchy and Topology
 
             string cpuIdEAX4EAX = cpuHelper.GetEAX4EAXX(i);

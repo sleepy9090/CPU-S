@@ -20,6 +20,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x14, ECX=0x0: Processor Trace feature bits in EBX and ECX
 
             string cpuIdEAX14ECX0EAXX = cpuHelper.GetEAX14ECX0EAXX();

@@ -20,6 +20,16 @@ namespace CPU_S
 
             cpuHelper = new CPUHelper();
 
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x00000024, ECX=0x00000001..n: Discrete AVX10 Features
 
             textBoxEAX.Text = cpuHelper.GetEAX00000024ECXNEAXX(subLeafIndex);

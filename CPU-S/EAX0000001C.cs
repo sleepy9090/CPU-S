@@ -15,6 +15,16 @@ namespace CPU_S
         public EAX0000001C()
         {
             InitializeComponent();
+
+            foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
+            {
+                textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
         }
     }
 }
