@@ -25,6 +25,11 @@ namespace CPU_S
                 textBox.ReadOnly = true;
             }
 
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX = 0x00000000: Highest Function Parameter and Manufacturer ID
 
             string cpuIdEAX0EAX = cpuHelper.GetEAX0EAXX();

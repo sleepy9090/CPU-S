@@ -1,6 +1,6 @@
 ﻿/*
-    File           EAX3.cs
-    Brief          Form for displaying EAX=0x3 CPU information.
+    File           EAX00000003.cs
+    Brief          Form for displaying EAX=0x00000003 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
     Date           08/XX/2026
     Author         Shawn M. Crawford [sleepy]
@@ -22,6 +22,11 @@ namespace CPU_S
             foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
             {
                 textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
             }
 
             #region EAX=0x3: Processor Serial Number

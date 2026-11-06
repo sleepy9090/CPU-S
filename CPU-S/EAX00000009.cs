@@ -5,14 +5,6 @@
     Date           08/XX/2026
     Author         Shawn M. Crawford [sleepy]
 */
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CPU_S
@@ -30,6 +22,11 @@ namespace CPU_S
             foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
             {
                 textBox.ReadOnly = true;
+            }
+
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
             }
 
             #region EAX=0x00000009: DCA Parameters

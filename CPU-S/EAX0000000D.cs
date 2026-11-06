@@ -25,6 +25,11 @@ namespace CPU_S
                 textBox.ReadOnly = true;
             }
 
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x0000000D: XSAVE Features and State Components (ECX=0x00000000), (Sub 0) (main) (XCR0)
 
             textBoxEAX0000000DEAX.Text = cpuHelper.GetEAX0000000DEAXX();

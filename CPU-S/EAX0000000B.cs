@@ -25,6 +25,11 @@ namespace CPU_S
                 textBox.ReadOnly = true;
             }
 
+            foreach (CheckBox checkBox in this.GetAllControlsOfType<CheckBox>())
+            {
+                checkBox.AutoCheck = false;
+            }
+
             #region EAX=0x0000000B: Topology enumeration information
 
             textBoxEAX0000000BEAX.Text = cpuHelper.GetEAX0000000BEAXX(subLeafIndex);
