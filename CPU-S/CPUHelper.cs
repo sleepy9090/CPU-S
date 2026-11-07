@@ -11517,16 +11517,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX7ECX2EAX();
+        public static extern IntPtr GetEAX00000007ECX2EAX();
 
-        public string GetEAX7ECX2EAXX()
+        public string GetEAX00000007ECX2EAXX()
         {
             try
             {
-                IntPtr eAX7ECX2EAXPtr = GetEAX7ECX2EAX();
-                string eAX7ECX2EAXString = Marshal.PtrToStringAnsi(eAX7ECX2EAXPtr);
+                IntPtr eAX00000007ECX2EAXPtr = GetEAX00000007ECX2EAX();
+                string eAX00000007ECX2EAXString = Marshal.PtrToStringAnsi(eAX00000007ECX2EAXPtr);
 
-                return eAX7ECX2EAXString;
+                return eAX00000007ECX2EAXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -11541,16 +11541,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX7ECX2EBX();
+        public static extern IntPtr GetEAX00000007ECX2EBX();
 
-        public string GetEAX7ECX2EBXX()
+        public string GetEAX00000007ECX2EBXX()
         {
             try
             {
-                IntPtr eAX7ECX2EBXPtr = GetEAX7ECX2EBX();
-                string eAX7ECX2EBXString = Marshal.PtrToStringAnsi(eAX7ECX2EBXPtr);
+                IntPtr eAX00000007ECX2EBXPtr = GetEAX00000007ECX2EBX();
+                string eAX00000007ECX2EBXString = Marshal.PtrToStringAnsi(eAX00000007ECX2EBXPtr);
 
-                return eAX7ECX2EBXString;
+                return eAX00000007ECX2EBXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -11565,16 +11565,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX7ECX2ECX();
+        public static extern IntPtr GetEAX00000007ECX2ECX();
 
-        public string GetEAX7ECX2ECXX()
+        public string GetEAX00000007ECX2ECXX()
         {
             try
             {
-                IntPtr eAX7ECX2ECXPtr = GetEAX7ECX2ECX();
-                string eAX7ECX2ECXString = Marshal.PtrToStringAnsi(eAX7ECX2ECXPtr);
+                IntPtr eAX00000007ECX2ECXPtr = GetEAX00000007ECX2ECX();
+                string eAX00000007ECX2ECXString = Marshal.PtrToStringAnsi(eAX00000007ECX2ECXPtr);
 
-                return eAX7ECX2ECXString;
+                return eAX00000007ECX2ECXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -11589,16 +11589,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX7ECX2EDX();
+        public static extern IntPtr GetEAX00000007ECX2EDX();
 
-        public string GetEAX7ECX2EDXX()
+        public string GetEAX00000007ECX2EDXX()
         {
             try
             {
-                IntPtr eAX7ECX2EDXPtr = GetEAX7ECX2EDX();
-                string eAX7ECX2EDXString = Marshal.PtrToStringAnsi(eAX7ECX2EDXPtr);
+                IntPtr eAX00000007ECX2EDXPtr = GetEAX00000007ECX2EDX();
+                string eAX00000007ECX2EDXString = Marshal.PtrToStringAnsi(eAX00000007ECX2EDXPtr);
 
-                return eAX7ECX2EDXString;
+                return eAX00000007ECX2EDXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -11613,13 +11613,85 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX0_PSFDIsSupported();
+        public static extern int GetEAX00000007ECX2_EAX0_31_Reserved();
 
-        public bool GetEAX7ECX2_EDX0_PSFDIsSupportedX()
+        public string GetEAX00000007ECX2_EAX0_31_ReservedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX0_PSFDIsSupported() != 0;
+                int eAX00000007ECX2_EAX0_31_ReservedValue = GetEAX00000007ECX2_EAX0_31_Reserved();
+                string eAX00000007ECX2_EAX0_31_ReservedString = eAX00000007ECX2_EAX0_31_ReservedValue.ToString();
+
+                return eAX00000007ECX2_EAX0_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000007ECX2_EBX0_31_Reserved();
+
+        public string GetEAX00000007ECX2_EBX0_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000007ECX2_EBX0_31_ReservedValue = GetEAX00000007ECX2_EBX0_31_Reserved();
+                string eAX00000007ECX2_EBX0_31_ReservedString = eAX00000007ECX2_EBX0_31_ReservedValue.ToString();
+
+                return eAX00000007ECX2_EBX0_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000007ECX2_ECX0_31_Reserved();
+
+        public string GetEAX00000007ECX2_ECX0_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000007ECX2_ECX0_31_ReservedValue = GetEAX00000007ECX2_ECX0_31_Reserved();
+                string eAX00000007ECX2_ECX0_31_ReservedString = eAX00000007ECX2_ECX0_31_ReservedValue.ToString();
+
+                return eAX00000007ECX2_ECX0_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000007ECX2_EDX0_PSFDIsSupported();
+
+        public bool GetEAX00000007ECX2_EDX0_PSFDIsSupportedX()
+        {
+            try
+            {
+                return GetEAX00000007ECX2_EDX0_PSFDIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11634,13 +11706,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX1_IPREDIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX1_IPREDIsSupported();
 
-        public bool GetEAX7ECX2_EDX1_IPREDIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX1_IPREDIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX1_IPREDIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX1_IPREDIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11655,13 +11727,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX2_RRSBA_CTRLIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX2_RRSBA_CTRLIsSupported();
 
-        public bool GetEAX7ECX2_EDX2_RRSBA_CTRLIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX2_RRSBA_CTRLIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX2_RRSBA_CTRLIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX2_RRSBA_CTRLIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11676,13 +11748,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX3_DDPD_UIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX3_DDPD_UIsSupported();
 
-        public bool GetEAX7ECX2_EDX3_DDPD_UIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX3_DDPD_UIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX3_DDPD_UIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX3_DDPD_UIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11697,13 +11769,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX4_BHI_CTRLIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX4_BHI_CTRLIsSupported();
 
-        public bool GetEAX7ECX2_EDX4_BHI_CTRLIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX4_BHI_CTRLIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX4_BHI_CTRLIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX4_BHI_CTRLIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11718,13 +11790,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX5_MCDT_NOIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX5_MCDT_NOIsSupported();
 
-        public bool GetEAX7ECX2_EDX5_MCDT_NOIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX5_MCDT_NOIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX5_MCDT_NOIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX5_MCDT_NOIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11739,13 +11811,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX6_UC_LOCK_DISABLEIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX6_UC_LOCK_DISABLEIsSupported();
 
-        public bool GetEAX7ECX2_EDX6_UC_LOCK_DISABLEIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX6_UC_LOCK_DISABLEIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX6_UC_LOCK_DISABLEIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX6_UC_LOCK_DISABLEIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11760,13 +11832,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX7_MONITOR_MITG_NOIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX7_MONITOR_MITG_NOIsSupported();
 
-        public bool GetEAX7ECX2_EDX7_MONITOR_MITG_NOIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX7_MONITOR_MITG_NOIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX7_MONITOR_MITG_NOIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX7_MONITOR_MITG_NOIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11781,13 +11853,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX8_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX8_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX8_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX8_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX8_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX8_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11802,13 +11874,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX9_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX9_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX9_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX9_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX9_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX9_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11823,13 +11895,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX10_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX10_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX10_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX10_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX10_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX10_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11844,13 +11916,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX11_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX11_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX11_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX11_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX11_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX11_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11865,13 +11937,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX12_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX12_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX12_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX12_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX12_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX12_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11886,13 +11958,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX13_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX13_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX13_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX13_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX13_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX13_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11907,13 +11979,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX14_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX14_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX14_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX14_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX14_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX14_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11928,13 +12000,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX15_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX15_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX15_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX15_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX15_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX15_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11949,13 +12021,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX16_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX16_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX16_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX16_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX16_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX16_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11970,13 +12042,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX17_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX17_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX17_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX17_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX17_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX17_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -11991,13 +12063,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX18_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX18_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX18_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX18_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX18_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX18_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12012,13 +12084,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX19_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX19_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX19_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX19_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX19_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX19_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12033,13 +12105,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX20_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX20_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX20_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX20_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX20_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX20_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12054,13 +12126,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX21_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX21_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX21_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX21_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX21_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX21_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12075,13 +12147,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX22_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX22_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX22_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX22_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX22_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX22_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12096,13 +12168,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX23_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX23_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX23_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX23_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX23_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX23_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12117,13 +12189,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX24_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX24_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX24_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX24_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX24_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX24_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12138,13 +12210,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX25_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX25_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX25_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX25_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX25_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX25_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12159,13 +12231,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX26_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX26_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX26_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX26_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX26_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX26_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12180,13 +12252,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX27_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX27_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX27_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX27_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX27_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX27_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12201,13 +12273,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX28_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX28_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX28_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX28_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX28_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX28_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12222,13 +12294,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX29_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX29_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX29_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX29_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX29_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX29_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12243,13 +12315,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX30_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX30_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX30_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX30_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX30_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX30_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -12264,13 +12336,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX7ECX2_EDX31_ReservedIsSupported();
+        private static extern int GetEAX00000007ECX2_EDX31_ReservedIsSupported();
 
-        public bool GetEAX7ECX2_EDX31_ReservedIsSupportedX()
+        public bool GetEAX00000007ECX2_EDX31_ReservedIsSupportedX()
         {
             try
             {
-                return GetEAX7ECX2_EDX31_ReservedIsSupported() != 0;
+                return GetEAX00000007ECX2_EDX31_ReservedIsSupported() != 0;
             }
             catch (DllNotFoundException ex)
             {
