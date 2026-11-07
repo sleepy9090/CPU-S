@@ -158,7 +158,7 @@
             this.groupBoxEAX00000007ECX0.Size = new System.Drawing.Size(1556, 957);
             this.groupBoxEAX00000007ECX0.TabIndex = 1;
             this.groupBoxEAX00000007ECX0.TabStop = false;
-            this.groupBoxEAX00000007ECX0.Text = "EAX=0x00000007 ECX=0x0";
+            this.groupBoxEAX00000007ECX0.Text = "EAX=0x00000007 ECX=0x00000000";
             // 
             // groupBoxEDX
             // 
@@ -199,7 +199,7 @@
             this.groupBoxEDX.Size = new System.Drawing.Size(523, 932);
             this.groupBoxEDX.TabIndex = 44;
             this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
+            this.groupBoxEDX.Text = "EDX - AMD mutable – C001_10DFh (hi)";
             // 
             // checkBoxSSBD
             // 
@@ -564,7 +564,7 @@
             this.groupBoxECX.Size = new System.Drawing.Size(528, 932);
             this.groupBoxECX.TabIndex = 43;
             this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
+            this.groupBoxECX.Text = "ECX - AMD mutable – C001_10DFh (lo)";
             // 
             // textBoxMAWAU
             // 
@@ -902,7 +902,7 @@
             this.groupBoxEBX.Size = new System.Drawing.Size(480, 793);
             this.groupBoxEBX.TabIndex = 42;
             this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
+            this.groupBoxEBX.Text = "EBX - AMD mutable – C001_1002h (lo)";
             // 
             // checkBoxAVX512VL
             // 
@@ -1235,7 +1235,7 @@
             this.groupBoxEAX.Size = new System.Drawing.Size(223, 47);
             this.groupBoxEAX.TabIndex = 41;
             this.groupBoxEAX.TabStop = false;
-            this.groupBoxEAX.Text = "EAX";
+            this.groupBoxEAX.Text = "EAX - AMD mutable – C001_1002h (hi)";
             // 
             // textBoxMaxSubLeaf
             // 
@@ -1342,7 +1342,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "EAX00000007ECX0";
-            this.Text = "EAX=0x00000007, ECX=0x0: Extended Features";
+            this.Text = "EAX=0x00000007, ECX=0x00000000: Extended Features";
             this.groupBoxEAX00000007ECX0.ResumeLayout(false);
             this.groupBoxEDX.ResumeLayout(false);
             this.groupBoxEDX.PerformLayout();

@@ -2,7 +2,7 @@
     File           EAX00000007ECX2.cs
     Brief          Form for displaying EAX=0x00000007, ECX=0x00000002 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           11/07/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
