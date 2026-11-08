@@ -72,6 +72,38 @@ namespace CPU_S
             checkBoxMOVRS.Checked = cpuHelper.GetEAX7ECX1_EAX31_MOVRSIsSupportedX();
 
             // EBX
+            checkBoxPPIN.Checked = cpuHelper.GetEAX7ECX1_EBX0_PPINIsSupportedX();
+            checkBoxPBNDKB.Checked = cpuHelper.GetEAX7ECX1_EBX1_PBNDKBIsSupportedX();
+            checkBoxEBX2Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX2_ReservedIsSupportedX();
+            checkBoxNO_LCMV.Checked = cpuHelper.GetEAX7ECX1_EBX3_CPUID­MAXVAL_­LIM_RMVIsSupportedX();
+            checkBoxEBX4Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX4_ReservedIsSupportedX();
+            checkBoxEBX5Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX5_ReservedIsSupportedX();
+            checkBoxEBX6Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX6_ReservedIsSupportedX();
+            checkBoxEBX7Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX7_ReservedIsSupportedX();
+            checkBoxEBX8Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX8_ReservedIsSupportedX();
+            checkBoxEBX9Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX9_ReservedIsSupportedX();
+            checkBoxEBX10Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX10_ReservedIsSupportedX();
+            checkBoxEBX11Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX11_ReservedIsSupportedX();
+            checkBoxEBX12Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX12_ReservedIsSupportedX();
+            checkBoxEBX13Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX13_ReservedIsSupportedX();
+            checkBoxEBX14Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX14_ReservedIsSupportedX();
+            checkBoxEBX15Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX15_ReservedIsSupportedX();
+            checkBoxEBX16Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX16_ReservedIsSupportedX();
+            checkBoxEBX17Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX17_ReservedIsSupportedX();
+            checkBoxEBX18Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX18_ReservedIsSupportedX();
+            checkBoxEBX19Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX19_ReservedIsSupportedX();
+            checkBoxEBX20Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX20_ReservedIsSupportedX();
+            checkBoxEBX21Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX21_ReservedIsSupportedX();
+            checkBoxEBX22Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX22_ReservedIsSupportedX();
+            checkBoxEBX23Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX23_ReservedIsSupportedX();
+            checkBoxEBX24Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX24_ReservedIsSupportedX();
+            checkBoxEBX25Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX25_ReservedIsSupportedX();
+            checkBoxEBX26Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX26_ReservedIsSupportedX();
+            checkBoxEBX27Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX27_ReservedIsSupportedX();
+            checkBoxMPSADBW_512.Checked = cpuHelper.GetEAX7ECX1_EBX28_Reserved_MPSADBW_512IsSupportedX();
+            checkBoxEBX29Reserved.Checked = cpuHelper.GetEAX7ECX1_EBX29_ReservedIsSupportedX();
+            checkBoxUnconfirmedAVX512_RAO_FP.Checked = cpuHelper.GetEAX7ECX1_EBX30_Reserved_AVX512_RAO_FPIsSupportedX();
+            checkBoxUnconfirmedAVX_RAO_FP.Checked = cpuHelper.GetEAX7ECX1_EBX31_Reserved_AVX512_RAO_FPIsSupportedX();
 
             // ECX
 
