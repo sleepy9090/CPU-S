@@ -1273,9 +1273,9 @@
             this.checkBoxACE.AutoSize = true;
             this.checkBoxACE.Location = new System.Drawing.Point(6, 270);
             this.checkBoxACE.Name = "checkBoxACE";
-            this.checkBoxACE.Size = new System.Drawing.Size(68, 17);
+            this.checkBoxACE.Size = new System.Drawing.Size(125, 17);
             this.checkBoxACE.TabIndex = 43;
-            this.checkBoxACE.Text = "ACE [11]";
+            this.checkBoxACE.Text = "ACE / Reserved [11]";
             this.checkBoxACE.UseVisualStyleBackColor = true;
             // 
             // checkBoxEDX10Unknown
@@ -1363,9 +1363,9 @@
             this.checkBoxX86S.AutoSize = true;
             this.checkBoxX86S.Location = new System.Drawing.Point(6, 64);
             this.checkBoxX86S.Name = "checkBoxX86S";
-            this.checkBoxX86S.Size = new System.Drawing.Size(103, 17);
+            this.checkBoxX86S.Size = new System.Drawing.Size(268, 17);
             this.checkBoxX86S.TabIndex = 34;
-            this.checkBoxX86S.Text = "X86S - x86-S [2]";
+            this.checkBoxX86S.Text = "X86S - x86-S (cancelled) - (legacy_reduced_isa) [2]";
             this.checkBoxX86S.UseVisualStyleBackColor = true;
             // 
             // checkBoxRDT_A_ASYM
