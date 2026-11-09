@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+    File           EAX0000001B.cs
+    Brief          Form for displaying EAX=0x0000001B CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           11/09/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
 using System.Windows.Forms;
 
 namespace CPU_S
 {
     public partial class EAX0000001B : Form
     {
+        private CPUHelper cpuHelper;
+
         public EAX0000001B()
         {
             InitializeComponent();
+
+            cpuHelper = new CPUHelper();
 
             foreach (TextBox textBox in this.GetAllControlsOfType<TextBox>())
             {
@@ -25,6 +28,15 @@ namespace CPU_S
             {
                 checkBox.AutoCheck = false;
             }
+
+            #region EAX=0x0000001B: PCONFIG Information
+
+            textBoxEAX.Text = cpuHelper.GetEAX0000001BEAXX();
+            textBoxEBX.Text = cpuHelper.GetEAX0000001BEBXX();
+            textBoxECX.Text = cpuHelper.GetEAX0000001BECXX();
+            textBoxEDX.Text = cpuHelper.GetEAX0000001BEDXX();
+
+            #endregion
         }
     }
 }

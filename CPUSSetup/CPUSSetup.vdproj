@@ -90,6 +90,14 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_0E364216C475412B8CB8DF5050AC32EE"
+                {
+                "Name" = "8:.NET Framework"
+                "Message" = "8:[VSDNETMSG]"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.7.2"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=863262"
+                }
             }
         }
         "File"
@@ -151,7 +159,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CPUSSetup"
         "ProductCode" = "8:{1E981AE5-AEDE-4E22-BB8C-3F342D7BAB58}"
-        "PackageCode" = "8:{F97CDFE6-C754-4521-B4AB-7DB391239B3E}"
+        "PackageCode" = "8:{40791A74-4F12-48F7-93BB-0A0148425CA2}"
         "UpgradeCode" = "8:{0391532A-1125-4D7E-8652-49D98E92511D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
