@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPU-S", "CPU-S\CPU-S.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CPUSSetup", "CPUSSetup\CPUSSetup.vdproj", "{49DD8614-B0CE-AC0B-6C27-31A6EC2FF386}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +23,6 @@ Global
 		{CB0BB267-641D-4F3D-8371-9FF2D3332F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB0BB267-641D-4F3D-8371-9FF2D3332F3D}.Release|x64.ActiveCfg = Release|x64
 		{CB0BB267-641D-4F3D-8371-9FF2D3332F3D}.Release|x64.Build.0 = Release|x64
-		{49DD8614-B0CE-AC0B-6C27-31A6EC2FF386}.Debug|Any CPU.ActiveCfg = Debug
-		{49DD8614-B0CE-AC0B-6C27-31A6EC2FF386}.Debug|Any CPU.Build.0 = Debug
-		{49DD8614-B0CE-AC0B-6C27-31A6EC2FF386}.Debug|x64.ActiveCfg = Debug
-		{49DD8614-B0CE-AC0B-6C27-31A6EC2FF386}.Release|Any CPU.ActiveCfg = Release
-		{49DD8614-B0CE-AC0B-6C27-31A6EC2FF386}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
