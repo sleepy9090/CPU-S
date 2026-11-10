@@ -54,7 +54,7 @@
             this.checkBoxEBX_3_Reserved = new System.Windows.Forms.CheckBox();
             this.checkBoxIWKEYBACKUP = new System.Windows.Forms.CheckBox();
             this.labelEAX5_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEAX5_31_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxEBX5_31_Reserved = new System.Windows.Forms.TextBox();
             this.checkBoxNO_BACKUP = new System.Windows.Forms.CheckBox();
             this.checkBoxRAND_IW_KEY = new System.Windows.Forms.CheckBox();
             this.labelECX_2_31_Reserved = new System.Windows.Forms.Label();
@@ -124,7 +124,7 @@
             // groupBoxEBX
             // 
             this.groupBoxEBX.Controls.Add(this.labelEAX5_31_Reserved);
-            this.groupBoxEBX.Controls.Add(this.textBoxEAX5_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.textBoxEBX5_31_Reserved);
             this.groupBoxEBX.Controls.Add(this.checkBoxIWKEYBACKUP);
             this.groupBoxEBX.Controls.Add(this.checkBoxEBX_3_Reserved);
             this.groupBoxEBX.Controls.Add(this.checkBoxAES_WIDE);
@@ -320,14 +320,14 @@
             this.labelEAX5_31_Reserved.Name = "labelEAX5_31_Reserved";
             this.labelEAX5_31_Reserved.Size = new System.Drawing.Size(86, 13);
             this.labelEAX5_31_Reserved.TabIndex = 6;
-            this.labelEAX5_31_Reserved.Text = "Reserved [3-31]:";
+            this.labelEAX5_31_Reserved.Text = "Reserved [5-31]:";
             // 
-            // textBoxEAX5_31_Reserved
+            // textBoxEBX5_31_Reserved
             // 
-            this.textBoxEAX5_31_Reserved.Location = new System.Drawing.Point(400, 133);
-            this.textBoxEAX5_31_Reserved.Name = "textBoxEAX5_31_Reserved";
-            this.textBoxEAX5_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX5_31_Reserved.TabIndex = 5;
+            this.textBoxEBX5_31_Reserved.Location = new System.Drawing.Point(400, 133);
+            this.textBoxEBX5_31_Reserved.Name = "textBoxEBX5_31_Reserved";
+            this.textBoxEBX5_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX5_31_Reserved.TabIndex = 5;
             // 
             // checkBoxNO_BACKUP
             // 
@@ -435,7 +435,7 @@
         private System.Windows.Forms.CheckBox checkBoxAES_WIDE;
         private System.Windows.Forms.CheckBox checkBoxEBX_1_Reserved;
         private System.Windows.Forms.Label labelEAX5_31_Reserved;
-        private System.Windows.Forms.TextBox textBoxEAX5_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxEBX5_31_Reserved;
         private System.Windows.Forms.Label labelEDX_0_31_Reserved;
         private System.Windows.Forms.TextBox textBoxEDX_0_31_Reserved;
         private System.Windows.Forms.Label labelECX_2_31_Reserved;
