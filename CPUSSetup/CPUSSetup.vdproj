@@ -40,20 +40,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8.1"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.8.1 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.8.1"
-                    }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.x64"
-                    {
-                    "Name" = "8:Visual C++ \"14\" Runtime Libraries (x64)"
-                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.x64"
-                    }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.x86"
-                    {
-                    "Name" = "8:Visual C++ \"14\" Runtime Libraries (x86)"
-                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.x86"
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
                     }
                 }
             }
@@ -159,7 +149,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CPUSSetup"
         "ProductCode" = "8:{1E981AE5-AEDE-4E22-BB8C-3F342D7BAB58}"
-        "PackageCode" = "8:{40791A74-4F12-48F7-93BB-0A0148425CA2}"
+        "PackageCode" = "8:{06C15170-8584-4D2B-9F9B-B2EF8DD8D769}"
         "UpgradeCode" = "8:{0391532A-1125-4D7E-8652-49D98E92511D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

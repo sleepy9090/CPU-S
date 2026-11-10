@@ -32,16 +32,16 @@ namespace CPU_S
 
             #region EAX=0x19: Intel Key Locker Features
 
-            string cpuIdEAX19EAX = cpuHelper.GetEAX19EAXX();
+            string cpuIdEAX19EAX = cpuHelper.GetEAX00000019EAXX();
             textBoxEAX19EAX.Text = cpuIdEAX19EAX;
 
-            string cpuIdEAX19EBX = cpuHelper.GetEAX19EBXX();
+            string cpuIdEAX19EBX = cpuHelper.GetEAX00000019EBXX();
             textBoxEAX19EBX.Text = cpuIdEAX19EBX;
 
-            string cpuIdEAX19ECX = cpuHelper.GetEAX19ECXX();
+            string cpuIdEAX19ECX = cpuHelper.GetEAX00000019ECXX();
             textBoxEAX19ECX.Text = cpuIdEAX19ECX;
 
-            string cpuIdEAX19EDX = cpuHelper.GetEAX19EDXX();
+            string cpuIdEAX19EDX = cpuHelper.GetEAX00000019EDXX();
             textBoxEAX19EDX.Text = cpuIdEAX19EDX;
 
             #endregion

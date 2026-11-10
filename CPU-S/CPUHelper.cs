@@ -22,19 +22,36 @@ namespace CPU_S
 
         public string BinaryStringToHexString(string binaryString)
         {
+            
             StringBuilder hexString = new StringBuilder();
-            for (int i = 0; i < binaryString.Length; i += 4)
+            try
             {
-                string nibble = binaryString.Substring(i, Math.Min(4, binaryString.Length - i));
-                int decimalValue = Convert.ToInt32(nibble, 2);
-                hexString.Append(decimalValue.ToString("X"));
+                for (int i = 0; i < binaryString.Length; i += 4)
+                {
+                    string nibble = binaryString.Substring(i, Math.Min(4, binaryString.Length - i));
+                    int decimalValue = Convert.ToInt32(nibble, 2);
+                    hexString.Append(decimalValue.ToString("X"));
+                }
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine($"Error converting binary string to hex string: {ex.Message}");
+                return binaryString; // Return the original string if conversion fails
             }
             return hexString.ToString();
         }
 
         public string BinaryStringToDecimalString(string binaryString)
         {
-            int decimalValue = Convert.ToInt32(binaryString, 2);
+            int decimalValue = 0;
+            try
+            {
+                decimalValue = Convert.ToInt32(binaryString, 2);
+            }
+            catch
+            {
+                return binaryString; // Return the original string if conversion fails
+            }
             return decimalValue.ToString();
         }
 
@@ -18844,16 +18861,16 @@ namespace CPU_S
         #region EAX=0x00000019: Intel Key Locker Features
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX19EAX();
+        public static extern IntPtr GetEAX00000019EAX();
 
-        public string GetEAX19EAXX()
+        public string GetEAX00000019EAXX()
         {
             try
             {
-                IntPtr eAX19EAXPtr = GetEAX19EAX();
-                string eAX19EAXString = Marshal.PtrToStringAnsi(eAX19EAXPtr);
+                IntPtr eAX00000019EAXPtr = GetEAX00000019EAX();
+                string eAX00000019EAXString = Marshal.PtrToStringAnsi(eAX00000019EAXPtr);
 
-                return eAX19EAXString;
+                return eAX00000019EAXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -18868,16 +18885,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX19EBX();
+        public static extern IntPtr GetEAX00000019EBX();
 
-        public string GetEAX19EBXX()
+        public string GetEAX00000019EBXX()
         {
             try
             {
-                IntPtr eAX19EBXPtr = GetEAX19EBX();
-                string eAX19EBXString = Marshal.PtrToStringAnsi(eAX19EBXPtr);
+                IntPtr eAX00000019EBXPtr = GetEAX00000019EBX();
+                string eAX00000019EBXString = Marshal.PtrToStringAnsi(eAX00000019EBXPtr);
 
-                return eAX19EBXString;
+                return eAX00000019EBXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -18892,16 +18909,16 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX19ECX();
+        public static extern IntPtr GetEAX00000019ECX();
 
-        public string GetEAX19ECXX()
+        public string GetEAX00000019ECXX()
         {
             try
             {
-                IntPtr eAX19ECXPtr = GetEAX19ECX();
-                string eAX19ECXString = Marshal.PtrToStringAnsi(eAX19ECXPtr);
+                IntPtr eAX00000019ECXPtr = GetEAX00000019ECX();
+                string eAX00000019ECXString = Marshal.PtrToStringAnsi(eAX00000019ECXPtr);
 
-                return eAX19ECXString;
+                return eAX00000019ECXString;
             }
             catch (DllNotFoundException ex)
             {
@@ -18916,16 +18933,322 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX19EDX();
+        public static extern IntPtr GetEAX00000019EDX();
 
-        public string GetEAX19EDXX()
+        public string GetEAX00000019EDXX()
         {
             try
             {
-                IntPtr eAX19EDXPtr = GetEAX19EDX();
-                string eAX19EDXString = Marshal.PtrToStringAnsi(eAX19EDXPtr);
+                IntPtr eAX00000019EDXPtr = GetEAX00000019EDX();
+                string eAX00000019EDXString = Marshal.PtrToStringAnsi(eAX00000019EDXPtr);
 
-                return eAX19EDXString;
+                return eAX00000019EDXString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EAX0_CPL0();
+
+        public bool GetEAX00000019_EAX0_CPL0X()
+        {
+            try
+            {
+                return GetEAX00000019_EAX0_CPL0() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EAX1_NO_ENC();
+
+        public bool GetEAX00000019_EAX1_NO_ENCX()
+        {
+            try
+            {
+                return GetEAX00000019_EAX1_NO_ENC() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EAX2_NO_DEC();
+
+        public bool GetEAX00000019_EAX2_NO_DECX()
+        {
+            try
+            {
+                return GetEAX00000019_EAX2_NO_DEC() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000019EAX3_31_Reserved();
+
+        public string GetEAX00000019EAX3_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000019EAX3_31_ReservedValue = GetEAX00000019EAX3_31_Reserved();
+                string eAX00000019EAX3_31_ReservedString = eAX00000019EAX3_31_ReservedValue.ToString();
+
+                return eAX00000019EAX3_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EBX0_AES_KL_E();
+
+        public bool GetEAX00000019_EBX0_AES_KL_EX()
+        {
+            try
+            {
+                return GetEAX00000019_EBX0_AES_KL_E() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EBX1_Reserved();
+
+        public bool GetEAX00000019_EBX1_ReservedX()
+        {
+            try
+            {
+                return GetEAX00000019_EBX1_Reserved() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EBX2_AES_WIDE();
+
+        public bool GetEAX00000019_EBX2_AES_WIDEX()
+        {
+            try
+            {
+                return GetEAX00000019_EBX2_AES_WIDE() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EBX3_Reserved();
+
+        public bool GetEAX00000019_EBX3_ReservedX()
+        {
+            try
+            {
+                return GetEAX00000019_EBX3_Reserved() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_EBX4_IWKEYBACKUP();
+
+        public bool GetEAX00000019_EBX4_IWKEYBACKUPX()
+        {
+            try
+            {
+                return GetEAX00000019_EBX4_IWKEYBACKUP() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000019EAX5_31_Reserved();
+
+        public string GetEAX00000019EAX5_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000019EAX5_31_ReservedValue = GetEAX00000019EAX5_31_Reserved();
+                string eAX00000019EAX5_31_ReservedString = eAX00000019EAX5_31_ReservedValue.ToString();
+
+                return eAX00000019EAX5_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_ECX0_NO_BACKUP();
+
+        public bool GetEAX00000019_ECX0_NO_BACKUPX()
+        {
+            try
+            {
+                return GetEAX00000019_ECX0_NO_BACKUP() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        private static extern int GetEAX00000019_ECX1_RAND_IW_KEY();
+
+        public bool GetEAX00000019_ECX1_RAND_IW_KEYX()
+        {
+            try
+            {
+                return GetEAX00000019_ECX1_RAND_IW_KEY() != 0;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. Reserved support cannot be determined. " + ex.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for Reserved support: " + ex.Message);
+                return false;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000019ECX2_31_Reserved();
+
+        public string GetEAX00000019ECX2_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000019ECX2_31_ReservedValue = GetEAX00000019ECX2_31_Reserved();
+                string eAX00000019ECX2_31_ReservedString = eAX00000019ECX2_31_ReservedValue.ToString();
+
+                return eAX00000019ECX2_31_ReservedString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX00000019EDX0_31_Reserved();
+
+        public string GetEAX00000019EDX0_31_ReservedX()
+        {
+            try
+            {
+                int eAX00000019EDX0_31_ReservedValue = GetEAX00000019EDX0_31_Reserved();
+                string eAX00000019EDX0_31_ReservedString = eAX00000019EDX0_31_ReservedValue.ToString();
+
+                return eAX00000019EDX0_31_ReservedString;
             }
             catch (DllNotFoundException ex)
             {
