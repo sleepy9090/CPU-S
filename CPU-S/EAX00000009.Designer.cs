@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBoxEAX00000009 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelValueOfPlatformDcaCapMsr = new System.Windows.Forms.Label();
+            this.textBoxValueOfPlatformDcaCapMsr = new System.Windows.Forms.TextBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX00000009EAX = new System.Windows.Forms.TextBox();
             this.labelEAX00000009EAX = new System.Windows.Forms.Label();
@@ -38,16 +41,28 @@
             this.labelEAX00000009EBX = new System.Windows.Forms.Label();
             this.labelEAX00000009ECX = new System.Windows.Forms.Label();
             this.labelEAX00000009EDX = new System.Windows.Forms.Label();
-            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.textBoxValueOfPlatformDcaCapMsr = new System.Windows.Forms.TextBox();
-            this.labelValueOfPlatformDcaCapMsr = new System.Windows.Forms.Label();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.textBoxEBXReserved = new System.Windows.Forms.TextBox();
+            this.labelEBXReserved = new System.Windows.Forms.Label();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelECXReserved = new System.Windows.Forms.Label();
+            this.textBoxECXReserved = new System.Windows.Forms.TextBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEDXReserved = new System.Windows.Forms.Label();
+            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000009.SuspendLayout();
-            this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
+            this.groupBoxAll.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX00000009
             // 
+            this.groupBoxEAX00000009.Controls.Add(this.groupBoxEDX);
+            this.groupBoxEAX00000009.Controls.Add(this.groupBoxECX);
+            this.groupBoxEAX00000009.Controls.Add(this.groupBoxEBX);
             this.groupBoxEAX00000009.Controls.Add(this.groupBoxEAX);
             this.groupBoxEAX00000009.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX00000009.Location = new System.Drawing.Point(12, 12);
@@ -56,6 +71,33 @@
             this.groupBoxEAX00000009.TabIndex = 29;
             this.groupBoxEAX00000009.TabStop = false;
             this.groupBoxEAX00000009.Text = "EAX=0x00000009";
+            // 
+            // groupBoxEAX
+            // 
+            this.groupBoxEAX.Controls.Add(this.labelValueOfPlatformDcaCapMsr);
+            this.groupBoxEAX.Controls.Add(this.textBoxValueOfPlatformDcaCapMsr);
+            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
+            this.groupBoxEAX.Name = "groupBoxEAX";
+            this.groupBoxEAX.Size = new System.Drawing.Size(500, 50);
+            this.groupBoxEAX.TabIndex = 41;
+            this.groupBoxEAX.TabStop = false;
+            this.groupBoxEAX.Text = "EAX";
+            // 
+            // labelValueOfPlatformDcaCapMsr
+            // 
+            this.labelValueOfPlatformDcaCapMsr.AutoSize = true;
+            this.labelValueOfPlatformDcaCapMsr.Location = new System.Drawing.Point(6, 22);
+            this.labelValueOfPlatformDcaCapMsr.Name = "labelValueOfPlatformDcaCapMsr";
+            this.labelValueOfPlatformDcaCapMsr.Size = new System.Drawing.Size(343, 13);
+            this.labelValueOfPlatformDcaCapMsr.TabIndex = 1;
+            this.labelValueOfPlatformDcaCapMsr.Text = "Value of PLATFORM_DCA_CAP MSR (0000_01F8h, bits 31...0) [0-31]:";
+            // 
+            // textBoxValueOfPlatformDcaCapMsr
+            // 
+            this.textBoxValueOfPlatformDcaCapMsr.Location = new System.Drawing.Point(394, 19);
+            this.textBoxValueOfPlatformDcaCapMsr.Name = "textBoxValueOfPlatformDcaCapMsr";
+            this.textBoxValueOfPlatformDcaCapMsr.Size = new System.Drawing.Size(100, 20);
+            this.textBoxValueOfPlatformDcaCapMsr.TabIndex = 0;
             // 
             // groupBoxAll
             // 
@@ -137,32 +179,86 @@
             this.labelEAX00000009EDX.TabIndex = 9;
             this.labelEAX00000009EDX.Text = "EDX:";
             // 
-            // groupBoxEAX
+            // groupBoxEBX
             // 
-            this.groupBoxEAX.Controls.Add(this.labelValueOfPlatformDcaCapMsr);
-            this.groupBoxEAX.Controls.Add(this.textBoxValueOfPlatformDcaCapMsr);
-            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
-            this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(464, 61);
-            this.groupBoxEAX.TabIndex = 41;
-            this.groupBoxEAX.TabStop = false;
-            this.groupBoxEAX.Text = "EAX";
+            this.groupBoxEBX.Controls.Add(this.labelEBXReserved);
+            this.groupBoxEBX.Controls.Add(this.textBoxEBXReserved);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(500, 50);
+            this.groupBoxEBX.TabIndex = 42;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
             // 
-            // textBoxValueOfPlatformDcaCapMsr
+            // textBoxEBXReserved
             // 
-            this.textBoxValueOfPlatformDcaCapMsr.Location = new System.Drawing.Point(355, 19);
-            this.textBoxValueOfPlatformDcaCapMsr.Name = "textBoxValueOfPlatformDcaCapMsr";
-            this.textBoxValueOfPlatformDcaCapMsr.Size = new System.Drawing.Size(100, 20);
-            this.textBoxValueOfPlatformDcaCapMsr.TabIndex = 0;
+            this.textBoxEBXReserved.Location = new System.Drawing.Point(394, 19);
+            this.textBoxEBXReserved.Name = "textBoxEBXReserved";
+            this.textBoxEBXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXReserved.TabIndex = 0;
             // 
-            // labelValueOfPlatformDcaCapMsr
+            // labelEBXReserved
             // 
-            this.labelValueOfPlatformDcaCapMsr.AutoSize = true;
-            this.labelValueOfPlatformDcaCapMsr.Location = new System.Drawing.Point(6, 22);
-            this.labelValueOfPlatformDcaCapMsr.Name = "labelValueOfPlatformDcaCapMsr";
-            this.labelValueOfPlatformDcaCapMsr.Size = new System.Drawing.Size(343, 13);
-            this.labelValueOfPlatformDcaCapMsr.TabIndex = 1;
-            this.labelValueOfPlatformDcaCapMsr.Text = "Value of PLATFORM_DCA_CAP MSR (0000_01F8h, bits 31...0) [0-31]:";
+            this.labelEBXReserved.AutoSize = true;
+            this.labelEBXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelEBXReserved.Name = "labelEBXReserved";
+            this.labelEBXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEBXReserved.TabIndex = 1;
+            this.labelEBXReserved.Text = "Reserved [0-31]:";
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.labelECXReserved);
+            this.groupBoxECX.Controls.Add(this.textBoxECXReserved);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 131);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(500, 50);
+            this.groupBoxECX.TabIndex = 43;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // labelECXReserved
+            // 
+            this.labelECXReserved.AutoSize = true;
+            this.labelECXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelECXReserved.Name = "labelECXReserved";
+            this.labelECXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECXReserved.TabIndex = 1;
+            this.labelECXReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxECXReserved
+            // 
+            this.textBoxECXReserved.Location = new System.Drawing.Point(394, 19);
+            this.textBoxECXReserved.Name = "textBoxECXReserved";
+            this.textBoxECXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECXReserved.TabIndex = 0;
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 187);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(500, 50);
+            this.groupBoxEDX.TabIndex = 44;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelEDXReserved
+            // 
+            this.labelEDXReserved.AutoSize = true;
+            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXReserved.Name = "labelEDXReserved";
+            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDXReserved.TabIndex = 1;
+            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxEDXReserved
+            // 
+            this.textBoxEDXReserved.Location = new System.Drawing.Point(394, 19);
+            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
+            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXReserved.TabIndex = 0;
             // 
             // EAX00000009
             // 
@@ -175,10 +271,16 @@
             this.Name = "EAX00000009";
             this.Text = "EAX=0x00000009: DCA Parameters";
             this.groupBoxEAX00000009.ResumeLayout(false);
-            this.groupBoxAll.ResumeLayout(false);
-            this.groupBoxAll.PerformLayout();
             this.groupBoxEAX.ResumeLayout(false);
             this.groupBoxEAX.PerformLayout();
+            this.groupBoxAll.ResumeLayout(false);
+            this.groupBoxAll.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -198,5 +300,14 @@
         private System.Windows.Forms.GroupBox groupBoxEAX;
         private System.Windows.Forms.Label labelValueOfPlatformDcaCapMsr;
         private System.Windows.Forms.TextBox textBoxValueOfPlatformDcaCapMsr;
+        private System.Windows.Forms.GroupBox groupBoxEDX;
+        private System.Windows.Forms.Label labelEDXReserved;
+        private System.Windows.Forms.TextBox textBoxEDXReserved;
+        private System.Windows.Forms.GroupBox groupBoxECX;
+        private System.Windows.Forms.Label labelECXReserved;
+        private System.Windows.Forms.TextBox textBoxECXReserved;
+        private System.Windows.Forms.GroupBox groupBoxEBX;
+        private System.Windows.Forms.Label labelEBXReserved;
+        private System.Windows.Forms.TextBox textBoxEBXReserved;
     }
 }

@@ -2,7 +2,7 @@
     File           EAX00000009.cs
     Brief          Form for displaying EAX=0x00000009 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           11/10/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -37,6 +37,12 @@ namespace CPU_S
             textBoxEAX00000009EDX.Text = cpuHelper.GetEAX00000009EDXX();
 
             textBoxValueOfPlatformDcaCapMsr.Text = cpuHelper.GetEAX00000009EAX0_31_ValueOfPlatformDcaCapMsrX();
+
+            textBoxEBXReserved.Text = cpuHelper.GetEAX00000009EBX0_31_ReservedX();
+
+            textBoxECXReserved.Text = cpuHelper.GetEAX00000009ECX0_31_ReservedX();
+
+            textBoxEDXReserved.Text = cpuHelper.GetEAX00000009EDX0_31_ReservedX();
 
             #endregion
         }
