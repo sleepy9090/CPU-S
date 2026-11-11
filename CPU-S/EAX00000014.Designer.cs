@@ -1,6 +1,6 @@
 ﻿namespace CPU_S
 {
-    partial class EAX00000014ECX0
+    partial class EAX00000014
     {
         /// <summary>
         /// Required designer variable.

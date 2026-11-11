@@ -1206,7 +1206,7 @@ namespace CPU_S
 
         private void eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000007ECX0 eAX00000007ECX0 = new EAX00000007ECX0();
+            EAX00000007E eAX00000007ECX0 = new EAX00000007E();
             eAX00000007ECX0.ShowDialog();
         }
 
@@ -1224,7 +1224,7 @@ namespace CPU_S
 
         private void eAX0x14ECX0x0ProcessorTraceFeatureBitsInEBXAndECXToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000014ECX0 eAX00000014ECX0 = new EAX00000014ECX0();
+            EAX00000014 eAX00000014ECX0 = new EAX00000014();
             eAX00000014ECX0.ShowDialog();
         }
 
@@ -1299,7 +1299,7 @@ namespace CPU_S
 
         private void eAX0x24ECX0x0AVX10ConvergedVectorISAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000024ECX0 eAX00000024ECX0 = new EAX00000024ECX0();
+            EAX00000024 eAX00000024ECX0 = new EAX00000024();
             eAX00000024ECX0.ShowDialog();
         }
 
@@ -1506,7 +1506,7 @@ namespace CPU_S
 
         private void eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000000FECX0 eAX0000000FECX0 = new EAX0000000FECX0();
+            EAX0000000F eAX0000000FECX0 = new EAX0000000F();
             eAX0000000FECX0.ShowDialog();
         }
 
@@ -1854,6 +1854,12 @@ namespace CPU_S
         {
             EAX80000006 eAX80000006 = new EAX80000006();
             eAX80000006.ShowDialog();
+        }
+
+        private void eAX0x0000001BPCONFIGTargetIdInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX0000001BECX1 eAX0000001BECX1 = new EAX0000001BECX1();
+            eAX0000001BECX1.ShowDialog();
         }
     }
 }

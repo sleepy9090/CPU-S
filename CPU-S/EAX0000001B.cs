@@ -36,6 +36,15 @@ namespace CPU_S
             textBoxECX.Text = cpuHelper.GetEAX0000001BECXX();
             textBoxEDX.Text = cpuHelper.GetEAX0000001BEDXX();
 
+            textBoxSubleaf0Invalid.Text = cpuHelper.GetEAX0000001BEAX0_11_Subleaf0InvalidX();
+            textBoxEAXReserved.Text = cpuHelper.GetEAX0000001BEAX12_31_ReservedX();
+
+            textBoxEBXReserved.Text = cpuHelper.GetEAX0000001BEBX0_31_ReservedX();
+
+            textBoxECXReserved.Text = cpuHelper.GetEAX0000001BECX0_31_ReservedX();
+
+            textBoxEDXReserved.Text = cpuHelper.GetEAX0000001BEDX0_31_ReservedX();
+
             #endregion
         }
     }

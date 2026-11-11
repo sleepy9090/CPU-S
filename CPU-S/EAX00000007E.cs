@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace CPU_S
 {
-    public partial class EAX00000007ECX0 : Form
+    public partial class EAX00000007E : Form
     {
 
         private CPUHelper cpuHelper;
 
-        public EAX00000007ECX0()
+        public EAX00000007E()
         {
             InitializeComponent();
 
