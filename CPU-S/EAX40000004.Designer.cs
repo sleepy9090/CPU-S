@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX40000004));
             this.groupBoxEAX40000004 = new System.Windows.Forms.GroupBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX = new System.Windows.Forms.TextBox();
@@ -39,49 +40,49 @@
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.checkBoxHypercallForAddressSpaceSwitch = new System.Windows.Forms.CheckBox();
-            this.checkBoxHypercallForLocalTLBFlush = new System.Windows.Forms.CheckBox();
-            this.checkBoxHypercallForRemoteTLBFlush = new System.Windows.Forms.CheckBox();
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR = new System.Windows.Forms.CheckBox();
-            this.checkBoxMSRForSystemReset = new System.Windows.Forms.CheckBox();
-            this.checkBoxDeprecateAutoEOI = new System.Windows.Forms.CheckBox();
-            this.checkBoxReserved_was_x2APIC_MSRs = new System.Windows.Forms.CheckBox();
-            this.checkBoxInterruptRemapping = new System.Windows.Forms.CheckBox();
-            this.checkBoxDMARemapping = new System.Windows.Forms.CheckBox();
-            this.checkBoxRelaxedTimingDisableWatchdogs = new System.Windows.Forms.CheckBox();
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah = new System.Windows.Forms.CheckBox();
-            this.checkBoxUseINTForMBECSystemCalls = new System.Windows.Forms.CheckBox();
-            this.checkBoxHVIsNestedWithinAHyperVPartition = new System.Windows.Forms.CheckBox();
-            this.checkBoxNewerExProcessorMasksInterface = new System.Windows.Forms.CheckBox();
-            this.checkBoxHypercallForSyntheticClusterIpi = new System.Windows.Forms.CheckBox();
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead = new System.Windows.Forms.CheckBox();
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAX16Reserved = new System.Windows.Forms.CheckBox();
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias = new System.Windows.Forms.CheckBox();
-            this.textBoxRecommendedSpinlockFailureRetries = new System.Windows.Forms.TextBox();
-            this.labelRecommendedSpinlockFailureRetries = new System.Windows.Forms.Label();
-            this.textBoxImplementedPhysicalAddressBits = new System.Windows.Forms.TextBox();
-            this.textBoxECX7_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelImplementedPhysicalAddressBits = new System.Windows.Forms.Label();
-            this.labelECX7_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
-            this.labelEDXReserved = new System.Windows.Forms.Label();
-            this.checkBoxEAXReserved19 = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAXReserved20 = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAXReserved21 = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAXReserved22 = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAXReserved23 = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAXReserved24 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved31 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved30 = new System.Windows.Forms.CheckBox();
             this.checkBoxEAXReserved29 = new System.Windows.Forms.CheckBox();
             this.checkBoxEAXReserved28 = new System.Windows.Forms.CheckBox();
             this.checkBoxEAXReserved27 = new System.Windows.Forms.CheckBox();
             this.checkBoxEAXReserved26 = new System.Windows.Forms.CheckBox();
             this.checkBoxEAXReserved25 = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAXReserved31 = new System.Windows.Forms.CheckBox();
-            this.checkBoxEAXReserved30 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved24 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved23 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved22 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved21 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved20 = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAXReserved19 = new System.Windows.Forms.CheckBox();
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead = new System.Windows.Forms.CheckBox();
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall = new System.Windows.Forms.CheckBox();
+            this.checkBoxEAX16Reserved = new System.Windows.Forms.CheckBox();
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias = new System.Windows.Forms.CheckBox();
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah = new System.Windows.Forms.CheckBox();
+            this.checkBoxUseINTForMBECSystemCalls = new System.Windows.Forms.CheckBox();
+            this.checkBoxHVIsNestedWithinAHyperVPartition = new System.Windows.Forms.CheckBox();
+            this.checkBoxNewerExProcessorMasksInterface = new System.Windows.Forms.CheckBox();
+            this.checkBoxHypercallForSyntheticClusterIpi = new System.Windows.Forms.CheckBox();
+            this.checkBoxDeprecateAutoEOI = new System.Windows.Forms.CheckBox();
+            this.checkBoxReserved_was_x2APIC_MSRs = new System.Windows.Forms.CheckBox();
+            this.checkBoxInterruptRemapping = new System.Windows.Forms.CheckBox();
+            this.checkBoxDMARemapping = new System.Windows.Forms.CheckBox();
+            this.checkBoxRelaxedTimingDisableWatchdogs = new System.Windows.Forms.CheckBox();
+            this.checkBoxMSRForSystemReset = new System.Windows.Forms.CheckBox();
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR = new System.Windows.Forms.CheckBox();
+            this.checkBoxHypercallForRemoteTLBFlush = new System.Windows.Forms.CheckBox();
+            this.checkBoxHypercallForLocalTLBFlush = new System.Windows.Forms.CheckBox();
+            this.checkBoxHypercallForAddressSpaceSwitch = new System.Windows.Forms.CheckBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEDXReserved = new System.Windows.Forms.Label();
+            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelECX7_31_Reserved = new System.Windows.Forms.Label();
+            this.labelImplementedPhysicalAddressBits = new System.Windows.Forms.Label();
+            this.textBoxECX7_31_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxImplementedPhysicalAddressBits = new System.Windows.Forms.TextBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelRecommendedSpinlockFailureRetries = new System.Windows.Forms.Label();
+            this.textBoxRecommendedSpinlockFailureRetries = new System.Windows.Forms.TextBox();
             this.groupBoxEAX40000004.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
@@ -225,354 +226,25 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
-            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 646);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(506, 52);
-            this.groupBoxEDX.TabIndex = 55;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Controls.Add(this.labelECX7_31_Reserved);
-            this.groupBoxECX.Controls.Add(this.labelImplementedPhysicalAddressBits);
-            this.groupBoxECX.Controls.Add(this.textBoxECX7_31_Reserved);
-            this.groupBoxECX.Controls.Add(this.textBoxImplementedPhysicalAddressBits);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 568);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(506, 72);
-            this.groupBoxECX.TabIndex = 54;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Controls.Add(this.labelRecommendedSpinlockFailureRetries);
-            this.groupBoxEBX.Controls.Add(this.textBoxRecommendedSpinlockFailureRetries);
-            this.groupBoxEBX.Location = new System.Drawing.Point(264, 510);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(506, 52);
-            this.groupBoxEBX.TabIndex = 53;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
-            // checkBoxHypercallForAddressSpaceSwitch
-            // 
-            this.checkBoxHypercallForAddressSpaceSwitch.AutoSize = true;
-            this.checkBoxHypercallForAddressSpaceSwitch.Location = new System.Drawing.Point(6, 18);
-            this.checkBoxHypercallForAddressSpaceSwitch.Name = "checkBoxHypercallForAddressSpaceSwitch";
-            this.checkBoxHypercallForAddressSpaceSwitch.Size = new System.Drawing.Size(205, 17);
-            this.checkBoxHypercallForAddressSpaceSwitch.TabIndex = 0;
-            this.checkBoxHypercallForAddressSpaceSwitch.Text = "Hypercall for address space switch [0]";
-            this.checkBoxHypercallForAddressSpaceSwitch.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHypercallForLocalTLBFlush
-            // 
-            this.checkBoxHypercallForLocalTLBFlush.AutoSize = true;
-            this.checkBoxHypercallForLocalTLBFlush.Location = new System.Drawing.Point(6, 41);
-            this.checkBoxHypercallForLocalTLBFlush.Name = "checkBoxHypercallForLocalTLBFlush";
-            this.checkBoxHypercallForLocalTLBFlush.Size = new System.Drawing.Size(173, 17);
-            this.checkBoxHypercallForLocalTLBFlush.TabIndex = 1;
-            this.checkBoxHypercallForLocalTLBFlush.Text = "Hypercall for local TLB flush [1]";
-            this.checkBoxHypercallForLocalTLBFlush.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHypercallForRemoteTLBFlush
-            // 
-            this.checkBoxHypercallForRemoteTLBFlush.AutoSize = true;
-            this.checkBoxHypercallForRemoteTLBFlush.Location = new System.Drawing.Point(6, 64);
-            this.checkBoxHypercallForRemoteTLBFlush.Name = "checkBoxHypercallForRemoteTLBFlush";
-            this.checkBoxHypercallForRemoteTLBFlush.Size = new System.Drawing.Size(183, 17);
-            this.checkBoxHypercallForRemoteTLBFlush.TabIndex = 2;
-            this.checkBoxHypercallForRemoteTLBFlush.Text = "Hypercall for remote TLB flush [2]";
-            this.checkBoxHypercallForRemoteTLBFlush.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMSRsforAPIC_EOI_ICR_TPR
-            // 
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.AutoSize = true;
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Location = new System.Drawing.Point(6, 87);
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Name = "checkBoxMSRsforAPIC_EOI_ICR_TPR";
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Size = new System.Drawing.Size(183, 17);
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.TabIndex = 3;
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Text = "MSRs for APIC EOI/ICR/TPR [3]";
-            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMSRForSystemReset
-            // 
-            this.checkBoxMSRForSystemReset.AutoSize = true;
-            this.checkBoxMSRForSystemReset.Location = new System.Drawing.Point(6, 110);
-            this.checkBoxMSRForSystemReset.Name = "checkBoxMSRForSystemReset";
-            this.checkBoxMSRForSystemReset.Size = new System.Drawing.Size(141, 17);
-            this.checkBoxMSRForSystemReset.TabIndex = 4;
-            this.checkBoxMSRForSystemReset.Text = "MSR for system reset [4]";
-            this.checkBoxMSRForSystemReset.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxDeprecateAutoEOI
-            // 
-            this.checkBoxDeprecateAutoEOI.AutoSize = true;
-            this.checkBoxDeprecateAutoEOI.Location = new System.Drawing.Point(6, 225);
-            this.checkBoxDeprecateAutoEOI.Name = "checkBoxDeprecateAutoEOI";
-            this.checkBoxDeprecateAutoEOI.Size = new System.Drawing.Size(134, 17);
-            this.checkBoxDeprecateAutoEOI.TabIndex = 9;
-            this.checkBoxDeprecateAutoEOI.Text = "Deprecate AutoEOI [9]";
-            this.checkBoxDeprecateAutoEOI.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxReserved_was_x2APIC_MSRs
-            // 
-            this.checkBoxReserved_was_x2APIC_MSRs.AutoSize = true;
-            this.checkBoxReserved_was_x2APIC_MSRs.Location = new System.Drawing.Point(6, 202);
-            this.checkBoxReserved_was_x2APIC_MSRs.Name = "checkBoxReserved_was_x2APIC_MSRs";
-            this.checkBoxReserved_was_x2APIC_MSRs.Size = new System.Drawing.Size(188, 17);
-            this.checkBoxReserved_was_x2APIC_MSRs.TabIndex = 8;
-            this.checkBoxReserved_was_x2APIC_MSRs.Text = "Reserved (was: x2APIC MSRs) [8]";
-            this.checkBoxReserved_was_x2APIC_MSRs.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxInterruptRemapping
-            // 
-            this.checkBoxInterruptRemapping.AutoSize = true;
-            this.checkBoxInterruptRemapping.Location = new System.Drawing.Point(6, 179);
-            this.checkBoxInterruptRemapping.Name = "checkBoxInterruptRemapping";
-            this.checkBoxInterruptRemapping.Size = new System.Drawing.Size(132, 17);
-            this.checkBoxInterruptRemapping.TabIndex = 7;
-            this.checkBoxInterruptRemapping.Text = "Interrupt remapping [7]";
-            this.checkBoxInterruptRemapping.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxDMARemapping
-            // 
-            this.checkBoxDMARemapping.AutoSize = true;
-            this.checkBoxDMARemapping.Location = new System.Drawing.Point(6, 156);
-            this.checkBoxDMARemapping.Name = "checkBoxDMARemapping";
-            this.checkBoxDMARemapping.Size = new System.Drawing.Size(117, 17);
-            this.checkBoxDMARemapping.TabIndex = 6;
-            this.checkBoxDMARemapping.Text = "DMA remapping [6]";
-            this.checkBoxDMARemapping.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxRelaxedTimingDisableWatchdogs
-            // 
-            this.checkBoxRelaxedTimingDisableWatchdogs.AutoSize = true;
-            this.checkBoxRelaxedTimingDisableWatchdogs.Location = new System.Drawing.Point(6, 133);
-            this.checkBoxRelaxedTimingDisableWatchdogs.Name = "checkBoxRelaxedTimingDisableWatchdogs";
-            this.checkBoxRelaxedTimingDisableWatchdogs.Size = new System.Drawing.Size(209, 17);
-            this.checkBoxRelaxedTimingDisableWatchdogs.TabIndex = 5;
-            this.checkBoxRelaxedTimingDisableWatchdogs.Text = "Relaxed timing – disable watchdogs [5]";
-            this.checkBoxRelaxedTimingDisableWatchdogs.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah
-            // 
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.AutoSize = true;
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Location = new System.Drawing.Point(6, 340);
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Name = "checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah";
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Size = new System.Drawing.Size(372, 17);
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.TabIndex = 14;
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Text = "Use nested HV using enlightened VMCS interface (see 4000_000Ah) [14]";
-            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxUseINTForMBECSystemCalls
-            // 
-            this.checkBoxUseINTForMBECSystemCalls.AutoSize = true;
-            this.checkBoxUseINTForMBECSystemCalls.Location = new System.Drawing.Point(6, 317);
-            this.checkBoxUseINTForMBECSystemCalls.Name = "checkBoxUseINTForMBECSystemCalls";
-            this.checkBoxUseINTForMBECSystemCalls.Size = new System.Drawing.Size(194, 17);
-            this.checkBoxUseINTForMBECSystemCalls.TabIndex = 13;
-            this.checkBoxUseINTForMBECSystemCalls.Text = "Use INT for MBEC system calls [13]";
-            this.checkBoxUseINTForMBECSystemCalls.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHVIsNestedWithinAHyperVPartition
-            // 
-            this.checkBoxHVIsNestedWithinAHyperVPartition.AutoSize = true;
-            this.checkBoxHVIsNestedWithinAHyperVPartition.Location = new System.Drawing.Point(6, 294);
-            this.checkBoxHVIsNestedWithinAHyperVPartition.Name = "checkBoxHVIsNestedWithinAHyperVPartition";
-            this.checkBoxHVIsNestedWithinAHyperVPartition.Size = new System.Drawing.Size(227, 17);
-            this.checkBoxHVIsNestedWithinAHyperVPartition.TabIndex = 12;
-            this.checkBoxHVIsNestedWithinAHyperVPartition.Text = "HV is nested within a Hyper-V partition [12]";
-            this.checkBoxHVIsNestedWithinAHyperVPartition.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxNewerExProcessorMasksInterface
-            // 
-            this.checkBoxNewerExProcessorMasksInterface.AutoSize = true;
-            this.checkBoxNewerExProcessorMasksInterface.Location = new System.Drawing.Point(6, 271);
-            this.checkBoxNewerExProcessorMasksInterface.Name = "checkBoxNewerExProcessorMasksInterface";
-            this.checkBoxNewerExProcessorMasksInterface.Size = new System.Drawing.Size(215, 17);
-            this.checkBoxNewerExProcessorMasksInterface.TabIndex = 11;
-            this.checkBoxNewerExProcessorMasksInterface.Text = "Newer ExProcessorMasks interface [11]";
-            this.checkBoxNewerExProcessorMasksInterface.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHypercallForSyntheticClusterIpi
-            // 
-            this.checkBoxHypercallForSyntheticClusterIpi.AutoSize = true;
-            this.checkBoxHypercallForSyntheticClusterIpi.Location = new System.Drawing.Point(6, 248);
-            this.checkBoxHypercallForSyntheticClusterIpi.Name = "checkBoxHypercallForSyntheticClusterIpi";
-            this.checkBoxHypercallForSyntheticClusterIpi.Size = new System.Drawing.Size(196, 17);
-            this.checkBoxHypercallForSyntheticClusterIpi.TabIndex = 10;
-            this.checkBoxHypercallForSyntheticClusterIpi.Text = "Hypercall for SyntheticClusterIpi [10]";
-            this.checkBoxHypercallForSyntheticClusterIpi.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead
-            // 
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.AutoSize = true;
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Location = new System.Drawing.Point(6, 432);
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Name = "checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead";
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Size = new System.Drawing.Size(315, 17);
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.TabIndex = 18;
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Text = "NoNonArchitecturalCoreSharing (avoid STIBP overhead) [18]";
-            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall
-            // 
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.AutoSize = true;
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Location = new System.Drawing.Point(6, 409);
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Name = "checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall";
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Size = new System.Drawing.Size(369, 17);
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.TabIndex = 17;
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Text = "Use CR4.PGE toggle to flush entire TLB (when faster than hypercall) [17]";
-            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEAX16Reserved
-            // 
-            this.checkBoxEAX16Reserved.AutoSize = true;
-            this.checkBoxEAX16Reserved.Location = new System.Drawing.Point(6, 386);
-            this.checkBoxEAX16Reserved.Name = "checkBoxEAX16Reserved";
-            this.checkBoxEAX16Reserved.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAX16Reserved.TabIndex = 16;
-            this.checkBoxEAX16Reserved.Text = "Reserved [16]";
-            this.checkBoxEAX16Reserved.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias
-            // 
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.AutoSize = true;
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Location = new System.Drawing.Point(6, 363);
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Name = "checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias";
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Size = new System.Drawing.Size(366, 17);
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.TabIndex = 15;
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Text = "UseSyncedTimeline – consume root QueryPerformanceCounter bias [15]";
-            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.UseVisualStyleBackColor = true;
-            // 
-            // textBoxRecommendedSpinlockFailureRetries
-            // 
-            this.textBoxRecommendedSpinlockFailureRetries.Location = new System.Drawing.Point(400, 19);
-            this.textBoxRecommendedSpinlockFailureRetries.Name = "textBoxRecommendedSpinlockFailureRetries";
-            this.textBoxRecommendedSpinlockFailureRetries.Size = new System.Drawing.Size(100, 20);
-            this.textBoxRecommendedSpinlockFailureRetries.TabIndex = 0;
-            // 
-            // labelRecommendedSpinlockFailureRetries
-            // 
-            this.labelRecommendedSpinlockFailureRetries.AutoSize = true;
-            this.labelRecommendedSpinlockFailureRetries.Location = new System.Drawing.Point(6, 22);
-            this.labelRecommendedSpinlockFailureRetries.Name = "labelRecommendedSpinlockFailureRetries";
-            this.labelRecommendedSpinlockFailureRetries.Size = new System.Drawing.Size(345, 13);
-            this.labelRecommendedSpinlockFailureRetries.TabIndex = 1;
-            this.labelRecommendedSpinlockFailureRetries.Text = "Recommended spinlock failure retries (FFFF_FFFFh = -1 = never) [0-31]:";
-            // 
-            // textBoxImplementedPhysicalAddressBits
-            // 
-            this.textBoxImplementedPhysicalAddressBits.Location = new System.Drawing.Point(400, 19);
-            this.textBoxImplementedPhysicalAddressBits.Name = "textBoxImplementedPhysicalAddressBits";
-            this.textBoxImplementedPhysicalAddressBits.Size = new System.Drawing.Size(100, 20);
-            this.textBoxImplementedPhysicalAddressBits.TabIndex = 0;
-            // 
-            // textBoxECX7_31_Reserved
-            // 
-            this.textBoxECX7_31_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBoxECX7_31_Reserved.Name = "textBoxECX7_31_Reserved";
-            this.textBoxECX7_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECX7_31_Reserved.TabIndex = 1;
-            // 
-            // labelImplementedPhysicalAddressBits
-            // 
-            this.labelImplementedPhysicalAddressBits.AutoSize = true;
-            this.labelImplementedPhysicalAddressBits.Location = new System.Drawing.Point(6, 22);
-            this.labelImplementedPhysicalAddressBits.Name = "labelImplementedPhysicalAddressBits";
-            this.labelImplementedPhysicalAddressBits.Size = new System.Drawing.Size(188, 13);
-            this.labelImplementedPhysicalAddressBits.TabIndex = 2;
-            this.labelImplementedPhysicalAddressBits.Text = "ImplementedPhysicalAddressBits [0-6]:";
-            // 
-            // labelECX7_31_Reserved
-            // 
-            this.labelECX7_31_Reserved.AutoSize = true;
-            this.labelECX7_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelECX7_31_Reserved.Name = "labelECX7_31_Reserved";
-            this.labelECX7_31_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelECX7_31_Reserved.TabIndex = 3;
-            this.labelECX7_31_Reserved.Text = "Reserved [7-31]:";
-            // 
-            // textBoxEDXReserved
-            // 
-            this.textBoxEDXReserved.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
-            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDXReserved.TabIndex = 0;
-            // 
-            // labelEDXReserved
-            // 
-            this.labelEDXReserved.AutoSize = true;
-            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
-            this.labelEDXReserved.Name = "labelEDXReserved";
-            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEDXReserved.TabIndex = 1;
-            this.labelEDXReserved.Text = "Reserved [0-31]:";
-            // 
-            // checkBoxEAXReserved19
-            // 
-            this.checkBoxEAXReserved19.AutoSize = true;
-            this.checkBoxEAXReserved19.Location = new System.Drawing.Point(6, 455);
-            this.checkBoxEAXReserved19.Name = "checkBoxEAXReserved19";
-            this.checkBoxEAXReserved19.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved19.TabIndex = 19;
-            this.checkBoxEAXReserved19.Text = "Reserved [19]";
-            this.checkBoxEAXReserved19.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEAXReserved20
-            // 
-            this.checkBoxEAXReserved20.AutoSize = true;
-            this.checkBoxEAXReserved20.Location = new System.Drawing.Point(400, 18);
-            this.checkBoxEAXReserved20.Name = "checkBoxEAXReserved20";
-            this.checkBoxEAXReserved20.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved20.TabIndex = 20;
-            this.checkBoxEAXReserved20.Text = "Reserved [20]";
-            this.checkBoxEAXReserved20.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEAXReserved21
-            // 
-            this.checkBoxEAXReserved21.AutoSize = true;
-            this.checkBoxEAXReserved21.Location = new System.Drawing.Point(400, 41);
-            this.checkBoxEAXReserved21.Name = "checkBoxEAXReserved21";
-            this.checkBoxEAXReserved21.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved21.TabIndex = 21;
-            this.checkBoxEAXReserved21.Text = "Reserved [21]";
-            this.checkBoxEAXReserved21.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEAXReserved22
-            // 
-            this.checkBoxEAXReserved22.AutoSize = true;
-            this.checkBoxEAXReserved22.Location = new System.Drawing.Point(400, 64);
-            this.checkBoxEAXReserved22.Name = "checkBoxEAXReserved22";
-            this.checkBoxEAXReserved22.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved22.TabIndex = 22;
-            this.checkBoxEAXReserved22.Text = "Reserved [22]";
-            this.checkBoxEAXReserved22.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEAXReserved23
-            // 
-            this.checkBoxEAXReserved23.AutoSize = true;
-            this.checkBoxEAXReserved23.Location = new System.Drawing.Point(400, 87);
-            this.checkBoxEAXReserved23.Name = "checkBoxEAXReserved23";
-            this.checkBoxEAXReserved23.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved23.TabIndex = 23;
-            this.checkBoxEAXReserved23.Text = "Reserved [23]";
-            this.checkBoxEAXReserved23.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEAXReserved24
-            // 
-            this.checkBoxEAXReserved24.AutoSize = true;
-            this.checkBoxEAXReserved24.Location = new System.Drawing.Point(400, 110);
-            this.checkBoxEAXReserved24.Name = "checkBoxEAXReserved24";
-            this.checkBoxEAXReserved24.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved24.TabIndex = 24;
-            this.checkBoxEAXReserved24.Text = "Reserved [24]";
-            this.checkBoxEAXReserved24.UseVisualStyleBackColor = true;
+            // checkBoxEAXReserved31
+            // 
+            this.checkBoxEAXReserved31.AutoSize = true;
+            this.checkBoxEAXReserved31.Location = new System.Drawing.Point(400, 271);
+            this.checkBoxEAXReserved31.Name = "checkBoxEAXReserved31";
+            this.checkBoxEAXReserved31.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved31.TabIndex = 31;
+            this.checkBoxEAXReserved31.Text = "Reserved [31]";
+            this.checkBoxEAXReserved31.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved30
+            // 
+            this.checkBoxEAXReserved30.AutoSize = true;
+            this.checkBoxEAXReserved30.Location = new System.Drawing.Point(400, 248);
+            this.checkBoxEAXReserved30.Name = "checkBoxEAXReserved30";
+            this.checkBoxEAXReserved30.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved30.TabIndex = 30;
+            this.checkBoxEAXReserved30.Text = "Reserved [30]";
+            this.checkBoxEAXReserved30.UseVisualStyleBackColor = true;
             // 
             // checkBoxEAXReserved29
             // 
@@ -624,25 +296,354 @@
             this.checkBoxEAXReserved25.Text = "Reserved [25]";
             this.checkBoxEAXReserved25.UseVisualStyleBackColor = true;
             // 
-            // checkBoxEAXReserved31
+            // checkBoxEAXReserved24
             // 
-            this.checkBoxEAXReserved31.AutoSize = true;
-            this.checkBoxEAXReserved31.Location = new System.Drawing.Point(400, 271);
-            this.checkBoxEAXReserved31.Name = "checkBoxEAXReserved31";
-            this.checkBoxEAXReserved31.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved31.TabIndex = 31;
-            this.checkBoxEAXReserved31.Text = "Reserved [31]";
-            this.checkBoxEAXReserved31.UseVisualStyleBackColor = true;
+            this.checkBoxEAXReserved24.AutoSize = true;
+            this.checkBoxEAXReserved24.Location = new System.Drawing.Point(400, 110);
+            this.checkBoxEAXReserved24.Name = "checkBoxEAXReserved24";
+            this.checkBoxEAXReserved24.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved24.TabIndex = 24;
+            this.checkBoxEAXReserved24.Text = "Reserved [24]";
+            this.checkBoxEAXReserved24.UseVisualStyleBackColor = true;
             // 
-            // checkBoxEAXReserved30
+            // checkBoxEAXReserved23
             // 
-            this.checkBoxEAXReserved30.AutoSize = true;
-            this.checkBoxEAXReserved30.Location = new System.Drawing.Point(400, 248);
-            this.checkBoxEAXReserved30.Name = "checkBoxEAXReserved30";
-            this.checkBoxEAXReserved30.Size = new System.Drawing.Size(93, 17);
-            this.checkBoxEAXReserved30.TabIndex = 30;
-            this.checkBoxEAXReserved30.Text = "Reserved [30]";
-            this.checkBoxEAXReserved30.UseVisualStyleBackColor = true;
+            this.checkBoxEAXReserved23.AutoSize = true;
+            this.checkBoxEAXReserved23.Location = new System.Drawing.Point(400, 87);
+            this.checkBoxEAXReserved23.Name = "checkBoxEAXReserved23";
+            this.checkBoxEAXReserved23.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved23.TabIndex = 23;
+            this.checkBoxEAXReserved23.Text = "Reserved [23]";
+            this.checkBoxEAXReserved23.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved22
+            // 
+            this.checkBoxEAXReserved22.AutoSize = true;
+            this.checkBoxEAXReserved22.Location = new System.Drawing.Point(400, 64);
+            this.checkBoxEAXReserved22.Name = "checkBoxEAXReserved22";
+            this.checkBoxEAXReserved22.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved22.TabIndex = 22;
+            this.checkBoxEAXReserved22.Text = "Reserved [22]";
+            this.checkBoxEAXReserved22.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved21
+            // 
+            this.checkBoxEAXReserved21.AutoSize = true;
+            this.checkBoxEAXReserved21.Location = new System.Drawing.Point(400, 41);
+            this.checkBoxEAXReserved21.Name = "checkBoxEAXReserved21";
+            this.checkBoxEAXReserved21.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved21.TabIndex = 21;
+            this.checkBoxEAXReserved21.Text = "Reserved [21]";
+            this.checkBoxEAXReserved21.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved20
+            // 
+            this.checkBoxEAXReserved20.AutoSize = true;
+            this.checkBoxEAXReserved20.Location = new System.Drawing.Point(400, 18);
+            this.checkBoxEAXReserved20.Name = "checkBoxEAXReserved20";
+            this.checkBoxEAXReserved20.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved20.TabIndex = 20;
+            this.checkBoxEAXReserved20.Text = "Reserved [20]";
+            this.checkBoxEAXReserved20.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAXReserved19
+            // 
+            this.checkBoxEAXReserved19.AutoSize = true;
+            this.checkBoxEAXReserved19.Location = new System.Drawing.Point(6, 455);
+            this.checkBoxEAXReserved19.Name = "checkBoxEAXReserved19";
+            this.checkBoxEAXReserved19.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAXReserved19.TabIndex = 19;
+            this.checkBoxEAXReserved19.Text = "Reserved [19]";
+            this.checkBoxEAXReserved19.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead
+            // 
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.AutoSize = true;
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Location = new System.Drawing.Point(6, 432);
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Name = "checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead";
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Size = new System.Drawing.Size(315, 17);
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.TabIndex = 18;
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.Text = "NoNonArchitecturalCoreSharing (avoid STIBP overhead) [18]";
+            this.checkBoxNoNonArchitecturalCoreSharingAvoidSTIBPOverhead.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall
+            // 
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.AutoSize = true;
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Location = new System.Drawing.Point(6, 409);
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Name = "checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall";
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Size = new System.Drawing.Size(369, 17);
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.TabIndex = 17;
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.Text = "Use CR4.PGE toggle to flush entire TLB (when faster than hypercall) [17]";
+            this.checkBoxUseCR4PGEToggleToFlushEntireTLBWhenFasterThanHypercall.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEAX16Reserved
+            // 
+            this.checkBoxEAX16Reserved.AutoSize = true;
+            this.checkBoxEAX16Reserved.Location = new System.Drawing.Point(6, 386);
+            this.checkBoxEAX16Reserved.Name = "checkBoxEAX16Reserved";
+            this.checkBoxEAX16Reserved.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEAX16Reserved.TabIndex = 16;
+            this.checkBoxEAX16Reserved.Text = "Reserved [16]";
+            this.checkBoxEAX16Reserved.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias
+            // 
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.AutoSize = true;
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Location = new System.Drawing.Point(6, 363);
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Name = "checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias";
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Size = new System.Drawing.Size(366, 17);
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.TabIndex = 15;
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.Text = "UseSyncedTimeline – consume root QueryPerformanceCounter bias [15]";
+            this.checkBoxUseSyncedTimelineConsumeRootQueryPerformanceCounterBias.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah
+            // 
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.AutoSize = true;
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Location = new System.Drawing.Point(6, 340);
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Name = "checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah";
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Size = new System.Drawing.Size(372, 17);
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.TabIndex = 14;
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.Text = "Use nested HV using enlightened VMCS interface (see 4000_000Ah) [14]";
+            this.checkBoxUseNestedHVUsingEnlightenedVMCSInterfaceSee4000_000Ah.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxUseINTForMBECSystemCalls
+            // 
+            this.checkBoxUseINTForMBECSystemCalls.AutoSize = true;
+            this.checkBoxUseINTForMBECSystemCalls.Location = new System.Drawing.Point(6, 317);
+            this.checkBoxUseINTForMBECSystemCalls.Name = "checkBoxUseINTForMBECSystemCalls";
+            this.checkBoxUseINTForMBECSystemCalls.Size = new System.Drawing.Size(194, 17);
+            this.checkBoxUseINTForMBECSystemCalls.TabIndex = 13;
+            this.checkBoxUseINTForMBECSystemCalls.Text = "Use INT for MBEC system calls [13]";
+            this.checkBoxUseINTForMBECSystemCalls.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHVIsNestedWithinAHyperVPartition
+            // 
+            this.checkBoxHVIsNestedWithinAHyperVPartition.AutoSize = true;
+            this.checkBoxHVIsNestedWithinAHyperVPartition.Location = new System.Drawing.Point(6, 294);
+            this.checkBoxHVIsNestedWithinAHyperVPartition.Name = "checkBoxHVIsNestedWithinAHyperVPartition";
+            this.checkBoxHVIsNestedWithinAHyperVPartition.Size = new System.Drawing.Size(227, 17);
+            this.checkBoxHVIsNestedWithinAHyperVPartition.TabIndex = 12;
+            this.checkBoxHVIsNestedWithinAHyperVPartition.Text = "HV is nested within a Hyper-V partition [12]";
+            this.checkBoxHVIsNestedWithinAHyperVPartition.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxNewerExProcessorMasksInterface
+            // 
+            this.checkBoxNewerExProcessorMasksInterface.AutoSize = true;
+            this.checkBoxNewerExProcessorMasksInterface.Location = new System.Drawing.Point(6, 271);
+            this.checkBoxNewerExProcessorMasksInterface.Name = "checkBoxNewerExProcessorMasksInterface";
+            this.checkBoxNewerExProcessorMasksInterface.Size = new System.Drawing.Size(215, 17);
+            this.checkBoxNewerExProcessorMasksInterface.TabIndex = 11;
+            this.checkBoxNewerExProcessorMasksInterface.Text = "Newer ExProcessorMasks interface [11]";
+            this.checkBoxNewerExProcessorMasksInterface.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHypercallForSyntheticClusterIpi
+            // 
+            this.checkBoxHypercallForSyntheticClusterIpi.AutoSize = true;
+            this.checkBoxHypercallForSyntheticClusterIpi.Location = new System.Drawing.Point(6, 248);
+            this.checkBoxHypercallForSyntheticClusterIpi.Name = "checkBoxHypercallForSyntheticClusterIpi";
+            this.checkBoxHypercallForSyntheticClusterIpi.Size = new System.Drawing.Size(196, 17);
+            this.checkBoxHypercallForSyntheticClusterIpi.TabIndex = 10;
+            this.checkBoxHypercallForSyntheticClusterIpi.Text = "Hypercall for SyntheticClusterIpi [10]";
+            this.checkBoxHypercallForSyntheticClusterIpi.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDeprecateAutoEOI
+            // 
+            this.checkBoxDeprecateAutoEOI.AutoSize = true;
+            this.checkBoxDeprecateAutoEOI.Location = new System.Drawing.Point(6, 225);
+            this.checkBoxDeprecateAutoEOI.Name = "checkBoxDeprecateAutoEOI";
+            this.checkBoxDeprecateAutoEOI.Size = new System.Drawing.Size(134, 17);
+            this.checkBoxDeprecateAutoEOI.TabIndex = 9;
+            this.checkBoxDeprecateAutoEOI.Text = "Deprecate AutoEOI [9]";
+            this.checkBoxDeprecateAutoEOI.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxReserved_was_x2APIC_MSRs
+            // 
+            this.checkBoxReserved_was_x2APIC_MSRs.AutoSize = true;
+            this.checkBoxReserved_was_x2APIC_MSRs.Location = new System.Drawing.Point(6, 202);
+            this.checkBoxReserved_was_x2APIC_MSRs.Name = "checkBoxReserved_was_x2APIC_MSRs";
+            this.checkBoxReserved_was_x2APIC_MSRs.Size = new System.Drawing.Size(188, 17);
+            this.checkBoxReserved_was_x2APIC_MSRs.TabIndex = 8;
+            this.checkBoxReserved_was_x2APIC_MSRs.Text = "Reserved (was: x2APIC MSRs) [8]";
+            this.checkBoxReserved_was_x2APIC_MSRs.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxInterruptRemapping
+            // 
+            this.checkBoxInterruptRemapping.AutoSize = true;
+            this.checkBoxInterruptRemapping.Location = new System.Drawing.Point(6, 179);
+            this.checkBoxInterruptRemapping.Name = "checkBoxInterruptRemapping";
+            this.checkBoxInterruptRemapping.Size = new System.Drawing.Size(132, 17);
+            this.checkBoxInterruptRemapping.TabIndex = 7;
+            this.checkBoxInterruptRemapping.Text = "Interrupt remapping [7]";
+            this.checkBoxInterruptRemapping.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDMARemapping
+            // 
+            this.checkBoxDMARemapping.AutoSize = true;
+            this.checkBoxDMARemapping.Location = new System.Drawing.Point(6, 156);
+            this.checkBoxDMARemapping.Name = "checkBoxDMARemapping";
+            this.checkBoxDMARemapping.Size = new System.Drawing.Size(117, 17);
+            this.checkBoxDMARemapping.TabIndex = 6;
+            this.checkBoxDMARemapping.Text = "DMA remapping [6]";
+            this.checkBoxDMARemapping.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRelaxedTimingDisableWatchdogs
+            // 
+            this.checkBoxRelaxedTimingDisableWatchdogs.AutoSize = true;
+            this.checkBoxRelaxedTimingDisableWatchdogs.Location = new System.Drawing.Point(6, 133);
+            this.checkBoxRelaxedTimingDisableWatchdogs.Name = "checkBoxRelaxedTimingDisableWatchdogs";
+            this.checkBoxRelaxedTimingDisableWatchdogs.Size = new System.Drawing.Size(209, 17);
+            this.checkBoxRelaxedTimingDisableWatchdogs.TabIndex = 5;
+            this.checkBoxRelaxedTimingDisableWatchdogs.Text = "Relaxed timing – disable watchdogs [5]";
+            this.checkBoxRelaxedTimingDisableWatchdogs.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMSRForSystemReset
+            // 
+            this.checkBoxMSRForSystemReset.AutoSize = true;
+            this.checkBoxMSRForSystemReset.Location = new System.Drawing.Point(6, 110);
+            this.checkBoxMSRForSystemReset.Name = "checkBoxMSRForSystemReset";
+            this.checkBoxMSRForSystemReset.Size = new System.Drawing.Size(141, 17);
+            this.checkBoxMSRForSystemReset.TabIndex = 4;
+            this.checkBoxMSRForSystemReset.Text = "MSR for system reset [4]";
+            this.checkBoxMSRForSystemReset.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMSRsforAPIC_EOI_ICR_TPR
+            // 
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.AutoSize = true;
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Location = new System.Drawing.Point(6, 87);
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Name = "checkBoxMSRsforAPIC_EOI_ICR_TPR";
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Size = new System.Drawing.Size(183, 17);
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.TabIndex = 3;
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.Text = "MSRs for APIC EOI/ICR/TPR [3]";
+            this.checkBoxMSRsforAPIC_EOI_ICR_TPR.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHypercallForRemoteTLBFlush
+            // 
+            this.checkBoxHypercallForRemoteTLBFlush.AutoSize = true;
+            this.checkBoxHypercallForRemoteTLBFlush.Location = new System.Drawing.Point(6, 64);
+            this.checkBoxHypercallForRemoteTLBFlush.Name = "checkBoxHypercallForRemoteTLBFlush";
+            this.checkBoxHypercallForRemoteTLBFlush.Size = new System.Drawing.Size(183, 17);
+            this.checkBoxHypercallForRemoteTLBFlush.TabIndex = 2;
+            this.checkBoxHypercallForRemoteTLBFlush.Text = "Hypercall for remote TLB flush [2]";
+            this.checkBoxHypercallForRemoteTLBFlush.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHypercallForLocalTLBFlush
+            // 
+            this.checkBoxHypercallForLocalTLBFlush.AutoSize = true;
+            this.checkBoxHypercallForLocalTLBFlush.Location = new System.Drawing.Point(6, 41);
+            this.checkBoxHypercallForLocalTLBFlush.Name = "checkBoxHypercallForLocalTLBFlush";
+            this.checkBoxHypercallForLocalTLBFlush.Size = new System.Drawing.Size(173, 17);
+            this.checkBoxHypercallForLocalTLBFlush.TabIndex = 1;
+            this.checkBoxHypercallForLocalTLBFlush.Text = "Hypercall for local TLB flush [1]";
+            this.checkBoxHypercallForLocalTLBFlush.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxHypercallForAddressSpaceSwitch
+            // 
+            this.checkBoxHypercallForAddressSpaceSwitch.AutoSize = true;
+            this.checkBoxHypercallForAddressSpaceSwitch.Location = new System.Drawing.Point(6, 18);
+            this.checkBoxHypercallForAddressSpaceSwitch.Name = "checkBoxHypercallForAddressSpaceSwitch";
+            this.checkBoxHypercallForAddressSpaceSwitch.Size = new System.Drawing.Size(205, 17);
+            this.checkBoxHypercallForAddressSpaceSwitch.TabIndex = 0;
+            this.checkBoxHypercallForAddressSpaceSwitch.Text = "Hypercall for address space switch [0]";
+            this.checkBoxHypercallForAddressSpaceSwitch.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 646);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(506, 52);
+            this.groupBoxEDX.TabIndex = 55;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelEDXReserved
+            // 
+            this.labelEDXReserved.AutoSize = true;
+            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXReserved.Name = "labelEDXReserved";
+            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDXReserved.TabIndex = 1;
+            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxEDXReserved
+            // 
+            this.textBoxEDXReserved.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
+            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXReserved.TabIndex = 0;
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.labelECX7_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.labelImplementedPhysicalAddressBits);
+            this.groupBoxECX.Controls.Add(this.textBoxECX7_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.textBoxImplementedPhysicalAddressBits);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 568);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 72);
+            this.groupBoxECX.TabIndex = 54;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // labelECX7_31_Reserved
+            // 
+            this.labelECX7_31_Reserved.AutoSize = true;
+            this.labelECX7_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelECX7_31_Reserved.Name = "labelECX7_31_Reserved";
+            this.labelECX7_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECX7_31_Reserved.TabIndex = 3;
+            this.labelECX7_31_Reserved.Text = "Reserved [7-31]:";
+            // 
+            // labelImplementedPhysicalAddressBits
+            // 
+            this.labelImplementedPhysicalAddressBits.AutoSize = true;
+            this.labelImplementedPhysicalAddressBits.Location = new System.Drawing.Point(6, 22);
+            this.labelImplementedPhysicalAddressBits.Name = "labelImplementedPhysicalAddressBits";
+            this.labelImplementedPhysicalAddressBits.Size = new System.Drawing.Size(188, 13);
+            this.labelImplementedPhysicalAddressBits.TabIndex = 2;
+            this.labelImplementedPhysicalAddressBits.Text = "ImplementedPhysicalAddressBits [0-6]:";
+            // 
+            // textBoxECX7_31_Reserved
+            // 
+            this.textBoxECX7_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxECX7_31_Reserved.Name = "textBoxECX7_31_Reserved";
+            this.textBoxECX7_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX7_31_Reserved.TabIndex = 1;
+            // 
+            // textBoxImplementedPhysicalAddressBits
+            // 
+            this.textBoxImplementedPhysicalAddressBits.Location = new System.Drawing.Point(400, 19);
+            this.textBoxImplementedPhysicalAddressBits.Name = "textBoxImplementedPhysicalAddressBits";
+            this.textBoxImplementedPhysicalAddressBits.Size = new System.Drawing.Size(100, 20);
+            this.textBoxImplementedPhysicalAddressBits.TabIndex = 0;
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.labelRecommendedSpinlockFailureRetries);
+            this.groupBoxEBX.Controls.Add(this.textBoxRecommendedSpinlockFailureRetries);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 510);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 52);
+            this.groupBoxEBX.TabIndex = 53;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // labelRecommendedSpinlockFailureRetries
+            // 
+            this.labelRecommendedSpinlockFailureRetries.AutoSize = true;
+            this.labelRecommendedSpinlockFailureRetries.Location = new System.Drawing.Point(6, 22);
+            this.labelRecommendedSpinlockFailureRetries.Name = "labelRecommendedSpinlockFailureRetries";
+            this.labelRecommendedSpinlockFailureRetries.Size = new System.Drawing.Size(345, 13);
+            this.labelRecommendedSpinlockFailureRetries.TabIndex = 1;
+            this.labelRecommendedSpinlockFailureRetries.Text = "Recommended spinlock failure retries (FFFF_FFFFh = -1 = never) [0-31]:";
+            // 
+            // textBoxRecommendedSpinlockFailureRetries
+            // 
+            this.textBoxRecommendedSpinlockFailureRetries.Location = new System.Drawing.Point(400, 19);
+            this.textBoxRecommendedSpinlockFailureRetries.Name = "textBoxRecommendedSpinlockFailureRetries";
+            this.textBoxRecommendedSpinlockFailureRetries.Size = new System.Drawing.Size(100, 20);
+            this.textBoxRecommendedSpinlockFailureRetries.TabIndex = 0;
             // 
             // EAX40000004
             // 
@@ -651,6 +652,7 @@
             this.ClientSize = new System.Drawing.Size(800, 735);
             this.Controls.Add(this.groupBoxEAX40000004);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX40000004";
             this.Text = "EAX=0x40000004: Reserved for Hypervisors - Recommendations";

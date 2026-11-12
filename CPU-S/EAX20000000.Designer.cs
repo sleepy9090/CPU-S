@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX20000000));
             this.groupBoxEAX20000000 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX20000000EAX = new System.Windows.Forms.GroupBox();
             this.textBoxEAX20000000EAX_HighestXeonPhiFunctionImplemented = new System.Windows.Forms.TextBox();
@@ -171,6 +172,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX20000000);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX20000000";
             this.Text = "EAX=0x20000000: Highest Xeon Phi Function Implemented";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000012ECXN));
             this.groupBoxEAX00000012 = new System.Windows.Forms.GroupBox();
             this.groupBoxCurrent = new System.Windows.Forms.GroupBox();
             this.labelCurrentN = new System.Windows.Forms.Label();
@@ -431,6 +432,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX00000012);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000012ECXN";
             this.Text = "EAX=0x00000012, ECX=0x00000002 to n: SGX Resources (Software Guard eXtensions) (2" +

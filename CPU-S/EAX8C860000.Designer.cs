@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX8C860000));
             this.groupBoxEAX8C860000 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX8C860000EAX = new System.Windows.Forms.TextBox();
             this.labelEAX8C860000EAX = new System.Windows.Forms.Label();
@@ -38,10 +43,6 @@
             this.labelEAX8C860000EBX = new System.Windows.Forms.Label();
             this.labelEAX8C860000ECX = new System.Windows.Forms.Label();
             this.labelEAX8C860000EDX = new System.Windows.Forms.Label();
-            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX8C860000.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,42 @@
             this.groupBoxEAX8C860000.TabIndex = 24;
             this.groupBoxEAX8C860000.TabStop = false;
             this.groupBoxEAX8C860000.Text = "EAX=0x8C860000";
+            // 
+            // groupBoxEAX
+            // 
+            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
+            this.groupBoxEAX.Name = "groupBoxEAX";
+            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEAX.TabIndex = 56;
+            this.groupBoxEAX.TabStop = false;
+            this.groupBoxEAX.Text = "EAX";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEDX.TabIndex = 55;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxECX.TabIndex = 54;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEBX.TabIndex = 53;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
             // 
             // groupBoxAll
             // 
@@ -140,42 +177,6 @@
             this.labelEAX8C860000EDX.TabIndex = 9;
             this.labelEAX8C860000EDX.Text = "EDX:";
             // 
-            // groupBoxEAX
-            // 
-            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
-            this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEAX.TabIndex = 56;
-            this.groupBoxEAX.TabStop = false;
-            this.groupBoxEAX.Text = "EAX";
-            // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEDX.TabIndex = 55;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxECX.TabIndex = 54;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEBX.TabIndex = 53;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
             // EAX8C860000
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,6 +184,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX8C860000);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX8C860000";
             this.Text = "EAX=0x8C860000: Hygon Extended Feature Flags";

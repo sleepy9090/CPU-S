@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX80000001));
             this.groupBoxEAX80000001 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAXBits = new System.Windows.Forms.GroupBox();
             this.labelEAX80000001EAX0_3_SteppingId = new System.Windows.Forms.Label();
@@ -1257,6 +1258,7 @@
             this.ClientSize = new System.Drawing.Size(1264, 985);
             this.Controls.Add(this.groupBoxEAX80000001);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX80000001";
             this.Text = "EAX=0x80000001: Extended Processor Info and Feature Bits";

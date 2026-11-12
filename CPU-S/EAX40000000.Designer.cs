@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX40000000));
             this.groupBoxEAX40000000_4FFFFFFF = new System.Windows.Forms.GroupBox();
             this.groupBoxEAXEBXECXEDX = new System.Windows.Forms.GroupBox();
             this.textBoxEAX40000000Basic = new System.Windows.Forms.TextBox();
@@ -260,6 +261,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX40000000_4FFFFFFF);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX40000000";
             this.Text = "EAX=0x40000000: Reserved for Hypervisors";

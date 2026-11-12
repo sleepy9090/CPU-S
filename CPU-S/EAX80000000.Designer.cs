@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX80000000));
             this.groupBoxEAX80000000 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX00000000 = new System.Windows.Forms.GroupBox();
             this.labelEAX0ID3Hex = new System.Windows.Forms.Label();
@@ -340,6 +341,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX80000000);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX80000000";
             this.Text = "EAX=0x80000000: Highest Extended Function Implemented and Vendor ID";

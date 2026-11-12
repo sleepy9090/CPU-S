@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX8000001D));
             this.groupBoxEAX8000001D = new System.Windows.Forms.GroupBox();
             this.groupBoxTotalCacheSize = new System.Windows.Forms.GroupBox();
             this.labelTotalCacheSizeInBytes = new System.Windows.Forms.Label();
@@ -504,15 +505,16 @@
             this.labelEAX8000001DEDX.TabIndex = 9;
             this.labelEAX8000001DEDX.Text = "EDX:";
             // 
-            // EAX8000001D_AMD
+            // EAX8000001D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 509);
             this.Controls.Add(this.groupBoxEAX8000001D);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "EAX8000001D_AMD";
+            this.Name = "EAX8000001D";
             this.Text = "EAX=0x8000001D: Cache Hierarchy and Topology (AMD) / Cache Configuration Descript" +
     "ors";
             this.groupBoxEAX8000001D.ResumeLayout(false);

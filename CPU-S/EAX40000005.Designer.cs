@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX40000005));
             this.groupBoxEAX40000005 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelReserved = new System.Windows.Forms.Label();
+            this.textBoxReserved = new System.Windows.Forms.TextBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping = new System.Windows.Forms.Label();
+            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping = new System.Windows.Forms.TextBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelMaximumSupportedLogicalProcessors = new System.Windows.Forms.Label();
+            this.textBoxMaximumSupportedLogicalProcessors = new System.Windows.Forms.TextBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX = new System.Windows.Forms.TextBox();
             this.labelEAX = new System.Windows.Forms.Label();
@@ -39,23 +49,14 @@
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.textBoxMaximumSupportedVirtualProcessors = new System.Windows.Forms.TextBox();
             this.labelMaximumSupportedVirtualProcessors = new System.Windows.Forms.Label();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.labelMaximumSupportedLogicalProcessors = new System.Windows.Forms.Label();
-            this.textBoxMaximumSupportedLogicalProcessors = new System.Windows.Forms.TextBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping = new System.Windows.Forms.Label();
-            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping = new System.Windows.Forms.TextBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.labelReserved = new System.Windows.Forms.Label();
-            this.textBoxReserved = new System.Windows.Forms.TextBox();
+            this.textBoxMaximumSupportedVirtualProcessors = new System.Windows.Forms.TextBox();
             this.groupBoxEAX40000005.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
-            this.groupBoxEBX.SuspendLayout();
-            this.groupBoxECX.SuspendLayout();
-            this.groupBoxEDX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX40000005
@@ -71,6 +72,87 @@
             this.groupBoxEAX40000005.TabIndex = 3;
             this.groupBoxEAX40000005.TabStop = false;
             this.groupBoxEAX40000005.Text = "EAX=0x40000005";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelReserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 187);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(506, 50);
+            this.groupBoxEDX.TabIndex = 61;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelReserved
+            // 
+            this.labelReserved.AutoSize = true;
+            this.labelReserved.Location = new System.Drawing.Point(6, 19);
+            this.labelReserved.Name = "labelReserved";
+            this.labelReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelReserved.TabIndex = 1;
+            this.labelReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxReserved
+            // 
+            this.textBoxReserved.Location = new System.Drawing.Point(400, 15);
+            this.textBoxReserved.Name = "textBoxReserved";
+            this.textBoxReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxReserved.TabIndex = 0;
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping);
+            this.groupBoxECX.Controls.Add(this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 131);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 50);
+            this.groupBoxECX.TabIndex = 60;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // labelMaximumSupportedPhysicalInterruptVectorsForRemapping
+            // 
+            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.AutoSize = true;
+            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Location = new System.Drawing.Point(6, 19);
+            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Name = "labelMaximumSupportedPhysicalInterruptVectorsForRemapping";
+            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Size = new System.Drawing.Size(321, 13);
+            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.TabIndex = 1;
+            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Text = "Maximum supported physical interrupt vectors for remapping [0-31]:";
+            // 
+            // textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping
+            // 
+            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.Location = new System.Drawing.Point(400, 15);
+            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.Name = "textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping";
+            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.TabIndex = 0;
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.labelMaximumSupportedLogicalProcessors);
+            this.groupBoxEBX.Controls.Add(this.textBoxMaximumSupportedLogicalProcessors);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 50);
+            this.groupBoxEBX.TabIndex = 59;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // labelMaximumSupportedLogicalProcessors
+            // 
+            this.labelMaximumSupportedLogicalProcessors.AutoSize = true;
+            this.labelMaximumSupportedLogicalProcessors.Location = new System.Drawing.Point(6, 19);
+            this.labelMaximumSupportedLogicalProcessors.Name = "labelMaximumSupportedLogicalProcessors";
+            this.labelMaximumSupportedLogicalProcessors.Size = new System.Drawing.Size(221, 13);
+            this.labelMaximumSupportedLogicalProcessors.TabIndex = 1;
+            this.labelMaximumSupportedLogicalProcessors.Text = "Maximum supported logical processors [0-31]:";
+            // 
+            // textBoxMaximumSupportedLogicalProcessors
+            // 
+            this.textBoxMaximumSupportedLogicalProcessors.Location = new System.Drawing.Point(400, 15);
+            this.textBoxMaximumSupportedLogicalProcessors.Name = "textBoxMaximumSupportedLogicalProcessors";
+            this.textBoxMaximumSupportedLogicalProcessors.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaximumSupportedLogicalProcessors.TabIndex = 0;
             // 
             // groupBoxAll
             // 
@@ -163,13 +245,6 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
-            // textBoxMaximumSupportedVirtualProcessors
-            // 
-            this.textBoxMaximumSupportedVirtualProcessors.Location = new System.Drawing.Point(400, 15);
-            this.textBoxMaximumSupportedVirtualProcessors.Name = "textBoxMaximumSupportedVirtualProcessors";
-            this.textBoxMaximumSupportedVirtualProcessors.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaximumSupportedVirtualProcessors.TabIndex = 0;
-            // 
             // labelMaximumSupportedVirtualProcessors
             // 
             this.labelMaximumSupportedVirtualProcessors.AutoSize = true;
@@ -179,86 +254,12 @@
             this.labelMaximumSupportedVirtualProcessors.TabIndex = 1;
             this.labelMaximumSupportedVirtualProcessors.Text = "Maximum supported virtual processors [0-31]:";
             // 
-            // groupBoxEBX
+            // textBoxMaximumSupportedVirtualProcessors
             // 
-            this.groupBoxEBX.Controls.Add(this.labelMaximumSupportedLogicalProcessors);
-            this.groupBoxEBX.Controls.Add(this.textBoxMaximumSupportedLogicalProcessors);
-            this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(506, 50);
-            this.groupBoxEBX.TabIndex = 59;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
-            // labelMaximumSupportedLogicalProcessors
-            // 
-            this.labelMaximumSupportedLogicalProcessors.AutoSize = true;
-            this.labelMaximumSupportedLogicalProcessors.Location = new System.Drawing.Point(6, 19);
-            this.labelMaximumSupportedLogicalProcessors.Name = "labelMaximumSupportedLogicalProcessors";
-            this.labelMaximumSupportedLogicalProcessors.Size = new System.Drawing.Size(221, 13);
-            this.labelMaximumSupportedLogicalProcessors.TabIndex = 1;
-            this.labelMaximumSupportedLogicalProcessors.Text = "Maximum supported logical processors [0-31]:";
-            // 
-            // textBoxMaximumSupportedLogicalProcessors
-            // 
-            this.textBoxMaximumSupportedLogicalProcessors.Location = new System.Drawing.Point(400, 15);
-            this.textBoxMaximumSupportedLogicalProcessors.Name = "textBoxMaximumSupportedLogicalProcessors";
-            this.textBoxMaximumSupportedLogicalProcessors.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaximumSupportedLogicalProcessors.TabIndex = 0;
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Controls.Add(this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping);
-            this.groupBoxECX.Controls.Add(this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 131);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(506, 50);
-            this.groupBoxECX.TabIndex = 60;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // labelMaximumSupportedPhysicalInterruptVectorsForRemapping
-            // 
-            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.AutoSize = true;
-            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Location = new System.Drawing.Point(6, 19);
-            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Name = "labelMaximumSupportedPhysicalInterruptVectorsForRemapping";
-            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Size = new System.Drawing.Size(321, 13);
-            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.TabIndex = 1;
-            this.labelMaximumSupportedPhysicalInterruptVectorsForRemapping.Text = "Maximum supported physical interrupt vectors for remapping [0-31]:";
-            // 
-            // textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping
-            // 
-            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.Location = new System.Drawing.Point(400, 15);
-            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.Name = "textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping";
-            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaximumSupportedPhysicalInterruptVectorsForRemapping.TabIndex = 0;
-            // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Controls.Add(this.labelReserved);
-            this.groupBoxEDX.Controls.Add(this.textBoxReserved);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 187);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(506, 50);
-            this.groupBoxEDX.TabIndex = 61;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // labelReserved
-            // 
-            this.labelReserved.AutoSize = true;
-            this.labelReserved.Location = new System.Drawing.Point(6, 19);
-            this.labelReserved.Name = "labelReserved";
-            this.labelReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelReserved.TabIndex = 1;
-            this.labelReserved.Text = "Reserved [0-31]:";
-            // 
-            // textBoxReserved
-            // 
-            this.textBoxReserved.Location = new System.Drawing.Point(400, 15);
-            this.textBoxReserved.Name = "textBoxReserved";
-            this.textBoxReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxReserved.TabIndex = 0;
+            this.textBoxMaximumSupportedVirtualProcessors.Location = new System.Drawing.Point(400, 15);
+            this.textBoxMaximumSupportedVirtualProcessors.Name = "textBoxMaximumSupportedVirtualProcessors";
+            this.textBoxMaximumSupportedVirtualProcessors.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaximumSupportedVirtualProcessors.TabIndex = 0;
             // 
             // EAX40000005
             // 
@@ -267,20 +268,21 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX40000005);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX40000005";
             this.Text = "EAX=0x40000005: Reserved for Hypervisors - Limits";
             this.groupBoxEAX40000005.ResumeLayout(false);
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
             this.groupBoxEAX.ResumeLayout(false);
             this.groupBoxEAX.PerformLayout();
-            this.groupBoxEBX.ResumeLayout(false);
-            this.groupBoxEBX.PerformLayout();
-            this.groupBoxECX.ResumeLayout(false);
-            this.groupBoxECX.PerformLayout();
-            this.groupBoxEDX.ResumeLayout(false);
-            this.groupBoxEDX.PerformLayout();
             this.ResumeLayout(false);
 
         }

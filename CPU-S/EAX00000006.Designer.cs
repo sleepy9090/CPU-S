@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000006));
             this.groupBoxeAX00000006 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure = new System.Windows.Forms.TextBox();
@@ -115,7 +116,7 @@
             this.groupBoxeAX00000006.Controls.Add(this.groupBoxAll);
             this.groupBoxeAX00000006.Location = new System.Drawing.Point(12, 12);
             this.groupBoxeAX00000006.Name = "groupBoxeAX00000006";
-            this.groupBoxeAX00000006.Size = new System.Drawing.Size(1236, 1003);
+            this.groupBoxeAX00000006.Size = new System.Drawing.Size(1051, 1003);
             this.groupBoxeAX00000006.TabIndex = 0;
             this.groupBoxeAX00000006.TabStop = false;
             this.groupBoxeAX00000006.Text = "EAX=0x00000006";
@@ -142,8 +143,8 @@
             // textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure
             // 
             this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(418, 145);
-            this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStr" +
-    "ucture";
+            this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInter" +
+    "faceStructure";
             this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(100, 20);
             this.textBoxeAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.TabIndex = 13;
             // 
@@ -151,8 +152,8 @@
             // 
             this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.AutoSize = true;
             this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Location = new System.Drawing.Point(6, 148);
-            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStruc" +
-    "ture";
+            this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Name = "labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfa" +
+    "ceStructure";
             this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Size = new System.Drawing.Size(406, 13);
             this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.TabIndex = 12;
             this.labeleAX00000006EDX16_31_IndexOfThisLogicalProcessorsRowInHardwareFeedbackInterfaceStructure.Text = "Index of this logical processor\'s row in hardware feedback interface structure [1" +
@@ -839,9 +840,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 1028);
+            this.ClientSize = new System.Drawing.Size(1079, 1028);
             this.Controls.Add(this.groupBoxeAX00000006);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000006";
             this.Text = "EAX=0x00000006: Thermal and Power Management";

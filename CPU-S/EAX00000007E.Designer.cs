@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000007E));
             this.groupBoxEAX00000007ECX0 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.checkBoxSSBD = new System.Windows.Forms.CheckBox();
@@ -1333,15 +1334,16 @@
             this.labelEAX7ECX0EDX.TabIndex = 9;
             this.labelEAX7ECX0EDX.Text = "EDX:";
             // 
-            // EAX00000007ECX0
+            // EAX00000007E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1580, 981);
             this.Controls.Add(this.groupBoxEAX00000007ECX0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "EAX00000007ECX0";
+            this.Name = "EAX00000007E";
             this.Text = "EAX=0x00000007, ECX=0x00000000: Extended Features";
             this.groupBoxEAX00000007ECX0.ResumeLayout(false);
             this.groupBoxEDX.ResumeLayout(false);

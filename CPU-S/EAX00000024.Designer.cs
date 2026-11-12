@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000024));
             this.groupBoxEAX00000024ECX0 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
@@ -176,15 +177,16 @@
             this.labelEAX24ECX0EDX.TabIndex = 9;
             this.labelEAX24ECX0EDX.Text = "EDX:";
             // 
-            // EAX00000024ECX0
+            // EAX00000024
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX00000024ECX0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "EAX00000024ECX0";
+            this.Name = "EAX00000024";
             this.Text = "EAX=0x00000024, ECX=0x0: AVX10 Converged Vector ISA";
             this.groupBoxEAX00000024ECX0.ResumeLayout(false);
             this.groupBoxAll.ResumeLayout(false);

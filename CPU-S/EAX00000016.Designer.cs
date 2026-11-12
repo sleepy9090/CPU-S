@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000016));
             this.groupBoxEAX16 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelEDXReserved = new System.Windows.Forms.Label();
@@ -327,6 +328,7 @@
             this.ClientSize = new System.Drawing.Size(417, 501);
             this.Controls.Add(this.groupBoxEAX16);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000016";
             this.Text = "EAX=0x00000016: Processor and Bus specification frequencies";

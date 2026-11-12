@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX0000000DECX1));
             this.groupBoxEAX0000000DECX1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.label32_63_ValidXSSBits = new System.Windows.Forms.Label();
+            this.textBox32_63_ValidXSSBits = new System.Windows.Forms.TextBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.label0_31_ValidXSSBits = new System.Windows.Forms.Label();
+            this.textBox0_31_ValidXSSBits = new System.Windows.Forms.TextBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS = new System.Windows.Forms.Label();
+            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS = new System.Windows.Forms.TextBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
             this.labelEAXReserved = new System.Windows.Forms.Label();
             this.checkBoxXFDAndXFD_ERR = new System.Windows.Forms.CheckBox();
@@ -45,21 +55,12 @@
             this.labelEAX0000000DEBX = new System.Windows.Forms.Label();
             this.labelEAX0000000DECX = new System.Windows.Forms.Label();
             this.labelEAX0000000DEDX = new System.Windows.Forms.Label();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS = new System.Windows.Forms.TextBox();
-            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS = new System.Windows.Forms.Label();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.textBox0_31_ValidXSSBits = new System.Windows.Forms.TextBox();
-            this.label0_31_ValidXSSBits = new System.Windows.Forms.Label();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.label32_63_ValidXSSBits = new System.Windows.Forms.Label();
-            this.textBox32_63_ValidXSSBits = new System.Windows.Forms.TextBox();
             this.groupBoxEAX0000000DECX1.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
-            this.groupBoxEBX.SuspendLayout();
-            this.groupBoxECX.SuspendLayout();
-            this.groupBoxEDX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX0000000DECX1
@@ -75,6 +76,87 @@
             this.groupBoxEAX0000000DECX1.TabIndex = 0;
             this.groupBoxEAX0000000DECX1.TabStop = false;
             this.groupBoxEAX0000000DECX1.Text = "EAX=0x0000000D";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.label32_63_ValidXSSBits);
+            this.groupBoxEDX.Controls.Add(this.textBox32_63_ValidXSSBits);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 307);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(506, 51);
+            this.groupBoxEDX.TabIndex = 45;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // label32_63_ValidXSSBits
+            // 
+            this.label32_63_ValidXSSBits.AutoSize = true;
+            this.label32_63_ValidXSSBits.Location = new System.Drawing.Point(6, 22);
+            this.label32_63_ValidXSSBits.Name = "label32_63_ValidXSSBits";
+            this.label32_63_ValidXSSBits.Size = new System.Drawing.Size(142, 13);
+            this.label32_63_ValidXSSBits.TabIndex = 1;
+            this.label32_63_ValidXSSBits.Text = "Valid XSS.63...32 bits [0-31]:";
+            // 
+            // textBox32_63_ValidXSSBits
+            // 
+            this.textBox32_63_ValidXSSBits.Location = new System.Drawing.Point(400, 19);
+            this.textBox32_63_ValidXSSBits.Name = "textBox32_63_ValidXSSBits";
+            this.textBox32_63_ValidXSSBits.Size = new System.Drawing.Size(100, 20);
+            this.textBox32_63_ValidXSSBits.TabIndex = 0;
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.label0_31_ValidXSSBits);
+            this.groupBoxECX.Controls.Add(this.textBox0_31_ValidXSSBits);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 250);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 51);
+            this.groupBoxECX.TabIndex = 44;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // label0_31_ValidXSSBits
+            // 
+            this.label0_31_ValidXSSBits.AutoSize = true;
+            this.label0_31_ValidXSSBits.Location = new System.Drawing.Point(6, 22);
+            this.label0_31_ValidXSSBits.Name = "label0_31_ValidXSSBits";
+            this.label0_31_ValidXSSBits.Size = new System.Drawing.Size(136, 13);
+            this.label0_31_ValidXSSBits.TabIndex = 1;
+            this.label0_31_ValidXSSBits.Text = "Valid XSS.31...0 bits [0-31]:";
+            // 
+            // textBox0_31_ValidXSSBits
+            // 
+            this.textBox0_31_ValidXSSBits.Location = new System.Drawing.Point(400, 19);
+            this.textBox0_31_ValidXSSBits.Name = "textBox0_31_ValidXSSBits";
+            this.textBox0_31_ValidXSSBits.Size = new System.Drawing.Size(100, 20);
+            this.textBox0_31_ValidXSSBits.TabIndex = 0;
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.labelSizeInBytesInXSAVEAreaForXCR0_XSS);
+            this.groupBoxEBX.Controls.Add(this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 192);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 52);
+            this.groupBoxEBX.TabIndex = 43;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // labelSizeInBytesInXSAVEAreaForXCR0_XSS
+            // 
+            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.AutoSize = true;
+            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Location = new System.Drawing.Point(6, 22);
+            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Name = "labelSizeInBytesInXSAVEAreaForXCR0_XSS";
+            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Size = new System.Drawing.Size(253, 13);
+            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.TabIndex = 1;
+            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Text = "Size (in bytes) in XSAVE area for XCR0 | XSS [0-31]:";
+            // 
+            // textBoxSizeInBytesInXSAVEAreaForXCR0_XSS
+            // 
+            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.Location = new System.Drawing.Point(400, 19);
+            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.Name = "textBoxSizeInBytesInXSAVEAreaForXCR0_XSS";
+            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.TabIndex = 0;
             // 
             // groupBoxEAX
             // 
@@ -230,87 +312,6 @@
             this.labelEAX0000000DEDX.TabIndex = 9;
             this.labelEAX0000000DEDX.Text = "EDX:";
             // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Controls.Add(this.labelSizeInBytesInXSAVEAreaForXCR0_XSS);
-            this.groupBoxEBX.Controls.Add(this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS);
-            this.groupBoxEBX.Location = new System.Drawing.Point(264, 192);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(506, 52);
-            this.groupBoxEBX.TabIndex = 43;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
-            // textBoxSizeInBytesInXSAVEAreaForXCR0_XSS
-            // 
-            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.Location = new System.Drawing.Point(400, 19);
-            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.Name = "textBoxSizeInBytesInXSAVEAreaForXCR0_XSS";
-            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSizeInBytesInXSAVEAreaForXCR0_XSS.TabIndex = 0;
-            // 
-            // labelSizeInBytesInXSAVEAreaForXCR0_XSS
-            // 
-            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.AutoSize = true;
-            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Location = new System.Drawing.Point(6, 22);
-            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Name = "labelSizeInBytesInXSAVEAreaForXCR0_XSS";
-            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Size = new System.Drawing.Size(253, 13);
-            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.TabIndex = 1;
-            this.labelSizeInBytesInXSAVEAreaForXCR0_XSS.Text = "Size (in bytes) in XSAVE area for XCR0 | XSS [0-31]:";
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Controls.Add(this.label0_31_ValidXSSBits);
-            this.groupBoxECX.Controls.Add(this.textBox0_31_ValidXSSBits);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 250);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(506, 51);
-            this.groupBoxECX.TabIndex = 44;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // textBox0_31_ValidXSSBits
-            // 
-            this.textBox0_31_ValidXSSBits.Location = new System.Drawing.Point(400, 19);
-            this.textBox0_31_ValidXSSBits.Name = "textBox0_31_ValidXSSBits";
-            this.textBox0_31_ValidXSSBits.Size = new System.Drawing.Size(100, 20);
-            this.textBox0_31_ValidXSSBits.TabIndex = 0;
-            // 
-            // label0_31_ValidXSSBits
-            // 
-            this.label0_31_ValidXSSBits.AutoSize = true;
-            this.label0_31_ValidXSSBits.Location = new System.Drawing.Point(6, 22);
-            this.label0_31_ValidXSSBits.Name = "label0_31_ValidXSSBits";
-            this.label0_31_ValidXSSBits.Size = new System.Drawing.Size(136, 13);
-            this.label0_31_ValidXSSBits.TabIndex = 1;
-            this.label0_31_ValidXSSBits.Text = "Valid XSS.31...0 bits [0-31]:";
-            // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Controls.Add(this.label32_63_ValidXSSBits);
-            this.groupBoxEDX.Controls.Add(this.textBox32_63_ValidXSSBits);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 307);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(506, 51);
-            this.groupBoxEDX.TabIndex = 45;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // label32_63_ValidXSSBits
-            // 
-            this.label32_63_ValidXSSBits.AutoSize = true;
-            this.label32_63_ValidXSSBits.Location = new System.Drawing.Point(6, 22);
-            this.label32_63_ValidXSSBits.Name = "label32_63_ValidXSSBits";
-            this.label32_63_ValidXSSBits.Size = new System.Drawing.Size(142, 13);
-            this.label32_63_ValidXSSBits.TabIndex = 1;
-            this.label32_63_ValidXSSBits.Text = "Valid XSS.63...32 bits [0-31]:";
-            // 
-            // textBox32_63_ValidXSSBits
-            // 
-            this.textBox32_63_ValidXSSBits.Location = new System.Drawing.Point(400, 19);
-            this.textBox32_63_ValidXSSBits.Name = "textBox32_63_ValidXSSBits";
-            this.textBox32_63_ValidXSSBits.Size = new System.Drawing.Size(100, 20);
-            this.textBox32_63_ValidXSSBits.TabIndex = 0;
-            // 
             // EAX0000000DECX1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,21 +319,22 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX0000000DECX1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX0000000DECX1";
             this.Text = "EAX=0x0000000D: XSAVE Features and State Components (ECX=1), (Sub 1) (feat) (XSS)" +
     "";
             this.groupBoxEAX0000000DECX1.ResumeLayout(false);
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
             this.groupBoxEAX.ResumeLayout(false);
             this.groupBoxEAX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
-            this.groupBoxEBX.ResumeLayout(false);
-            this.groupBoxEBX.PerformLayout();
-            this.groupBoxECX.ResumeLayout(false);
-            this.groupBoxECX.PerformLayout();
-            this.groupBoxEDX.ResumeLayout(false);
-            this.groupBoxEDX.PerformLayout();
             this.ResumeLayout(false);
 
         }

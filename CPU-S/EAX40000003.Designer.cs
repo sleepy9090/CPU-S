@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX40000003));
             this.groupBoxEAX40000003 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.checkBoxReservedEDX31 = new System.Windows.Forms.CheckBox();
@@ -63,6 +64,9 @@
             this.checkBoxGuestDebugging = new System.Windows.Forms.CheckBox();
             this.checkBoxDepractedMWAIT = new System.Windows.Forms.CheckBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.textBoxMaximumProcessorPowerStateCState = new System.Windows.Forms.TextBox();
+            this.textBoxMaximumProcessorPowerState = new System.Windows.Forms.TextBox();
+            this.labelMaximumProcessorPowerState = new System.Windows.Forms.Label();
             this.checkBoxReservedECX31 = new System.Windows.Forms.CheckBox();
             this.checkBoxReservedECX30 = new System.Windows.Forms.CheckBox();
             this.checkBoxReservedECX29 = new System.Windows.Forms.CheckBox();
@@ -166,9 +170,6 @@
             this.labelEAX40000003EBX = new System.Windows.Forms.Label();
             this.labelEAX40000003ECX = new System.Windows.Forms.Label();
             this.labelEAX40000003EDX = new System.Windows.Forms.Label();
-            this.labelMaximumProcessorPowerState = new System.Windows.Forms.Label();
-            this.textBoxMaximumProcessorPowerState = new System.Windows.Forms.TextBox();
-            this.textBoxMaximumProcessorPowerStateCState = new System.Windows.Forms.TextBox();
             this.groupBoxEAX40000003.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
@@ -591,6 +592,29 @@
             this.groupBoxECX.TabIndex = 45;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX - description of power management information";
+            // 
+            // textBoxMaximumProcessorPowerStateCState
+            // 
+            this.textBoxMaximumProcessorPowerStateCState.Location = new System.Drawing.Point(160, 41);
+            this.textBoxMaximumProcessorPowerStateCState.Name = "textBoxMaximumProcessorPowerStateCState";
+            this.textBoxMaximumProcessorPowerStateCState.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaximumProcessorPowerStateCState.TabIndex = 66;
+            // 
+            // textBoxMaximumProcessorPowerState
+            // 
+            this.textBoxMaximumProcessorPowerState.Location = new System.Drawing.Point(210, 15);
+            this.textBoxMaximumProcessorPowerState.Name = "textBoxMaximumProcessorPowerState";
+            this.textBoxMaximumProcessorPowerState.Size = new System.Drawing.Size(50, 20);
+            this.textBoxMaximumProcessorPowerState.TabIndex = 65;
+            // 
+            // labelMaximumProcessorPowerState
+            // 
+            this.labelMaximumProcessorPowerState.AutoSize = true;
+            this.labelMaximumProcessorPowerState.Location = new System.Drawing.Point(6, 18);
+            this.labelMaximumProcessorPowerState.Name = "labelMaximumProcessorPowerState";
+            this.labelMaximumProcessorPowerState.Size = new System.Drawing.Size(185, 13);
+            this.labelMaximumProcessorPowerState.TabIndex = 64;
+            this.labelMaximumProcessorPowerState.Text = "Maximum processor power state [0-3]:";
             // 
             // checkBoxReservedECX31
             // 
@@ -1674,29 +1698,6 @@
             this.labelEAX40000003EDX.TabIndex = 9;
             this.labelEAX40000003EDX.Text = "EDX:";
             // 
-            // labelMaximumProcessorPowerState
-            // 
-            this.labelMaximumProcessorPowerState.AutoSize = true;
-            this.labelMaximumProcessorPowerState.Location = new System.Drawing.Point(6, 18);
-            this.labelMaximumProcessorPowerState.Name = "labelMaximumProcessorPowerState";
-            this.labelMaximumProcessorPowerState.Size = new System.Drawing.Size(185, 13);
-            this.labelMaximumProcessorPowerState.TabIndex = 64;
-            this.labelMaximumProcessorPowerState.Text = "Maximum processor power state [0-3]:";
-            // 
-            // textBoxMaximumProcessorPowerState
-            // 
-            this.textBoxMaximumProcessorPowerState.Location = new System.Drawing.Point(210, 15);
-            this.textBoxMaximumProcessorPowerState.Name = "textBoxMaximumProcessorPowerState";
-            this.textBoxMaximumProcessorPowerState.Size = new System.Drawing.Size(50, 20);
-            this.textBoxMaximumProcessorPowerState.TabIndex = 65;
-            // 
-            // textBoxMaximumProcessorPowerStateCState
-            // 
-            this.textBoxMaximumProcessorPowerStateCState.Location = new System.Drawing.Point(160, 41);
-            this.textBoxMaximumProcessorPowerStateCState.Name = "textBoxMaximumProcessorPowerStateCState";
-            this.textBoxMaximumProcessorPowerStateCState.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaximumProcessorPowerStateCState.TabIndex = 66;
-            // 
             // EAX40000003
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1704,6 +1705,7 @@
             this.ClientSize = new System.Drawing.Size(1264, 948);
             this.Controls.Add(this.groupBoxEAX40000003);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX40000003";
             this.Text = "EAX40000003";

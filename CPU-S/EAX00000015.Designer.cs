@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000015));
             this.groupBoxEAX00000015 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelEDXReserved = new System.Windows.Forms.Label();
@@ -267,6 +268,7 @@
             this.ClientSize = new System.Drawing.Size(549, 436);
             this.Controls.Add(this.groupBoxEAX00000015);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000015";
             this.Text = "EAX=0x00000015: TSC and Core Crystal frequency information";

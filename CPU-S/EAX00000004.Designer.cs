@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000004));
             this.groupBoxEAX4 = new System.Windows.Forms.GroupBox();
             this.groupBoxTotalCacheSize = new System.Windows.Forms.GroupBox();
             this.labelTotalCacheSizeInBytes = new System.Windows.Forms.Label();
@@ -772,6 +773,7 @@
             this.ClientSize = new System.Drawing.Size(1004, 672);
             this.Controls.Add(this.groupBoxEAX4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000004";
             this.Text = "EAX=0x00000004: : Cache Hierarchy and Topology (Intel) / Cache Configuration Desc" +

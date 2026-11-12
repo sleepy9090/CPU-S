@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX80000006_AMD));
             this.groupBoxEAX80000006 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelReservedEDX = new System.Windows.Forms.Label();
@@ -455,6 +456,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 521);
             this.Controls.Add(this.groupBoxEAX80000006);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EAX80000006_AMD";
             this.Text = "EAX=0x80000006: Extended L2 Cache Features (AMD)";
             this.groupBoxEAX80000006.ResumeLayout(false);

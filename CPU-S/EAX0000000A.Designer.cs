@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX0000000A));
             this.groupBoxEAX0000000A = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelEDX20_31_Reserved = new System.Windows.Forms.Label();
@@ -791,6 +792,7 @@
             this.ClientSize = new System.Drawing.Size(800, 741);
             this.Controls.Add(this.groupBoxEAX0000000A);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX0000000A";
             this.Text = "EAX=0x0000000A: Architectural Perf Mon Information";

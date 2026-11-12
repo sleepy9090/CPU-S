@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX80000006));
             this.groupBoxEAX80000006 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
             this.labelEAXDataTableAssociativity = new System.Windows.Forms.Label();
@@ -527,6 +528,7 @@
             this.ClientSize = new System.Drawing.Size(800, 618);
             this.Controls.Add(this.groupBoxEAX80000006);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX80000006";
             this.Text = "EAX80000006";

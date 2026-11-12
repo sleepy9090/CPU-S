@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAXC0000005));
             this.groupBoxEAXC0000005 = new System.Windows.Forms.GroupBox();
-            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX = new System.Windows.Forms.TextBox();
             this.labelEAX = new System.Windows.Forms.Label();
@@ -42,6 +39,10 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
+            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.groupBoxEAXC0000005.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
@@ -59,42 +60,6 @@
             this.groupBoxEAXC0000005.TabIndex = 30;
             this.groupBoxEAXC0000005.TabStop = false;
             this.groupBoxEAXC0000005.Text = "EAX=0xC0000005";
-            // 
-            // groupBoxEAX
-            // 
-            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
-            this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEAX.TabIndex = 56;
-            this.groupBoxEAX.TabStop = false;
-            this.groupBoxEAX.Text = "EAX";
-            // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEDX.TabIndex = 55;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxECX.TabIndex = 54;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
-            this.groupBoxEBX.TabIndex = 53;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
             // 
             // groupBoxAll
             // 
@@ -176,6 +141,42 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
+            // groupBoxEAX
+            // 
+            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
+            this.groupBoxEAX.Name = "groupBoxEAX";
+            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEAX.TabIndex = 56;
+            this.groupBoxEAX.TabStop = false;
+            this.groupBoxEAX.Text = "EAX";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEDX.TabIndex = 55;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxECX.TabIndex = 54;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEBX.TabIndex = 53;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
             // EAXC0000005
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,6 +184,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAXC0000005);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAXC0000005";
             this.Text = "EAX=0xC0000005 - Zhaoxin - Isolation Information";

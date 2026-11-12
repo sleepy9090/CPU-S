@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000003));
             this.groupBoxEAX00000003 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxEAX3_EAX_EDX_ECX_TransmetaCrusoeAndEfficeonCPU128BitSerialNumber = new System.Windows.Forms.TextBox();
@@ -54,7 +55,7 @@
             this.groupBoxEAX00000003.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX00000003.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX00000003.Name = "groupBoxEAX00000003";
-            this.groupBoxEAX00000003.Size = new System.Drawing.Size(1240, 705);
+            this.groupBoxEAX00000003.Size = new System.Drawing.Size(1240, 260);
             this.groupBoxEAX00000003.TabIndex = 0;
             this.groupBoxEAX00000003.TabStop = false;
             this.groupBoxEAX00000003.Text = "EAX=0x00000003";
@@ -188,9 +189,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 729);
+            this.ClientSize = new System.Drawing.Size(1264, 279);
             this.Controls.Add(this.groupBoxEAX00000003);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000003";
             this.Text = "EAX=0x00000003: Processor Serial Number";

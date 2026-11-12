@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000005));
             this.groupBoxEAX00000005 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelEAX5_EDX28_31_NumberOfC7SubStatesSupportedForMWAIT = new System.Windows.Forms.Label();
@@ -93,7 +94,7 @@
             this.groupBoxEAX00000005.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX00000005.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX00000005.Name = "groupBoxEAX00000005";
-            this.groupBoxEAX00000005.Size = new System.Drawing.Size(984, 705);
+            this.groupBoxEAX00000005.Size = new System.Drawing.Size(984, 588);
             this.groupBoxEAX00000005.TabIndex = 3;
             this.groupBoxEAX00000005.TabStop = false;
             this.groupBoxEAX00000005.Text = "EAX=0x00000005";
@@ -530,9 +531,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1008, 610);
             this.Controls.Add(this.groupBoxEAX00000005);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000005";
             this.Text = "EAX=0x00000005: MONITOR/MWAIT Features";

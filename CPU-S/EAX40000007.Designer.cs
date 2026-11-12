@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX40000007));
             this.groupBoxEAX40000007 = new System.Windows.Forms.GroupBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX = new System.Windows.Forms.TextBox();
@@ -39,25 +40,25 @@
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.checkBoxStartLogicalProcessor = new System.Windows.Forms.CheckBox();
-            this.checkBoxCreateRootVirtualProcessor = new System.Windows.Forms.CheckBox();
+            this.textBoxEAXReserved = new System.Windows.Forms.TextBox();
+            this.labelEaxReserved = new System.Windows.Forms.Label();
             this.checkBoxReservedIdentityBit = new System.Windows.Forms.CheckBox();
             this.checkBoxPerformanceCounterSync = new System.Windows.Forms.CheckBox();
-            this.labelEaxReserved = new System.Windows.Forms.Label();
+            this.checkBoxCreateRootVirtualProcessor = new System.Windows.Forms.CheckBox();
+            this.checkBoxStartLogicalProcessor = new System.Windows.Forms.CheckBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
+            this.labelEDXReserved = new System.Windows.Forms.Label();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.textBoxECXReserved = new System.Windows.Forms.TextBox();
+            this.labelECXReserved = new System.Windows.Forms.Label();
+            this.checkBoxRemapGuestUncached = new System.Windows.Forms.CheckBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.textBoxEBXReserved = new System.Windows.Forms.TextBox();
             this.labelEBXReserved = new System.Windows.Forms.Label();
             this.checkBoxLogicalProcessorIdling = new System.Windows.Forms.CheckBox();
             this.checkBoxMwaitIdleStates = new System.Windows.Forms.CheckBox();
             this.checkBoxProcessorPowerManagement = new System.Windows.Forms.CheckBox();
-            this.checkBoxRemapGuestUncached = new System.Windows.Forms.CheckBox();
-            this.labelECXReserved = new System.Windows.Forms.Label();
-            this.labelEDXReserved = new System.Windows.Forms.Label();
-            this.textBoxEAXReserved = new System.Windows.Forms.TextBox();
-            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
-            this.textBoxECXReserved = new System.Windows.Forms.TextBox();
-            this.textBoxEBXReserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX40000007.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
@@ -175,62 +176,21 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
-            // groupBoxEDX
+            // textBoxEAXReserved
             // 
-            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
-            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
-            this.groupBoxEDX.Location = new System.Drawing.Point(470, 173);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(200, 74);
-            this.groupBoxEDX.TabIndex = 55;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
+            this.textBoxEAXReserved.Location = new System.Drawing.Point(92, 90);
+            this.textBoxEAXReserved.Name = "textBoxEAXReserved";
+            this.textBoxEAXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXReserved.TabIndex = 5;
             // 
-            // groupBoxECX
+            // labelEaxReserved
             // 
-            this.groupBoxECX.Controls.Add(this.textBoxECXReserved);
-            this.groupBoxECX.Controls.Add(this.labelECXReserved);
-            this.groupBoxECX.Controls.Add(this.checkBoxRemapGuestUncached);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 173);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(200, 74);
-            this.groupBoxECX.TabIndex = 54;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Controls.Add(this.textBoxEBXReserved);
-            this.groupBoxEBX.Controls.Add(this.labelEBXReserved);
-            this.groupBoxEBX.Controls.Add(this.checkBoxLogicalProcessorIdling);
-            this.groupBoxEBX.Controls.Add(this.checkBoxMwaitIdleStates);
-            this.groupBoxEBX.Controls.Add(this.checkBoxProcessorPowerManagement);
-            this.groupBoxEBX.Location = new System.Drawing.Point(470, 23);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(200, 144);
-            this.groupBoxEBX.TabIndex = 53;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
-            // checkBoxStartLogicalProcessor
-            // 
-            this.checkBoxStartLogicalProcessor.AutoSize = true;
-            this.checkBoxStartLogicalProcessor.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxStartLogicalProcessor.Name = "checkBoxStartLogicalProcessor";
-            this.checkBoxStartLogicalProcessor.Size = new System.Drawing.Size(150, 17);
-            this.checkBoxStartLogicalProcessor.TabIndex = 0;
-            this.checkBoxStartLogicalProcessor.Text = "Start Logical Processor [0]";
-            this.checkBoxStartLogicalProcessor.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCreateRootVirtualProcessor
-            // 
-            this.checkBoxCreateRootVirtualProcessor.AutoSize = true;
-            this.checkBoxCreateRootVirtualProcessor.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxCreateRootVirtualProcessor.Name = "checkBoxCreateRootVirtualProcessor";
-            this.checkBoxCreateRootVirtualProcessor.Size = new System.Drawing.Size(180, 17);
-            this.checkBoxCreateRootVirtualProcessor.TabIndex = 1;
-            this.checkBoxCreateRootVirtualProcessor.Text = "Create Root Virtual Processor [1]";
-            this.checkBoxCreateRootVirtualProcessor.UseVisualStyleBackColor = true;
+            this.labelEaxReserved.AutoSize = true;
+            this.labelEaxReserved.Location = new System.Drawing.Point(0, 93);
+            this.labelEaxReserved.Name = "labelEaxReserved";
+            this.labelEaxReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEaxReserved.TabIndex = 4;
+            this.labelEaxReserved.Text = "Reserved [3-30]:";
             // 
             // checkBoxReservedIdentityBit
             // 
@@ -252,14 +212,111 @@
             this.checkBoxPerformanceCounterSync.Text = "Performance Counter Sync [2]";
             this.checkBoxPerformanceCounterSync.UseVisualStyleBackColor = true;
             // 
-            // labelEaxReserved
+            // checkBoxCreateRootVirtualProcessor
             // 
-            this.labelEaxReserved.AutoSize = true;
-            this.labelEaxReserved.Location = new System.Drawing.Point(0, 93);
-            this.labelEaxReserved.Name = "labelEaxReserved";
-            this.labelEaxReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEaxReserved.TabIndex = 4;
-            this.labelEaxReserved.Text = "Reserved [3-30]:";
+            this.checkBoxCreateRootVirtualProcessor.AutoSize = true;
+            this.checkBoxCreateRootVirtualProcessor.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxCreateRootVirtualProcessor.Name = "checkBoxCreateRootVirtualProcessor";
+            this.checkBoxCreateRootVirtualProcessor.Size = new System.Drawing.Size(180, 17);
+            this.checkBoxCreateRootVirtualProcessor.TabIndex = 1;
+            this.checkBoxCreateRootVirtualProcessor.Text = "Create Root Virtual Processor [1]";
+            this.checkBoxCreateRootVirtualProcessor.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxStartLogicalProcessor
+            // 
+            this.checkBoxStartLogicalProcessor.AutoSize = true;
+            this.checkBoxStartLogicalProcessor.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxStartLogicalProcessor.Name = "checkBoxStartLogicalProcessor";
+            this.checkBoxStartLogicalProcessor.Size = new System.Drawing.Size(150, 17);
+            this.checkBoxStartLogicalProcessor.TabIndex = 0;
+            this.checkBoxStartLogicalProcessor.Text = "Start Logical Processor [0]";
+            this.checkBoxStartLogicalProcessor.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
+            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(470, 173);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(200, 74);
+            this.groupBoxEDX.TabIndex = 55;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // textBoxEDXReserved
+            // 
+            this.textBoxEDXReserved.Location = new System.Drawing.Point(94, 13);
+            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
+            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXReserved.TabIndex = 11;
+            // 
+            // labelEDXReserved
+            // 
+            this.labelEDXReserved.AutoSize = true;
+            this.labelEDXReserved.Location = new System.Drawing.Point(6, 16);
+            this.labelEDXReserved.Name = "labelEDXReserved";
+            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDXReserved.TabIndex = 10;
+            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.textBoxECXReserved);
+            this.groupBoxECX.Controls.Add(this.labelECXReserved);
+            this.groupBoxECX.Controls.Add(this.checkBoxRemapGuestUncached);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 173);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(200, 74);
+            this.groupBoxECX.TabIndex = 54;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // textBoxECXReserved
+            // 
+            this.textBoxECXReserved.Location = new System.Drawing.Point(92, 41);
+            this.textBoxECXReserved.Name = "textBoxECXReserved";
+            this.textBoxECXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECXReserved.TabIndex = 10;
+            // 
+            // labelECXReserved
+            // 
+            this.labelECXReserved.AutoSize = true;
+            this.labelECXReserved.Location = new System.Drawing.Point(6, 44);
+            this.labelECXReserved.Name = "labelECXReserved";
+            this.labelECXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECXReserved.TabIndex = 9;
+            this.labelECXReserved.Text = "Reserved [1-31]:";
+            // 
+            // checkBoxRemapGuestUncached
+            // 
+            this.checkBoxRemapGuestUncached.AutoSize = true;
+            this.checkBoxRemapGuestUncached.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxRemapGuestUncached.Name = "checkBoxRemapGuestUncached";
+            this.checkBoxRemapGuestUncached.Size = new System.Drawing.Size(159, 17);
+            this.checkBoxRemapGuestUncached.TabIndex = 0;
+            this.checkBoxRemapGuestUncached.Text = "Remap Guest Uncached [0]";
+            this.checkBoxRemapGuestUncached.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.textBoxEBXReserved);
+            this.groupBoxEBX.Controls.Add(this.labelEBXReserved);
+            this.groupBoxEBX.Controls.Add(this.checkBoxLogicalProcessorIdling);
+            this.groupBoxEBX.Controls.Add(this.checkBoxMwaitIdleStates);
+            this.groupBoxEBX.Controls.Add(this.checkBoxProcessorPowerManagement);
+            this.groupBoxEBX.Location = new System.Drawing.Point(470, 23);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(200, 144);
+            this.groupBoxEBX.TabIndex = 53;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // textBoxEBXReserved
+            // 
+            this.textBoxEBXReserved.Location = new System.Drawing.Point(94, 86);
+            this.textBoxEBXReserved.Name = "textBoxEBXReserved";
+            this.textBoxEBXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXReserved.TabIndex = 9;
             // 
             // labelEBXReserved
             // 
@@ -300,62 +357,6 @@
             this.checkBoxProcessorPowerManagement.Text = "Processor Power Management [0]";
             this.checkBoxProcessorPowerManagement.UseVisualStyleBackColor = true;
             // 
-            // checkBoxRemapGuestUncached
-            // 
-            this.checkBoxRemapGuestUncached.AutoSize = true;
-            this.checkBoxRemapGuestUncached.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxRemapGuestUncached.Name = "checkBoxRemapGuestUncached";
-            this.checkBoxRemapGuestUncached.Size = new System.Drawing.Size(159, 17);
-            this.checkBoxRemapGuestUncached.TabIndex = 0;
-            this.checkBoxRemapGuestUncached.Text = "Remap Guest Uncached [0]";
-            this.checkBoxRemapGuestUncached.UseVisualStyleBackColor = true;
-            // 
-            // labelECXReserved
-            // 
-            this.labelECXReserved.AutoSize = true;
-            this.labelECXReserved.Location = new System.Drawing.Point(6, 44);
-            this.labelECXReserved.Name = "labelECXReserved";
-            this.labelECXReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelECXReserved.TabIndex = 9;
-            this.labelECXReserved.Text = "Reserved [1-31]:";
-            // 
-            // labelEDXReserved
-            // 
-            this.labelEDXReserved.AutoSize = true;
-            this.labelEDXReserved.Location = new System.Drawing.Point(6, 16);
-            this.labelEDXReserved.Name = "labelEDXReserved";
-            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEDXReserved.TabIndex = 10;
-            this.labelEDXReserved.Text = "Reserved [0-31]:";
-            // 
-            // textBoxEAXReserved
-            // 
-            this.textBoxEAXReserved.Location = new System.Drawing.Point(92, 90);
-            this.textBoxEAXReserved.Name = "textBoxEAXReserved";
-            this.textBoxEAXReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAXReserved.TabIndex = 5;
-            // 
-            // textBoxEDXReserved
-            // 
-            this.textBoxEDXReserved.Location = new System.Drawing.Point(94, 13);
-            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
-            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDXReserved.TabIndex = 11;
-            // 
-            // textBoxECXReserved
-            // 
-            this.textBoxECXReserved.Location = new System.Drawing.Point(92, 41);
-            this.textBoxECXReserved.Name = "textBoxECXReserved";
-            this.textBoxECXReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECXReserved.TabIndex = 10;
-            // 
-            // textBoxEBXReserved
-            // 
-            this.textBoxEBXReserved.Location = new System.Drawing.Point(94, 86);
-            this.textBoxEBXReserved.Name = "textBoxEBXReserved";
-            this.textBoxEBXReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBXReserved.TabIndex = 9;
-            // 
             // EAX40000007
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,6 +364,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX40000007);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX40000007";
             this.Text = "EAX=0x40000007: Reserved for Hypervisors - Hypervisor CPU management features";

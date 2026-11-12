@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX0000000D));
             this.groupBoxEAX0000000D = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelValidXCR0Bits63_32Bits = new System.Windows.Forms.Label();
@@ -260,15 +261,16 @@
             this.labelEAX0000000DEDX.TabIndex = 9;
             this.labelEAX0000000DEDX.Text = "EDX:";
             // 
-            // EAX0000000DEAX0
+            // EAX0000000D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX0000000D);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "EAX0000000DEAX0";
+            this.Name = "EAX0000000D";
             this.Text = "EAX=0x0000000D: XSAVE Features and State Components  (ECX=0), (Sub 0) (main) (XCR" +
     "0)";
             this.groupBoxEAX0000000D.ResumeLayout(false);

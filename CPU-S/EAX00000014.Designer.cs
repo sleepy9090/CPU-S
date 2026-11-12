@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000014));
             this.groupBoxEAX14ECX0 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.labelReserved = new System.Windows.Forms.Label();
@@ -995,15 +996,16 @@
             this.labelEAX14ECX0EDX.TabIndex = 9;
             this.labelEAX14ECX0EDX.Text = "EDX:";
             // 
-            // EAX00000014ECX0
+            // EAX00000014
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 725);
             this.Controls.Add(this.groupBoxEAX14ECX0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "EAX00000014ECX0";
+            this.Name = "EAX00000014";
             this.Text = "EAX=0x00000014, ECX=0x0: Processor Trace feature bits in EBX and ECX / Processor " +
     "Trace (PT) Capability Enumeration - Capabilities";
             this.groupBoxEAX14ECX0.ResumeLayout(false);

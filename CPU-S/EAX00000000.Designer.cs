@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000000));
             this.groupBoxEAX00000000 = new System.Windows.Forms.GroupBox();
             this.labelEAX0ID3Hex = new System.Windows.Forms.Label();
             this.labelEAX0ID2Hex = new System.Windows.Forms.Label();
@@ -328,6 +329,7 @@
             this.ClientSize = new System.Drawing.Size(713, 201);
             this.Controls.Add(this.groupBoxEAX00000000);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000000";
             this.Text = "EAX=0x00000000: Highest Function Parameter and Manufacturer ID";

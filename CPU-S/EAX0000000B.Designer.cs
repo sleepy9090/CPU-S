@@ -28,7 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX0000000B));
             this.groupBoxEAX0000000B = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex = new System.Windows.Forms.Label();
+            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex = new System.Windows.Forms.TextBox();
+            this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.textBoxDomainType = new System.Windows.Forms.TextBox();
+            this.labelEAX0000000BECX16_31_Reserved = new System.Windows.Forms.Label();
+            this.labelEAX0000000BECX8_15_DomainType = new System.Windows.Forms.Label();
+            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex = new System.Windows.Forms.Label();
+            this.textBoxEAX0000000BECX16_31_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0000000BECX8_15_DomainType = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex = new System.Windows.Forms.TextBox();
+            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelEAX0000000BEBX16_31_Reserved = new System.Windows.Forms.Label();
+            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors = new System.Windows.Forms.Label();
+            this.textBoxEAX0000000BEBX16_31_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors = new System.Windows.Forms.TextBox();
+            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelEAX0000000BEAX5_31_Reserved = new System.Windows.Forms.Label();
+            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain = new System.Windows.Forms.Label();
+            this.textBoxEAX0000000BEAX5_31_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain = new System.Windows.Forms.TextBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX0000000BEAX = new System.Windows.Forms.TextBox();
             this.labelEAX0000000BEAX = new System.Windows.Forms.Label();
@@ -38,33 +60,12 @@
             this.labelEAX0000000BEBX = new System.Windows.Forms.Label();
             this.labelEAX0000000BECX = new System.Windows.Forms.Label();
             this.labelEAX0000000BEDX = new System.Windows.Forms.Label();
-            this.groupBoxEAX = new System.Windows.Forms.GroupBox();
-            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0000000BEAX5_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain = new System.Windows.Forms.Label();
-            this.labelEAX0000000BEAX5_31_Reserved = new System.Windows.Forms.Label();
-            this.groupBoxEBX = new System.Windows.Forms.GroupBox();
-            this.groupBoxECX = new System.Windows.Forms.GroupBox();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0000000BEBX16_31_Reserved = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0000000BECX8_15_DomainType = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0000000BECX16_31_Reserved = new System.Windows.Forms.TextBox();
-            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex = new System.Windows.Forms.TextBox();
-            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors = new System.Windows.Forms.Label();
-            this.labelEAX0000000BEBX16_31_Reserved = new System.Windows.Forms.Label();
-            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex = new System.Windows.Forms.Label();
-            this.labelEAX0000000BECX8_15_DomainType = new System.Windows.Forms.Label();
-            this.labelEAX0000000BECX16_31_Reserved = new System.Windows.Forms.Label();
-            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex = new System.Windows.Forms.Label();
-            this.textBoxDomainType = new System.Windows.Forms.TextBox();
             this.groupBoxEAX0000000B.SuspendLayout();
-            this.groupBoxAll.SuspendLayout();
-            this.groupBoxEAX.SuspendLayout();
-            this.groupBoxEBX.SuspendLayout();
-            this.groupBoxECX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
+            this.groupBoxEAX.SuspendLayout();
+            this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX0000000B
@@ -80,6 +81,195 @@
             this.groupBoxEAX0000000B.TabIndex = 2;
             this.groupBoxEAX0000000B.TabStop = false;
             this.groupBoxEAX0000000B.Text = "EAX=0x0000000B";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex);
+            this.groupBoxEDX.Controls.Add(this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 293);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(506, 56);
+            this.groupBoxEDX.TabIndex = 46;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex
+            // 
+            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.AutoSize = true;
+            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Location = new System.Drawing.Point(6, 22);
+            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Name = "labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex";
+            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Size = new System.Drawing.Size(322, 13);
+            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.TabIndex = 1;
+            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Text = "x2APIC ID – always valid – does not vary with sub-leaf index [0-31]:";
+            // 
+            // textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex
+            // 
+            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Name = "textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex";
+            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.TabIndex = 0;
+            // 
+            // groupBoxECX
+            // 
+            this.groupBoxECX.Controls.Add(this.textBoxDomainType);
+            this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX16_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX8_15_DomainType);
+            this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX0_7_InputECXSubLeafIndex);
+            this.groupBoxECX.Controls.Add(this.textBoxEAX0000000BECX16_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.textBoxEAX0000000BECX8_15_DomainType);
+            this.groupBoxECX.Controls.Add(this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 182);
+            this.groupBoxECX.Name = "groupBoxECX";
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 105);
+            this.groupBoxECX.TabIndex = 45;
+            this.groupBoxECX.TabStop = false;
+            this.groupBoxECX.Text = "ECX";
+            // 
+            // textBoxDomainType
+            // 
+            this.textBoxDomainType.Location = new System.Drawing.Point(194, 45);
+            this.textBoxDomainType.Name = "textBoxDomainType";
+            this.textBoxDomainType.Size = new System.Drawing.Size(200, 20);
+            this.textBoxDomainType.TabIndex = 6;
+            // 
+            // labelEAX0000000BECX16_31_Reserved
+            // 
+            this.labelEAX0000000BECX16_31_Reserved.AutoSize = true;
+            this.labelEAX0000000BECX16_31_Reserved.Location = new System.Drawing.Point(6, 74);
+            this.labelEAX0000000BECX16_31_Reserved.Name = "labelEAX0000000BECX16_31_Reserved";
+            this.labelEAX0000000BECX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labelEAX0000000BECX16_31_Reserved.TabIndex = 5;
+            this.labelEAX0000000BECX16_31_Reserved.Text = "Reserved [16-31]:";
+            // 
+            // labelEAX0000000BECX8_15_DomainType
+            // 
+            this.labelEAX0000000BECX8_15_DomainType.AutoSize = true;
+            this.labelEAX0000000BECX8_15_DomainType.Location = new System.Drawing.Point(6, 48);
+            this.labelEAX0000000BECX8_15_DomainType.Name = "labelEAX0000000BECX8_15_DomainType";
+            this.labelEAX0000000BECX8_15_DomainType.Size = new System.Drawing.Size(103, 13);
+            this.labelEAX0000000BECX8_15_DomainType.TabIndex = 4;
+            this.labelEAX0000000BECX8_15_DomainType.Text = "Domain Type [8-15]:";
+            // 
+            // labelEAX0000000BECX0_7_InputECXSubLeafIndex
+            // 
+            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.AutoSize = true;
+            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Location = new System.Drawing.Point(6, 22);
+            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Name = "labelEAX0000000BECX0_7_InputECXSubLeafIndex";
+            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Size = new System.Drawing.Size(150, 13);
+            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.TabIndex = 3;
+            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Text = "Input ECX sub-leaf index [0-7]:";
+            // 
+            // textBoxEAX0000000BECX16_31_Reserved
+            // 
+            this.textBoxEAX0000000BECX16_31_Reserved.Location = new System.Drawing.Point(400, 71);
+            this.textBoxEAX0000000BECX16_31_Reserved.Name = "textBoxEAX0000000BECX16_31_Reserved";
+            this.textBoxEAX0000000BECX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BECX16_31_Reserved.TabIndex = 2;
+            // 
+            // textBoxEAX0000000BECX8_15_DomainType
+            // 
+            this.textBoxEAX0000000BECX8_15_DomainType.Location = new System.Drawing.Point(400, 45);
+            this.textBoxEAX0000000BECX8_15_DomainType.Name = "textBoxEAX0000000BECX8_15_DomainType";
+            this.textBoxEAX0000000BECX8_15_DomainType.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BECX8_15_DomainType.TabIndex = 1;
+            // 
+            // textBoxEAX0000000BECX0_7_InputECXSubLeafIndex
+            // 
+            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Name = "textBoxEAX0000000BECX0_7_InputECXSubLeafIndex";
+            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.TabIndex = 0;
+            // 
+            // groupBoxEBX
+            // 
+            this.groupBoxEBX.Controls.Add(this.labelEAX0000000BEBX16_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors);
+            this.groupBoxEBX.Controls.Add(this.textBoxEAX0000000BEBX16_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 102);
+            this.groupBoxEBX.Name = "groupBoxEBX";
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 74);
+            this.groupBoxEBX.TabIndex = 44;
+            this.groupBoxEBX.TabStop = false;
+            this.groupBoxEBX.Text = "EBX";
+            // 
+            // labelEAX0000000BEBX16_31_Reserved
+            // 
+            this.labelEAX0000000BEBX16_31_Reserved.AutoSize = true;
+            this.labelEAX0000000BEBX16_31_Reserved.Location = new System.Drawing.Point(6, 43);
+            this.labelEAX0000000BEBX16_31_Reserved.Name = "labelEAX0000000BEBX16_31_Reserved";
+            this.labelEAX0000000BEBX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labelEAX0000000BEBX16_31_Reserved.TabIndex = 3;
+            this.labelEAX0000000BEBX16_31_Reserved.Text = "Reserved [16-31]:";
+            // 
+            // labelEAX0000000BEBX0_15_NumberOfLogicalProcessors
+            // 
+            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.AutoSize = true;
+            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Location = new System.Drawing.Point(6, 17);
+            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Name = "labelEAX0000000BEBX0_15_NumberOfLogicalProcessors";
+            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Size = new System.Drawing.Size(357, 13);
+            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.TabIndex = 2;
+            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Text = "Number of logical processors across all the instances of this domain [0-15]:";
+            // 
+            // textBoxEAX0000000BEBX16_31_Reserved
+            // 
+            this.textBoxEAX0000000BEBX16_31_Reserved.Location = new System.Drawing.Point(400, 40);
+            this.textBoxEAX0000000BEBX16_31_Reserved.Name = "textBoxEAX0000000BEBX16_31_Reserved";
+            this.textBoxEAX0000000BEBX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BEBX16_31_Reserved.TabIndex = 1;
+            // 
+            // textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors
+            // 
+            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.Location = new System.Drawing.Point(400, 14);
+            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.Name = "textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors";
+            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.TabIndex = 0;
+            // 
+            // groupBoxEAX
+            // 
+            this.groupBoxEAX.Controls.Add(this.labelEAX0000000BEAX5_31_Reserved);
+            this.groupBoxEAX.Controls.Add(this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain);
+            this.groupBoxEAX.Controls.Add(this.textBoxEAX0000000BEAX5_31_Reserved);
+            this.groupBoxEAX.Controls.Add(this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain);
+            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
+            this.groupBoxEAX.Name = "groupBoxEAX";
+            this.groupBoxEAX.Size = new System.Drawing.Size(506, 77);
+            this.groupBoxEAX.TabIndex = 43;
+            this.groupBoxEAX.TabStop = false;
+            this.groupBoxEAX.Text = "EAX";
+            // 
+            // labelEAX0000000BEAX5_31_Reserved
+            // 
+            this.labelEAX0000000BEAX5_31_Reserved.AutoSize = true;
+            this.labelEAX0000000BEAX5_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelEAX0000000BEAX5_31_Reserved.Name = "labelEAX0000000BEAX5_31_Reserved";
+            this.labelEAX0000000BEAX5_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEAX0000000BEAX5_31_Reserved.TabIndex = 3;
+            this.labelEAX0000000BEAX5_31_Reserved.Text = "Reserved [5-31]:";
+            // 
+            // labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain
+            // 
+            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.AutoSize = true;
+            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Location = new System.Drawing.Point(6, 22);
+            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Name = "labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain";
+            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Size = new System.Drawing.Size(359, 13);
+            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.TabIndex = 2;
+            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Text = "Number of bits that x2APIC ID must be shifted to right for next domain [0-4]:";
+            // 
+            // textBoxEAX0000000BEAX5_31_Reserved
+            // 
+            this.textBoxEAX0000000BEAX5_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxEAX0000000BEAX5_31_Reserved.Name = "textBoxEAX0000000BEAX5_31_Reserved";
+            this.textBoxEAX0000000BEAX5_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BEAX5_31_Reserved.TabIndex = 1;
+            // 
+            // textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain
+            // 
+            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Name = "textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomai" +
+    "n";
+            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.TabIndex = 0;
             // 
             // groupBoxAll
             // 
@@ -161,195 +351,6 @@
             this.labelEAX0000000BEDX.TabIndex = 9;
             this.labelEAX0000000BEDX.Text = "EDX:";
             // 
-            // groupBoxEAX
-            // 
-            this.groupBoxEAX.Controls.Add(this.labelEAX0000000BEAX5_31_Reserved);
-            this.groupBoxEAX.Controls.Add(this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain);
-            this.groupBoxEAX.Controls.Add(this.textBoxEAX0000000BEAX5_31_Reserved);
-            this.groupBoxEAX.Controls.Add(this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain);
-            this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
-            this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(506, 77);
-            this.groupBoxEAX.TabIndex = 43;
-            this.groupBoxEAX.TabStop = false;
-            this.groupBoxEAX.Text = "EAX";
-            // 
-            // textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain
-            // 
-            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Name = "textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomai" +
-    "n";
-            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.TabIndex = 0;
-            // 
-            // textBoxEAX0000000BEAX5_31_Reserved
-            // 
-            this.textBoxEAX0000000BEAX5_31_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBoxEAX0000000BEAX5_31_Reserved.Name = "textBoxEAX0000000BEAX5_31_Reserved";
-            this.textBoxEAX0000000BEAX5_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BEAX5_31_Reserved.TabIndex = 1;
-            // 
-            // labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain
-            // 
-            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.AutoSize = true;
-            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Location = new System.Drawing.Point(6, 22);
-            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Name = "labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain";
-            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Size = new System.Drawing.Size(359, 13);
-            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.TabIndex = 2;
-            this.labelEAX0000000BEAX0_4_NumberOfBitsThatX2APICIDMustBeShiftedToRightForNextDomain.Text = "Number of bits that x2APIC ID must be shifted to right for next domain [0-4]:";
-            // 
-            // labelEAX0000000BEAX5_31_Reserved
-            // 
-            this.labelEAX0000000BEAX5_31_Reserved.AutoSize = true;
-            this.labelEAX0000000BEAX5_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelEAX0000000BEAX5_31_Reserved.Name = "labelEAX0000000BEAX5_31_Reserved";
-            this.labelEAX0000000BEAX5_31_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEAX0000000BEAX5_31_Reserved.TabIndex = 3;
-            this.labelEAX0000000BEAX5_31_Reserved.Text = "Reserved [5-31]:";
-            // 
-            // groupBoxEBX
-            // 
-            this.groupBoxEBX.Controls.Add(this.labelEAX0000000BEBX16_31_Reserved);
-            this.groupBoxEBX.Controls.Add(this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors);
-            this.groupBoxEBX.Controls.Add(this.textBoxEAX0000000BEBX16_31_Reserved);
-            this.groupBoxEBX.Controls.Add(this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors);
-            this.groupBoxEBX.Location = new System.Drawing.Point(264, 102);
-            this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(506, 74);
-            this.groupBoxEBX.TabIndex = 44;
-            this.groupBoxEBX.TabStop = false;
-            this.groupBoxEBX.Text = "EBX";
-            // 
-            // groupBoxECX
-            // 
-            this.groupBoxECX.Controls.Add(this.textBoxDomainType);
-            this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX16_31_Reserved);
-            this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX8_15_DomainType);
-            this.groupBoxECX.Controls.Add(this.labelEAX0000000BECX0_7_InputECXSubLeafIndex);
-            this.groupBoxECX.Controls.Add(this.textBoxEAX0000000BECX16_31_Reserved);
-            this.groupBoxECX.Controls.Add(this.textBoxEAX0000000BECX8_15_DomainType);
-            this.groupBoxECX.Controls.Add(this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 182);
-            this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(506, 105);
-            this.groupBoxECX.TabIndex = 45;
-            this.groupBoxECX.TabStop = false;
-            this.groupBoxECX.Text = "ECX";
-            // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Controls.Add(this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex);
-            this.groupBoxEDX.Controls.Add(this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 293);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(506, 56);
-            this.groupBoxEDX.TabIndex = 46;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors
-            // 
-            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.Location = new System.Drawing.Point(400, 14);
-            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.Name = "textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors";
-            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BEBX0_15_NumberOfLogicalProcessors.TabIndex = 0;
-            // 
-            // textBoxEAX0000000BEBX16_31_Reserved
-            // 
-            this.textBoxEAX0000000BEBX16_31_Reserved.Location = new System.Drawing.Point(400, 40);
-            this.textBoxEAX0000000BEBX16_31_Reserved.Name = "textBoxEAX0000000BEBX16_31_Reserved";
-            this.textBoxEAX0000000BEBX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BEBX16_31_Reserved.TabIndex = 1;
-            // 
-            // textBoxEAX0000000BECX0_7_InputECXSubLeafIndex
-            // 
-            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Name = "textBoxEAX0000000BECX0_7_InputECXSubLeafIndex";
-            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BECX0_7_InputECXSubLeafIndex.TabIndex = 0;
-            // 
-            // textBoxEAX0000000BECX8_15_DomainType
-            // 
-            this.textBoxEAX0000000BECX8_15_DomainType.Location = new System.Drawing.Point(400, 45);
-            this.textBoxEAX0000000BECX8_15_DomainType.Name = "textBoxEAX0000000BECX8_15_DomainType";
-            this.textBoxEAX0000000BECX8_15_DomainType.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BECX8_15_DomainType.TabIndex = 1;
-            // 
-            // textBoxEAX0000000BECX16_31_Reserved
-            // 
-            this.textBoxEAX0000000BECX16_31_Reserved.Location = new System.Drawing.Point(400, 71);
-            this.textBoxEAX0000000BECX16_31_Reserved.Name = "textBoxEAX0000000BECX16_31_Reserved";
-            this.textBoxEAX0000000BECX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BECX16_31_Reserved.TabIndex = 2;
-            // 
-            // textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex
-            // 
-            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Name = "textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex";
-            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.TabIndex = 0;
-            // 
-            // labelEAX0000000BEBX0_15_NumberOfLogicalProcessors
-            // 
-            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.AutoSize = true;
-            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Location = new System.Drawing.Point(6, 17);
-            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Name = "labelEAX0000000BEBX0_15_NumberOfLogicalProcessors";
-            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Size = new System.Drawing.Size(357, 13);
-            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.TabIndex = 2;
-            this.labelEAX0000000BEBX0_15_NumberOfLogicalProcessors.Text = "Number of logical processors across all the instances of this domain [0-15]:";
-            // 
-            // labelEAX0000000BEBX16_31_Reserved
-            // 
-            this.labelEAX0000000BEBX16_31_Reserved.AutoSize = true;
-            this.labelEAX0000000BEBX16_31_Reserved.Location = new System.Drawing.Point(6, 43);
-            this.labelEAX0000000BEBX16_31_Reserved.Name = "labelEAX0000000BEBX16_31_Reserved";
-            this.labelEAX0000000BEBX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEAX0000000BEBX16_31_Reserved.TabIndex = 3;
-            this.labelEAX0000000BEBX16_31_Reserved.Text = "Reserved [16-31]:";
-            // 
-            // labelEAX0000000BECX0_7_InputECXSubLeafIndex
-            // 
-            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.AutoSize = true;
-            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Location = new System.Drawing.Point(6, 22);
-            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Name = "labelEAX0000000BECX0_7_InputECXSubLeafIndex";
-            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Size = new System.Drawing.Size(150, 13);
-            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.TabIndex = 3;
-            this.labelEAX0000000BECX0_7_InputECXSubLeafIndex.Text = "Input ECX sub-leaf index [0-7]:";
-            // 
-            // labelEAX0000000BECX8_15_DomainType
-            // 
-            this.labelEAX0000000BECX8_15_DomainType.AutoSize = true;
-            this.labelEAX0000000BECX8_15_DomainType.Location = new System.Drawing.Point(6, 48);
-            this.labelEAX0000000BECX8_15_DomainType.Name = "labelEAX0000000BECX8_15_DomainType";
-            this.labelEAX0000000BECX8_15_DomainType.Size = new System.Drawing.Size(103, 13);
-            this.labelEAX0000000BECX8_15_DomainType.TabIndex = 4;
-            this.labelEAX0000000BECX8_15_DomainType.Text = "Domain Type [8-15]:";
-            // 
-            // labelEAX0000000BECX16_31_Reserved
-            // 
-            this.labelEAX0000000BECX16_31_Reserved.AutoSize = true;
-            this.labelEAX0000000BECX16_31_Reserved.Location = new System.Drawing.Point(6, 74);
-            this.labelEAX0000000BECX16_31_Reserved.Name = "labelEAX0000000BECX16_31_Reserved";
-            this.labelEAX0000000BECX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEAX0000000BECX16_31_Reserved.TabIndex = 5;
-            this.labelEAX0000000BECX16_31_Reserved.Text = "Reserved [16-31]:";
-            // 
-            // labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex
-            // 
-            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.AutoSize = true;
-            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Location = new System.Drawing.Point(6, 22);
-            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Name = "labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex";
-            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Size = new System.Drawing.Size(322, 13);
-            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.TabIndex = 1;
-            this.labelEAX0000000BEDX0_31_X2APICIDAlwaysValidDoesNotVaryWithSubLeafIndex.Text = "x2APIC ID – always valid – does not vary with sub-leaf index [0-31]:";
-            // 
-            // textBoxDomainType
-            // 
-            this.textBoxDomainType.Location = new System.Drawing.Point(194, 45);
-            this.textBoxDomainType.Name = "textBoxDomainType";
-            this.textBoxDomainType.Size = new System.Drawing.Size(200, 20);
-            this.textBoxDomainType.TabIndex = 6;
-            // 
             // EAX0000000B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,20 +358,21 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX0000000B);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX0000000B";
             this.Text = "EAX=0x0000000B: Intel Thread/Core and Cache Topology";
             this.groupBoxEAX0000000B.ResumeLayout(false);
-            this.groupBoxAll.ResumeLayout(false);
-            this.groupBoxAll.PerformLayout();
-            this.groupBoxEAX.ResumeLayout(false);
-            this.groupBoxEAX.PerformLayout();
-            this.groupBoxEBX.ResumeLayout(false);
-            this.groupBoxEBX.PerformLayout();
-            this.groupBoxECX.ResumeLayout(false);
-            this.groupBoxECX.PerformLayout();
             this.groupBoxEDX.ResumeLayout(false);
             this.groupBoxEDX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
+            this.groupBoxEAX.ResumeLayout(false);
+            this.groupBoxEAX.PerformLayout();
+            this.groupBoxAll.ResumeLayout(false);
+            this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
 
         }

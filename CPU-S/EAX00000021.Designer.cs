@@ -28,11 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000021));
             this.groupBoxEAX00000021 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxVendorId = new System.Windows.Forms.TextBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.textBoxMaxSubleafHex = new System.Windows.Forms.TextBox();
+            this.labelMaxSubleaf = new System.Windows.Forms.Label();
+            this.textBoxMaxSubleaf = new System.Windows.Forms.TextBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.textBoxEDXVendorIdHex = new System.Windows.Forms.TextBox();
+            this.labelEDXVendorId = new System.Windows.Forms.Label();
+            this.textBoxEDXVendorId = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.textBoxECXVendorIdHex = new System.Windows.Forms.TextBox();
+            this.labelECXVendorId = new System.Windows.Forms.Label();
+            this.textBoxECXVendorId = new System.Windows.Forms.TextBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.textBoxEBXVendorIdHex = new System.Windows.Forms.TextBox();
+            this.labelEBXVendorId = new System.Windows.Forms.Label();
+            this.textBoxEBXVendorId = new System.Windows.Forms.TextBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX = new System.Windows.Forms.TextBox();
             this.labelEAX = new System.Windows.Forms.Label();
@@ -42,28 +58,13 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
-            this.textBoxMaxSubleaf = new System.Windows.Forms.TextBox();
-            this.labelMaxSubleaf = new System.Windows.Forms.Label();
-            this.labelEBXVendorId = new System.Windows.Forms.Label();
-            this.textBoxEBXVendorId = new System.Windows.Forms.TextBox();
-            this.labelECXVendorId = new System.Windows.Forms.Label();
-            this.textBoxECXVendorId = new System.Windows.Forms.TextBox();
-            this.labelEDXVendorId = new System.Windows.Forms.Label();
-            this.textBoxEDXVendorId = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxVendorId = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxEDXVendorIdHex = new System.Windows.Forms.TextBox();
-            this.textBoxECXVendorIdHex = new System.Windows.Forms.TextBox();
-            this.textBoxEBXVendorIdHex = new System.Windows.Forms.TextBox();
-            this.textBoxMaxSubleafHex = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000021.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX00000021
@@ -82,6 +83,33 @@
             this.groupBoxEAX00000021.Tag = "000000";
             this.groupBoxEAX00000021.Text = "EAX=0x00000021";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textBoxVendorId);
+            this.groupBox1.Location = new System.Drawing.Point(264, 219);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(506, 44);
+            this.groupBox1.TabIndex = 61;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "EBX ECX EDX";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Vendor ID:";
+            // 
+            // textBoxVendorId
+            // 
+            this.textBoxVendorId.Location = new System.Drawing.Point(400, 18);
+            this.textBoxVendorId.Name = "textBoxVendorId";
+            this.textBoxVendorId.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVendorId.TabIndex = 0;
+            // 
             // groupBoxEAX
             // 
             this.groupBoxEAX.Controls.Add(this.textBoxMaxSubleafHex);
@@ -93,6 +121,29 @@
             this.groupBoxEAX.TabIndex = 60;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
+            // 
+            // textBoxMaxSubleafHex
+            // 
+            this.textBoxMaxSubleafHex.Location = new System.Drawing.Point(294, 15);
+            this.textBoxMaxSubleafHex.Name = "textBoxMaxSubleafHex";
+            this.textBoxMaxSubleafHex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaxSubleafHex.TabIndex = 2;
+            // 
+            // labelMaxSubleaf
+            // 
+            this.labelMaxSubleaf.AutoSize = true;
+            this.labelMaxSubleaf.Location = new System.Drawing.Point(10, 18);
+            this.labelMaxSubleaf.Name = "labelMaxSubleaf";
+            this.labelMaxSubleaf.Size = new System.Drawing.Size(102, 13);
+            this.labelMaxSubleaf.TabIndex = 1;
+            this.labelMaxSubleaf.Text = "Max Sub-leaf [0-31]:";
+            // 
+            // textBoxMaxSubleaf
+            // 
+            this.textBoxMaxSubleaf.Location = new System.Drawing.Point(400, 15);
+            this.textBoxMaxSubleaf.Name = "textBoxMaxSubleaf";
+            this.textBoxMaxSubleaf.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaxSubleaf.TabIndex = 0;
             // 
             // groupBoxEDX
             // 
@@ -106,6 +157,29 @@
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
+            // textBoxEDXVendorIdHex
+            // 
+            this.textBoxEDXVendorIdHex.Location = new System.Drawing.Point(294, 18);
+            this.textBoxEDXVendorIdHex.Name = "textBoxEDXVendorIdHex";
+            this.textBoxEDXVendorIdHex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXVendorIdHex.TabIndex = 6;
+            // 
+            // labelEDXVendorId
+            // 
+            this.labelEDXVendorId.AutoSize = true;
+            this.labelEDXVendorId.Location = new System.Drawing.Point(10, 21);
+            this.labelEDXVendorId.Name = "labelEDXVendorId";
+            this.labelEDXVendorId.Size = new System.Drawing.Size(88, 13);
+            this.labelEDXVendorId.TabIndex = 5;
+            this.labelEDXVendorId.Text = "Vendor ID [0-31]:";
+            // 
+            // textBoxEDXVendorId
+            // 
+            this.textBoxEDXVendorId.Location = new System.Drawing.Point(400, 18);
+            this.textBoxEDXVendorId.Name = "textBoxEDXVendorId";
+            this.textBoxEDXVendorId.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXVendorId.TabIndex = 4;
+            // 
             // groupBoxECX
             // 
             this.groupBoxECX.Controls.Add(this.textBoxECXVendorIdHex);
@@ -118,6 +192,29 @@
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
+            // textBoxECXVendorIdHex
+            // 
+            this.textBoxECXVendorIdHex.Location = new System.Drawing.Point(294, 13);
+            this.textBoxECXVendorIdHex.Name = "textBoxECXVendorIdHex";
+            this.textBoxECXVendorIdHex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECXVendorIdHex.TabIndex = 6;
+            // 
+            // labelECXVendorId
+            // 
+            this.labelECXVendorId.AutoSize = true;
+            this.labelECXVendorId.Location = new System.Drawing.Point(10, 16);
+            this.labelECXVendorId.Name = "labelECXVendorId";
+            this.labelECXVendorId.Size = new System.Drawing.Size(88, 13);
+            this.labelECXVendorId.TabIndex = 5;
+            this.labelECXVendorId.Text = "Vendor ID [0-31]:";
+            // 
+            // textBoxECXVendorId
+            // 
+            this.textBoxECXVendorId.Location = new System.Drawing.Point(400, 13);
+            this.textBoxECXVendorId.Name = "textBoxECXVendorId";
+            this.textBoxECXVendorId.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECXVendorId.TabIndex = 4;
+            // 
             // groupBoxEBX
             // 
             this.groupBoxEBX.Controls.Add(this.textBoxEBXVendorIdHex);
@@ -129,6 +226,29 @@
             this.groupBoxEBX.TabIndex = 57;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
+            // 
+            // textBoxEBXVendorIdHex
+            // 
+            this.textBoxEBXVendorIdHex.Location = new System.Drawing.Point(294, 17);
+            this.textBoxEBXVendorIdHex.Name = "textBoxEBXVendorIdHex";
+            this.textBoxEBXVendorIdHex.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXVendorIdHex.TabIndex = 4;
+            // 
+            // labelEBXVendorId
+            // 
+            this.labelEBXVendorId.AutoSize = true;
+            this.labelEBXVendorId.Location = new System.Drawing.Point(10, 20);
+            this.labelEBXVendorId.Name = "labelEBXVendorId";
+            this.labelEBXVendorId.Size = new System.Drawing.Size(88, 13);
+            this.labelEBXVendorId.TabIndex = 3;
+            this.labelEBXVendorId.Text = "Vendor ID [0-31]:";
+            // 
+            // textBoxEBXVendorId
+            // 
+            this.textBoxEBXVendorId.Location = new System.Drawing.Point(400, 17);
+            this.textBoxEBXVendorId.Name = "textBoxEBXVendorId";
+            this.textBoxEBXVendorId.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBXVendorId.TabIndex = 2;
             // 
             // groupBoxAll
             // 
@@ -210,125 +330,6 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
-            // textBoxMaxSubleaf
-            // 
-            this.textBoxMaxSubleaf.Location = new System.Drawing.Point(400, 15);
-            this.textBoxMaxSubleaf.Name = "textBoxMaxSubleaf";
-            this.textBoxMaxSubleaf.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaxSubleaf.TabIndex = 0;
-            // 
-            // labelMaxSubleaf
-            // 
-            this.labelMaxSubleaf.AutoSize = true;
-            this.labelMaxSubleaf.Location = new System.Drawing.Point(10, 18);
-            this.labelMaxSubleaf.Name = "labelMaxSubleaf";
-            this.labelMaxSubleaf.Size = new System.Drawing.Size(102, 13);
-            this.labelMaxSubleaf.TabIndex = 1;
-            this.labelMaxSubleaf.Text = "Max Sub-leaf [0-31]:";
-            // 
-            // labelEBXVendorId
-            // 
-            this.labelEBXVendorId.AutoSize = true;
-            this.labelEBXVendorId.Location = new System.Drawing.Point(10, 20);
-            this.labelEBXVendorId.Name = "labelEBXVendorId";
-            this.labelEBXVendorId.Size = new System.Drawing.Size(88, 13);
-            this.labelEBXVendorId.TabIndex = 3;
-            this.labelEBXVendorId.Text = "Vendor ID [0-31]:";
-            // 
-            // textBoxEBXVendorId
-            // 
-            this.textBoxEBXVendorId.Location = new System.Drawing.Point(400, 17);
-            this.textBoxEBXVendorId.Name = "textBoxEBXVendorId";
-            this.textBoxEBXVendorId.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBXVendorId.TabIndex = 2;
-            // 
-            // labelECXVendorId
-            // 
-            this.labelECXVendorId.AutoSize = true;
-            this.labelECXVendorId.Location = new System.Drawing.Point(10, 16);
-            this.labelECXVendorId.Name = "labelECXVendorId";
-            this.labelECXVendorId.Size = new System.Drawing.Size(88, 13);
-            this.labelECXVendorId.TabIndex = 5;
-            this.labelECXVendorId.Text = "Vendor ID [0-31]:";
-            // 
-            // textBoxECXVendorId
-            // 
-            this.textBoxECXVendorId.Location = new System.Drawing.Point(400, 13);
-            this.textBoxECXVendorId.Name = "textBoxECXVendorId";
-            this.textBoxECXVendorId.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECXVendorId.TabIndex = 4;
-            // 
-            // labelEDXVendorId
-            // 
-            this.labelEDXVendorId.AutoSize = true;
-            this.labelEDXVendorId.Location = new System.Drawing.Point(10, 21);
-            this.labelEDXVendorId.Name = "labelEDXVendorId";
-            this.labelEDXVendorId.Size = new System.Drawing.Size(88, 13);
-            this.labelEDXVendorId.TabIndex = 5;
-            this.labelEDXVendorId.Text = "Vendor ID [0-31]:";
-            // 
-            // textBoxEDXVendorId
-            // 
-            this.textBoxEDXVendorId.Location = new System.Drawing.Point(400, 18);
-            this.textBoxEDXVendorId.Name = "textBoxEDXVendorId";
-            this.textBoxEDXVendorId.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDXVendorId.TabIndex = 4;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxVendorId);
-            this.groupBox1.Location = new System.Drawing.Point(264, 219);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(506, 44);
-            this.groupBox1.TabIndex = 61;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "EBX ECX EDX";
-            // 
-            // textBoxVendorId
-            // 
-            this.textBoxVendorId.Location = new System.Drawing.Point(400, 18);
-            this.textBoxVendorId.Name = "textBoxVendorId";
-            this.textBoxVendorId.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVendorId.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Vendor ID:";
-            // 
-            // textBoxEDXVendorIdHex
-            // 
-            this.textBoxEDXVendorIdHex.Location = new System.Drawing.Point(294, 18);
-            this.textBoxEDXVendorIdHex.Name = "textBoxEDXVendorIdHex";
-            this.textBoxEDXVendorIdHex.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDXVendorIdHex.TabIndex = 6;
-            // 
-            // textBoxECXVendorIdHex
-            // 
-            this.textBoxECXVendorIdHex.Location = new System.Drawing.Point(294, 13);
-            this.textBoxECXVendorIdHex.Name = "textBoxECXVendorIdHex";
-            this.textBoxECXVendorIdHex.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECXVendorIdHex.TabIndex = 6;
-            // 
-            // textBoxEBXVendorIdHex
-            // 
-            this.textBoxEBXVendorIdHex.Location = new System.Drawing.Point(294, 17);
-            this.textBoxEBXVendorIdHex.Name = "textBoxEBXVendorIdHex";
-            this.textBoxEBXVendorIdHex.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBXVendorIdHex.TabIndex = 4;
-            // 
-            // textBoxMaxSubleafHex
-            // 
-            this.textBoxMaxSubleafHex.Location = new System.Drawing.Point(294, 15);
-            this.textBoxMaxSubleafHex.Name = "textBoxMaxSubleafHex";
-            this.textBoxMaxSubleafHex.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaxSubleafHex.TabIndex = 2;
-            // 
             // EAX00000021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,10 +337,13 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX00000021);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000021";
             this.Text = "EAX=0x00000021: Reserved for TDX (Trust Domain eXtensions)  enumeration";
             this.groupBoxEAX00000021.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBoxEAX.ResumeLayout(false);
             this.groupBoxEAX.PerformLayout();
             this.groupBoxEDX.ResumeLayout(false);
@@ -350,8 +354,6 @@
             this.groupBoxEBX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }

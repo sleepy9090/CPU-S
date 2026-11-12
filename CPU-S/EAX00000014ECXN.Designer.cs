@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000014ECXN));
             this.groupBoxEAX00000014ECX1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEDX0_31Reserved = new System.Windows.Forms.Label();
+            this.textBoxEDX0_31Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
             this.labelReservedECX16_31 = new System.Windows.Forms.Label();
             this.textBoxReservedECX16_31 = new System.Windows.Forms.TextBox();
@@ -73,15 +77,12 @@
             this.labelEAX14ECX1EBX = new System.Windows.Forms.Label();
             this.labelEAX14ECX1ECX = new System.Windows.Forms.Label();
             this.labelEAX14ECX1EDX = new System.Windows.Forms.Label();
-            this.groupBoxEDX = new System.Windows.Forms.GroupBox();
-            this.labelEDX0_31Reserved = new System.Windows.Forms.Label();
-            this.textBoxEDX0_31Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000014ECX1.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
-            this.groupBoxEDX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxEAX00000014ECX1
@@ -97,6 +98,33 @@
             this.groupBoxEAX00000014ECX1.TabIndex = 4;
             this.groupBoxEAX00000014ECX1.TabStop = false;
             this.groupBoxEAX00000014ECX1.Text = "EAX=0x00000014 ECX=0x1..N";
+            // 
+            // groupBoxEDX
+            // 
+            this.groupBoxEDX.Controls.Add(this.labelEDX0_31Reserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDX0_31Reserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 19);
+            this.groupBoxEDX.Name = "groupBoxEDX";
+            this.groupBoxEDX.Size = new System.Drawing.Size(252, 54);
+            this.groupBoxEDX.TabIndex = 45;
+            this.groupBoxEDX.TabStop = false;
+            this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelEDX0_31Reserved
+            // 
+            this.labelEDX0_31Reserved.AutoSize = true;
+            this.labelEDX0_31Reserved.Location = new System.Drawing.Point(3, 22);
+            this.labelEDX0_31Reserved.Name = "labelEDX0_31Reserved";
+            this.labelEDX0_31Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDX0_31Reserved.TabIndex = 1;
+            this.labelEDX0_31Reserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxEDX0_31Reserved
+            // 
+            this.textBoxEDX0_31Reserved.Location = new System.Drawing.Point(111, 19);
+            this.textBoxEDX0_31Reserved.Name = "textBoxEDX0_31Reserved";
+            this.textBoxEDX0_31Reserved.Size = new System.Drawing.Size(129, 20);
+            this.textBoxEDX0_31Reserved.TabIndex = 0;
             // 
             // groupBoxECX
             // 
@@ -494,33 +522,6 @@
             this.labelEAX14ECX1EDX.TabIndex = 9;
             this.labelEAX14ECX1EDX.Text = "EDX:";
             // 
-            // groupBoxEDX
-            // 
-            this.groupBoxEDX.Controls.Add(this.labelEDX0_31Reserved);
-            this.groupBoxEDX.Controls.Add(this.textBoxEDX0_31Reserved);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 19);
-            this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(252, 54);
-            this.groupBoxEDX.TabIndex = 45;
-            this.groupBoxEDX.TabStop = false;
-            this.groupBoxEDX.Text = "EDX";
-            // 
-            // labelEDX0_31Reserved
-            // 
-            this.labelEDX0_31Reserved.AutoSize = true;
-            this.labelEDX0_31Reserved.Location = new System.Drawing.Point(3, 22);
-            this.labelEDX0_31Reserved.Name = "labelEDX0_31Reserved";
-            this.labelEDX0_31Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEDX0_31Reserved.TabIndex = 1;
-            this.labelEDX0_31Reserved.Text = "Reserved [0-31]:";
-            // 
-            // textBoxEDX0_31Reserved
-            // 
-            this.textBoxEDX0_31Reserved.Location = new System.Drawing.Point(111, 19);
-            this.textBoxEDX0_31Reserved.Name = "textBoxEDX0_31Reserved";
-            this.textBoxEDX0_31Reserved.Size = new System.Drawing.Size(129, 20);
-            this.textBoxEDX0_31Reserved.TabIndex = 0;
-            // 
             // EAX00000014ECXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -528,11 +529,14 @@
             this.ClientSize = new System.Drawing.Size(1004, 725);
             this.Controls.Add(this.groupBoxEAX00000014ECX1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000014ECXN";
             this.Text = "EAX=0x00000014, ECX=0x1..N: Processor Trace packet generation information in EAX," +
     " EBX, and ECX - Details";
             this.groupBoxEAX00000014ECX1.ResumeLayout(false);
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
             this.groupBoxECX.ResumeLayout(false);
             this.groupBoxECX.PerformLayout();
             this.groupBoxEBX.ResumeLayout(false);
@@ -541,8 +545,6 @@
             this.groupBoxEAX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
-            this.groupBoxEDX.ResumeLayout(false);
-            this.groupBoxEDX.PerformLayout();
             this.ResumeLayout(false);
 
         }

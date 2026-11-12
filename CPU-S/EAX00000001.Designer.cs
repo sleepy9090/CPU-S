@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000001));
             this.groupBoxEAX00000001 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDXBits = new System.Windows.Forms.GroupBox();
             this.checkBoxEAX1EDX31_PBE = new System.Windows.Forms.CheckBox();
@@ -1235,6 +1236,7 @@
             this.ClientSize = new System.Drawing.Size(1264, 985);
             this.Controls.Add(this.groupBoxEAX00000001);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000001";
             this.Text = "EAX=0x00000001: Processor Info and Feature Bits";
