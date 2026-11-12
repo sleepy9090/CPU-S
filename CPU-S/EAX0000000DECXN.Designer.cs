@@ -78,7 +78,7 @@
             this.groupBoxEAX0000000DECX1.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX0000000DECX1.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX0000000DECX1.Name = "groupBoxEAX0000000DECX1";
-            this.groupBoxEAX0000000DECX1.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX0000000DECX1.Size = new System.Drawing.Size(776, 394);
             this.groupBoxEAX0000000DECX1.TabIndex = 1;
             this.groupBoxEAX0000000DECX1.TabStop = false;
             this.groupBoxEAX0000000DECX1.Text = "EAX=0x0000000D";
@@ -112,7 +112,7 @@
             // 
             // buttonNext
             // 
-            this.buttonNext.Location = new System.Drawing.Point(695, 397);
+            this.buttonNext.Location = new System.Drawing.Point(695, 360);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(75, 23);
             this.buttonNext.TabIndex = 46;
@@ -351,7 +351,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 418);
             this.Controls.Add(this.groupBoxEAX0000000DECX1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

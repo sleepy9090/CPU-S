@@ -72,7 +72,7 @@
             this.groupBoxEAX0000000F.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX0000000F.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX0000000F.Name = "groupBoxEAX0000000F";
-            this.groupBoxEAX0000000F.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX0000000F.Size = new System.Drawing.Size(776, 304);
             this.groupBoxEAX0000000F.TabIndex = 0;
             this.groupBoxEAX0000000F.TabStop = false;
             this.groupBoxEAX0000000F.Text = "EAX=0x0000000F";
@@ -305,7 +305,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 324);
             this.Controls.Add(this.groupBoxEAX0000000F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
