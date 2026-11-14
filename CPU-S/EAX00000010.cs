@@ -1,4 +1,10 @@
-﻿
+﻿/*
+    File           EAX00000010.cs
+    Brief          Form for displaying EAX=0x00000010 CPU information.
+    Copyright      2026 Shawn M. Crawford [sleepy]
+    Date           11/14/2026
+    Author         Shawn M. Crawford [sleepy]
+*/
 using System.Windows.Forms;
 
 namespace CPU_S

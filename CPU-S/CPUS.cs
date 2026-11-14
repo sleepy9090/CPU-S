@@ -1861,5 +1861,35 @@ namespace CPU_S
             EAX0000001BECX1 eAX0000001BECX1 = new EAX0000001BECX1();
             eAX0000001BECX1.ShowDialog();
         }
+
+        private void eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000010ECX1 eAX00000010ECX1 = new EAX00000010ECX1();
+            eAX00000010ECX1.ShowDialog();
+        }
+
+        private void eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000010ECX2 eAX00000010ECX2 = new EAX00000010ECX2();
+            eAX00000010ECX2.ShowDialog();
+        }
+
+        private void eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000010ECX3 eAX00000010ECX3 = new EAX00000010ECX3();
+            eAX00000010ECX3.ShowDialog();
+        }
+
+        private void eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000010ECX5 eAX00000010ECX5 = new EAX00000010ECX5();
+            eAX00000010ECX5.ShowDialog();
+        }
+
+        private void eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000010ECX6 eAX00000010ECX6 = new EAX00000010ECX6();
+            eAX00000010ECX6.ShowDialog();
+        }
     }
 }
