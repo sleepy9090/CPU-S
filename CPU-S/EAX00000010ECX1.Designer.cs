@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000010ECX1));
-            this.groupBoxEAXX = new System.Windows.Forms.GroupBox();
+            this.groupBoxEAX00000010ECX1 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
@@ -53,13 +53,13 @@
             this.checkBoxECX1ISE049_ISE050 = new System.Windows.Forms.CheckBox();
             this.checkBoxECX2CodeDataPrioritization = new System.Windows.Forms.CheckBox();
             this.checkBoxECX3NonContiguousCapacityBitmasks = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxECX4_31_Reserved = new System.Windows.Forms.TextBox();
             this.labelECX4_31_Reserved = new System.Windows.Forms.Label();
             this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN = new System.Windows.Forms.TextBox();
             this.textBoxEDX16_31_Reserved = new System.Windows.Forms.TextBox();
             this.labelEDX0_15_HighestCOSNumberSupportedForResourceN = new System.Windows.Forms.Label();
             this.labelEDX16_31_Reserved = new System.Windows.Forms.Label();
-            this.groupBoxEAXX.SuspendLayout();
+            this.groupBoxEAX00000010ECX1.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
@@ -67,19 +67,19 @@
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBoxEAXX
+            // groupBoxEAX00000010ECX1
             // 
-            this.groupBoxEAXX.Controls.Add(this.groupBoxEAX);
-            this.groupBoxEAXX.Controls.Add(this.groupBoxEDX);
-            this.groupBoxEAXX.Controls.Add(this.groupBoxECX);
-            this.groupBoxEAXX.Controls.Add(this.groupBoxEBX);
-            this.groupBoxEAXX.Controls.Add(this.groupBoxAll);
-            this.groupBoxEAXX.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxEAXX.Name = "groupBoxEAXX";
-            this.groupBoxEAXX.Size = new System.Drawing.Size(776, 426);
-            this.groupBoxEAXX.TabIndex = 19;
-            this.groupBoxEAXX.TabStop = false;
-            this.groupBoxEAXX.Text = "EAX=0x00000010, ECX=0x00000001";
+            this.groupBoxEAX00000010ECX1.Controls.Add(this.groupBoxEAX);
+            this.groupBoxEAX00000010ECX1.Controls.Add(this.groupBoxEDX);
+            this.groupBoxEAX00000010ECX1.Controls.Add(this.groupBoxECX);
+            this.groupBoxEAX00000010ECX1.Controls.Add(this.groupBoxEBX);
+            this.groupBoxEAX00000010ECX1.Controls.Add(this.groupBoxAll);
+            this.groupBoxEAX00000010ECX1.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxEAX00000010ECX1.Name = "groupBoxEAX00000010ECX1";
+            this.groupBoxEAX00000010ECX1.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX00000010ECX1.TabIndex = 19;
+            this.groupBoxEAX00000010ECX1.TabStop = false;
+            this.groupBoxEAX00000010ECX1.Text = "EAX=0x00000010, ECX=0x00000001";
             // 
             // groupBoxEAX
             // 
@@ -110,7 +110,7 @@
             // groupBoxECX
             // 
             this.groupBoxECX.Controls.Add(this.labelECX4_31_Reserved);
-            this.groupBoxECX.Controls.Add(this.textBox1);
+            this.groupBoxECX.Controls.Add(this.textBoxECX4_31_Reserved);
             this.groupBoxECX.Controls.Add(this.checkBoxECX3NonContiguousCapacityBitmasks);
             this.groupBoxECX.Controls.Add(this.checkBoxECX2CodeDataPrioritization);
             this.groupBoxECX.Controls.Add(this.checkBoxECX1ISE049_ISE050);
@@ -302,12 +302,12 @@
             this.checkBoxECX3NonContiguousCapacityBitmasks.Text = "Non-contiguous capacity bitmasks [3]";
             this.checkBoxECX3NonContiguousCapacityBitmasks.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxECX4_31_Reserved
             // 
-            this.textBox1.Location = new System.Drawing.Point(400, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.textBoxECX4_31_Reserved.Location = new System.Drawing.Point(400, 121);
+            this.textBoxECX4_31_Reserved.Name = "textBoxECX4_31_Reserved";
+            this.textBoxECX4_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX4_31_Reserved.TabIndex = 4;
             // 
             // labelECX4_31_Reserved
             // 
@@ -355,13 +355,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBoxEAXX);
+            this.Controls.Add(this.groupBoxEAX00000010ECX1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000010ECX1";
             this.Text = "EAX=0x00000010 ECX=0x00000001 - L3 - RDT-A (QoS allocation) Enumeration";
-            this.groupBoxEAXX.ResumeLayout(false);
+            this.groupBoxEAX00000010ECX1.ResumeLayout(false);
             this.groupBoxEAX.ResumeLayout(false);
             this.groupBoxEAX.PerformLayout();
             this.groupBoxEDX.ResumeLayout(false);
@@ -378,7 +378,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxEAXX;
+        private System.Windows.Forms.GroupBox groupBoxEAX00000010ECX1;
         private System.Windows.Forms.GroupBox groupBoxEAX;
         private System.Windows.Forms.GroupBox groupBoxEDX;
         private System.Windows.Forms.GroupBox groupBoxECX;
@@ -403,7 +403,7 @@
         private System.Windows.Forms.TextBox textBoxEDX16_31_Reserved;
         private System.Windows.Forms.TextBox textBoxEDX0_15_HighestCOSNumberSupportedForResourceN;
         private System.Windows.Forms.Label labelECX4_31_Reserved;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxECX4_31_Reserved;
         private System.Windows.Forms.CheckBox checkBoxECX3NonContiguousCapacityBitmasks;
         private System.Windows.Forms.CheckBox checkBoxECX2CodeDataPrioritization;
         private System.Windows.Forms.CheckBox checkBoxECX1ISE049_ISE050;
