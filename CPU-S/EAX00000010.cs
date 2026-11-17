@@ -37,6 +37,20 @@ namespace CPU_S
             textBoxECX.Text = cpuHelper.GetEAX00000010ECXX();
             textBoxEDX.Text = cpuHelper.GetEAX00000010EDXX();
 
+            textBoxEAXReserved.Text = cpuHelper.GetEAX00000010EAX_ReservedX();
+            checkBoxEBX0Reserved.Checked = cpuHelper.GetEAX00000010EBX0_ReservedIsSupportedX();
+            checkBoxEBX1L3CacheQoSEnforcement.Checked = cpuHelper.GetEAX00000010EBX1_L3CacheQoSEnforcementIsSupportedX();
+            checkBoxEBX2L2CacheQoSEnforcement.Checked = cpuHelper.GetEAX00000010EBX2_L2CacheQoSEnforcementIsSupportedX();
+            checkBoxEBX3MBAMemoryBandwidthAllocation.Checked = cpuHelper.GetEAX00000010EBX3_MBAMemoryBandwidthAllocationIsSupportedX();
+            checkBoxEBX4Reserved.Checked = cpuHelper.GetEAX00000010EBX4_ReservedIsSupportedX();
+            checkBoxEBX5CBACacheBandwidthAllocation.Checked = cpuHelper.GetEAX00000010EBX5_CBACacheBandwidthAllocationIsSupportedX();
+            checkBoxEBX6RPResourcePriority.Checked = cpuHelper.GetEAX00000010EBX6_RPResourcePriorityIsSupportedX();
+            textBoxEBX7_31_Reserved.Text = cpuHelper.GetEAX00000010EBX_7_31_ReservedX();
+            textBoxECXReserved.Text = cpuHelper.GetEAX00000010ECX_ReservedX();
+            checkBoxEDX0Reserved.Checked = cpuHelper.GetEAX00000010EDX0_ReservedIsSupportedX();
+            checkBoxEDX1AMDAPM.Checked = cpuHelper.GetEAX00000010EDX1_AMDAPMIsSupportedX();
+            textBoxEDX2_31_Reserved.Text = cpuHelper.GetEAX00000010EDX_2_31_ReservedX();
+
             #endregion
 
         }

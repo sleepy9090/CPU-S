@@ -36,6 +36,8 @@ namespace CPU_S
             textBoxECX.Text = cpuHelper.GetEAX00000010ECX1ECXX();
             textBoxEDX.Text = cpuHelper.GetEAX00000010ECX1EDXX();
 
+            //textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.Text = 
+
             #endregion
         }
     }
