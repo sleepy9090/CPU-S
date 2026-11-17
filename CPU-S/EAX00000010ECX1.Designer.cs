@@ -31,9 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000010ECX1));
             this.groupBoxEAX00000010ECX1 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN = new System.Windows.Forms.Label();
+            this.labelEAX5_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxEAX5_31_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN = new System.Windows.Forms.TextBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEDX16_31_Reserved = new System.Windows.Forms.Label();
+            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN = new System.Windows.Forms.Label();
+            this.textBoxEDX16_31_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelECX4_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxECX4_31_Reserved = new System.Windows.Forms.TextBox();
+            this.checkBoxECX3NonContiguousCapacityBitmasks = new System.Windows.Forms.CheckBox();
+            this.checkBoxECX2CodeDataPrioritization = new System.Windows.Forms.CheckBox();
+            this.checkBoxECX1ISE049_ISE050 = new System.Windows.Forms.CheckBox();
+            this.checkBoxECX0Reserved = new System.Windows.Forms.CheckBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits = new System.Windows.Forms.Label();
+            this.textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits = new System.Windows.Forms.TextBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX = new System.Windows.Forms.TextBox();
             this.labelEAX = new System.Windows.Forms.Label();
@@ -43,22 +59,6 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
-            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN = new System.Windows.Forms.TextBox();
-            this.textBoxEAX5_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEAX5_31_Reserved = new System.Windows.Forms.Label();
-            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN = new System.Windows.Forms.Label();
-            this.labelEBXReserved = new System.Windows.Forms.Label();
-            this.textBoxEBXReserved = new System.Windows.Forms.TextBox();
-            this.checkBoxECX0Reserved = new System.Windows.Forms.CheckBox();
-            this.checkBoxECX1ISE049_ISE050 = new System.Windows.Forms.CheckBox();
-            this.checkBoxECX2CodeDataPrioritization = new System.Windows.Forms.CheckBox();
-            this.checkBoxECX3NonContiguousCapacityBitmasks = new System.Windows.Forms.CheckBox();
-            this.textBoxECX4_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelECX4_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN = new System.Windows.Forms.TextBox();
-            this.textBoxEDX16_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN = new System.Windows.Forms.Label();
-            this.labelEDX16_31_Reserved = new System.Windows.Forms.Label();
             this.groupBoxEAX00000010ECX1.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
@@ -94,6 +94,38 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
+            // labelEAX0_4_LengthOfCapacityBitMaskForResourceN
+            // 
+            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.AutoSize = true;
+            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Location = new System.Drawing.Point(6, 22);
+            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Name = "labelEAX0_4_LengthOfCapacityBitMaskForResourceN";
+            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Size = new System.Drawing.Size(352, 13);
+            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.TabIndex = 3;
+            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Text = "Length of capacity bit mask for resource n using minus-one notation [0-4]:";
+            // 
+            // labelEAX5_31_Reserved
+            // 
+            this.labelEAX5_31_Reserved.AutoSize = true;
+            this.labelEAX5_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelEAX5_31_Reserved.Name = "labelEAX5_31_Reserved";
+            this.labelEAX5_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEAX5_31_Reserved.TabIndex = 2;
+            this.labelEAX5_31_Reserved.Text = "Reserved [5-31]:";
+            // 
+            // textBoxEAX5_31_Reserved
+            // 
+            this.textBoxEAX5_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxEAX5_31_Reserved.Name = "textBoxEAX5_31_Reserved";
+            this.textBoxEAX5_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX5_31_Reserved.TabIndex = 1;
+            // 
+            // textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN
+            // 
+            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.Name = "textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN";
+            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.TabIndex = 0;
+            // 
             // groupBoxEDX
             // 
             this.groupBoxEDX.Controls.Add(this.labelEDX16_31_Reserved);
@@ -106,6 +138,38 @@
             this.groupBoxEDX.TabIndex = 51;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelEDX16_31_Reserved
+            // 
+            this.labelEDX16_31_Reserved.AutoSize = true;
+            this.labelEDX16_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelEDX16_31_Reserved.Name = "labelEDX16_31_Reserved";
+            this.labelEDX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labelEDX16_31_Reserved.TabIndex = 3;
+            this.labelEDX16_31_Reserved.Text = "Reserved [16-31]:";
+            // 
+            // labelEDX0_15_HighestCOSNumberSupportedForResourceN
+            // 
+            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.AutoSize = true;
+            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Location = new System.Drawing.Point(6, 22);
+            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Name = "labelEDX0_15_HighestCOSNumberSupportedForResourceN";
+            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Size = new System.Drawing.Size(257, 13);
+            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.TabIndex = 2;
+            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Text = "Highest COS number supported for resource n [0-15]:";
+            // 
+            // textBoxEDX16_31_Reserved
+            // 
+            this.textBoxEDX16_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxEDX16_31_Reserved.Name = "textBoxEDX16_31_Reserved";
+            this.textBoxEDX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDX16_31_Reserved.TabIndex = 1;
+            // 
+            // textBoxEDX0_15_HighestCOSNumberSupportedForResourceN
+            // 
+            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.Name = "textBoxEDX0_15_HighestCOSNumberSupportedForResourceN";
+            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.TabIndex = 0;
             // 
             // groupBoxECX
             // 
@@ -122,16 +186,89 @@
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
+            // labelECX4_31_Reserved
+            // 
+            this.labelECX4_31_Reserved.AutoSize = true;
+            this.labelECX4_31_Reserved.Location = new System.Drawing.Point(6, 124);
+            this.labelECX4_31_Reserved.Name = "labelECX4_31_Reserved";
+            this.labelECX4_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECX4_31_Reserved.TabIndex = 5;
+            this.labelECX4_31_Reserved.Text = "Reserved [4-31]:";
+            // 
+            // textBoxECX4_31_Reserved
+            // 
+            this.textBoxECX4_31_Reserved.Location = new System.Drawing.Point(400, 121);
+            this.textBoxECX4_31_Reserved.Name = "textBoxECX4_31_Reserved";
+            this.textBoxECX4_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX4_31_Reserved.TabIndex = 4;
+            // 
+            // checkBoxECX3NonContiguousCapacityBitmasks
+            // 
+            this.checkBoxECX3NonContiguousCapacityBitmasks.AutoSize = true;
+            this.checkBoxECX3NonContiguousCapacityBitmasks.Location = new System.Drawing.Point(9, 101);
+            this.checkBoxECX3NonContiguousCapacityBitmasks.Name = "checkBoxECX3NonContiguousCapacityBitmasks";
+            this.checkBoxECX3NonContiguousCapacityBitmasks.Size = new System.Drawing.Size(203, 17);
+            this.checkBoxECX3NonContiguousCapacityBitmasks.TabIndex = 3;
+            this.checkBoxECX3NonContiguousCapacityBitmasks.Text = "Non-contiguous capacity bitmasks [3]";
+            this.checkBoxECX3NonContiguousCapacityBitmasks.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxECX2CodeDataPrioritization
+            // 
+            this.checkBoxECX2CodeDataPrioritization.AutoSize = true;
+            this.checkBoxECX2CodeDataPrioritization.Location = new System.Drawing.Point(9, 78);
+            this.checkBoxECX2CodeDataPrioritization.Name = "checkBoxECX2CodeDataPrioritization";
+            this.checkBoxECX2CodeDataPrioritization.Size = new System.Drawing.Size(362, 17);
+            this.checkBoxECX2CodeDataPrioritization.TabIndex = 2;
+            this.checkBoxECX2CodeDataPrioritization.Text = "Code/data prioritization - set L3_QOS_CFG MSR bit 0 to 1 to enable [2]";
+            this.checkBoxECX2CodeDataPrioritization.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxECX1ISE049_ISE050
+            // 
+            this.checkBoxECX1ISE049_ISE050.AutoSize = true;
+            this.checkBoxECX1ISE049_ISE050.Location = new System.Drawing.Point(9, 42);
+            this.checkBoxECX1ISE049_ISE050.Name = "checkBoxECX1ISE049_ISE050";
+            this.checkBoxECX1ISE049_ISE050.Size = new System.Drawing.Size(372, 30);
+            this.checkBoxECX1ISE049_ISE050.TabIndex = 1;
+            this.checkBoxECX1ISE049_ISE050.Text = "(ISE 049) Was: Updates of COS should be infrequent\r\n(ISE 050) Now: Non-CPU agent " +
+    "present, supporting Intel RDT L3 CAT [1]";
+            this.checkBoxECX1ISE049_ISE050.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxECX0Reserved
+            // 
+            this.checkBoxECX0Reserved.AutoSize = true;
+            this.checkBoxECX0Reserved.Location = new System.Drawing.Point(9, 19);
+            this.checkBoxECX0Reserved.Name = "checkBoxECX0Reserved";
+            this.checkBoxECX0Reserved.Size = new System.Drawing.Size(90, 17);
+            this.checkBoxECX0Reserved.TabIndex = 0;
+            this.checkBoxECX0Reserved.Text = "Reserved [0]:";
+            this.checkBoxECX0Reserved.UseVisualStyleBackColor = true;
+            // 
             // groupBoxEBX
             // 
-            this.groupBoxEBX.Controls.Add(this.labelEBXReserved);
-            this.groupBoxEBX.Controls.Add(this.textBoxEBXReserved);
+            this.groupBoxEBX.Controls.Add(this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits);
+            this.groupBoxEBX.Controls.Add(this.textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits);
             this.groupBoxEBX.Location = new System.Drawing.Point(264, 101);
             this.groupBoxEBX.Name = "groupBoxEBX";
             this.groupBoxEBX.Size = new System.Drawing.Size(506, 55);
             this.groupBoxEBX.TabIndex = 49;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
+            // 
+            // labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits
+            // 
+            this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.AutoSize = true;
+            this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.Location = new System.Drawing.Point(6, 22);
+            this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.Name = "labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits";
+            this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.Size = new System.Drawing.Size(309, 13);
+            this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.TabIndex = 5;
+            this.labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.Text = "Bit-granular map of isolation/contention of allocation units [0-31]:";
+            // 
+            // textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits
+            // 
+            this.textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.Name = "textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits";
+            this.textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits.TabIndex = 4;
             // 
             // groupBoxAll
             // 
@@ -213,143 +350,6 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
-            // textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN
-            // 
-            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.Name = "textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN";
-            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN.TabIndex = 0;
-            // 
-            // textBoxEAX5_31_Reserved
-            // 
-            this.textBoxEAX5_31_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBoxEAX5_31_Reserved.Name = "textBoxEAX5_31_Reserved";
-            this.textBoxEAX5_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX5_31_Reserved.TabIndex = 1;
-            // 
-            // labelEAX5_31_Reserved
-            // 
-            this.labelEAX5_31_Reserved.AutoSize = true;
-            this.labelEAX5_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelEAX5_31_Reserved.Name = "labelEAX5_31_Reserved";
-            this.labelEAX5_31_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEAX5_31_Reserved.TabIndex = 2;
-            this.labelEAX5_31_Reserved.Text = "Reserved [5-31]:";
-            // 
-            // labelEAX0_4_LengthOfCapacityBitMaskForResourceN
-            // 
-            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.AutoSize = true;
-            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Location = new System.Drawing.Point(6, 22);
-            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Name = "labelEAX0_4_LengthOfCapacityBitMaskForResourceN";
-            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Size = new System.Drawing.Size(352, 13);
-            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.TabIndex = 3;
-            this.labelEAX0_4_LengthOfCapacityBitMaskForResourceN.Text = "Length of capacity bit mask for resource n using minus-one notation [0-4]:";
-            // 
-            // labelEBXReserved
-            // 
-            this.labelEBXReserved.AutoSize = true;
-            this.labelEBXReserved.Location = new System.Drawing.Point(6, 22);
-            this.labelEBXReserved.Name = "labelEBXReserved";
-            this.labelEBXReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEBXReserved.TabIndex = 5;
-            this.labelEBXReserved.Text = "Reserved [0-31]:";
-            // 
-            // textBoxEBXReserved
-            // 
-            this.textBoxEBXReserved.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEBXReserved.Name = "textBoxEBXReserved";
-            this.textBoxEBXReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBXReserved.TabIndex = 4;
-            // 
-            // checkBoxECX0Reserved
-            // 
-            this.checkBoxECX0Reserved.AutoSize = true;
-            this.checkBoxECX0Reserved.Location = new System.Drawing.Point(9, 19);
-            this.checkBoxECX0Reserved.Name = "checkBoxECX0Reserved";
-            this.checkBoxECX0Reserved.Size = new System.Drawing.Size(90, 17);
-            this.checkBoxECX0Reserved.TabIndex = 0;
-            this.checkBoxECX0Reserved.Text = "Reserved [0]:";
-            this.checkBoxECX0Reserved.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxECX1ISE049_ISE050
-            // 
-            this.checkBoxECX1ISE049_ISE050.AutoSize = true;
-            this.checkBoxECX1ISE049_ISE050.Location = new System.Drawing.Point(9, 42);
-            this.checkBoxECX1ISE049_ISE050.Name = "checkBoxECX1ISE049_ISE050";
-            this.checkBoxECX1ISE049_ISE050.Size = new System.Drawing.Size(372, 30);
-            this.checkBoxECX1ISE049_ISE050.TabIndex = 1;
-            this.checkBoxECX1ISE049_ISE050.Text = "(ISE 049) Was: Updates of COS should be infrequent\r\n(ISE 050) Now: Non-CPU agent " +
-    "present, supporting Intel RDT L3 CAT [1]";
-            this.checkBoxECX1ISE049_ISE050.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxECX2CodeDataPrioritization
-            // 
-            this.checkBoxECX2CodeDataPrioritization.AutoSize = true;
-            this.checkBoxECX2CodeDataPrioritization.Location = new System.Drawing.Point(9, 78);
-            this.checkBoxECX2CodeDataPrioritization.Name = "checkBoxECX2CodeDataPrioritization";
-            this.checkBoxECX2CodeDataPrioritization.Size = new System.Drawing.Size(362, 17);
-            this.checkBoxECX2CodeDataPrioritization.TabIndex = 2;
-            this.checkBoxECX2CodeDataPrioritization.Text = "Code/data prioritization - set L3_QOS_CFG MSR bit 0 to 1 to enable [2]";
-            this.checkBoxECX2CodeDataPrioritization.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxECX3NonContiguousCapacityBitmasks
-            // 
-            this.checkBoxECX3NonContiguousCapacityBitmasks.AutoSize = true;
-            this.checkBoxECX3NonContiguousCapacityBitmasks.Location = new System.Drawing.Point(9, 101);
-            this.checkBoxECX3NonContiguousCapacityBitmasks.Name = "checkBoxECX3NonContiguousCapacityBitmasks";
-            this.checkBoxECX3NonContiguousCapacityBitmasks.Size = new System.Drawing.Size(203, 17);
-            this.checkBoxECX3NonContiguousCapacityBitmasks.TabIndex = 3;
-            this.checkBoxECX3NonContiguousCapacityBitmasks.Text = "Non-contiguous capacity bitmasks [3]";
-            this.checkBoxECX3NonContiguousCapacityBitmasks.UseVisualStyleBackColor = true;
-            // 
-            // textBoxECX4_31_Reserved
-            // 
-            this.textBoxECX4_31_Reserved.Location = new System.Drawing.Point(400, 121);
-            this.textBoxECX4_31_Reserved.Name = "textBoxECX4_31_Reserved";
-            this.textBoxECX4_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECX4_31_Reserved.TabIndex = 4;
-            // 
-            // labelECX4_31_Reserved
-            // 
-            this.labelECX4_31_Reserved.AutoSize = true;
-            this.labelECX4_31_Reserved.Location = new System.Drawing.Point(6, 124);
-            this.labelECX4_31_Reserved.Name = "labelECX4_31_Reserved";
-            this.labelECX4_31_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelECX4_31_Reserved.TabIndex = 5;
-            this.labelECX4_31_Reserved.Text = "Reserved [4-31]:";
-            // 
-            // textBoxEDX0_15_HighestCOSNumberSupportedForResourceN
-            // 
-            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.Name = "textBoxEDX0_15_HighestCOSNumberSupportedForResourceN";
-            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.TabIndex = 0;
-            // 
-            // textBoxEDX16_31_Reserved
-            // 
-            this.textBoxEDX16_31_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBoxEDX16_31_Reserved.Name = "textBoxEDX16_31_Reserved";
-            this.textBoxEDX16_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDX16_31_Reserved.TabIndex = 1;
-            // 
-            // labelEDX0_15_HighestCOSNumberSupportedForResourceN
-            // 
-            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.AutoSize = true;
-            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Location = new System.Drawing.Point(6, 22);
-            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Name = "labelEDX0_15_HighestCOSNumberSupportedForResourceN";
-            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Size = new System.Drawing.Size(257, 13);
-            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.TabIndex = 2;
-            this.labelEDX0_15_HighestCOSNumberSupportedForResourceN.Text = "Highest COS number supported for resource n [0-15]:";
-            // 
-            // labelEDX16_31_Reserved
-            // 
-            this.labelEDX16_31_Reserved.AutoSize = true;
-            this.labelEDX16_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelEDX16_31_Reserved.Name = "labelEDX16_31_Reserved";
-            this.labelEDX16_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEDX16_31_Reserved.TabIndex = 3;
-            this.labelEDX16_31_Reserved.Text = "Reserved [16-31]:";
-            // 
             // EAX00000010ECX1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,8 +396,8 @@
         private System.Windows.Forms.TextBox textBoxEAX0_4_LengthOfCapacityBitMaskForResourceN;
         private System.Windows.Forms.Label labelEAX0_4_LengthOfCapacityBitMaskForResourceN;
         private System.Windows.Forms.Label labelEAX5_31_Reserved;
-        private System.Windows.Forms.Label labelEBXReserved;
-        private System.Windows.Forms.TextBox textBoxEBXReserved;
+        private System.Windows.Forms.Label labelEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits;
+        private System.Windows.Forms.TextBox textBoxEBX0_31_BitGranularMapOfIsolationContentionOfAllocationUnits;
         private System.Windows.Forms.Label labelEDX16_31_Reserved;
         private System.Windows.Forms.Label labelEDX0_15_HighestCOSNumberSupportedForResourceN;
         private System.Windows.Forms.TextBox textBoxEDX16_31_Reserved;
