@@ -36,6 +36,16 @@ namespace CPU_S
             textBoxECX.Text = cpuHelper.GetEAX00000010ECX5ECXX();
             textBoxEDX.Text = cpuHelper.GetEAX00000010ECX5EDXX();
 
+            textBoxEAX0_7_MaximumCBAThrottlingForResourceN.Text = cpuHelper.GetEAX00000010ECX5EAX_0_7_MaximumCBAThrottlingValueForResourceX();
+            textBoxEAX8_11_ScopeOfCBAQoS_Core_BW_Thrtl_nMSRsIsLogicalProcessor.Text = cpuHelper.GetEAX00000010ECX5EAX_8_11_ScopeOfCBAQoS_Core_BW_Thrtl_nMSRsIsLogicalProcessorX();
+            textBoxEAX12_31_Reserved.Text = cpuHelper.GetEAX00000010ECX5EAX_12_31_ReservedX();
+            textBoxEBXReserved.Text = cpuHelper.GetEAX00000010ECX5EBX_0_31_ReservedX();
+            textBoxECX0_2_Reserved.Text = cpuHelper.GetEAX00000010ECX5ECX_0_2_ReservedX();
+            checkBoxECX3ApproximatelyLinearResponse.Checked = cpuHelper.GetEAX00000010ECX5ECX3_ApproximatelyLinearResponseIsSupportedX();
+            textBoxECX4_31_Reserved.Text = cpuHelper.GetEAX00000010ECX5ECX_4_31_ReservedX();
+            textBoxEDX0_15_HighestCOSNumberSupportedForResourceN.Text = cpuHelper.GetEAX00000010ECX5EDX_0_15_HighestCOSNumberSupportedForResourceNX();
+            textBoxEDX16_31_Reserved.Text = cpuHelper.GetEAX00000010ECX5EDX_16_31_ReservedX();
+
             #endregion
         }
     }

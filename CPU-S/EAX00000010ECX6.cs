@@ -36,6 +36,13 @@ namespace CPU_S
             textBoxECX.Text = cpuHelper.GetEAX00000010ECX6ECXX();
             textBoxEDX.Text = cpuHelper.GetEAX00000010ECX6EDXX();
 
+            checkBoxEAX0ThreadEnableViaRESOURCE_PRIORITY_MSR.Checked = cpuHelper.GetEAX00000010ECX6EAX0_ThreadEnableViaRESOURCE_PRIORITY_MSRIsSupportedX();
+            checkBoxEAX1PackageEnableViaRESOURCE_PRIORITY_PKG_MSR.Checked = cpuHelper.GetEAX00000010ECX6EAX1_PackageEnableViaRESOURCE_PRIORITY_PKG_MSRIsSupportedX();
+            textBoxEAX2_31_Reserved.Text = cpuHelper.GetEAX00000010ECX6EAX_2_31_ReservedX();
+            textBoxEBXReserved.Text = cpuHelper.GetEAX00000010ECX6EBX_0_31_ReservedX();
+            textBoxECXReserved.Text = cpuHelper.GetEAX00000010ECX6ECX_0_31_ReservedX();
+            textBoxEDXReserved.Text = cpuHelper.GetEAX00000010ECX6EDX_0_31_ReservedX();
+
             #endregion
         }
     }
