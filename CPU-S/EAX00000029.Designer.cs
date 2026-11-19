@@ -43,7 +43,20 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
+            this.textBoxEAXMaxSubleaf = new System.Windows.Forms.TextBox();
+            this.labelEAXMaxSubleaf = new System.Windows.Forms.Label();
+            this.checkBoxEBX0_APX_NCI_NDD_NF = new System.Windows.Forms.CheckBox();
+            this.textBoxEBX1_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labelEBX1_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxECXReserved = new System.Windows.Forms.TextBox();
+            this.labelECXReserved = new System.Windows.Forms.Label();
+            this.labelEDXReserved = new System.Windows.Forms.Label();
+            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000029.SuspendLayout();
+            this.groupBoxEAX.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,36 +76,45 @@
             // 
             // groupBoxEAX
             // 
+            this.groupBoxEAX.Controls.Add(this.labelEAXMaxSubleaf);
+            this.groupBoxEAX.Controls.Add(this.textBoxEAXMaxSubleaf);
             this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
             this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEAX.Size = new System.Drawing.Size(506, 55);
             this.groupBoxEAX.TabIndex = 52;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
             // groupBoxEDX
             // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
+            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 216);
             this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEDX.Size = new System.Drawing.Size(506, 52);
             this.groupBoxEDX.TabIndex = 51;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
             // groupBoxECX
             // 
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
+            this.groupBoxECX.Controls.Add(this.labelECXReserved);
+            this.groupBoxECX.Controls.Add(this.textBoxECXReserved);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 158);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 52);
             this.groupBoxECX.TabIndex = 50;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
             // groupBoxEBX
             // 
-            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
+            this.groupBoxEBX.Controls.Add(this.labelEBX1_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.textBoxEBX1_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.checkBoxEBX0_APX_NCI_NDD_NF);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 80);
             this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEBX.Size = new System.Drawing.Size(512, 72);
             this.groupBoxEBX.TabIndex = 49;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
@@ -177,6 +199,80 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
+            // textBoxEAXMaxSubleaf
+            // 
+            this.textBoxEAXMaxSubleaf.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEAXMaxSubleaf.Name = "textBoxEAXMaxSubleaf";
+            this.textBoxEAXMaxSubleaf.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXMaxSubleaf.TabIndex = 0;
+            // 
+            // labelEAXMaxSubleaf
+            // 
+            this.labelEAXMaxSubleaf.AutoSize = true;
+            this.labelEAXMaxSubleaf.Location = new System.Drawing.Point(6, 22);
+            this.labelEAXMaxSubleaf.Name = "labelEAXMaxSubleaf";
+            this.labelEAXMaxSubleaf.Size = new System.Drawing.Size(100, 13);
+            this.labelEAXMaxSubleaf.TabIndex = 1;
+            this.labelEAXMaxSubleaf.Text = "Max sub-leaf [0-31]:";
+            // 
+            // checkBoxEBX0_APX_NCI_NDD_NF
+            // 
+            this.checkBoxEBX0_APX_NCI_NDD_NF.AutoSize = true;
+            this.checkBoxEBX0_APX_NCI_NDD_NF.Location = new System.Drawing.Point(9, 19);
+            this.checkBoxEBX0_APX_NCI_NDD_NF.Name = "checkBoxEBX0_APX_NCI_NDD_NF";
+            this.checkBoxEBX0_APX_NCI_NDD_NF.Size = new System.Drawing.Size(136, 17);
+            this.checkBoxEBX0_APX_NCI_NDD_NF.TabIndex = 0;
+            this.checkBoxEBX0_APX_NCI_NDD_NF.Text = "APX_NCI_NDD_NF [0]";
+            this.checkBoxEBX0_APX_NCI_NDD_NF.UseVisualStyleBackColor = true;
+            // 
+            // textBoxEBX1_31_Reserved
+            // 
+            this.textBoxEBX1_31_Reserved.Location = new System.Drawing.Point(400, 36);
+            this.textBoxEBX1_31_Reserved.Name = "textBoxEBX1_31_Reserved";
+            this.textBoxEBX1_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX1_31_Reserved.TabIndex = 1;
+            // 
+            // labelEBX1_31_Reserved
+            // 
+            this.labelEBX1_31_Reserved.AutoSize = true;
+            this.labelEBX1_31_Reserved.Location = new System.Drawing.Point(6, 43);
+            this.labelEBX1_31_Reserved.Name = "labelEBX1_31_Reserved";
+            this.labelEBX1_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEBX1_31_Reserved.TabIndex = 2;
+            this.labelEBX1_31_Reserved.Text = "Reserved [1-31]:";
+            // 
+            // textBoxECXReserved
+            // 
+            this.textBoxECXReserved.Location = new System.Drawing.Point(400, 19);
+            this.textBoxECXReserved.Name = "textBoxECXReserved";
+            this.textBoxECXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECXReserved.TabIndex = 0;
+            // 
+            // labelECXReserved
+            // 
+            this.labelECXReserved.AutoSize = true;
+            this.labelECXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelECXReserved.Name = "labelECXReserved";
+            this.labelECXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECXReserved.TabIndex = 1;
+            this.labelECXReserved.Text = "Reserved [0-31]:";
+            // 
+            // labelEDXReserved
+            // 
+            this.labelEDXReserved.AutoSize = true;
+            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXReserved.Name = "labelEDXReserved";
+            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDXReserved.TabIndex = 3;
+            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxEDXReserved
+            // 
+            this.textBoxEDXReserved.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
+            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXReserved.TabIndex = 2;
+            // 
             // EAX00000029
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +285,14 @@
             this.Name = "EAX00000029";
             this.Text = "EAX=0x00000029 - APX Information";
             this.groupBoxEAX00000029.ResumeLayout(false);
+            this.groupBoxEAX.ResumeLayout(false);
+            this.groupBoxEAX.PerformLayout();
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
@@ -211,5 +315,14 @@
         private System.Windows.Forms.Label labelEBX;
         private System.Windows.Forms.Label labelECX;
         private System.Windows.Forms.Label labelEDX;
+        private System.Windows.Forms.Label labelEAXMaxSubleaf;
+        private System.Windows.Forms.TextBox textBoxEAXMaxSubleaf;
+        private System.Windows.Forms.Label labelEBX1_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxEBX1_31_Reserved;
+        private System.Windows.Forms.CheckBox checkBoxEBX0_APX_NCI_NDD_NF;
+        private System.Windows.Forms.Label labelEDXReserved;
+        private System.Windows.Forms.TextBox textBoxEDXReserved;
+        private System.Windows.Forms.Label labelECXReserved;
+        private System.Windows.Forms.TextBox textBoxECXReserved;
     }
 }
