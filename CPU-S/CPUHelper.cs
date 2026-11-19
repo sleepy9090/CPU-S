@@ -21720,14 +21720,18 @@ namespace CPU_S
 
         #region EAX=0x0000001D: Intel AMX Tile Information
 
-        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX1DEAX();
+        #endregion
 
-        public string GetEAX1DEAXX()
+        #region EAX=0x0000001D, ECX=0x00000001: Intel AMX Tile Information - (palette 1)
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern IntPtr GetEAX0000001DECX1EAX();
+
+        public string GetEAX0000001DECX1EAXX()
         {
             try
             {
-                IntPtr eAX1DEAXPtr = GetEAX1DEAX();
+                IntPtr eAX1DEAXPtr = GetEAX0000001DECX1EAX();
                 string eAX1DEAXString = Marshal.PtrToStringAnsi(eAX1DEAXPtr);
 
                 return eAX1DEAXString;
@@ -21745,13 +21749,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX1DEBX();
+        public static extern IntPtr GetEAX0000001DECX1EBX();
 
-        public string GetEAX1DEBXX()
+        public string GetEAX0000001DECX1EBXX()
         {
             try
             {
-                IntPtr eAX1DEBXPtr = GetEAX1DEBX();
+                IntPtr eAX1DEBXPtr = GetEAX0000001DECX1EBX();
                 string eAX1DEBXString = Marshal.PtrToStringAnsi(eAX1DEBXPtr);
 
                 return eAX1DEBXString;
@@ -21769,13 +21773,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX1DECX();
+        public static extern IntPtr GetEAX0000001DECX1ECX();
 
-        public string GetEAX1DECXX()
+        public string GetEAX0000001DECX1ECXX()
         {
             try
             {
-                IntPtr eAX1DECXPtr = GetEAX1DECX();
+                IntPtr eAX1DECXPtr = GetEAX0000001DECX1ECX();
                 string eAX1DECXString = Marshal.PtrToStringAnsi(eAX1DECXPtr);
 
                 return eAX1DECXString;
@@ -21793,13 +21797,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern IntPtr GetEAX1DEDX();
+        public static extern IntPtr GetEAX0000001DECX1EDX();
 
-        public string GetEAX1DEDXX()
+        public string GetEAX0000001DECX1EDXX()
         {
             try
             {
-                IntPtr eAX1DEDXPtr = GetEAX1DEDX();
+                IntPtr eAX1DEDXPtr = GetEAX0000001DECX1EDX();
                 string eAX1DEDXString = Marshal.PtrToStringAnsi(eAX1DEDXPtr);
 
                 return eAX1DEDXString;
@@ -21815,15 +21819,15 @@ namespace CPU_S
                 return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
-        /*
+        
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX1DEAX0_15_TotalTileBytes();
+        public static extern int GetEAX0000001DECX1EAX0_15_TotalTileBytes();
 
-        public string GetEAX1DEAX0_15_TotalTileBytesX()
+        public string GetEAX0000001DECX1EAX0_15_TotalTileBytesX()
         {
             try
             {
-                int eAX1DEAX0_15_TotalTileBytesValue = GetEAX1DEAX0_15_TotalTileBytes();
+                int eAX1DEAX0_15_TotalTileBytesValue = GetEAX0000001DECX1EAX0_15_TotalTileBytes();
                 string eAX1DEAX0_15_TotalTileBytesString = eAX1DEAX0_15_TotalTileBytesValue.ToString();
 
                 return eAX1DEAX0_15_TotalTileBytesString;
@@ -21841,13 +21845,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX1DEAX16_31_BytesPerTile();
+        public static extern int GetEAX0000001DECX1EAX16_31_BytesPerTile();
 
-        public string GetEAX1DEAX16_31_BytesPerTileX()
+        public string GetEAX0000001DECX1EAX16_31_BytesPerTileX()
         {
             try
             {
-                int eAX1DEAX16_31_BytesPerTileValue = GetEAX1DEAX16_31_BytesPerTile();
+                int eAX1DEAX16_31_BytesPerTileValue = GetEAX0000001DECX1EAX16_31_BytesPerTile();
                 string eAX1DEAX16_31_BytesPerTileString = eAX1DEAX16_31_BytesPerTileValue.ToString();
 
                 return eAX1DEAX16_31_BytesPerTileString;
@@ -21865,13 +21869,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX1DEAX0_15_BytesPerRow();
+        public static extern int GetEAX0000001DECX1EBX0_15_BytesPerRow();
 
-        public string GetEAX1DEAX0_15_BytesPerRowX()
+        public string GetEAX0000001DECX1EBX0_15_BytesPerRowX()
         {
             try
             {
-                int eAX1DEAX0_15_BytesPerRowValue = GetEAX1DEAX0_15_BytesPerRow();
+                int eAX1DEAX0_15_BytesPerRowValue = GetEAX0000001DECX1EBX0_15_BytesPerRow();
                 string eAX1DEAX0_15_BytesPerRowString = eAX1DEAX0_15_BytesPerRowValue.ToString();
 
                 return eAX1DEAX0_15_BytesPerRowString;
@@ -21889,13 +21893,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX1DEAX16_31_MaxNames();
+        public static extern int GetEAX0000001DECX1EBX16_31_MaxNames();
 
-        public string GetEAX1DEAX16_31_MaxNamesX()
+        public string GetEAX0000001DECX1EBX16_31_MaxNamesX()
         {
             try
             {
-                int eAX1DEAX16_31_MaxNamesValue = GetEAX1DEAX16_31_MaxNames();
+                int eAX1DEAX16_31_MaxNamesValue = GetEAX0000001DECX1EBX16_31_MaxNames();
                 string eAX1DEAX16_31_MaxNamesString = eAX1DEAX16_31_MaxNamesValue.ToString();
 
                 return eAX1DEAX16_31_MaxNamesString;
@@ -21913,13 +21917,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        public static extern int GetEAX1DEAX0_15_MaxRows();
+        public static extern int GetEAX0000001DECX1ECX0_15_MaxRows();
 
-        public string GetEAX1DEAX0_15_MaxRowsX()
+        public string GetEAX0000001DECX1ECX0_15_MaxRowsX()
         {
             try
             {
-                int eAX1DEAX0_15_MaxRowsValue = GetEAX1DEAX0_15_MaxRows();
+                int eAX1DEAX0_15_MaxRowsValue = GetEAX0000001DECX1ECX0_15_MaxRows();
                 string eAX1DEAX0_15_MaxRowsString = eAX1DEAX0_15_MaxRowsValue.ToString();
 
                 return eAX1DEAX0_15_MaxRowsString;
@@ -21935,7 +21939,54 @@ namespace CPU_S
                 return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
-        */
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000001DECX1ECX16_31_Reserved();
+
+        public string GetEAX0000001DECX1ECX16_31_ReservedX()
+        {
+            try
+            {
+                int eAX1DEAX0_15_MaxRowsValue = GetEAX0000001DECX1ECX16_31_Reserved();
+                string eAX1DEAX0_15_MaxRowsString = eAX1DEAX0_15_MaxRowsValue.ToString();
+
+                return eAX1DEAX0_15_MaxRowsString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
+
+        [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetEAX0000001DECX1EDX0_31_Reserved();
+
+        public string GetEAX0000001DECX1EDX0_31_ReservedX()
+        {
+            try
+            {
+                int eAX1DEAX0_15_MaxRowsValue = GetEAX0000001DECX1EDX0_31_Reserved();
+                string eAX1DEAX0_15_MaxRowsString = eAX1DEAX0_15_MaxRowsValue.ToString();
+
+                return eAX1DEAX0_15_MaxRowsString;
+            }
+            catch (DllNotFoundException ex)
+            {
+                Console.WriteLine("Error: CPUIDBE.dll not found. CPU ID information cannot be determined. " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while checking for CPU ID information: " + ex.Message);
+                return CPUConstants.NOT_FOUND_OR_UNKNOWN;
+            }
+        }
 
         #endregion
 

@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAX1D.cs
-    Brief          Form for displaying EAX=0x1D CPU information.
+    File           EAX0000001DECX1.cs
+    Brief          Form for displaying EAX=0x0000001D ECX=0x00000001 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           11/19/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -32,16 +32,18 @@ namespace CPU_S
 
             #region EAX=0x1D: Intel AMX Tile Information
 
-            textBoxEAX1DEAX.Text = cpuHelper.GetEAX1DEAXX();
-            textBoxEAX1DEBX.Text = cpuHelper.GetEAX1DEBXX();
-            textBoxEAX1DECX.Text = cpuHelper.GetEAX1DECXX();
-            textBoxEAX1DEDX.Text = cpuHelper.GetEAX1DEDXX();
+            textBoxEAX1DEAX.Text = cpuHelper.GetEAX0000001DECX1EAXX();
+            textBoxEAX1DEBX.Text = cpuHelper.GetEAX0000001DECX1EBXX();
+            textBoxEAX1DECX.Text = cpuHelper.GetEAX0000001DECX1ECXX();
+            textBoxEAX1DEDX.Text = cpuHelper.GetEAX0000001DECX1EDXX();
 
-            //textBoxTotalTileBytes.Text = cpuHelper.GetEAX1DEAX0_15_TotalTileBytesX();
-            //textBoxBytesPerTile.Text = cpuHelper.GetEAX1DEAX16_31_BytesPerTileX();
-            //textBoxBytesPerRow.Text = cpuHelper.GetEAX1DEAX0_15_BytesPerRowX();
-            //textBoxMaxNames.Text = cpuHelper.GetEAX1DEAX16_31_MaxNamesX();
-            //textBoxMaxRows.Text = cpuHelper.GetEAX1DEAX0_15_MaxRowsX();
+            textBoxTotalTileBytes.Text = cpuHelper.GetEAX0000001DECX1EAX0_15_TotalTileBytesX();
+            textBoxBytesPerTile.Text = cpuHelper.GetEAX0000001DECX1EAX16_31_BytesPerTileX();
+            textBoxBytesPerRow.Text = cpuHelper.GetEAX0000001DECX1EBX0_15_BytesPerRowX();
+            textBoxMaxNames.Text = cpuHelper.GetEAX0000001DECX1EBX16_31_MaxNamesX();
+            textBoxMaxRows.Text = cpuHelper.GetEAX0000001DECX1ECX0_15_MaxRowsX();
+            textBoxECX16_31_Reserved.Text = cpuHelper.GetEAX0000001DECX1ECX16_31_ReservedX();
+            textBoxEDXReserved.Text = cpuHelper.GetEAX0000001DECX1EDX0_31_ReservedX();
 
             #endregion
         }
