@@ -43,7 +43,22 @@
             this.labelEAX17EBX = new System.Windows.Forms.Label();
             this.labelEAX17ECX = new System.Windows.Forms.Label();
             this.labelEAX17EDX = new System.Windows.Forms.Label();
+            this.textBoxEAXMaxSubleaf = new System.Windows.Forms.TextBox();
+            this.labelEAXMaxSubleaf = new System.Windows.Forms.Label();
+            this.textBoxEBX0_15_VendorID = new System.Windows.Forms.TextBox();
+            this.labelEBX0_15_VendorID = new System.Windows.Forms.Label();
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme = new System.Windows.Forms.CheckBox();
+            this.labelEBX17_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxEBX17_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labelECXProjectID = new System.Windows.Forms.Label();
+            this.textBoxECXProjectID = new System.Windows.Forms.TextBox();
+            this.labelEDXSteppingID = new System.Windows.Forms.Label();
+            this.textBoxEDXSteppingID = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000017.SuspendLayout();
+            this.groupBoxEAX.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,36 +78,47 @@
             // 
             // groupBoxEAX
             // 
+            this.groupBoxEAX.Controls.Add(this.labelEAXMaxSubleaf);
+            this.groupBoxEAX.Controls.Add(this.textBoxEAXMaxSubleaf);
             this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
             this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEAX.Size = new System.Drawing.Size(506, 50);
             this.groupBoxEAX.TabIndex = 60;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
             // groupBoxEDX
             // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
+            this.groupBoxEDX.Controls.Add(this.labelEDXSteppingID);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDXSteppingID);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 237);
             this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEDX.Size = new System.Drawing.Size(506, 50);
             this.groupBoxEDX.TabIndex = 59;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
             // groupBoxECX
             // 
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
+            this.groupBoxECX.Controls.Add(this.labelECXProjectID);
+            this.groupBoxECX.Controls.Add(this.textBoxECXProjectID);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 181);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 50);
             this.groupBoxECX.TabIndex = 58;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
             // groupBoxEBX
             // 
-            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
+            this.groupBoxEBX.Controls.Add(this.labelEBX17_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.textBoxEBX17_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme);
+            this.groupBoxEBX.Controls.Add(this.labelEBX0_15_VendorID);
+            this.groupBoxEBX.Controls.Add(this.textBoxEBX0_15_VendorID);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
             this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 100);
             this.groupBoxEBX.TabIndex = 57;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
@@ -177,6 +203,96 @@
             this.labelEAX17EDX.TabIndex = 9;
             this.labelEAX17EDX.Text = "EDX:";
             // 
+            // textBoxEAXMaxSubleaf
+            // 
+            this.textBoxEAXMaxSubleaf.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEAXMaxSubleaf.Name = "textBoxEAXMaxSubleaf";
+            this.textBoxEAXMaxSubleaf.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXMaxSubleaf.TabIndex = 0;
+            // 
+            // labelEAXMaxSubleaf
+            // 
+            this.labelEAXMaxSubleaf.AutoSize = true;
+            this.labelEAXMaxSubleaf.Location = new System.Drawing.Point(6, 22);
+            this.labelEAXMaxSubleaf.Name = "labelEAXMaxSubleaf";
+            this.labelEAXMaxSubleaf.Size = new System.Drawing.Size(100, 13);
+            this.labelEAXMaxSubleaf.TabIndex = 1;
+            this.labelEAXMaxSubleaf.Text = "Max sub-leaf [0-31]:";
+            // 
+            // textBoxEBX0_15_VendorID
+            // 
+            this.textBoxEBX0_15_VendorID.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEBX0_15_VendorID.Name = "textBoxEBX0_15_VendorID";
+            this.textBoxEBX0_15_VendorID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX0_15_VendorID.TabIndex = 0;
+            // 
+            // labelEBX0_15_VendorID
+            // 
+            this.labelEBX0_15_VendorID.AutoSize = true;
+            this.labelEBX0_15_VendorID.Location = new System.Drawing.Point(6, 22);
+            this.labelEBX0_15_VendorID.Name = "labelEBX0_15_VendorID";
+            this.labelEBX0_15_VendorID.Size = new System.Drawing.Size(163, 13);
+            this.labelEBX0_15_VendorID.TabIndex = 1;
+            this.labelEBX0_15_VendorID.Text = "Vendor ID (1=Spreadtrum) [0-15]:";
+            // 
+            // checkBoxVendorIDUsesIndustryStandardEnumerationScheme
+            // 
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.AutoSize = true;
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Location = new System.Drawing.Point(9, 43);
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Name = "checkBoxVendorIDUsesIndustryStandardEnumerationScheme";
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Size = new System.Drawing.Size(371, 17);
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.TabIndex = 2;
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Text = "Vendor ID uses industry standard enumeration scheme (0=no, 1=yes) [16]";
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.UseVisualStyleBackColor = true;
+            // 
+            // labelEBX17_31_Reserved
+            // 
+            this.labelEBX17_31_Reserved.AutoSize = true;
+            this.labelEBX17_31_Reserved.Location = new System.Drawing.Point(6, 67);
+            this.labelEBX17_31_Reserved.Name = "labelEBX17_31_Reserved";
+            this.labelEBX17_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labelEBX17_31_Reserved.TabIndex = 4;
+            this.labelEBX17_31_Reserved.Text = "Reserved [17-31]:";
+            // 
+            // textBoxEBX17_31_Reserved
+            // 
+            this.textBoxEBX17_31_Reserved.Location = new System.Drawing.Point(400, 64);
+            this.textBoxEBX17_31_Reserved.Name = "textBoxEBX17_31_Reserved";
+            this.textBoxEBX17_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX17_31_Reserved.TabIndex = 3;
+            // 
+            // labelECXProjectID
+            // 
+            this.labelECXProjectID.AutoSize = true;
+            this.labelECXProjectID.Location = new System.Drawing.Point(6, 22);
+            this.labelECXProjectID.Name = "labelECXProjectID";
+            this.labelECXProjectID.Size = new System.Drawing.Size(87, 13);
+            this.labelECXProjectID.TabIndex = 3;
+            this.labelECXProjectID.Text = "Project ID [0-31]:";
+            // 
+            // textBoxECXProjectID
+            // 
+            this.textBoxECXProjectID.Location = new System.Drawing.Point(400, 19);
+            this.textBoxECXProjectID.Name = "textBoxECXProjectID";
+            this.textBoxECXProjectID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECXProjectID.TabIndex = 2;
+            // 
+            // labelEDXSteppingID
+            // 
+            this.labelEDXSteppingID.AutoSize = true;
+            this.labelEDXSteppingID.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXSteppingID.Name = "labelEDXSteppingID";
+            this.labelEDXSteppingID.Size = new System.Drawing.Size(96, 13);
+            this.labelEDXSteppingID.TabIndex = 3;
+            this.labelEDXSteppingID.Text = "Stepping ID [0-31]:";
+            // 
+            // textBoxEDXSteppingID
+            // 
+            this.textBoxEDXSteppingID.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEDXSteppingID.Name = "textBoxEDXSteppingID";
+            this.textBoxEDXSteppingID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXSteppingID.TabIndex = 2;
+            // 
             // EAX00000017
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,8 +303,16 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000017";
-            this.Text = "EAX=0x00000017: SoC Vendor Attribute Enumeration";
+            this.Text = "EAX=0x00000017: SoC Vendor Attribute Enumeration - ECX=0x0 = (main)";
             this.groupBoxEAX00000017.ResumeLayout(false);
+            this.groupBoxEAX.ResumeLayout(false);
+            this.groupBoxEAX.PerformLayout();
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
@@ -211,5 +335,16 @@
         private System.Windows.Forms.GroupBox groupBoxEDX;
         private System.Windows.Forms.GroupBox groupBoxECX;
         private System.Windows.Forms.GroupBox groupBoxEBX;
+        private System.Windows.Forms.Label labelEAXMaxSubleaf;
+        private System.Windows.Forms.TextBox textBoxEAXMaxSubleaf;
+        private System.Windows.Forms.Label labelEBX17_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxEBX17_31_Reserved;
+        private System.Windows.Forms.CheckBox checkBoxVendorIDUsesIndustryStandardEnumerationScheme;
+        private System.Windows.Forms.Label labelEBX0_15_VendorID;
+        private System.Windows.Forms.TextBox textBoxEBX0_15_VendorID;
+        private System.Windows.Forms.Label labelEDXSteppingID;
+        private System.Windows.Forms.TextBox textBoxEDXSteppingID;
+        private System.Windows.Forms.Label labelECXProjectID;
+        private System.Windows.Forms.TextBox textBoxECXProjectID;
     }
 }
