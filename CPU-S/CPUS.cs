@@ -1281,7 +1281,7 @@ namespace CPU_S
 
         private void eAX0x1DIntelAMXTileInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX0000001D eAX0000001D = new EAX0000001D();
+            EAX0000001DECX1 eAX0000001D = new EAX0000001DECX1();
             eAX0000001D.ShowDialog();
         }
 

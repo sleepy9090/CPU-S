@@ -21815,7 +21815,7 @@ namespace CPU_S
                 return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
-
+        /*
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int GetEAX1DEAX0_15_TotalTileBytes();
 
@@ -21935,6 +21935,7 @@ namespace CPU_S
                 return CPUConstants.NOT_FOUND_OR_UNKNOWN;
             }
         }
+        */
 
         #endregion
 
