@@ -54,15 +54,15 @@
             this.checkBoxEBX2_LBR_CTL_3 = new System.Windows.Forms.CheckBox();
             this.labelEBX3_31_Reserved = new System.Windows.Forms.Label();
             this.textBoxEBX3_31_Reserved = new System.Windows.Forms.TextBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.checkBoxECX0_LBR_x_INFO_63 = new System.Windows.Forms.CheckBox();
+            this.checkBoxECX1_LBR_x_INFO_0_15_60 = new System.Windows.Forms.CheckBox();
+            this.checkBoxECX1_LBR_x_INFO_56_59 = new System.Windows.Forms.CheckBox();
+            this.labelECX3_15_Reserved = new System.Windows.Forms.Label();
+            this.textBoxECX3_15_Reserved = new System.Windows.Forms.TextBox();
+            this.textBoxECX16_19_EventLoggingBitmap = new System.Windows.Forms.TextBox();
+            this.textBoxECX_20_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labelECX16_19_EventLoggingBitmap = new System.Windows.Forms.Label();
+            this.labelECX_20_31_Reserved = new System.Windows.Forms.Label();
             this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
             this.labelEDXReserved = new System.Windows.Forms.Label();
             this.groupBoxEAX0000001C.SuspendLayout();
@@ -106,7 +106,7 @@
             // 
             this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
             this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 447);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 457);
             this.groupBoxEDX.Name = "groupBoxEDX";
             this.groupBoxEDX.Size = new System.Drawing.Size(506, 52);
             this.groupBoxEDX.TabIndex = 51;
@@ -115,18 +115,18 @@
             // 
             // groupBoxECX
             // 
-            this.groupBoxECX.Controls.Add(this.label6);
-            this.groupBoxECX.Controls.Add(this.label5);
-            this.groupBoxECX.Controls.Add(this.textBox6);
-            this.groupBoxECX.Controls.Add(this.textBox5);
-            this.groupBoxECX.Controls.Add(this.textBox4);
-            this.groupBoxECX.Controls.Add(this.label4);
-            this.groupBoxECX.Controls.Add(this.checkBox8);
-            this.groupBoxECX.Controls.Add(this.checkBox7);
-            this.groupBoxECX.Controls.Add(this.checkBox6);
+            this.groupBoxECX.Controls.Add(this.labelECX_20_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.labelECX16_19_EventLoggingBitmap);
+            this.groupBoxECX.Controls.Add(this.textBoxECX_20_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.textBoxECX16_19_EventLoggingBitmap);
+            this.groupBoxECX.Controls.Add(this.textBoxECX3_15_Reserved);
+            this.groupBoxECX.Controls.Add(this.labelECX3_15_Reserved);
+            this.groupBoxECX.Controls.Add(this.checkBoxECX1_LBR_x_INFO_56_59);
+            this.groupBoxECX.Controls.Add(this.checkBoxECX1_LBR_x_INFO_0_15_60);
+            this.groupBoxECX.Controls.Add(this.checkBoxECX0_LBR_x_INFO_63);
             this.groupBoxECX.Location = new System.Drawing.Point(264, 271);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(506, 170);
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 183);
             this.groupBoxECX.TabIndex = 50;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
@@ -323,83 +323,84 @@
             this.textBoxEBX3_31_Reserved.Size = new System.Drawing.Size(100, 20);
             this.textBoxEBX3_31_Reserved.TabIndex = 4;
             // 
-            // checkBox6
+            // checkBoxECX0_LBR_x_INFO_63
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 19);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(80, 17);
-            this.checkBox6.TabIndex = 0;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxECX0_LBR_x_INFO_63.AutoSize = true;
+            this.checkBoxECX0_LBR_x_INFO_63.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxECX0_LBR_x_INFO_63.Name = "checkBoxECX0_LBR_x_INFO_63";
+            this.checkBoxECX0_LBR_x_INFO_63.Size = new System.Drawing.Size(267, 17);
+            this.checkBoxECX0_LBR_x_INFO_63.TabIndex = 0;
+            this.checkBoxECX0_LBR_x_INFO_63.Text = "LBR_x_INFO[63] indicates branch misprediction [0]";
+            this.checkBoxECX0_LBR_x_INFO_63.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkBoxECX1_LBR_x_INFO_0_15_60
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(6, 42);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(80, 17);
-            this.checkBox7.TabIndex = 1;
-            this.checkBox7.Text = "checkBox7";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBoxECX1_LBR_x_INFO_0_15_60.AutoSize = true;
+            this.checkBoxECX1_LBR_x_INFO_0_15_60.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxECX1_LBR_x_INFO_0_15_60.Name = "checkBoxECX1_LBR_x_INFO_0_15_60";
+            this.checkBoxECX1_LBR_x_INFO_0_15_60.Size = new System.Drawing.Size(301, 30);
+            this.checkBoxECX1_LBR_x_INFO_0_15_60.TabIndex = 1;
+            this.checkBoxECX1_LBR_x_INFO_0_15_60.Text = "LBR_x_INFO[15...0] indicates cycles since last LBR entry\r\nLBR_x_INFO[60] indicate" +
+    "s whether cycle count is valid [1]";
+            this.checkBoxECX1_LBR_x_INFO_0_15_60.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkBoxECX1_LBR_x_INFO_56_59
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(6, 65);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(80, 17);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "checkBox8";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBoxECX1_LBR_x_INFO_56_59.AutoSize = true;
+            this.checkBoxECX1_LBR_x_INFO_56_59.Location = new System.Drawing.Point(6, 78);
+            this.checkBoxECX1_LBR_x_INFO_56_59.Name = "checkBoxECX1_LBR_x_INFO_56_59";
+            this.checkBoxECX1_LBR_x_INFO_56_59.Size = new System.Drawing.Size(247, 17);
+            this.checkBoxECX1_LBR_x_INFO_56_59.TabIndex = 2;
+            this.checkBoxECX1_LBR_x_INFO_56_59.Text = "LBR_x_INFO[59...56] indicates branch type [2]";
+            this.checkBoxECX1_LBR_x_INFO_56_59.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // labelECX3_15_Reserved
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.labelECX3_15_Reserved.AutoSize = true;
+            this.labelECX3_15_Reserved.Location = new System.Drawing.Point(6, 102);
+            this.labelECX3_15_Reserved.Name = "labelECX3_15_Reserved";
+            this.labelECX3_15_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECX3_15_Reserved.TabIndex = 3;
+            this.labelECX3_15_Reserved.Text = "Reserved [3-15]:";
             // 
-            // textBox4
+            // textBoxECX3_15_Reserved
             // 
-            this.textBox4.Location = new System.Drawing.Point(400, 86);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.textBoxECX3_15_Reserved.Location = new System.Drawing.Point(400, 99);
+            this.textBoxECX3_15_Reserved.Name = "textBoxECX3_15_Reserved";
+            this.textBoxECX3_15_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX3_15_Reserved.TabIndex = 4;
             // 
-            // textBox5
+            // textBoxECX16_19_EventLoggingBitmap
             // 
-            this.textBox5.Location = new System.Drawing.Point(400, 112);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.textBoxECX16_19_EventLoggingBitmap.Location = new System.Drawing.Point(400, 125);
+            this.textBoxECX16_19_EventLoggingBitmap.Name = "textBoxECX16_19_EventLoggingBitmap";
+            this.textBoxECX16_19_EventLoggingBitmap.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX16_19_EventLoggingBitmap.TabIndex = 5;
             // 
-            // textBox6
+            // textBoxECX_20_31_Reserved
             // 
-            this.textBox6.Location = new System.Drawing.Point(400, 138);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 6;
+            this.textBoxECX_20_31_Reserved.Location = new System.Drawing.Point(400, 151);
+            this.textBoxECX_20_31_Reserved.Name = "textBoxECX_20_31_Reserved";
+            this.textBoxECX_20_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX_20_31_Reserved.TabIndex = 6;
             // 
-            // label5
+            // labelECX16_19_EventLoggingBitmap
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "label5";
+            this.labelECX16_19_EventLoggingBitmap.AutoSize = true;
+            this.labelECX16_19_EventLoggingBitmap.Location = new System.Drawing.Point(6, 128);
+            this.labelECX16_19_EventLoggingBitmap.Name = "labelECX16_19_EventLoggingBitmap";
+            this.labelECX16_19_EventLoggingBitmap.Size = new System.Drawing.Size(379, 13);
+            this.labelECX16_19_EventLoggingBitmap.TabIndex = 7;
+            this.labelECX16_19_EventLoggingBitmap.Text = "Event logging bitmap - bit per perf mon counter with LBR event logging [16-19]:";
             // 
-            // label6
+            // labelECX_20_31_Reserved
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 141);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "label6";
+            this.labelECX_20_31_Reserved.AutoSize = true;
+            this.labelECX_20_31_Reserved.Location = new System.Drawing.Point(6, 154);
+            this.labelECX_20_31_Reserved.Name = "labelECX_20_31_Reserved";
+            this.labelECX_20_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labelECX_20_31_Reserved.TabIndex = 8;
+            this.labelECX_20_31_Reserved.Text = "Reserved [20-31]:";
             // 
             // textBoxEDXReserved
             // 
@@ -465,13 +466,13 @@
         private System.Windows.Forms.CheckBox checkBoxEAX30_LBRClearedOnMWAITGreaterThanC1;
         private System.Windows.Forms.Label labelEAX8_29_Reserved;
         private System.Windows.Forms.Label labelEAX0_7_DEPTH;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.TextBox textBoxECX_20_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxECX16_19_EventLoggingBitmap;
+        private System.Windows.Forms.TextBox textBoxECX3_15_Reserved;
+        private System.Windows.Forms.Label labelECX3_15_Reserved;
+        private System.Windows.Forms.CheckBox checkBoxECX1_LBR_x_INFO_56_59;
+        private System.Windows.Forms.CheckBox checkBoxECX1_LBR_x_INFO_0_15_60;
+        private System.Windows.Forms.CheckBox checkBoxECX0_LBR_x_INFO_63;
         private System.Windows.Forms.TextBox textBoxEBX3_31_Reserved;
         private System.Windows.Forms.Label labelEBX3_31_Reserved;
         private System.Windows.Forms.CheckBox checkBoxEBX2_LBR_CTL_3;
@@ -479,7 +480,7 @@
         private System.Windows.Forms.CheckBox checkBoxEBX0_LBR_CTL_2_1;
         private System.Windows.Forms.Label labelEDXReserved;
         private System.Windows.Forms.TextBox textBoxEDXReserved;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelECX_20_31_Reserved;
+        private System.Windows.Forms.Label labelECX16_19_EventLoggingBitmap;
     }
 }
