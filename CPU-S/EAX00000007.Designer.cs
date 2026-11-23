@@ -1,6 +1,6 @@
 ﻿namespace CPU_S
 {
-    partial class EAX00000007E
+    partial class EAX00000007
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000007E));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000007));
             this.groupBoxEAX00000007ECX0 = new System.Windows.Forms.GroupBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
             this.checkBoxSSBD = new System.Windows.Forms.CheckBox();

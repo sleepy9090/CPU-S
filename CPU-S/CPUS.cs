@@ -1206,7 +1206,7 @@ namespace CPU_S
 
         private void eAX0x7ECX0x0ExtendedFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000007E eAX00000007ECX0 = new EAX00000007E();
+            EAX00000007 eAX00000007ECX0 = new EAX00000007();
             eAX00000007ECX0.ShowDialog();
         }
 
@@ -1890,6 +1890,24 @@ namespace CPU_S
         {
             EAX00000010ECX6 eAX00000010ECX6 = new EAX00000010ECX6();
             eAX00000010ECX6.ShowDialog();
+        }
+
+        private void eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000017ECX1 eAX00000017ECX1 = new EAX00000017ECX1();
+            eAX00000017ECX1.ShowDialog();
+        }
+
+        private void eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000017ECX2 eAX00000017ECX2 = new EAX00000017ECX2();
+            eAX00000017ECX2.ShowDialog();
+        }
+
+        private void eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000017ECX3 eAX00000017ECX3 = new EAX00000017ECX3();
+            eAX00000017ECX3.ShowDialog();
         }
     }
 }

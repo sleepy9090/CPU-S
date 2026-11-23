@@ -1,20 +1,20 @@
 ﻿/*
-    File           EAX00000007ECX0.cs
+    File           EAX00000007.cs
     Brief          Form for displaying EAX=0x00000007, ECX=0x00000000 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           08/01/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
 
 namespace CPU_S
 {
-    public partial class EAX00000007E : Form
+    public partial class EAX00000007 : Form
     {
 
         private CPUHelper cpuHelper;
 
-        public EAX00000007E()
+        public EAX00000007()
         {
             InitializeComponent();
 

@@ -1,8 +1,8 @@
 ﻿/*
-    File           EAX17.cs
-    Brief          Form for displaying EAX=0x17 CPU information.
+    File           EAX00000017.cs
+    Brief          Form for displaying EAX=0x00000017 CPU information.
     Copyright      2026 Shawn M. Crawford [sleepy]
-    Date           08/XX/2026
+    Date           11/23/2026
     Author         Shawn M. Crawford [sleepy]
 */
 using System.Windows.Forms;
@@ -30,19 +30,22 @@ namespace CPU_S
                 checkBox.AutoCheck = false;
             }
 
-            #region EAX=0x17: SoC Vendor Attribute Enumeration
+            #region EAX=0x00000017, ECX=0x00000000: SoC Vendor Attribute Enumeration - (main)
 
-            string cpuIdEAX17EAX = cpuHelper.GetEAX00000017EAXX();
-            textBoxEAX17EAX.Text = cpuIdEAX17EAX;
+            textBoxEAX00000017EAX.Text = cpuHelper.GetEAX00000017EAXX();
+            textBoxEAX00000017EBX.Text = cpuHelper.GetEAX00000017EBXX();
+            textBoxEAX00000017ECX.Text = cpuHelper.GetEAX00000017ECXX();
+            textBoxEAX00000017EDX.Text = cpuHelper.GetEAX00000017EDXX();
 
-            string cpuIdEAX17EBX = cpuHelper.GetEAX00000017EBXX();
-            textBoxEAX17EBX.Text = cpuIdEAX17EBX;
+            textBoxEAXMaxSubleaf.Text = cpuHelper.GetEAX00000017EAX0_31_MaxSubleafX();
 
-            string cpuIdEAX17ECX = cpuHelper.GetEAX00000017ECXX();
-            textBoxEAX17ECX.Text = cpuIdEAX17ECX;
+            textBoxEBX0_15_VendorID.Text = cpuHelper.GetEAX00000017EBX0_15_VendorIdX();
+            checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Checked = cpuHelper.GetEAX00000017EBX16_VendorIDUsesIndustryStandardEnumerationSchemeX();
+            textBoxEBX17_31_Reserved.Text = cpuHelper.GetEAX00000017EBX17_31_ReservedX();
 
-            string cpuIdEAX17EDX = cpuHelper.GetEAX00000017EDXX();
-            textBoxEAX17EDX.Text = cpuIdEAX17EDX;
+            textBoxECXProjectID.Text = cpuHelper.GetEAX00000017ECX0_31_ProjectIdX();
+
+            textBoxEDXSteppingID.Text = cpuHelper.GetEAX00000017EDX0_31_SteppingIdX();
 
             #endregion
         }

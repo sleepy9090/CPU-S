@@ -31,29 +31,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000017));
             this.groupBoxEAX00000017 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelEAXMaxSubleaf = new System.Windows.Forms.Label();
+            this.textBoxEAXMaxSubleaf = new System.Windows.Forms.TextBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEDXSteppingID = new System.Windows.Forms.Label();
+            this.textBoxEDXSteppingID = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelECXProjectID = new System.Windows.Forms.Label();
+            this.textBoxECXProjectID = new System.Windows.Forms.TextBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
+            this.labelEBX17_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxEBX17_31_Reserved = new System.Windows.Forms.TextBox();
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme = new System.Windows.Forms.CheckBox();
+            this.labelEBX0_15_VendorID = new System.Windows.Forms.Label();
+            this.textBoxEBX0_15_VendorID = new System.Windows.Forms.TextBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
-            this.textBoxEAX17EAX = new System.Windows.Forms.TextBox();
+            this.textBoxEAX00000017EAX = new System.Windows.Forms.TextBox();
             this.labelEAX17EAX = new System.Windows.Forms.Label();
-            this.textBoxEAX17EBX = new System.Windows.Forms.TextBox();
-            this.textBoxEAX17ECX = new System.Windows.Forms.TextBox();
-            this.textBoxEAX17EDX = new System.Windows.Forms.TextBox();
+            this.textBoxEAX00000017EBX = new System.Windows.Forms.TextBox();
+            this.textBoxEAX00000017ECX = new System.Windows.Forms.TextBox();
+            this.textBoxEAX00000017EDX = new System.Windows.Forms.TextBox();
             this.labelEAX17EBX = new System.Windows.Forms.Label();
             this.labelEAX17ECX = new System.Windows.Forms.Label();
             this.labelEAX17EDX = new System.Windows.Forms.Label();
-            this.textBoxEAXMaxSubleaf = new System.Windows.Forms.TextBox();
-            this.labelEAXMaxSubleaf = new System.Windows.Forms.Label();
-            this.textBoxEBX0_15_VendorID = new System.Windows.Forms.TextBox();
-            this.labelEBX0_15_VendorID = new System.Windows.Forms.Label();
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme = new System.Windows.Forms.CheckBox();
-            this.labelEBX17_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxEBX17_31_Reserved = new System.Windows.Forms.TextBox();
-            this.labelECXProjectID = new System.Windows.Forms.Label();
-            this.textBoxECXProjectID = new System.Windows.Forms.TextBox();
-            this.labelEDXSteppingID = new System.Windows.Forms.Label();
-            this.textBoxEDXSteppingID = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000017.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
@@ -71,10 +71,10 @@
             this.groupBoxEAX00000017.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX00000017.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX00000017.Name = "groupBoxEAX00000017";
-            this.groupBoxEAX00000017.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX00000017.Size = new System.Drawing.Size(776, 298);
             this.groupBoxEAX00000017.TabIndex = 5;
             this.groupBoxEAX00000017.TabStop = false;
-            this.groupBoxEAX00000017.Text = "EAX=0x00000017";
+            this.groupBoxEAX00000017.Text = "EAX=0x00000017, ECX=0x00000000";
             // 
             // groupBoxEAX
             // 
@@ -87,6 +87,22 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
+            // labelEAXMaxSubleaf
+            // 
+            this.labelEAXMaxSubleaf.AutoSize = true;
+            this.labelEAXMaxSubleaf.Location = new System.Drawing.Point(6, 22);
+            this.labelEAXMaxSubleaf.Name = "labelEAXMaxSubleaf";
+            this.labelEAXMaxSubleaf.Size = new System.Drawing.Size(100, 13);
+            this.labelEAXMaxSubleaf.TabIndex = 1;
+            this.labelEAXMaxSubleaf.Text = "Max sub-leaf [0-31]:";
+            // 
+            // textBoxEAXMaxSubleaf
+            // 
+            this.textBoxEAXMaxSubleaf.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEAXMaxSubleaf.Name = "textBoxEAXMaxSubleaf";
+            this.textBoxEAXMaxSubleaf.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXMaxSubleaf.TabIndex = 0;
+            // 
             // groupBoxEDX
             // 
             this.groupBoxEDX.Controls.Add(this.labelEDXSteppingID);
@@ -98,6 +114,22 @@
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
+            // labelEDXSteppingID
+            // 
+            this.labelEDXSteppingID.AutoSize = true;
+            this.labelEDXSteppingID.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXSteppingID.Name = "labelEDXSteppingID";
+            this.labelEDXSteppingID.Size = new System.Drawing.Size(96, 13);
+            this.labelEDXSteppingID.TabIndex = 3;
+            this.labelEDXSteppingID.Text = "Stepping ID [0-31]:";
+            // 
+            // textBoxEDXSteppingID
+            // 
+            this.textBoxEDXSteppingID.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEDXSteppingID.Name = "textBoxEDXSteppingID";
+            this.textBoxEDXSteppingID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXSteppingID.TabIndex = 2;
+            // 
             // groupBoxECX
             // 
             this.groupBoxECX.Controls.Add(this.labelECXProjectID);
@@ -108,6 +140,22 @@
             this.groupBoxECX.TabIndex = 58;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
+            // 
+            // labelECXProjectID
+            // 
+            this.labelECXProjectID.AutoSize = true;
+            this.labelECXProjectID.Location = new System.Drawing.Point(6, 22);
+            this.labelECXProjectID.Name = "labelECXProjectID";
+            this.labelECXProjectID.Size = new System.Drawing.Size(87, 13);
+            this.labelECXProjectID.TabIndex = 3;
+            this.labelECXProjectID.Text = "Project ID [0-31]:";
+            // 
+            // textBoxECXProjectID
+            // 
+            this.textBoxECXProjectID.Location = new System.Drawing.Point(400, 19);
+            this.textBoxECXProjectID.Name = "textBoxECXProjectID";
+            this.textBoxECXProjectID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECXProjectID.TabIndex = 2;
             // 
             // groupBoxEBX
             // 
@@ -123,13 +171,55 @@
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
             // 
+            // labelEBX17_31_Reserved
+            // 
+            this.labelEBX17_31_Reserved.AutoSize = true;
+            this.labelEBX17_31_Reserved.Location = new System.Drawing.Point(6, 67);
+            this.labelEBX17_31_Reserved.Name = "labelEBX17_31_Reserved";
+            this.labelEBX17_31_Reserved.Size = new System.Drawing.Size(92, 13);
+            this.labelEBX17_31_Reserved.TabIndex = 4;
+            this.labelEBX17_31_Reserved.Text = "Reserved [17-31]:";
+            // 
+            // textBoxEBX17_31_Reserved
+            // 
+            this.textBoxEBX17_31_Reserved.Location = new System.Drawing.Point(400, 64);
+            this.textBoxEBX17_31_Reserved.Name = "textBoxEBX17_31_Reserved";
+            this.textBoxEBX17_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX17_31_Reserved.TabIndex = 3;
+            // 
+            // checkBoxVendorIDUsesIndustryStandardEnumerationScheme
+            // 
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.AutoSize = true;
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Location = new System.Drawing.Point(9, 43);
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Name = "checkBoxVendorIDUsesIndustryStandardEnumerationScheme";
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Size = new System.Drawing.Size(371, 17);
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.TabIndex = 2;
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Text = "Vendor ID uses industry standard enumeration scheme (0=no, 1=yes) [16]";
+            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.UseVisualStyleBackColor = true;
+            // 
+            // labelEBX0_15_VendorID
+            // 
+            this.labelEBX0_15_VendorID.AutoSize = true;
+            this.labelEBX0_15_VendorID.Location = new System.Drawing.Point(6, 22);
+            this.labelEBX0_15_VendorID.Name = "labelEBX0_15_VendorID";
+            this.labelEBX0_15_VendorID.Size = new System.Drawing.Size(163, 13);
+            this.labelEBX0_15_VendorID.TabIndex = 1;
+            this.labelEBX0_15_VendorID.Text = "Vendor ID (1=Spreadtrum) [0-15]:";
+            // 
+            // textBoxEBX0_15_VendorID
+            // 
+            this.textBoxEBX0_15_VendorID.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEBX0_15_VendorID.Name = "textBoxEBX0_15_VendorID";
+            this.textBoxEBX0_15_VendorID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX0_15_VendorID.TabIndex = 0;
+            // 
             // groupBoxAll
             // 
-            this.groupBoxAll.Controls.Add(this.textBoxEAX17EAX);
+            this.groupBoxAll.Controls.Add(this.textBoxEAX00000017EAX);
             this.groupBoxAll.Controls.Add(this.labelEAX17EAX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAX17EBX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAX17ECX);
-            this.groupBoxAll.Controls.Add(this.textBoxEAX17EDX);
+            this.groupBoxAll.Controls.Add(this.textBoxEAX00000017EBX);
+            this.groupBoxAll.Controls.Add(this.textBoxEAX00000017ECX);
+            this.groupBoxAll.Controls.Add(this.textBoxEAX00000017EDX);
             this.groupBoxAll.Controls.Add(this.labelEAX17EBX);
             this.groupBoxAll.Controls.Add(this.labelEAX17ECX);
             this.groupBoxAll.Controls.Add(this.labelEAX17EDX);
@@ -141,10 +231,10 @@
             // 
             // textBoxEAX17EAX
             // 
-            this.textBoxEAX17EAX.Location = new System.Drawing.Point(40, 19);
-            this.textBoxEAX17EAX.Name = "textBoxEAX17EAX";
-            this.textBoxEAX17EAX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX17EAX.TabIndex = 1;
+            this.textBoxEAX00000017EAX.Location = new System.Drawing.Point(40, 19);
+            this.textBoxEAX00000017EAX.Name = "textBoxEAX17EAX";
+            this.textBoxEAX00000017EAX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEAX00000017EAX.TabIndex = 1;
             // 
             // labelEAX17EAX
             // 
@@ -157,24 +247,24 @@
             // 
             // textBoxEAX17EBX
             // 
-            this.textBoxEAX17EBX.Location = new System.Drawing.Point(40, 45);
-            this.textBoxEAX17EBX.Name = "textBoxEAX17EBX";
-            this.textBoxEAX17EBX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX17EBX.TabIndex = 2;
+            this.textBoxEAX00000017EBX.Location = new System.Drawing.Point(40, 45);
+            this.textBoxEAX00000017EBX.Name = "textBoxEAX17EBX";
+            this.textBoxEAX00000017EBX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEAX00000017EBX.TabIndex = 2;
             // 
             // textBoxEAX17ECX
             // 
-            this.textBoxEAX17ECX.Location = new System.Drawing.Point(40, 71);
-            this.textBoxEAX17ECX.Name = "textBoxEAX17ECX";
-            this.textBoxEAX17ECX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX17ECX.TabIndex = 3;
+            this.textBoxEAX00000017ECX.Location = new System.Drawing.Point(40, 71);
+            this.textBoxEAX00000017ECX.Name = "textBoxEAX17ECX";
+            this.textBoxEAX00000017ECX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEAX00000017ECX.TabIndex = 3;
             // 
             // textBoxEAX17EDX
             // 
-            this.textBoxEAX17EDX.Location = new System.Drawing.Point(40, 97);
-            this.textBoxEAX17EDX.Name = "textBoxEAX17EDX";
-            this.textBoxEAX17EDX.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEAX17EDX.TabIndex = 4;
+            this.textBoxEAX00000017EDX.Location = new System.Drawing.Point(40, 97);
+            this.textBoxEAX00000017EDX.Name = "textBoxEAX17EDX";
+            this.textBoxEAX00000017EDX.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEAX00000017EDX.TabIndex = 4;
             // 
             // labelEAX17EBX
             // 
@@ -203,107 +293,17 @@
             this.labelEAX17EDX.TabIndex = 9;
             this.labelEAX17EDX.Text = "EDX:";
             // 
-            // textBoxEAXMaxSubleaf
-            // 
-            this.textBoxEAXMaxSubleaf.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEAXMaxSubleaf.Name = "textBoxEAXMaxSubleaf";
-            this.textBoxEAXMaxSubleaf.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAXMaxSubleaf.TabIndex = 0;
-            // 
-            // labelEAXMaxSubleaf
-            // 
-            this.labelEAXMaxSubleaf.AutoSize = true;
-            this.labelEAXMaxSubleaf.Location = new System.Drawing.Point(6, 22);
-            this.labelEAXMaxSubleaf.Name = "labelEAXMaxSubleaf";
-            this.labelEAXMaxSubleaf.Size = new System.Drawing.Size(100, 13);
-            this.labelEAXMaxSubleaf.TabIndex = 1;
-            this.labelEAXMaxSubleaf.Text = "Max sub-leaf [0-31]:";
-            // 
-            // textBoxEBX0_15_VendorID
-            // 
-            this.textBoxEBX0_15_VendorID.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEBX0_15_VendorID.Name = "textBoxEBX0_15_VendorID";
-            this.textBoxEBX0_15_VendorID.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBX0_15_VendorID.TabIndex = 0;
-            // 
-            // labelEBX0_15_VendorID
-            // 
-            this.labelEBX0_15_VendorID.AutoSize = true;
-            this.labelEBX0_15_VendorID.Location = new System.Drawing.Point(6, 22);
-            this.labelEBX0_15_VendorID.Name = "labelEBX0_15_VendorID";
-            this.labelEBX0_15_VendorID.Size = new System.Drawing.Size(163, 13);
-            this.labelEBX0_15_VendorID.TabIndex = 1;
-            this.labelEBX0_15_VendorID.Text = "Vendor ID (1=Spreadtrum) [0-15]:";
-            // 
-            // checkBoxVendorIDUsesIndustryStandardEnumerationScheme
-            // 
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.AutoSize = true;
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Location = new System.Drawing.Point(9, 43);
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Name = "checkBoxVendorIDUsesIndustryStandardEnumerationScheme";
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Size = new System.Drawing.Size(371, 17);
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.TabIndex = 2;
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.Text = "Vendor ID uses industry standard enumeration scheme (0=no, 1=yes) [16]";
-            this.checkBoxVendorIDUsesIndustryStandardEnumerationScheme.UseVisualStyleBackColor = true;
-            // 
-            // labelEBX17_31_Reserved
-            // 
-            this.labelEBX17_31_Reserved.AutoSize = true;
-            this.labelEBX17_31_Reserved.Location = new System.Drawing.Point(6, 67);
-            this.labelEBX17_31_Reserved.Name = "labelEBX17_31_Reserved";
-            this.labelEBX17_31_Reserved.Size = new System.Drawing.Size(92, 13);
-            this.labelEBX17_31_Reserved.TabIndex = 4;
-            this.labelEBX17_31_Reserved.Text = "Reserved [17-31]:";
-            // 
-            // textBoxEBX17_31_Reserved
-            // 
-            this.textBoxEBX17_31_Reserved.Location = new System.Drawing.Point(400, 64);
-            this.textBoxEBX17_31_Reserved.Name = "textBoxEBX17_31_Reserved";
-            this.textBoxEBX17_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEBX17_31_Reserved.TabIndex = 3;
-            // 
-            // labelECXProjectID
-            // 
-            this.labelECXProjectID.AutoSize = true;
-            this.labelECXProjectID.Location = new System.Drawing.Point(6, 22);
-            this.labelECXProjectID.Name = "labelECXProjectID";
-            this.labelECXProjectID.Size = new System.Drawing.Size(87, 13);
-            this.labelECXProjectID.TabIndex = 3;
-            this.labelECXProjectID.Text = "Project ID [0-31]:";
-            // 
-            // textBoxECXProjectID
-            // 
-            this.textBoxECXProjectID.Location = new System.Drawing.Point(400, 19);
-            this.textBoxECXProjectID.Name = "textBoxECXProjectID";
-            this.textBoxECXProjectID.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECXProjectID.TabIndex = 2;
-            // 
-            // labelEDXSteppingID
-            // 
-            this.labelEDXSteppingID.AutoSize = true;
-            this.labelEDXSteppingID.Location = new System.Drawing.Point(6, 22);
-            this.labelEDXSteppingID.Name = "labelEDXSteppingID";
-            this.labelEDXSteppingID.Size = new System.Drawing.Size(96, 13);
-            this.labelEDXSteppingID.TabIndex = 3;
-            this.labelEDXSteppingID.Text = "Stepping ID [0-31]:";
-            // 
-            // textBoxEDXSteppingID
-            // 
-            this.textBoxEDXSteppingID.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEDXSteppingID.Name = "textBoxEDXSteppingID";
-            this.textBoxEDXSteppingID.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDXSteppingID.TabIndex = 2;
-            // 
             // EAX00000017
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 320);
             this.Controls.Add(this.groupBoxEAX00000017);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000017";
-            this.Text = "EAX=0x00000017: SoC Vendor Attribute Enumeration - ECX=0x0 = (main)";
+            this.Text = "EAX=0x00000017, ECX=0x00000000: SoC Vendor Attribute Enumeration - (main)";
             this.groupBoxEAX00000017.ResumeLayout(false);
             this.groupBoxEAX.ResumeLayout(false);
             this.groupBoxEAX.PerformLayout();
@@ -323,11 +323,11 @@
 
         private System.Windows.Forms.GroupBox groupBoxEAX00000017;
         private System.Windows.Forms.GroupBox groupBoxAll;
-        private System.Windows.Forms.TextBox textBoxEAX17EAX;
+        private System.Windows.Forms.TextBox textBoxEAX00000017EAX;
         private System.Windows.Forms.Label labelEAX17EAX;
-        private System.Windows.Forms.TextBox textBoxEAX17EBX;
-        private System.Windows.Forms.TextBox textBoxEAX17ECX;
-        private System.Windows.Forms.TextBox textBoxEAX17EDX;
+        private System.Windows.Forms.TextBox textBoxEAX00000017EBX;
+        private System.Windows.Forms.TextBox textBoxEAX00000017ECX;
+        private System.Windows.Forms.TextBox textBoxEAX00000017EDX;
         private System.Windows.Forms.Label labelEAX17EBX;
         private System.Windows.Forms.Label labelEAX17ECX;
         private System.Windows.Forms.Label labelEAX17EDX;

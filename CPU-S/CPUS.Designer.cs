@@ -266,6 +266,11 @@
             this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000012SGXCapabilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000012SGXSECSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000012SGXEPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -369,11 +374,9 @@
             this.eAX0xC0000006ZhaoxinProcessorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2677,6 +2680,9 @@
             this.eAX0x00000015TSCAndCoreCrystalFrequencyInformationToolStripMenuItem,
             this.eAX0x00000016ProcessorAndBusSpecificationFrequenciesToolStripMenuItem,
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem,
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem,
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem,
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem,
             this.eAX0x00000018TLBHierarchyAndTopologyToolStripMenuItem,
             this.eAX0x00000019IntelKeyLockerFeaturesToolStripMenuItem,
             this.eAX0x0000001ACoreModelInformationToolStripMenuItem,
@@ -2836,6 +2842,41 @@
             this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010: RDT-A (QoS allocation) enumeration";
             this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
             // 
+            // eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem";
+            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000001: RDT-A (QoS allocation) enumeration, (1 = L3)";
+            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem";
+            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000002: RDT-A (QoS allocation) enumeration, (2 = L2)";
+            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem";
+            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000003: RDT-A (QoS allocation) enumeration, (3 = MBA)";
+            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem";
+            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000005: RDT-A (QoS allocation) enumeration, (5 = CBA)";
+            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem";
+            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000006: RDT-A (QoS allocation) enumeration, (6 = RP)";
+            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            // 
             // eAX0x00000012SGXCapabilitiesToolStripMenuItem
             // 
             this.eAX0x00000012SGXCapabilitiesToolStripMenuItem.Name = "eAX0x00000012SGXCapabilitiesToolStripMenuItem";
@@ -2891,7 +2932,7 @@
             // 
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem";
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017: SoC Vendor Attribute Enumeration";
+            this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017: SoC Vendor Attribute Enumeration - (main)";
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem_Click);
             // 
             // eAX0x00000018TLBHierarchyAndTopologyToolStripMenuItem
@@ -3642,40 +3683,29 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem
             // 
-            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem";
-            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000001: RDT-A (QoS allocation) enumeration, (1 = L3)";
-            this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem";
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000001: SoC Vendor Attribute Enumeration - (output 1 of 3" +
+    ")";
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem_Click);
             // 
-            // eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem
             // 
-            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem";
-            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000006: RDT-A (QoS allocation) enumeration, (6 = RP)";
-            this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem";
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000002: SoC Vendor Attribute Enumeration - (output 2 of 3" +
+    ")";
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem_Click);
             // 
-            // eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem
+            // eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem
             // 
-            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem";
-            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000002: RDT-A (QoS allocation) enumeration, (2 = L2)";
-            this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX2_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
-            // 
-            // eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem
-            // 
-            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem";
-            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000003: RDT-A (QoS allocation) enumeration, (3 = MBA)";
-            this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
-            // 
-            // eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem
-            // 
-            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem";
-            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000005: RDT-A (QoS allocation) enumeration, (5 = CBA)";
-            this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem";
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000003: SoC Vendor Attribute Enumeration - (output 3 of 3" +
+    ")";
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
@@ -4072,6 +4102,9 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000010ECX3_RDTAQoSAllocationEnumerationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000010ECX5_RDTAQoSAllocationEnumerationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000010ECX6_RDTAQoSAllocationEnumerationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem;
     }
 }
 
