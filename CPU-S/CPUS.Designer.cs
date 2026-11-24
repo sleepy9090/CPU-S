@@ -279,6 +279,9 @@
             this.eAX0x00000015TSCAndCoreCrystalFrequencyInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000016ProcessorAndBusSpecificationFrequenciesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000018TLBHierarchyAndTopologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x00000019IntelKeyLockerFeaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eAX0x0000001ACoreModelInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -374,9 +377,6 @@
             this.eAX0xC0000006ZhaoxinProcessorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2839,7 +2839,7 @@
             // 
             this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem.Name = "eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem";
             this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010: RDT-A (QoS allocation) enumeration";
+            this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem.Text = "EAX=0x00000010, ECX=0x00000000: RDT-A (QoS allocation) enumeration";
             this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000010_RDTAQoSAllocationEnumerationToolStripMenuItem_Click);
             // 
             // eAX0x00000010ECX1_RDTAQoSAllocationEnumerationToolStripMenuItem
@@ -2932,8 +2932,32 @@
             // 
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem";
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017: SoC Vendor Attribute Enumeration - (main)";
+            this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000000: SoC Vendor Attribute Enumeration - (main)";
             this.eAX0x00000017SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x17SoCVendorAttributeEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem";
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000001: SoC Vendor Attribute Enumeration - (output 1 of 3" +
+    ")";
+            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem";
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000002: SoC Vendor Attribute Enumeration - (output 2 of 3" +
+    ")";
+            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem
+            // 
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem";
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000003: SoC Vendor Attribute Enumeration - (output 3 of 3" +
+    ")";
+            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem_Click);
             // 
             // eAX0x00000018TLBHierarchyAndTopologyToolStripMenuItem
             // 
@@ -3682,30 +3706,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem
-            // 
-            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem";
-            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000001: SoC Vendor Attribute Enumeration - (output 1 of 3" +
-    ")";
-            this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem_Click);
-            // 
-            // eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem
-            // 
-            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem";
-            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000002: SoC Vendor Attribute Enumeration - (output 2 of 3" +
-    ")";
-            this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem_Click);
-            // 
-            // eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem
-            // 
-            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Name = "eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem";
-            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Text = "EAX=0x00000017, ECX=0x00000003: SoC Vendor Attribute Enumeration - (output 3 of 3" +
-    ")";
-            this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem_Click);
             // 
             // FormCPUS
             // 
