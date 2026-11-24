@@ -6,13 +6,6 @@
     Author         Shawn M. Crawford [sleepy]
 */
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CPU_S
@@ -21,9 +14,13 @@ namespace CPU_S
     {
         private CPUHelper cpuHelper;
 
-        public EAX00000029()
+        private int currentSubLeafIndex;
+
+        public EAX00000029(int subLeafIndex)
         {
             InitializeComponent();
+            currentSubLeafIndex = subLeafIndex;
+            textBoxCurrentN.Text = subLeafIndex.ToString();
 
             cpuHelper = new CPUHelper();
 
@@ -39,12 +36,27 @@ namespace CPU_S
 
             #region EAX=0x00000029: APX Information
 
-            textBoxEAX.Text = cpuHelper.GetEAX00000029EAXX();
-            textBoxEBX.Text = cpuHelper.GetEAX00000029EBXX();
-            textBoxECX.Text = cpuHelper.GetEAX00000029ECXX();
-            textBoxEDX.Text = cpuHelper.GetEAX00000029EDXX();
+            textBoxEAX.Text = cpuHelper.GetEAX00000029_ECXN_EAXX(subLeafIndex);
+            textBoxEBX.Text = cpuHelper.GetEAX00000029_ECXN_EBXX(subLeafIndex);
+            textBoxECX.Text = cpuHelper.GetEAX00000029_ECXN_ECXX(subLeafIndex);
+            textBoxEDX.Text = cpuHelper.GetEAX00000029_ECXN_EDXX(subLeafIndex);
+
+            textBoxEAXMaxSubleaf.Text = cpuHelper.GetEAX00000029_ECXN_EAX_0_31_MaxSubleafX(subLeafIndex);
+            checkBoxEBX0_APX_NCI_NDD_NF.Checked = cpuHelper.GetEAX00000029_ECXN_EBX0_APX_NCI_NDD_NFIsSupportedX(subLeafIndex);
+            textBoxEBX1_31_Reserved.Text = cpuHelper.GetEAX00000029_ECXN_EBX1_31_ReservedX(subLeafIndex);
+            textBoxECXReserved.Text = cpuHelper.GetEAX00000029_ECXN_ECX_0_31_ReservedX(subLeafIndex);
+            textBoxEDXReserved.Text = cpuHelper.GetEAX00000029_ECXN_EDX_0_31_ReservedX(subLeafIndex);
 
             #endregion
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+            currentSubLeafIndex++;
+
+            EAX00000029 nextForm = new EAX00000029(currentSubLeafIndex);
+            nextForm.ShowDialog();
+
         }
     }
 }

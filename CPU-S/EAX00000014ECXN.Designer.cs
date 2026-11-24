@@ -36,8 +36,6 @@
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
             this.labelReservedECX16_31 = new System.Windows.Forms.Label();
             this.textBoxReservedECX16_31 = new System.Windows.Forms.TextBox();
-            this.labelTriggerDrMatch = new System.Windows.Forms.Label();
-            this.textBoxTriggerDrMatch = new System.Windows.Forms.TextBox();
             this.labelReservedECX11_14 = new System.Windows.Forms.Label();
             this.textBoxReservedECX11_14 = new System.Windows.Forms.TextBox();
             this.labelReservedECX8_10 = new System.Windows.Forms.Label();
@@ -46,10 +44,6 @@
             this.textBoxReservedECX2 = new System.Windows.Forms.TextBox();
             this.labelReservedECX3_7 = new System.Windows.Forms.Label();
             this.textBoxReservedECX3_7 = new System.Windows.Forms.TextBox();
-            this.labelTriggerPause = new System.Windows.Forms.Label();
-            this.textBoxTriggerPause = new System.Windows.Forms.TextBox();
-            this.labelEnIcnt = new System.Windows.Forms.Label();
-            this.textBoxEnIcnt = new System.Windows.Forms.TextBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.labelPsbRate = new System.Windows.Forms.Label();
             this.textBoxPsbRate = new System.Windows.Forms.TextBox();
@@ -77,6 +71,9 @@
             this.labelEAX14ECX1EBX = new System.Windows.Forms.Label();
             this.labelEAX14ECX1ECX = new System.Windows.Forms.Label();
             this.labelEAX14ECX1EDX = new System.Windows.Forms.Label();
+            this.checkBoxEnIcnt = new System.Windows.Forms.CheckBox();
+            this.checkBoxTriggerPause = new System.Windows.Forms.CheckBox();
+            this.checkBoxTriggerDrMatch = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX00000014ECX1.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
@@ -94,7 +91,7 @@
             this.groupBoxEAX00000014ECX1.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX00000014ECX1.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX00000014ECX1.Name = "groupBoxEAX00000014ECX1";
-            this.groupBoxEAX00000014ECX1.Size = new System.Drawing.Size(980, 701);
+            this.groupBoxEAX00000014ECX1.Size = new System.Drawing.Size(980, 672);
             this.groupBoxEAX00000014ECX1.TabIndex = 4;
             this.groupBoxEAX00000014ECX1.TabStop = false;
             this.groupBoxEAX00000014ECX1.Text = "EAX=0x00000014 ECX=0x1..N";
@@ -128,10 +125,11 @@
             // 
             // groupBoxECX
             // 
+            this.groupBoxECX.Controls.Add(this.checkBoxTriggerDrMatch);
+            this.groupBoxECX.Controls.Add(this.checkBoxTriggerPause);
+            this.groupBoxECX.Controls.Add(this.checkBoxEnIcnt);
             this.groupBoxECX.Controls.Add(this.labelReservedECX16_31);
             this.groupBoxECX.Controls.Add(this.textBoxReservedECX16_31);
-            this.groupBoxECX.Controls.Add(this.labelTriggerDrMatch);
-            this.groupBoxECX.Controls.Add(this.textBoxTriggerDrMatch);
             this.groupBoxECX.Controls.Add(this.labelReservedECX11_14);
             this.groupBoxECX.Controls.Add(this.textBoxReservedECX11_14);
             this.groupBoxECX.Controls.Add(this.labelReservedECX8_10);
@@ -140,13 +138,9 @@
             this.groupBoxECX.Controls.Add(this.textBoxReservedECX2);
             this.groupBoxECX.Controls.Add(this.labelReservedECX3_7);
             this.groupBoxECX.Controls.Add(this.textBoxReservedECX3_7);
-            this.groupBoxECX.Controls.Add(this.labelTriggerPause);
-            this.groupBoxECX.Controls.Add(this.textBoxTriggerPause);
-            this.groupBoxECX.Controls.Add(this.labelEnIcnt);
-            this.groupBoxECX.Controls.Add(this.textBoxEnIcnt);
             this.groupBoxECX.Location = new System.Drawing.Point(6, 429);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(714, 236);
+            this.groupBoxECX.Size = new System.Drawing.Size(714, 226);
             this.groupBoxECX.TabIndex = 43;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
@@ -154,7 +148,7 @@
             // labelReservedECX16_31
             // 
             this.labelReservedECX16_31.AutoSize = true;
-            this.labelReservedECX16_31.Location = new System.Drawing.Point(6, 204);
+            this.labelReservedECX16_31.Location = new System.Drawing.Point(6, 194);
             this.labelReservedECX16_31.Name = "labelReservedECX16_31";
             this.labelReservedECX16_31.Size = new System.Drawing.Size(92, 13);
             this.labelReservedECX16_31.TabIndex = 15;
@@ -162,31 +156,15 @@
             // 
             // textBoxReservedECX16_31
             // 
-            this.textBoxReservedECX16_31.Location = new System.Drawing.Point(606, 201);
+            this.textBoxReservedECX16_31.Location = new System.Drawing.Point(606, 191);
             this.textBoxReservedECX16_31.Name = "textBoxReservedECX16_31";
             this.textBoxReservedECX16_31.Size = new System.Drawing.Size(100, 20);
             this.textBoxReservedECX16_31.TabIndex = 14;
             // 
-            // labelTriggerDrMatch
-            // 
-            this.labelTriggerDrMatch.AutoSize = true;
-            this.labelTriggerDrMatch.Location = new System.Drawing.Point(6, 178);
-            this.labelTriggerDrMatch.Name = "labelTriggerDrMatch";
-            this.labelTriggerDrMatch.Size = new System.Drawing.Size(315, 13);
-            this.labelTriggerDrMatch.TabIndex = 13;
-            this.labelTriggerDrMatch.Text = "TRIGGER_DR_MATCH - Trigger input DR match supported [15]:";
-            // 
-            // textBoxTriggerDrMatch
-            // 
-            this.textBoxTriggerDrMatch.Location = new System.Drawing.Point(606, 175);
-            this.textBoxTriggerDrMatch.Name = "textBoxTriggerDrMatch";
-            this.textBoxTriggerDrMatch.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTriggerDrMatch.TabIndex = 12;
-            // 
             // labelReservedECX11_14
             // 
             this.labelReservedECX11_14.AutoSize = true;
-            this.labelReservedECX11_14.Location = new System.Drawing.Point(6, 152);
+            this.labelReservedECX11_14.Location = new System.Drawing.Point(6, 146);
             this.labelReservedECX11_14.Name = "labelReservedECX11_14";
             this.labelReservedECX11_14.Size = new System.Drawing.Size(92, 13);
             this.labelReservedECX11_14.TabIndex = 11;
@@ -194,7 +172,7 @@
             // 
             // textBoxReservedECX11_14
             // 
-            this.textBoxReservedECX11_14.Location = new System.Drawing.Point(606, 149);
+            this.textBoxReservedECX11_14.Location = new System.Drawing.Point(606, 143);
             this.textBoxReservedECX11_14.Name = "textBoxReservedECX11_14";
             this.textBoxReservedECX11_14.Size = new System.Drawing.Size(100, 20);
             this.textBoxReservedECX11_14.TabIndex = 10;
@@ -202,7 +180,7 @@
             // labelReservedECX8_10
             // 
             this.labelReservedECX8_10.AutoSize = true;
-            this.labelReservedECX8_10.Location = new System.Drawing.Point(6, 126);
+            this.labelReservedECX8_10.Location = new System.Drawing.Point(6, 120);
             this.labelReservedECX8_10.Name = "labelReservedECX8_10";
             this.labelReservedECX8_10.Size = new System.Drawing.Size(86, 13);
             this.labelReservedECX8_10.TabIndex = 9;
@@ -210,7 +188,7 @@
             // 
             // textBoxReservedECX8_10
             // 
-            this.textBoxReservedECX8_10.Location = new System.Drawing.Point(606, 123);
+            this.textBoxReservedECX8_10.Location = new System.Drawing.Point(606, 117);
             this.textBoxReservedECX8_10.Name = "textBoxReservedECX8_10";
             this.textBoxReservedECX8_10.Size = new System.Drawing.Size(100, 20);
             this.textBoxReservedECX8_10.TabIndex = 8;
@@ -218,7 +196,7 @@
             // labelReservedECX2
             // 
             this.labelReservedECX2.AutoSize = true;
-            this.labelReservedECX2.Location = new System.Drawing.Point(6, 74);
+            this.labelReservedECX2.Location = new System.Drawing.Point(6, 68);
             this.labelReservedECX2.Name = "labelReservedECX2";
             this.labelReservedECX2.Size = new System.Drawing.Size(71, 13);
             this.labelReservedECX2.TabIndex = 7;
@@ -226,7 +204,7 @@
             // 
             // textBoxReservedECX2
             // 
-            this.textBoxReservedECX2.Location = new System.Drawing.Point(606, 71);
+            this.textBoxReservedECX2.Location = new System.Drawing.Point(606, 65);
             this.textBoxReservedECX2.Name = "textBoxReservedECX2";
             this.textBoxReservedECX2.Size = new System.Drawing.Size(100, 20);
             this.textBoxReservedECX2.TabIndex = 6;
@@ -234,7 +212,7 @@
             // labelReservedECX3_7
             // 
             this.labelReservedECX3_7.AutoSize = true;
-            this.labelReservedECX3_7.Location = new System.Drawing.Point(6, 100);
+            this.labelReservedECX3_7.Location = new System.Drawing.Point(6, 94);
             this.labelReservedECX3_7.Name = "labelReservedECX3_7";
             this.labelReservedECX3_7.Size = new System.Drawing.Size(80, 13);
             this.labelReservedECX3_7.TabIndex = 5;
@@ -242,42 +220,10 @@
             // 
             // textBoxReservedECX3_7
             // 
-            this.textBoxReservedECX3_7.Location = new System.Drawing.Point(606, 97);
+            this.textBoxReservedECX3_7.Location = new System.Drawing.Point(606, 91);
             this.textBoxReservedECX3_7.Name = "textBoxReservedECX3_7";
             this.textBoxReservedECX3_7.Size = new System.Drawing.Size(100, 20);
             this.textBoxReservedECX3_7.TabIndex = 4;
-            // 
-            // labelTriggerPause
-            // 
-            this.labelTriggerPause.AutoSize = true;
-            this.labelTriggerPause.Location = new System.Drawing.Point(6, 48);
-            this.labelTriggerPause.Name = "labelTriggerPause";
-            this.labelTriggerPause.Size = new System.Drawing.Size(438, 13);
-            this.labelTriggerPause.TabIndex = 3;
-            this.labelTriggerPause.Text = "TRIGGER_PAUSE - Trigger actions TRACE_PAUSE and TRACE_RESUME supported [1]:";
-            // 
-            // textBoxTriggerPause
-            // 
-            this.textBoxTriggerPause.Location = new System.Drawing.Point(606, 45);
-            this.textBoxTriggerPause.Name = "textBoxTriggerPause";
-            this.textBoxTriggerPause.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTriggerPause.TabIndex = 2;
-            // 
-            // labelEnIcnt
-            // 
-            this.labelEnIcnt.AutoSize = true;
-            this.labelEnIcnt.Location = new System.Drawing.Point(6, 22);
-            this.labelEnIcnt.Name = "labelEnIcnt";
-            this.labelEnIcnt.Size = new System.Drawing.Size(245, 13);
-            this.labelEnIcnt.TabIndex = 1;
-            this.labelEnIcnt.Text = "EN_ICNT - Trigger Action EN_ICNT supported [0]:";
-            // 
-            // textBoxEnIcnt
-            // 
-            this.textBoxEnIcnt.Location = new System.Drawing.Point(606, 19);
-            this.textBoxEnIcnt.Name = "textBoxEnIcnt";
-            this.textBoxEnIcnt.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEnIcnt.TabIndex = 0;
             // 
             // groupBoxEBX
             // 
@@ -522,11 +468,41 @@
             this.labelEAX14ECX1EDX.TabIndex = 9;
             this.labelEAX14ECX1EDX.Text = "EDX:";
             // 
+            // checkBoxEnIcnt
+            // 
+            this.checkBoxEnIcnt.AutoSize = true;
+            this.checkBoxEnIcnt.Location = new System.Drawing.Point(9, 19);
+            this.checkBoxEnIcnt.Name = "checkBoxEnIcnt";
+            this.checkBoxEnIcnt.Size = new System.Drawing.Size(261, 17);
+            this.checkBoxEnIcnt.TabIndex = 46;
+            this.checkBoxEnIcnt.Text = "EN_ICNT - Trigger Action EN_ICNT supported [0]";
+            this.checkBoxEnIcnt.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTriggerPause
+            // 
+            this.checkBoxTriggerPause.AutoSize = true;
+            this.checkBoxTriggerPause.Location = new System.Drawing.Point(9, 42);
+            this.checkBoxTriggerPause.Name = "checkBoxTriggerPause";
+            this.checkBoxTriggerPause.Size = new System.Drawing.Size(454, 17);
+            this.checkBoxTriggerPause.TabIndex = 46;
+            this.checkBoxTriggerPause.Text = "TRIGGER_PAUSE - Trigger actions TRACE_PAUSE and TRACE_RESUME supported [1]";
+            this.checkBoxTriggerPause.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTriggerDrMatch
+            // 
+            this.checkBoxTriggerDrMatch.AutoSize = true;
+            this.checkBoxTriggerDrMatch.Location = new System.Drawing.Point(9, 168);
+            this.checkBoxTriggerDrMatch.Name = "checkBoxTriggerDrMatch";
+            this.checkBoxTriggerDrMatch.Size = new System.Drawing.Size(331, 17);
+            this.checkBoxTriggerDrMatch.TabIndex = 46;
+            this.checkBoxTriggerDrMatch.Text = "TRIGGER_DR_MATCH - Trigger input DR match supported [15]";
+            this.checkBoxTriggerDrMatch.UseVisualStyleBackColor = true;
+            // 
             // EAX00000014ECXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 725);
+            this.ClientSize = new System.Drawing.Size(1004, 693);
             this.Controls.Add(this.groupBoxEAX00000014ECX1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -584,20 +560,17 @@
         private System.Windows.Forms.TextBox textBoxReservedECX2;
         private System.Windows.Forms.Label labelReservedECX3_7;
         private System.Windows.Forms.TextBox textBoxReservedECX3_7;
-        private System.Windows.Forms.Label labelTriggerPause;
-        private System.Windows.Forms.TextBox textBoxTriggerPause;
-        private System.Windows.Forms.Label labelEnIcnt;
-        private System.Windows.Forms.TextBox textBoxEnIcnt;
         private System.Windows.Forms.Label labelReservedECX11_14;
         private System.Windows.Forms.TextBox textBoxReservedECX11_14;
         private System.Windows.Forms.Label labelReservedECX8_10;
         private System.Windows.Forms.TextBox textBoxReservedECX8_10;
-        private System.Windows.Forms.Label labelTriggerDrMatch;
-        private System.Windows.Forms.TextBox textBoxTriggerDrMatch;
         private System.Windows.Forms.Label labelReservedECX16_31;
         private System.Windows.Forms.TextBox textBoxReservedECX16_31;
         private System.Windows.Forms.GroupBox groupBoxEDX;
         private System.Windows.Forms.Label labelEDX0_31Reserved;
         private System.Windows.Forms.TextBox textBoxEDX0_31Reserved;
+        private System.Windows.Forms.CheckBox checkBoxEnIcnt;
+        private System.Windows.Forms.CheckBox checkBoxTriggerDrMatch;
+        private System.Windows.Forms.CheckBox checkBoxTriggerPause;
     }
 }

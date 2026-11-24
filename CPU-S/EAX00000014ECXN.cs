@@ -47,13 +47,13 @@ namespace CPU_S
             textBoxCycThresholds.Text = cpuHelper.GetEAX14ECX1EBX0_15_CycThresholdsX(subLeafIndex);
             textBoxPsbRate.Text = cpuHelper.GetEAX14ECX1EBX16_31_PsbRateX(subLeafIndex);
 
-            textBoxEnIcnt.Text = cpuHelper.GetEAX14ECX1ECX0_IcntX(subLeafIndex);
-            textBoxTriggerPause.Text = cpuHelper.GetEAX14ECX1ECX1_TriggerPauseX(subLeafIndex);
+            checkBoxEnIcnt.Checked = cpuHelper.GetEAX14ECX1ECX0_IcntX(subLeafIndex);
+            checkBoxTriggerPause.Checked = cpuHelper.GetEAX14ECX1ECX1_TriggerPauseX(subLeafIndex);
             textBoxReservedECX2.Text = cpuHelper.GetEAX14ECX1ECX2_ReservedX(subLeafIndex);
             textBoxReservedECX3_7.Text = cpuHelper.GetEAX14ECX1ECX3_7_ReservedX(subLeafIndex);
             textBoxReservedECX8_10.Text = cpuHelper.GetEAX14ECX1ECX8_10_ReservedX(subLeafIndex);
             textBoxReservedECX11_14.Text = cpuHelper.GetEAX14ECX1ECX11_14_ReservedX(subLeafIndex);
-            textBoxTriggerDrMatch.Text = cpuHelper.GetEAX14ECX1ECX15_TriggerDrMatchX(subLeafIndex);
+            checkBoxTriggerDrMatch.Checked = cpuHelper.GetEAX14ECX1ECX15_TriggerDrMatchX(subLeafIndex);
             textBoxReservedECX16_31.Text = cpuHelper.GetEAX14ECX1ECX16_31_ReservedX(subLeafIndex);
 
             textBoxEDX0_31Reserved.Text = cpuHelper.GetEAX00000014_ECX1_EDX_0_31_ReservedX(subLeafIndex);

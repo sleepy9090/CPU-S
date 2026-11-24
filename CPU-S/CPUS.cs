@@ -1600,7 +1600,7 @@ namespace CPU_S
 
         private void eAX0x00000029APXInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EAX00000029 eAX00000029 = new EAX00000029();
+            EAX00000029 eAX00000029 = new EAX00000029(0);
             eAX00000029.ShowDialog();
         }
 
