@@ -22544,13 +22544,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX0000001C_EBX1_LBRCTLForCallStackMode();
+        private static extern int GetEAX0000001C_EBX2_LBRCTLForCallStackMode();
 
-        public bool GetEAX0000001C_EBX1_LBRCTLForCallStackModeX()
+        public bool GetEAX0000001C_EBX2_LBRCTLForCallStackModeX()
         {
             try
             {
-                return GetEAX0000001C_EBX1_LBRCTLForCallStackMode() != 0;
+                return GetEAX0000001C_EBX2_LBRCTLForCallStackMode() != 0;
             }
             catch (DllNotFoundException ex)
             {
@@ -22629,13 +22629,13 @@ namespace CPU_S
         }
 
         [DllImport("CPUIDBE.dll", CallingConvention = CallingConvention.StdCall)]
-        private static extern int GetEAX0000001C_ECX0_LBRxINFOIndicatesBranchType();
+        private static extern int GetEAX0000001C_ECX2_LBRxINFOIndicatesBranchType();
 
-        public bool GetEAX0000001C_ECX0_LBRxINFOIndicatesBranchTypeX()
+        public bool GetEAX0000001C_ECX2_LBRxINFOIndicatesBranchTypeX()
         {
             try
             {
-                return GetEAX0000001C_ECX0_LBRxINFOIndicatesBranchType() != 0;
+                return GetEAX0000001C_ECX2_LBRxINFOIndicatesBranchType() != 0;
             }
             catch (DllNotFoundException ex)
             {
