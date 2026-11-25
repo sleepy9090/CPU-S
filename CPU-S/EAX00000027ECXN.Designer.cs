@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000027ECXN));
             this.groupBoxEAX00000027 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.textBoxEAX0_7_CounterWidth = new System.Windows.Forms.TextBox();
+            this.labelEAX0_7_CounterWidth = new System.Windows.Forms.Label();
+            this.checkBoxEAX8_CounterBit61IsOverflowBit = new System.Windows.Forms.CheckBox();
             this.textBoxEAX11_31Reserved = new System.Windows.Forms.TextBox();
             this.labelEAX11_31Reserved = new System.Windows.Forms.Label();
             this.checkBoxEAX10_NonCPUAgentPresentSupportingIntelRDT_MBM = new System.Windows.Forms.CheckBox();
             this.checkBoxEAX9_NonCPUAgentPresentSupportingIntelRDT_CMT = new System.Windows.Forms.CheckBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring = new System.Windows.Forms.CheckBox();
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring = new System.Windows.Forms.CheckBox();
+            this.checkBoxEDX0_L3OccupancyMonitoring = new System.Windows.Forms.CheckBox();
             this.labelEDX3_31_Reserved = new System.Windows.Forms.Label();
             this.textBoxEDX3_31_Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
@@ -52,12 +59,6 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
-            this.checkBoxEAX8_CounterBit61IsOverflowBit = new System.Windows.Forms.CheckBox();
-            this.labelEAX0_7_CounterWidth = new System.Windows.Forms.Label();
-            this.textBoxEAX0_7_CounterWidth = new System.Windows.Forms.TextBox();
-            this.checkBoxEDX0_L3OccupancyMonitoring = new System.Windows.Forms.CheckBox();
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring = new System.Windows.Forms.CheckBox();
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring = new System.Windows.Forms.CheckBox();
             this.groupBoxEAX00000027.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
@@ -95,6 +96,32 @@
             this.groupBoxEAX.TabIndex = 52;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
+            // 
+            // textBoxEAX0_7_CounterWidth
+            // 
+            this.textBoxEAX0_7_CounterWidth.Location = new System.Drawing.Point(400, 15);
+            this.textBoxEAX0_7_CounterWidth.Name = "textBoxEAX0_7_CounterWidth";
+            this.textBoxEAX0_7_CounterWidth.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAX0_7_CounterWidth.TabIndex = 6;
+            // 
+            // labelEAX0_7_CounterWidth
+            // 
+            this.labelEAX0_7_CounterWidth.AutoSize = true;
+            this.labelEAX0_7_CounterWidth.Location = new System.Drawing.Point(6, 18);
+            this.labelEAX0_7_CounterWidth.Name = "labelEAX0_7_CounterWidth";
+            this.labelEAX0_7_CounterWidth.Size = new System.Drawing.Size(340, 13);
+            this.labelEAX0_7_CounterWidth.TabIndex = 5;
+            this.labelEAX0_7_CounterWidth.Text = "Counter width, offset from 24 bits (if 0, use FMS to pick the width) [0-7]:";
+            // 
+            // checkBoxEAX8_CounterBit61IsOverflowBit
+            // 
+            this.checkBoxEAX8_CounterBit61IsOverflowBit.AutoSize = true;
+            this.checkBoxEAX8_CounterBit61IsOverflowBit.Location = new System.Drawing.Point(6, 40);
+            this.checkBoxEAX8_CounterBit61IsOverflowBit.Name = "checkBoxEAX8_CounterBit61IsOverflowBit";
+            this.checkBoxEAX8_CounterBit61IsOverflowBit.Size = new System.Drawing.Size(177, 17);
+            this.checkBoxEAX8_CounterBit61IsOverflowBit.TabIndex = 4;
+            this.checkBoxEAX8_CounterBit61IsOverflowBit.Text = "Counter bit 61 is overflow bit [8]:";
+            this.checkBoxEAX8_CounterBit61IsOverflowBit.UseVisualStyleBackColor = true;
             // 
             // textBoxEAX11_31Reserved
             // 
@@ -145,6 +172,36 @@
             this.groupBoxEDX.TabIndex = 51;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
+            // 
+            // checkBoxEDX2_L3LocalExternalBandwidthMonitoring
+            // 
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.AutoSize = true;
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Location = new System.Drawing.Point(6, 65);
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Name = "checkBoxEDX2_L3LocalExternalBandwidthMonitoring";
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Size = new System.Drawing.Size(224, 17);
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.TabIndex = 6;
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Text = "L3 local external bandwidth monitoring [2]:";
+            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEDX1_L3TotalExternalBandwidthMonitoring
+            // 
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.AutoSize = true;
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Location = new System.Drawing.Point(6, 42);
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Name = "checkBoxEDX1_L3TotalExternalBandwidthMonitoring";
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Size = new System.Drawing.Size(222, 17);
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.TabIndex = 5;
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Text = "L3 total external bandwidth monitoring [1]:";
+            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEDX0_L3OccupancyMonitoring
+            // 
+            this.checkBoxEDX0_L3OccupancyMonitoring.AutoSize = true;
+            this.checkBoxEDX0_L3OccupancyMonitoring.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxEDX0_L3OccupancyMonitoring.Name = "checkBoxEDX0_L3OccupancyMonitoring";
+            this.checkBoxEDX0_L3OccupancyMonitoring.Size = new System.Drawing.Size(163, 17);
+            this.checkBoxEDX0_L3OccupancyMonitoring.TabIndex = 4;
+            this.checkBoxEDX0_L3OccupancyMonitoring.Text = "L3 occupancy monitoring [0]:";
+            this.checkBoxEDX0_L3OccupancyMonitoring.UseVisualStyleBackColor = true;
             // 
             // labelEDX3_31_Reserved
             // 
@@ -296,68 +353,13 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
-            // checkBoxEAX8_CounterBit61IsOverflowBit
-            // 
-            this.checkBoxEAX8_CounterBit61IsOverflowBit.AutoSize = true;
-            this.checkBoxEAX8_CounterBit61IsOverflowBit.Location = new System.Drawing.Point(6, 40);
-            this.checkBoxEAX8_CounterBit61IsOverflowBit.Name = "checkBoxEAX8_CounterBit61IsOverflowBit";
-            this.checkBoxEAX8_CounterBit61IsOverflowBit.Size = new System.Drawing.Size(177, 17);
-            this.checkBoxEAX8_CounterBit61IsOverflowBit.TabIndex = 4;
-            this.checkBoxEAX8_CounterBit61IsOverflowBit.Text = "Counter bit 61 is overflow bit [8]:";
-            this.checkBoxEAX8_CounterBit61IsOverflowBit.UseVisualStyleBackColor = true;
-            // 
-            // labelEAX0_7_CounterWidth
-            // 
-            this.labelEAX0_7_CounterWidth.AutoSize = true;
-            this.labelEAX0_7_CounterWidth.Location = new System.Drawing.Point(6, 18);
-            this.labelEAX0_7_CounterWidth.Name = "labelEAX0_7_CounterWidth";
-            this.labelEAX0_7_CounterWidth.Size = new System.Drawing.Size(340, 13);
-            this.labelEAX0_7_CounterWidth.TabIndex = 5;
-            this.labelEAX0_7_CounterWidth.Text = "Counter width, offset from 24 bits (if 0, use FMS to pick the width) [0-7]:";
-            // 
-            // textBoxEAX0_7_CounterWidth
-            // 
-            this.textBoxEAX0_7_CounterWidth.Location = new System.Drawing.Point(400, 15);
-            this.textBoxEAX0_7_CounterWidth.Name = "textBoxEAX0_7_CounterWidth";
-            this.textBoxEAX0_7_CounterWidth.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAX0_7_CounterWidth.TabIndex = 6;
-            // 
-            // checkBoxEDX0_L3OccupancyMonitoring
-            // 
-            this.checkBoxEDX0_L3OccupancyMonitoring.AutoSize = true;
-            this.checkBoxEDX0_L3OccupancyMonitoring.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxEDX0_L3OccupancyMonitoring.Name = "checkBoxEDX0_L3OccupancyMonitoring";
-            this.checkBoxEDX0_L3OccupancyMonitoring.Size = new System.Drawing.Size(163, 17);
-            this.checkBoxEDX0_L3OccupancyMonitoring.TabIndex = 4;
-            this.checkBoxEDX0_L3OccupancyMonitoring.Text = "L3 occupancy monitoring [0]:";
-            this.checkBoxEDX0_L3OccupancyMonitoring.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEDX1_L3TotalExternalBandwidthMonitoring
-            // 
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.AutoSize = true;
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Name = "checkBoxEDX1_L3TotalExternalBandwidthMonitoring";
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Size = new System.Drawing.Size(222, 17);
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.TabIndex = 5;
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.Text = "L3 total external bandwidth monitoring [1]:";
-            this.checkBoxEDX1_L3TotalExternalBandwidthMonitoring.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEDX2_L3LocalExternalBandwidthMonitoring
-            // 
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.AutoSize = true;
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Location = new System.Drawing.Point(6, 65);
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Name = "checkBoxEDX2_L3LocalExternalBandwidthMonitoring";
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Size = new System.Drawing.Size(224, 17);
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.TabIndex = 6;
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.Text = "L3 local external bandwidth monitoring [2]:";
-            this.checkBoxEDX2_L3LocalExternalBandwidthMonitoring.UseVisualStyleBackColor = true;
-            // 
             // EAX00000027ECXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxEAX00000027);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EAX00000027ECXN";
             this.Text = "EAX=0x00000027 - Asymmetric RDT-M (QoS monitoring) Enumeration - ECX=0x1 to n = (" +
     "L3)";

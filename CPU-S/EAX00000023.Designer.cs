@@ -43,7 +43,18 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
+            this.textBoxEAXSubleafBitmask = new System.Windows.Forms.TextBox();
+            this.labelEAXSubleafBitmask = new System.Windows.Forms.Label();
+            this.labelEDXReserved = new System.Windows.Forms.Label();
+            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
+            this.labelECX0_7_TMA = new System.Windows.Forms.Label();
+            this.textBoxECX0_7_TMA = new System.Windows.Forms.TextBox();
+            this.labelECX8_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxECX8_31_Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000023.SuspendLayout();
+            this.groupBoxEAX.SuspendLayout();
+            this.groupBoxEDX.SuspendLayout();
+            this.groupBoxECX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,36 +74,44 @@
             // 
             // groupBoxEAX
             // 
+            this.groupBoxEAX.Controls.Add(this.labelEAXSubleafBitmask);
+            this.groupBoxEAX.Controls.Add(this.textBoxEAXSubleafBitmask);
             this.groupBoxEAX.Location = new System.Drawing.Point(264, 19);
             this.groupBoxEAX.Name = "groupBoxEAX";
-            this.groupBoxEAX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEAX.Size = new System.Drawing.Size(506, 50);
             this.groupBoxEAX.TabIndex = 52;
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
             // groupBoxEDX
             // 
-            this.groupBoxEDX.Location = new System.Drawing.Point(470, 125);
+            this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
+            this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 370);
             this.groupBoxEDX.Name = "groupBoxEDX";
-            this.groupBoxEDX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEDX.Size = new System.Drawing.Size(506, 50);
             this.groupBoxEDX.TabIndex = 51;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
             // 
             // groupBoxECX
             // 
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 125);
+            this.groupBoxECX.Controls.Add(this.labelECX8_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.textBoxECX8_31_Reserved);
+            this.groupBoxECX.Controls.Add(this.labelECX0_7_TMA);
+            this.groupBoxECX.Controls.Add(this.textBoxECX0_7_TMA);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 285);
             this.groupBoxECX.Name = "groupBoxECX";
-            this.groupBoxECX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxECX.Size = new System.Drawing.Size(506, 79);
             this.groupBoxECX.TabIndex = 50;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
             // groupBoxEBX
             // 
-            this.groupBoxEBX.Location = new System.Drawing.Point(470, 19);
+            this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
             this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 204);
             this.groupBoxEBX.TabIndex = 49;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
@@ -177,6 +196,70 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
+            // textBoxEAXSubleafBitmask
+            // 
+            this.textBoxEAXSubleafBitmask.Location = new System.Drawing.Point(400, 15);
+            this.textBoxEAXSubleafBitmask.Name = "textBoxEAXSubleafBitmask";
+            this.textBoxEAXSubleafBitmask.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXSubleafBitmask.TabIndex = 53;
+            // 
+            // labelEAXSubleafBitmask
+            // 
+            this.labelEAXSubleafBitmask.AutoSize = true;
+            this.labelEAXSubleafBitmask.Location = new System.Drawing.Point(6, 18);
+            this.labelEAXSubleafBitmask.Name = "labelEAXSubleafBitmask";
+            this.labelEAXSubleafBitmask.Size = new System.Drawing.Size(118, 13);
+            this.labelEAXSubleafBitmask.TabIndex = 54;
+            this.labelEAXSubleafBitmask.Text = "Sub-leaf bitmask [0-31]:";
+            // 
+            // labelEDXReserved
+            // 
+            this.labelEDXReserved.AutoSize = true;
+            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXReserved.Name = "labelEDXReserved";
+            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDXReserved.TabIndex = 56;
+            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxEDXReserved
+            // 
+            this.textBoxEDXReserved.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
+            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXReserved.TabIndex = 55;
+            // 
+            // labelECX0_7_TMA
+            // 
+            this.labelECX0_7_TMA.AutoSize = true;
+            this.labelECX0_7_TMA.Location = new System.Drawing.Point(6, 22);
+            this.labelECX0_7_TMA.Name = "labelECX0_7_TMA";
+            this.labelECX0_7_TMA.Size = new System.Drawing.Size(308, 13);
+            this.labelECX0_7_TMA.TabIndex = 58;
+            this.labelECX0_7_TMA.Text = "Top-down microarchitecture analysis (TMA) slots per cycle [0-7]:";
+            // 
+            // textBoxECX0_7_TMA
+            // 
+            this.textBoxECX0_7_TMA.Location = new System.Drawing.Point(400, 19);
+            this.textBoxECX0_7_TMA.Name = "textBoxECX0_7_TMA";
+            this.textBoxECX0_7_TMA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX0_7_TMA.TabIndex = 57;
+            // 
+            // labelECX8_31_Reserved
+            // 
+            this.labelECX8_31_Reserved.AutoSize = true;
+            this.labelECX8_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelECX8_31_Reserved.Name = "labelECX8_31_Reserved";
+            this.labelECX8_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECX8_31_Reserved.TabIndex = 60;
+            this.labelECX8_31_Reserved.Text = "Reserved [8-31]:";
+            // 
+            // textBoxECX8_31_Reserved
+            // 
+            this.textBoxECX8_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxECX8_31_Reserved.Name = "textBoxECX8_31_Reserved";
+            this.textBoxECX8_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX8_31_Reserved.TabIndex = 59;
+            // 
             // EAX00000023
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +272,12 @@
             this.Name = "EAX00000023";
             this.Text = "EAX=0x00000023 - Architectural Perf Mon Extended Information";
             this.groupBoxEAX00000023.ResumeLayout(false);
+            this.groupBoxEAX.ResumeLayout(false);
+            this.groupBoxEAX.PerformLayout();
+            this.groupBoxEDX.ResumeLayout(false);
+            this.groupBoxEDX.PerformLayout();
+            this.groupBoxECX.ResumeLayout(false);
+            this.groupBoxECX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
@@ -211,5 +300,13 @@
         private System.Windows.Forms.Label labelEBX;
         private System.Windows.Forms.Label labelECX;
         private System.Windows.Forms.Label labelEDX;
+        private System.Windows.Forms.Label labelEAXSubleafBitmask;
+        private System.Windows.Forms.TextBox textBoxEAXSubleafBitmask;
+        private System.Windows.Forms.Label labelEDXReserved;
+        private System.Windows.Forms.TextBox textBoxEDXReserved;
+        private System.Windows.Forms.Label labelECX8_31_Reserved;
+        private System.Windows.Forms.TextBox textBoxECX8_31_Reserved;
+        private System.Windows.Forms.Label labelECX0_7_TMA;
+        private System.Windows.Forms.TextBox textBoxECX0_7_TMA;
     }
 }

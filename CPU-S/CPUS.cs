@@ -1175,21 +1175,21 @@ namespace CPU_S
         private void eAX0xBIntelThreadCoreAndCacheTopologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Sub-leaf to query (0...n until EBX[15...0] = 0).
-            if (int.Parse(cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(0)) == 0)
-            {
-                MessageBox.Show("No Discrete AVX10 Features information available for this CPU at EAX=0x00000024.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                int i = 0;
-                while (int.Parse(cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(i)) != 0)
-                {
+            //if (int.Parse(cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(0)) == 0)
+            //{
+            //    MessageBox.Show("No Discrete AVX10 Features information available for this CPU at EAX=0x00000024.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //else
+            //{
+            //    int i = 0;
+            //    while (int.Parse(cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(i)) != 0)
+            //    {
                     //Console.WriteLine($"EAX0000000B - Sub-leaf {i} - EBX[15:0] = {cpuHelper.GetEAX0000000BEBX0_15_NumberOfLogicalProcessorsX(i)}");
-                    EAX0000000B eAX0000000B = new EAX0000000B(i);
-                    eAX0000000B.Show();
-                    i++;
-                }
-            }
+                    EAX0000000B eAX0000000B = new EAX0000000B(1);
+                    eAX0000000B.ShowDialog();
+            //        i++;
+            //    }
+            //}
         }
 
         private void eAX0x5MONITORMWAITFeaturesToolStripMenuItem_Click(object sender, EventArgs e)
