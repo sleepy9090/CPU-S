@@ -152,6 +152,36 @@
     <Compile Include="EAX0000001DECX2.Designer.cs">
       <DependentUpon>EAX0000001DECX2.cs</DependentUpon>
     </Compile>
+    <Compile Include="EAX00000023ECX1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX00000023ECX1.Designer.cs">
+      <DependentUpon>EAX00000023ECX1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX00000023ECX2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX00000023ECX2.Designer.cs">
+      <DependentUpon>EAX00000023ECX2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX00000023ECX3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX00000023ECX3.Designer.cs">
+      <DependentUpon>EAX00000023ECX3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX00000023ECX4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX00000023ECX4.Designer.cs">
+      <DependentUpon>EAX00000023ECX4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAX00000023ECX5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EAX00000023ECX5.Designer.cs">
+      <DependentUpon>EAX00000023ECX5.cs</DependentUpon>
+    </Compile>
     <Compile Include="EAX00000027ECXN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -933,6 +963,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EAX00000023.resx">
       <DependentUpon>EAX00000023.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX00000023ECX1.resx">
+      <DependentUpon>EAX00000023ECX1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX00000023ECX2.resx">
+      <DependentUpon>EAX00000023ECX2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX00000023ECX3.resx">
+      <DependentUpon>EAX00000023ECX3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX00000023ECX4.resx">
+      <DependentUpon>EAX00000023ECX4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAX00000023ECX5.resx">
+      <DependentUpon>EAX00000023ECX5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EAX00000027.resx">
       <DependentUpon>EAX00000027.cs</DependentUpon>

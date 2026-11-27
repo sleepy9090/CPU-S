@@ -31,8 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EAX00000023));
             this.groupBoxEAX00000023 = new System.Windows.Forms.GroupBox();
             this.groupBoxEAX = new System.Windows.Forms.GroupBox();
+            this.labelEAXSubleafBitmask = new System.Windows.Forms.Label();
+            this.textBoxEAXSubleafBitmask = new System.Windows.Forms.TextBox();
             this.groupBoxEDX = new System.Windows.Forms.GroupBox();
+            this.labelEDXReserved = new System.Windows.Forms.Label();
+            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
             this.groupBoxECX = new System.Windows.Forms.GroupBox();
+            this.labelECX8_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxECX8_31_Reserved = new System.Windows.Forms.TextBox();
+            this.labelECX0_7_TMA = new System.Windows.Forms.Label();
+            this.textBoxECX0_7_TMA = new System.Windows.Forms.TextBox();
             this.groupBoxEBX = new System.Windows.Forms.GroupBox();
             this.groupBoxAll = new System.Windows.Forms.GroupBox();
             this.textBoxEAX = new System.Windows.Forms.TextBox();
@@ -43,18 +51,16 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
-            this.textBoxEAXSubleafBitmask = new System.Windows.Forms.TextBox();
-            this.labelEAXSubleafBitmask = new System.Windows.Forms.Label();
-            this.labelEDXReserved = new System.Windows.Forms.Label();
-            this.textBoxEDXReserved = new System.Windows.Forms.TextBox();
-            this.labelECX0_7_TMA = new System.Windows.Forms.Label();
-            this.textBoxECX0_7_TMA = new System.Windows.Forms.TextBox();
-            this.labelECX8_31_Reserved = new System.Windows.Forms.Label();
-            this.textBoxECX8_31_Reserved = new System.Windows.Forms.TextBox();
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported = new System.Windows.Forms.CheckBox();
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported = new System.Windows.Forms.CheckBox();
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported = new System.Windows.Forms.CheckBox();
+            this.labelEBX3_31_Reserved = new System.Windows.Forms.Label();
+            this.textBoxEBX3_31_Reserved = new System.Windows.Forms.TextBox();
             this.groupBoxEAX00000023.SuspendLayout();
             this.groupBoxEAX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
             this.groupBoxECX.SuspendLayout();
+            this.groupBoxEBX.SuspendLayout();
             this.groupBoxAll.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +73,7 @@
             this.groupBoxEAX00000023.Controls.Add(this.groupBoxAll);
             this.groupBoxEAX00000023.Location = new System.Drawing.Point(12, 12);
             this.groupBoxEAX00000023.Name = "groupBoxEAX00000023";
-            this.groupBoxEAX00000023.Size = new System.Drawing.Size(776, 426);
+            this.groupBoxEAX00000023.Size = new System.Drawing.Size(776, 348);
             this.groupBoxEAX00000023.TabIndex = 9;
             this.groupBoxEAX00000023.TabStop = false;
             this.groupBoxEAX00000023.Text = "EAX=0x00000023";
@@ -83,16 +89,48 @@
             this.groupBoxEAX.TabStop = false;
             this.groupBoxEAX.Text = "EAX";
             // 
+            // labelEAXSubleafBitmask
+            // 
+            this.labelEAXSubleafBitmask.AutoSize = true;
+            this.labelEAXSubleafBitmask.Location = new System.Drawing.Point(6, 18);
+            this.labelEAXSubleafBitmask.Name = "labelEAXSubleafBitmask";
+            this.labelEAXSubleafBitmask.Size = new System.Drawing.Size(118, 13);
+            this.labelEAXSubleafBitmask.TabIndex = 54;
+            this.labelEAXSubleafBitmask.Text = "Sub-leaf bitmask [0-31]:";
+            // 
+            // textBoxEAXSubleafBitmask
+            // 
+            this.textBoxEAXSubleafBitmask.Location = new System.Drawing.Point(400, 15);
+            this.textBoxEAXSubleafBitmask.Name = "textBoxEAXSubleafBitmask";
+            this.textBoxEAXSubleafBitmask.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEAXSubleafBitmask.TabIndex = 53;
+            // 
             // groupBoxEDX
             // 
             this.groupBoxEDX.Controls.Add(this.labelEDXReserved);
             this.groupBoxEDX.Controls.Add(this.textBoxEDXReserved);
-            this.groupBoxEDX.Location = new System.Drawing.Point(264, 370);
+            this.groupBoxEDX.Location = new System.Drawing.Point(264, 285);
             this.groupBoxEDX.Name = "groupBoxEDX";
             this.groupBoxEDX.Size = new System.Drawing.Size(506, 50);
             this.groupBoxEDX.TabIndex = 51;
             this.groupBoxEDX.TabStop = false;
             this.groupBoxEDX.Text = "EDX";
+            // 
+            // labelEDXReserved
+            // 
+            this.labelEDXReserved.AutoSize = true;
+            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
+            this.labelEDXReserved.Name = "labelEDXReserved";
+            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEDXReserved.TabIndex = 56;
+            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            // 
+            // textBoxEDXReserved
+            // 
+            this.textBoxEDXReserved.Location = new System.Drawing.Point(400, 19);
+            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
+            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEDXReserved.TabIndex = 55;
             // 
             // groupBoxECX
             // 
@@ -100,18 +138,55 @@
             this.groupBoxECX.Controls.Add(this.textBoxECX8_31_Reserved);
             this.groupBoxECX.Controls.Add(this.labelECX0_7_TMA);
             this.groupBoxECX.Controls.Add(this.textBoxECX0_7_TMA);
-            this.groupBoxECX.Location = new System.Drawing.Point(264, 285);
+            this.groupBoxECX.Location = new System.Drawing.Point(264, 200);
             this.groupBoxECX.Name = "groupBoxECX";
             this.groupBoxECX.Size = new System.Drawing.Size(506, 79);
             this.groupBoxECX.TabIndex = 50;
             this.groupBoxECX.TabStop = false;
             this.groupBoxECX.Text = "ECX";
             // 
+            // labelECX8_31_Reserved
+            // 
+            this.labelECX8_31_Reserved.AutoSize = true;
+            this.labelECX8_31_Reserved.Location = new System.Drawing.Point(6, 48);
+            this.labelECX8_31_Reserved.Name = "labelECX8_31_Reserved";
+            this.labelECX8_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelECX8_31_Reserved.TabIndex = 60;
+            this.labelECX8_31_Reserved.Text = "Reserved [8-31]:";
+            // 
+            // textBoxECX8_31_Reserved
+            // 
+            this.textBoxECX8_31_Reserved.Location = new System.Drawing.Point(400, 45);
+            this.textBoxECX8_31_Reserved.Name = "textBoxECX8_31_Reserved";
+            this.textBoxECX8_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX8_31_Reserved.TabIndex = 59;
+            // 
+            // labelECX0_7_TMA
+            // 
+            this.labelECX0_7_TMA.AutoSize = true;
+            this.labelECX0_7_TMA.Location = new System.Drawing.Point(6, 22);
+            this.labelECX0_7_TMA.Name = "labelECX0_7_TMA";
+            this.labelECX0_7_TMA.Size = new System.Drawing.Size(308, 13);
+            this.labelECX0_7_TMA.TabIndex = 58;
+            this.labelECX0_7_TMA.Text = "Top-down microarchitecture analysis (TMA) slots per cycle [0-7]:";
+            // 
+            // textBoxECX0_7_TMA
+            // 
+            this.textBoxECX0_7_TMA.Location = new System.Drawing.Point(400, 19);
+            this.textBoxECX0_7_TMA.Name = "textBoxECX0_7_TMA";
+            this.textBoxECX0_7_TMA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxECX0_7_TMA.TabIndex = 57;
+            // 
             // groupBoxEBX
             // 
+            this.groupBoxEBX.Controls.Add(this.textBoxEBX3_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.labelEBX3_31_Reserved);
+            this.groupBoxEBX.Controls.Add(this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported);
+            this.groupBoxEBX.Controls.Add(this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported);
+            this.groupBoxEBX.Controls.Add(this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported);
             this.groupBoxEBX.Location = new System.Drawing.Point(264, 75);
             this.groupBoxEBX.Name = "groupBoxEBX";
-            this.groupBoxEBX.Size = new System.Drawing.Size(506, 204);
+            this.groupBoxEBX.Size = new System.Drawing.Size(506, 119);
             this.groupBoxEBX.TabIndex = 49;
             this.groupBoxEBX.TabStop = false;
             this.groupBoxEBX.Text = "EBX";
@@ -196,81 +271,63 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
-            // textBoxEAXSubleafBitmask
+            // checkBoxEBX0_PERFEVTSELnUnitMask2Supported
             // 
-            this.textBoxEAXSubleafBitmask.Location = new System.Drawing.Point(400, 15);
-            this.textBoxEAXSubleafBitmask.Name = "textBoxEAXSubleafBitmask";
-            this.textBoxEAXSubleafBitmask.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEAXSubleafBitmask.TabIndex = 53;
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported.AutoSize = true;
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported.Location = new System.Drawing.Point(6, 19);
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported.Name = "checkBoxEBX0_PERFEVTSELnUnitMask2Supported";
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported.Size = new System.Drawing.Size(220, 17);
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported.TabIndex = 0;
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported.Text = "PERFEVTSELn.UnitMask2 supported [0]";
+            this.checkBoxEBX0_PERFEVTSELnUnitMask2Supported.UseVisualStyleBackColor = true;
             // 
-            // labelEAXSubleafBitmask
+            // checkBoxEBX1_PERFEVTSELnEqualFlagSupported
             // 
-            this.labelEAXSubleafBitmask.AutoSize = true;
-            this.labelEAXSubleafBitmask.Location = new System.Drawing.Point(6, 18);
-            this.labelEAXSubleafBitmask.Name = "labelEAXSubleafBitmask";
-            this.labelEAXSubleafBitmask.Size = new System.Drawing.Size(118, 13);
-            this.labelEAXSubleafBitmask.TabIndex = 54;
-            this.labelEAXSubleafBitmask.Text = "Sub-leaf bitmask [0-31]:";
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported.AutoSize = true;
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported.Location = new System.Drawing.Point(6, 44);
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported.Name = "checkBoxEBX1_PERFEVTSELnEqualFlagSupported";
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported.Size = new System.Drawing.Size(216, 17);
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported.TabIndex = 1;
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported.Text = "PERFEVTSELn.EqualFlag supported [1]";
+            this.checkBoxEBX1_PERFEVTSELnEqualFlagSupported.UseVisualStyleBackColor = true;
             // 
-            // labelEDXReserved
+            // checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported
             // 
-            this.labelEDXReserved.AutoSize = true;
-            this.labelEDXReserved.Location = new System.Drawing.Point(6, 22);
-            this.labelEDXReserved.Name = "labelEDXReserved";
-            this.labelEDXReserved.Size = new System.Drawing.Size(86, 13);
-            this.labelEDXReserved.TabIndex = 56;
-            this.labelEDXReserved.Text = "Reserved [0-31]:";
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported.AutoSize = true;
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported.Location = new System.Drawing.Point(6, 67);
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported.Name = "checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported";
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported.Size = new System.Drawing.Size(288, 17);
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported.TabIndex = 2;
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported.Text = "PERFEVTSELn.RDPMC_USR_DISABLE supported [2]";
+            this.checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported.UseVisualStyleBackColor = true;
             // 
-            // textBoxEDXReserved
+            // labelEBX3_31_Reserved
             // 
-            this.textBoxEDXReserved.Location = new System.Drawing.Point(400, 19);
-            this.textBoxEDXReserved.Name = "textBoxEDXReserved";
-            this.textBoxEDXReserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEDXReserved.TabIndex = 55;
+            this.labelEBX3_31_Reserved.AutoSize = true;
+            this.labelEBX3_31_Reserved.Location = new System.Drawing.Point(6, 92);
+            this.labelEBX3_31_Reserved.Name = "labelEBX3_31_Reserved";
+            this.labelEBX3_31_Reserved.Size = new System.Drawing.Size(86, 13);
+            this.labelEBX3_31_Reserved.TabIndex = 3;
+            this.labelEBX3_31_Reserved.Text = "Reserved [3-31]:";
             // 
-            // labelECX0_7_TMA
+            // textBoxEBX3_31_Reserved
             // 
-            this.labelECX0_7_TMA.AutoSize = true;
-            this.labelECX0_7_TMA.Location = new System.Drawing.Point(6, 22);
-            this.labelECX0_7_TMA.Name = "labelECX0_7_TMA";
-            this.labelECX0_7_TMA.Size = new System.Drawing.Size(308, 13);
-            this.labelECX0_7_TMA.TabIndex = 58;
-            this.labelECX0_7_TMA.Text = "Top-down microarchitecture analysis (TMA) slots per cycle [0-7]:";
-            // 
-            // textBoxECX0_7_TMA
-            // 
-            this.textBoxECX0_7_TMA.Location = new System.Drawing.Point(400, 19);
-            this.textBoxECX0_7_TMA.Name = "textBoxECX0_7_TMA";
-            this.textBoxECX0_7_TMA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECX0_7_TMA.TabIndex = 57;
-            // 
-            // labelECX8_31_Reserved
-            // 
-            this.labelECX8_31_Reserved.AutoSize = true;
-            this.labelECX8_31_Reserved.Location = new System.Drawing.Point(6, 48);
-            this.labelECX8_31_Reserved.Name = "labelECX8_31_Reserved";
-            this.labelECX8_31_Reserved.Size = new System.Drawing.Size(86, 13);
-            this.labelECX8_31_Reserved.TabIndex = 60;
-            this.labelECX8_31_Reserved.Text = "Reserved [8-31]:";
-            // 
-            // textBoxECX8_31_Reserved
-            // 
-            this.textBoxECX8_31_Reserved.Location = new System.Drawing.Point(400, 45);
-            this.textBoxECX8_31_Reserved.Name = "textBoxECX8_31_Reserved";
-            this.textBoxECX8_31_Reserved.Size = new System.Drawing.Size(100, 20);
-            this.textBoxECX8_31_Reserved.TabIndex = 59;
+            this.textBoxEBX3_31_Reserved.Location = new System.Drawing.Point(400, 89);
+            this.textBoxEBX3_31_Reserved.Name = "textBoxEBX3_31_Reserved";
+            this.textBoxEBX3_31_Reserved.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEBX3_31_Reserved.TabIndex = 4;
             // 
             // EAX00000023
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 371);
             this.Controls.Add(this.groupBoxEAX00000023);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EAX00000023";
-            this.Text = "EAX=0x00000023 - Architectural Perf Mon Extended Information";
+            this.Text = "EAX=0x00000023: Architectural Perf Mon Extended Information - (sub 0)";
             this.groupBoxEAX00000023.ResumeLayout(false);
             this.groupBoxEAX.ResumeLayout(false);
             this.groupBoxEAX.PerformLayout();
@@ -278,6 +335,8 @@
             this.groupBoxEDX.PerformLayout();
             this.groupBoxECX.ResumeLayout(false);
             this.groupBoxECX.PerformLayout();
+            this.groupBoxEBX.ResumeLayout(false);
+            this.groupBoxEBX.PerformLayout();
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
@@ -308,5 +367,10 @@
         private System.Windows.Forms.TextBox textBoxECX8_31_Reserved;
         private System.Windows.Forms.Label labelECX0_7_TMA;
         private System.Windows.Forms.TextBox textBoxECX0_7_TMA;
+        private System.Windows.Forms.TextBox textBoxEBX3_31_Reserved;
+        private System.Windows.Forms.Label labelEBX3_31_Reserved;
+        private System.Windows.Forms.CheckBox checkBoxEBX2_PERFEVTSELnRDPMC_USR_DISABLESupported;
+        private System.Windows.Forms.CheckBox checkBoxEBX1_PERFEVTSELnEqualFlagSupported;
+        private System.Windows.Forms.CheckBox checkBoxEBX0_PERFEVTSELnUnitMask2Supported;
     }
 }

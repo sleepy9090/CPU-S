@@ -5,14 +5,6 @@
     Date           10/25/2026
     Author         Shawn M. Crawford [sleepy]
 */
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CPU_S
@@ -38,7 +30,7 @@ namespace CPU_S
                 checkBox.AutoCheck = false;
             }
 
-            #region EAX=0x00000023: Architectural perf mon extended information
+            #region EAX=0x00000023: Architectural perf mon extended information - (sub 0)
 
             textBoxEAX.Text = cpuHelper.GetEAX00000023EAXX();
             textBoxEBX.Text = cpuHelper.GetEAX00000023EBXX();
