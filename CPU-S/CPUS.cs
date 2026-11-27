@@ -1909,5 +1909,35 @@ namespace CPU_S
             EAX00000017ECX3 eAX00000017ECX3 = new EAX00000017ECX3();
             eAX00000017ECX3.ShowDialog();
         }
+
+        private void eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000023ECX1 eAX00000023ECX1 = new EAX00000023ECX1();
+            eAX00000023ECX1.ShowDialog();
+        }
+
+        private void eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000023ECX2 eAX00000023ECX2 = new EAX00000023ECX2();
+            eAX00000023ECX2.ShowDialog();
+        }
+
+        private void eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000023ECX3 eAX00000023ECX3 = new EAX00000023ECX3();
+            eAX00000023ECX3.ShowDialog();
+        }
+
+        private void eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000023ECX4 eAX00000023ECX4 = new EAX00000023ECX4();
+            eAX00000023ECX4.ShowDialog();
+        }
+
+        private void eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EAX00000023ECX5 eAX00000023ECX5 = new EAX00000023ECX5();
+            eAX00000023ECX5.ShowDialog();
+        }
     }
 }

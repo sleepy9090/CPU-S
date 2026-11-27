@@ -81,6 +81,7 @@
             this.labelEBX = new System.Windows.Forms.Label();
             this.labelECX = new System.Windows.Forms.Label();
             this.labelEDX = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBoxEAX00000023.SuspendLayout();
             this.groupBoxEBX.SuspendLayout();
             this.groupBoxEDX.SuspendLayout();
@@ -625,11 +626,21 @@
             this.labelEDX.TabIndex = 9;
             this.labelEDX.Text = "EDX:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "label1";
+            // 
             // EAX00000023ECX4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxEAX00000023);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -649,6 +660,7 @@
             this.groupBoxAll.ResumeLayout(false);
             this.groupBoxAll.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -706,5 +718,6 @@
         private System.Windows.Forms.CheckBox checkBoxEBX2_Reserved;
         private System.Windows.Forms.CheckBox checkBoxEBX1_Reserved;
         private System.Windows.Forms.CheckBox checkBoxEBX0_Reserved;
+        private System.Windows.Forms.Label label1;
     }
 }

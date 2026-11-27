@@ -377,6 +377,11 @@
             this.eAX0xC0000006ZhaoxinProcessorInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCPUS.SuspendLayout();
             this.tabPageCPUMain.SuspendLayout();
             this.groupBoxCPU.SuspendLayout();
@@ -2661,8 +2666,8 @@
             this.eAX0x00000009DCAParametersToolStripMenuItem,
             this.eAX0x0000000AArchitecturalPerfMonInformationToolStripMenuItem,
             this.eAX0x0000000BIntelThreadCoreAndCacheTopologyToolStripMenuItem,
-            this.eAX0x0000000DXSAVEFeaturesAndStateComponentsToolStripMenuItem,
             this.eAX0x0000000DXSAVEFeaturesAndStateComponentsSub1ToolStripMenuItem,
+            this.eAX0x0000000DXSAVEFeaturesAndStateComponentsToolStripMenuItem,
             this.eAX0x0000000DXSAVEFeaturesAndStateComponentsSub2ToolStripMenuItem,
             this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECX0ToolStripMenuItem,
             this.eAX0x0000000F_RDTMQoSMonitoringEnumerationECXNToolStripMenuItem,
@@ -2695,6 +2700,11 @@
             this.eAX0x00000020HRESETInformationToolStripMenuItem,
             this.eAX0x00000021ReservedForTDXEnumerationToolStripMenuItem,
             this.eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem,
+            this.eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem,
+            this.eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem,
+            this.eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem,
+            this.eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem,
+            this.eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem,
             this.eAX0x00000024ECX0x0AVX10ConvergedVectorISAToolStripMenuItem,
             this.eAX0x00000024ECX0x1DiscreteAVX10FeaturesToolStripMenuItem,
             this.eAX0x00000027AsymmetricRDTMQoSMonitoringEnumerationToolStripMenuItem,
@@ -3040,7 +3050,8 @@
             // 
             this.eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Name = "eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem";
             this.eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
-            this.eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Text = "EAX=0x00000023: Architectural perf mon extended information";
+            this.eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Text = "EAX=0x00000023, ECX=0x00000000: Architectural perf mon extended information - (su" +
+    "b 0)";
             this.eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000023ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click);
             // 
             // eAX0x00000024ECX0x0AVX10ConvergedVectorISAToolStripMenuItem
@@ -3707,6 +3718,46 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem
+            // 
+            this.eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Name = "eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem";
+            this.eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Text = "EAX=0x00000023, ECX=0x00000001: Architectural perf mon extended information - (su" +
+    "b 1)";
+            this.eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem
+            // 
+            this.eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Name = "eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem";
+            this.eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Text = "EAX=0x00000023, ECX=0x00000002: Architectural perf mon extended information - (su" +
+    "b 2)";
+            this.eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem
+            // 
+            this.eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Name = "eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem";
+            this.eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Text = "EAX=0x00000023, ECX=0x00000003: Architectural perf mon extended information - (su" +
+    "b 3)";
+            this.eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem
+            // 
+            this.eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Name = "eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem";
+            this.eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Text = "EAX=0x00000023, ECX=0x00000004: Architectural perf mon extended information - (su" +
+    "b 4)";
+            this.eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click);
+            // 
+            // eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem
+            // 
+            this.eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Name = "eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem";
+            this.eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Size = new System.Drawing.Size(722, 22);
+            this.eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Text = "EAX=0x00000023, ECX=0x00000005: Architectural perf mon extended information - (su" +
+    "b 5)";
+            this.eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem.Click += new System.EventHandler(this.eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem_Click);
+            // 
             // FormCPUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4105,6 +4156,11 @@
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000017ECX1SoCVendorAttributeEnumerationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000017ECX2SoCVendorAttributeEnumerationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eAX0x00000017ECX3SoCVendorAttributeEnumerationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000023ECX1ArchitecturalPerfMonExtendedInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000023ECX2ArchitecturalPerfMonExtendedInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000023ECX3ArchitecturalPerfMonExtendedInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000023ECX4ArchitecturalPerfMonExtendedInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eAX0x00000023ECX5ArchitecturalPerfMonExtendedInformationToolStripMenuItem;
     }
 }
 
